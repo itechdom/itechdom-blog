@@ -1,0 +1,445 @@
+{
+  "title": "JavaScript GDI",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "12": {
+      "title": "What's JavaScript",
+      "attr": {
+        "style": {
+          "background": "#008000"
+        },
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><span id=\"docs-internal-guid-d499e770-7436-1deb-17ec-631fa62e6aa6\"><br></span></blockquote><span id=\"docs-internal-guid-d499e770-7436-1deb-17ec-631fa62e6aa6\"><ol class=\"lr_dct_sf_sens\" style=\"font-family: arial, sans-serif; margin-bottom: 0px; margin-left: 0px; padding-left: 20px; border: 0px; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; color: rgb(34, 34, 34); font-size: small; line-height: normal;\"><li style=\"line-height: 1.2; margin: 0px; padding: 0px; border: 0px; list-style: none;\"><div style=\"margin-left: -20px;\"><div data-dobid=\"dfn\" style=\"display: inline;\">We saw before how we used html and css to display things on the browser</div></div></li></ol><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">the browser essentially reads the html and css and figure out how to display them</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\"><br></span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\"><br></span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">example:</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\"><br></span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">&lt;style&gt;</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">p{</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">font-size:80px</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">}</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">&lt;/style&gt;</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\"><br></span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">&nbsp;&lt;p&gt;hello world&lt;/p&gt;</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\"><br></span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">with Javascript: we telling the browser to do more things than just display this text or any other html elements:</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\"><br></span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\">things like: go to javascript and where to find it</span></font></div><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\"><br></span></font></div><div>JavaScript is a programming language with syntax. just like a real language.</div><ol class=\"lr_dct_sf_sens\" style=\"font-family: arial, sans-serif; margin-bottom: 0px; margin-left: 0px; padding-left: 20px; border: 0px; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; color: rgb(34, 34, 34); font-size: small; line-height: normal;\"><li style=\"line-height: 1.2; margin: 0px; padding: 0px; border: 0px; list-style: none;\"><div style=\"margin-left: -20px;\"><div data-dobid=\"dfn\" style=\"display: inline;\"><br></div></div></li><li style=\"line-height: 1.2; margin: 0px; padding: 0px; border: 0px; list-style: none;\"><div class=\"lr_dct_sf_sen vk_txt\" style=\"padding-top: 10px; font-weight: lighter !important;\"><div style=\"margin-left: 20px;\"><div style=\"margin-left: -20px;\"><div data-dobid=\"dfn\" style=\"display: inline;\">a programming language commonly used to create interactive websites. Using HTML and CSS only is very limited in their own way. You can use HTML and CSS to achieve a lot of things, but unfortunately this falls short in many Cases. This is when JavaScript comes in handy.</div></div></div></div></li></ol><div><font color=\"#222222\" face=\"arial, sans-serif\" size=\"2\"><span style=\"line-height: 15.6000003814697px;\"><br></span></font></div></span>"
+        },
+        "position": [
+          196,
+          -3,
+          1
+        ]
+      },
+      "ideas": {
+        "3": {
+          "title": "What does Javascript Do and Where do you find it?",
+          "attr": {
+            "style": {
+              "background": "#008000"
+            },
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<div><span style=\"font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;\"><i>You find it in many places:</i></span></div><div><span style=\"font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;\"><i><br></i></span></div><div><span style=\"font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;\"><i>Slide show images,&nbsp;</i></span></div><div><span style=\"font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;\"><i>clicking on something and doing something,</i></span></div><div><span style=\"font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;\"><i>Creating online games,</i></span></div><div><span style=\"font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;\"><i>creating Mobile apps (New)</i></span></div><div><span style=\"font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;\"><i>this slide show is created by JavaScript</i></span></div><div><span style=\"font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;\"><i><br></i></span></div>"
+            },
+            "position": [
+              97,
+              -130,
+              1
+            ]
+          },
+          "ideas": {
+            "1.5": {
+              "title": "How is JavaScript written: in Statements ",
+              "id": 87,
+              "ideas": {
+                "1": {
+                  "title": "Variables and Box Analogy",
+                  "attr": {
+                    "style": {
+                      "background": "#008000"
+                    },
+                    "attachment": {
+                      "contentType": "text/html",
+                      "content": "Variable Name: Box Label<div>Inside the box is the value</div><div><br></div><div>values can be either a number or a string. A String is called that because it's a string of chars.</div><div><br></div><div>Example:&nbsp;</div><div>var a = 2</div><div><br></div><div>----------------</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>----------------</div><div><br></div><div><br></div><div><br></div><div>if you want to get what's inside the box \"a\"</div><div><br></div><div>you just do this:</div><div><br></div><div>a ! that simple</div>"
+                    },
+                    "position": [
+                      193,
+                      -85,
+                      1
+                    ]
+                  },
+                  "ideas": {
+                    "3.5": {
+                      "title": "Data Types",
+                      "attr": {
+                        "style": {
+                          "background": "#008000"
+                        },
+                        "attachment": {
+                          "contentType": "text/html",
+                          "content": "String, Number For now"
+                        }
+                      },
+                      "id": 75,
+                      "ideas": {
+                        "2": {
+                          "title": "Store variables and display them",
+                          "attr": {
+                            "style": {
+                              "background": "#33cccc"
+                            },
+                            "attachment": {
+                              "contentType": "text/html",
+                              "content": "Write a program that will create different variables and use Alert to display those values"
+                            }
+                          },
+                          "ideas": {
+                            "11.5": {
+                              "title": "Number (Math) Expressions and String Expressions",
+                              "attr": {
+                                "style": {
+                                  "background": "#008000"
+                                },
+                                "attachment": {
+                                  "contentType": "text/html",
+                                  "content": "<div>Don't be alarmed, this is just<br></div><div>+ - * /</div><div><br></div><div><br></div><div>String Expressions is just adding Strings together. This is when the difference between a text and a number comes in. If you add two strings together you join them.</div>"
+                                },
+                                "position": [
+                                  161,
+                                  -93,
+                                  1
+                                ]
+                              },
+                              "id": 62,
+                              "ideas": {
+                                "1": {
+                                  "title": "life time supply example",
+                                  "attr": {
+                                    "style": {
+                                      "background": "#33cccc"
+                                    },
+                                    "attachment": {
+                                      "contentType": "text/html",
+                                      "content": "Reference an HTML element and then apply a style"
+                                    }
+                                  },
+                                  "ideas": {
+                                    "2": {
+                                      "title": "If statments and logic",
+                                      "id": 88,
+                                      "ideas": {
+                                        "1": {
+                                          "title": "Check the supply of Bananas and display something",
+                                          "attr": {
+                                            "style": {
+                                              "background": "#33cccc"
+                                            }
+                                          },
+                                          "ideas": {
+                                            "2": {
+                                              "title": "Functions",
+                                              "id": 76,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#008000"
+                                                },
+                                                "position": [
+                                                  181,
+                                                  -115,
+                                                  1
+                                                ],
+                                                "attachment": {
+                                                  "contentType": "text/html",
+                                                  "content": "<div>Functions are like recepies that are repeated in your application. When you make hard boiled eggs what do you do? this could be like a function? a list of instructions that we store in a recepie that yield some result</div><div><br></div><div>this is how we tell the browser to store it:</div><div><br></div><div>for example function a ( )</div><div>take a value</div><div>multiply it with 2</div><div>return the value to whoever called it</div><div><br></div><div>ingridents are the variables we pass to the function&nbsp;</div><div><br></div><div>the food that's made is what the function returns</div><div><br></div><div>list of examples</div><div><br></div><div>sometimes we buy food that's already made so we don't have to make anything.</div><div><br></div><div><br></div><div>sometimes you call function without knowing what they contain, which is something we do all the time in programming</div><div><br></div><div><br></div><div>think of functions as factories that have a collection of statments</div><div>it could take a box and modify it then return a new box</div><div>It's like a belt, on one end there's processing, on the other there's a box</div><div><br></div><div>Some factories don't accept boxes, they produce them.</div><div><br></div><div>you can package it as you like</div><div><br></div><div><br></div><div>Example</div><div><br></div><div>var a = \"hello\"</div><div>alert \"hello\"</div><div><br></div><div>Instead of writing this every time, we can store it in a box (variable) and retrieve it late</div><div><br></div><div>by doing this</div><div><br></div><div>function BoxLabel ( ){</div><div><br></div><div>var a = \"help\"</div><div>alert a</div><div><br></div><div>}</div><div><br></div><div>BoxLabel ( )</div><div><br></div><div>How do I make functions even more powerfull, make them a little more useful, abstract, lets say you want to add two numbers together and you want the user to supply the numbers and you get the results</div><div><br></div><div>this is usefull, because it make it easy to call that box and make it easier for people to reuse it for any two numbers.</div><div><br>Example:</div><div><br></div><div>function addTwoNumbers(a,b){</div><div>return a+b</div><div>}</div><div>&nbsp;</div><div>results = &nbsp;addTwoNumbers(1,2)</div><div><br></div><div>alert results</div>"
+                                                }
+                                              },
+                                              "ideas": {
+                                                "1": {
+                                                  "title": "Store the functions to calculate the bananas to make your program simpler",
+                                                  "attr": {
+                                                    "style": {
+                                                      "background": "#33cccc"
+                                                    }
+                                                  },
+                                                  "ideas": {
+                                                    "1": {
+                                                      "title": "Global Scope and Function Scope",
+                                                      "id": 79,
+                                                      "attr": {
+                                                        "style": {
+                                                          "background": "#008000"
+                                                        },
+                                                        "position": [
+                                                          132,
+                                                          -94,
+                                                          1
+                                                        ],
+                                                        "attachment": {
+                                                          "contentType": "text/html",
+                                                          "content": "whatever boxes we have in the factory (function), we can't access outside of it.<div><br></div><div>function {</div><div><br></div><div>a = 2<br></div><div><br></div><div>}</div>"
+                                                        }
+                                                      },
+                                                      "ideas": {
+                                                        "1": {
+                                                          "title": "Loops",
+                                                          "attr": {
+                                                            "style": {
+                                                              "background": "#000080"
+                                                            },
+                                                            "position": [
+                                                              121,
+                                                              -162,
+                                                              3
+                                                            ],
+                                                            "attachment": {
+                                                              "contentType": "text/html",
+                                                              "content": "sometimes we need to repeat statements instead of copying and pasting them&nbsp;<div><br></div><div>so if I wanted to write hello 20 times, I would do something like this</div><div><br></div><div>log hello</div><div>log hello</div><div>log hello</div><div><br></div><div><br></div><div>what if we&nbsp;</div>"
+                                                            }
+                                                          },
+                                                          "ideas": {
+                                                            "3": {
+                                                              "title": "Arrays",
+                                                              "attr": {
+                                                                "position": [
+                                                                  128,
+                                                                  -93,
+                                                                  1
+                                                                ],
+                                                                "style": {
+                                                                  "background": "#000080"
+                                                                },
+                                                                "attachment": {
+                                                                  "contentType": "text/html",
+                                                                  "content": "Numbered Shelfs and contains boxes 0,1,2,3,4 ... etc"
+                                                                }
+                                                              },
+                                                              "id": 58,
+                                                              "ideas": {
+                                                                "1": {
+                                                                  "title": "Objects",
+                                                                  "attr": {
+                                                                    "style": {
+                                                                      "background": "#000080"
+                                                                    },
+                                                                    "position": [
+                                                                      91,
+                                                                      -100,
+                                                                      1
+                                                                    ],
+                                                                    "attachment": {
+                                                                      "contentType": "text/html",
+                                                                      "content": "<div>think of objects as any entity that has properties, a person is an object, a car is an object. Anything that you can describe could be an object.</div><div><br></div><div>This how we create objects in JS</div><div><br></div><div>{</div><div>name: \"hello\"</div><div>age: 21</div><div>}</div><div><br></div>We move to a more complex example here, we have a box and inside of that box is a Person! WHAAAT?!!!!<div><br></div><div>Each person has name, age</div>"
+                                                                    }
+                                                                  },
+                                                                  "id": 30,
+                                                                  "ideas": {
+                                                                    "8": {
+                                                                      "title": "Array Of Objects",
+                                                                      "id": 81,
+                                                                      "ideas": {
+                                                                        "2": {
+                                                                          "title": "DOM",
+                                                                          "id": 89,
+                                                                          "attr": {
+                                                                            "style": {
+                                                                              "background": "#000080"
+                                                                            },
+                                                                            "position": [
+                                                                              67.5,
+                                                                              -97,
+                                                                              1
+                                                                            ],
+                                                                            "attachment": {
+                                                                              "contentType": "text/html",
+                                                                              "content": "<ul><li>Show the DOM</li><li>Explain that it's composed of objects</li><li>Explain what interactions is made to manipulate the DOM</li><li>DOM is just a list of elements connected together they call it a tree. Where there are children and parents [insert DOM picture here]</li></ul>"
+                                                                            }
+                                                                          },
+                                                                          "ideas": {
+                                                                            "3.5": {
+                                                                              "title": "jQuery",
+                                                                              "id": 92,
+                                                                              "attr": {
+                                                                                "style": {
+                                                                                  "background": "#993300"
+                                                                                },
+                                                                                "attachment": {
+                                                                                  "contentType": "text/html",
+                                                                                  "content": "jQuery is a library, think of a library as a collection of factories (functions) that produce certain results. You have to learn how to use the library: to reduce time, follow best practices that other people wrote.<div><br></div><div>jQuery has a special syntax the dollar sign, that makes it extremely easy to do DOM manipulation, binding events, create image sliders,&nbsp;</div><div><br></div><div>Learning jQuery will save you time and effort in writing a lot of code to manipulate DOM. Although there are new libraries coming up, It's used heavily by web developers.&nbsp;</div>"
+                                                                                },
+                                                                                "position": [
+                                                                                  67.5,
+                                                                                  -62,
+                                                                                  1
+                                                                                ]
+                                                                              },
+                                                                              "ideas": {
+                                                                                "1": {
+                                                                                  "title": "API",
+                                                                                  "id": 99,
+                                                                                  "attr": {
+                                                                                    "position": [
+                                                                                      81,
+                                                                                      -74,
+                                                                                      1
+                                                                                    ],
+                                                                                    "style": {
+                                                                                      "background": "#993300"
+                                                                                    },
+                                                                                    "attachment": {
+                                                                                      "contentType": "text/html",
+                                                                                      "content": "Is a way to access data in other web systems. Meetup website for example. The web is full of apis that you can leverage:<div><br></div><div>Facebook</div><div>twitter</div><div>google</div><div>foursquare</div><div>etc</div>"
+                                                                                    }
+                                                                                  },
+                                                                                  "ideas": {
+                                                                                    "1": {
+                                                                                      "title": "jQuery and Ajax",
+                                                                                      "id": 100,
+                                                                                      "attr": {
+                                                                                        "style": {
+                                                                                          "background": "#993300"
+                                                                                        },
+                                                                                        "attachment": {
+                                                                                          "contentType": "text/html",
+                                                                                          "content": "jQuery has a function called ajax that we call to request data from meetup. Let's see how we do that<div><br></div><div>$.ajax</div><div>{</div><div><br></div><div><br></div><div><br></div><div>}</div>"
+                                                                                        }
+                                                                                      },
+                                                                                      "ideas": {}
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            },
+                                                                            "4.5": {
+                                                                              "title": "TODO list",
+                                                                              "id": 107,
+                                                                              "attr": {
+                                                                                "style": {
+                                                                                  "background": "#33cccc"
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "attr": {
+                                                                        "attachment": {
+                                                                          "contentType": "text/html",
+                                                                          "content": "Box with people on Shelves"
+                                                                        },
+                                                                        "style": {
+                                                                          "background": "#000080"
+                                                                        },
+                                                                        "position": [
+                                                                          39,
+                                                                          -92,
+                                                                          1
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "id": 55
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "id": 70
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "id": 29
+                                        }
+                                      },
+                                      "attr": {
+                                        "style": {
+                                          "background": "#008000"
+                                        },
+                                        "attachment": {
+                                          "contentType": "text/html",
+                                          "content": "Comparisions and Logic<div><br></div><div>Write it out as words first the convert it to JavaScript untill you get used to it</div><div><br></div><div><br></div><div><br></div><div>If bananas are greater than 5 then display the result</div><div><br></div><div>if bananas &gt; 5 {</div><div><br></div><div><blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><div>alert \"you need more bananas\"</div></blockquote></div><div><br></div><div>}</div><div><br></div><div><br></div><div>else (any other case){</div><div><br></div><div>alert \"you have enough bananas\"</div><div><br></div><div>}</div>"
+                                        },
+                                        "position": [
+                                          167,
+                                          -82,
+                                          1
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "id": 28
+                                }
+                              }
+                            }
+                          },
+                          "id": 61
+                        }
+                      }
+                    }
+                  },
+                  "id": 54
+                },
+                "2": {
+                  "title": "Write gibberish statement and see if the browser shows an error",
+                  "id": 106,
+                  "attr": {
+                    "style": {
+                      "background": "#33cccc"
+                    },
+                    "attachment": {
+                      "contentType": "text/html",
+                      "content": "For accessing the command line. type CMD+SHIFT+ the letter i"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#008000"
+                },
+                "position": [
+                  178,
+                  -99,
+                  1
+                ],
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<div>we load javascript same way we load css files.&nbsp;</div><div><br></div><div>The browser reads the script file line by line. these are essentially instructions. If it succeeds, the browser will show no error. If it fails we can examine the error in the console</div><div><br></div>How does the browser read those statments: Sequantially, line by line.<div><br></div><div><br></div><div><span style=\"font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\">The rules for valid format and combinations of instructions is called a&nbsp;</span><em style=\"box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\">computer language</em><span style=\"font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\">, sometimes referred to as its</span><em style=\"box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\">syntax</em><span style=\"font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\">, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.</span><br></div><div><span style=\"font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\"><br></span></div><div><span style=\"font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\">as you go, you will be able to gather different concepts into a knowledge</span></div><div><span style=\"font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\"><br></span></div><div><span style=\"font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\"><br></span></div><div><table style=\"margin: 0px; padding: 0px; border: 0px; font-size: 12px; vertical-align: baseline; font-family: Tahoma, Geneva, Arial, sans-serif; line-height: 12px; background-color: rgb(255, 255, 255);\"><tbody style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: baseline;\"><tr style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: baseline;\"><td class=\"answercell\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: top;\"><div class=\"post-text\" itemprop=\"text\" style=\"margin: 0px 5px 5px 0px; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; width: 660px; word-wrap: break-word; line-height: 18.2000007629395px;\"><p style=\"margin-bottom: 1em; padding: 0px; border: 0px; vertical-align: baseline; clear: both;\"><br class=\"Apple-interchange-newline\">I write very, very detailed instructions for a very, very dumb machine</p></div></td></tr></tbody></table></div>"
+                }
+              }
+            },
+            "2.5": {
+              "title": "showing and hiding images as we click",
+              "id": 103,
+              "attr": {
+                "style": {
+                  "background": "#33cccc"
+                }
+              }
+            }
+          },
+          "id": 27
+        }
+      },
+      "id": 3
+    },
+    "-1": {
+      "title": "Life long skills",
+      "id": 102,
+      "attr": {
+        "position": [
+          28.5,
+          131,
+          2
+        ],
+        "style": {
+          "background": "#ffcc00"
+        },
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<span id=\"docs-internal-guid-f5968c55-c291-5c4d-6e62-1a2e8af22242\"><ol style=\"margin-top:0pt;margin-bottom:0pt;\"><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">You shouldn't memorize</span></p></li><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">google is your friend</span></p></li><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">how to look up stackoverflow and the way to phrase your question.</span></p></li><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><span style=\"vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">reading news about the language if you are interested: here are some</span></li><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><span style=\"vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Don't don't be afraid of experimenting and making mistakes</span></li><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><span style=\"line-height: 1.38; white-space: pre-wrap; background-color: transparent;\">talk about your experience.</span></li><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><span style=\"line-height: 1.38; white-space: pre-wrap; background-color: transparent;\">develop your own style.</span></li><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><span style=\"line-height: 1.38; white-space: pre-wrap; background-color: transparent;\">what you like: reading, interactive.</span></li><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><span style=\"line-height: 1.38; white-space: pre-wrap; background-color: transparent;\">eloquent javascript.</span></li><li dir=\"ltr\" style=\"list-style-type: decimal; font-size: 15px; font-family: Arial; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; background-color: transparent;\"><span style=\"white-space: pre-wrap; background-color: transparent;\">List of videos.</span></li></ol></span>"
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "attachment": {
+      "contentType": "text/html",
+      "content": "Welcome to GDI's intro to Javascript. My name is \"Sam\" it's Osama Alghanmi and with me is Pedro Meza. We work for Charter communication doing Javascript.&nbsp;<div><br></div><div><br></div><div><b>Figure out a group activity that breaks the ice: I think that introduction first and then for 15 mins we talk to each other in a group of (a number here depending on the number of students).&nbsp;</b></div><div><b><br></b></div><div><b>\"This will enable us to break that first barrier\"</b></div><div><b><br></b></div><div><b><br></b></div>"
+    },
+    "style": {}
+  }
+}

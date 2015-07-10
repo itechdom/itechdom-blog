@@ -1,2 +1,2 @@
-# itechdom-blog
-We talk Programming and Startups.
+# ZPresent
+Create and Share  Presentations using Angular and Gulp with Reveal.js
