@@ -4,6 +4,7 @@ var _ = require('lodash');
 var wrench = require('wrench');
 var sync = require('run-sequence');
 
+
 var options = {
   src: './app/client/main.js',
   dist: './dist/',

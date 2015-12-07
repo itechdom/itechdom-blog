@@ -27,6 +27,7 @@
     "browserify": "^10.2.4",
     "flat": "^1.6.0",
     "font-awesome": "^4.4.0",
+    "gulp-data": "^1.2.1",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
     "mongoose": "^4.2.3",
