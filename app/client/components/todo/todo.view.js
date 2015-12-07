@@ -2,6 +2,10 @@
 var $ = require('jquery');
 var Rx = require('rx');
 var actions = require('./todo.actions.js');
+var model = require('./todo.model.js');
+var dispatcher = require('../lib/dispatcher/dispatcher.js');
+var Vue = require('vue');
+
 
 // I want to be able to import some components that manipulate HTML
 // The basic features I am looking at is:
@@ -10,17 +14,25 @@ var actions = require('./todo.actions.js');
 // This should provide declarative HTML in general
 class todoView {
 
-    render(data,element){
-	    var ht = require('./todo.html');
-	    element?$(element+'>todo').html(ht) : $('todo').html(ht);
-    }
-    animate(){
 
-    }
-    constructor() {
-        this.template = 'todo';
+	render(){
 
-    }
+		var ht = require('./todo.html');
+		$('todo').html(ht);
+		var message = "hello, Vue.js!";
+
+		//initialize Vue
+		var demo = new Vue({
+			el: '#demo',
+		    	data: {
+			    message: 'Hello Vue.js!'
+			}
+		});
+		
+	}
+	constructor() {
+
+	}
 }
 
 
