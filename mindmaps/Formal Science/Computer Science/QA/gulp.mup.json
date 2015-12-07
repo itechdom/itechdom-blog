@@ -1,0 +1,205 @@
+{
+  "title": "gulp",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "10": {
+      "title": "Concepts",
+      "id": 14,
+      "ideas": {
+        "1": {
+          "title": "Event streams",
+          "id": 5,
+          "attr": {
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "Vinyl files",
+          "id": 4,
+          "attr": {
+            "style": {}
+          }
+        },
+        "3": {
+          "title": "Globs",
+          "id": 6,
+          "attr": {
+            "style": {}
+          }
+        },
+        "4": {
+          "title": "Node Streams",
+          "id": 2,
+          "ideas": {},
+          "attr": {
+            "style": {}
+          }
+        },
+        "5": {
+          "title": "Regex",
+          "id": 7,
+          "attr": {
+            "style": {}
+          }
+        },
+        "6": {
+          "title": "Plugins",
+          "id": 30,
+          "ideas": {
+            "1": {
+              "title": "What does a good plugin look like?",
+              "id": 31,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<h3 style=\"box-sizing: border-box; margin-top: 1em; margin-bottom: 16px; line-height: 1.43; font-size: 1.5em; position: relative; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;\">What does a good plugin look like?</h3><div class=\"highlight highlight-js\" style=\"box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\"><pre style=\"box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);\"><span class=\"pl-c\" style=\"box-sizing: border-box; color: rgb(150, 152, 150);\">// through2 is a thin wrapper around node transform streams</span>\n<span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">var</span> through <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">=</span> <span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">require</span>(<span class=\"pl-s\" style=\"box-sizing: border-box; color: rgb(24, 54, 145);\"><span class=\"pl-pds\" style=\"box-sizing: border-box;\">'</span>through2<span class=\"pl-pds\" style=\"box-sizing: border-box;\">'</span></span>);\n<span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">var</span> gutil <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">=</span> <span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">require</span>(<span class=\"pl-s\" style=\"box-sizing: border-box; color: rgb(24, 54, 145);\"><span class=\"pl-pds\" style=\"box-sizing: border-box;\">'</span>gulp-util<span class=\"pl-pds\" style=\"box-sizing: border-box;\">'</span></span>);\n<span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">var</span> PluginError <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">=</span> gutil.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">PluginError</span>;\n\n<span class=\"pl-c\" style=\"box-sizing: border-box; color: rgb(150, 152, 150);\">// Consts</span>\n<span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">const</span> <span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">PLUGIN_NAME</span> <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">=</span> <span class=\"pl-s\" style=\"box-sizing: border-box; color: rgb(24, 54, 145);\"><span class=\"pl-pds\" style=\"box-sizing: border-box;\">'</span>gulp-prefixer<span class=\"pl-pds\" style=\"box-sizing: border-box;\">'</span></span>;\n\n<span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">function</span> <span class=\"pl-en\" style=\"box-sizing: border-box; color: rgb(121, 93, 163);\">prefixStream</span>(<span class=\"pl-smi\" style=\"box-sizing: border-box;\">prefixText</span>) {\n  <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">var</span> stream <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">=</span> <span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">through</span>();\n  stream.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">write</span>(prefixText);\n  <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">return</span> stream;\n}\n\n<span class=\"pl-c\" style=\"box-sizing: border-box; color: rgb(150, 152, 150);\">// Plugin level function(dealing with files)</span>\n<span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">function</span> <span class=\"pl-en\" style=\"box-sizing: border-box; color: rgb(121, 93, 163);\">gulpPrefixer</span>(<span class=\"pl-smi\" style=\"box-sizing: border-box;\">prefixText</span>) {\n\n  <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">if</span> (<span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">!</span>prefixText) {\n    <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">throw</span> <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">new</span> <span class=\"pl-en\" style=\"box-sizing: border-box; color: rgb(121, 93, 163);\">PluginError</span>(<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">PLUGIN_NAME</span>, <span class=\"pl-s\" style=\"box-sizing: border-box; color: rgb(24, 54, 145);\"><span class=\"pl-pds\" style=\"box-sizing: border-box;\">'</span>Missing prefix text!<span class=\"pl-pds\" style=\"box-sizing: border-box;\">'</span></span>);\n  }\n  prefixText <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">=</span> <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">new</span> <span class=\"pl-en\" style=\"box-sizing: border-box; color: rgb(121, 93, 163);\">Buffer</span>(prefixText); <span class=\"pl-c\" style=\"box-sizing: border-box; color: rgb(150, 152, 150);\">// allocate ahead of time</span>\n\n  <span class=\"pl-c\" style=\"box-sizing: border-box; color: rgb(150, 152, 150);\">// Creating a stream through which each file will pass</span>\n  <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">return</span> through.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">obj</span>(<span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">function</span>(<span class=\"pl-smi\" style=\"box-sizing: border-box;\">file</span>, <span class=\"pl-smi\" style=\"box-sizing: border-box;\">enc</span>, <span class=\"pl-smi\" style=\"box-sizing: border-box;\">cb</span>) {\n    <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">if</span> (file.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">isNull</span>()) {\n      <span class=\"pl-c\" style=\"box-sizing: border-box; color: rgb(150, 152, 150);\">// return empty file</span>\n      <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">return</span> <span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">cb</span>(<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">null</span>, file);\n    }\n    <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">if</span> (file.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">isBuffer</span>()) {\n      file.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">contents</span> <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">=</span> Buffer.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">concat</span>([prefixText, file.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">contents</span>]);\n    }\n    <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">if</span> (file.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">isStream</span>()) {\n      file.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">contents</span> <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">=</span> file.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">contents</span>.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">pipe</span>(<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">prefixStream</span>(prefixText));\n    }\n\n    <span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">cb</span>(<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">null</span>, file);\n\n  });\n\n}\n\n<span class=\"pl-c\" style=\"box-sizing: border-box; color: rgb(150, 152, 150);\">// Exporting the plugin main function</span>\n<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">module</span>.<span class=\"pl-c1\" style=\"box-sizing: border-box; color: rgb(0, 134, 179);\">exports</span> <span class=\"pl-k\" style=\"box-sizing: border-box; color: rgb(167, 29, 93);\">=</span> gulpPrefixer;</pre></div>"
+                },
+                "style": {}
+              }
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {}
+      }
+    },
+    "11": {
+      "title": "Third party",
+      "id": 27,
+      "ideas": {
+        "1": {
+          "title": "Through",
+          "id": 28,
+          "ideas": {
+            "2": {
+              "title": "https://www.npmjs.com/package/through2",
+              "id": 32
+            },
+            "3": {
+              "title": "Creates streams that are both readable and writeable",
+              "id": 33,
+              "ideas": {
+                "1": {
+                  "title": "through suggests that files go through two functions",
+                  "id": 34,
+                  "ideas": {
+                    "1": {
+                      "title": "Read",
+                      "id": 35
+                    },
+                    "2": {
+                      "title": "Write",
+                      "id": 36
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "-1": {
+      "title": "Resources",
+      "id": 8,
+      "ideas": {
+        "1": {
+          "title": "https://github.com/substack/stream-handbook",
+          "id": 9,
+          "ideas": {
+            "1": {
+              "title": "node stream handbook",
+              "id": 10
+            }
+          }
+        },
+        "2": {
+          "title": "https://github.com/wearefractal/vinyl-fs",
+          "id": 11,
+          "ideas": {
+            "1": {
+              "title": "vinyl-fs",
+              "id": 12,
+              "ideas": {
+                "1": {
+                  "title": "metadata with a file?",
+                  "id": 13
+                }
+              }
+            }
+          }
+        },
+        "5": {
+          "title": "https://github.com/gulpjs/gulp/blob/master/docs/API.md",
+          "id": 22,
+          "ideas": {
+            "1": {
+              "title": "gulp docs",
+              "id": 23
+            },
+            "2": {
+              "title": "https://github.com/isaacs/node-glob",
+              "id": 20,
+              "ideas": {
+                "1": {
+                  "title": "glob options",
+                  "id": 21
+                }
+              },
+              "attr": {
+                "style": {}
+              }
+            },
+            "3": {
+              "title": "https://github.com/gulpjs/gulp/blob/master/docs/API.md",
+              "id": 15,
+              "ideas": {
+                "1": {
+                  "title": "Gulp Api",
+                  "id": 16,
+                  "ideas": {
+                    "1": {
+                      "title": "gulp.dest",
+                      "id": 17
+                    },
+                    "2": {
+                      "title": "gulp.src ",
+                      "id": 18
+                    },
+                    "3": {
+                      "title": "...",
+                      "id": 19
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true,
+                    "style": {}
+                  }
+                }
+              },
+              "attr": {
+                "style": {}
+              }
+            },
+            "4": {
+              "title": "https://github.com/gulpjs/gulp/blob/master/docs/writing-a-plugin/README.md",
+              "id": 24,
+              "ideas": {
+                "1": {
+                  "title": "Writing a plugin",
+                  "id": 25
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "style": {}
+  }
+}

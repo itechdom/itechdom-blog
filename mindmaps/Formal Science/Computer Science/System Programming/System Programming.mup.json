@@ -1,0 +1,75 @@
+{
+  "title": "System Programming",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "14": {
+      "title": "Concepts",
+      "id": 176,
+      "ideas": {
+        "1": {
+          "title": "What is it?",
+          "id": 241,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<span style=\"color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;\">systems programming aims to produce software which provides services to the&nbsp;</span><a href=\"https://en.wikipedia.org/wiki/Computer_hardware\" title=\"Computer hardware\" style=\"color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\">computer hardware</a><span style=\"color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;\">&nbsp;(e.g.&nbsp;</span><a href=\"https://en.wikipedia.org/wiki/Defragmentation\" title=\"Defragmentation\" style=\"color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\">disk defragmenter</a><span style=\"color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;\">). It requires a greater degree of hardware awareness.</span>"
+            },
+            "style": {}
+          }
+        }
+      }
+    },
+    "-1": {
+      "title": "Resources",
+      "id": 233,
+      "ideas": {
+        "1": {
+          "title": "https://en.wikipedia.org/wiki/System_programming",
+          "id": 242,
+          "ideas": {
+            "1": {
+              "title": "System Programming",
+              "id": 243
+            }
+          }
+        }
+      }
+    },
+    "-11": {
+      "title": "Programmed in",
+      "id": 234,
+      "ideas": {
+        "1": {
+          "title": "Go",
+          "id": 236,
+          "ideas": {}
+        },
+        "2": {
+          "title": "Rust",
+          "id": 238
+        },
+        "3": {
+          "title": "C++",
+          "id": 239
+        },
+        "4": {
+          "title": "D",
+          "id": 240
+        },
+        "5": {
+          "title": "https://en.wikipedia.org/wiki/System_programming_language",
+          "id": 244
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "attachment": {
+      "contentType": "text/html",
+      "content": "<div><b><br></b></div>"
+    },
+    "style": {}
+  }
+}

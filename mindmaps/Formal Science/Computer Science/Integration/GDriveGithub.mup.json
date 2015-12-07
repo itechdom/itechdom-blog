@@ -1,0 +1,116 @@
+{
+  "title": "GDriveGithub",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "What I want",
+      "id": 6,
+      "attr": {
+        "attachment": {
+          "contentType": "text/html",
+          "content": "I want to integrate github with GDrive, so that everytime I add a new file to GDrive it should commit it to Github and vice versa."
+        },
+        "style": {}
+      }
+    },
+    "2": {
+      "title": "What I need",
+      "id": 10,
+      "ideas": {
+        "1": {
+          "title": "Listen to changes/ Perform actions",
+          "id": 11,
+          "ideas": {
+            "1": {
+              "title": "Once they occur",
+              "id": 15,
+              "ideas": {
+                "4": {
+                  "title": "Push Notification",
+                  "id": 24,
+                  "ideas": {
+                    "1": {
+                      "title": "https://developers.google.com/drive/web/push",
+                      "id": 22,
+                      "ideas": {},
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "2": {
+                      "title": "webhooks",
+                      "id": 19,
+                      "ideas": {
+                        "1": {
+                          "title": "http://blog.backand.com/github-webhook-node/",
+                          "id": 20,
+                          "ideas": {
+                            "1": {
+                              "title": "Example of webhooks with Github",
+                              "id": 21
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {}
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "A Server",
+          "id": 12
+        }
+      }
+    },
+    "-1": {
+      "title": "Resources",
+      "id": 4,
+      "ideas": {
+        "1": {
+          "title": "https://developers.google.com/drive/web/quickstart/js",
+          "id": 2,
+          "ideas": {
+            "1": {
+              "title": "REST Setup",
+              "id": 5
+            }
+          },
+          "attr": {
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "http://stackoverflow.com/questions/11801983/how-to-create-a-commit-and-push-into-repo-with-github-api-v3",
+          "id": 8,
+          "ideas": {
+            "1": {
+              "title": "How to push to Github",
+              "id": 9
+            }
+          }
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "attachment": {
+      "contentType": "text/html",
+      "content": "Welcome to GDI's intro to Javascript. My name is \"Sam\" it's Osama Alghanmi and with me is Pedro Meza. We work for Charter communication doing Javascript.&nbsp;<div><br></div><div><br></div><div><b>Figure out a group activity that breaks the ice: I think that introduction first and then for 15 mins we talk to each other in a group of (a number here depending on the number of students).&nbsp;</b></div><div><b><br></b></div><div><b>\"This will enable us to break that first barrier\"</b></div><div><b><br></b></div><div><b><br></b></div>"
+    },
+    "style": {}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Ruby",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {},
+  "links": [
+    {
+      "ideaIdFrom": 264,
+      "ideaIdTo": 279,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ],
+  "attr": {
+    "style": {}
+  }
+}

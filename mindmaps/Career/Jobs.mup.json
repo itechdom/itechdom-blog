@@ -1,0 +1,277 @@
+{
+  "title": "Jobs",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Types",
+      "id": 3,
+      "ideas": {
+        "1": {
+          "title": "Remote",
+          "id": 4,
+          "ideas": {
+            "1": {
+              "title": "Front-end",
+              "id": 5,
+              "ideas": {
+                "1": {
+                  "title": "JavaScript",
+                  "id": 6,
+                  "ideas": {
+                    "1": {
+                      "title": "Angularjs",
+                      "id": 23,
+                      "ideas": {
+                        "1": {
+                          "title": "https://weworkremotely.com/jobs/2056-front-end-engineer",
+                          "id": 24,
+                          "ideas": {
+                            "1": {
+                              "title": "restuarnat + full time angular",
+                              "id": 25
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Hybrid Mobile",
+              "id": 9
+            },
+            "3": {
+              "title": "Full Stack",
+              "id": 21,
+              "ideas": {
+                "1": {
+                  "title": "Ezra's company",
+                  "id": 22
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "-10": {
+      "title": "Resources",
+      "id": 2,
+      "attr": {
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "Flex jobs",
+          "id": 10,
+          "ideas": {
+            "1": {
+              "title": "https://www.flexjobs.com/",
+              "id": 14,
+              "ideas": {
+                "1": {
+                  "title": "get Shawn's credentials",
+                  "id": 15
+                },
+                "2": {
+                  "title": "$29.95",
+                  "id": 16,
+                  "ideas": {
+                    "1": {
+                      "title": "3 months",
+                      "id": 17
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "We work remotley",
+          "id": 12,
+          "ideas": {
+            "1": {
+              "title": "https://weworkremotely.com/",
+              "id": 13
+            }
+          }
+        },
+        "4": {
+          "title": "Nomad's List",
+          "id": 19,
+          "ideas": {
+            "1": {
+              "title": "https://nomadlist.com/",
+              "id": 18,
+              "attr": {
+                "style": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 60,
+      "ideaIdTo": 54,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 243,
+      "ideaIdTo": 253,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 293,
+      "ideaIdTo": 291,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 352,
+      "ideaIdTo": 254,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 518,
+      "ideaIdTo": 510,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 559,
+      "ideaIdTo": 573,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 607,
+      "ideaIdTo": 573,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 629,
+      "ideaIdTo": 630,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 647,
+      "ideaIdTo": 646,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 663,
+      "ideaIdTo": 668,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 666,
+      "ideaIdTo": 684,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 1006,
+      "ideaIdTo": 1003,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 1008,
+      "ideaIdTo": 876,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 1047,
+      "ideaIdTo": 1082,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    }
+  ],
+  "attr": {
+    "style": {}
+  }
+}
