@@ -1,0 +1,4 @@
+//overriding the path to the font files
+//TODO: figure out a way to do this in webpack
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";

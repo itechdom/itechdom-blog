@@ -1,0 +1,43 @@
+﻿// Text
+// --------------------------------------------------
+
+// order status (in stock, shipped, sent to warehouse)
+.status {
+	font-size: 11px;
+	text-transform: uppercase;
+	color: $gray2;
+	font-weight: bold;
+}
+
+// backorder status (expected delivery)
+.status--alert {
+	@extend .status; 
+	color: $alert-color;
+}
+
+// Main Product Title and Order # (Order 6456635, Rimadyl 100mg 60 chewables)
+.title {
+	font-size: 16px;
+	color: $primary-color;
+	font-weight: bold;
+}
+
+.title--small {
+	@extend .title;
+	font-size: 14px;
+}
+
+// titles for information (Ordered on, Qty, Total)
+.info-title {
+	color: $gray4;
+}
+
+// product and order information (08/18/15, 02, $48)
+.info {
+	font-size: 14px;
+}
+.rollup-title {
+	font-size: 30px;
+	color: $rollup-color;
+	line-height: 1.1;
+}

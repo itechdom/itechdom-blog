@@ -1,0 +1,28 @@
+//////////////////////////////////////////////////////
+/// <input data-provide="datepicker">
+//////////////////////////////////////////////////////
+.date-input {
+  @extend .text-input;
+
+  input {
+    @extend .col-sm-6;
+  }
+}
+
+.datepicker {
+
+  @include font-medium();
+
+  &.dropdown-menu {
+    font-size: 17px;
+  }
+
+  .day {
+    color: $blue;
+
+    &.old, &.new {
+      color: $lightGrey;
+    }
+  }
+
+}
