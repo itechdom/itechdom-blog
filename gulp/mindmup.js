@@ -8,19 +8,50 @@ var gulp = require('gulp');
 var data = require('gulp-data');
 var path = require('path');
 var concat = require('gulp-concat');
+var flatten = require('flat');
 
 module.exports = function(options) {
 
-      gulp.task('test:mindmap', function() {
-		return gulp.src('./mindmaps/**/*.mup.json')
+      gulp.task('test:mindmap', function(options) {
+	      	function processMindmap(mindmap){
+			//flatten the json
+			//iterate over all keys
+			//strip out the numbers and rejoin again
+			//count the number of ideas in the key
+			//indent accordingly
+			//store into a variable
+			//write out that variable 
+			var flatMindmap = flatten(mindmap);
+			var fileArr = [];
+			fileArr[{title:flatMindmap.title,content:flatMindmap.content,indent:0}];
+			for(var key in flatMindmap){
+				//determine the level of indentation
+				//By counting the number of ideas occurences
+				var pushedContent = {};
+				var indentLevel = key.split("ideas").length-1;
+				pushedContent.indent = indentLevel;
+				var keyArr = key.split('.');
+				var keyName = keyArr[keyArr.length-1];
+				switch(keyName){
+					case "title":
+						//add proper formatting here 
+						pushedContent.title = "#"+flatMindmap[key];
+						break;
+					case "content":
+						//add proper formatting here
+						pushedContent.content = flatMindmap[key];
+						break;
+				}
+			}
+		}
+		function parseMindmap(file){
+			var mindmap = JSON.parse(String(file.contents));
+			return mindmap;
+		}
+		return gulp.src('./mindmaps/Branchit.mup.json')
 			.pipe(data(function(file) {
-				var mindmap = JSON.parse(String(file.contents));
-				var title = mindmap.title;
-				var ideas = mindmap.ideas;
-				var condensed = {};
-				condensed['title'] = title;
-				condensed['idea'] = ideas;
-				file.contents = new Buffer(JSON.stringify(condensed));
+				var mindmap = parseMindmap(file);
+				var content = processMindmap(mindmap);
 			}))
 			//.pipe(concat('ideas.json'))
 			.pipe(gulp.dest('./test-map/output.json'));
