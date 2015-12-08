@@ -7,14 +7,23 @@
 var gulp = require('gulp');
 var data = require('gulp-data');
 var path = require('path');
+var concat = require('gulp-concat');
 
 module.exports = function(options) {
 
       gulp.task('test:mindmap', function() {
 		return gulp.src('./mindmaps/**/*.mup.json')
-			.pipe(data(function(file,cb) {
-			file.contents = new Buffer("hello");
-			})).pipe(gulp.dest('./test-map/'));
+			.pipe(data(function(file) {
+				var mindmap = JSON.parse(String(file.contents));
+				var title = mindmap.title;
+				var ideas = mindmap.ideas;
+				var condensed = {};
+				condensed['title'] = title;
+				condensed['idea'] = ideas;
+				file.contents = new Buffer(JSON.stringify(condensed));
+			}))
+			//.pipe(concat('ideas.json'))
+			.pipe(gulp.dest('./test-map/output.json'));
 	});
 
 };
