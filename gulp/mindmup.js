@@ -66,7 +66,7 @@ module.exports = function(options) {
 			})
 			return f;
 		}
-		return gulp.src('./mindmaps/Branchit.mup.json')
+		return gulp.src('./mindmaps/**/*.mup.json')
 			.pipe(data(function(file) {
 				var mindmap = parseMindmap(file);
 				var content = processMindmap(mindmap);
