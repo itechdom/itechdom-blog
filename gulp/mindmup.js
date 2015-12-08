@@ -78,7 +78,7 @@ module.exports = function(options) {
 			.pipe(rename(function (path) {
 				path.extname = ".md"
 			}))
-			.pipe(gulp.dest('./test-map'));
+			.pipe(gulp.dest('./blog'));
 	});
 
 };
