@@ -9,6 +9,8 @@ var data = require('gulp-data');
 var path = require('path');
 var concat = require('gulp-concat');
 var flatten = require('flat');
+var rename = require("gulp-rename");
+
 
 module.exports = function(options) {
 
@@ -50,16 +52,34 @@ module.exports = function(options) {
 			var mindmap = JSON.parse(String(file.contents));
 			return mindmap;
 		}
+		function convertToMarkdown(mindmap){
+			var f = "";
+			mindmap.map((idea)=>{
+				if(idea.title && idea.indent){
+				f+='&nbsp'.repeat(idea.indent);
+				f += idea.title;
+				f+="\n";
+				}
+				if(idea.content && idea.indent){
+				f+='&nbsp'.repeat(idea.indent);
+				f += idea.content;
+				f+="\n";
+				}
+			})
+			return f;
+		}
 		return gulp.src('./mindmaps/Branchit.mup.json')
 			.pipe(data(function(file) {
 				var mindmap = parseMindmap(file);
 				var content = processMindmap(mindmap);
-				var finalContent = JSON.stringify(content);
-				console.log(finalContent);
+				var finalContent = convertToMarkdown(content);
 				file.contents = new Buffer(finalContent);
 			}))
 			//.pipe(concat('ideas.json'))
-			.pipe(gulp.dest('./test-map/output.json'));
+			.pipe(rename(function (path) {
+				path.extname = ".md"
+			}))
+			.pipe(gulp.dest('./test-map'));
 	});
 
 };
