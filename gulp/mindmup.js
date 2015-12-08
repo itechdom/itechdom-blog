@@ -42,7 +42,9 @@ module.exports = function(options) {
 						pushedContent.content = flatMindmap[key];
 						break;
 				}
+				fileArr.push(pushedContent);
 			}
+			return fileArr;
 		}
 		function parseMindmap(file){
 			var mindmap = JSON.parse(String(file.contents));
@@ -52,6 +54,9 @@ module.exports = function(options) {
 			.pipe(data(function(file) {
 				var mindmap = parseMindmap(file);
 				var content = processMindmap(mindmap);
+				var finalContent = JSON.stringify(content);
+				console.log(finalContent);
+				file.contents = new Buffer(finalContent);
 			}))
 			//.pipe(concat('ideas.json'))
 			.pipe(gulp.dest('./test-map/output.json'));
