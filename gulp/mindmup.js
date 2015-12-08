@@ -12,9 +12,9 @@ module.exports = function(options) {
 
       gulp.task('test:mindmap', function() {
 		return gulp.src('./mindmaps/**/*.mup.json')
-			.pipe(data(function(file) {
-			//console.log(String(file.contents));
-			}))
+			.pipe(data(function(file,cb) {
+			file.contents = new Buffer("hello");
+			})).pipe(gulp.dest('./test-map/'));
 	});
 
 };
