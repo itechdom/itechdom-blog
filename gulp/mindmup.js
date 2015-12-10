@@ -57,6 +57,7 @@ module.exports = function(options) {
 			mindmap.map((idea)=>{
 				if(idea.title && idea.indent){
 				if(idea.indent >= 1 || idea.indent <=3){
+					var head = "#".repeat(idea.indent);
 					f+="#".repeat(idea.indent)
 				}
 				f += idea.title;
