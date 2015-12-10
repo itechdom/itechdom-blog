@@ -1,3 +1,11 @@
+#Concepts
+#Event streams
+#Vinyl files
+#Globs
+#Node Streams
+#Regex
+#Plugins
+#What does a good plugin look like?
 * <h3 style="box-sizing: border-box; margin-top: 1em; margin-bottom: 16px; line-height: 1.43; font-size: 1.5em; position: relative; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;">What does a good plugin look like?</h3><div class="highlight highlight-js" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);"><span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// through2 is a thin wrapper around node transform streams</span>
 <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">var</span> through <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">require</span>(<span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>through2<span class="pl-pds" style="box-sizing: border-box;">'</span></span>);
 <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">var</span> gutil <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">require</span>(<span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>gulp-util<span class="pl-pds" style="box-sizing: border-box;">'</span></span>);
@@ -41,3 +49,27 @@
 
 <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// Exporting the plugin main function</span>
 <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">module</span>.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">exports</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> gulpPrefixer;</pre></div>
+#Third party
+#Through
+#https://www.npmjs.com/package/through2
+#Creates streams that are both readable and writeable
+#through suggests that files go through two functions
+#Read
+#Write
+#Resources
+#https://github.com/substack/stream-handbook
+#node stream handbook
+#https://github.com/wearefractal/vinyl-fs
+#vinyl-fs
+#metadata with a file?
+#https://github.com/gulpjs/gulp/blob/master/docs/API.md
+#gulp docs
+#https://github.com/isaacs/node-glob
+#glob options
+#https://github.com/gulpjs/gulp/blob/master/docs/API.md
+#Gulp Api
+#gulp.dest
+#gulp.src 
+#...
+#https://github.com/gulpjs/gulp/blob/master/docs/writing-a-plugin/README.md
+#Writing a plugin
