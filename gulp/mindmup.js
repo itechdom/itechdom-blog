@@ -37,7 +37,7 @@ module.exports = function(options) {
 				switch(keyName){
 					case "title":
 						//add proper formatting here 
-						pushedContent.title = "#"+flatMindmap[key];
+						
 						break;
 					case "content":
 						//add proper formatting here
@@ -56,10 +56,16 @@ module.exports = function(options) {
 			var f = "";
 			mindmap.map((idea)=>{
 				if(idea.title && idea.indent){
+					if(idea.indent >= 1){
+						f+="* ";
+					}
 				f += idea.title;
 				f+="\n";
 				}
 				if(idea.content && idea.indent){
+					if(idea.indent >= 1){
+						f+="* ";
+					}
 				f += "* ";
 				f += idea.content;
 				f+="\n";
@@ -74,7 +80,6 @@ module.exports = function(options) {
 				var finalContent = convertToMarkdown(content);
 				file.contents = new Buffer(finalContent);
 			}))
-			//.pipe(concat('ideas.json'))
 			.pipe(rename(function (path) {
 				path.extname = ".md"
 			}))
