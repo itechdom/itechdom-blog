@@ -56,11 +56,13 @@ module.exports = function(options) {
 			var f = "";
 			mindmap.map((idea)=>{
 				if(idea.title && idea.indent){
+				if(idea.indent >= 1 || idea.indent <=3){
+					f+="#".repeat(idea.indent)
+				}
 				f += idea.title;
 				f+="\n";
 				}
 				if(idea.content && idea.indent){
-				f += "* ";
 				f += idea.content;
 				f+="\n";
 				}
