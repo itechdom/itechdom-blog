@@ -56,9 +56,6 @@ module.exports = function(options) {
 			var f = "";
 			mindmap.map((idea)=>{
 				if(idea.title && idea.indent){
-					if(idea.indent >= 1){
-						f+="* ";
-					}
 				f += idea.title;
 				f+="\n";
 				}
@@ -66,7 +63,6 @@ module.exports = function(options) {
 					if(idea.indent >= 1){
 						f+="* ";
 					}
-				f += "* ";
 				f += idea.content;
 				f+="\n";
 				}

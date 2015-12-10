@@ -1,4 +1,4 @@
-* * React ui builder
-* * functional programming
-* * https://support.google.com/webmasters/answer/189077?hl=en<div>https://support.google.com/webmasters/answer/182192<br></div><div>https://developers.google.com/webmasters/ajax-crawling/docs/getting-started<br></div><div>http://searchengineland.com/the-ultimate-guide-to-multilingual-and-multiregional-seo-157838<br></div>
-* * <div>http://pcpartpicker.com/user/alanhenry/saved/1x7t</div><div>http://www.amazon.com/gp/offer-listing/B009HP42J4/ref=dp_olp_used?ie=UTF8&amp;condition=used</div><div>http://www.amazon.com/gp/offer-listing/B000R2GC08/ref=sr_pi_pm_mupnf_1_8?s=pc&amp;ie=UTF8&amp;qid=1396791179&amp;sr=1-8&amp;keywords=internal+hard+drive&amp;condition=used</div><div>http://www.amazon.com/AMD-FD6300WMHKBOX-FX-6300-Processor-Edition/dp/B009O7YORK</div><div>http://pcpartpicker.com/user/alanhenry/saved/1x6N</div>
+* React ui builder
+* functional programming
+* https://support.google.com/webmasters/answer/189077?hl=en<div>https://support.google.com/webmasters/answer/182192<br></div><div>https://developers.google.com/webmasters/ajax-crawling/docs/getting-started<br></div><div>http://searchengineland.com/the-ultimate-guide-to-multilingual-and-multiregional-seo-157838<br></div>
+* <div>http://pcpartpicker.com/user/alanhenry/saved/1x7t</div><div>http://www.amazon.com/gp/offer-listing/B009HP42J4/ref=dp_olp_used?ie=UTF8&amp;condition=used</div><div>http://www.amazon.com/gp/offer-listing/B000R2GC08/ref=sr_pi_pm_mupnf_1_8?s=pc&amp;ie=UTF8&amp;qid=1396791179&amp;sr=1-8&amp;keywords=internal+hard+drive&amp;condition=used</div><div>http://www.amazon.com/AMD-FD6300WMHKBOX-FX-6300-Processor-Edition/dp/B009O7YORK</div><div>http://pcpartpicker.com/user/alanhenry/saved/1x6N</div>
