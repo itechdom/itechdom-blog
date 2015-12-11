@@ -1,21 +1,18 @@
-//this is the main todo file
+//this is the main blog file
 var $ = require('jquery');
 var Rx = require('rx');
-var model = require('./todo.model.js');
-var view = require('./todo.view.js');
-var actions = require("./todo.actions.js");
+var view = require('./blog.view.js');
+var actions = require("./blog.actions.js");
 
-class todoMain{
+class blogMain{
 
 	constructor(){
 
 		this.actions = actions;
 		this.view = view;
-		this.model = model;
-
 		actions.request$.subscribe(()=>{
-			view.render(data);
+			view.render();
 		});
 	}
 }
-module.exports = new todoMain();
+module.exports = new blogMain();

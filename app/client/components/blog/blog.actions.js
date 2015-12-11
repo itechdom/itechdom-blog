@@ -9,7 +9,7 @@ class actionMain{
     constructor(){
         return {
             request$: clientActions['changeRoute$'].filter((d)=> {
-                return d == "/todo";
+                return d == "/blog";
             }),
             viewLoaded$: Rx.Observable.fromEvent(dispatcher.customEvent,'todo.viewLoaded$'),
             dataLoaded$:Rx.Observable.fromEvent(dispatcher.customEvent,'todo.dataLoaded$'),

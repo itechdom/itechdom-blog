@@ -27,5 +27,5 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 });
 
 gulp.task('default', function(done){
-  sync('webpack:build-dev', 'serve:client','serve:server', 'watch', done);
+  sync('webpack:build-dev', 'serve:client', 'watch', done);
 });
