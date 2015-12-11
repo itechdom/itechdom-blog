@@ -14,9 +14,7 @@ var Vue = require('vue');
 // This should provide declarative HTML in general
 class todoView {
 
-
 	render(){
-
 		var ht = require('./todo.html');
 		$('todo').html(ht);
 		var message = "hello, Vue.js!";
@@ -28,7 +26,6 @@ class todoView {
 			    message: 'Hello Vue.js!'
 			}
 		});
-		
 	}
 	constructor() {
 
