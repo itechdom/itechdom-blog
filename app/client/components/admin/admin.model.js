@@ -1,7 +1,7 @@
 var Rx = require('rx');
-var actions = require('./todo.actions.js');
+var actions = require('./admin.actions.js');
 
-class todoModel{
+class adminModel{
 
 	constructor() {
 		this.schema = {
@@ -9,21 +9,21 @@ class todoModel{
 			completed:"true|false"
 		}
 		//implement all the actions
-		actions.addTodo$.subscribe((data)=>{
-			addTodo(data);
+		actions.addModule$.subscribe((data)=>{
+			addModule(data);
 		})
 	}
-	getTodo(){
-		return $.get("http://localhost:4000/todo");
+	getModule(){
+		return $.get("http://localhost:4000/admin");
 	}
-	insertTodo(todo){
+	insertModule(module){
 
 	}
-	updateTodo(id){
+	updateModule(id){
 
 	}
-	deleteTodo(id){
+	deleteModule(id){
 
 	}
 }
-module.exports = new todoModel();
+module.exports = new adminModel();

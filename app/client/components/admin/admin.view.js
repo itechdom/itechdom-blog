@@ -1,8 +1,8 @@
-//this is the main todo file
+//this is the main admin file
 var $ = require('jquery');
 var Rx = require('rx');
-var actions = require('./todo.actions.js');
-var model = require('./todo.model.js');
+var actions = require('./admin.actions.js');
+var model = require('./admin.model.js');
 var dispatcher = require('../lib/dispatcher/dispatcher.js');
 var Vue = require('vue');
 
@@ -12,11 +12,11 @@ var Vue = require('vue');
 // Data binding, just pass data to the compile function to bind data to it? what about repeater or other attributed components?
 // Components attach themselves to either an attribute or custom element nesting?
 // This should provide declarative HTML in general
-class todoView {
+class adminView {
 
 	render(){
-		var ht = require('./todo.html');
-		$('todo').html(ht);
+		var ht = require('./admin.html');
+		$('admin').html(ht);
 		var message = "hello, Vue.js!";
 
 		//initialize Vue
@@ -33,4 +33,4 @@ class todoView {
 }
 
 
-module.exports = new todoView();
+module.exports = new adminView();

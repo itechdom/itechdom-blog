@@ -8,11 +8,12 @@ var debug = require('../utils/debugger/debugger.js');
 var dispatcher = require('../utils/dispatcher/dispatcher.js');
 
 
+//admin serves as a verifier for the request using acl and after that it adds routing and request forwarding based on the components registered
 class adminMain{
 
 	constructor(){
 
-		router.model.registerRoute("/test");
+		router.model.registerRoute("/admin");
 		this.actions = actions;
 		this.model = model;
 		this.view = view;

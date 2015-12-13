@@ -9,7 +9,7 @@ class actionMain{
     constructor(){
         //All the default actions for this app
         var request = serverActions['request$'].filter((req)=>{
-            return req.url == "/blog";
+            return req.url == "/user";
         });
         return {
             request$:request,
@@ -25,8 +25,8 @@ class actionMain{
             delete$:request.filter((req)=>{
                 return req.method == 'DELETE';
             }),
-            input$:Rx.Observable.fromEvent(dispatcher.customEvent,'blog.input$'),
-            output$:Rx.Observable.fromEvent(dispatcher.customEvent,'blog.output$')
+            input$:Rx.Observable.fromEvent(dispatcher.customEvent,'user.input$'),
+            output$:Rx.Observable.fromEvent(dispatcher.customEvent,'user.output$')
        }
     }
 }

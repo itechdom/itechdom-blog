@@ -1,14 +1,14 @@
 'use strict';
 var Rx = require('rx');
-var model = require('./blog.model.js');
-var view = require('./blog.view.js');
+var model = require('./user.model.js');
+var view = require('./user.view.js');
 var router = require('../utils/router/router.js');
-var actions = require('./blog.actions.js');
+var actions = require('./user.actions.js');
 var debug = require('../utils/debugger/debugger.js');
 var dispatcher = require('../utils/dispatcher/dispatcher.js');
 
 
-class blogMain{
+class userMain{
 
 	constructor(){
 
@@ -18,8 +18,8 @@ class blogMain{
 		this.view = view;
 
 		actions.get$.subscribe((req)=>{
-			this.model.getBlog().then((blogs)=>{
-				this.view.render(blogs);
+			this.model.getUser().then((users)=>{
+				this.view.render(users);
 			});
 		})
 
@@ -27,5 +27,5 @@ class blogMain{
 	}
 }
 
-module.exports = new blogMain();
+module.exports = new userMain();
 

@@ -14,21 +14,21 @@ class adminModel{
 		this.repo = orm.repo();
 		this.model = mongoose.model('admins', this.schema);
 	}
-	getAdmin(){
+	getModule(){
 		var query = this.model.find({});
 		var callback = query.exec();
 		return callback;
 	}
-	insertAdmin(){
+	insertModule(){
 		var admin = new this.model({title:"hi",completed:false});
 		var callback = admin.save();
 		return callback;
 	}
-	updateAdmin(admin){
+	updateModule(admin){
 
 	}
-	deleteAdmin(admin){
-		//var admin = this.model.findByIdAndRemove()
+	deleteModule(admin){
+
 	}
 }
 module.exports = new adminModel();

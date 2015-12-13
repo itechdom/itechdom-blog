@@ -1,14 +1,13 @@
-//this is the main todo file
+//this is the main admin file
 var $ = require('jquery');
 var Rx = require('rx');
-var model = require('./todo.model.js');
-var view = require('./todo.view.js');
-var actions = require("./todo.actions.js");
+var model = require('./admin.model.js');
+var view = require('./admin.view.js');
+var actions = require("./admin.actions.js");
 
-class todoMain{
+class adminMain{
 
 	constructor(){
-
 		this.actions = actions;
 		this.view = view;
 		this.model = model;
@@ -18,4 +17,4 @@ class todoMain{
 		});
 	}
 }
-module.exports = new todoMain();
+module.exports = new adminMain();
