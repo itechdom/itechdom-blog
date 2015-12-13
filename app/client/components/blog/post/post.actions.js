@@ -9,11 +9,11 @@ class actionMain{
     constructor(){
         return {
             request$: clientActions['changeRoute$'].filter((d)=> {
-                return d == "/todo";
+                return d == "/blog/1";
             }),
-            viewLoaded$: Rx.Observable.fromEvent(dispatcher.customEvent,'todo.viewLoaded$'),
-            dataLoaded$:Rx.Observable.fromEvent(dispatcher.customEvent,'todo.dataLoaded$'),
-	        addTodo$:Rx.Observable.fromEvent(dispatcher.customEvent,'todo.addTodo$')
+            viewLoaded$: Rx.Observable.fromEvent(dispatcher.customEvent,'post.viewLoaded$'),
+            dataLoaded$:Rx.Observable.fromEvent(dispatcher.customEvent,'post.dataLoaded$'),
+	        addTodo$:Rx.Observable.fromEvent(dispatcher.customEvent,'post.addTodo$')
         }
     }
 }

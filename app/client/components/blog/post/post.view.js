@@ -1,22 +1,14 @@
-//this is the main todo file
+//this is the main post file
 var $ = require('jquery');
 var Rx = require('rx');
-var actions = require('./todo.actions.js');
-var model = require('./todo.model.js');
+var actions = require('./post.actions.js');
 var dispatcher = require('../lib/dispatcher/dispatcher.js');
-var Vue = require('vue');
 
-
-// I want to be able to import some components that manipulate HTML
-// The basic features I am looking at is:
-// Data binding, just pass data to the compile function to bind data to it? what about repeater or other attributed components?
-// Components attach themselves to either an attribute or custom element nesting?
-// This should provide declarative HTML in general
-class todoView {
+class postView {
 
 	render(){
-		var ht = require('./todo.html');
-		$('todo').html(ht);
+		var ht = require('./post.html');
+		$('post').html(ht);
 		var message = "hello, Vue.js!";
 
 		//initialize Vue
@@ -33,4 +25,4 @@ class todoView {
 }
 
 
-module.exports = new todoView();
+module.exports = new postView();
