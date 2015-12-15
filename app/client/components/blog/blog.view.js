@@ -9,10 +9,11 @@ class blogView {
 		var header = require('../../src/views/blog/header.html');
 		var content = require('../../src/views/blog/index.html');
 		var footer = require('../../src/views/blog/footer.html');
+		var template  = require('./blog.html');
+		$('app').html(template);
 		$('blog-header').html(header);
 		$('blog').html(content);
 		$('blog-footer').html(footer);
-
 	}
 	constructor() {
 
