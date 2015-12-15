@@ -51,6 +51,7 @@
     "css-loader": "^0.16.0",
     "del": "^2.0.2",
     "eslint": "^1.2.1",
+    "font-awesome": "^4.5.0",
     "glob": "^5.0.14",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
