@@ -37,7 +37,7 @@ module.exports = function(options) {
 				switch(keyName){
 					case "title":
 						//add proper formatting here 
-						pushedContent.title = "#"+flatMindmap[key];
+						pushedContent.title = flatMindmap[key];
 						break;
 					case "content":
 						//add proper formatting here
@@ -58,9 +58,10 @@ module.exports = function(options) {
 				if(idea.title && idea.indent){
 				if(idea.indent >= 1 || idea.indent <=3){
 					var head = "#".repeat(idea.indent);
-					f+="#".repeat(idea.indent)
+					head += " ";
+					f+=head;
 				}
-				f += idea.title;
+				f+= idea.title;
 				f+="\n";
 				}
 				if(idea.content && idea.indent){

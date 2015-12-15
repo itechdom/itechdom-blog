@@ -25,6 +25,10 @@ module.exports = {
                 test: /\.scss$/,
                 loader: 'style!css!sass'
             },
+            { 
+		    test: /\.md$/, 
+		    loader: "html!markdown" 
+	    },
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules|bower_components)/,

@@ -7,17 +7,8 @@ var dispatcher = require('../lib/dispatcher/dispatcher.js');
 class postView {
 
 	render(){
-		var ht = require('./post.html');
-		$('post').html(ht);
-		var message = "hello, Vue.js!";
-
-		//initialize Vue
-		var demo = new Vue({
-			el: '#demo',
-		    	data: {
-			    message: 'Hello Vue.js!'
-			}
-		});
+		var branchit = require('../../../../blog/Branchit.mup.md');
+		$('app').html(branchit);
 	}
 	constructor() {
 
