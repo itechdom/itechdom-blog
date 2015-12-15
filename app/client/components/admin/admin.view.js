@@ -4,7 +4,6 @@ var Rx = require('rx');
 var actions = require('./admin.actions.js');
 var model = require('./admin.model.js');
 var dispatcher = require('../lib/dispatcher/dispatcher.js');
-var Vue = require('vue');
 
 
 // I want to be able to import some components that manipulate HTML
@@ -15,17 +14,8 @@ var Vue = require('vue');
 class adminView {
 
 	render(){
-		var ht = require('./admin.html');
-		$('admin').html(ht);
-		var message = "hello, Vue.js!";
-
-		//initialize Vue
-		var demo = new Vue({
-			el: '#demo',
-		    	data: {
-			    message: 'Hello Vue.js!'
-			}
-		});
+		var content = require('../../src/views/admin/admin.html');
+		$('admin').html(content);
 	}
 	constructor() {
 

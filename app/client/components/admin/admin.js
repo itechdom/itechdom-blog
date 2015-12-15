@@ -4,6 +4,7 @@ var Rx = require('rx');
 var model = require('./admin.model.js');
 var view = require('./admin.view.js');
 var actions = require("./admin.actions.js");
+var sidebar = require('./adminSidebar/adminSidebar.view.js')
 
 class adminMain{
 
@@ -13,7 +14,8 @@ class adminMain{
 		this.model = model;
 
 		actions.request$.subscribe(()=>{
-			view.render(data);
+			this.view.render();
+			sidebar.render();
 		});
 	}
 }

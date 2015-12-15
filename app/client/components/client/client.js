@@ -1,9 +1,12 @@
-var http = require('http');
-var server = http.createServer();
+//this is the main client file
+var $ = require('jquery');
+var Rx = require('rx');
+var actions = require("./client.actions.js");
 
-//plugin to routes here, or why not make this agnostic and leave it to the dispatcher to do that?
-server.listen(4000, '127.0.0.1');
+class clientMain{
 
-console.log("server is listening on 4000");
-
-module.exports = server;
+	constructor(){
+		this.actions = actions;
+	}
+}
+module.exports = new clientMain();

@@ -3,23 +3,19 @@ var actions = require('./admin.actions.js');
 
 class adminModel{
 
+	//the crud module operations stores the module we are supposed to access
 	constructor() {
 		this.schema = {
-			title:"title",
-			completed:"true|false"
+			module:"blog|user",
+			//... other info, not sure what it would be
 		}
-		//implement all the actions
-		actions.addModule$.subscribe((data)=>{
-			addModule(data);
-		})
 	}
 	getModule(){
 		return $.get("http://localhost:4000/admin");
 	}
-	insertModule(module){
 
-	}
-	updateModule(id){
+	//add a module to the backend based on users selections
+	insertModule(module){
 
 	}
 	deleteModule(id){
