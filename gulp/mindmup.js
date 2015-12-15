@@ -25,7 +25,8 @@ module.exports = function(options) {
 			//write out that variable 
 			var flatMindmap = flatten(mindmap);
 			var fileArr = [];
-			fileArr[{title:flatMindmap.title,content:flatMindmap.content,indent:0}];
+			//add the first title and content (title of the whole mindmap)
+			fileArr[0] = {title:flatMindmap.title,content:flatMindmap.content,indent:0};
 			for(var key in flatMindmap){
 				//determine the level of indentation
 				//By counting the number of ideas occurences
@@ -44,7 +45,9 @@ module.exports = function(options) {
 						pushedContent.content = flatMindmap[key];
 						break;
 				}
+				if(pushedContent.title || pushedContent.content){
 				fileArr.push(pushedContent);
+				}
 			}
 			return fileArr;
 		}
@@ -74,17 +77,25 @@ module.exports = function(options) {
 		return gulp.src('./mindmaps/**/*.mup.json')
 			.pipe(data(function(file) {
 				var mindmap = parseMindmap(file);
+				var finalContent = processMindmap(mindmap);
+				finalContent = JSON.stringify(finalContent);
+				file.contents = new Buffer(finalContent);
+			}))
+			.pipe(gulp.dest('./json-blog'))
+			.pipe(concat('all-blog.json'))
+			.pipe(gulp.dest('./json-blog'))
+			/**.pipe(data(function(file) {
+				var mindmap = parseMindmap(file);
 				var content = processMindmap(mindmap);
 				var finalContent = convertToMarkdown(content);
 				file.contents = new Buffer(finalContent);
 			}))
+			
 			.pipe(rename(function (path) {
 				path.extname = ".md"
 			}))
 			.pipe(gulp.dest('./blog'))
-			.pipe(concat('ideas.json'))
-			.pipe(gulp.dest('./blog'))
+			**/
 	});
 
 };
-
