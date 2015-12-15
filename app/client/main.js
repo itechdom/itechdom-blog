@@ -5,3 +5,5 @@ require("font-awesome/scss/font-awesome.scss");
 
 require("./components/blog/blog.js");
 require("./components/admin/admin.js");
+
+//we can register routes and debuggers here ...
