@@ -78,11 +78,12 @@ module.exports = function(options) {
 				var finalContent = convertToMarkdown(content);
 				file.contents = new Buffer(finalContent);
 			}))
-			//.pipe(concat('ideas.json'))
 			.pipe(rename(function (path) {
 				path.extname = ".md"
 			}))
-			.pipe(gulp.dest('./blog'));
+			.pipe(gulp.dest('./blog'))
+			.pipe(concat('ideas.json'))
+			.pipe(gulp.dest('./blog'))
 	});
 
 };
