@@ -2,9 +2,7 @@
 var Rx = require('rx');
 var model = require('./admin.model.js');
 var view = require('./admin.view.js');
-var router = require('../utils/router/router.js');
 var actions = require('./admin.actions.js');
-var debug = require('../utils/debugger/debugger.js');
 var dispatcher = require('../utils/dispatcher/dispatcher.js');
 
 
@@ -17,22 +15,16 @@ class adminMain{
 
 	constructor(){
 
-		router.model.registerRoute("/admin");
 		this.actions = actions;
 		this.model = model;
 		this.view = view;
 
 		actions.get$.subscribe((req)=>{
-			this.model.getTodo().then((admins)=>{
-				this.view.render(admins);
-				//notify people that we have done outputing the view
-			});
+
 		})
 
 		actions.post$.subscribe((req)=>{
-			this.model.insertTodo().then((admin)=>{
-				this.view.render(admin);
-			});
+
 		});
 
 		actions.update$.subscribe((req)=>{
@@ -42,8 +34,6 @@ class adminMain{
 		actions.delete$.subscribe((req)=>{
 
 		});
-
-		debug.model.registerComponent(this);
 	}
 }
 
