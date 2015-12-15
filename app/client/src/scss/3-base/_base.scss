@@ -96,23 +96,6 @@ select::-ms-expand{
 	display:none;
 }
 
-//// change default placeholder color
-//input::-webkit-input-placeholder {
-//	color: $gray-secondary !important;
-//}
-//
-//input:-moz-placeholder { /* Firefox 18- */
-//	color: $gray-secondary !important;
-//}
-//
-//input::-moz-placeholder {  /* Firefox 19+ */
-//	color: $gray-secondary !important;
-//}
-//
-//input:-ms-input-placeholder {
-//	color: $gray-secondary !important;
-//}
-
 // remove default focus styles from bootstrap form-control
 .form-control:focus {
 	border: none;
