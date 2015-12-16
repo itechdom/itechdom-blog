@@ -10,12 +10,14 @@ var path = require('path');
 var concat = require('gulp-concat');
 var flatten = require('flat');
 var rename = require("gulp-rename");
+var MongoClient = require('mongodb').MongoClient
+
 
 
 module.exports = function(options) {
 
-      gulp.task('test:mindmap', function(options) {
-	      	function processMindmap(mindmap){
+	gulp.task('test:mindmap', function(options) {
+		function processMindmap(mindmap){
 			//flatten the json
 			//iterate over all keys
 			//strip out the numbers and rejoin again
@@ -46,7 +48,7 @@ module.exports = function(options) {
 						break;
 				}
 				if(pushedContent.title || pushedContent.content){
-				fileArr.push(pushedContent);
+					fileArr.push(pushedContent);
 				}
 			}
 			return fileArr;
@@ -59,43 +61,64 @@ module.exports = function(options) {
 			var f = "";
 			mindmap.map((idea)=>{
 				if(idea.title && idea.indent){
-				if(idea.indent >= 1 || idea.indent <=3){
-					var head = "#".repeat(idea.indent);
-					head += " ";
-					f+=head;
-				}
-				f+= idea.title;
-				f+="\n";
+					if(idea.indent >= 1 || idea.indent <=3){
+						var head = "#".repeat(idea.indent);
+						head += " ";
+						f+=head;
+					}
+					f+= idea.title;
+					f+="\n";
 				}
 				if(idea.content && idea.indent){
-				f += idea.content;
-				f+="\n";
+					f += idea.content;
+					f+="\n";
 				}
 			})
 			return f;
 		}
+		function saveToDB(json){
+
+			var url = 'mongodb://localhost:27017/test';
+			MongoClient.connect(url, function(err, db) {
+				console.log("Connected correctly to server");
+				insertDocuments(db, function() {
+					db.close();
+				});
+			});
+			var insertDocuments = function(db, callback) {
+				// Get the documents collection 
+				var collection = db.collection('hello');
+				collection.insert(
+						{data:json}, function(err, result) {
+							callback(result);
+						});
+			}
+
+
+		}
 		return gulp.src('./mindmaps/**/*.mup.json')
-			.pipe(data(function(file) {
-				var mindmap = parseMindmap(file);
-				var finalContent = processMindmap(mindmap);
-				finalContent = JSON.stringify(finalContent);
-				file.contents = new Buffer(finalContent);
-			}))
-			.pipe(gulp.dest('./json-blog'))
-			.pipe(concat('all-blog.json'))
-			.pipe(gulp.dest('./json-blog'))
+						.pipe(data(function(file) {
+						var mindmap = parseMindmap(file);
+						var finalContent = processMindmap(mindmap);
+						saveToDB(finalContent);
+						finalContent = JSON.stringify(finalContent);
+						file.contents = new Buffer(finalContent);
+						}))
+						.pipe(gulp.dest('./json-blog'))
+						.pipe(concat('all-blog.json'))
+						.pipe(gulp.dest('./json-blog'))
 			/**.pipe(data(function(file) {
-				var mindmap = parseMindmap(file);
-				var content = processMindmap(mindmap);
-				var finalContent = convertToMarkdown(content);
-				file.contents = new Buffer(finalContent);
+			var mindmap = parseMindmap(file);
+			var content = processMindmap(mindmap);
+			var finalContent = convertToMarkdown(content);
+			file.contents = new Buffer(finalContent);
 			}))
-			
+
 			.pipe(rename(function (path) {
-				path.extname = ".md"
+			path.extname = ".md"
 			}))
 			.pipe(gulp.dest('./blog'))
-			**/
+					       **/
 	});
 
 };
