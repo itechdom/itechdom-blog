@@ -87,11 +87,12 @@ module.exports = function(options) {
 
 			var url = 'mongodb://localhost:27017/test';
 			MongoClient.connect(url, function(err, db) {
-				console.log("Connected correctly to server");
-				insertDocuments(db, function() {
-					db.close();
-				});
-			});
+				deleteDocuments(db,function(){
+					insertDocuments(db, function() {
+						db.close();
+					});
+				})
+							});
 			var insertDocuments = function(db, callback) {
 				// Get the documents collection 
 				var collection = db.collection('hello');
@@ -100,6 +101,15 @@ module.exports = function(options) {
 											   callback(result);
 										   });
 			}
+			var deleteDocuments = function(db, callback) {
+				// Get the documents collection 
+				var collection = db.collection('hello');
+				collection.remove(
+						{}, function(err, result) {
+											   callback(result);
+										   });
+			}
+
 
 
 		}
