@@ -12,6 +12,7 @@ var flatten = require('flat');
 var rename = require("gulp-rename");
 var MongoClient = require('mongodb').MongoClient
 var cheerio = require('cheerio');
+var count = 0;
 
 
 module.exports = function(options) {
@@ -24,7 +25,7 @@ module.exports = function(options) {
 			//count the number of ideas in the key
 			//indent accordingly
 			//store into a variable
-			//write out that variable 
+			//write out that variable
 			var flatMindmap = flatten(mindmap);
 			var fileArr = [];
 			//add the first title and content (title of the whole mindmap)
@@ -39,7 +40,7 @@ module.exports = function(options) {
 				var keyName = keyArr[keyArr.length-1];
 				switch(keyName){
 					case "title":
-						//add proper formatting here 
+						//add proper formatting here
 						pushedContent.title = flatMindmap[key];
 						break;
 					case "content":
@@ -92,27 +93,32 @@ module.exports = function(options) {
 					});
 			});
 			var insertDocuments = function(db, callback) {
-				// Get the documents collection 
+				// Get the documents collection
 				var collection = db.collection('hello');
 				collection.insert(
 						{data:json}, function(err, result) {
 											   callback(result);
 										   });
 			}
-			
+
 		}
 		return gulp.src('./mindmaps/**/*.mup.json')
 						.pipe(data(function(file) {
 						var mindmap = parseMindmap(file);
 						var finalContent = processMindmap(mindmap);
-						saveToDB(finalContent);
+						//saveToDB(finalContent);
 						finalContent = JSON.stringify(finalContent);
 						file.contents = new Buffer(finalContent);
 						}))
 						.pipe(gulp.dest('./json-blog'))
-						.pipe(concat('all-blog.json'))
+						.pipe(concat('all-blog.json',{newLine: ','}))
+						.pipe(data(function(file) {
+							var stringFileContent = String(file.contents);
+							stringFileContent = "["+stringFileContent;
+							stringFileContent = stringFileContent+"]";
+							file.contents = new Buffer(stringFileContent);
+						}))
 						.pipe(gulp.dest('./json-blog'))
 
-						});
-
-						};
+});
+};
