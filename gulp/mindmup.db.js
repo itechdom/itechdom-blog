@@ -11,6 +11,8 @@ var concat = require('gulp-concat');
 var flatten = require('flat');
 var rename = require("gulp-rename");
 var MongoClient = require('mongodb').MongoClient
+var url;
+var database;
 var cheerio = require('cheerio');
 var count = 0;
 
@@ -18,6 +20,33 @@ var count = 0;
 module.exports = function(options) {
 
 	gulp.task('mindmap:db', function(options) {
+
+		function init(){
+			url = 'mongodb://localhost:27017/test';
+			MongoClient.connect(url, function(err, db) {
+				database = db;
+			});
+			removeAllDocuments();
+		}
+
+		function removeAllDocuments(){
+			//remove the document first
+			var removeDocuments = function(db, callback) {
+				var collection = db.collection('hello');
+				collection.remove(
+					{}, function(err, result) {
+						callback(result);
+						});
+			}
+			removeDocuments(database, function() {
+				console.log("removed all documents");
+			});
+		}
+
+		init();
+
+
+
 		function processMindmap(mindmap){
 			//flatten the json
 			//iterate over all keys
@@ -86,11 +115,10 @@ module.exports = function(options) {
 		}
 		function saveToDB(json){
 
-			var url = 'mongodb://localhost:27017/test';
 			MongoClient.connect(url, function(err, db) {
-					insertDocuments(db, function() {
-						db.close();
-					});
+				insertDocuments(db, function() {
+					db.close();
+				});
 			});
 			var insertDocuments = function(db, callback) {
 				// Get the documents collection
@@ -106,19 +134,19 @@ module.exports = function(options) {
 						.pipe(data(function(file) {
 						var mindmap = parseMindmap(file);
 						var finalContent = processMindmap(mindmap);
-						//saveToDB(finalContent);
+						saveToDB(finalContent);
 						finalContent = JSON.stringify(finalContent);
 						file.contents = new Buffer(finalContent);
 						}))
 						.pipe(gulp.dest('./json-blog'))
 						.pipe(concat('all-blog.json',{newLine: ','}))
 						.pipe(data(function(file) {
-							var stringFileContent = String(file.contents);
-							stringFileContent = "["+stringFileContent;
-							stringFileContent = stringFileContent+"]";
-							file.contents = new Buffer(stringFileContent);
+						var stringFileContent = String(file.contents);
+						stringFileContent = "["+stringFileContent;
+						stringFileContent = stringFileContent+"]";
+						file.contents = new Buffer(stringFileContent);
 						}))
 						.pipe(gulp.dest('./json-blog'))
 
-});
-};
+						});
+						};
