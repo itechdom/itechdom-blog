@@ -8,7 +8,7 @@ class ormMain{
 
 	constructor(){
         console.log("hello");
-        mongoose.connect('mongodb://localhost:27017/todomvc');
+        mongoose.connect('mongodb://localhost:27017/test');
         this.db = mongoose.connection;
         this.db.on('error', console.error.bind(console, 'connection error:'));
         this.db.once('open', function (callback) {

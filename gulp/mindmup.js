@@ -11,7 +11,7 @@ var concat = require('gulp-concat');
 var flatten = require('flat');
 var rename = require("gulp-rename");
 var MongoClient = require('mongodb').MongoClient
-
+var cheerio = require('cheerio');
 
 
 module.exports = function(options) {
@@ -44,7 +44,14 @@ module.exports = function(options) {
 						break;
 					case "content":
 						//add proper formatting here
-						pushedContent.content = flatMindmap[key];
+						//
+        					var element = cheerio.load(flatMindmap[key]);
+						var fruits = [];
+						element('*').each(function(i, elem) {
+							 element(this).removeAttr('style');
+							 // fruits[i] = $(this).text();
+						});
+						pushedContent.content = element.html();
 						break;
 				}
 				if(pushedContent.title || pushedContent.content){
@@ -97,17 +104,17 @@ module.exports = function(options) {
 
 		}
 		return gulp.src('./mindmaps/**/*.mup.json')
-						.pipe(data(function(file) {
+					/**	.pipe(data(function(file) {
 						var mindmap = parseMindmap(file);
 						var finalContent = processMindmap(mindmap);
-						saveToDB(finalContent);
 						finalContent = JSON.stringify(finalContent);
 						file.contents = new Buffer(finalContent);
 						}))
-						.pipe(gulp.dest('./json-blog'))
+	/**					.pipe(gulp.dest('./json-blog'))
 						.pipe(concat('all-blog.json'))
 						.pipe(gulp.dest('./json-blog'))
-			/**.pipe(data(function(file) {
+						**/
+			.pipe(data(function(file) {
 			var mindmap = parseMindmap(file);
 			var content = processMindmap(mindmap);
 			var finalContent = convertToMarkdown(content);
@@ -118,7 +125,6 @@ module.exports = function(options) {
 			path.extname = ".md"
 			}))
 			.pipe(gulp.dest('./blog'))
-					       **/
 	});
 
 };

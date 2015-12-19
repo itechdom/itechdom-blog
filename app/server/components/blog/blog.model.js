@@ -8,11 +8,10 @@ class blogModel{
 
 	constructor() {
 		this.schema = mongoose.Schema({
-			title: String,
-			completed: Boolean
-		});
+			title: Object,
+		},{collection:'hello'});
 		this.repo = orm.repo();
-		this.model = mongoose.model('blogs', this.schema);
+		this.model = mongoose.model('hello', this.schema);
 	}
 	getBlog(){
 		var query = this.model.find({});

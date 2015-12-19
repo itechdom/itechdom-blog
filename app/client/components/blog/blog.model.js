@@ -1,29 +1,25 @@
 var Rx = require('rx');
-var actions = require('./todo.actions.js');
+var actions = require('./blog.actions.js');
 
-class todoModel{
+class blogModel{
 
 	constructor() {
 		this.schema = {
 			title:"title",
 			completed:"true|false"
 		}
-		//implement all the actions
-		actions.addTodo$.subscribe((data)=>{
-			addTodo(data);
-		})
 	}
-	getTodo(){
-		return $.get("http://localhost:4000/todo");
+	getBlog(){
+		return $.get("http://localhost:4000/blog");
 	}
-	insertTodo(todo){
+	insertBlog(blog){
 
 	}
-	updateTodo(id){
+	updateBlog(id){
 
 	}
-	deleteTodo(id){
+	deleteBlog(id){
 
 	}
 }
-module.exports = new todoModel();
+module.exports = new blogModel();

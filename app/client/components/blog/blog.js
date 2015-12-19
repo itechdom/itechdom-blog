@@ -3,6 +3,7 @@ var $ = require('jquery');
 var Rx = require('rx');
 var view = require('./blog.view.js');
 var actions = require("./blog.actions.js");
+var model = require("./blog.model.js");
 
 class blogMain{
 
@@ -10,8 +11,11 @@ class blogMain{
 
 		this.actions = actions;
 		this.view = view;
+		this.model = model;
 		actions.request$.subscribe(()=>{
-			view.render();
+			this.model.getBlog().then((data)=>{
+				this.view.render(data);
+			})
 		});
 	}
 }
