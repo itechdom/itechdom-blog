@@ -1,18 +1,14 @@
 import revealConnector from './revealConnector/reveal.connector.js';
-
-//this is the main zPresent file
 var $ = require('jquery');
 
-class zPresentView {
+class slidesView {
 
 	render(){
-		var template = require('./zPresent.html');
+		var template = require('./slides.html');
 		$('app').html(branchit);
 	}
 	constructor() {
 
 	}
 }
-
-
-module.exports = new zPresentView();
+module.exports = new slidesView();

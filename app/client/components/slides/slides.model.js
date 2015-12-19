@@ -1,4 +1,4 @@
-class zPresentModel{
+class slidesModel{
 
 	constructor() {
 		this.schema = {
@@ -6,17 +6,17 @@ class zPresentModel{
 			completed:"true|false"
 		}
 	}
-	getBlog(){
-		return $.get("http://localhost:4000/zPresent");
+	getSlides(){
+		return $.get("http://localhost:4000/slides");
 	}
-	insertBlog(zPresent){
+	insertSlides(slides){
 
 	}
-	updateBlog(id){
+	updateSlides(id){
 
 	}
-	deleteBlog(id){
+	deleteSlides(id){
 
 	}
 }
-module.exports = new zPresentModel();
+module.exports = new slidesModel();
