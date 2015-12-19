@@ -12,41 +12,12 @@ var flatten = require('flat');
 var rename = require("gulp-rename");
 var MongoClient = require('mongodb').MongoClient
 var url;
-var database;
 var cheerio = require('cheerio');
-var count = 0;
 
 
 module.exports = function(options) {
 
 	gulp.task('mindmap:db', function(options) {
-
-		function init(){
-			url = 'mongodb://localhost:27017/test';
-			MongoClient.connect(url, function(err, db) {
-				database = db;
-			});
-			removeAllDocuments();
-		}
-
-		function removeAllDocuments(){
-			//remove the document first
-			var removeDocuments = function(db, callback) {
-				var collection = db.collection('hello');
-				collection.remove(
-					{}, function(err, result) {
-						callback(result);
-						});
-			}
-			removeDocuments(database, function() {
-				console.log("removed all documents");
-			});
-		}
-
-		init();
-
-
-
 		function processMindmap(mindmap){
 			//flatten the json
 			//iterate over all keys
@@ -61,7 +32,6 @@ module.exports = function(options) {
 			fileArr[0] = {title:flatMindmap.title,content:flatMindmap.content,indent:0};
 			for(var key in flatMindmap){
 				//determine the level of indentation
-				//By counting the number of ideas occurences
 				var pushedContent = {};
 				var indentLevel = key.split("ideas").length-1;
 				pushedContent.indent = indentLevel;
@@ -114,22 +84,25 @@ module.exports = function(options) {
 			return f;
 		}
 		function saveToDB(json){
-
+			url = 'mongodb://localhost:27017/test';
 			MongoClient.connect(url, function(err, db) {
-				insertDocuments(db, function() {
-					db.close();
-				});
+				insertDocuments(db,function(){
+					db.close();	
+				})
 			});
 			var insertDocuments = function(db, callback) {
 				// Get the documents collection
 				var collection = db.collection('hello');
 				collection.insert(
-						{data:json}, function(err, result) {
-											   callback(result);
-										   });
+					{data:json}, function(err, result) {
+					callback(result);
+				});
+
 			}
 
-		}
+
+		};
+
 		return gulp.src('./mindmaps/**/*.mup.json')
 						.pipe(data(function(file) {
 						var mindmap = parseMindmap(file);
