@@ -27,7 +27,8 @@
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true
       }
     },
     "17": {
@@ -77,6 +78,20 @@
               "id": 248
             }
           }
+        },
+        "6": {
+          "title": "https://kripken.github.io/talks/wasm.html#/14",
+          "id": 249,
+          "ideas": {
+            "1": {
+              "title": "Slides explaining the process of converting javascript to asm.js through ecmascripten",
+              "id": 272
+            }
+          }
+        },
+        "7": {
+          "title": "https://hacks.mozilla.org/2015/12/compiling-to-webassembly-its-happening/",
+          "id": 273
         }
       }
     },
@@ -145,7 +160,8 @@
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true
       }
     },
     "-2": {
@@ -162,6 +178,10 @@
             }
           }
         }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {}
       }
     }
   },

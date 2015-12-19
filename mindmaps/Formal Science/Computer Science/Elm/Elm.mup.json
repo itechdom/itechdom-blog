@@ -153,6 +153,58 @@
           "attr": {
             "style": {}
           }
+        },
+        "6": {
+          "title": "https://pragmaticstudio.com/blog/2014/12/19/getting-started-with-elm",
+          "id": 90,
+          "ideas": {
+            "1": {
+              "title": "third part tutorials",
+              "id": 91
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {},
+        "position": [
+          58,
+          -143,
+          4
+        ]
+      }
+    },
+    "2": {
+      "title": "Packages",
+      "id": 85,
+      "attr": {
+        "position": [
+          56,
+          133,
+          3
+        ],
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "Signal",
+          "id": 86,
+          "ideas": {
+            "1": {
+              "title": "http://package.elm-lang.org/packages/elm-lang/core/3.0.0/Signal",
+              "id": 87
+            }
+          }
+        },
+        "2": {
+          "title": "Website",
+          "id": 88,
+          "ideas": {
+            "1": {
+              "title": "http://package.elm-lang.org/packages/elm-lang/core/3.0.0",
+              "id": 89
+            }
+          }
         }
       }
     },
@@ -201,14 +253,13 @@
                   "attr": {
                     "attachment": {
                       "contentType": "text/html",
-                      "content": "<span class=\"hljs-title\" style=\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">view</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\"> : </span><span class=\"hljs-type\" style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">Widget</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\"> -&gt; </span><span class=\"hljs-type\" style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">Element</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\">\n</span><span class=\"hljs-title\" style=\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">view</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\"> widget =\n    </span><span class=\"hljs-keyword\" style=\"color: rgb(204, 153, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">case</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\"> widget </span><span class=\"hljs-keyword\" style=\"color: rgb(204, 153, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">of</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\">\n      </span><span class=\"hljs-type\" style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">ScatterPlot</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\"> points -&gt;\n          viewScatterPlot points\n\n      </span><span class=\"hljs-type\" style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">LogData</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\"> logs -&gt;\n          flow down (map viewLog logs)\n\n      </span><span class=\"hljs-type\" style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">TimePlot</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\"> occurances -&gt;\n          viewTimePlot occurances</span>"
+                      "content": "<div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\">view : Widget -&gt; Element</span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\">view widget =</span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\">&nbsp; &nbsp; case widget of</span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\">&nbsp; &nbsp; &nbsp; ScatterPlot points -&gt;</span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewScatterPlot points</span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\"><br></span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\">&nbsp; &nbsp; &nbsp; LogData logs -&gt;</span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flow down (map viewLog logs)</span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\"><br></span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\">&nbsp; &nbsp; &nbsp; TimePlot occurances -&gt;</span></font></div><div><font color=\"#66cccc\" face=\"Source Code Mono, monospace\" size=\"3\"><span style=\"line-height: normal; white-space: pre;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewTimePlot occurances</span></font></div>"
                     },
                     "style": {}
                   }
                 }
               },
               "attr": {
-                "collapsed": true,
                 "style": {}
               }
             }
@@ -218,8 +269,7 @@
               "contentType": "text/html",
               "content": "<span class=\"hljs-title\" style=\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">fortyTwo</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\"> : </span><span class=\"hljs-type\" style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">Int</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\">\n</span><span class=\"hljs-title\" style=\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">fortyTwo</span><span style=\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\"> =\n  </span><span class=\"hljs-number\" style=\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\">42</span><div><span class=\"hljs-number\" style=\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\"><br></span></div><div><span class=\"hljs-number\" style=\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\"><br></span></div>"
             },
-            "style": {},
-            "collapsed": true
+            "style": {}
           }
         },
         "4": {
@@ -324,8 +374,8 @@
                     }
                   },
                   "attr": {
-                    "collapsed": true,
-                    "style": {}
+                    "style": {},
+                    "collapsed": true
                   }
                 }
               },
@@ -339,10 +389,20 @@
         "6": {
           "title": "there's the idea that you can create a module that can accept a signal, you can then signal to that module without knowing the internals?",
           "id": 81
+        },
+        "7": {
+          "title": "Signals and Addresses",
+          "id": 84
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "position": [
+          70,
+          -132,
+          2
+        ],
+        "collapsed": true
       }
     },
     "-2": {
@@ -351,7 +411,13 @@
       "attr": {
         "style": {
           "background": "#800000"
-        }
+        },
+        "position": [
+          62,
+          110.75,
+          1
+        ],
+        "collapsed": true
       },
       "ideas": {
         "1": {
@@ -367,15 +433,21 @@
                   "id": 22,
                   "ideas": {
                     "1": {
-                      "title": "type annotation",
-                      "id": 23
+                      "title": "this is a type annotation",
+                      "id": 23,
+                      "ideas": {
+                        "1": {
+                          "title": "prevents runtime errors",
+                          "id": 83
+                        }
+                      }
                     },
                     "2": {
                       "title": "function a",
                       "id": 24
                     },
                     "3": {
-                      "title": "takes a lit of strings",
+                      "title": "takes a list of strings",
                       "id": 25
                     },
                     "4": {
@@ -396,8 +468,7 @@
                 }
               },
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               }
             }
           }

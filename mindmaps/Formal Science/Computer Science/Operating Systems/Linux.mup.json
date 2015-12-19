@@ -213,7 +213,18 @@
     "-2": {
       "title": "Flavors",
       "id": 233,
-      "ideas": {},
+      "ideas": {
+        "1": {
+          "title": "https://en.m.wikipedia.org/wiki/Red_Star_OS",
+          "id": 361,
+          "ideas": {
+            "1": {
+              "title": "Red Star OS from North Korea",
+              "id": 362
+            }
+          }
+        }
+      },
       "attr": {
         "style": {},
         "position": [

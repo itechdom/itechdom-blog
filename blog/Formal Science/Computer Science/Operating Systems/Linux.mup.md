@@ -36,6 +36,8 @@
 ### Gnome
 #### https://www.gnome.org/
 # Flavors
+## https://en.m.wikipedia.org/wiki/Red_Star_OS
+### Red Star OS from North Korea
 # Programmed in
 ## Kernel
 ### C

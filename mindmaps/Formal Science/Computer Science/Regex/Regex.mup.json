@@ -19,6 +19,16 @@
         "2": {
           "title": "Follow Along exercises",
           "id": 6
+        },
+        "3": {
+          "title": "http://www.rexegg.com/regex-best-trick.html",
+          "id": 11,
+          "ideas": {
+            "1": {
+              "title": "Best Regex trick",
+              "id": 12
+            }
+          }
         }
       },
       "id": 3,

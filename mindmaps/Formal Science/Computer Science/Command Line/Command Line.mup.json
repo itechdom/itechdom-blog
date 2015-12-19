@@ -621,7 +621,8 @@
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true
       }
     },
     "21": {
@@ -703,17 +704,27 @@
             },
             "style": {}
           }
+        },
+        "6": {
+          "title": "https://nvbn.github.io/2015/10/08/how-thefuck-works/",
+          "id": 474,
+          "ideas": {
+            "1": {
+              "title": "How the fuck",
+              "id": 475
+            }
+          }
         }
       },
       "attr": {
-        "collapsed": true,
         "style": {}
       }
     },
     "-2": {
       "title": "Shells",
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true
       },
       "ideas": {
         "1": {
@@ -768,7 +779,8 @@
           152,
           -146,
           1
-        ]
+        ],
+        "collapsed": true
       }
     }
   },

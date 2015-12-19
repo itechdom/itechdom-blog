@@ -77,6 +77,16 @@
               }
             }
           }
+        },
+        "3": {
+          "title": "https://github.com/mateusortiz/webcomponents-the-right-way#specifications",
+          "id": 203,
+          "ideas": {
+            "1": {
+              "title": "All about it",
+              "id": 204
+            }
+          }
         }
       },
       "attr": {

@@ -240,6 +240,16 @@
               "id": 183
             }
           }
+        },
+        "2": {
+          "title": "http://plnkr.co/edit/kaOmmXVaBJdUbGUtvDlM?p=info",
+          "id": 215,
+          "ideas": {
+            "1": {
+              "title": "Angular 2.0 playground",
+              "id": 216
+            }
+          }
         }
       },
       "attr": {

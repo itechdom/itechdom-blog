@@ -104,6 +104,10 @@
 ### Sass Framework
 ## http://susy.oddbird.net/
 ### Grid system on Demand
+## https://github.com/alexwolfe/Buttons
+### Buttons
+## https://github.com/mrmrs/colors
+### Smaller defaults for colors
 # Partials
 <h2>Partials</h2><p>You can create partial Sass files that contain little snippets of CSS that you can include in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is simply a Sass file named with a leading underscore. You might name it something like&#xA0;<code>_partial.scss</code>. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the&#xA0;<code>@import</code>&#xA0;directive.</p>
 # Mixins
@@ -164,3 +168,8 @@
 ## Include some selector within another
 # Sass Vs. Less
 ## https://css-tricks.com/sass-vs-less/
+# Principles
+## http://bradfrost.com/blog/post/atomic-web-design/
+### Atomic Design
+## http://demo.patternlab.io/
+### Pattern lab

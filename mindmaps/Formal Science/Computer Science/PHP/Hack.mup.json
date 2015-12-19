@@ -45,78 +45,20 @@
     "-2": {
       "title": "Project Starters",
       "id": 233,
-      "ideas": {
-        "1": {
-          "title": "https://www.nuget.org/packages/Boilerplate.Web.Mvc5/",
-          "id": 265
-        },
-        "2": {
-          "title": "https://visualstudiogallery.msdn.microsoft.com/6cf50a48-fc1e-4eaf-9e82-0b2a6705ca7d",
-          "id": 266
-        }
-      },
+      "ideas": {},
       "attr": {
         "style": {},
         "position": [
           197,
           -128,
           2
-        ],
-        "collapsed": true
+        ]
       }
     },
     "-12": {
       "title": "Programmed in",
       "id": 246,
-      "ideas": {
-        "1": {
-          "title": "C#",
-          "id": 237,
-          "attr": {
-            "style": {},
-            "collapsed": true
-          },
-          "ideas": {
-            "2": {
-              "title": "Tutorials Point",
-              "id": 239,
-              "ideas": {
-                "1": {
-                  "title": "http://www.tutorialspoint.com/csharp/",
-                  "id": 240
-                }
-              }
-            },
-            "3": {
-              "title": "MSDN",
-              "id": 291,
-              "ideas": {
-                "1": {
-                  "title": "https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx",
-                  "id": 292
-                }
-              }
-            }
-          }
-        },
-        "14": {
-          "title": "Other",
-          "id": 290,
-          "ideas": {
-            "1": {
-              "title": "Vb.net",
-              "id": 260,
-              "attr": {
-                "style": {}
-              }
-            }
-          },
-          "attr": {
-            "collapsed": true,
-            "style": {}
-          }
-        }
-      },
+      "ideas": {},
       "attr": {
         "style": {},
         "position": [

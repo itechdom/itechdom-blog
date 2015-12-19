@@ -81,6 +81,10 @@
             }
           }
         }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {}
       }
     },
     "-10": {
@@ -234,6 +238,16 @@
                 }
               },
               "id": 354
+            },
+            "2": {
+              "title": "https://github.com/arjun024/mkeykernel?lang=c",
+              "id": 428,
+              "ideas": {
+                "1": {
+                  "title": "one type of Kernel",
+                  "id": 429
+                }
+              }
             }
           },
           "id": 353
@@ -499,6 +513,10 @@
                 },
                 "style": {}
               }
+            },
+            "2": {
+              "title": "Kernel",
+              "id": 426
             }
           }
         },

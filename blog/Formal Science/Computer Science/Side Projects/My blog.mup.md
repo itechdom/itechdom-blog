@@ -2,12 +2,17 @@
 ## App
 ### Client
 #### Blog
+##### Post
 #### Blog Detail page
 #### Utils
 ##### Router
 ##### Etc ..
+#### Admin
 ### Server
 #### Blog
+#### Admin
+##### CRUD for blog
+#### acl
 ## gulp
 ### task to convert mindmup to markdown?
 ## Data
@@ -41,5 +46,6 @@
 ### or I create a parser for it
 # Resources
 # Pain Points
-## How do I sort files in markdown
-## Do I have to use a markdown structure or can I just use webpack?
+# Third Party
+## https://github.com/relax/relax
+### CMS: Node.js + React

@@ -2,6 +2,8 @@
 ## Streams
 ### https://nodejs.org/api/stream.html
 #### api for stream
+### FRP
+#### https://blog.risingstack.com/functional-reactive-programming-with-the-power-of-nodejs-streams/
 ## Deep vs Shallow Copy
 <ol><li class="mod" data-md="61"><div class="_oDd" data-hveid="36"><span class="_Tgc">A deep&#xA0;<b>copy copies</b>&#xA0;all fields, and makes<b>copies</b>&#xA0;of dynamically allocated memory pointed to by the fields. A deep&#xA0;<b>copy</b>&#xA0;occurs when an object is copied along with the objects to which it refers.&#xA0;<b>Shallow Copy</b>.<b>Shallow copy</b>&#xA0;is a bit-wise&#xA0;<b>copy</b>&#xA0;of an object.</span><span class="_D8e">Oct 8, 2008</span></div></li></ol>
 ## Event loop
@@ -34,6 +36,8 @@
 #### client renders
 ### https://github.com/tmpvar/jsdom
 #### javascript implementation of HTML
+## Performance
+### http://www.sitepoint.com/5-easy-performance-tweaks-node-js-express/
 # Resources
 ## Node Api
 ### https://nodejs.org/api/
@@ -41,6 +45,8 @@
 ### Nodeschool open source workshops
 ### The list
 <div id="learnyounode" class="workshopper"><h4><a class="js-workshop-link" href="https://www.github.com/workshopper/learnyounode" target="_blank">learnyounode</a></h4><p data-i18n="workshopper-learnyounode">Learn the basics of node: asynchronous i/o, http.</p><code data-i18n="workshopper-learnyounode-command">npm install -g learnyounode</code></div><div id="how-to-npm" class="workshopper"><h4><a class="js-workshop-link" href="https://github.com/npm/how-to-npm" target="_blank">How to npm</a></h4><p data-i18n="workshopper-how-to-npm">Learn how to use and create npm modules.</p><code>npm install -g how-to-npm</code></div><div id="streamadventure" class="workshopper"><h4><a class="js-workshop-link" href="https://www.github.com/substack/stream-adventure" target="_blank">stream-adventure</a></h4><p><span data-i18n="workshopper-streamadventure">Learn to compose streaming interfaces with&#xA0;</span><code>.pipe()</code><span data-i18n="workshopper-streamadventure2">.</span></p><code>npm install -g stream-adventure</code></div><div id="streamadventure" class="workshopper"><code><br></code></div><div id="streamadventure" class="workshopper"><code><br></code></div><div id="streamadventure" class="workshopper"><code><div id="javascripting" class="workshopper"><h4><a class="js-workshop-link" href="https://www.github.com/sethvincent/javascripting" target="_blank">javascripting</a></h4><p data-i18n="workshopper-javascripting">Learn the basics of JavaScript. No previous programming experience required.</p><code>npm install -g javascripting</code></div><div id="gitit" class="workshopper"><h4><a class="js-workshop-link" href="https://www.github.com/jlord/git-it" target="_blank">git-it</a></h4><p data-i18n="workshopper-gitit">Learn Git and GitHub basics.</p><code>npm install -g git-it</code></div><div id="scope-chains-closures" class="workshopper"><h4><a href="https://www.github.com/jesstelford/scope-chains-closures" target="_blank">Scope Chains &amp; Closures</a></h4><p data-i18n="workshopper-scope-chains-closures">Learn the details of Scope, Scope Chains, Closures, and Garbage Collection.</p><code>npm install -g scope-chains-closures</code></div></code></div>
+## http://www.technology-ebay.de/the-teams/mobile-de/blog/nodejs-real-world
+### Node.js in Real World
 # Pain Points
 ## Does requiring a model provide a copy of the exported object or modifies the global one?
 ## Asynchronous vs Callbacks
@@ -53,3 +59,5 @@
 ### NPM
 ## Frameworks
 <dl><dt>Frameworks</dt></dl><ul><li>Server frameworks:&#xA0;<a href="https://en.wikipedia.org/wiki/Express.js" title="Express.js">Express.js</a>,&#xA0;<a href="https://en.wikipedia.org/wiki/Socket.IO" title="Socket.IO">Socket.IO</a>, Koa.js, Hapi.js, Total.js, Nodal<sup id="cite_ref-44" class="reference"><a href="https://en.wikipedia.org/wiki/Node.js#cite_note-44">[44]</a></sup><sup id="cite_ref-45" class="reference"><a href="https://en.wikipedia.org/wiki/Node.js#cite_note-45">[45]</a></sup><sup id="cite_ref-46" class="reference"><a href="https://en.wikipedia.org/wiki/Node.js#cite_note-46">[46]</a></sup></li><li>MVC frameworks: Meteor, Derby, Sails, Mean, MeanJS, Tower.js, Nombo, Geddy, Compound, Yahoo! Mojito</li></ul>
+## JSDom + Server Side rendering
+### https://github.com/cheeriojs/cheerio

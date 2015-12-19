@@ -1,0 +1,78 @@
+{
+  "title": "Database",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "No SQL",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "Rethink DB",
+          "id": 5,
+          "ideas": {
+            "1": {
+              "title": "https://www.rethinkdb.com/",
+              "id": 6
+            }
+          }
+        },
+        "2": {
+          "title": "Falcor",
+          "id": 7,
+          "ideas": {
+            "1": {
+              "title": "http://netflix.github.io/falcor/",
+              "id": 8
+            },
+            "2": {
+              "title": "https://auth0.com/blog/2015/08/28/getting-started-with-falcor/?utm_source=javascriptweekly&utm_medium=email",
+              "id": 9,
+              "ideas": {
+                "1": {
+                  "title": "Getting started with falcor",
+                  "id": 10
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "title": "azure.microsoft.com/en-us/services/documentdb/",
+          "id": 11,
+          "ideas": {
+            "1": {
+              "title": "Document DB",
+              "id": 12,
+              "ideas": {
+                "1": {
+                  "title": "Microsoft's Document store",
+                  "id": 13
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "11": {
+      "title": "SQL",
+      "id": 4
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 93,
+      "ideaIdTo": 94,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ],
+  "attr": {
+    "style": {}
+  }
+}

@@ -54,6 +54,13 @@
 <span class="pl-en">view </span><span class="pl-k">=</span>
   <span class="pl-k">...</span></pre>
 <table class="highlight tab-size js-file-line-container" data-tab-size="8"><tbody><tr><td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  1. Model  - a full definition of the application&apos;s state</span></td></tr><tr><td id="L7" class="blob-num js-line-number" data-line-number="7"></td><td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  2. Update - a way to step the application state forward</span></td></tr><tr><td id="L8" class="blob-num js-line-number" data-line-number="8"></td><td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  3. View   - a way to visualize our application state with HTML</span></td></tr><tr><td id="L9" class="blob-num js-line-number" data-line-number="9"></td><td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  4. Inputs - the signals necessary to manage events</span></td></tr></tbody></table>
+## https://pragmaticstudio.com/blog/2014/12/19/getting-started-with-elm
+### third part tutorials
+# Packages
+## Signal
+### http://package.elm-lang.org/packages/elm-lang/core/3.0.0/Signal
+## Website
+### http://package.elm-lang.org/packages/elm-lang/core/3.0.0
 # Concepts
 ## Differences with JavaScript
 <div><h2>Literals</h2><div class="comparison"><table><tbody><tr><th>JavaScript</th><th>Elm</th></tr><tr><td><code>3</code></td><td><code>3</code></td></tr><tr><td><code>3.1415</code></td><td><code>3.1415</code></td></tr><tr><td><code>&quot;Hello world!&quot;</code></td><td><code>&quot;Hello world!&quot;</code></td></tr><tr><td><span>Multiline strings not widely supported</span></td><td><code>&quot;&quot;&quot;multiline string&quot;&quot;&quot;</code></td></tr><tr><td><code>&apos;Hello world!&apos;</code></td><td><span>Cannot use single quotes for strings</span></td></tr><tr><td><span>No distinction between characters and strings</span></td><td><code>&apos;a&apos;</code></td></tr><tr><td><code>true</code></td><td><code>True</code></td></tr><tr><td><code>[1,2,3]</code></td><td><code>[1,2,3]</code></td></tr></tbody></table></div><br></div><div><h2>Objects / Records</h2><div class="comparison"><table><tbody><tr><th>JavaScript</th><th>Elm</th></tr><tr><td><code>{ x: 3, y: 4 }</code></td><td><code>{ x = 3, y = 4 }</code></td></tr><tr><td><code>point.x</code></td><td><code>point.x</code></td></tr><tr><td><code>point.x = 42</code></td><td><code>{ point | x &lt;- 42 }</code></td></tr></tbody></table></div><br></div><div><h2>Functions</h2><div class="comparison"><table><tbody><tr><th>JavaScript</th><th>Elm</th></tr><tr><td><code>function(x,y) { return x + y; }</code></td><td><code>\x y -&gt; x + y</code></td></tr><tr><td><code>Math.max(3, 4)</code></td><td><code>max 3 4</code></td></tr><tr><td><code>Math.min(1, Math.pow(2, 4))</code></td><td><code>min 1 (2^4)</code></td></tr><tr><td><code>numbers.map(Math.sqrt)</code></td><td><code>List.map sqrt numbers</code></td></tr><tr><td><code>points.map(function(p) { return p.x })</code></td><td><code>List.map .x points</code></td></tr></tbody></table></div><br></div><div><h2>Control Flow</h2><div class="comparison"><table><tbody><tr><th>JavaScript</th><th>Elm</th></tr><tr><td><code>3 &gt; 2 ? &apos;cat&apos; : &apos;dog&apos;</code></td><td><code>if 3 &gt; 2 then &quot;cat&quot; else &quot;dog&quot;</code></td></tr><tr><td><code>var x = 42; ...</code></td><td><code>let x = 42 in ...</code></td></tr><tr><td><code>return 42</code></td><td><span>Everything is an expression, no need for return</span></td></tr></tbody></table></div><br></div><div><h2>Strings</h2><div class="comparison"><table><tbody><tr><th>JavaScript</th><th>Elm</th></tr><tr><td><code>&apos;abc&apos; + &apos;123&apos;</code></td><td><code>&quot;abc&quot; ++ &quot;123&quot;</code></td></tr><tr><td><code>&apos;abc&apos;.length</code></td><td><code>String.length &quot;abc&quot;</code></td></tr><tr><td><code>&apos;abc&apos;.toUpperCase()</code></td><td><code>String.toUpper &quot;abc&quot;</code></td></tr><tr><td><code>&apos;abc&apos; + 123</code></td><td><code>&quot;abc&quot; ++ toString 123</code></td></tr></tbody></table></div></div>
@@ -63,17 +70,7 @@ you can define a record like this:<div>bill = {name = &quot;gates&quot;}</div><d
 ### type annotation
 #### to rule out runtime errors
 #### you can define your own type?
-<span class="hljs-title">view</span><span> : </span><span class="hljs-type">Widget</span><span> -&gt; </span><span class="hljs-type">Element</span><span>
-</span><span class="hljs-title">view</span><span> widget =
-    </span><span class="hljs-keyword">case</span><span> widget </span><span class="hljs-keyword">of</span><span>
-      </span><span class="hljs-type">ScatterPlot</span><span> points -&gt;
-          viewScatterPlot points
-
-      </span><span class="hljs-type">LogData</span><span> logs -&gt;
-          flow down (map viewLog logs)
-
-      </span><span class="hljs-type">TimePlot</span><span> occurances -&gt;
-          viewTimePlot occurances</span>
+<div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span>view : Widget -&gt; Element</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span>view widget =</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span>&#xA0; &#xA0; case widget of</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span>&#xA0; &#xA0; &#xA0; ScatterPlot points -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; viewScatterPlot points</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span><br></span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span>&#xA0; &#xA0; &#xA0; LogData logs -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; flow down (map viewLog logs)</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span><br></span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span>&#xA0; &#xA0; &#xA0; TimePlot occurances -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; viewTimePlot occurances</span></font></div>
 <span class="hljs-title">fortyTwo</span><span> : </span><span class="hljs-type">Int</span><span>
 </span><span class="hljs-title">fortyTwo</span><span> =
   </span><span class="hljs-number">42</span><div><span class="hljs-number"><br></span></div><div><span class="hljs-number"><br></span></div>
@@ -116,13 +113,15 @@ you can define a record like this:<div>bill = {name = &quot;gates&quot;}</div><d
 ##### Inputs/Actions
 ###### Signals
 ## there's the idea that you can create a module that can accept a signal, you can then signal to that module without knowing the internals?
+## Signals and Addresses
 # Pain points
 ## What the hell are all these arrows
 ### Simple
 #### a:List String -> int
-##### type annotation
+##### this is a type annotation
+###### prevents runtime errors
 ##### function a
-##### takes a lit of strings
+##### takes a list of strings
 ##### returns an int
 #### String -> Int -> Task
 ##### Takes String and Int and returns a task

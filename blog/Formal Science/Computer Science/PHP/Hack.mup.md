@@ -6,13 +6,4 @@
 ## http://hacklang.org/
 ### main website
 # Project Starters
-## https://www.nuget.org/packages/Boilerplate.Web.Mvc5/
-## https://visualstudiogallery.msdn.microsoft.com/6cf50a48-fc1e-4eaf-9e82-0b2a6705ca7d
 # Programmed in
-## C#
-### Tutorials Point
-#### http://www.tutorialspoint.com/csharp/
-### MSDN
-#### https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx
-## Other
-### Vb.net

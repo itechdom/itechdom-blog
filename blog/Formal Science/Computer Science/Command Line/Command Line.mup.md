@@ -148,6 +148,8 @@ find . &#xA0;-name &apos;grunt-*&apos; -exec rm -r {} +<div><br></div><div>the .
 <ul><li><p>For Excel or CSV files,&#xA0;<a href="https://github.com/onyxfish/csvkit">csvkit</a>&#xA0;provides&#xA0;<code>in2csv</code>,&#xA0;<code>csvcut</code>,&#xA0;<code>csvjoin</code>,&#xA0;<code>csvgrep</code>, etc.</p></li><li></li></ul>
 ## Amazon
 <ul><li><p>For Amazon S3,&#xA0;<a href="https://github.com/s3tools/s3cmd"><code>s3cmd</code></a>&#xA0;is convenient and&#xA0;<a href="https://github.com/bloomreach/s4cmd"><code>s4cmd</code></a>&#xA0;is faster. Amazon&apos;s&#xA0;<a href="https://github.com/aws/aws-cli"><code>aws</code></a>&#xA0;is essential for other AWS-related tasks.</p></li></ul>
+## https://nvbn.github.io/2015/10/08/how-thefuck-works/
+### How the fuck
 # Shells
 ## https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 ## Bash

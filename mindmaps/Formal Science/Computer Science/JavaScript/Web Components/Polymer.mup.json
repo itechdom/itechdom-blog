@@ -33,6 +33,22 @@
         ]
       }
     },
+    "8": {
+      "title": "Third Party",
+      "id": 206,
+      "ideas": {
+        "1": {
+          "title": "https://github.com/polymer/designer",
+          "id": 207,
+          "ideas": {
+            "1": {
+              "title": "Designer",
+              "id": 208
+            }
+          }
+        }
+      }
+    },
     "-3": {
       "title": "Resources",
       "id": 181,

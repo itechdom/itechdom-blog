@@ -96,7 +96,31 @@
               "id": 23
             }
           }
+        },
+        "5": {
+          "title": "https://github.com/alexwolfe/Buttons",
+          "id": 24,
+          "ideas": {
+            "1": {
+              "title": "Buttons",
+              "id": 25
+            }
+          }
+        },
+        "6": {
+          "title": "https://github.com/mrmrs/colors",
+          "id": 26,
+          "ideas": {
+            "1": {
+              "title": "Smaller defaults for colors",
+              "id": 27
+            }
+          }
         }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {}
       }
     },
     "-1": {
@@ -151,6 +175,32 @@
         "1": {
           "title": "https://css-tricks.com/sass-vs-less/",
           "id": 14
+        }
+      }
+    },
+    "-5": {
+      "title": "Principles",
+      "id": 28,
+      "ideas": {
+        "1": {
+          "title": "http://bradfrost.com/blog/post/atomic-web-design/",
+          "id": 29,
+          "ideas": {
+            "1": {
+              "title": "Atomic Design",
+              "id": 31
+            }
+          }
+        },
+        "2": {
+          "title": "http://demo.patternlab.io/",
+          "id": 32,
+          "ideas": {
+            "1": {
+              "title": "Pattern lab",
+              "id": 33
+            }
+          }
         }
       }
     }

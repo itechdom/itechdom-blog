@@ -12,6 +12,9 @@
 ### C/C++ game written in ASM.JS
 ## http://kripken.github.io/emscripten-site/
 ### Compile C/C++ to asm.js project
+## https://kripken.github.io/talks/wasm.html#/14
+### Slides explaining the process of converting javascript to asm.js through ecmascripten
+## https://hacks.mozilla.org/2015/12/compiling-to-webassembly-its-happening/
 # Concepts
 ## Linking
 Depending on your implementation: compilation or interpretation might happen (compilation is more optimized).
