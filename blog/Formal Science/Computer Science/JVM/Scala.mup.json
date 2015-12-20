@@ -1,0 +1,78 @@
+{
+  "title": "Scala",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "14": {
+      "title": "Concepts",
+      "id": 176,
+      "ideas": {
+        "1": {
+          "title": "Traits",
+          "id": 237,
+          "ideas": {}
+        },
+        "2": {
+          "title": "Higher Order functions",
+          "id": 239
+        },
+        "3": {
+          "title": "Functional",
+          "id": 240
+        }
+      },
+      "attr": {
+        "style": {}
+      }
+    },
+    "15": {
+      "title": "Resources",
+      "id": 234,
+      "ideas": {
+        "1": {
+          "title": "http://www.scala-lang.org/documentation/",
+          "id": 235,
+          "ideas": {
+            "1": {
+              "title": "Scala Docs",
+              "id": 236
+            }
+          }
+        }
+      }
+    },
+    "-2": {
+      "title": "Project Starters",
+      "id": 233,
+      "ideas": {
+        "1": {
+          "title": "https://github.com/csoma/Scala-starter",
+          "id": 242
+        }
+      },
+      "attr": {
+        "style": {}
+      }
+    },
+    "-3": {
+      "title": "Features",
+      "id": 241,
+      "attr": {
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<div>SEAMLESS JAVA INTEROP<br></div><div>Scala runs on the JVM, so Java and Scala stacks can be freely mixed for totally seamless integration.</div><div><br></div><div>TYPE INFERENCE</div><div>So the type system doesn’t feel so static. Don’t work for the type system. Let the type system work for you!</div><div><br></div><div>CONCURRENCY</div><div>&amp; DISTRIBUTION</div><div>Use data-parallel operations on collections, use actors for concurrency and distribution, or futures for asynchronous programming.</div><div><br></div><div>TRAITS</div><div>Combine the flexibility of Java-style interfaces with the power of classes. Think principled multiple-inheritance.</div><div><br></div><div>PATTERN MATCHING</div><div>Think “switch” on steroids. Match against class hierarchies, sequences, and more.</div><div><br></div><div>HIGHER-ORDER FUNCTIONS</div><div>Functions are first-class objects. Compose them with guaranteed type safety. Use them anywhere, pass them to anything.</div>"
+        },
+        "style": {},
+        "position": [
+          82,
+          83,
+          1
+        ]
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "style": {}
+  }
+}

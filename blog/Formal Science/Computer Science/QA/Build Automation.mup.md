@@ -1,7 +1,0 @@
-# Resources
-## https://en.wikipedia.org/wiki/Build_automation
-### Wiki
-# types
-## CI
-### https://en.wikipedia.org/wiki/Continuous_integration
-<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Build_automation&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2><ul><li><a href="https://en.wikipedia.org/wiki/Continuous_integration" title="Continuous integration">Continuous integration</a></li><li><a href="https://en.wikipedia.org/wiki/Continuous_delivery" title="Continuous delivery">Continuous delivery</a></li><li><a href="https://en.wikipedia.org/wiki/List_of_build_automation_software" title="List of build automation software">List of build automation software</a></li><li><a href="https://en.wikipedia.org/wiki/Product_family_engineering" title="Product family engineering">Product family engineering</a></li><li><a href="https://en.wikipedia.org/wiki/Release_engineering" title="Release engineering">Release engineering</a></li><li><a href="https://en.wikipedia.org/wiki/Software_configuration_management" title="Software configuration management">Software configuration management</a></li><li><a href="https://en.wikipedia.org/wiki/Unit_testing" title="Unit testing">Unit testing</a></li></ul>
