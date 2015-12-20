@@ -4,7 +4,7 @@ var orm = require('../utils/orm/orm.js');
 var mongoose = require('mongoose');
 
 
-class blogModel{
+class helloModel{
 
 	constructor() {
 		this.schema = mongoose.Schema({
@@ -13,21 +13,21 @@ class blogModel{
 		this.repo = orm.repo();
 		this.model = mongoose.model('hello', this.schema);
 	}
-	getBlog(){
+	getSlides(){
 		var query = this.model.find({});
 		var callback = query.exec();
 		return callback;
 	}
-	insertBlog(){
-		var blog = new this.model({title:"hi",completed:false});
-		var callback = blog.save();
+	insertSlides(){
+		var hello = new this.model({title:"hi",completed:false});
+		var callback = hello.save();
 		return callback;
 	}
-	updateBlog(blog){
+	updateSlides(hello){
 
 	}
-	deleteBlog(blog){
-		//var blog = this.model.findByIdAndRemove()
+	deleteSlides(hello){
+		//var hello = this.model.findByIdAndRemove()
 	}
 }
-module.exports = new blogModel();
+module.exports = new helloModel();

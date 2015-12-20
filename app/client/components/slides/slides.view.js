@@ -1,11 +1,15 @@
-import revealConnector from './revealConnector/reveal.connector.js';
+var reveal = require('reveal.js');
+import 'reveal.js/css/reveal.css';
+import 'reveal.js/css/theme/sky.css';
 var $ = require('jquery');
 
 class slidesView {
 
 	render(){
 		var template = require('./slides.html');
-		$('app').html(branchit);
+		$('app').html(template);
+		//initialize reveal to start the slides
+		reveal.initialize();
 	}
 	constructor() {
 
