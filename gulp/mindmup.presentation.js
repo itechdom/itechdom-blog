@@ -12,7 +12,11 @@ var flatten = require('flat');
 var rename = require("gulp-rename");
 var MongoClient = require('mongodb').MongoClient
 var cheerio = require('cheerio');
-
+var slideTemplate = `<div class="reveal">
+<div class="slides">
+</div>
+</div>`
+var slideElement = cheerio.load(slideTemplate);
 
 module.exports = function(options) {
 
@@ -67,21 +71,19 @@ module.exports = function(options) {
 		function convertToHTML(mindmap){
 			var f = "";
 			mindmap.map((idea)=>{
+				var fruits = [];
 				if(idea.title && idea.indent){
 					if(idea.indent >= 1 || idea.indent <=3){
-						var head = "#".repeat(idea.indent);
-						head += " ";
-						f+=head;
+						//var section = cheerio.load('<section></section>');
+						//section.append(idea.title);
+						slideElement('.slides').append('<section>'+idea.title+'</section/>');
 					}
-					f+= idea.title;
-					f+="\n";
 				}
 				if(idea.content && idea.indent){
-					f += idea.content;
-					f+="\n";
+
 				}
 			})
-			return f;
+			return slideElement.html();
 		}
 		return gulp.src('./mindmaps/**/*.presentation.mup.json')
 			.pipe(data(function(file) {

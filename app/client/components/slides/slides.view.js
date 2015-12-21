@@ -6,7 +6,7 @@ var $ = require('jquery');
 class slidesView {
 
 	render(){
-		var template = require('./slides.html');
+		var template = require('../../../../presentations/RxJS.presentation.mup.html');
 		$('app').html(template);
 		//initialize reveal to start the slides
 		reveal.initialize();
