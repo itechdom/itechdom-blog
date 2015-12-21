@@ -38,7 +38,74 @@
               "id": 236
             }
           }
+        },
+        "2": {
+          "title": "sbt",
+          "id": 245,
+          "ideas": {
+            "1": {
+              "title": "build tool",
+              "id": 246
+            }
+          }
+        },
+        "3": {
+          "title": "Activiator",
+          "id": 247
+        },
+        "4": {
+          "title": "http://www.tutorialspoint.com/scala/scala_basic_syntax.htm",
+          "id": 251,
+          "ideas": {
+            "1": {
+              "title": "tutorials point",
+              "id": 252
+            }
+          }
+        },
+        "5": {
+          "title": "http://aperiodic.net/phil/scala/s-99/",
+          "id": 255,
+          "ideas": {
+            "1": {
+              "title": "99 scala problems",
+              "id": 256
+            }
+          }
+        },
+        "6": {
+          "title": "https://github.com/search?l=Scala&o=desc&q=scala&s=stars&type=Repositories&utf8=%E2%9C%93",
+          "id": 257,
+          "ideas": {
+            "1": {
+              "title": "top list of github repos",
+              "id": 258
+            }
+          }
+        },
+        "7": {
+          "title": "https://github.com/fpinscala/fpinscala",
+          "id": 264,
+          "ideas": {
+            "1": {
+              "title": "Exercises and examples",
+              "id": 265
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#993300"
+            }
+          }
         }
+      },
+      "attr": {
+        "position": [
+          59.5,
+          119,
+          2
+        ],
+        "style": {}
       }
     },
     "-2": {
@@ -48,6 +115,16 @@
         "1": {
           "title": "https://github.com/csoma/Scala-starter",
           "id": 242
+        },
+        "2": {
+          "title": "https://github.com/scalatra/scalatra-sbt-prototype",
+          "id": 243,
+          "ideas": {
+            "1": {
+              "title": "Scalatara web framework",
+              "id": 244
+            }
+          }
         }
       },
       "attr": {
@@ -64,10 +141,109 @@
         },
         "style": {},
         "position": [
-          82,
-          83,
-          1
+          137.5,
+          109,
+          3
         ]
+      }
+    },
+    "-13": {
+      "title": "Third Party",
+      "id": 248,
+      "attr": {
+        "position": [
+          77.5,
+          228,
+          4
+        ],
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "play framework",
+          "id": 250
+        },
+        "2": {
+          "title": "scalatara",
+          "id": 253
+        },
+        "3": {
+          "title": "akka",
+          "id": 254,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<div>Build powerful concurrent &amp; distributed applications</div><div>more easily. Akka is a toolkit and runtime</div><div>for building highly concurrent,</div><div>distributed, and resilient</div><div>message-driven applications</div><div>on the JVM.</div>"
+            },
+            "style": {}
+          }
+        },
+        "4": {
+          "title": "https://github.com/scalaz/scalaz",
+          "id": 259,
+          "ideas": {
+            "1": {
+              "title": "functional programming extension",
+              "id": 260
+            }
+          }
+        },
+        "5": {
+          "title": "spray",
+          "id": 261,
+          "ideas": {
+            "1": {
+              "title": "https://github.com/spray/spray",
+              "id": 262,
+              "ideas": {
+                "1": {
+                  "title": "Rest framework",
+                  "id": 263
+                }
+              }
+            }
+          }
+        },
+        "6": {
+          "title": "spark",
+          "id": 266,
+          "ideas": {
+            "1": {
+              "title": "https://github.com/mesos/spark",
+              "id": 267
+            }
+          }
+        },
+        "7": {
+          "title": "https://github.com/twitter/finatra",
+          "id": 268,
+          "ideas": {
+            "1": {
+              "title": "twitter scala http services",
+              "id": 269
+            }
+          }
+        },
+        "8": {
+          "title": "https://github.com/squeryl/squeryl",
+          "id": 270,
+          "ideas": {
+            "1": {
+              "title": "Sqeyrel, sql wrapper",
+              "id": 271
+            }
+          }
+        },
+        "9": {
+          "title": "https://github.com/adamw/macwire",
+          "id": 272,
+          "ideas": {
+            "1": {
+              "title": "Di in Scala",
+              "id": 273
+            }
+          }
+        }
       }
     }
   },

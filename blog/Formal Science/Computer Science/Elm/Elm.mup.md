@@ -1,59 +1,8 @@
 # Resources
-## http://elm-lang.org/
-## http://elm-lang.org/docs
-### docs page
-## http://elm-lang.org/docs/syntax
-### syntax
-<p>This syntax reference is a minimal introduction to:</p><ul><li><a href="http://elm-lang.org/docs/syntax#comments">Comments</a></li><li><a href="http://elm-lang.org/docs/syntax#literals">Literals</a></li><li><a href="http://elm-lang.org/docs/syntax#lists">Lists</a></li><li><a href="http://elm-lang.org/docs/syntax#conditionals">Conditionals</a></li><li><a href="http://elm-lang.org/docs/syntax#union-types">Union Types</a></li><li><a href="http://elm-lang.org/docs/syntax#records">Records</a></li><li><a href="http://elm-lang.org/docs/syntax#functions">Functions</a></li><li><a href="http://elm-lang.org/docs/syntax#infix-operators">Infix Operators</a></li><li><a href="http://elm-lang.org/docs/syntax#let-expressions">Let Expressions</a></li><li><a href="http://elm-lang.org/docs/syntax#applying-functions">Applying Functions</a></li><li><a href="http://elm-lang.org/docs/syntax#mapping">Mapping with&#xA0;<code>(&lt;~)</code>&#xA0;and&#xA0;<code>(~)</code></a></li><li><a href="http://elm-lang.org/docs/syntax#modules">Modules</a></li><li><a href="http://elm-lang.org/docs/syntax#type-annotations">Type Annotations</a></li><li><a href="http://elm-lang.org/docs/syntax#type-aliases">Type Aliases</a></li><li><a href="http://elm-lang.org/docs/syntax#javascript-ffi">JavaScript FFI</a></li></ul>
-#### Type Alias
-##### just an alias for some type
-<span class="hljs-typedef"><span class="hljs-keyword">type</span> <span class="hljs-keyword">alias</span> <span class="hljs-type">Name</span> = <span class="hljs-type">String</span></span><span>
-</span><span class="hljs-typedef"><span class="hljs-keyword">type</span> <span class="hljs-keyword">alias</span> <span class="hljs-type">Age</span> = <span class="hljs-type">Int</span></span><span>
-
-</span><span class="hljs-title">info</span><span> : (</span><span class="hljs-type">Name</span><span>,</span><span class="hljs-type">Age</span><span>)
-</span><span class="hljs-title">info</span><span> = (</span><span class="hljs-string">&quot;Steve&quot;</span><span>, </span><span class="hljs-number">28</span><span>)
-
-</span><span class="hljs-typedef"><span class="hljs-keyword">type</span> <span class="hljs-keyword">alias</span> <span class="hljs-type">Point</span> = <span class="hljs-container">{ <span class="hljs-title">x</span>:<span class="hljs-type">Float</span>, <span class="hljs-title">y</span>:<span class="hljs-type">Float</span> }</span></span><span>
-
-</span><span class="hljs-title">origin</span><span> : </span><span class="hljs-type">Point</span><span>
-</span><span class="hljs-title">origin</span><span> = { x=</span><span class="hljs-number">0</span><span>, y=</span><span class="hljs-number">0</span><span> }</span>
 ## Complete Guide
 <h1 id="complete-guide">Complete Guide</h1><ul class="guide content"><li><a href="http://elm-lang.org/guide/core-language" target="_blank">Core Language</a><ul><li><a href="http://elm-lang.org/guide/core-language#values" target="_blank">Values</a></li><li><a href="http://elm-lang.org/guide/core-language#functions" target="_blank">Functions</a></li><li><a href="http://elm-lang.org/guide/core-language#if-expressions" target="_blank">If Expressions</a></li><li><a href="http://elm-lang.org/guide/core-language#lists" target="_blank">Lists</a></li><li><a href="http://elm-lang.org/guide/core-language#tuples" target="_blank">Tuples</a></li><li><a href="http://elm-lang.org/guide/core-language#records" target="_blank">Records</a></li></ul></li><li><a href="http://elm-lang.org/guide/model-the-problem" target="_blank">Model The Problem</a><ul><li><a href="http://elm-lang.org/guide/model-the-problem#contracts" target="_blank">Contracts</a></li><li><a href="http://elm-lang.org/guide/model-the-problem#enumerations" target="_blank">Enumerations</a></li><li><a href="http://elm-lang.org/guide/model-the-problem#state-machines" target="_blank">State Machines</a></li><li><a href="http://elm-lang.org/guide/model-the-problem#tagged-unions" target="_blank">Tagged Unions</a></li><li><a href="http://elm-lang.org/guide/model-the-problem#banishing-null" target="_blank">Banishing NULL</a></li><li><a href="http://elm-lang.org/guide/model-the-problem#recursive-data-structures" target="_blank">Recursive Data Structures</a></li></ul></li><li><a href="https://github.com/evancz/elm-architecture-tutorial/" target="_blank"><b>Architecture</b></a><ul><li><a href="https://github.com/evancz/elm-architecture-tutorial/#example-1-a-counter" target="_blank"><b>Components</b></a></li><li><a href="https://github.com/evancz/elm-architecture-tutorial/#example-5-random-gif-viewer" target="_blank"><b>Components with HTTP</b></a></li><li><a href="https://github.com/evancz/elm-architecture-tutorial/#example-8-animation" target="_blank"><b>Components with Animation</b></a></li></ul></li><li><a href="http://elm-lang.org/guide/reactivity" target="_blank">Reactivity</a><ul><li><a href="http://elm-lang.org/guide/reactivity#signals" target="_blank">Signals</a></li><li><a href="http://elm-lang.org/guide/reactivity#tasks" target="_blank">Tasks</a></li></ul></li><li><a href="http://elm-lang.org/guide/interop" target="_blank">Interop</a><ul><li><a href="http://elm-lang.org/guide/interop#html-embedding" target="_blank">HTML Embedding</a></li><li><a href="http://elm-lang.org/guide/interop#ports" target="_blank">Ports</a></li></ul></li></ul>
 ## Examples
-### https://github.com/evancz/elm-todomvc
-#### todo mvc
-##### Update
-###### Moves our application forward
-##### Model
-###### Definition of application state
-##### VIew
-###### a way to visualize our application state with HTML
-
-##### Inputs
-###### Signals
-##### Application Skeleton
-<pre><span class="pl-c">-- MODEL</span>
-
-<span class="pl-k">type alias </span><span class="pl-c1">Model</span> <span class="pl-k">=</span> { <span class="pl-k">...</span> }
-
-
-<span class="pl-c">-- UPDATE</span>
-
-<span class="pl-k">type </span><span class="pl-c1">Action</span> <span class="pl-k">=</span> <span class="pl-c1">Reset</span> <span class="pl-k">|</span> <span class="pl-k">...</span>
-
-<span class="pl-en">update</span> <span class="pl-k">:</span> <span class="pl-k">Action</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Model</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Model</span>
-<span class="pl-en">update </span>action model <span class="pl-k">=</span>
-  <span class="pl-k">case </span>action <span class="pl-k">of</span>
-    <span class="pl-c1">Reset</span> <span class="pl-k">-&gt;</span> <span class="pl-k">...</span>
-    <span class="pl-k">...</span>
-
-
-<span class="pl-c">-- VIEW</span>
-
-<span class="pl-en">view</span> <span class="pl-k">:</span> <span class="pl-k">Model</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Html</span>
-<span class="pl-en">view </span><span class="pl-k">=</span>
-  <span class="pl-k">...</span></pre>
-<table class="highlight tab-size js-file-line-container" data-tab-size="8"><tbody><tr><td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  1. Model  - a full definition of the application&apos;s state</span></td></tr><tr><td id="L7" class="blob-num js-line-number" data-line-number="7"></td><td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  2. Update - a way to step the application state forward</span></td></tr><tr><td id="L8" class="blob-num js-line-number" data-line-number="8"></td><td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  3. View   - a way to visualize our application state with HTML</span></td></tr><tr><td id="L9" class="blob-num js-line-number" data-line-number="9"></td><td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  4. Inputs - the signals necessary to manage events</span></td></tr></tbody></table>
+<div class="content"><h1 id="learn-by-example">Learn by Example</h1><p>Walk through a sequence of small examples, building skills one at a time by reading and modifying Elm code in the&#xA0;<a href="http://elm-lang.org/try" target="_blank">online editor</a>.</p><p>Remember to check the&#xA0;<a href="http://elm-lang.org/docs/syntax" target="_blank">syntax reference</a>&#xA0;and&#xA0;<a href="http://elm-lang.org/docs" target="_blank">docs</a>&#xA0;when you see new syntax or features!</p></div><div><div class="examples"><h3>Core</h3><ul><li>functions<ul><li><a href="http://elm-lang.org/examples/functions" target="_blank">use them</a></li><li><a href="http://elm-lang.org/examples/infix" target="_blank">infixes</a></li><li><a href="http://elm-lang.org/examples/forward-apply" target="_blank">use fewer parens</a></li><li><a href="http://elm-lang.org/examples/define-functions" target="_blank">define your own</a></li></ul></li><li>recursion<ul><li><a href="http://elm-lang.org/examples/length" target="_blank">list length</a></li><li><a href="http://elm-lang.org/examples/zip" target="_blank">zip</a></li><li><a href="http://elm-lang.org/examples/quick-sort" target="_blank">quick sort</a></li><li><a href="http://elm-lang.org/examples/merge-sort" target="_blank">merge sort</a></li></ul></li><li>union types<ul><li><a href="http://elm-lang.org/examples/either" target="_blank">either</a></li><li><a href="http://elm-lang.org/examples/binary-tree" target="_blank">binary tree</a></li><li><a href="http://elm-lang.org/examples/boolean-expressions" target="_blank">boolean expressions</a></li></ul></li></ul></div><div class="examples"><h3>HTML</h3><ul><li>basics<ul><li><a href="http://elm-lang.org/examples/hello-html" target="_blank">hello world!</a></li><li><a href="http://elm-lang.org/examples/unordered-list" target="_blank">unordered list</a></li><li><a href="http://elm-lang.org/examples/markdown" target="_blank">markdown</a></li></ul></li><li>user input<ul><li><a href="http://elm-lang.org/examples/buttons" target="_blank">buttons</a></li><li><a href="http://elm-lang.org/examples/field" target="_blank">field</a></li><li><a href="http://elm-lang.org/examples/password" target="_blank">password</a></li><li><a href="http://elm-lang.org/examples/checkboxes" target="_blank">checkboxes</a></li><li><a href="http://elm-lang.org/examples/radio-buttons" target="_blank">radio buttons</a></li></ul></li><li>larger examples<ul><li><a href="https://github.com/evancz/elm-architecture-tutorial/" target="_blank">dynamic list</a></li><li><a href="http://elm-lang.org/examples/sign-up" target="_blank">sign up</a></li><li><a href="https://github.com/evancz/elm-todomvc" target="_blank">todo list</a></li></ul></li></ul></div><div class="examples"><h3>Visuals</h3><ul><li>2D graphics<ul><li><a href="http://elm-lang.org/examples/lines" target="_blank">lines</a></li><li><a href="http://elm-lang.org/examples/shapes" target="_blank">shapes</a></li><li><a href="http://elm-lang.org/examples/collage-text" target="_blank">text</a></li><li><a href="http://elm-lang.org/examples/collage-element" target="_blank">elements</a></li><li><a href="http://elm-lang.org/examples/transforms" target="_blank">transforms</a></li><li><a href="http://elm-lang.org/examples/color" target="_blank">color</a></li><li><a href="http://elm-lang.org/examples/linear-gradient" target="_blank">linear gradient</a></li><li><a href="http://elm-lang.org/examples/radial-gradient" target="_blank">radial gradient</a></li><li><a href="http://elm-lang.org/examples/texture" target="_blank">texture</a></li></ul></li><li>layout<ul><li><a href="http://elm-lang.org/examples/hello-element" target="_blank">hello world</a></li><li><a href="http://elm-lang.org/examples/layout-simple" target="_blank">simple layout</a></li><li><a href="http://elm-lang.org/examples/layout-fancy" target="_blank">fancier layout</a></li><li><a href="http://elm-lang.org/examples/centering" target="_blank">centering</a></li></ul></li></ul></div><div class="examples"><h3>Signals</h3><ul><li>mouse<ul><li><a href="http://elm-lang.org/examples/mouse-position" target="_blank">position</a></li><li><a href="http://elm-lang.org/examples/mouse-is-down" target="_blank">is down</a></li><li><a href="http://elm-lang.org/examples/mouse-clicks" target="_blank">clicks</a></li><li><a href="http://elm-lang.org/examples/resize-yogi" target="_blank">yogi</a></li><li><a href="http://elm-lang.org/examples/mouse-tracker" target="_blank">tracker</a></li><li><a href="http://elm-lang.org/examples/stamps" target="_blank">stamps</a></li></ul></li><li>window<ul><li><a href="http://elm-lang.org/examples/resize-paint" target="_blank">size</a></li><li><a href="http://elm-lang.org/examples/window-centering" target="_blank">centering</a></li></ul></li><li>keyboard<ul><li><a href="http://elm-lang.org/examples/arrows" target="_blank">arrows</a></li><li><a href="http://elm-lang.org/examples/wasd" target="_blank">wasd</a></li><li><a href="http://elm-lang.org/examples/keys" target="_blank">keys down</a></li><li><a href="http://elm-lang.org/examples/key-presses" target="_blank">key presses</a></li></ul></li><li>time<ul><li><a href="http://elm-lang.org/examples/clock" target="_blank">clock</a></li></ul></li></ul></div><div class="examples"><h3>Games</h3><ul><li>simple<ul><li><a href="http://elm-lang.org/examples/mario" target="_blank">mario</a></li><li><a href="http://elm-lang.org/examples/adventure" target="_blank">adventure</a></li><li><a href="http://elm-lang.org/examples/pong" target="_blank">pong</a></li></ul></li><li>community<ul><li><a href="https://github.com/jcollard/elmtris" target="_blank">Tetris</a></li><li><a href="https://github.com/Dobiasd/Breakout#breakout--play-it" target="_blank">Breakout</a></li><li><a href="https://github.com/Dobiasd/Maze#maze--play-it" target="_blank">Maze</a></li><li><a href="https://github.com/Dobiasd/Demoscene-Concentration" target="_blank">Concentration</a></li><li><a href="https://github.com/thSoft/froggy" target="_blank">Froggy</a></li><li><a href="https://github.com/Gizra/elm-hedley" target="_blank">Hedley</a></li></ul></li></ul></div><div class="examples"><h3>Tasks</h3><ul><li>HTTP<ul><li><a href="http://elm-lang.org/examples/zip-codes" target="_blank">zip codes</a></li><li><a href="http://elm-lang.org/examples/flickr" target="_blank">flickr</a></li></ul></li></ul></div></div>
 ## https://pragmaticstudio.com/blog/2014/12/19/getting-started-with-elm
 ### third part tutorials
 # Packages
@@ -75,45 +24,9 @@ you can define a record like this:<div>bill = {name = &quot;gates&quot;}</div><d
 </span><span class="hljs-title">fortyTwo</span><span> =
   </span><span class="hljs-number">42</span><div><span class="hljs-number"><br></span></div><div><span class="hljs-number"><br></span></div>
 ## Immutability
-## https://github.com/evancz/elm-architecture-tutorial/
-### Archeticture
-<table class="highlight tab-size js-file-line-container" data-tab-size="8"><tbody><tr><td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  1. Model  - a full definition of the application&apos;s state</span></td></tr><tr><td id="L7" class="blob-num js-line-number" data-line-number="7"></td><td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  2. Update - a way to step the application state forward</span></td></tr><tr><td id="L8" class="blob-num js-line-number" data-line-number="8"></td><td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  3. View   - a way to visualize our application state with HTML</span></td></tr><tr><td id="L9" class="blob-num js-line-number" data-line-number="9"></td><td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  4. Inputs - the signals necessary to manage events</span></td></tr></tbody></table>
-#### Application Skeleton
-<pre><span class="pl-c">-- MODEL</span>
-
-<span class="pl-k">type alias </span><span class="pl-c1">Model</span> <span class="pl-k">=</span> { <span class="pl-k">...</span> }
-
-
-<span class="pl-c">-- UPDATE</span>
-
-<span class="pl-k">type </span><span class="pl-c1">Action</span> <span class="pl-k">=</span> <span class="pl-c1">Reset</span> <span class="pl-k">|</span> <span class="pl-k">...</span>
-
-<span class="pl-en">update</span> <span class="pl-k">:</span> <span class="pl-k">Action</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Model</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Model</span>
-<span class="pl-en">update </span>action model <span class="pl-k">=</span>
-  <span class="pl-k">case </span>action <span class="pl-k">of</span>
-    <span class="pl-c1">Reset</span> <span class="pl-k">-&gt;</span> <span class="pl-k">...</span>
-    <span class="pl-k">...</span>
-
-
-<span class="pl-c">-- VIEW</span>
-
-<span class="pl-en">view</span> <span class="pl-k">:</span> <span class="pl-k">Model</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Html</span>
-<span class="pl-en">view </span><span class="pl-k">=</span>
-  <span class="pl-k">...</span></pre>
-#### https://github.com/evancz/elm-architecture-tutorial/#example-5-random-gif-viewer
-##### I stopped here
-#### Pattern
-##### Update
-###### Moves our application forward
-##### Model
-###### Definition of application state
-##### VIew
-###### a way to visualize our application state with HTML
-
-##### Inputs/Actions
-###### Signals
-## there's the idea that you can create a module that can accept a signal, you can then signal to that module without knowing the internals?
 ## Signals and Addresses
+## Functions
+<div>import Graphics.Element exposing (..)</div><div>import Keyboard</div><div><br></div><div><br></div><div>main : Signal Element</div><div>main =</div><div>&#xA0; Signal.map show(Keyboard.arrows)</div><div><br></div><div>we omit the parentheses for the method nam</div><div>also show is actually under Graphics.Element.show</div>
 # Pain points
 ## What the hell are all these arrows
 ### Simple
@@ -167,3 +80,76 @@ you can define a record like this:<div>bill = {name = &quot;gates&quot;}</div><d
 </code></pre><p>Let-expressions are indentation sensitive. Each definition should align with the one above it.</p>
 ## Signal.forwardTo
 ### just to forward signals?
+## Is main: port: reserved?
+# Project Starters
+## https://github.com/evancz/elm-architecture-tutorial/
+### Archeticture
+<table class="highlight tab-size js-file-line-container" data-tab-size="8"><tbody><tr><td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  1. Model  - a full definition of the application&apos;s state</span></td></tr><tr><td id="L7" class="blob-num js-line-number" data-line-number="7"></td><td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  2. Update - a way to step the application state forward</span></td></tr><tr><td id="L8" class="blob-num js-line-number" data-line-number="8"></td><td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  3. View   - a way to visualize our application state with HTML</span></td></tr><tr><td id="L9" class="blob-num js-line-number" data-line-number="9"></td><td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  4. Inputs - the signals necessary to manage events</span></td></tr></tbody></table>
+#### Application Skeleton
+<pre><span class="pl-c">-- MODEL</span>
+
+<span class="pl-k">type alias </span><span class="pl-c1">Model</span> <span class="pl-k">=</span> { <span class="pl-k">...</span> }
+
+
+<span class="pl-c">-- UPDATE</span>
+
+<span class="pl-k">type </span><span class="pl-c1">Action</span> <span class="pl-k">=</span> <span class="pl-c1">Reset</span> <span class="pl-k">|</span> <span class="pl-k">...</span>
+
+<span class="pl-en">update</span> <span class="pl-k">:</span> <span class="pl-k">Action</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Model</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Model</span>
+<span class="pl-en">update </span>action model <span class="pl-k">=</span>
+  <span class="pl-k">case </span>action <span class="pl-k">of</span>
+    <span class="pl-c1">Reset</span> <span class="pl-k">-&gt;</span> <span class="pl-k">...</span>
+    <span class="pl-k">...</span>
+
+
+<span class="pl-c">-- VIEW</span>
+
+<span class="pl-en">view</span> <span class="pl-k">:</span> <span class="pl-k">Model</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Html</span>
+<span class="pl-en">view </span><span class="pl-k">=</span>
+  <span class="pl-k">...</span></pre>
+#### https://github.com/evancz/elm-architecture-tutorial/#example-5-random-gif-viewer
+##### I stopped here
+#### Pattern
+##### Update
+###### Moves our application forward
+##### Model
+###### Definition of application state
+##### VIew
+###### a way to visualize our application state with HTML
+
+##### Inputs/Actions
+###### Signals
+## https://github.com/evancz/elm-todomvc
+### todo mvc
+#### Update
+##### Moves our application forward
+#### Model
+##### Definition of application state
+#### VIew
+##### a way to visualize our application state with HTML
+
+#### Inputs
+##### Signals
+#### Application Skeleton
+<pre><span class="pl-c">-- MODEL</span>
+
+<span class="pl-k">type alias </span><span class="pl-c1">Model</span> <span class="pl-k">=</span> { <span class="pl-k">...</span> }
+
+
+<span class="pl-c">-- UPDATE</span>
+
+<span class="pl-k">type </span><span class="pl-c1">Action</span> <span class="pl-k">=</span> <span class="pl-c1">Reset</span> <span class="pl-k">|</span> <span class="pl-k">...</span>
+
+<span class="pl-en">update</span> <span class="pl-k">:</span> <span class="pl-k">Action</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Model</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Model</span>
+<span class="pl-en">update </span>action model <span class="pl-k">=</span>
+  <span class="pl-k">case </span>action <span class="pl-k">of</span>
+    <span class="pl-c1">Reset</span> <span class="pl-k">-&gt;</span> <span class="pl-k">...</span>
+    <span class="pl-k">...</span>
+
+
+<span class="pl-c">-- VIEW</span>
+
+<span class="pl-en">view</span> <span class="pl-k">:</span> <span class="pl-k">Model</span> <span class="pl-k">-&gt;</span> <span class="pl-k">Html</span>
+<span class="pl-en">view </span><span class="pl-k">=</span>
+  <span class="pl-k">...</span></pre>
+<table class="highlight tab-size js-file-line-container" data-tab-size="8"><tbody><tr><td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  1. Model  - a full definition of the application&apos;s state</span></td></tr><tr><td id="L7" class="blob-num js-line-number" data-line-number="7"></td><td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  2. Update - a way to step the application state forward</span></td></tr><tr><td id="L8" class="blob-num js-line-number" data-line-number="8"></td><td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  3. View   - a way to visualize our application state with HTML</span></td></tr><tr><td id="L9" class="blob-num js-line-number" data-line-number="9"></td><td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c">  4. Inputs - the signals necessary to manage events</span></td></tr></tbody></table>

@@ -210,6 +210,14 @@
             "style": {}
           }
         }
+      },
+      "attr": {
+        "position": [
+          147,
+          -98,
+          3
+        ],
+        "style": {}
       }
     },
     "-2": {
@@ -234,6 +242,44 @@
           89,
           1
         ]
+      }
+    },
+    "-1.5": {
+      "title": "in scala",
+      "id": 240,
+      "attr": {
+        "position": [
+          155,
+          1,
+          4
+        ],
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "http://macroid.github.io/index.html",
+          "id": 241
+        },
+        "2": {
+          "title": "https://github.com/pfn/android-sdk-plugin",
+          "id": 242,
+          "ideas": {
+            "1": {
+              "title": "android-sdk-plugin",
+              "id": 243
+            }
+          }
+        },
+        "3": {
+          "title": "https://github.com/lihaoyi/scala.rx",
+          "id": 244,
+          "ideas": {
+            "1": {
+              "title": "scala.rx",
+              "id": 245
+            }
+          }
+        }
       }
     }
   },

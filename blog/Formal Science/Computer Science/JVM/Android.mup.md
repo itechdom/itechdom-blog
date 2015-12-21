@@ -36,3 +36,9 @@
 # Project Starters
 ## https://github.com/AndroidBootstrap/android-bootstrap
 ### Seems to include many open source projects. Although it has its own way of doing things
+# in scala
+## http://macroid.github.io/index.html
+## https://github.com/pfn/android-sdk-plugin
+### android-sdk-plugin
+## https://github.com/lihaoyi/scala.rx
+### scala.rx
