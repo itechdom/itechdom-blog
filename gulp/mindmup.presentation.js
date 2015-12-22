@@ -84,12 +84,6 @@ module.exports = function(options) {
 					slideElement('.slides').append('<section>'+idea.content+'</section/>');
 				}
 			})
-			slideElement('*').each(function(i, elem) {
-				console.log(elem);
-				for(var i=0;i<10;i++){
-					console.log('------------');
-				}
-			});
 			return slideElement.html();
 		}
 		return gulp.src('./mindmaps/**/*.presentation.mup.json')
