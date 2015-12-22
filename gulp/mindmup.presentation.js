@@ -49,11 +49,11 @@ module.exports = function(options) {
 					case "content":
 						//add proper formatting here
 						//
-        					var element = cheerio.load(flatMindmap[key]);
+						var element = cheerio.load(flatMindmap[key]);
 						var fruits = [];
 						element('*').each(function(i, elem) {
-							 element(this).removeAttr('style');
-							 // fruits[i] = $(this).text();
+							element(this).removeAttr('style');
+							// fruits[i] = $(this).text();
 						});
 						pushedContent.content = element.html();
 						break;
@@ -81,23 +81,28 @@ module.exports = function(options) {
 				}
 				if(idea.content && idea.indent){
 
-						slideElement('.slides').append('<section>'+idea.content+'</section/>');
-
+					slideElement('.slides').append('<section>'+idea.content+'</section/>');
 				}
 			})
+			slideElement('*').each(function(i, elem) {
+				console.log(elem);
+				for(var i=0;i<10;i++){
+					console.log('------------');
+				}
+			});
 			return slideElement.html();
 		}
 		return gulp.src('./mindmaps/**/*.presentation.mup.json')
-			.pipe(data(function(file) {
-			var mindmap = parseMindmap(file);
-			var content = processMindmap(mindmap);
-			var finalContent = convertToHTML(content);
-			file.contents = new Buffer(finalContent);
-			}))
-			.pipe(rename(function (path) {
-			path.extname = ".html"
-			}))
-			.pipe(gulp.dest('./presentations'))
-	});
+						.pipe(data(function(file) {
+						var mindmap = parseMindmap(file);
+						var content = processMindmap(mindmap);
+						var finalContent = convertToHTML(content);
+						file.contents = new Buffer(finalContent);
+						}))
+						.pipe(rename(function (path) {
+						path.extname = ".html"
+						}))
+						.pipe(gulp.dest('./presentations'))
+						});
 
-};
+						};
