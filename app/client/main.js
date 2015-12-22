@@ -7,6 +7,4 @@ require("./components/admin/admin.js");
 require("./components/post/post.js");
 require("./components/slides/slides.js");
 
-
-
 //we can register routes and debuggers here ...

@@ -68,6 +68,10 @@ module.exports = function(options) {
 			var mindmap = JSON.parse(String(file.contents));
 			return mindmap;
 		}
+		String.prototype.replaceAll = function(str1, str2, ignore) 
+		{
+			    return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
+		} 
 		function convertToHTML(mindmap){
 			var f = "";
 			mindmap.map((idea)=>{
@@ -90,6 +94,23 @@ module.exports = function(options) {
 						var mindmap = parseMindmap(file);
 						var content = processMindmap(mindmap);
 						var finalContent = convertToHTML(content);
+						var code = "&lt;code&gt;"
+						var codeClose = "&lt;/code&gt;"
+
+						var pre = "&lt;pre&gt;"
+						var preClose = "&lt;/pre&gt;"
+
+						finalContent = finalContent.replaceAll(code,"<code>");
+						finalContent = finalContent.replaceAll(codeClose,"</code>");
+
+						finalContent = finalContent.replaceAll(pre,"<pre>");
+						finalContent = finalContent.replaceAll(preClose,"</pre>");
+
+						finalContent = finalContent.replaceAll("<span>","");
+						finalContent = finalContent.replaceAll("</span>","");
+						finalContent = finalContent.replaceAll("<p>","");
+						finalContent = finalContent.replaceAll("</p>","");
+
 						file.contents = new Buffer(finalContent);
 						}))
 						.pipe(rename(function (path) {
