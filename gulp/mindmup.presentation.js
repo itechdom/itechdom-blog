@@ -96,18 +96,12 @@ module.exports = function(options) {
 						var finalContent = convertToHTML(content);
 
 
-						var code = "&lt;code&gt;"
-						var codeClose = "&lt;/code&gt;"
-						var pre = "&lt;pre&gt;"
-						var preClose = "&lt;/pre&gt;"
+						var less= "&lt;"
+						var more = "&gt;"
 
 						//replace code with tags
-						finalContent = finalContent.replaceAll(code,"<code>");
-						finalContent = finalContent.replaceAll(codeClose,"</code>");
-
-						//replace pre with tags
-						finalContent = finalContent.replaceAll(pre,"<pre>");
-						finalContent = finalContent.replaceAll(preClose,"</pre>");
+						finalContent = finalContent.replaceAll(less,"<");
+						finalContent = finalContent.replaceAll(more,">");
 
 						//remove p tags
 						finalContent = finalContent.replaceAll("<span>","");
