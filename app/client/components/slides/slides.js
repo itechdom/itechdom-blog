@@ -18,9 +18,7 @@ class slidesMain{
 		this.model = model;
 
 		actions.request$.subscribe(()=>{
-			this.model.getSlides().then((data)=>{
 				this.view.render();
-			})
 		});
 	}
 }
