@@ -94,18 +94,22 @@ module.exports = function(options) {
 						var mindmap = parseMindmap(file);
 						var content = processMindmap(mindmap);
 						var finalContent = convertToHTML(content);
+
+
 						var code = "&lt;code&gt;"
 						var codeClose = "&lt;/code&gt;"
-
 						var pre = "&lt;pre&gt;"
 						var preClose = "&lt;/pre&gt;"
 
+						//replace code with tags
 						finalContent = finalContent.replaceAll(code,"<code>");
 						finalContent = finalContent.replaceAll(codeClose,"</code>");
 
+						//replace pre with tags
 						finalContent = finalContent.replaceAll(pre,"<pre>");
 						finalContent = finalContent.replaceAll(preClose,"</pre>");
 
+						//remove p tags
 						finalContent = finalContent.replaceAll("<span>","");
 						finalContent = finalContent.replaceAll("</span>","");
 						finalContent = finalContent.replaceAll("<p>","");
