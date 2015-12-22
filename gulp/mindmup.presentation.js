@@ -80,7 +80,6 @@ module.exports = function(options) {
 					}
 				}
 				if(idea.content && idea.indent){
-
 					slideElement('.slides').append('<section>'+idea.content+'</section/>');
 				}
 			})
