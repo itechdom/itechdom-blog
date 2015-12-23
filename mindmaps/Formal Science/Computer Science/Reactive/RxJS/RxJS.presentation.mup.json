@@ -90,7 +90,13 @@
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true,
+        "position": [
+          133.5,
+          -100,
+          4
+        ]
       }
     },
     "28": {
@@ -169,7 +175,12 @@
       },
       "attr": {
         "style": {},
-        "collapsed": true
+        "collapsed": true,
+        "position": [
+          139.5,
+          112,
+          3
+        ]
       }
     },
     "-1": {
@@ -218,7 +229,8 @@
             }
           },
           "attr": {
-            "style": {}
+            "style": {},
+            "collapsed": true
           }
         },
         "5": {
@@ -317,7 +329,8 @@
             }
           },
           "attr": {
-            "style": {}
+            "style": {},
+            "collapsed": true
           }
         },
         "7": {
@@ -361,10 +374,11 @@
       "attr": {
         "style": {},
         "position": [
-          142.5,
-          -56,
-          1
-        ]
+          147.5,
+          -103,
+          5
+        ],
+        "collapsed": true
       }
     },
     "-3": {
@@ -384,7 +398,12 @@
       },
       "attr": {
         "style": {},
-        "collapsed": true
+        "collapsed": true,
+        "position": [
+          198.5,
+          110,
+          2
+        ]
       }
     }
   },

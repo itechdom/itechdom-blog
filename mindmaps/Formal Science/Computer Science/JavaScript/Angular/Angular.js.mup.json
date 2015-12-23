@@ -4,7 +4,7 @@
   "formatVersion": 2,
   "ideas": {
     "14": {
-      "title": "Core",
+      "title": "Concepts",
       "id": 109,
       "ideas": {
         "1": {
@@ -47,22 +47,6 @@
                     "style": {}
                   }
                 },
-                "4": {
-                  "title": "It's all a tree",
-                  "id": 201,
-                  "ideas": {
-                    "1": {
-                      "title": "https://angular.io/docs/js/latest/guide/making-components.html",
-                      "id": 202,
-                      "ideas": {
-                        "1": {
-                          "title": "creating components",
-                          "id": 203
-                        }
-                      }
-                    }
-                  }
-                },
                 "5": {
                   "title": "Scopes",
                   "id": 204,
@@ -75,35 +59,13 @@
                 }
               },
               "attr": {
-                "collapsed": true,
-                "style": {}
-              }
-            },
-            "3": {
-              "title": "Resources",
-              "id": 206,
-              "ideas": {
-                "1": {
-                  "title": "https://www.airpair.com/angularjs/posts/preparing-for-the-future-of-angularjs#2-3-4-scope",
-                  "id": 207
-                },
-                "2": {
-                  "title": "https://www.airpair.com/angularjs/posts/testing-angular-with-karma",
-                  "ideas": {
-                    "1": {
-                      "title": "testing Angular.js with Karma",
-                      "id": 212
-                    }
-                  },
-                  "id": 211,
-                  "attr": {
-                    "style": {}
-                  }
-                }
-              },
-              "attr": {
                 "style": {},
-                "collapsed": true
+                "collapsed": true,
+                "position": [
+                  60,
+                  -104,
+                  2
+                ]
               }
             },
             "4": {
@@ -111,105 +73,340 @@
               "id": 129,
               "ideas": {
                 "1": {
-                  "title": "Dependency Injection",
-                  "id": 130,
-                  "ideas": {}
+                  "title": "Archeticture",
+                  "id": 217,
+                  "ideas": {
+                    "1": {
+                      "title": "https://angular.io/docs/ts/latest/guide/architecture.html",
+                      "id": 219
+                    }
+                  },
+                  "attr": {
+                    "style": {},
+                    "collapsed": true
+                  }
                 },
                 "2": {
-                  "title": "Directives/ Components",
-                  "id": 132
-                },
-                "3": {
-                  "title": "Modules",
-                  "id": 133
-                },
-                "4": {
-                  "title": "Two/One Way Binding",
-                  "id": 134,
-                  "ideas": {
-                    "1": {
-                      "title": "Scopes",
-                      "id": 141
-                    }
-                  },
+                  "title": "Building Blocks",
+                  "id": 222,
                   "attr": {
-                    "collapsed": true,
-                    "style": {}
-                  }
-                },
-                "5": {
-                  "title": "Providers",
-                  "id": 135,
-                  "ideas": {
-                    "1": {
-                      "title": "Services",
-                      "id": 138
+                    "attachment": {
+                      "contentType": "text/html",
+                      "content": "<p style=\"box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\">The architecture diagram identifies the eight main building blocks of an Angular 2 application:</p><ol style=\"box-sizing: border-box; margin-bottom: 16px; margin-left: 0px; font-size: 16px; opacity: 0.87; line-height: 28px; padding-left: 32px; color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\"><li style=\"box-sizing: border-box;\"><a href=\"https://angular.io/docs/ts/latest/guide/architecture.html#module\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;\">Module</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://angular.io/docs/ts/latest/guide/architecture.html#component\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;\">Component</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://angular.io/docs/ts/latest/guide/architecture.html#template\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;\">Template</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://angular.io/docs/ts/latest/guide/architecture.html#metadata\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;\">Metadata</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://angular.io/docs/ts/latest/guide/architecture.html#data-binding\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;\">Data Binding</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://angular.io/docs/ts/latest/guide/architecture.html#service\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;\">Service</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://angular.io/docs/ts/latest/guide/architecture.html#directive\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;\">Directive</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://angular.io/docs/ts/latest/guide/architecture.html#dependency-injection\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;\">Dependency Injection</a></li></ol>"
                     },
-                    "2": {
-                      "title": "Factories",
-                      "id": 139
-                    }
+                    "style": {},
+                    "collapsed": true
                   },
-                  "attr": {
-                    "collapsed": true,
-                    "style": {}
-                  }
-                },
-                "6": {
-                  "title": "Testing",
-                  "id": 184,
                   "ideas": {
                     "1": {
-                      "title": "https://docs.angularjs.org/guide/unit-testing",
-                      "id": 185,
+                      "title": "Modules",
+                      "id": 224,
                       "ideas": {
                         "1": {
-                          "title": "unit testing Angularjs",
-                          "id": 186
+                          "title": "Library modules or Barrels",
+                          "id": 225,
+                          "ideas": {}
+                        },
+                        "2": {
+                          "title": "Public facade of other libraries?",
+                          "id": 227,
+                          "attr": {
+                            "style": {
+                              "background": "#800000"
+                            }
+                          }
                         }
+                      },
+                      "attr": {
+                        "style": {},
+                        "collapsed": true
                       }
                     },
                     "2": {
-                      "title": "tools",
-                      "id": 187,
+                      "title": "component",
+                      "id": 228,
                       "ideas": {
                         "1": {
-                          "title": "Karma",
-                          "id": 188,
+                          "title": "component lifecycle",
+                          "id": 230,
                           "ideas": {
                             "1": {
-                              "title": "http://karma-runner.github.io/0.13/index.html",
-                              "id": 189
+                              "title": "https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html",
+                              "id": 231
                             }
                           }
                         },
                         "2": {
-                          "title": "Angular Mocks/ ngMock",
-                          "id": 190,
+                          "title": "other components",
+                          "id": 273,
+                          "ideas": {
+                            "2": {
+                              "title": "Routing",
+                              "id": 275,
+                              "ideas": {
+                                "1": {
+                                  "title": "https://angular.io/docs/ts/latest/guide/router.html",
+                                  "id": 274,
+                                  "attr": {
+                                    "style": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "attachment": {
+                          "contentType": "text/html",
+                          "content": "<span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">Angular creates, updates, and destroys components as the user moves through the application. The developer can take action at each moment in this lifecycle through optional&nbsp;</span><a href=\"https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: 0px 0px; background-repeat: initial;\">Lifecycle Hooks</a><span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">.</span>"
+                        },
+                        "style": {}
+                      }
+                    },
+                    "3": {
+                      "title": "metadata",
+                      "id": 232,
+                      "ideas": {
+                        "1": {
+                          "title": "The architectural take-away is that we must add metadata to our code so that Angular knows what to do.",
+                          "id": 234
+                        },
+                        "2": {
+                          "title": "we use decorators in TS",
+                          "id": 235,
                           "ideas": {
                             "1": {
-                              "title": "https://docs.angularjs.org/api/ngMock",
-                              "id": 191
+                              "title": "@",
+                              "id": 236
                             }
                           }
                         },
                         "3": {
-                          "title": "https://www.npmjs.com/package/gulp-karma",
-                          "id": 213,
+                          "title": "other decorators",
+                          "id": 238,
+                          "attr": {
+                            "attachment": {
+                              "contentType": "text/html",
+                              "content": "<span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">We apply other metadata decorators in a similar fashion to guide Angular behavior. The&nbsp;</span><code style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);\">@Injectable</code><span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">,&nbsp;</span><code style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);\">@Input</code><span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">,&nbsp;</span><code style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);\">@Output</code><span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">,</span><code style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);\">@RouterConfig</code><span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">&nbsp;are a few of the more popular decorators we'll master as our Angular knowledge grows.</span>"
+                            },
+                            "style": {}
+                          }
+                        }
+                      },
+                      "attr": {
+                        "attachment": {
+                          "contentType": "text/html",
+                          "content": "<code-example language=\"ts\" format=\"linenums\" style=\"box-sizing: border-box; color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; line-height: normal;\"><pre class=\"prettyprint linenums lang-ts prettyprinted\" style=\"box-sizing: border-box; overflow: auto; font-family: Monaco, 'Lucida Console', monospace; color: rgb(92, 112, 122); width: auto; position: relative; line-height: 24px; margin-bottom: 24px; border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px; background: rgb(245, 246, 247);\"><ol class=\"linenums\" style=\"box-sizing: border-box; margin-bottom: 0px; margin-left: 0px; opacity: 0.87; line-height: 28px; padding: 16px 32px 16px 56px; overflow: auto; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><li class=\"L0\" style=\"box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;\"><code ng-non-bindable=\"\" style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><span class=\"lit\" style=\"box-sizing: border-box; color: rgb(100, 127, 17);\">@Component</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">({</span></code></li><li class=\"L1\" style=\"box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;\"><code ng-non-bindable=\"\" style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><span class=\"pln\" style=\"box-sizing: border-box;\">  selector</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">:</span><span class=\"pln\" style=\"box-sizing: border-box;\">    </span><span class=\"str\" style=\"box-sizing: border-box; color: rgb(100, 127, 17);\">'hero-list'</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">,</span></code></li><li class=\"L2\" style=\"box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;\"><code ng-non-bindable=\"\" style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><span class=\"pln\" style=\"box-sizing: border-box;\">  templateUrl</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">:</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"str\" style=\"box-sizing: border-box; color: rgb(100, 127, 17);\">'app/hero-list.component.html'</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">,</span></code></li><li class=\"L3\" style=\"box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;\"><code ng-non-bindable=\"\" style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><span class=\"pln\" style=\"box-sizing: border-box;\">  directives</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">:</span><span class=\"pln\" style=\"box-sizing: border-box;\">  </span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">[</span><span class=\"typ\" style=\"box-sizing: border-box; color: rgb(212, 54, 105);\">HeroDetailComponent</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">],</span></code></li><li class=\"L4\" style=\"box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;\"><code ng-non-bindable=\"\" style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><span class=\"pln\" style=\"box-sizing: border-box;\">  providers</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">:</span><span class=\"pln\" style=\"box-sizing: border-box;\">   </span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">[</span><span class=\"typ\" style=\"box-sizing: border-box; color: rgb(212, 54, 105);\">HeroService</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">]</span></code></li><li class=\"L5\" style=\"box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;\"><code ng-non-bindable=\"\" style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">})</span></code></li><li class=\"L6\" style=\"box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 0px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;\"><code ng-non-bindable=\"\" style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><span class=\"kwd\" style=\"box-sizing: border-box; color: rgb(212, 54, 105);\">export</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"kwd\" style=\"box-sizing: border-box; color: rgb(212, 54, 105);\">class</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"typ\" style=\"box-sizing: border-box; color: rgb(212, 54, 105);\">HeroesComponent</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">{</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">...</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(122, 139, 148);\">}</span></code></li></ol></pre></code-example><p style=\"box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\">Here we see the&nbsp;<code style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; background: rgb(245, 246, 247);\">@Component</code>&nbsp;decorator which (no surprise) identifies the class immediately below it as a Component class.</p><p style=\"box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\"><br></p><p style=\"box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\"><br></p>"
+                        },
+                        "style": {},
+                        "collapsed": true
+                      }
+                    },
+                    "4": {
+                      "title": "Data binding",
+                      "id": 239,
+                      "ideas": {
+                        "1": {
+                          "title": "()",
+                          "id": 240,
                           "ideas": {
                             "1": {
-                              "title": "gulp with Karma",
-                              "id": 214
+                              "title": "event",
+                              "id": 241,
+                              "ideas": {}
                             }
+                          }
+                        },
+                        "2": {
+                          "title": "[ ] ",
+                          "id": 245,
+                          "ideas": {
+                            "1": {
+                              "title": "one way binding",
+                              "id": 246
+                            }
+                          }
+                        },
+                        "3": {
+                          "title": "[( )]",
+                          "id": 248,
+                          "ideas": {
+                            "1": {
+                              "title": "two way binding",
+                              "id": 249
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true,
+                        "style": {}
+                      }
+                    },
+                    "5": {
+                      "title": "The service",
+                      "id": 265,
+                      "ideas": {
+                        "1": {
+                          "title": "Well defined class that does a specific thing",
+                          "id": 266
+                        },
+                        "2": {
+                          "title": "Examples",
+                          "id": 267,
+                          "attr": {
+                            "attachment": {
+                              "contentType": "text/html",
+                              "content": "<p style=\"box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\">Examples include:</p><ul style=\"box-sizing: border-box; margin-bottom: 16px; margin-left: 0px; font-size: 16px; opacity: 0.87; line-height: 28px; padding-left: 32px; color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\"><li style=\"box-sizing: border-box;\">logging service</li><li style=\"box-sizing: border-box;\">data service</li><li style=\"box-sizing: border-box;\">message bus</li><li style=\"box-sizing: border-box;\">tax calculator</li><li style=\"box-sizing: border-box;\">application configuration</li></ul>"
+                            },
+                            "style": {}
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true,
+                        "style": {}
+                      }
+                    },
+                    "6": {
+                      "title": "Dependency Injection",
+                      "id": 268,
+                      "ideas": {
+                        "1": {
+                          "title": "https://angular.io/docs/ts/latest/guide/dependency-injection.html",
+                          "id": 269,
+                          "ideas": {
+                            "1": {
+                              "title": "A nice way to understand Di",
+                              "id": 270
+                            },
+                            "2": {
+                              "title": "you don't need your class to rely on an object which makes it very hard to test",
+                              "id": 271
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true,
+                            "style": {}
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true,
+                        "style": {}
+                      }
+                    },
+                    "2.5": {
+                      "title": "template",
+                      "id": 233,
+                      "attr": {
+                        "style": {}
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "https://angular.io/docs/ts/latest/guide/template-syntax.html",
+                          "id": 272
+                        }
+                      }
+                    },
+                    "2.25": {
+                      "title": "Directives",
+                      "id": 250,
+                      "attr": {
+                        "style": {},
+                        "collapsed": true
+                      },
+                      "ideas": {
+                        "3": {
+                          "title": "Types",
+                          "id": 254,
+                          "ideas": {
+                            "1": {
+                              "title": "Structural",
+                              "id": 253,
+                              "attr": {
+                                "style": {}
+                              },
+                              "ideas": {
+                                "1": {
+                                  "title": "Structural directives alter layout by adding, removing, and replacing elements in DOM.",
+                                  "id": 256,
+                                  "ideas": {}
+                                },
+                                "2": {
+                                  "title": "Examples",
+                                  "id": 258,
+                                  "ideas": {
+                                    "1": {
+                                      "title": "ngFor",
+                                      "id": 259,
+                                      "ideas": {}
+                                    },
+                                    "2": {
+                                      "title": "ngIf",
+                                      "id": 261
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "2": {
+                              "title": "component is a form of directive with template",
+                              "id": 252,
+                              "attr": {
+                                "style": {}
+                              }
+                            },
+                            "3": {
+                              "title": "Attribute",
+                              "id": 255,
+                              "ideas": {
+                                "1": {
+                                  "title": "Attribute directives alter the appearance or behavior of an existing element. In templates they look like regular HTML attributes, hence the name.",
+                                  "id": 262
+                                },
+                                "2": {
+                                  "title": "Examples",
+                                  "id": 263,
+                                  "ideas": {
+                                    "1": {
+                                      "title": "ngModel",
+                                      "id": 264
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true,
+                            "style": {}
                           }
                         }
                       }
                     }
                   }
+                },
+                "3": {
+                  "title": "angular core",
+                  "id": 223,
+                  "attr": {
+                    "attachment": {
+                      "contentType": "text/html",
+                      "content": "<span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">The&nbsp;</span><code style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);\">angular2/core</code><span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">&nbsp;library is the primary Angular library module from which we get most of what we need.&nbsp;</span>"
+                    },
+                    "style": {}
+                  }
                 }
               },
               "attr": {
-                "style": {}
+                "style": {},
+                "position": [
+                  58,
+                  97,
+                  1
+                ]
               }
             }
           },
@@ -227,7 +424,41 @@
         ]
       }
     },
-    "26": {
+    "-1": {
+      "title": "Resources",
+      "id": 206,
+      "ideas": {
+        "1": {
+          "title": "cheat sheet",
+          "id": 220,
+          "ideas": {
+            "1": {
+              "title": "https://angular.io/docs/ts/latest/guide/cheatsheet.html",
+              "id": 221
+            }
+          }
+        },
+        "2": {
+          "title": "upgrading from 1.x",
+          "id": 276,
+          "ideas": {
+            "1": {
+              "title": "https://angular.io/docs/ts/latest/guide/upgrade.html",
+              "id": 277
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {},
+        "position": [
+          171.5,
+          -2,
+          3
+        ]
+      }
+    },
+    "-11": {
       "title": "Third Party",
       "id": 181,
       "ideas": {
@@ -239,6 +470,10 @@
               "title": "Drag and Drop",
               "id": 183
             }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
           }
         },
         "2": {
@@ -249,72 +484,21 @@
               "title": "Angular 2.0 playground",
               "id": 216
             }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         }
       },
       "attr": {
         "position": [
-          98,
-          132.375,
-          2
-        ],
-        "style": {}
-      }
-    },
-    "-1": {
-      "title": "Design Patterns",
-      "id": 174,
-      "ideas": {
-        "1": {
-          "title": "https://carldanley.com/javascript-design-patterns/",
-          "id": 175
-        }
-      },
-      "attr": {
-        "attachment": {
-          "contentType": "text/html",
-          "content": "<h2 style=\"font-family: 'Gilda Display', sans-serif; color: rgb(0, 0, 0); line-height: 33px;\">Modern Day JavaScript Design Patterns</h2><p style=\"font-family: 'Gilda Display', sans-serif; color: rgb(34, 34, 34); font-size: 22px; line-height: 33px;\">Below is a list of each JavaScript design pattern I've had the opportunity to write about with breakdowns on various aspects of that pattern such as their advantages and disadvantages. Browse away!</p><p style=\"font-family: 'Gilda Display', sans-serif; color: rgb(34, 34, 34); font-size: 22px; line-height: 33px;\"><a href=\"http://carldanley.com/js-module-pattern/\" style=\"color: rgb(236, 59, 25);\">The Module Pattern</a>&nbsp;<br><a href=\"http://carldanley.com/js-revealing-module-pattern/\" style=\"color: rgb(236, 59, 25);\">The Revealing Module Pattern</a>&nbsp;<br><a href=\"http://carldanley.com/js-singleton-pattern/\" style=\"color: rgb(236, 59, 25);\">The Singleton Pattern</a>&nbsp;<br><a href=\"http://carldanley.com/js-observer-pattern/\" style=\"color: rgb(236, 59, 25);\">The Observer Pattern</a>&nbsp;<br><a href=\"http://carldanley.com/js-mediator-pattern/\" style=\"color: rgb(236, 59, 25);\">The Mediator Pattern</a>&nbsp;<br><a href=\"http://carldanley.com/js-prototype-pattern/\" style=\"color: rgb(236, 59, 25);\">The Prototype Pattern</a>&nbsp;<br><a href=\"http://carldanley.com/js-facade-pattern/\" style=\"color: rgb(236, 59, 25);\">The Facade Pattern</a>&nbsp;<br><a href=\"http://carldanley.com/js-factory-pattern/\" style=\"color: rgb(236, 59, 25);\">The Factory Pattern</a></p>"
-        },
-        "style": {},
-        "position": [
-          225,
-          -68.5,
+          89.5,
+          123,
           4
         ],
-        "collapsed": true
-      }
-    },
-    "-2": {
-      "title": "Paradigms",
-      "id": 176,
-      "ideas": {
-        "1": {
-          "title": "Functional",
-          "id": 177
-        },
-        "2": {
-          "title": "Functional Reactive",
-          "id": 178,
-          "ideas": {
-            "1": {
-              "title": "RxJS",
-              "id": 180
-            }
-          }
-        },
-        "3": {
-          "title": "OOP",
-          "id": 179
-        }
-      },
-      "attr": {
-        "collapsed": true,
         "style": {},
-        "position": [
-          258,
-          37.5,
-          5
-        ]
+        "collapsed": true
       }
     }
   },

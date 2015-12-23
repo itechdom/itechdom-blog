@@ -1,0 +1,281 @@
+{
+  "title": "Falcor",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Concepts",
+      "id": 11,
+      "ideas": {
+        "3": {
+          "title": "JSON Graph",
+          "id": 20,
+          "ideas": {
+            "1": {
+              "title": "allows json to have graph and linking (think of it as relations in SQL)",
+              "id": 21
+            },
+            "2": {
+              "title": "Adds identity to model",
+              "id": 22,
+              "ideas": {
+                "1": {
+                  "title": "helps with caching and removing duplicates",
+                  "id": 23
+                }
+              }
+            },
+            "3": {
+              "title": "identity path",
+              "id": 24
+            },
+            "4": {
+              "title": "new primitive json types",
+              "id": 25,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<h2 id=\"new-primitive-value-types\" style=\"box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: -50px; font-size: 30px; position: relative; border-top-width: 70px; border-top-style: solid; border-top-color: transparent; z-index: -1; background-color: rgb(247, 247, 247); background-clip: padding-box;\">New Primitive Value Types</h2><p style=\"box-sizing: border-box; background-color: rgb(247, 247, 247);\">In addition to JSON’s primitive types, JSON Graph introduces three new primitive types:</p><ol style=\"box-sizing: border-box; background-color: rgb(247, 247, 247);\"><li style=\"box-sizing: border-box;\">Reference</li><li style=\"box-sizing: border-box;\">Atom</li><li style=\"box-sizing: border-box;\">Error</li></ol><p style=\"box-sizing: border-box; background-color: rgb(247, 247, 247);\">Each of these types is a JSON Graph object with a “$type” key that differentiates it from regular JSON objects, and describes the type of its “value” key. These three JSON Graph primitive types are always retrieved and replaced in their entirety just like a primitive JSON value. None of the JSON Graph values can be mutated using any of the available abstract JSON Graph operations.</p>"
+                },
+                "style": {}
+              }
+            },
+            "5": {
+              "title": "reference is like a symbolic link in unix",
+              "id": 26
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
+          }
+        },
+        "4": {
+          "title": "Paths",
+          "id": 28,
+          "ideas": {
+            "1": {
+              "title": "A way to access a subset of the JSON Graph",
+              "id": 39
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
+          }
+        },
+        "5": {
+          "title": "Data Sources",
+          "id": 29,
+          "ideas": {
+            "1": {
+              "title": "Every data source is associated with one json graph",
+              "id": 32
+            },
+            "2": {
+              "title": "Image showing relationship between model and data source",
+              "id": 33,
+              "ideas": {
+                "1": {
+                  "title": "http://netflix.github.io/falcor/documentation/datasource.png",
+                  "id": 34
+                }
+              }
+            },
+            "3": {
+              "title": "Why?",
+              "id": 35,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<h2 id=\"why-implement-a-datasource\" style=\"box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: -50px; font-size: 30px; position: relative; border-top-width: 70px; border-top-style: solid; border-top-color: transparent; z-index: -1; background-color: rgb(247, 247, 247); background-clip: padding-box;\">Why Implement a DataSource?</h2><p style=\"box-sizing: border-box; background-color: rgb(247, 247, 247);\">The most common reason for implementing a DataSource is to allow data to be retrieved from the network using a specific transport protocol. The falcor library ships with the HttpDataSource, which only supports retrieving&nbsp;<a href=\"http://netflix.github.io/falcor/documentation/jsongraph.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: transparent;\">JSON Graph</a>&nbsp;information from the network using the HTTP/HTTPS protocol.</p><h2 id=\"datasource-implementations\" style=\"box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: -50px; font-size: 30px; position: relative; border-top-width: 70px; border-top-style: solid; border-top-color: transparent; z-index: -1; background-color: rgb(247, 247, 247); background-clip: padding-box;\">DataSource Implementations</h2><p style=\"box-sizing: border-box; background-color: rgb(247, 247, 247);\">Falcor ships with the following DataSource implementations:</p><ul style=\"box-sizing: border-box; background-color: rgb(247, 247, 247);\"><li style=\"box-sizing: border-box;\">HttpDataSource</li><li style=\"box-sizing: border-box;\">Router (server only)</li><li style=\"box-sizing: border-box;\">ModelDataSource</li></ul>"
+                },
+                "style": {}
+              }
+            }
+          },
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<span style=\"background-color: rgb(247, 247, 247);\">A DataSource is an interface which can be implemented to expose&nbsp;</span><a href=\"http://netflix.github.io/falcor/documentation/jsongraph.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: rgb(247, 247, 247);\">JSON Graph</a><span style=\"background-color: rgb(247, 247, 247);\">&nbsp;information to a&nbsp;</span><a href=\"http://netflix.github.io/falcor/documentation/model.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: rgb(247, 247, 247);\">Model</a><span style=\"background-color: rgb(247, 247, 247);\">. Every DataSource is associated with a single&nbsp;</span><a href=\"http://netflix.github.io/falcor/documentation/jsongraph.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: rgb(247, 247, 247);\">JSON Graph</a><span style=\"background-color: rgb(247, 247, 247);\">&nbsp;object.&nbsp;</span><a href=\"http://netflix.github.io/falcor/documentation/model.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: rgb(247, 247, 247);\">Models</a><span style=\"background-color: rgb(247, 247, 247);\">&nbsp;execute&nbsp;</span><a href=\"http://netflix.github.io/falcor/documentation/jsongraph.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: rgb(247, 247, 247);\">JSON Graph</a>&nbsp;<span style=\"background-color: rgb(247, 247, 247);\">operations (get, set, and call) to retrieve values from the DataSource’s&nbsp;</span><a href=\"http://netflix.github.io/falcor/documentation/jsongraph.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: rgb(247, 247, 247);\">JSON Graph</a><span style=\"background-color: rgb(247, 247, 247);\">&nbsp;object. DataSources may retrieve JSON Graph information from anywhere, including device memory, a remote machine, or even a lazily-run computation.</span>"
+            },
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "6": {
+          "title": "Router",
+          "id": 30,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<div>The Falcor Router<br></div><div>A Falcor Router is an implementation of the DataSource interface. Falcor Model objects use DataSources to retrieve JSON Graph data. However Models typically run on the client and Routers typically run on the Application server. As a result communication between a Model and the Router is typically remoted across the network using an HttpDataSource</div>"
+            },
+            "style": {},
+            "collapsed": true
+          },
+          "ideas": {
+            "1": {
+              "title": "Models run on the client",
+              "id": 36
+            },
+            "2": {
+              "title": "Router runs on the server",
+              "id": 37
+            },
+            "3": {
+              "title": "results in an http communication",
+              "id": 38
+            },
+            "4": {
+              "title": "This is a Restfull end point",
+              "id": 40
+            },
+            "5": {
+              "title": "It matches  JSON paths as apposed to url paths",
+              "id": 42
+            },
+            "6": {
+              "title": "one route can match multiple paths",
+              "id": 43
+            }
+          }
+        },
+        "7": {
+          "title": "Model",
+          "id": 31,
+          "ideas": {
+            "1": {
+              "title": "implemented on the client",
+              "id": 41
+            }
+          },
+          "attr": {
+            "style": {},
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<p style=\"box-sizing: border-box; background-color: rgb(247, 247, 247);\">Models abstract over&nbsp;<a href=\"http://netflix.github.io/falcor/documentation/datasources.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: transparent;\">Data Sources</a>&nbsp;and provide several important services:</p><ul style=\"box-sizing: border-box; background-color: rgb(247, 247, 247);\"><li style=\"box-sizing: border-box;\">Models convert&nbsp;<a href=\"http://netflix.github.io/falcor/documentation/jsongraph.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: transparent;\">JSON Graph</a>&nbsp;information retrieved from the&nbsp;<a href=\"http://netflix.github.io/falcor/documentation/datasources.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: transparent;\">Data Source</a>&nbsp;into JSON.</li><li style=\"box-sizing: border-box;\">Models reduce latency by caching data previously retrieved from the&nbsp;<a href=\"http://netflix.github.io/falcor/documentation/datasources.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: transparent;\">Data Source</a>&nbsp;in an in-memory cache.</li><li style=\"box-sizing: border-box;\">Models achieve more efficient network access patterns by batching multiple concurrent requests for information from the view into batched requests to the&nbsp;<a href=\"http://netflix.github.io/falcor/documentation/datasources.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: transparent;\">Data Source</a>.</li><li style=\"box-sizing: border-box;\">Models optimize your view’s outgoing requests to the&nbsp;<a href=\"http://netflix.github.io/falcor/documentation/datasources.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: transparent;\">Data Source</a>&nbsp;using previously-cached&nbsp;<a href=\"http://netflix.github.io/falcor/documentation/jsongraph.html\" style=\"box-sizing: border-box; color: rgb(51, 122, 183); background-color: transparent;\">JSON Graph</a>&nbsp;references.</li></ul>"
+            },
+            "collapsed": true
+          }
+        }
+      },
+      "attr": {
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<ul class=\"nav navbar-nav\" style=\"box-sizing: border-box; margin-bottom: 0px; background-color: rgb(54, 54, 54);\"><li class=\"dropdown active open\" style=\"box-sizing: border-box; display: block; float: left; background-color: rgb(74, 74, 74);\"><ul class=\"dropdown-menu\" style=\"box-sizing: border-box; margin-top: 1px; top: 50px; z-index: 1000; border-top-width: 2px; border-color: rgb(204, 204, 204) rgba(0, 0, 0, 0.14902) rgba(0, 0, 0, 0.14902); border-radius: 0px 0px 4px 4px; box-shadow: rgba(0, 0, 0, 0.172549) 0px 6px 12px; background-color: rgba(0, 0, 0, 0.901961);\"><li class=\"\" style=\"box-sizing: border-box;\"><a href=\"http://netflix.github.io/falcor/documentation/paths.html\" style=\"box-sizing: border-box; color: rgb(230, 230, 230); text-decoration: underline; outline: 0px; line-height: 1.42857; font-size: 16px; background-color: transparent;\" target=\"_blank\">Main Concepts<br></a></li><li class=\"\" style=\"box-sizing: border-box;\"><a href=\"http://netflix.github.io/falcor/documentation/paths.html\" style=\"box-sizing: border-box; color: rgb(230, 230, 230); text-decoration: underline; outline: 0px; line-height: 1.42857; font-size: 16px; background-color: transparent;\" target=\"_blank\">Paths</a></li><li class=\"\" style=\"box-sizing: border-box;\"><a href=\"http://netflix.github.io/falcor/documentation/jsongraph.html\" style=\"box-sizing: border-box; color: rgb(230, 230, 230); line-height: 1.42857; font-size: 16px; background-color: transparent;\" target=\"_blank\">JSON Graph</a></li><li class=\"active\" style=\"box-sizing: border-box;\"><a href=\"http://netflix.github.io/falcor/documentation/datasources.html\" style=\"box-sizing: border-box; color: rgb(230, 230, 230); line-height: 1.42857; font-size: 16px; background-color: rgb(74, 74, 74);\" target=\"_blank\">Data Sources</a></li><li class=\"\" style=\"box-sizing: border-box;\"><a href=\"http://netflix.github.io/falcor/documentation/router.html\" style=\"box-sizing: border-box; color: rgb(230, 230, 230); line-height: 1.42857; font-size: 16px; background-color: transparent;\" target=\"_blank\">Router</a></li><li class=\"\" style=\"box-sizing: border-box;\"><a href=\"http://netflix.github.io/falcor/documentation/model.html\" style=\"box-sizing: border-box; color: rgb(230, 230, 230); line-height: 1.42857; font-size: 16px; background-color: transparent;\" target=\"_blank\">Model</a></li><li class=\"\" style=\"box-sizing: border-box;\"><div><br></div></li></ul></li><li class=\"dropdown \" style=\"box-sizing: border-box; display: block; float: left;\"></li></ul>"
+        },
+        "style": {},
+        "collapsed": true
+      }
+    },
+    "2": {
+      "title": "Resources",
+      "id": 13,
+      "ideas": {
+        "1": {
+          "title": "http://netflix.github.io/falcor/",
+          "id": 8,
+          "attr": {
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "https://auth0.com/blog/2015/08/28/getting-started-with-falcor/?utm_source=javascriptweekly&utm_medium=email",
+          "id": 9,
+          "ideas": {
+            "1": {
+              "title": "Getting started with falcor",
+              "id": 10
+            }
+          },
+          "attr": {
+            "style": {}
+          }
+        }
+      },
+      "attr": {
+        "style": {},
+        "position": [
+          63,
+          202.25,
+          1
+        ],
+        "collapsed": true
+      }
+    },
+    "-1": {
+      "title": "Pain Points",
+      "id": 14,
+      "attr": {
+        "style": {
+          "background": "#993300"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "It says one end point, but there's a router",
+          "id": 15,
+          "ideas": {
+            "1": {
+              "title": "not really, they are saying that routes are flexible enough and don't follow a static url to access subsets of data",
+              "id": 44
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
+          }
+        }
+      }
+    },
+    "-2": {
+      "title": "features",
+      "id": 27,
+      "ideas": {
+        "1": {
+          "title": "Does automatic chaching",
+          "id": 19,
+          "attr": {
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "manages data model on client and server",
+          "id": 18,
+          "attr": {
+            "style": {}
+          }
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {},
+        "position": [
+          75,
+          178,
+          2
+        ]
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 93,
+      "ideaIdTo": 94,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ],
+  "attr": {
+    "style": {},
+    "attachment": {
+      "contentType": "text/html",
+      "content": "<div id=\"modalAttachmentEditor\" class=\"hide\" style=\"display: block; height: 640.797px; width: 1150.39px; left: 143.797px; top: 80.0938px; z-index: 9999;\"><div class=\"viewer-topbar\"><button rel=\"tooltip\" data-placement=\"bottom\" data-mm-role=\"close\" class=\"close\" title=\"\" data-original-title=\"Close (Esc)\">×</button><button class=\"pull-right btn btn-small btn-primary\" rel=\"tooltip\" data-placement=\"bottom\" data-mm-role=\"edit\" title=\"\" data-original-title=\"Edit (Ctrl/Cmd+Enter)\" style=\"background-image: linear-gradient(rgb(0, 136, 204), rgb(0, 68, 204));\">Edit</button></div><div id=\"attachEditArea\" data-mm-role=\"editor\" style=\"height: 559px;\"><h3 id=\"falcor\" style=\"margin-top: 0px; margin-bottom: 5px; box-sizing: border-box; padding: 0px; border: 0px; font-stretch: inherit; vertical-align: baseline;\"><font color=\"#bf311a\" face=\"Signika Negative, serif\" size=\"3\"><span style=\"font-weight: normal; line-height: 20px;\">Falcor</span></font></h3><h3 id=\"falcor\" style=\"margin-top: 0px; margin-bottom: 5px; box-sizing: border-box; padding: 0px; border: 0px; font-stretch: inherit; vertical-align: baseline;\"><font color=\"#bf311a\" face=\"Signika Negative, serif\" size=\"3\"><span style=\"font-weight: normal; line-height: 20px;\">Falcor, a very new library created and open-sourced by Netflix, is a complete departure from the traditional REST API. Instead of focusing on specific endpoints that return a rigid and predetermined set of data, there is only one endpoint. This is how Falcor is commonly described, and it is a bit misleading, though technically correct. Instead of focusing on various server endpoints to retrieve and update your model data, you instead “ask” your API server for specific model data. Do you need the first 3 user names in your customer list along with their ages? Simply “ask” your API server, in a single request, for this specific data. What if you want only the first 2 user names and no ages? Again, a single request to the same endopint. The differences in these two GET requests can be seen by examining their query parameters, which contain specifics regarding the model properties of interest. Server-side, a handler for a particular combination or pattern of model properties is codified as part of a “route”. When handling the API request, the falcor router (server-side) contacts the proper router function based on the items present in the query string.</span></font></h3><h3 id=\"falcor\" style=\"margin-top: 0px; margin-bottom: 5px; box-sizing: border-box; padding: 0px; border: 0px; font-stretch: inherit; vertical-align: baseline;\"><font color=\"#bf311a\" face=\"Signika Negative, serif\" size=\"3\"><span style=\"font-weight: normal; line-height: 20px;\"><br></span></font></h3><h3 id=\"falcor\" style=\"margin-top: 0px; margin-bottom: 5px; box-sizing: border-box; padding: 0px; border: 0px; font-stretch: inherit; vertical-align: baseline;\"><font color=\"#bf311a\" face=\"Signika Negative, serif\" size=\"3\"><span style=\"font-weight: normal; line-height: 20px;\">It expects you to be able to model your data in as a JSON graph. Your underlying data source does not necessarily have to maintain all data as a JSON graph, and in most cases it probably will not, but your Falcor API endpoint must translate your data into this format when responding to a request from your client. The necessity of this structure will become clearer as you go through this article and read a bit more about Falcor. The importance of organizing your data as a JSON graph will become even more obvious once you begin to explore reference routes, which I have left out of this post in order to keep it simple.</span></font></h3><h3 id=\"falcor\" style=\"margin-top: 0px; margin-bottom: 5px; box-sizing: border-box; padding: 0px; border: 0px; font-stretch: inherit; vertical-align: baseline;\"><font color=\"#bf311a\" face=\"Signika Negative, serif\" size=\"3\"><span style=\"font-weight: normal; line-height: 20px;\"><br></span></font></h3><h3 id=\"falcor\" style=\"margin-top: 0px; margin-bottom: 5px; box-sizing: border-box; padding: 0px; border: 0px; font-stretch: inherit; vertical-align: baseline;\"><font color=\"#bf311a\" face=\"Signika Negative, serif\" size=\"3\"><span style=\"font-weight: normal; line-height: 20px;\">Falcor promotes a more intuitive API that is your model. It also ensures that extra, unnecessary model data is never returned, saving bandwidth. Furthermore, requests from multiple disparate browser-side components are combined into a single request to limit HTTP overhead. Data is cached by Falcor client-side, and subsequent requests for cached data avoid a round-trip to the server. This decoupling of the model from the data source, along with all of the efficiency considerations, is exceptionally appealing. But the underlying concepts can be a bit mind-bending. I was a little confused by Falcor until I watched this video by Jafar Husain, Falcor’s lead developer.</span></font></h3></div></div><div id=\"topbar\" class=\"navbar navbar-fixed-top\" style=\"z-index: 1030;\"><div class=\"navbar-inner\" style=\"background-image: linear-gradient(rgb(255, 255, 255), rgb(242, 242, 242));\"><ul class=\"nav pull-left\" id=\"mainMenu\"><li><a id=\"logo-img\" data-toggle=\"modal\" data-target=\"#modalKeyActions\" data-placement=\"bottom\" href=\"https://www.mindmup.com/#\" data-title=\"Show start menu again\" rel=\"tooltip\" data-category=\"Top Bar\" data-event-type=\"Logo\" data-original-title=\"\" title=\"\">&nbsp;</a></li><li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"https://www.mindmup.com/#\" data-category=\"Top Bar\" data-event-type=\"Open Bookmarks\">File</a></li><li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"https://www.mindmup.com/#\" data-category=\"Top Bar\" data-event-type=\"Tools\">Edit</a></li><li class=\"dropdown hidden-narrow-screen\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"https://www.mindmup.com/#\" data-category=\"Top Bar\" data-event-type=\"View\">Share</a></li><li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"https://www.mindmup.com/#\" data-category=\"Top Bar\" data-event-type=\"View\">View</a></li><li class=\"hidden-phone-portrait visible-online\"><a data-toggle=\"modal\" data-target=\"#modalExtensions\" href=\"https://www.mindmup.com/#\" data-title=\"Extensions\" data-category=\"Top Bar\" data-event-type=\"Extensions\">Extensions</a></li></ul><ul class=\"nav pull-right\"><li data-mm-role=\"save\" class=\"pull-left btn-group visible-online\"><button class=\"btn btn-primary\" data-mm-role=\"publish\" data-category=\"Top Bar\" data-event-type=\"Save Map\" style=\"background-image: linear-gradient(rgb(0, 136, 204), rgb(0, 68, 204));\">Save</button>&nbsp;<button class=\"btn dropdown-toggle\" data-toggle=\"dropdown\" style=\"background-image: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));\"><span data-mm-role=\"currentrepo\" class=\"repo repo-g\">&nbsp;</span><b class=\"caret\"></b></button></li><li class=\"hidden-phone\">&nbsp;<button class=\"btn\" data-target=\"#modalAtlasPublish\" data-toggle=\"modal\" data-category=\"Top Bar\" data-event-type=\"Publish to Atlas\" style=\"background-image: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));\">Publish&nbsp;<span class=\"icon-cloud-upload\"></span></button></li><li class=\"dropdown hidden-phone-portrait\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"https://www.mindmup.com/#\" data-category=\"About\" data-event-type=\"Open\"><span class=\"icon-info-sign\"></span></a></li><li class=\"hidden-narrow-screen\"><a rel=\"tooltip\" data-title=\"Get news on Facebook\" data-placement=\"bottom\" data-category=\"Top Bar\" data-event-type=\"Get in touch - facebook\" target=\"_blank\" href=\"http://facebook.com/mindmupapp\" class=\"social\" data-original-title=\"\" title=\"\"><span class=\"icon-facebook-sign\"></span></a>&nbsp;<a rel=\"tooltip\" data-title=\"Get news on Twitter\" data-placement=\"bottom\" data-category=\"Top Bar\" data-event-type=\"Get in touch - twitter\" target=\"_blank\" href=\"https://twitter.com/intent/user?screen_name=mindmup\" class=\"social\" data-original-title=\"\" title=\"\"><span class=\"icon-twitter-sign\"></span></a>&nbsp;<a rel=\"tooltip\" data-title=\"Get news on Google+\" data-placement=\"bottom\" data-category=\"Top Bar\" data-event-type=\"Get in touch - google+\" target=\"_blank\" href=\"https://plus.google.com/u/0/communities/112831595986131146219\" class=\"social\" data-original-title=\"\" title=\"\"><span class=\"icon-google-plus-sign\"></span></a></li></ul></div></div><div class=\"hidden-collaboration-mute-speech\"></div><div id=\"splittable\" data-drag-role=\"container\" style=\"width: 1438px;\"><div class=\"splittable-primary\" id=\"container\" data-mm-role=\"default\" tabindex=\"1\" style=\"height: 760px; width: 1438px; overflow: auto;\"><div data-mapjs-role=\"stage\" style=\"position: relative; min-width: 709px; min-height: 330px; width: 709px; height: 330px; transform-origin: left top 0px; transform: translate3d(719px, 380px, 0px); opacity: 1;\"><div id=\"node_1\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"1\" style=\"z-index: 3; position: absolute; left: -26px; top: -17px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">Falcor</span></div><div id=\"node_2\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"2\" style=\"z-index: 3; position: absolute; left: 46px; top: -93px; min-width: 44px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">No SQL</span></div><div id=\"node_4\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"2\" style=\"z-index: 3; position: absolute; left: 46px; top: 60px; min-width: 25px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">SQL</span></div><div id=\"node_5\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"3\" style=\"z-index: 3; position: absolute; left: 126px; top: -192px; min-width: 65px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">Rethink DB</span></div><div id=\"node_6\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"4\" style=\"z-index: 3; position: absolute; left: 227px; top: -192px; min-width: 164px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px; max-width: 164px;\">https://www.rethinkdb.com...</span><a target=\"_blank\" class=\"mapjs-hyperlink\" href=\"https://www.rethinkdb.com/\"></a></div><div id=\"node_7\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node activated selected\" mapjs-level=\"3\" style=\"z-index: 4; position: absolute; left: 126px; top: -107px; min-width: 36px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">Falcor</span><a href=\"https://www.mindmup.com/#\" class=\"mapjs-attachment\" style=\"color: rgb(0, 85, 128); text-decoration: underline; outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px;\"></a></div><div id=\"node_8\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"4\" style=\"z-index: 3; position: absolute; left: 198px; top: -138px; min-width: 136px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">http://netflix.github.io/...</span><a target=\"_blank\" class=\"mapjs-hyperlink\" href=\"http://netflix.github.io/falcor/\"></a></div><div id=\"node_9\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"4\" style=\"z-index: 3; position: absolute; left: 198px; top: -75px; min-width: 146px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">https://auth0.com/blog/20...</span><a target=\"_blank\" class=\"mapjs-hyperlink\" href=\"https://auth0.com/blog/2015/08/28/getting-started-with-falcor/?utm_source=javascriptweekly&amp;utm_medium=email\"></a></div><div id=\"node_10\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"5\" style=\"z-index: 3; position: absolute; left: 380px; top: -84px; min-width: 146px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">Getting started with falcor</span></div><div id=\"node_11\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"3\" style=\"z-index: 3; position: absolute; left: 126px; top: -12px; min-width: 146px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">azure.microsoft.com/en-us/services/documentdb/</span></div><div id=\"node_12\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"4\" style=\"z-index: 3; position: absolute; left: 308px; top: -3px; min-width: 79px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">Document DB</span></div><div id=\"node_13\" tabindex=\"0\" data-mapjs-role=\"node\" class=\"mapjs-node\" mapjs-level=\"5\" style=\"z-index: 3; position: absolute; left: 423px; top: -12px; min-width: 146px;\"><span data-mapjs-role=\"title\" style=\"line-height: 18px;\">Microsoft's Document store</span></div><svg id=\"connector_1_2\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: -28px; top: -93px; width: 134px; height: 112px;\"><path class=\"mapjs-connector\" d=\"M28,93Q28,-34 74,17\"></path></svg><svg id=\"connector_1_4\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: -28px; top: -19px; width: 115px; height: 113px;\"><path class=\"mapjs-connector\" d=\"M28,19Q28,147 74,96\"></path></svg><svg id=\"connector_2_5\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: 46px; top: -192px; width: 161px; height: 133px;\"><path class=\"mapjs-connector\" d=\"M30,116Q30,-34 80,17\"></path></svg><svg id=\"connector_5_6\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: 126px; top: -192px; width: 281px; height: 34px;\"><path class=\"mapjs-connector\" d=\"M73,17Q73,17 119,17\"></path></svg><svg id=\"connector_2_7\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: 46px; top: -107px; width: 132px; height: 48px;\"><path class=\"mapjs-connector\" d=\"M54,31Q54,17 85,17\"></path></svg><svg id=\"connector_7_8\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: 126px; top: -138px; width: 224px; height: 65px;\"><path class=\"mapjs-connector\" d=\"M26,48Q26,-6 72,17\"></path></svg><svg id=\"connector_7_9\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: 126px; top: -107px; width: 234px; height: 66px;\"><path class=\"mapjs-connector\" d=\"M26,17Q26,73 72,49\"></path></svg><svg id=\"connector_9_10\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: 198px; top: -84px; width: 344px; height: 52px;\"><path class=\"mapjs-connector\" d=\"M146,26Q146,26 198,26\"></path></svg><svg id=\"connector_2_11\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: 46px; top: -93px; width: 242px; height: 133px;\"><path class=\"mapjs-connector\" d=\"M30,17Q30,158 80,107\"></path></svg><svg id=\"connector_11_12\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: 126px; top: -12px; width: 277px; height: 52px;\"><path class=\"mapjs-connector\" d=\"M146,26Q146,26 192,26\"></path></svg><svg id=\"connector_12_13\" data-mapjs-role=\"connector\" class=\"mapjs-draw-container\" style=\"left: 308px; top: -12px; width: 277px; height: 52px;\"><path class=\"mapjs-connector\" d=\"M86,26Q86,26 131,26\"></path></svg></div></div></div><div class=\"modal-backdrop fade in hide\" style=\"z-index: 1040; display: block; width: 1438px; height: 801px;\"></div><iframe name=\"oauth2relay328641875\" id=\"oauth2relay328641875\" src=\"https://accounts.google.com/o/oauth2/postmessageRelay?parent=https%3A%2F%2Fwww.mindmup.com#rpctoken=697043877&amp;forcesecure=1\" tabindex=\"-1\" style=\"width: 1px; height: 1px; position: absolute; top: -100px;\"></iframe><iframe src=\"https://accounts.google.com/o/oauth2/auth?client_id=399581875395.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.install%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;immediate=true&amp;include_granted_scopes=true&amp;proxy=oauth2relay328641875&amp;redirect_uri=postmessage&amp;origin=https%3A%2F%2Fwww.mindmup.com&amp;response_type=token&amp;state=1549426242%7C0.3758336311&amp;authuser=0\" style=\"width: 1px; height: 1px; position: absolute; top: -100px;\"></iframe><iframe id=\"apiproxyeb3b5b0cf6f51352443b63340dcd77504b798f900.6966305295936763\" name=\"apiproxyeb3b5b0cf6f51352443b63340dcd77504b798f900.6966305295936763\" src=\"https://content.googleapis.com/static/proxy.html?jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.slS5rHkFXTQ.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCOfN6r_xbOer9jqf4_7s7fNaJZM7w#parent=https%3A%2F%2Fwww.mindmup.com&amp;rpctoken=874683180\" tabindex=\"-1\" style=\"width: 1px; height: 1px; position: absolute; top: -100px;\"></iframe>"
+    }
+  }
+}
