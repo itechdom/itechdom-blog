@@ -2,7 +2,8 @@ var path = require("path");
 var webpack = require("webpack");
 module.exports = {
     entry: {
-        dist: './app/client/main.js'
+        dist: './app/client/main.js',
+	ng:'./other-languages/python-ng2/client/main.js'
     },
     output: {
         path: __dirname + "/dist",
@@ -33,7 +34,8 @@ module.exports = {
                 test: /\.jsx?$/,
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel' // 'babel-loader' is also a legal name to reference
-            }
+            },
+	    { test: /\.tsx?$/, loader: 'ts-loader?compiler=ntypescript' }
         ]
     },
     plugins: [
