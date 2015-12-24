@@ -26,5 +26,13 @@ module.exports = function (options) {
             , env: { 'NODE_ENV': 'development' }
         })
     })
+    gulp.task('serve:python', function () {
+
+    })
+    gulp.task('serve:scala', function () {
+
+    })
+
+
 
 };
