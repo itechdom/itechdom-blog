@@ -1,3 +1,4 @@
+'use strict';
 var Rx = require('rx');
 var actions = require('./blog.actions.js');
 

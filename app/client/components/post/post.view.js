@@ -1,13 +1,14 @@
+'use strict';
 //this is the main post file
 var $ = require('jquery');
 var Rx = require('rx');
 var actions = require('./post.actions.js');
 var dispatcher = require('../lib/dispatcher/dispatcher.js');
+var branchit = require('../../../../blog/Branchit.mup.md');
 
 class postView {
 
 	render(){
-		var branchit = require('../../../../blog/Branchit.mup.md');
 		$('app').html(branchit);
 	}
 	constructor() {

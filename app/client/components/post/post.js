@@ -1,3 +1,4 @@
+'use strict';
 //this is the main post file
 var $ = require('jquery');
 var Rx = require('rx');
