@@ -9,7 +9,228 @@
       "ideas": {
         "1": {
           "title": "File System",
-          "id": 299
+          "id": 299,
+          "ideas": {
+            "1": {
+              "title": "Permissions",
+              "id": 363,
+              "ideas": {
+                "1": {
+                  "title": "Groups",
+                  "id": 364,
+                  "ideas": {
+                    "1": {
+                      "title": "owner",
+                      "id": 367,
+                      "ideas": {
+                        "1": {
+                          "title": "u",
+                          "id": 376
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "group",
+                      "id": 370,
+                      "ideas": {
+                        "1": {
+                          "title": "g",
+                          "id": 377
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "All users",
+                      "id": 372,
+                      "ideas": {
+                        "1": {
+                          "title": "o or a",
+                          "id": 389
+                        }
+                      },
+                      "attr": {
+                        "style": {}
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {},
+                    "collapsed": true
+                  }
+                },
+                "2": {
+                  "title": "Types",
+                  "id": 366,
+                  "ideas": {
+                    "1": {
+                      "title": "r",
+                      "id": 373,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "2": {
+                      "title": "w",
+                      "id": 374,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "3": {
+                      "title": "x",
+                      "id": 375,
+                      "attr": {
+                        "style": {}
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {},
+                    "collapsed": true
+                  }
+                },
+                "4": {
+                  "title": "How to read",
+                  "id": 382,
+                  "ideas": {
+                    "1": {
+                      "title": "They are in order rwxrwxrwx",
+                      "id": 378,
+                      "ideas": {
+                        "1": {
+                          "title": "Owner",
+                          "id": 385,
+                          "ideas": {}
+                        },
+                        "2": {
+                          "title": "Group",
+                          "id": 387
+                        },
+                        "3": {
+                          "title": "All",
+                          "id": 388
+                        },
+                        "4": {
+                          "title": "-",
+                          "id": 410,
+                          "ideas": {
+                            "1": {
+                              "title": "is special permission",
+                              "id": 411
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {},
+                        "collapsed": true
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {},
+                    "collapsed": true
+                  }
+                },
+                "5": {
+                  "title": "How to modify",
+                  "id": 390,
+                  "ideas": {
+                    "1": {
+                      "title": "Chmod",
+                      "id": 391,
+                      "ideas": {
+                        "2": {
+                          "title": "permission group",
+                          "id": 395,
+                          "ideas": {
+                            "1": {
+                              "title": "+ or - to add or delete",
+                              "id": 392,
+                              "ideas": {
+                                "1": {
+                                  "title": "r or w or x",
+                                  "id": 396
+                                }
+                              },
+                              "attr": {
+                                "style": {}
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "You can also use a number",
+                      "id": 397,
+                      "ideas": {},
+                      "attr": {
+                        "style": {},
+                        "attachment": {
+                          "contentType": "text/html",
+                          "content": "r = 4<div>w = 2</div><div>x = 1</div><div><br></div><div>you can add them up together like so:</div><div><br></div><div>chmod u+_rwxr___ | chmod u+740</div>"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {},
+                    "collapsed": true
+                  }
+                },
+                "6": {
+                  "title": "How do I  know who is the owner or group or all",
+                  "id": 405,
+                  "ideas": {
+                    "1": {
+                      "title": "are scripts executed by the owner considered owner permission ",
+                      "id": 406,
+                      "ideas": {
+                        "1": {
+                          "title": "IE: node or python ...",
+                          "id": 407
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "you own the file system, you assign programs to write/read/execute",
+                      "id": 414,
+                      "ideas": {},
+                      "attr": {
+                        "attachment": {
+                          "contentType": "text/html",
+                          "content": "<span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">so brew can't modify a folder unless you change the permission, nor it will accept a sudo.</span>"
+                        },
+                        "style": {}
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "background": "#800000"
+                    },
+                    "collapsed": true
+                  }
+                },
+                "7": {
+                  "title": "Advanced Permission",
+                  "id": 408,
+                  "attr": {
+                    "attachment": {
+                      "contentType": "text/html",
+                      "content": "<p style=\"margin-top: 10px; padding: 0px; line-height: 18px; font-family: Arial, Helvetica, sans-serif; font-size: 12px;\"><strong><span style=\"font-size: 11px;\"><span style=\"font-family: arial, helvetica, sans-serif;\">Advanced Permissions</span></span></strong></p><p style=\"margin-top: 10px; padding: 0px; line-height: 18px; font-family: Arial, Helvetica, sans-serif; font-size: 12px;\"><span style=\"font-size: 11px;\"><span style=\"font-family: arial, helvetica, sans-serif;\">The special permissions flag can be marked with any of the following:</span></span></p><ul style=\"margin-top: 10px; margin-left: 0px; line-height: 18px; list-style: none; font-family: Arial, Helvetica, sans-serif; font-size: 12px;\"><li style=\"line-height: 19.2px; padding-left: 30px; background: url(&quot;../images/bullet.gif&quot;) 18px 7px no-repeat;\"><span style=\"font-size: 11px;\"><span style=\"font-family: arial, helvetica, sans-serif;\"><strong>_</strong>&nbsp;- no special permissions</span></span></li><li style=\"line-height: 19.2px; padding-left: 30px; background: url(&quot;../images/bullet.gif&quot;) 18px 7px no-repeat;\"><span style=\"font-size: 11px;\"><span style=\"font-family: arial, helvetica, sans-serif;\"><em><strong>d</strong></em>&nbsp;- directory</span></span></li><li style=\"line-height: 19.2px; padding-left: 30px; background: url(&quot;../images/bullet.gif&quot;) 18px 7px no-repeat;\"><span style=\"font-size: 11px;\"><span style=\"font-family: arial, helvetica, sans-serif;\"><em><strong>l</strong>&nbsp;</em>- The file or directory is a symbolic link</span></span></li><li style=\"line-height: 19.2px; padding-left: 30px; background: url(&quot;../images/bullet.gif&quot;) 18px 7px no-repeat;\"><span style=\"font-size: 11px;\"><span style=\"font-family: arial, helvetica, sans-serif;\"><em><strong>s</strong></em>&nbsp;- This indicated the setuid/setgid permissions. This is not set displayed in the special permission part of the permissions display, but is represented as a&nbsp;<strong>s</strong>&nbsp;in the read portion of the owner or group permissions.</span></span></li><li style=\"line-height: 19.2px; padding-left: 30px; background: url(&quot;../images/bullet.gif&quot;) 18px 7px no-repeat;\"><span style=\"font-size: 11px;\"><span style=\"font-family: arial, helvetica, sans-serif;\"><em><strong>t</strong></em>&nbsp;- This indicates the sticky bit permissions. This is not set displayed in the special permission part of the permissions display, but is represented as a&nbsp;<strong>t</strong>&nbsp;in the executable portion of the all users permissions</span></span></li></ul>"
+                    },
+                    "style": {}
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true,
+                "style": {}
+              }
+            }
+          }
         },
         "2": {
           "title": "Kernel",
@@ -70,7 +291,8 @@
               "title": "Command Line",
               "id": 301,
               "attr": {
-                "style": {}
+                "style": {},
+                "collapsed": true
               },
               "ideas": {
                 "2": {
@@ -87,11 +309,13 @@
             },
             "2": {
               "title": "An interface to the OS",
-              "id": 329
+              "id": 329,
+              "attr": {}
             }
           },
           "attr": {
-            "style": {}
+            "style": {},
+            "collapsed": true
           }
         },
         "17": {
@@ -206,8 +430,8 @@
         }
       },
       "attr": {
-        "collapsed": true,
-        "style": {}
+        "style": {},
+        "collapsed": true
       }
     },
     "-2": {
@@ -231,7 +455,8 @@
           205.5,
           -72,
           2
-        ]
+        ],
+        "collapsed": true
       }
     },
     "-12": {
@@ -274,8 +499,7 @@
             }
           },
           "attr": {
-            "style": {},
-            "collapsed": true
+            "style": {}
           }
         },
         "37": {
@@ -303,8 +527,8 @@
       "attr": {
         "style": {},
         "position": [
-          194.5,
-          105,
+          169.5,
+          68,
           3
         ],
         "collapsed": true

@@ -69,3 +69,11 @@
 ### Drag and Drop
 ## http://plnkr.co/edit/kaOmmXVaBJdUbGUtvDlM?p=info
 ### Angular 2.0 playground
+## Angular universal
+### Server side rendering
+### https://github.com/angular/universal
+## Zone.js
+### https://www.youtube.com/watch?v=3IqtmUscE_U
+### debugging, testing, profiling
+### trace async tasks
+#### instead of seeing a "throw new error" without trace

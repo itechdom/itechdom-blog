@@ -29,6 +29,25 @@
           }
         }
       }
+    },
+    "-1": {
+      "title": "Resources",
+      "id": 417,
+      "ideas": {
+        "1": {
+          "title": "http://prog21.dadgum.com/30.html",
+          "id": 418,
+          "ideas": {
+            "1": {
+              "title": "how to write a compiler",
+              "id": 419
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {}
+      }
     }
   },
   "links": [

@@ -418,9 +418,9 @@
       "attr": {
         "style": {},
         "position": [
-          145.5,
-          -112,
-          1
+          88,
+          -66,
+          5
         ]
       }
     },
@@ -452,10 +452,11 @@
       "attr": {
         "style": {},
         "position": [
-          171.5,
-          -2,
-          3
-        ]
+          147,
+          -73,
+          6
+        ],
+        "collapsed": true
       }
     },
     "-11": {
@@ -486,8 +487,58 @@
             }
           },
           "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "3": {
+          "title": "Angular universal",
+          "id": 280,
+          "ideas": {
+            "1": {
+              "title": "Server side rendering",
+              "id": 281
+            },
+            "2": {
+              "title": "https://github.com/angular/universal",
+              "id": 283
+            }
+          },
+          "attr": {
             "collapsed": true,
             "style": {}
+          }
+        },
+        "4": {
+          "title": "Zone.js",
+          "id": 284,
+          "ideas": {
+            "1": {
+              "title": "https://www.youtube.com/watch?v=3IqtmUscE_U",
+              "id": 285
+            },
+            "2": {
+              "title": "debugging, testing, profiling",
+              "id": 286
+            },
+            "3": {
+              "title": "trace async tasks",
+              "id": 287,
+              "ideas": {
+                "1": {
+                  "title": "instead of seeing a \"throw new error\" without trace",
+                  "id": 291
+                }
+              },
+              "attr": {
+                "collapsed": true,
+                "style": {}
+              }
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
           }
         }
       },

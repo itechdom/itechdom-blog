@@ -23,8 +23,7 @@
         }
       },
       "attr": {
-        "style": {},
-        "collapsed": true
+        "style": {}
       }
     },
     "2": {
@@ -70,6 +69,9 @@
           },
           "id": 29
         }
+      },
+      "attr": {
+        "style": {}
       }
     },
     "-2": {
@@ -88,6 +90,10 @@
               "title": "ML in python",
               "id": 19
             }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         },
         "2": {
@@ -98,6 +104,10 @@
               "title": "web crawler",
               "id": 23
             }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         },
         "3": {
@@ -108,11 +118,39 @@
               "title": "https://github.com/mitsuhiko/flask",
               "id": 30
             }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         },
         "4": {
           "title": "Django",
           "id": 25
+        },
+        "5": {
+          "title": "Functional Programming in Python",
+          "id": 31,
+          "ideas": {
+            "1": {
+              "title": "https://github.com/kachayev/fn.py",
+              "id": 32
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
+          }
+        },
+        "6": {
+          "title": "Python Rx",
+          "id": 33,
+          "ideas": {
+            "1": {
+              "title": "https://github.com/ReactiveX/RxPY",
+              "id": 34
+            }
+          }
         }
       }
     }
