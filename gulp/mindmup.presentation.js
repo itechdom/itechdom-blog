@@ -70,7 +70,7 @@ module.exports = function(options) {
 		}
 		String.prototype.replaceAll = function(str1, str2, ignore) 
 		{
-			    return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
+			return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
 		} 
 		function convertToHTML(mindmap){
 			var f = "";
@@ -95,26 +95,27 @@ module.exports = function(options) {
 						var content = processMindmap(mindmap);
 						var finalContent = convertToHTML(content);
 
-
 						var less= "&lt;"
 						var more = "&gt;"
 
-						//replace code with tags
-						finalContent = finalContent.replaceAll(less,"<");
-						finalContent = finalContent.replaceAll(more,">");
+			//replace code with tags
+			finalContent = finalContent.replaceAll(less,"<");
+			finalContent = finalContent.replaceAll(more,">");
 
-						//remove p tags
-						finalContent = finalContent.replaceAll("<span>","");
-						finalContent = finalContent.replaceAll("</span>","");
-						finalContent = finalContent.replaceAll("<p>","");
-						finalContent = finalContent.replaceAll("</p>","");
+			//remove p tags
+			finalContent = finalContent.replaceAll("<span>","");
+			finalContent = finalContent.replaceAll("</span>","");
+			finalContent = finalContent.replaceAll("<p>","");
+			finalContent = finalContent.replaceAll("</p>","");
 
-						file.contents = new Buffer(finalContent);
-						}))
-						.pipe(rename(function (path) {
-						path.extname = ".html"
-						}))
-						.pipe(gulp.dest('./presentations'))
-						});
+			file.contents = new Buffer(finalContent);
+			var nm = file.path.split("/").pop();
+			file.path = process.cwd()+"/presentations/"+nm;
+			}))
+			.pipe(rename(function (path) {
+			path.extname = ".html"
+			}))
+			.pipe(gulp.dest('./presentations'))
+			});
 
-						};
+			};
