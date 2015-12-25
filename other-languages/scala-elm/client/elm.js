@@ -8129,6 +8129,86 @@ Elm.Json.Decode.make = function (_elm) {
                                     ,value: value
                                     ,customDecoder: customDecoder};
 };
+Elm.Native = Elm.Native || {};
+Elm.Native.Window = {};
+Elm.Native.Window.make = function make(localRuntime) {
+	localRuntime.Native = localRuntime.Native || {};
+	localRuntime.Native.Window = localRuntime.Native.Window || {};
+	if (localRuntime.Native.Window.values)
+	{
+		return localRuntime.Native.Window.values;
+	}
+
+	var NS = Elm.Native.Signal.make(localRuntime);
+	var Tuple2 = Elm.Native.Utils.make(localRuntime).Tuple2;
+
+
+	function getWidth()
+	{
+		return localRuntime.node.clientWidth;
+	}
+
+
+	function getHeight()
+	{
+		if (localRuntime.isFullscreen())
+		{
+			return window.innerHeight;
+		}
+		return localRuntime.node.clientHeight;
+	}
+
+
+	var dimensions = NS.input('Window.dimensions', Tuple2(getWidth(), getHeight()));
+
+
+	function resizeIfNeeded()
+	{
+		// Do not trigger event if the dimensions have not changed.
+		// This should be most of the time.
+		var w = getWidth();
+		var h = getHeight();
+		if (dimensions.value._0 === w && dimensions.value._1 === h)
+		{
+			return;
+		}
+
+		setTimeout(function() {
+			// Check again to see if the dimensions have changed.
+			// It is conceivable that the dimensions have changed
+			// again while some other event was being processed.
+			w = getWidth();
+			h = getHeight();
+			if (dimensions.value._0 === w && dimensions.value._1 === h)
+			{
+				return;
+			}
+			localRuntime.notify(dimensions.id, Tuple2(w, h));
+		}, 0);
+	}
+
+
+	localRuntime.addListener([dimensions.id], window, 'resize', resizeIfNeeded);
+
+
+	return localRuntime.Native.Window.values = {
+		dimensions: dimensions,
+		resizeIfNeeded: resizeIfNeeded
+	};
+};
+
+Elm.Window = Elm.Window || {};
+Elm.Window.make = function (_elm) {
+   "use strict";
+   _elm.Window = _elm.Window || {};
+   if (_elm.Window.values) return _elm.Window.values;
+   var _U = Elm.Native.Utils.make(_elm),$Basics = Elm.Basics.make(_elm),$Native$Window = Elm.Native.Window.make(_elm),$Signal = Elm.Signal.make(_elm);
+   var _op = {};
+   var dimensions = $Native$Window.dimensions;
+   var width = A2($Signal.map,$Basics.fst,dimensions);
+   var height = A2($Signal.map,$Basics.snd,dimensions);
+   return _elm.Window.values = {_op: _op,dimensions: dimensions,width: width,height: height};
+};
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
 },{}],2:[function(require,module,exports){
@@ -9995,13 +10075,304 @@ Elm.Html.make = function (_elm) {
                              ,menuitem: menuitem
                              ,menu: menu};
 };
-Elm.StartApp = Elm.StartApp || {};
-Elm.StartApp.Simple = Elm.StartApp.Simple || {};
-Elm.StartApp.Simple.make = function (_elm) {
+Elm.Html = Elm.Html || {};
+Elm.Html.Attributes = Elm.Html.Attributes || {};
+Elm.Html.Attributes.make = function (_elm) {
    "use strict";
-   _elm.StartApp = _elm.StartApp || {};
-   _elm.StartApp.Simple = _elm.StartApp.Simple || {};
-   if (_elm.StartApp.Simple.values) return _elm.StartApp.Simple.values;
+   _elm.Html = _elm.Html || {};
+   _elm.Html.Attributes = _elm.Html.Attributes || {};
+   if (_elm.Html.Attributes.values) return _elm.Html.Attributes.values;
+   var _U = Elm.Native.Utils.make(_elm),
+   $Basics = Elm.Basics.make(_elm),
+   $Debug = Elm.Debug.make(_elm),
+   $Html = Elm.Html.make(_elm),
+   $Json$Encode = Elm.Json.Encode.make(_elm),
+   $List = Elm.List.make(_elm),
+   $Maybe = Elm.Maybe.make(_elm),
+   $Result = Elm.Result.make(_elm),
+   $Signal = Elm.Signal.make(_elm),
+   $String = Elm.String.make(_elm),
+   $VirtualDom = Elm.VirtualDom.make(_elm);
+   var _op = {};
+   var attribute = $VirtualDom.attribute;
+   var contextmenu = function (value) {    return A2(attribute,"contextmenu",value);};
+   var property = $VirtualDom.property;
+   var stringProperty = F2(function (name,string) {    return A2(property,name,$Json$Encode.string(string));});
+   var $class = function (name) {    return A2(stringProperty,"className",name);};
+   var id = function (name) {    return A2(stringProperty,"id",name);};
+   var title = function (name) {    return A2(stringProperty,"title",name);};
+   var accesskey = function ($char) {    return A2(stringProperty,"accessKey",$String.fromChar($char));};
+   var dir = function (value) {    return A2(stringProperty,"dir",value);};
+   var draggable = function (value) {    return A2(stringProperty,"draggable",value);};
+   var dropzone = function (value) {    return A2(stringProperty,"dropzone",value);};
+   var itemprop = function (value) {    return A2(stringProperty,"itemprop",value);};
+   var lang = function (value) {    return A2(stringProperty,"lang",value);};
+   var tabindex = function (n) {    return A2(stringProperty,"tabIndex",$Basics.toString(n));};
+   var charset = function (value) {    return A2(stringProperty,"charset",value);};
+   var content = function (value) {    return A2(stringProperty,"content",value);};
+   var httpEquiv = function (value) {    return A2(stringProperty,"httpEquiv",value);};
+   var language = function (value) {    return A2(stringProperty,"language",value);};
+   var src = function (value) {    return A2(stringProperty,"src",value);};
+   var height = function (value) {    return A2(stringProperty,"height",$Basics.toString(value));};
+   var width = function (value) {    return A2(stringProperty,"width",$Basics.toString(value));};
+   var alt = function (value) {    return A2(stringProperty,"alt",value);};
+   var preload = function (value) {    return A2(stringProperty,"preload",value);};
+   var poster = function (value) {    return A2(stringProperty,"poster",value);};
+   var kind = function (value) {    return A2(stringProperty,"kind",value);};
+   var srclang = function (value) {    return A2(stringProperty,"srclang",value);};
+   var sandbox = function (value) {    return A2(stringProperty,"sandbox",value);};
+   var srcdoc = function (value) {    return A2(stringProperty,"srcdoc",value);};
+   var type$ = function (value) {    return A2(stringProperty,"type",value);};
+   var value = function (value) {    return A2(stringProperty,"value",value);};
+   var placeholder = function (value) {    return A2(stringProperty,"placeholder",value);};
+   var accept = function (value) {    return A2(stringProperty,"accept",value);};
+   var acceptCharset = function (value) {    return A2(stringProperty,"acceptCharset",value);};
+   var action = function (value) {    return A2(stringProperty,"action",value);};
+   var autocomplete = function (bool) {    return A2(stringProperty,"autocomplete",bool ? "on" : "off");};
+   var autosave = function (value) {    return A2(stringProperty,"autosave",value);};
+   var enctype = function (value) {    return A2(stringProperty,"enctype",value);};
+   var formaction = function (value) {    return A2(stringProperty,"formAction",value);};
+   var list = function (value) {    return A2(stringProperty,"list",value);};
+   var minlength = function (n) {    return A2(stringProperty,"minLength",$Basics.toString(n));};
+   var maxlength = function (n) {    return A2(stringProperty,"maxLength",$Basics.toString(n));};
+   var method = function (value) {    return A2(stringProperty,"method",value);};
+   var name = function (value) {    return A2(stringProperty,"name",value);};
+   var pattern = function (value) {    return A2(stringProperty,"pattern",value);};
+   var size = function (n) {    return A2(stringProperty,"size",$Basics.toString(n));};
+   var $for = function (value) {    return A2(stringProperty,"htmlFor",value);};
+   var form = function (value) {    return A2(stringProperty,"form",value);};
+   var max = function (value) {    return A2(stringProperty,"max",value);};
+   var min = function (value) {    return A2(stringProperty,"min",value);};
+   var step = function (n) {    return A2(stringProperty,"step",n);};
+   var cols = function (n) {    return A2(stringProperty,"cols",$Basics.toString(n));};
+   var rows = function (n) {    return A2(stringProperty,"rows",$Basics.toString(n));};
+   var wrap = function (value) {    return A2(stringProperty,"wrap",value);};
+   var usemap = function (value) {    return A2(stringProperty,"useMap",value);};
+   var shape = function (value) {    return A2(stringProperty,"shape",value);};
+   var coords = function (value) {    return A2(stringProperty,"coords",value);};
+   var challenge = function (value) {    return A2(stringProperty,"challenge",value);};
+   var keytype = function (value) {    return A2(stringProperty,"keytype",value);};
+   var align = function (value) {    return A2(stringProperty,"align",value);};
+   var cite = function (value) {    return A2(stringProperty,"cite",value);};
+   var href = function (value) {    return A2(stringProperty,"href",value);};
+   var target = function (value) {    return A2(stringProperty,"target",value);};
+   var downloadAs = function (value) {    return A2(stringProperty,"download",value);};
+   var hreflang = function (value) {    return A2(stringProperty,"hreflang",value);};
+   var media = function (value) {    return A2(stringProperty,"media",value);};
+   var ping = function (value) {    return A2(stringProperty,"ping",value);};
+   var rel = function (value) {    return A2(stringProperty,"rel",value);};
+   var datetime = function (value) {    return A2(stringProperty,"datetime",value);};
+   var pubdate = function (value) {    return A2(stringProperty,"pubdate",value);};
+   var start = function (n) {    return A2(stringProperty,"start",$Basics.toString(n));};
+   var colspan = function (n) {    return A2(stringProperty,"colSpan",$Basics.toString(n));};
+   var headers = function (value) {    return A2(stringProperty,"headers",value);};
+   var rowspan = function (n) {    return A2(stringProperty,"rowSpan",$Basics.toString(n));};
+   var scope = function (value) {    return A2(stringProperty,"scope",value);};
+   var manifest = function (value) {    return A2(stringProperty,"manifest",value);};
+   var boolProperty = F2(function (name,bool) {    return A2(property,name,$Json$Encode.bool(bool));});
+   var hidden = function (bool) {    return A2(boolProperty,"hidden",bool);};
+   var contenteditable = function (bool) {    return A2(boolProperty,"contentEditable",bool);};
+   var spellcheck = function (bool) {    return A2(boolProperty,"spellcheck",bool);};
+   var async = function (bool) {    return A2(boolProperty,"async",bool);};
+   var defer = function (bool) {    return A2(boolProperty,"defer",bool);};
+   var scoped = function (bool) {    return A2(boolProperty,"scoped",bool);};
+   var autoplay = function (bool) {    return A2(boolProperty,"autoplay",bool);};
+   var controls = function (bool) {    return A2(boolProperty,"controls",bool);};
+   var loop = function (bool) {    return A2(boolProperty,"loop",bool);};
+   var $default = function (bool) {    return A2(boolProperty,"default",bool);};
+   var seamless = function (bool) {    return A2(boolProperty,"seamless",bool);};
+   var checked = function (bool) {    return A2(boolProperty,"checked",bool);};
+   var selected = function (bool) {    return A2(boolProperty,"selected",bool);};
+   var autofocus = function (bool) {    return A2(boolProperty,"autofocus",bool);};
+   var disabled = function (bool) {    return A2(boolProperty,"disabled",bool);};
+   var multiple = function (bool) {    return A2(boolProperty,"multiple",bool);};
+   var novalidate = function (bool) {    return A2(boolProperty,"noValidate",bool);};
+   var readonly = function (bool) {    return A2(boolProperty,"readOnly",bool);};
+   var required = function (bool) {    return A2(boolProperty,"required",bool);};
+   var ismap = function (value) {    return A2(boolProperty,"isMap",value);};
+   var download = function (bool) {    return A2(boolProperty,"download",bool);};
+   var reversed = function (bool) {    return A2(boolProperty,"reversed",bool);};
+   var classList = function (list) {    return $class(A2($String.join," ",A2($List.map,$Basics.fst,A2($List.filter,$Basics.snd,list))));};
+   var style = function (props) {
+      return A2(property,
+      "style",
+      $Json$Encode.object(A2($List.map,function (_p0) {    var _p1 = _p0;return {ctor: "_Tuple2",_0: _p1._0,_1: $Json$Encode.string(_p1._1)};},props)));
+   };
+   var key = function (k) {    return A2(stringProperty,"key",k);};
+   return _elm.Html.Attributes.values = {_op: _op
+                                        ,key: key
+                                        ,style: style
+                                        ,$class: $class
+                                        ,classList: classList
+                                        ,id: id
+                                        ,title: title
+                                        ,hidden: hidden
+                                        ,type$: type$
+                                        ,value: value
+                                        ,checked: checked
+                                        ,placeholder: placeholder
+                                        ,selected: selected
+                                        ,accept: accept
+                                        ,acceptCharset: acceptCharset
+                                        ,action: action
+                                        ,autocomplete: autocomplete
+                                        ,autofocus: autofocus
+                                        ,autosave: autosave
+                                        ,disabled: disabled
+                                        ,enctype: enctype
+                                        ,formaction: formaction
+                                        ,list: list
+                                        ,maxlength: maxlength
+                                        ,minlength: minlength
+                                        ,method: method
+                                        ,multiple: multiple
+                                        ,name: name
+                                        ,novalidate: novalidate
+                                        ,pattern: pattern
+                                        ,readonly: readonly
+                                        ,required: required
+                                        ,size: size
+                                        ,$for: $for
+                                        ,form: form
+                                        ,max: max
+                                        ,min: min
+                                        ,step: step
+                                        ,cols: cols
+                                        ,rows: rows
+                                        ,wrap: wrap
+                                        ,href: href
+                                        ,target: target
+                                        ,download: download
+                                        ,downloadAs: downloadAs
+                                        ,hreflang: hreflang
+                                        ,media: media
+                                        ,ping: ping
+                                        ,rel: rel
+                                        ,ismap: ismap
+                                        ,usemap: usemap
+                                        ,shape: shape
+                                        ,coords: coords
+                                        ,src: src
+                                        ,height: height
+                                        ,width: width
+                                        ,alt: alt
+                                        ,autoplay: autoplay
+                                        ,controls: controls
+                                        ,loop: loop
+                                        ,preload: preload
+                                        ,poster: poster
+                                        ,$default: $default
+                                        ,kind: kind
+                                        ,srclang: srclang
+                                        ,sandbox: sandbox
+                                        ,seamless: seamless
+                                        ,srcdoc: srcdoc
+                                        ,reversed: reversed
+                                        ,start: start
+                                        ,align: align
+                                        ,colspan: colspan
+                                        ,rowspan: rowspan
+                                        ,headers: headers
+                                        ,scope: scope
+                                        ,async: async
+                                        ,charset: charset
+                                        ,content: content
+                                        ,defer: defer
+                                        ,httpEquiv: httpEquiv
+                                        ,language: language
+                                        ,scoped: scoped
+                                        ,accesskey: accesskey
+                                        ,contenteditable: contenteditable
+                                        ,contextmenu: contextmenu
+                                        ,dir: dir
+                                        ,draggable: draggable
+                                        ,dropzone: dropzone
+                                        ,itemprop: itemprop
+                                        ,lang: lang
+                                        ,spellcheck: spellcheck
+                                        ,tabindex: tabindex
+                                        ,challenge: challenge
+                                        ,keytype: keytype
+                                        ,cite: cite
+                                        ,datetime: datetime
+                                        ,pubdate: pubdate
+                                        ,manifest: manifest
+                                        ,property: property
+                                        ,attribute: attribute};
+};
+Elm.Html = Elm.Html || {};
+Elm.Html.Events = Elm.Html.Events || {};
+Elm.Html.Events.make = function (_elm) {
+   "use strict";
+   _elm.Html = _elm.Html || {};
+   _elm.Html.Events = _elm.Html.Events || {};
+   if (_elm.Html.Events.values) return _elm.Html.Events.values;
+   var _U = Elm.Native.Utils.make(_elm),
+   $Basics = Elm.Basics.make(_elm),
+   $Debug = Elm.Debug.make(_elm),
+   $Html = Elm.Html.make(_elm),
+   $Json$Decode = Elm.Json.Decode.make(_elm),
+   $List = Elm.List.make(_elm),
+   $Maybe = Elm.Maybe.make(_elm),
+   $Result = Elm.Result.make(_elm),
+   $Signal = Elm.Signal.make(_elm),
+   $VirtualDom = Elm.VirtualDom.make(_elm);
+   var _op = {};
+   var keyCode = A2($Json$Decode._op[":="],"keyCode",$Json$Decode.$int);
+   var targetChecked = A2($Json$Decode.at,_U.list(["target","checked"]),$Json$Decode.bool);
+   var targetValue = A2($Json$Decode.at,_U.list(["target","value"]),$Json$Decode.string);
+   var defaultOptions = $VirtualDom.defaultOptions;
+   var Options = F2(function (a,b) {    return {stopPropagation: a,preventDefault: b};});
+   var onWithOptions = $VirtualDom.onWithOptions;
+   var on = $VirtualDom.on;
+   var messageOn = F3(function (name,addr,msg) {    return A3(on,name,$Json$Decode.value,function (_p0) {    return A2($Signal.message,addr,msg);});});
+   var onClick = messageOn("click");
+   var onDoubleClick = messageOn("dblclick");
+   var onMouseMove = messageOn("mousemove");
+   var onMouseDown = messageOn("mousedown");
+   var onMouseUp = messageOn("mouseup");
+   var onMouseEnter = messageOn("mouseenter");
+   var onMouseLeave = messageOn("mouseleave");
+   var onMouseOver = messageOn("mouseover");
+   var onMouseOut = messageOn("mouseout");
+   var onBlur = messageOn("blur");
+   var onFocus = messageOn("focus");
+   var onSubmit = messageOn("submit");
+   var onKey = F3(function (name,addr,handler) {    return A3(on,name,keyCode,function (code) {    return A2($Signal.message,addr,handler(code));});});
+   var onKeyUp = onKey("keyup");
+   var onKeyDown = onKey("keydown");
+   var onKeyPress = onKey("keypress");
+   return _elm.Html.Events.values = {_op: _op
+                                    ,onBlur: onBlur
+                                    ,onFocus: onFocus
+                                    ,onSubmit: onSubmit
+                                    ,onKeyUp: onKeyUp
+                                    ,onKeyDown: onKeyDown
+                                    ,onKeyPress: onKeyPress
+                                    ,onClick: onClick
+                                    ,onDoubleClick: onDoubleClick
+                                    ,onMouseMove: onMouseMove
+                                    ,onMouseDown: onMouseDown
+                                    ,onMouseUp: onMouseUp
+                                    ,onMouseEnter: onMouseEnter
+                                    ,onMouseLeave: onMouseLeave
+                                    ,onMouseOver: onMouseOver
+                                    ,onMouseOut: onMouseOut
+                                    ,on: on
+                                    ,onWithOptions: onWithOptions
+                                    ,defaultOptions: defaultOptions
+                                    ,targetValue: targetValue
+                                    ,targetChecked: targetChecked
+                                    ,keyCode: keyCode
+                                    ,Options: Options};
+};
+Elm.Html = Elm.Html || {};
+Elm.Html.Lazy = Elm.Html.Lazy || {};
+Elm.Html.Lazy.make = function (_elm) {
+   "use strict";
+   _elm.Html = _elm.Html || {};
+   _elm.Html.Lazy = _elm.Html.Lazy || {};
+   if (_elm.Html.Lazy.values) return _elm.Html.Lazy.values;
    var _U = Elm.Native.Utils.make(_elm),
    $Basics = Elm.Basics.make(_elm),
    $Debug = Elm.Debug.make(_elm),
@@ -10009,22 +10380,269 @@ Elm.StartApp.Simple.make = function (_elm) {
    $List = Elm.List.make(_elm),
    $Maybe = Elm.Maybe.make(_elm),
    $Result = Elm.Result.make(_elm),
-   $Signal = Elm.Signal.make(_elm);
+   $Signal = Elm.Signal.make(_elm),
+   $VirtualDom = Elm.VirtualDom.make(_elm);
    var _op = {};
-   var start = function (config) {
-      var update = F2(function (maybeAction,model) {
-         var _p0 = maybeAction;
-         if (_p0.ctor === "Just") {
-               return A2(config.update,_p0._0,model);
-            } else {
-               return _U.crashCase("StartApp.Simple",{start: {line: 91,column: 7},end: {line: 96,column: 52}},_p0)("This should never happen.");
-            }
+   var lazy3 = $VirtualDom.lazy3;
+   var lazy2 = $VirtualDom.lazy2;
+   var lazy = $VirtualDom.lazy;
+   return _elm.Html.Lazy.values = {_op: _op,lazy: lazy,lazy2: lazy2,lazy3: lazy3};
+};
+Elm.Todo = Elm.Todo || {};
+Elm.Todo.make = function (_elm) {
+   "use strict";
+   _elm.Todo = _elm.Todo || {};
+   if (_elm.Todo.values) return _elm.Todo.values;
+   var _U = Elm.Native.Utils.make(_elm),
+   $Basics = Elm.Basics.make(_elm),
+   $Debug = Elm.Debug.make(_elm),
+   $Html = Elm.Html.make(_elm),
+   $Html$Attributes = Elm.Html.Attributes.make(_elm),
+   $Html$Events = Elm.Html.Events.make(_elm),
+   $Html$Lazy = Elm.Html.Lazy.make(_elm),
+   $Json$Decode = Elm.Json.Decode.make(_elm),
+   $List = Elm.List.make(_elm),
+   $Maybe = Elm.Maybe.make(_elm),
+   $Result = Elm.Result.make(_elm),
+   $Signal = Elm.Signal.make(_elm),
+   $String = Elm.String.make(_elm);
+   var _op = {};
+   var getStorage = Elm.Native.Port.make(_elm).inbound("getStorage",
+   "Maybe.Maybe Todo.Model",
+   function (v) {
+      return v === null ? Elm.Maybe.make(_elm).Nothing : Elm.Maybe.make(_elm).Just(typeof v === "object" && "tasks" in v && "field" in v && "uid" in v && "visibility" in v ? {_: {}
+                                                                                                                                                                              ,tasks: typeof v.tasks === "object" && v.tasks instanceof Array ? Elm.Native.List.make(_elm).fromArray(v.tasks.map(function (v) {
+                                                                                                                                                                                 return typeof v === "object" && "description" in v && "completed" in v && "editing" in v && "id" in v ? {_: {}
+                                                                                                                                                                                                                                                                                         ,description: typeof v.description === "string" || typeof v.description === "object" && v.description instanceof String ? v.description : _U.badPort("a string",
+                                                                                                                                                                                                                                                                                         v.description)
+                                                                                                                                                                                                                                                                                         ,completed: typeof v.completed === "boolean" ? v.completed : _U.badPort("a boolean (true or false)",
+                                                                                                                                                                                                                                                                                         v.completed)
+                                                                                                                                                                                                                                                                                         ,editing: typeof v.editing === "boolean" ? v.editing : _U.badPort("a boolean (true or false)",
+                                                                                                                                                                                                                                                                                         v.editing)
+                                                                                                                                                                                                                                                                                         ,id: typeof v.id === "number" && isFinite(v.id) && Math.floor(v.id) === v.id ? v.id : _U.badPort("an integer",
+                                                                                                                                                                                                                                                                                         v.id)} : _U.badPort("an object with fields `description`, `completed`, `editing`, `id`",
+                                                                                                                                                                                 v);
+                                                                                                                                                                              })) : _U.badPort("an array",
+                                                                                                                                                                              v.tasks)
+                                                                                                                                                                              ,field: typeof v.field === "string" || typeof v.field === "object" && v.field instanceof String ? v.field : _U.badPort("a string",
+                                                                                                                                                                              v.field)
+                                                                                                                                                                              ,uid: typeof v.uid === "number" && isFinite(v.uid) && Math.floor(v.uid) === v.uid ? v.uid : _U.badPort("an integer",
+                                                                                                                                                                              v.uid)
+                                                                                                                                                                              ,visibility: typeof v.visibility === "string" || typeof v.visibility === "object" && v.visibility instanceof String ? v.visibility : _U.badPort("a string",
+                                                                                                                                                                              v.visibility)} : _U.badPort("an object with fields `tasks`, `field`, `uid`, `visibility`",
+      v));
+   });
+   var infoFooter = A2($Html.footer,
+   _U.list([$Html$Attributes.id("info")]),
+   _U.list([A2($Html.p,_U.list([]),_U.list([$Html.text("Double-click to edit a todo")]))
+           ,A2($Html.p,
+           _U.list([]),
+           _U.list([$Html.text("Written by ")
+                   ,A2($Html.a,_U.list([$Html$Attributes.href("https://github.com/evancz")]),_U.list([$Html.text("Evan Czaplicki")]))]))
+           ,A2($Html.p,
+           _U.list([]),
+           _U.list([$Html.text("Part of "),A2($Html.a,_U.list([$Html$Attributes.href("http://todomvc.com")]),_U.list([$Html.text("TodoMVC")]))]))]));
+   var is13 = function (code) {    return _U.eq(code,13) ? $Result.Ok({ctor: "_Tuple0"}) : $Result.Err("not the right key code");};
+   var onEnter = F2(function (address,value) {
+      return A3($Html$Events.on,
+      "keydown",
+      A2($Json$Decode.customDecoder,$Html$Events.keyCode,is13),
+      function (_p0) {
+         return A2($Signal.message,address,value);
       });
-      var actions = $Signal.mailbox($Maybe.Nothing);
-      var address = A2($Signal.forwardTo,actions.address,$Maybe.Just);
-      var model = A3($Signal.foldp,update,config.model,actions.signal);
-      return A2($Signal.map,config.view(address),model);
-   };
-   var Config = F3(function (a,b,c) {    return {model: a,view: b,update: c};});
-   return _elm.StartApp.Simple.values = {_op: _op,Config: Config,start: start};
+   });
+   var ChangeVisibility = function (a) {    return {ctor: "ChangeVisibility",_0: a};};
+   var visibilitySwap = F4(function (address,uri,visibility,actualVisibility) {
+      return A2($Html.li,
+      _U.list([A2($Html$Events.onClick,address,ChangeVisibility(visibility))]),
+      _U.list([A2($Html.a,
+      _U.list([$Html$Attributes.href(uri),$Html$Attributes.classList(_U.list([{ctor: "_Tuple2",_0: "selected",_1: _U.eq(visibility,actualVisibility)}]))]),
+      _U.list([$Html.text(visibility)]))]));
+   });
+   var CheckAll = function (a) {    return {ctor: "CheckAll",_0: a};};
+   var Check = F2(function (a,b) {    return {ctor: "Check",_0: a,_1: b};});
+   var DeleteComplete = {ctor: "DeleteComplete"};
+   var controls = F3(function (address,visibility,tasks) {
+      var tasksCompleted = $List.length(A2($List.filter,function (_) {    return _.completed;},tasks));
+      var tasksLeft = $List.length(tasks) - tasksCompleted;
+      var item_ = _U.eq(tasksLeft,1) ? " item" : " items";
+      return A2($Html.footer,
+      _U.list([$Html$Attributes.id("footer"),$Html$Attributes.hidden($List.isEmpty(tasks))]),
+      _U.list([A2($Html.span,
+              _U.list([$Html$Attributes.id("todo-count")]),
+              _U.list([A2($Html.strong,_U.list([]),_U.list([$Html.text($Basics.toString(tasksLeft))])),$Html.text(A2($Basics._op["++"],item_," left"))]))
+              ,A2($Html.ul,
+              _U.list([$Html$Attributes.id("filters")]),
+              _U.list([A4(visibilitySwap,address,"#/","All",visibility)
+                      ,$Html.text(" ")
+                      ,A4(visibilitySwap,address,"#/active","Active",visibility)
+                      ,$Html.text(" ")
+                      ,A4(visibilitySwap,address,"#/completed","Completed",visibility)]))
+              ,A2($Html.button,
+              _U.list([$Html$Attributes.$class("clear-completed")
+                      ,$Html$Attributes.id("clear-completed")
+                      ,$Html$Attributes.hidden(_U.eq(tasksCompleted,0))
+                      ,A2($Html$Events.onClick,address,DeleteComplete)]),
+              _U.list([$Html.text(A2($Basics._op["++"],"Clear completed (",A2($Basics._op["++"],$Basics.toString(tasksCompleted),")")))]))]));
+   });
+   var Delete = function (a) {    return {ctor: "Delete",_0: a};};
+   var Add = {ctor: "Add"};
+   var UpdateTask = F2(function (a,b) {    return {ctor: "UpdateTask",_0: a,_1: b};});
+   var EditingTask = F2(function (a,b) {    return {ctor: "EditingTask",_0: a,_1: b};});
+   var todoItem = F2(function (address,todo) {
+      return A2($Html.li,
+      _U.list([$Html$Attributes.classList(_U.list([{ctor: "_Tuple2",_0: "completed",_1: todo.completed},{ctor: "_Tuple2",_0: "editing",_1: todo.editing}]))]),
+      _U.list([A2($Html.div,
+              _U.list([$Html$Attributes.$class("view")]),
+              _U.list([A2($Html.input,
+                      _U.list([$Html$Attributes.$class("toggle")
+                              ,$Html$Attributes.type$("checkbox")
+                              ,$Html$Attributes.checked(todo.completed)
+                              ,A2($Html$Events.onClick,address,A2(Check,todo.id,$Basics.not(todo.completed)))]),
+                      _U.list([]))
+                      ,A2($Html.label,_U.list([A2($Html$Events.onDoubleClick,address,A2(EditingTask,todo.id,true))]),_U.list([$Html.text(todo.description)]))
+                      ,A2($Html.button,_U.list([$Html$Attributes.$class("destroy"),A2($Html$Events.onClick,address,Delete(todo.id))]),_U.list([]))]))
+              ,A2($Html.input,
+              _U.list([$Html$Attributes.$class("edit")
+                      ,$Html$Attributes.value(todo.description)
+                      ,$Html$Attributes.name("title")
+                      ,$Html$Attributes.id(A2($Basics._op["++"],"todo-",$Basics.toString(todo.id)))
+                      ,A3($Html$Events.on,"input",$Html$Events.targetValue,function (_p1) {    return A2($Signal.message,address,A2(UpdateTask,todo.id,_p1));})
+                      ,A2($Html$Events.onBlur,address,A2(EditingTask,todo.id,false))
+                      ,A2(onEnter,address,A2(EditingTask,todo.id,false))]),
+              _U.list([]))]));
+   });
+   var taskList = F3(function (address,visibility,tasks) {
+      var cssVisibility = $List.isEmpty(tasks) ? "hidden" : "visible";
+      var allCompleted = A2($List.all,function (_) {    return _.completed;},tasks);
+      var isVisible = function (todo) {
+         var _p2 = visibility;
+         switch (_p2)
+         {case "Completed": return todo.completed;
+            case "Active": return $Basics.not(todo.completed);
+            default: return true;}
+      };
+      return A2($Html.section,
+      _U.list([$Html$Attributes.id("main"),$Html$Attributes.style(_U.list([{ctor: "_Tuple2",_0: "visibility",_1: cssVisibility}]))]),
+      _U.list([A2($Html.input,
+              _U.list([$Html$Attributes.id("toggle-all")
+                      ,$Html$Attributes.type$("checkbox")
+                      ,$Html$Attributes.name("toggle")
+                      ,$Html$Attributes.checked(allCompleted)
+                      ,A2($Html$Events.onClick,address,CheckAll($Basics.not(allCompleted)))]),
+              _U.list([]))
+              ,A2($Html.label,_U.list([$Html$Attributes.$for("toggle-all")]),_U.list([$Html.text("Mark all as complete")]))
+              ,A2($Html.ul,_U.list([$Html$Attributes.id("todo-list")]),A2($List.map,todoItem(address),A2($List.filter,isVisible,tasks)))]));
+   });
+   var UpdateField = function (a) {    return {ctor: "UpdateField",_0: a};};
+   var taskEntry = F2(function (address,task) {
+      return A2($Html.header,
+      _U.list([$Html$Attributes.id("header")]),
+      _U.list([A2($Html.h1,_U.list([]),_U.list([$Html.text("todos")]))
+              ,A2($Html.input,
+              _U.list([$Html$Attributes.id("new-todo")
+                      ,$Html$Attributes.placeholder("What needs to be done?")
+                      ,$Html$Attributes.autofocus(true)
+                      ,$Html$Attributes.value(task)
+                      ,$Html$Attributes.name("newTodo")
+                      ,A3($Html$Events.on,"input",$Html$Events.targetValue,function (_p3) {    return A2($Signal.message,address,UpdateField(_p3));})
+                      ,A2(onEnter,address,Add)]),
+              _U.list([]))]));
+   });
+   var view = F2(function (address,model) {
+      return A2($Html.div,
+      _U.list([$Html$Attributes.$class("todomvc-wrapper"),$Html$Attributes.style(_U.list([{ctor: "_Tuple2",_0: "visibility",_1: "hidden"}]))]),
+      _U.list([A2($Html.section,
+              _U.list([$Html$Attributes.id("todoapp")]),
+              _U.list([A3($Html$Lazy.lazy2,taskEntry,address,model.field)
+                      ,A4($Html$Lazy.lazy3,taskList,address,model.visibility,model.tasks)
+                      ,A4($Html$Lazy.lazy3,controls,address,model.visibility,model.tasks)]))
+              ,infoFooter]));
+   });
+   var NoOp = {ctor: "NoOp"};
+   var actions = $Signal.mailbox(NoOp);
+   var focus = Elm.Native.Port.make(_elm).outboundSignal("focus",
+   function (v) {
+      return v;
+   },
+   function () {
+      var toSelector = function (act) {
+         var _p4 = act;
+         if (_p4.ctor === "EditingTask") {
+               return A2($Basics._op["++"],"#todo-",$Basics.toString(_p4._0));
+            } else {
+               return "";
+            }
+      };
+      var needsFocus = function (act) {    var _p5 = act;if (_p5.ctor === "EditingTask") {    return _p5._1;} else {    return false;}};
+      return A2($Signal.map,toSelector,A3($Signal.filter,needsFocus,A2(EditingTask,0,true),actions.signal));
+   }());
+   var emptyModel = {tasks: _U.list([]),visibility: "All",field: "",uid: 0};
+   var initialModel = A2($Maybe.withDefault,emptyModel,getStorage);
+   var newTask = F2(function (desc,id) {    return {description: desc,completed: false,editing: false,id: id};});
+   var update = F2(function (action,model) {
+      var _p6 = action;
+      switch (_p6.ctor)
+      {case "NoOp": return model;
+         case "Add": return _U.update(model,
+           {uid: model.uid + 1
+           ,field: ""
+           ,tasks: $String.isEmpty(model.field) ? model.tasks : A2($Basics._op["++"],model.tasks,_U.list([A2(newTask,model.field,model.uid)]))});
+         case "UpdateField": return _U.update(model,{field: _p6._0});
+         case "EditingTask": var updateTask = function (t) {    return _U.eq(t.id,_p6._0) ? _U.update(t,{editing: _p6._1}) : t;};
+           return _U.update(model,{tasks: A2($List.map,updateTask,model.tasks)});
+         case "UpdateTask": var updateTask = function (t) {    return _U.eq(t.id,_p6._0) ? _U.update(t,{description: _p6._1}) : t;};
+           return _U.update(model,{tasks: A2($List.map,updateTask,model.tasks)});
+         case "Delete": return _U.update(model,{tasks: A2($List.filter,function (t) {    return !_U.eq(t.id,_p6._0);},model.tasks)});
+         case "DeleteComplete": return _U.update(model,
+           {tasks: A2($List.filter,function (_p7) {    return $Basics.not(function (_) {    return _.completed;}(_p7));},model.tasks)});
+         case "Check": var updateTask = function (t) {    return _U.eq(t.id,_p6._0) ? _U.update(t,{completed: _p6._1}) : t;};
+           return _U.update(model,{tasks: A2($List.map,updateTask,model.tasks)});
+         case "CheckAll": var updateTask = function (t) {    return _U.update(t,{completed: _p6._0});};
+           return _U.update(model,{tasks: A2($List.map,updateTask,model.tasks)});
+         default: return _U.update(model,{visibility: _p6._0});}
+   });
+   var model = A3($Signal.foldp,update,initialModel,actions.signal);
+   var main = A2($Signal.map,view(actions.address),model);
+   var setStorage = Elm.Native.Port.make(_elm).outboundSignal("setStorage",
+   function (v) {
+      return {tasks: Elm.Native.List.make(_elm).toArray(v.tasks).map(function (v) {
+                return {description: v.description,completed: v.completed,editing: v.editing,id: v.id};
+             })
+             ,field: v.field
+             ,uid: v.uid
+             ,visibility: v.visibility};
+   },
+   model);
+   var Task = F4(function (a,b,c,d) {    return {description: a,completed: b,editing: c,id: d};});
+   var Model = F4(function (a,b,c,d) {    return {tasks: a,field: b,uid: c,visibility: d};});
+   return _elm.Todo.values = {_op: _op
+                             ,Model: Model
+                             ,Task: Task
+                             ,newTask: newTask
+                             ,emptyModel: emptyModel
+                             ,NoOp: NoOp
+                             ,UpdateField: UpdateField
+                             ,EditingTask: EditingTask
+                             ,UpdateTask: UpdateTask
+                             ,Add: Add
+                             ,Delete: Delete
+                             ,DeleteComplete: DeleteComplete
+                             ,Check: Check
+                             ,CheckAll: CheckAll
+                             ,ChangeVisibility: ChangeVisibility
+                             ,update: update
+                             ,view: view
+                             ,onEnter: onEnter
+                             ,is13: is13
+                             ,taskEntry: taskEntry
+                             ,taskList: taskList
+                             ,todoItem: todoItem
+                             ,controls: controls
+                             ,visibilitySwap: visibilitySwap
+                             ,infoFooter: infoFooter
+                             ,main: main
+                             ,model: model
+                             ,initialModel: initialModel
+                             ,actions: actions};
 };
