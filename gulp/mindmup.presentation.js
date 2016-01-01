@@ -74,17 +74,19 @@ module.exports = function(options) {
 		} 
 		function convertToHTML(mindmap){
 			var f = "";
+			var count = 0;
+			var parentId;
 			mindmap.map((idea)=>{
 				var fruits = [];
+				var section;
+				count++;
 				if(idea.title && idea.indent){
-					if(idea.indent >= 1 || idea.indent <=3){
-						//var section = cheerio.load('<section></section>');
-						//section.append(idea.title);
-						slideElement('.slides').append('<section>'+idea.title+'</section/>');
-					}
+					parentId = count;
+					slideElement('.slides').append(`<section class="parent${parentId}">${idea.title}</section>`);
 				}
 				if(idea.content && idea.indent){
-					slideElement('.slides').append('<section>'+idea.content+'</section/>');
+					console.log(parentId);
+					slideElement(`.parent${parentId}`).append('<section><section>'+idea.content+'</section></section>');
 				}
 			})
 			return slideElement.html();

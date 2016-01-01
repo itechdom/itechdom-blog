@@ -4,12 +4,12 @@ var $ = require('jquery');
 var Rx = require('rx');
 var actions = require('./post.actions.js');
 var dispatcher = require('../lib/dispatcher/dispatcher.js');
-var branchit = require('../../../../blog/Branchit.mup.md');
+
 
 class postView {
 
 	render(){
-		$('app').html(branchit);
+	//	$('app').html(branchit);
 	}
 	constructor() {
 
