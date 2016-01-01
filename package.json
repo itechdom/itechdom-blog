@@ -38,6 +38,7 @@
     "route-parser": "0.0.4",
     "rx": "^4.0.7",
     "rx-node": "^1.0.1",
+    "sort-by": "^1.1.1",
     "virtual-dom": "^2.1.1",
     "wolfy87-eventemitter": "^4.3.0"
   },

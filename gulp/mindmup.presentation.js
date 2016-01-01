@@ -12,6 +12,7 @@ var flatten = require('flat');
 var rename = require("gulp-rename");
 var MongoClient = require('mongodb').MongoClient
 var cheerio = require('cheerio');
+var sortBy = require('sort-by');
 var slideTemplate = `<div class="reveal">
 <div class="slides">
 </div>
@@ -38,9 +39,29 @@ module.exports = function(options) {
 				//By counting the number of ideas occurences
 				var pushedContent = {};
 				var indentLevel = key.split("ideas").length-1;
+
+
+				//the order of the node in the mindmap
+				var orderArr = key.split('.');
+				orderArr = orderArr.filter((or)=>{
+					var r = parseInt(or);
+					return r % 1 === 0;
+				})
+				if(orderArr.length > 0){
+					orderArr = orderArr.reduce((previousValue, currentValue, currentIndex, array)=> {
+						  return previousValue + '.' + currentValue;
+					});
+				}
+				else {
+					orderArr = 9999;
+				}
+				var order = parseFloat(orderArr);
+
 				pushedContent.indent = indentLevel;
+
 				var keyArr = key.split('.');
 				var keyName = keyArr[keyArr.length-1];
+
 				switch(keyName){
 					case "title":
 						//add proper formatting here 
@@ -57,12 +78,17 @@ module.exports = function(options) {
 						});
 						pushedContent.content = element.html();
 						break;
+					case "id":
+						pushedContent.id = flatMindmap[key];
+						break;
 				}
-				if(pushedContent.title || pushedContent.content){
+				if(pushedContent.title || pushedContent.content || pushedContent.id){
+					pushedContent.order = order;
 					fileArr.push(pushedContent);
 				}
 			}
-			return fileArr;
+			console.log(fileArr.sort(sortBy('order','id')));
+			return fileArr.sort(sortBy('order','id'));
 		}
 		function parseMindmap(file){
 			var mindmap = JSON.parse(String(file.contents));
@@ -85,8 +111,7 @@ module.exports = function(options) {
 					slideElement('.slides').append(`<section class="parent${parentId}">${idea.title}</section>`);
 				}
 				if(idea.content && idea.indent){
-					console.log(parentId);
-					slideElement(`.parent${parentId}`).append('<section><section>'+idea.content+'</section></section>');
+					slideElement(`.parent${parentId}`).append('<section>'+idea.content+'</section>');
 				}
 			})
 			return slideElement.html();
