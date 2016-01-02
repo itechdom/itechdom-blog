@@ -40,20 +40,22 @@ module.exports = function(options) {
 				}
 				//if it's decimal, then add the new order to the object by removing any decimal to its order as well
 				if(parent){
-				if(parent.order){
-				if(key.indexOf(".") > -1){
-					pContent.order = key.split(".").join(""); 
-				}
-				if(parent.order.indexOf(".") > -1){
-					pContent.order = parent.order+key;
+					var pKey = obj.title.split(".")[0];
+					if(parent.order){
+						/**if(key.indexOf(".") > -1){
+							pContent.order = key.split(".").join(""); 
+						}
+						**/
+						if(parent.order.indexOf(".") > -1){
+							pContent.order = parent.order+pKey;
+						}
+						else{
+							pContent.order = parent.order+"."+pKey;
+						}
+					}
 				}
 				else{
-					pContent.order = parent.order+"."+key;
-				}
-				}
-				}
-				else{
-					pContent.order = key;
+					pContent.order = key.split(".")[0];
 				}
 				obj.order = pContent.order;
 				pContent.order = parseFloat(pContent.order);
@@ -96,9 +98,9 @@ module.exports = function(options) {
 						traverseMindmap(mindmap.ideas,pArr,undefined);
 						var sortedFileArr = pArr.sort(sortBy('order'));
 						console.log(sortedFileArr);
-			var finalContent = convertToHTML(sortedFileArr);
-			var less= "&lt;"
-			var more = "&gt;"
+						var finalContent = convertToHTML(sortedFileArr);
+						var less= "&lt;"
+						var more = "&gt;"
 
 			//replace code with tags
 			finalContent = finalContent.replaceAll(less,"<");
