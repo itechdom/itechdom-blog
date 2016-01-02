@@ -22,7 +22,7 @@ module.exports = function(options) {
 
 	gulp.task('mindmap:presentation', function(options) {
 
-		function traverseMindmap(mindmap,pArr){
+		function traverseMindmap(mindmap,pArr,parentKey){
 			for(var key in mindmap){
 				var obj = mindmap[key];
 				var pContent = {};
@@ -36,88 +36,22 @@ module.exports = function(options) {
 						pContent.content = attachment.content;
 					}
 				}
-				pContent.order = key;
+				if(parentKey.indexOf(".") > -1){
+					var order = parentKey+key;
+					pContent.order = parseFloat(order);
+				}
+				else if(parentKey == ""){
+					var order = key;
+					pContent.order = parseInt(order);
+				}
+				else{
+					var order = parentKey+"."+key;
+					pContent.order = parseFloat(order);
+				}
+				pContent.id = obj.id;
 				pArr.push(pContent);
-				traverseMindmap(obj.ideas,pArr);
+				traverseMindmap(obj.ideas,pArr,key);
 			}
-		}
-		function processMindmap(mindmap){
-			//flatten the json
-			//iterate over all keys
-			//strip out the numbers and rejoin again
-			//count the number of ideas in the key
-			//indent accordingly
-			//store into a variable
-			//write out that variable 
-			var flatMindmap = flatten(mindmap);
-			var fileArr = [];
-			var id;
-			//add the first title and content (title of the whole mindmap)
-			fileArr[0] = {title:flatMindmap.title,content:flatMindmap.content,indent:0};
-			for(var key in flatMindmap){
-				//determine the level of indentation
-				//By counting the number of ideas occurences
-				var pushedContent = {};
-				var indentLevel = key.split("ideas").length-1;
-
-				//the order of the node in the mindmap
-				var orderArr = key.split('.');
-				orderArr = orderArr.filter((or)=>{
-					var r = parseInt(or);
-					return r % 1 === 0;
-				})
-				if(orderArr.length > 0){
-					orderArr = orderArr.reduce((previousValue, currentValue, currentIndex, array)=> {
-						if(currentIndex == 1){
-							return previousValue + '.' + currentValue;
-						}
-						else if(currentIndex>1){
-							return previousValue + currentValue;
-						}
-					});
-				}
-				else {
-					orderArr = 9999;
-				}
-				var order = parseFloat(orderArr);
-
-				pushedContent.indent = indentLevel;
-
-				var keyArr = key.split('.');
-				var keyName = keyArr[keyArr.length-1];
-
-				switch(keyName){
-					case "title":
-						//add proper formatting here 
-						pushedContent.title = flatMindmap[key];
-						break;
-					case "content":
-						//add proper formatting here
-						//
-						var element = cheerio.load(flatMindmap[key]);
-						var fruits = [];
-						element('*').each(function(i, elem) {
-							element(this).removeAttr('style');
-							// fruits[i] = $(this).text();
-						});
-						pushedContent.content = element.html();
-						break;
-					case "id":
-						pushedContent.id = parseInt(flatMindmap[key]);
-						id = pushedContent.id;
-						break;
-				}
-				if(pushedContent.title || pushedContent.content || pushedContent.id){
-					if(!pushedContent.id){
-						if(id) pushedContent.id = id+1;  
-					}
-					pushedContent.order = order;
-					fileArr.push(pushedContent);
-				}
-			}
-
-			var sortedFileArr = fileArr.sort(sortBy('order','id'));
-			return sortedFileArr;
 		}
 		function parseMindmap(file){
 			var mindmap = JSON.parse(String(file.contents));
@@ -135,11 +69,11 @@ module.exports = function(options) {
 				var fruits = [];
 				var section;
 				count++;
-				if(idea.title && idea.indent){
+				if(idea.title){
 					parentId = count;
 					slideElement('.slides').append(`<section class="parent${parentId}">${idea.title}</section>`);
 				}
-				if(idea.content && idea.indent){
+				if(idea.content){
 					slideElement(`.parent${parentId}`).append('<section>'+idea.content+'</section>');
 				}
 			})
@@ -149,10 +83,10 @@ module.exports = function(options) {
 						.pipe(data(function(file) {
 						var mindmap = parseMindmap(file);
 						var pArr = [];
-						traverseMindmap(mindmap.ideas,pArr);
-						console.log(pArr);
-						var content = processMindmap(mindmap);
-						var finalContent = convertToHTML(content);
+						traverseMindmap(mindmap.ideas,pArr,"");
+						var sortedFileArr = pArr.sort(sortBy('order'));
+						console.log(sortedFileArr);
+						var finalContent = convertToHTML(sortedFileArr);
 						var less= "&lt;"
 						var more = "&gt;"
 
