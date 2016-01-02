@@ -36,18 +36,6 @@ module.exports = function(options) {
 						pContent.content = attachment.content;
 					}
 				}
-				if(parentKey.indexOf(".") > -1){
-					var order = parentKey+key;
-					pContent.order = parseFloat(order);
-				}
-				else if(parentKey == ""){
-					var order = key;
-					pContent.order = parseInt(order);
-				}
-				else{
-					var order = parentKey+"."+key;
-					pContent.order = parseFloat(order);
-				}
 				pContent.id = obj.id;
 				pArr.push(pContent);
 				traverseMindmap(obj.ideas,pArr,key);
