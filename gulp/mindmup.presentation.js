@@ -18,14 +18,16 @@ var slideTemplate = `<div class="reveal">
 </div>
 </div>`
 var slideElement = cheerio.load(slideTemplate);
+var mindmapAll;
 module.exports = function(options) {
 
 	gulp.task('mindmap:presentation', function(options) {
 
-		function traverseMindmap(mindmap,pArr,parentKey){
+		function traverseMindmap(mindmap,pArr,parent){
 			for(var key in mindmap){
 				var obj = mindmap[key];
 				var pContent = {};
+
 				if(obj.title){
 					pContent.title = obj.title;
 				}
@@ -36,9 +38,28 @@ module.exports = function(options) {
 						pContent.content = attachment.content;
 					}
 				}
+				//if it's decimal, then add the new order to the object by removing any decimal to its order as well
+				if(parent){
+				if(parent.order){
+				if(key.indexOf(".") > -1){
+					pContent.order = key.split(".").join(""); 
+				}
+				if(parent.order.indexOf(".") > -1){
+					pContent.order = parent.order+key;
+				}
+				else{
+					pContent.order = parent.order+"."+key;
+				}
+				}
+				}
+				else{
+					pContent.order = key;
+				}
+				obj.order = pContent.order;
+				pContent.order = parseFloat(pContent.order);
 				pContent.id = obj.id;
 				pArr.push(pContent);
-				traverseMindmap(obj.ideas,pArr,key);
+				traverseMindmap(obj.ideas,pArr,obj);
 			}
 		}
 		function parseMindmap(file){
@@ -71,12 +92,13 @@ module.exports = function(options) {
 						.pipe(data(function(file) {
 						var mindmap = parseMindmap(file);
 						var pArr = [];
-						traverseMindmap(mindmap.ideas,pArr,"");
+						mindmapAll = mindmap.ideas;
+						traverseMindmap(mindmap.ideas,pArr,undefined);
 						var sortedFileArr = pArr.sort(sortBy('order'));
 						console.log(sortedFileArr);
-						var finalContent = convertToHTML(sortedFileArr);
-						var less= "&lt;"
-						var more = "&gt;"
+			var finalContent = convertToHTML(sortedFileArr);
+			var less= "&lt;"
+			var more = "&gt;"
 
 			//replace code with tags
 			finalContent = finalContent.replaceAll(less,"<");
