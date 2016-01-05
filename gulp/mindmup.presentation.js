@@ -43,9 +43,9 @@ module.exports = function(options) {
 					var pKey = obj.title.split(".")[0];
 					if(parent.order){
 						/**if(key.indexOf(".") > -1){
-							pContent.order = key.split(".").join(""); 
-						}
-						**/
+						  pContent.order = key.split(".").join(""); 
+						  }
+						 **/
 						if(parent.order.indexOf(".") > -1){
 							pContent.order = parent.order+pKey;
 						}
@@ -82,10 +82,10 @@ module.exports = function(options) {
 				count++;
 				if(idea.title){
 					parentId = count;
-					slideElement('.slides').append(`<section class="parent${parentId}">${idea.title}</section>`);
+					slideElement('.slides').append(`<section class="parent${parentId}"><p>${idea.title}</p></section>`);
 				}
 				if(idea.content){
-					slideElement(`.parent${parentId}`).append('<section>'+idea.content+'</section>');
+					slideElement(`.parent${parentId}`).append('<br>'+idea.content);
 				}
 			})
 			return slideElement.html();
@@ -109,8 +109,8 @@ module.exports = function(options) {
 			finalContent = finalContent.replaceAll("<span>","");
 			finalContent = finalContent.replaceAll("</span>","");
 
-			finalContent = finalContent.replaceAll("<div>","</br>");
 			finalContent = finalContent.replaceAll("</div>","");
+			finalContent = finalContent.replaceAll("<div>","<div></div>");
 
 			finalContent = finalContent.replaceAll("<p>","");
 			finalContent = finalContent.replaceAll("</p>","");
