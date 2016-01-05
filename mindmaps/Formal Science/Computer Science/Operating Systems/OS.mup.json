@@ -247,6 +247,24 @@
                   "title": "one type of Kernel",
                   "id": 429
                 }
+              },
+              "attr": {
+                "collapsed": true,
+                "style": {}
+              }
+            },
+            "3": {
+              "title": "https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System",
+              "id": 430,
+              "ideas": {
+                "1": {
+                  "title": "How to make an operating system",
+                  "id": 431
+                }
+              },
+              "attr": {
+                "collapsed": true,
+                "style": {}
               }
             }
           },
@@ -323,7 +341,8 @@
             "4": {
               "title": "Linux",
               "attr": {
-                "style": {}
+                "style": {},
+                "collapsed": true
               },
               "ideas": {
                 "1": {
@@ -518,6 +537,10 @@
               "title": "Kernel",
               "id": 426
             }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         },
         "7.5": {

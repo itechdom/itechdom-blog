@@ -1,0 +1,37 @@
+{
+  "title": "Web Programming",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "0.5": {
+      "title": "Concepts",
+      "id": 408,
+      "attr": {
+        "style": {}
+      }
+    },
+    "-10": {
+      "title": "Resources",
+      "id": 407,
+      "ideas": {},
+      "attr": {
+        "style": {}
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 93,
+      "ideaIdTo": 94,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ],
+  "attr": {
+    "style": {}
+  }
+}

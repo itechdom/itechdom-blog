@@ -31,6 +31,10 @@
                 }
               }
             }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
           }
         },
         "3": {
@@ -61,7 +65,8 @@
               "contentType": "text/html",
               "content": "<div>## Nodejs is Non-Blocking</div><div><br></div><div>What are the things that block?</div><div><br></div><div>* Reads/Writes on the Database</div><div>* Calls to other web services</div><div><br></div><div>* In other web frameworks, we create a separate thread for each request.</div><div>* Nodejs uses only one thread!</div><div><br></div><div><br></div><div>## Events</div><div>&nbsp; &nbsp;&nbsp;</div><div>An event can be, for example:</div><div><br></div><div>* Incoming Connection from the client</div><div>* Incoming Data from the client</div><div>* Server close event.</div><div>* event event event.</div><div><br></div><div><br></div><div>## Events (Continue)</div><div><br></div><div>Let's look at our server, what are the events our server can have?</div><div><br></div><div>* request</div><div>* connection</div><div>* close</div><div><br></div><div>https://nodejs.org/api/http.html#http_event_request</div><div><br></div><div><br></div><div>## Block Node</div><div><br></div><div>The only way you can block your application is that you don't end the event callback.</div><div><br></div><div>```</div><div>var http = require('http');</div><div><br></div><div>server = http.createServer();</div><div><br></div><div>server.on('connection',function(req,res){</div><div><br></div><div>&nbsp; &nbsp; res.writeHead(\"hello\");</div><div>&nbsp; &nbsp; res.write(\"hi there\");</div><div>&nbsp; &nbsp; console.log(\"If you don't call res.end node will stop the whole application\");</div><div>&nbsp; &nbsp; console.log(\"This is a very common mistake\");</div><div>&nbsp; &nbsp;&nbsp;</div><div>});</div><div><br></div><div>server.listen(1337, '127.0.0.1');</div><div>```</div>"
             },
-            "style": {}
+            "style": {},
+            "collapsed": true
           }
         },
         "6": {
@@ -72,7 +77,8 @@
               "contentType": "text/html",
               "content": "<div id=\"toc\" style=\"box-sizing: border-box; font-family: source-sans-pro, sans-serif; font-size: 18px; line-height: 34px;\"><h2 style=\"box-sizing: border-box; color: rgb(0, 0, 0); margin-top: 1em; font-weight: 400; font-size: 25px; letter-spacing: 1px;\">Table of Contents</h2></div><div id=\"apicontent\" style=\"box-sizing: border-box; font-family: source-sans-pro, sans-serif; font-size: 18px; line-height: 34px;\"><ul style=\"box-sizing: border-box; margin-top: 1em; margin-bottom: 0px; margin-left: 0px; padding-left: 40px; font-size: 15px; line-height: 24px;\"><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/documentation.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">About these Docs</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/synopsis.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Synopsis</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/assert.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Assertion Testing</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/buffer.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Buffer</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/addons.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">C/C++ Addons</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/child_process.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Child Processes</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/cluster.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Cluster</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/console.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Console</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/crypto.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Crypto</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/debugger.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Debugger</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/dns.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">DNS</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/domain.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Domain</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/events.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Events</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/fs.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">File System</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/globals.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Globals</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/http.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">HTTP</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/https.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">HTTPS</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/modules.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Modules</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/net.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Net</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/os.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">OS</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/path.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Path</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/process.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Process</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/punycode.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Punycode</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/querystring.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Query Strings</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/readline.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Readline</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/repl.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">REPL</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/smalloc.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Smalloc</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/stream.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Stream</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/string_decoder.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">String Decoder</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/timers.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Timers</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/tls.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">TLS/SSL</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/tty.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">TTY</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/dgram.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">UDP/Datagram</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/url.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">URL</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/util.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">Utilities</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/vm.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">VM</a></li><li style=\"box-sizing: border-box;\"><a href=\"https://nodejs.org/api/zlib.html\" style=\"box-sizing: border-box; color: rgb(128, 189, 1); font-weight: bold;\" target=\"_blank\">ZLIB</a></li></ul></div>"
             },
-            "style": {}
+            "style": {},
+            "collapsed": true
           },
           "ideas": {
             "1": {
@@ -90,7 +96,8 @@
           "title": "Implementing C++ modules",
           "id": 257,
           "attr": {
-            "style": {}
+            "style": {},
+            "collapsed": true
           },
           "ideas": {
             "1": {
@@ -147,8 +154,7 @@
               "contentType": "text/html",
               "content": "<span style=\"color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;\">Node.js provides an&nbsp;</span><a href=\"https://en.wikipedia.org/wiki/Event-driven_architecture\" title=\"Event-driven architecture\" style=\"color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\" target=\"_blank\">event-driven architecture</a><span style=\"color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;\">&nbsp;and a&nbsp;</span><a href=\"https://en.wikipedia.org/wiki/Non-blocking_I/O\" title=\"Non-blocking I/O\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\" target=\"_blank\">non-blocking I/O</a><span style=\"color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;\">&nbsp;</span><a href=\"https://en.wikipedia.org/wiki/Application_programming_interface\" title=\"Application programming interface\" style=\"color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\" target=\"_blank\">API</a><span style=\"color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;\">&nbsp;that optimizes an application's throughput and scalability. These technologies are commonly used for&nbsp;</span><a href=\"https://en.wikipedia.org/wiki/Real-time_web\" title=\"Real-time web\" style=\"color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\" target=\"_blank\">real-time web</a><span style=\"color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;\">&nbsp;applications.</span>"
             },
-            "style": {},
-            "collapsed": true
+            "style": {}
           }
         },
         "9": {
@@ -215,6 +221,71 @@
               "title": "http://www.sitepoint.com/5-easy-performance-tweaks-node-js-express/",
               "id": 297
             }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "11": {
+          "title": "Security",
+          "id": 298,
+          "ideas": {
+            "1": {
+              "title": "Abusing eval",
+              "id": 299,
+              "ideas": {
+                "1": {
+                  "title": "sending a request with an eval statement",
+                  "id": 300
+                },
+                "2": {
+                  "title": "http://bishankochher.blogspot.com/2011/12/nodejs-security-good-bad-and-ugly.html",
+                  "id": 301,
+                  "ideas": {
+                    "1": {
+                      "title": "blog post regarding that",
+                      "id": 302
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {},
+                "collapsed": true
+              }
+            },
+            "3": {
+              "title": "Resources",
+              "id": 305,
+              "ideas": {
+                "1": {
+                  "title": "https://nodesecurity.io/resources",
+                  "id": 303,
+                  "ideas": {
+                    "1": {
+                      "title": "node security team",
+                      "id": 304
+                    }
+                  },
+                  "attr": {
+                    "style": {}
+                  }
+                },
+                "2": {
+                  "title": "https://speakerdeck.com/ckarande/top-overlooked-security-threats-to-node-dot-js-web-applications",
+                  "id": 306
+                }
+              },
+              "attr": {
+                "collapsed": true,
+                "style": {}
+              }
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         }
       },
@@ -350,7 +421,8 @@
           143,
           7
         ],
-        "style": {}
+        "style": {},
+        "collapsed": true
       },
       "ideas": {
         "1": {
@@ -361,6 +433,10 @@
               "title": "NPM",
               "id": 266
             }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         },
         "2": {
@@ -382,6 +458,10 @@
               "title": "https://github.com/cheeriojs/cheerio",
               "id": 293
             }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
           }
         }
       }

@@ -8,13 +8,29 @@
       "id": 2,
       "attr": {
         "position": [
-          110,
-          -25,
-          2
+          104.5,
+          -82,
+          7
         ],
-        "style": {}
+        "style": {},
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<ul class=\"nav nav-list primary left-menu\" style=\"box-sizing: border-box; padding-right: 0px; padding-left: 0px; color: rgb(49, 49, 49); font-family: 'Open Sans', Arial, sans-serif; line-height: 22px; background-color: rgb(238, 238, 238);\"><li class=\"heading\" style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; border: 1px solid rgb(121, 119, 119); color: rgb(255, 255, 255); padding: 0px; background-image: url(&quot;/images/pattern.png&quot;) !important; background-attachment: initial !important; background-color: rgb(0, 68, 129) !important; background-size: initial !important; background-origin: initial !important; background-clip: initial !important; background-position: 50% 50%; background-repeat: repeat !important;\">C++ Object Oriented<br></li></ul><ul class=\"nav nav-list primary left-menu\" style=\"box-sizing: border-box; padding-right: 0px; padding-left: 0px; color: rgb(49, 49, 49); font-family: 'Open Sans', Arial, sans-serif; line-height: 22px; background-color: rgb(238, 238, 238);\"><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_classes_objects.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Classes &amp; Objects</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Inheritance</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_overloading.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Overloading</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_polymorphism.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Polymorphism</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_data_abstraction.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Abstraction</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_data_encapsulation.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Encapsulation</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Interfaces</a></li></ul><ul class=\"nav nav-list primary left-menu\" style=\"box-sizing: border-box; padding-right: 0px; padding-left: 0px; color: rgb(49, 49, 49); font-family: 'Open Sans', Arial, sans-serif; line-height: 22px; background-color: rgb(238, 238, 238);\"><li class=\"heading\" style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; border: 1px solid rgb(121, 119, 119); color: rgb(255, 255, 255); padding: 0px; background-image: url(&quot;/images/pattern.png&quot;) !important; background-attachment: initial !important; background-color: rgb(0, 68, 129) !important; background-size: initial !important; background-origin: initial !important; background-clip: initial !important; background-position: 50% 50%; background-repeat: repeat !important;\">C++ Advanced</li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_files_streams.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat rgb(214, 214, 214);\" target=\"_blank\">C++ Files and Streams</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Exception Handling</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_dynamic_memory.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Dynamic Memory</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_namespaces.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Namespaces</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_templates.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Templates</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_preprocessor.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Preprocessor</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_signal_handling.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Signal Handling</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_multithreading.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Multithreading</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><a href=\"http://www.tutorialspoint.com/cplusplus/cpp_web_programming.htm\" style=\"box-sizing: border-box; color: rgb(0, 0, 0); position: relative; padding: 8px 17px; font-size: 0.9em; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(187, 187, 187); transition: all 0.3s; outline: none !important; background: url(&quot;/images/list-icon.png&quot;) 0px 9px no-repeat;\" target=\"_blank\">C++ Web Programming</a></li><li style=\"box-sizing: border-box; line-height: 14px; position: relative; display: block; margin: 0px; padding: 0px;\"><div><br></div></li></ul><ul class=\"nav nav-list primary left-menu\" style=\"box-sizing: border-box; padding-right: 0px; padding-left: 0px; color: rgb(49, 49, 49); font-family: 'Open Sans', Arial, sans-serif; line-height: 22px; background-color: rgb(238, 238, 238);\"></ul>"
+        },
+        "collapsed": true
       },
-      "ideas": {}
+      "ideas": {
+        "1": {
+          "title": ".h and .cpp",
+          "id": 35,
+          "ideas": {
+            "1": {
+              "title": "header files are included instead of cpp",
+              "id": 36
+            }
+          }
+        }
+      }
     },
     "2": {
       "title": "Pain Points",
@@ -27,6 +43,27 @@
         "2": {
           "title": "Pointers",
           "id": 14
+        },
+        "3": {
+          "title": "<< with cout",
+          "id": 30,
+          "ideas": {
+            "1": {
+              "title": "binary shift",
+              "id": 37
+            },
+            "2": {
+              "title": "http://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/Companion/cxx_crib/input_output.html",
+              "id": 38
+            }
+          },
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<h3 style=\"color: rgb(0, 0, 0); font-family: Times; line-height: normal;\">Overloading &lt;&lt; and &gt;&gt;</h3><span style=\"color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;\">The above is verbose so a more elegant way is provided. The C++ language does&nbsp;</span><i style=\"color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;\">not</i><span style=\"color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;\">&nbsp;include an I/O system, but one of its core concepts is that it is extendible. Although its operator set cannot be increased, the meanings of operators depend on the context in which they are used. When applied to new objects the meaning can be redefined. So, the left shift operator &lt;&lt; has, in the standard I/O library, been overloaded to be the put function when its left hand argument is an input stream. Hence:-</span><pre style=\"color: rgb(0, 0, 0); line-height: normal;\">cout &lt;&lt;  \"x = \";\n</pre><span style=\"color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;\">is the same as</span><pre style=\"color: rgb(0, 0, 0); line-height: normal;\">put(cout,\"x = \");\n</pre><span style=\"color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;\">The side effect is to output the right hand variable and the expression produces a value that is an output stream (technically its a&nbsp;</span><a href=\"http://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/Companion/glossary/reference.html\" style=\"font-family: Times; font-size: medium; line-height: normal;\">reference</a><span style=\"color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;\">&nbsp;to an output stream, but it amounts to the same thing). This value can be used again as the left hand size of a &lt;&lt;. So to call the put functions 3 times as before:-</span><pre style=\"color: rgb(0, 0, 0); line-height: normal;\">cout &lt;&lt; \"x = \" &lt;&lt; x &lt;&lt; \"\\n\";\n</pre><span style=\"color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;\">because the &lt;&lt; operator is evaluated left to right. It take a little getting used to for a FORTRAN programmer, but after a while you get used to seeing this as a cout object with a stream of values flowing into it.</span><p style=\"color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;\">As you might expect, input simply reverses the sign on the flow, so to read 3 numbers from the input stream and store them in x, y, z:-</p><pre style=\"color: rgb(0, 0, 0); line-height: normal;\">cin &gt;&gt; x &gt;&gt; y &gt;&gt; z;\n</pre>"
+            },
+            "style": {}
+          }
         }
       },
       "attr": {
@@ -37,7 +74,8 @@
           45,
           147,
           3
-        ]
+        ],
+        "collapsed": true
       }
     },
     "-10": {
@@ -45,37 +83,190 @@
       "id": 3,
       "attr": {
         "position": [
-          109,
-          -9,
-          1
+          112.5,
+          -83,
+          6
         ],
-        "style": {}
+        "style": {},
+        "collapsed": true
       },
       "ideas": {
         "1": {
           "title": "https://en.wikipedia.org/wiki/C%2B%2B",
           "id": 6,
-          "ideas": {
-            "1": {
-              "title": "Wikipedia",
-              "id": 7
-            }
+          "ideas": {},
+          "attr": {
+            "style": {}
           }
         },
-        "2": {
-          "title": "https://read.amazon.com/",
-          "id": 8,
+        "6": {
+          "title": "Sample Codes",
+          "id": 39,
           "ideas": {
-            "1": {
-              "title": "tour of C++",
-              "id": 9,
+            "3": {
+              "title": "github examples",
+              "id": 16,
+              "attr": {
+                "style": {}
+              },
               "ideas": {
                 "1": {
-                  "title": "brejene",
-                  "id": 10
+                  "title": "https://github.com/sinairv/Cpp-Tutorial-Samples",
+                  "id": 15,
+                  "ideas": {},
+                  "attr": {
+                    "style": {}
+                  }
+                },
+                "2": {
+                  "title": "https://github.com/sftrabbit/CppSamples-Samples",
+                  "id": 33,
+                  "ideas": {},
+                  "attr": {
+                    "style": {}
+                  }
                 }
               }
             }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "9": {
+          "title": "tutorial point ",
+          "id": 41,
+          "attr": {
+            "style": {},
+            "collapsed": true
+          },
+          "ideas": {
+            "1": {
+              "title": "http://www.tutorialspoint.com/cplusplus/cpp_files_streams.htm",
+              "id": 40,
+              "ideas": {},
+              "attr": {
+                "style": {}
+              }
+            }
+          }
+        },
+        "10": {
+          "title": "top trending repos",
+          "id": 18,
+          "attr": {
+            "style": {},
+            "collapsed": true
+          },
+          "ideas": {
+            "1": {
+              "title": "https://github.com/search?l=C%2B%2B&q=c%2B%2B&type=Repositories&utf8=%E2%9C%93",
+              "id": 17,
+              "ideas": {},
+              "attr": {
+                "style": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "-11": {
+      "title": "Third Party",
+      "id": 19,
+      "attr": {
+        "position": [
+          92.5,
+          147,
+          8
+        ],
+        "style": {},
+        "collapsed": true
+      },
+      "ideas": {
+        "1": {
+          "title": "https://github.com/cocos2d/cocos2d-x",
+          "id": 20,
+          "ideas": {
+            "1": {
+              "title": "cocos2d",
+              "id": 21
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "2": {
+          "title": "https://github.com/facebook/proxygen",
+          "id": 22,
+          "ideas": {
+            "1": {
+              "title": "proxygen http server",
+              "id": 23
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "3": {
+          "title": "https://github.com/chenshuo/muduo",
+          "id": 24,
+          "ideas": {
+            "1": {
+              "title": "multi-threaded server library",
+              "id": 25
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "4": {
+          "title": "https://github.com/ipkn/crow",
+          "id": 26,
+          "ideas": {
+            "1": {
+              "title": "web framework inspired by flask",
+              "id": 27
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "5": {
+          "title": "https://github.com/d5/node.native",
+          "id": 28,
+          "ideas": {
+            "1": {
+              "title": "node.native library for c++",
+              "id": 29
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "6": {
+          "title": "https://github.com/beark/ftl",
+          "id": 31,
+          "ideas": {
+            "1": {
+              "title": "fp",
+              "id": 32
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         }
       }
@@ -86,7 +277,7 @@
     "style": {},
     "attachment": {
       "contentType": "text/html",
-      "content": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif;\"><b>C++</b>&nbsp;(<a href=\"https://en.wikipedia.org/wiki/English_alphabet#Letter_names\" title=\"English alphabet\" style=\"color: rgb(11, 0, 128); background: none;\">pronounced</a>&nbsp;as&nbsp;<i>cee plus plus</i>,&nbsp;<span class=\"nowrap\" style=\"white-space: nowrap;\"><span class=\"IPA nopopups\"><a href=\"https://en.wikipedia.org/wiki/Help:IPA_for_English\" title=\"Help:IPA for English\" style=\"color: rgb(11, 0, 128); background: none;\">/<span style=\"border-bottom-width: 1px; border-bottom-style: dotted;\"><span title=\"/ˈ/ primary stress follows\">ˈ</span><span title=\"'s' in 'sigh'\">s</span><span title=\"/iː/ long 'e' in 'bead'\">iː</span></span>&nbsp;<span style=\"border-bottom-width: 1px; border-bottom-style: dotted;\"><span title=\"'p' in 'pie'\">p</span><span title=\"'l' in 'lie'\">l</span><span title=\"/ʌ/ short 'u' in 'bud'\">ʌ</span><span title=\"'s' in 'sigh'\">s</span></span>&nbsp;<span style=\"border-bottom-width: 1px; border-bottom-style: dotted;\"><span title=\"'p' in 'pie'\">p</span><span title=\"'l' in 'lie'\">l</span><span title=\"/ʌ/ short 'u' in 'bud'\">ʌ</span><span title=\"'s' in 'sigh'\">s</span></span>/</a></span></span>) is a general-purpose&nbsp;<a href=\"https://en.wikipedia.org/wiki/Programming_language\" title=\"Programming language\" style=\"color: rgb(11, 0, 128); background: none;\">programming language</a>. It has&nbsp;<a href=\"https://en.wikipedia.org/wiki/Imperative_programming\" title=\"Imperative programming\" style=\"color: rgb(11, 0, 128); background: none;\">imperative</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Object-oriented_programming\" title=\"Object-oriented programming\" style=\"color: rgb(11, 0, 128); background: none;\">object-oriented</a>&nbsp;and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Generic_programming\" title=\"Generic programming\" style=\"color: rgb(11, 0, 128); background: none;\">generic</a>programming features, while also providing facilities for low-level memory manipulation.</p><p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif;\">It is designed with a bias toward&nbsp;<a href=\"https://en.wikipedia.org/wiki/System_programming\" title=\"System programming\" style=\"color: rgb(11, 0, 128); background: none;\">system programming</a>&nbsp;and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights.<sup id=\"cite_ref-Stroustrup1_3-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/C%2B%2B#cite_note-Stroustrup1-3\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[3]</a></sup>&nbsp;C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,<sup id=\"cite_ref-Stroustrup1_3-1\" class=\"reference\" style=\"line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/C%2B%2B#cite_note-Stroustrup1-3\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[3]</a></sup>&nbsp;including&nbsp;<a href=\"https://en.wikipedia.org/wiki/Application_software\" title=\"Application software\" style=\"color: rgb(11, 0, 128); background: none;\">desktop applications</a>, servers (e.g.&nbsp;<a href=\"https://en.wikipedia.org/wiki/E-commerce\" title=\"E-commerce\" style=\"color: rgb(11, 0, 128); background: none;\">e-commerce</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Web_search_engine\" title=\"Web search engine\" style=\"color: rgb(11, 0, 128); background: none;\">web search</a>&nbsp;or&nbsp;<a href=\"https://en.wikipedia.org/wiki/SQL\" title=\"SQL\" style=\"color: rgb(11, 0, 128); background: none;\">SQL</a>&nbsp;servers), performance-critical applications (e.g.&nbsp;<a href=\"https://en.wikipedia.org/wiki/Telephone_switches\" title=\"Telephone switches\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\">telephone switches</a>&nbsp;or&nbsp;<a href=\"https://en.wikipedia.org/wiki/Space_probes\" title=\"Space probes\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\">space probes</a>), and entertainment software.<sup id=\"cite_ref-applications_4-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/C%2B%2B#cite_note-applications-4\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[4]</a></sup>&nbsp;C++ is a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Compiled_language\" title=\"Compiled language\" style=\"color: rgb(11, 0, 128); background: none;\">compiled</a>&nbsp;language, with implementations of it available on many platforms and provided by various organizations, including the&nbsp;<a href=\"https://en.wikipedia.org/wiki/GNU_Compiler_Collection\" title=\"GNU Compiler Collection\" style=\"color: rgb(11, 0, 128); background: none;\">FSF</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Clang\" title=\"Clang\" style=\"color: rgb(11, 0, 128); background: none;\">LLVM</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B\" title=\"Microsoft Visual C++\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\">Microsoft</a>&nbsp;and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Intel_C%2B%2B_Compiler\" title=\"Intel C++ Compiler\" style=\"color: rgb(11, 0, 128); background: none;\">Intel</a>.</p><p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif;\">C++ is standardized by the&nbsp;<a href=\"https://en.wikipedia.org/wiki/International_Organization_for_Standardization\" title=\"International Organization for Standardization\" style=\"color: rgb(11, 0, 128); background: none;\">International Organization for Standardization</a>&nbsp;(ISO), with the latest (and current) standard version ratified and published by<a href=\"https://en.wikipedia.org/wiki/International_Organization_for_Standardization\" title=\"International Organization for Standardization\" style=\"color: rgb(11, 0, 128); background: none;\">ISO</a>&nbsp;in December 2014 as&nbsp;<i><a href=\"https://en.wikipedia.org/wiki/ISO/IEC_14882\" title=\"ISO/IEC 14882\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\">ISO/IEC 14882</a>:2014</i>&nbsp;(informally known as&nbsp;<a href=\"https://en.wikipedia.org/wiki/C%2B%2B14\" title=\"C++14\" style=\"color: rgb(11, 0, 128); background: none;\">C++14</a>).<sup id=\"cite_ref-isocpp2011_5-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/C%2B%2B#cite_note-isocpp2011-5\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[5]</a></sup>&nbsp;The C++ programming language was initially standardized in 1998 as<i><a href=\"https://en.wikipedia.org/wiki/ISO/IEC_14882\" title=\"ISO/IEC 14882\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\">ISO/IEC 14882</a>:1998</i>, which was then amended by the C++03,&nbsp;<i>ISO/IEC 14882:2003</i>, standard. The current C++14 standard supersedes these and<a href=\"https://en.wikipedia.org/wiki/C%2B%2B11\" title=\"C++11\" style=\"color: rgb(11, 0, 128); background: none;\">C++11</a>, with&nbsp;<a href=\"https://en.wikipedia.org/wiki/C%2B%2B14\" title=\"C++14\" style=\"color: rgb(11, 0, 128); background: none;\">new features</a>&nbsp;and an enlarged&nbsp;<a href=\"https://en.wikipedia.org/wiki/C%2B%2B#Standard_library\" style=\"color: rgb(11, 0, 128); background: none;\">standard library</a>. Before the initial standardization in 1998, C++ was developed by&nbsp;<a href=\"https://en.wikipedia.org/wiki/Bjarne_Stroustrup\" title=\"Bjarne Stroustrup\" style=\"color: rgb(11, 0, 128); background: none;\">Bjarne Stroustrup</a>&nbsp;at&nbsp;<a href=\"https://en.wikipedia.org/wiki/Bell_Labs\" title=\"Bell Labs\" style=\"color: rgb(11, 0, 128); background: none;\">Bell Labs</a>&nbsp;since 1979, as an extension of the&nbsp;<a href=\"https://en.wikipedia.org/wiki/C_(programming_language)\" title=\"C (programming language)\" style=\"color: rgb(11, 0, 128); background: none;\">C language</a>&nbsp;as he wanted an efficient and flexible language similar to C, which also provided high-level features for program organization.</p><p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif;\">Many other programming languages have been influenced by C++, including&nbsp;<a href=\"https://en.wikipedia.org/wiki/C_Sharp_(programming_language)\" title=\"C Sharp (programming language)\" style=\"color: rgb(11, 0, 128); background: none;\">C#</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Java_(programming_language)\" title=\"Java (programming language)\" style=\"color: rgb(11, 0, 128); background: none;\">Java</a>, and newer versions of C (after 1998).</p>"
+      "content": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif;\"><b>C++</b>&nbsp;(<a href=\"https://en.wikipedia.org/wiki/English_alphabet#Letter_names\" title=\"English alphabet\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">pronounced</a>&nbsp;as&nbsp;<i>cee plus plus</i>,&nbsp;<span class=\"nowrap\" style=\"white-space: nowrap;\"><span class=\"IPA nopopups\"><a href=\"https://en.wikipedia.org/wiki/Help:IPA_for_English\" title=\"Help:IPA for English\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">/<span style=\"border-bottom-width: 1px; border-bottom-style: dotted;\"><span title=\"/ˈ/ primary stress follows\">ˈ</span><span title=\"'s' in 'sigh'\">s</span><span title=\"/iː/ long 'e' in 'bead'\">iː</span></span>&nbsp;<span style=\"border-bottom-width: 1px; border-bottom-style: dotted;\"><span title=\"'p' in 'pie'\">p</span><span title=\"'l' in 'lie'\">l</span><span title=\"/ʌ/ short 'u' in 'bud'\">ʌ</span><span title=\"'s' in 'sigh'\">s</span></span>&nbsp;<span style=\"border-bottom-width: 1px; border-bottom-style: dotted;\"><span title=\"'p' in 'pie'\">p</span><span title=\"'l' in 'lie'\">l</span><span title=\"/ʌ/ short 'u' in 'bud'\">ʌ</span><span title=\"'s' in 'sigh'\">s</span></span>/</a></span></span>) is a general-purpose&nbsp;<a href=\"https://en.wikipedia.org/wiki/Programming_language\" title=\"Programming language\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">programming language</a>. It has&nbsp;<a href=\"https://en.wikipedia.org/wiki/Imperative_programming\" title=\"Imperative programming\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">imperative</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Object-oriented_programming\" title=\"Object-oriented programming\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">object-oriented</a>&nbsp;and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Generic_programming\" title=\"Generic programming\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">generic</a>programming features, while also providing facilities for low-level memory manipulation.</p><p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif;\">It is designed with a bias toward&nbsp;<a href=\"https://en.wikipedia.org/wiki/System_programming\" title=\"System programming\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">system programming</a>&nbsp;and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights.<sup id=\"cite_ref-Stroustrup1_3-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/C%2B%2B#cite_note-Stroustrup1-3\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\" target=\"_blank\">[3]</a></sup>&nbsp;C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,<sup id=\"cite_ref-Stroustrup1_3-1\" class=\"reference\" style=\"line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/C%2B%2B#cite_note-Stroustrup1-3\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\" target=\"_blank\">[3]</a></sup>&nbsp;including&nbsp;<a href=\"https://en.wikipedia.org/wiki/Application_software\" title=\"Application software\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">desktop applications</a>, servers (e.g.&nbsp;<a href=\"https://en.wikipedia.org/wiki/E-commerce\" title=\"E-commerce\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">e-commerce</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Web_search_engine\" title=\"Web search engine\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">web search</a>&nbsp;or&nbsp;<a href=\"https://en.wikipedia.org/wiki/SQL\" title=\"SQL\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">SQL</a>&nbsp;servers), performance-critical applications (e.g.&nbsp;<a href=\"https://en.wikipedia.org/wiki/Telephone_switches\" title=\"Telephone switches\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">telephone switches</a>&nbsp;or&nbsp;<a href=\"https://en.wikipedia.org/wiki/Space_probes\" title=\"Space probes\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">space probes</a>), and entertainment software.<sup id=\"cite_ref-applications_4-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/C%2B%2B#cite_note-applications-4\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\" target=\"_blank\">[4]</a></sup>&nbsp;C++ is a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Compiled_language\" title=\"Compiled language\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">compiled</a>&nbsp;language, with implementations of it available on many platforms and provided by various organizations, including the&nbsp;<a href=\"https://en.wikipedia.org/wiki/GNU_Compiler_Collection\" title=\"GNU Compiler Collection\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">FSF</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Clang\" title=\"Clang\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">LLVM</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B\" title=\"Microsoft Visual C++\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">Microsoft</a>&nbsp;and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Intel_C%2B%2B_Compiler\" title=\"Intel C++ Compiler\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">Intel</a>.</p><p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif;\">C++ is standardized by the&nbsp;<a href=\"https://en.wikipedia.org/wiki/International_Organization_for_Standardization\" title=\"International Organization for Standardization\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">International Organization for Standardization</a>&nbsp;(ISO), with the latest (and current) standard version ratified and published by<a href=\"https://en.wikipedia.org/wiki/International_Organization_for_Standardization\" title=\"International Organization for Standardization\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">ISO</a>&nbsp;in December 2014 as&nbsp;<i><a href=\"https://en.wikipedia.org/wiki/ISO/IEC_14882\" title=\"ISO/IEC 14882\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">ISO/IEC 14882</a>:2014</i>&nbsp;(informally known as&nbsp;<a href=\"https://en.wikipedia.org/wiki/C%2B%2B14\" title=\"C++14\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">C++14</a>).<sup id=\"cite_ref-isocpp2011_5-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/C%2B%2B#cite_note-isocpp2011-5\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\" target=\"_blank\">[5]</a></sup>&nbsp;The C++ programming language was initially standardized in 1998 as<i><a href=\"https://en.wikipedia.org/wiki/ISO/IEC_14882\" title=\"ISO/IEC 14882\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">ISO/IEC 14882</a>:1998</i>, which was then amended by the C++03,&nbsp;<i>ISO/IEC 14882:2003</i>, standard. The current C++14 standard supersedes these and<a href=\"https://en.wikipedia.org/wiki/C%2B%2B11\" title=\"C++11\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">C++11</a>, with&nbsp;<a href=\"https://en.wikipedia.org/wiki/C%2B%2B14\" title=\"C++14\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">new features</a>&nbsp;and an enlarged&nbsp;<a href=\"https://en.wikipedia.org/wiki/C%2B%2B#Standard_library\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">standard library</a>. Before the initial standardization in 1998, C++ was developed by&nbsp;<a href=\"https://en.wikipedia.org/wiki/Bjarne_Stroustrup\" title=\"Bjarne Stroustrup\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">Bjarne Stroustrup</a>&nbsp;at&nbsp;<a href=\"https://en.wikipedia.org/wiki/Bell_Labs\" title=\"Bell Labs\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">Bell Labs</a>&nbsp;since 1979, as an extension of the&nbsp;<a href=\"https://en.wikipedia.org/wiki/C_(programming_language)\" title=\"C (programming language)\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">C language</a>&nbsp;as he wanted an efficient and flexible language similar to C, which also provided high-level features for program organization.</p><p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif;\">Many other programming languages have been influenced by C++, including&nbsp;<a href=\"https://en.wikipedia.org/wiki/C_Sharp_(programming_language)\" title=\"C Sharp (programming language)\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">C#</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Java_(programming_language)\" title=\"Java (programming language)\" style=\"color: rgb(11, 0, 128); background: none;\" target=\"_blank\">Java</a>, and newer versions of C (after 1998).</p>"
     }
   }
 }

@@ -1,0 +1,108 @@
+{
+  "title": "Game dev",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Resources",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "List of engines",
+          "id": 12,
+          "ideas": {
+            "1": {
+              "title": "https://html5gameengine.com/",
+              "id": 13
+            },
+            "3": {
+              "title": "threejs",
+              "id": 17,
+              "attr": {
+                "style": {}
+              },
+              "ideas": {
+                "1": {
+                  "title": "http://threejs.org/",
+                  "id": 16,
+                  "ideas": {},
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
+            },
+            "4": {
+              "title": "Quintus",
+              "id": 18,
+              "ideas": {
+                "1": {
+                  "title": "https://github.com/cykod/Quintus",
+                  "id": 19
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "title": "Third Party",
+      "id": 6,
+      "ideas": {
+        "1": {
+          "title": "Engines",
+          "id": 7,
+          "ideas": {
+            "1": {
+              "title": "Impact",
+              "id": 8,
+              "ideas": {
+                "1": {
+                  "title": "Side Scroller",
+                  "id": 9
+                },
+                "2": {
+                  "title": "http://impactjs.com/",
+                  "id": 10
+                }
+              }
+            }
+          },
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<div>Game Development</div><div><br></div><div>Places to find game designers</div><div><br></div><div>http://www.pixelprospector.com/places-to-find-graphics-artists/</div><div><br></div><div>Unity</div><div><br></div><div>utilities</div><div><br></div><div>http://esotericsoftware.com/</div>"
+            },
+            "style": {}
+          }
+        }
+      }
+    },
+    "-1": {
+      "title": "Concepts",
+      "id": 4,
+      "ideas": {
+        "1": {
+          "title": "Game Theory",
+          "id": 5
+        }
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 93,
+      "ideaIdTo": 94,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ],
+  "attr": {
+    "style": {}
+  }
+}

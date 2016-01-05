@@ -230,6 +230,10 @@
                 "style": {}
               }
             }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         },
         "2": {
@@ -246,7 +250,17 @@
         },
         "6": {
           "title": "IPC",
-          "id": 304
+          "id": 304,
+          "ideas": {
+            "1": {
+              "title": "Inter process communication",
+              "id": 423
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
+          }
         },
         "10": {
           "title": "Kernel Mode",
@@ -322,6 +336,88 @@
           "title": "Virtualization",
           "id": 330,
           "ideas": {}
+        },
+        "18": {
+          "title": "Build tools",
+          "id": 419,
+          "ideas": {
+            "1": {
+              "title": "make",
+              "id": 420,
+              "ideas": {
+                "1": {
+                  "title": "https://www.gnu.org/software/make/",
+                  "id": 421
+                },
+                "2": {
+                  "title": "get its info from makefile",
+                  "id": 422,
+                  "attr": {}
+                }
+              },
+              "attr": {
+                "collapsed": true,
+                "style": {}
+              }
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
+          }
+        },
+        "19": {
+          "title": "Shared Libraries",
+          "id": 424,
+          "ideas": {
+            "1": {
+              "title": "http://www.ibm.com/developerworks/library/l-lpic1-102-3/",
+              "id": 425,
+              "ideas": {
+                "1": {
+                  "title": "IBM tutorial",
+                  "id": 430,
+                  "ideas": {}
+                }
+              }
+            },
+            "2": {
+              "title": "Statically linked",
+              "id": 426
+            },
+            "3": {
+              "title": "Dynamically Linked",
+              "id": 427
+            },
+            "4": {
+              "title": "http://www.thegeekstuff.com/2012/06/linux-shared-libraries/",
+              "id": 428,
+              "ideas": {
+                "1": {
+                  "title": "simpler tutorial ",
+                  "id": 432
+                }
+              }
+            },
+            "5": {
+              "title": "Similar to the root node_modules",
+              "id": 433,
+              "ideas": {
+                "1": {
+                  "title": "Or system packages",
+                  "id": 434
+                }
+              }
+            }
+          },
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<h2 id=\"N10070\" style=\"margin-top: 5px; margin-bottom: 5px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial; color: rgb(0, 0, 0); font-size: 1.6em !important;\">Shared libraries</h2><p style=\"margin-bottom: 0px; padding: 6px 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: rgb(34, 34, 34); line-height: 1.5em; margin-top: 5px !important; font-size: 1.166em !important;\">When you write a program, you rely on many pieces of code that someone else has already written to perform routine or specialized functions for you. These pieces of code are stored in shared libraries. To use them, you link them with your code, either when you build the program or when you run the program.</p>"
+            },
+            "style": {},
+            "collapsed": true
+          }
         }
       },
       "attr": {
@@ -345,6 +441,10 @@
               "title": "Tutorials Point",
               "id": 312
             }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
           }
         },
         "2": {
@@ -355,6 +455,10 @@
               "title": "http://www.tutorialspoint.com/operating_system/images/linux_os.jpg",
               "id": 315
             }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
           }
         },
         "3": {
@@ -365,6 +469,10 @@
               "title": "https://drive.google.com/open?id=0B9tPYCpuqoIrWWFrekFHNDJMWDQ",
               "id": 321
             }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
           }
         },
         "4": {
@@ -375,6 +483,37 @@
               "title": "https://www.udacity.com/course/viewer#!/c-ud189/l-3652509443/m-641659207",
               "id": 333
             }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "5": {
+          "title": "System utils",
+          "id": 415,
+          "ideas": {
+            "1": {
+              "title": "source code",
+              "id": 416,
+              "ideas": {
+                "1": {
+                  "title": "git clone git://git.sv.gnu.org/coreutils",
+                  "id": 417
+                }
+              },
+              "attr": {
+                "style": {}
+              }
+            },
+            "2": {
+              "title": "http://www.gnu.org/software/coreutils/coreutils.html",
+              "id": 418
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
           }
         }
       },
@@ -438,14 +577,40 @@
       "title": "Flavors",
       "id": 233,
       "ideas": {
-        "1": {
-          "title": "https://en.m.wikipedia.org/wiki/Red_Star_OS",
-          "id": 361,
+        "3": {
+          "title": "Red Star OS\n\n",
+          "id": 437,
           "ideas": {
             "1": {
-              "title": "Red Star OS from North Korea",
-              "id": 362
+              "title": "https://www.youtube.com/watch?v=j_9QOgg0GRE",
+              "id": 435,
+              "ideas": {
+                "1": {
+                  "title": "video installing VM",
+                  "id": 436
+                }
+              },
+              "attr": {
+                "style": {}
+              }
+            },
+            "2": {
+              "title": "https://en.m.wikipedia.org/wiki/Red_Star_OS",
+              "id": 361,
+              "ideas": {
+                "1": {
+                  "title": "Red Star OS from North Korea",
+                  "id": 362
+                }
+              },
+              "attr": {
+                "style": {}
+              }
             }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         }
       },
@@ -455,8 +620,7 @@
           205.5,
           -72,
           2
-        ],
-        "collapsed": true
+        ]
       }
     },
     "-12": {

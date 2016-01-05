@@ -4,7 +4,7 @@
   "formatVersion": 2,
   "ideas": {
     "1": {
-      "title": "I am stuck at these",
+      "title": "pain points",
       "id": 2,
       "attr": {
         "attachment": {
@@ -13,8 +13,7 @@
         },
         "style": {
           "background": "#800000"
-        },
-        "collapsed": true
+        }
       },
       "ideas": {
         "1": {
@@ -76,7 +75,8 @@
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true
       }
     },
     "3": {
@@ -94,6 +94,17 @@
                 "1": {
                   "title": "https://drive.google.com/open?id=1pU3YEnGdlZ0GyxIZwri9Vt-kNGE46dkDRRyKLBf_hJE",
                   "id": 22
+                },
+                "2": {
+                  "title": "Nice quote from JB developer of Braid",
+                  "id": 46,
+                  "attr": {
+                    "attachment": {
+                      "contentType": "text/html",
+                      "content": "<p style=\"box-sizing: inherit; margin-bottom: 0.9rem; padding: 0px; font-size: 0.9rem; line-height: 1.5; text-rendering: optimizeLegibility; color: rgb(34, 34, 34);\"><b style=\"box-sizing: inherit; line-height: inherit;\"><i style=\"box-sizing: inherit; line-height: inherit;\">JB:</i></b>&nbsp;Well, a lot of games get designed in a top-down way where you decide before you make the game, what the game is about. Then you decide all the details and then you basically make the details happen. The flaw in that approach is that you’re limited by your initial idea. The most interesting idea that you had is what you’re going to end up making, and probably less than that because games are hard to make so you end up not being able to do everything that you wanted.</p><p style=\"box-sizing: inherit; margin-bottom: 0.9rem; padding: 0px; font-size: 0.9rem; line-height: 1.5; text-rendering: optimizeLegibility; color: rgb(34, 34, 34);\">With (“Braid” and “The Witness”), what I did was a little bit different. I decided at the beginning what the game was probably about, but I didn’t try to figure out all the details. I just looked at what happened with that subject matter and started playing with it. … Sometimes that will make the game become something a little bit different than that initial idea I had, but it always becomes better and more interesting than the original idea. That’s sort of where the magic comes from, you find things that are better than what you (originally) thought of.</p>"
+                    },
+                    "style": {}
+                  }
                 }
               }
             },
@@ -115,8 +126,8 @@
         }
       },
       "attr": {
-        "collapsed": true,
-        "style": {}
+        "style": {},
+        "collapsed": true
       }
     },
     "-1": {
@@ -133,7 +144,10 @@
               "ideas": {
                 "1": {
                   "title": "https://read.amazon.com/",
-                  "id": 15
+                  "id": 15,
+                  "attr": {
+                    "style": {}
+                  }
                 }
               }
             }
@@ -169,35 +183,13 @@
       "ideas": {
         "1": {
           "title": "Human Body",
-          "id": 30
-        },
-        "2": {
-          "title": "Skeletons",
-          "id": 31,
+          "id": 30,
           "ideas": {
             "1": {
-              "title": "Human",
-              "id": 37,
-              "ideas": {
-                "1": {
-                  "title": "Human Vs Gorilla",
-                  "id": 38,
-                  "ideas": {
-                    "1": {
-                      "title": "https://commons.wikimedia.org/wiki/File:Primatenskelett-drawing.jpg",
-                      "id": 39
-                    }
-                  }
-                }
-              },
-              "attr": {
-                "style": {}
-              }
+              "title": "Proportions",
+              "id": 47,
+              "ideas": {}
             }
-          },
-          "attr": {
-            "style": {},
-            "collapsed": true
           }
         },
         "3": {
@@ -217,7 +209,90 @@
             "style": {},
             "collapsed": true
           }
+        },
+        "5": {
+          "title": "How to draw a head",
+          "id": 51,
+          "ideas": {
+            "1": {
+              "title": "http://www.howtodrawcomics.net/#!how-to-draw-heads-chapter-1-0/c108u",
+              "id": 52
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "6": {
+          "title": "How to draw human body",
+          "id": 53,
+          "ideas": {
+            "1": {
+              "title": "http://www.learn-to-draw.com/figure-drawing/",
+              "id": 54
+            },
+            "2": {
+              "title": "http://www.elfwood.com/tutorial/108c5366-e843-ada3-4085-85cf2e6cb03b/figure-drawing-basic-pose-and-construction",
+              "id": 56
+            },
+            "3": {
+              "title": "basic human skeleton",
+              "id": 57,
+              "ideas": {
+                "1": {
+                  "title": "https://cdn.tutsplus.com/vector/uploads/2013/10/2g-Starting-the-profile.jpg",
+                  "id": 58
+                },
+                "2": {
+                  "title": "https://commons.wikimedia.org/wiki/File:Primatenskelett-drawing.jpg",
+                  "id": 39,
+                  "attr": {
+                    "style": {}
+                  }
+                },
+                "3": {
+                  "title": "http://www.clipartbest.com/line-drawing-human-body",
+                  "id": 59
+                }
+              },
+              "attr": {
+                "collapsed": true,
+                "style": {}
+              }
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "7": {
+          "title": "How to draw a comic",
+          "id": 60,
+          "ideas": {
+            "1": {
+              "title": "https://www.google.com/search?q=human+body&safe=off&espv=2&biw=1920&bih=979&tbm=isch&imgil=Mg6Zj4Kg9b7dnM%253A%253BSDyQ3hOPoR9rcM%253Bhttp%25253A%25252F%25252Fwww.livescience.com%25252F37009-human-body.html&source=iu&pf=m&fir=Mg6Zj4Kg9b7dnM%253A%252CSDyQ3hOPoR9rcM%252C_&usg=__H4bj9cBmFnlZuvq1DpO2Ez3ceXo%3D&ved=0ahUKEwjroZyT-JHKAhUD-2MKHev4BPYQyjcIJw&ei=hFSLVuvPL4P2jwPr8ZOwDw#safe=off&tbm=isch&q=how+to+draw+a+comic+character&imgrc=nuH2JSP709WZ6M%3A",
+              "id": 61
+            },
+            "2": {
+              "title": "https://s-media-cache-ak0.pinimg.com/236x/74/af/eb/74afeb8c480ac1a5473e9198f390563b.jpg",
+              "id": 62
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
+          }
         }
+      },
+      "attr": {
+        "style": {},
+        "position": [
+          72.5,
+          78,
+          1
+        ]
       }
     }
   },

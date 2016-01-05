@@ -1,0 +1,96 @@
+{
+  "title": "Professions",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "-1": {
+      "title": "Electrical Engineering",
+      "id": 407,
+      "attr": {
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: inherit;\"><b><a href=\"https://en.wikipedia.org/wiki/Electrical_Engineering\" title=\"Electrical Engineering\" class=\"mw-redirect\" target=\"_blank\" style=\"color: rgb(11, 0, 128); text-decoration: underline; outline: 0px; background: none;\">Electrical Engineering</a></b></p><ul style=\"margin-top: 0.3em; margin-bottom: 0px; margin-left: 1.6em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.4px; list-style-image: url(&quot;data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A&quot;);\"><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Applied_physics\" title=\"Applied physics\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Applied physics</a></li><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Computer_Science\" title=\"Computer Science\" class=\"mw-redirect\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Computer Science</a><br></li><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Control_engineering\" title=\"Control engineering\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Control systems engineering</a><ul style=\"margin-top: 0.3em; margin-left: 1.6em; list-style-type: disc; list-style-image: url(&quot;data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A&quot;);\"><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Control_theory\" title=\"Control theory\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Control theory</a></li></ul></li><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Engineering_physics\" title=\"Engineering physics\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Engineering physics</a><ul style=\"margin-top: 0.3em; margin-left: 1.6em; list-style-type: disc; list-style-image: url(&quot;data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A&quot;);\"><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Photonics\" title=\"Photonics\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Photonics</a></li></ul></li><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Mechatronics\" title=\"Mechatronics\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Mechatronics</a><br></li><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Power_engineering\" title=\"Power engineering\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Power engineering</a></li><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Robotics\" title=\"Robotics\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Robotics</a>&nbsp;(<a href=\"https://en.wikipedia.org/wiki/Outline_of_robotics\" title=\"Outline of robotics\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">outline</a>)</li><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Semiconductors\" title=\"Semiconductors\" class=\"mw-redirect\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Semiconductors</a></li><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Telecommunications_engineering\" title=\"Telecommunications engineering\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Telecommunications engineering</a></li></ul>"
+        },
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "Information Theory",
+          "id": 408,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<ul style=\"margin-top: 0.3em; margin-bottom: 0px; margin-left: 1.6em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.4px; list-style-image: url(&quot;data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A&quot;);\"><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Information_theory\" title=\"Information theory\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Information theory</a></li></ul>"
+            },
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "Computer Engineering",
+          "id": 409,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<ul style=\"margin-top: 0.3em; margin-bottom: 0px; margin-left: 1.6em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.4px; list-style-image: url(&quot;data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A&quot;);\"><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Computer_engineering\" title=\"Computer engineering\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Computer engineering</a>&nbsp;(<a href=\"https://en.wikipedia.org/wiki/Outline_of_computer_engineering\" title=\"Outline of computer engineering\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">outline</a>)</li></ul>"
+            },
+            "style": {}
+          }
+        },
+        "3": {
+          "title": "Quantum Computing",
+          "id": 410,
+          "attr": {
+            "style": {}
+          },
+          "ideas": {
+            "1": {
+              "title": "https://en.wikipedia.org/wiki/Quantum_computing",
+              "id": 411
+            }
+          }
+        },
+        "4": {
+          "title": "Electronic Engineering",
+          "id": 412,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<a href=\"https://en.wikipedia.org/wiki/Electronic_engineering\" title=\"Electronic engineering\" target=\"_blank\" style=\"color: rgb(11, 0, 128); font-family: sans-serif; background: none;\">Electronic engineering</a><ul style=\"margin-top: 0.3em; margin-bottom: 0px; margin-left: 1.6em; color: rgb(37, 37, 37); font-family: sans-serif; list-style-image: url(&quot;data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A&quot;);\"><li style=\"margin-bottom: 0.1em;\"><a href=\"https://en.wikipedia.org/wiki/Instrumentation_engineering\" title=\"Instrumentation engineering\" class=\"mw-redirect\" target=\"_blank\" style=\"color: rgb(11, 0, 128); background: none;\">Instrumentation engineering</a></li></ul>"
+            },
+            "style": {}
+          }
+        }
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 93,
+      "ideaIdTo": 94,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 394,
+      "ideaIdTo": 385,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": true
+        }
+      }
+    }
+  ],
+  "attr": {
+    "attachment": {
+      "contentType": "text/html",
+      "content": "https://en.m.wikipedia.org/wiki/Branches_of_science<div><br></div><div><br></div><div>https://en.m.wikipedia.org/wiki/Outline_of_science<br></div>"
+    },
+    "style": {}
+  }
+}

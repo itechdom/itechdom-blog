@@ -259,7 +259,8 @@
             }
           },
           "attr": {
-            "style": {}
+            "style": {},
+            "collapsed": true
           }
         },
         "6": {
@@ -326,6 +327,10 @@
                 }
               }
             }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
           }
         },
         "7": {
@@ -453,7 +458,8 @@
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true
       }
     },
     "-3": {

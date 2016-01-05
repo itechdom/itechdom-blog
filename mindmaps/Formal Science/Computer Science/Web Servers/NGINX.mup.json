@@ -1,0 +1,99 @@
+{
+  "title": "NGINX",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Concepts",
+      "id": 417,
+      "ideas": {
+        "1": {
+          "title": "Event driven ",
+          "id": 418
+        }
+      }
+    },
+    "2": {
+      "title": "Features",
+      "id": 420,
+      "ideas": {
+        "1": {
+          "title": "Small footprint",
+          "id": 421
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {}
+      }
+    },
+    "-10": {
+      "title": "Resources",
+      "id": 407,
+      "ideas": {
+        "2": {
+          "title": "https://www.nginx.com/resources/wiki/",
+          "id": 411,
+          "ideas": {}
+        },
+        "4": {
+          "title": "nginx + Node.js",
+          "id": 413,
+          "attr": {
+            "style": {},
+            "collapsed": true
+          },
+          "ideas": {
+            "1": {
+              "title": "http://stackoverflow.com/questions/5009324/node-js-nginx-what-now",
+              "id": 412,
+              "ideas": {},
+              "attr": {
+                "style": {}
+              }
+            }
+          }
+        },
+        "6": {
+          "title": "blog on how to setup node.js",
+          "id": 415,
+          "ideas": {
+            "1": {
+              "title": "http://skovalyov.blogspot.dk/2012/07/deploy-multiple-node-applications-on.html",
+              "id": 414,
+              "attr": {
+                "style": {}
+              }
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
+          }
+        }
+      },
+      "attr": {
+        "style": {}
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 93,
+      "ideaIdTo": 94,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ],
+  "attr": {
+    "style": {},
+    "attachment": {
+      "contentType": "text/html",
+      "content": "<h1 style=\"box-sizing: inherit; border: 0px; font-family: 'Aktiv Grotesk W01', 'Helvetica Neue', Arial, sans-serif; font-size: 3.8rem; font-weight: 200; margin-top: 0px; margin-bottom: 0.5em; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; line-height: 1.25; color: rgb(64, 64, 64);\">Getting Started</h1><div class=\"toctree-wrapper compound\" style=\"box-sizing: inherit; border: 0px; font-family: 'Aktiv Grotesk W01', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(64, 64, 64); line-height: 22.4px;\"></div><p style=\"box-sizing: inherit; border: 0px; font-family: 'Aktiv Grotesk W01', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; margin-bottom: 1.5em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(64, 64, 64); line-height: 22.4px;\">We have this handy&nbsp;<a class=\"reference internal\" href=\"https://www.nginx.com/resources/wiki/start/topics/tutorials/gettingstarted/\" style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">getting started</a>&nbsp;document to get you going. There is also the following resources:</p><ul class=\"simple\" style=\"box-sizing: inherit; margin-bottom: 1.5em; margin-left: 1em; border: 0px; font-family: 'Aktiv Grotesk W01', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; outline: 0px; vertical-align: baseline; color: rgb(64, 64, 64); line-height: 22.4px;\"><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference external\" href=\"http://nginx.org/en/docs/#introduction\" style=\"box-sizing: inherit; border-width: 0px 0px 1px; border-bottom-style: dashed; border-color: initial; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">Igor’s introductory docs</a></li><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference external\" href=\"https://michael.lustfield.net/nginx/dummies-guide-to-setting-up-nginx\" style=\"box-sizing: inherit; border-width: 0px 0px 1px; border-bottom-style: dashed; border-color: initial; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">Guide to the most common web stack</a></li><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference external\" href=\"http://blog.martinfjordvald.com/2010/07/nginx-primer/\" style=\"box-sizing: inherit; border-width: 0px 0px 1px; border-bottom-style: dashed; border-color: initial; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">Martin’s Nginx, PHP, Primer</a></li></ul><p style=\"box-sizing: inherit; border: 0px; font-family: 'Aktiv Grotesk W01', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; margin-bottom: 1.5em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(64, 64, 64); line-height: 22.4px;\">Additionally there are examples and tutorials below to help you get up to speed with configuring NGINX the way you want it.</p><div class=\"section\" id=\"installing-configuring-nginx\" style=\"box-sizing: inherit; border: 0px; font-family: 'Aktiv Grotesk W01', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(64, 64, 64); line-height: 22.4px;\"><h2 style=\"box-sizing: inherit; border: 0px; font-family: 'Aktiv Grotesk W01', 'Helvetica Neue', Arial, sans-serif; font-size: 3.2rem; font-style: inherit; font-weight: 200; margin-top: 0px; margin-bottom: 0.5em; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; line-height: 1.25;\">Installing &amp; Configuring NGINX<a class=\"headerlink\" href=\"https://www.nginx.com/resources/wiki/start/index.html#installing-configuring-nginx\" title=\"Permalink to this headline\" style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-size: 32px; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease; visibility: hidden;\" target=\"_blank\"></a></h2><ul class=\"simple\" style=\"box-sizing: inherit; margin-bottom: 1.5em; margin-left: 1em; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; outline: 0px; vertical-align: baseline;\"><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference internal\" href=\"https://www.nginx.com/resources/wiki/start/topics/tutorials/install/\" style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">Installing NGINX</a></li><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference internal\" href=\"https://www.nginx.com/resources/wiki/start/topics/tutorials/installoptions/\" style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">Installation and Compile-Time Options</a></li><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference internal\" href=\"https://www.nginx.com/resources/wiki/start/topics/tutorials/commandline/\" style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">NGINX command line</a></li><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference internal\" href=\"https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/\" style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">Things to Avoid at all Costs</a></li><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference internal\" href=\"https://www.nginx.com/resources/wiki/start/topics/depth/ifisevil/\" style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">Why IF Really is Evil</a></li><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference internal\" href=\"https://www.nginx.com/resources/wiki/start/topics/examples/initscripts/\" style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">NGINX Init Scripts</a></li></ul></div><div class=\"section\" id=\"full-stack-howtos\" style=\"box-sizing: inherit; border: 0px; font-family: 'Aktiv Grotesk W01', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(64, 64, 64); line-height: 22.4px;\"><h2 style=\"box-sizing: inherit; border: 0px; font-family: 'Aktiv Grotesk W01', 'Helvetica Neue', Arial, sans-serif; font-size: 3.2rem; font-style: inherit; font-weight: 200; margin-top: 0px; margin-bottom: 0.5em; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; line-height: 1.25;\">Full Stack HOWTOs<a class=\"headerlink\" href=\"https://www.nginx.com/resources/wiki/start/index.html#full-stack-howtos\" title=\"Permalink to this headline\" style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-size: 32px; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease; visibility: hidden;\" target=\"_blank\"></a></h2><ul class=\"simple\" style=\"box-sizing: inherit; margin-bottom: 1.5em; margin-left: 1em; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; outline: 0px; vertical-align: baseline;\"><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference external\" href=\"https://www.howtoforge.com/perfect-server-ubuntu-12.04-lts-nginx-bind-dovecot-ispconfig-3\" style=\"box-sizing: inherit; border-width: 0px 0px 1px; border-bottom-style: dashed; border-color: initial; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">ISPConfig Control Panel including NGINX in Ubuntu 12.04</a></li><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference external\" href=\"http://www.binarytides.com/install-nginx-php-fpm-mariadb-debian/\" style=\"box-sizing: inherit; border-width: 0px 0px 1px; border-bottom-style: dashed; border-color: initial; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">LEMP Setup on Debian</a></li><li style=\"box-sizing: inherit; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;\"><a class=\"reference external\" href=\"https://www.howtoforge.com/php-fpm-nginx-security-in-shared-hosting-environments-debian-ubuntu\" style=\"box-sizing: inherit; border-width: 0px 0px 1px; border-bottom-style: dashed; border-color: initial; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 150, 57); transition: all 0.1s ease;\" target=\"_blank\">PHP-FPM / NGINX Security for Shared Hosting Environments</a></li></ul></div>"
+    }
+  }
+}

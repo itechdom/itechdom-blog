@@ -106,7 +106,7 @@
                 "style": {},
                 "attachment": {
                   "contentType": "text/html",
-                  "content": "<ul style=\"box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;\"><li style=\"box-sizing: border-box;\"><p style=\"box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;\">Know basic&nbsp;<code style=\"box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);\">awk</code>&nbsp;and&nbsp;<code style=\"box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);\">sed</code>&nbsp;for simple data munging. For example, summing all numbers in the third column of a text file:&nbsp;<code style=\"box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);\">awk '{ x += $3 } END { print x }'</code>. This is probably 3X faster and 3X shorter than equivalent Python.</p></li></ul>"
+                  "content": "<div><h2 style=\"font-family: Verdana, sans-serif; padding-left: 20px; font-size: 32px; color: rgb(0, 0, 0);\"><a name=\"uh-1\" href=\"http://www.grymoire.com/Unix/Sed.html#toc-uh-1\" style=\"padding: 10px; line-height: 1.2; color: rgb(218, 165, 32); text-decoration: underline;\">The essential command: s for substitution</a></h2><p style=\"width: 798.844px; font-size: 19.2px; line-height: 1.2; font-family: Verdana, sans-serif;\"><i>Sed</i>&nbsp;has several commands, but most people only learn the substitute command:<i>s</i>. The substitute command changes all occurrences of the regular expression into a new value. A simple example is changing \"day\" in the \"old\" file to \"night\" in the \"new\" file:</p><pre style=\"font-size: 16px; line-height: 19.2px;\">sed s/day/night/ &lt;old &gt;new\n</pre><p style=\"width: 798.844px; font-size: 19.2px; line-height: 1.2; font-family: Verdana, sans-serif;\">Or another way (for UNIX beginners),</p><pre style=\"font-size: 16px; line-height: 19.2px;\">sed s/day/night/ old &gt;new\n</pre><p style=\"width: 798.844px; font-size: 19.2px; line-height: 1.2; font-family: Verdana, sans-serif;\">and for those who want to test this:</p><pre style=\"font-size: 16px; line-height: 19.2px;\">echo day | sed s/day/night/ \n</pre><p style=\"width: 798.844px; font-size: 19.2px; line-height: 1.2; font-family: Verdana, sans-serif;\">This will output \"night\".</p><p style=\"width: 798.844px; font-size: 19.2px; line-height: 1.2; font-family: Verdana, sans-serif;\">I didn't put quotes around the argument because this example didn't need them. If you read my earlier tutorial&nbsp;<a href=\"http://www.grymoire.com/Unix/Quote.html\" style=\"padding: 10px; line-height: 1.2; color: rgb(218, 165, 32); text-decoration: underline; font-weight: bold;\">on quotes</a>, you would understand why it doesn't need quotes. However, I recommend you do use quotes. If you have meta-characters in the command, quotes are necessary. And if you aren't sure, it's a good habit, and I will henceforth quote future examples to emphasize the \"best practice.\" Using the strong (single quote) character, that would be:</p></div>"
                 }
               }
             },
@@ -312,8 +312,7 @@
             }
           },
           "attr": {
-            "style": {},
-            "collapsed": true
+            "style": {}
           }
         },
         "7": {
@@ -621,8 +620,7 @@
         }
       },
       "attr": {
-        "style": {},
-        "collapsed": true
+        "style": {}
       }
     },
     "21": {
@@ -717,7 +715,8 @@
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true
       }
     },
     "-2": {
