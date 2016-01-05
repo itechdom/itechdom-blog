@@ -57,7 +57,8 @@
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true
       }
     },
     "58": {
@@ -69,92 +70,44 @@
           139.5,
           39
         ],
-        "style": {}
+        "style": {},
+        "collapsed": true
       },
       "ideas": {
         "1": {
-          "title": "Schedulers",
+          "title": "1.Schedulers",
           "attr": {
             "style": {},
-            "collapsed": true
-          },
-          "ideas": {
-            "1": {
-              "title": "http://xgrommx.github.io/rx-book/content/schedulers/index.html",
-              "ideas": {
-                "1": {
-                  "title": "API",
-                  "id": 303
-                }
-              },
-              "id": 302
-            },
-            "2": {
-              "title": "http://xgrommx.github.io/rx-book/content/getting_started_with_rxjs/scheduling_and_concurrency.html",
-              "ideas": {
-                "1": {
-                  "title": "Explanation",
-                  "id": 305
-                }
-              },
-              "id": 304
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://xgrommx.github.io/rx-book/content/getting_started_with_rxjs/scheduling_and_concurrency.html</span><br></div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">API docs: http://xgrommx.github.io/rx-book/content/schedulers/index.html</span>"
             }
           },
+          "ideas": {},
           "id": 301
         },
         "2": {
-          "title": "Subjects",
+          "title": "2.Subjects",
           "attr": {
-            "style": {}
-          },
-          "ideas": {
-            "1": {
-              "title": "http://xgrommx.github.io/rx-book/content/subjects/index.html",
-              "ideas": {
-                "1": {
-                  "title": "API",
-                  "id": 308
-                }
-              },
-              "id": 307
-            },
-            "2": {
-              "title": "http://xgrommx.github.io/rx-book/content/getting_started_with_rxjs/subjects.html",
-              "ideas": {
-                "1": {
-                  "title": "Explanation",
-                  "id": 310
-                }
-              },
-              "id": 309
+            "style": {},
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://xgrommx.github.io/rx-book/content/getting_started_with_rxjs/subjects.html</span><br></div>API docs:&nbsp;<span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://xgrommx.github.io/rx-book/content/subjects/index.html</span>"
             }
           },
+          "ideas": {},
           "id": 306
         },
         "3": {
-          "title": "Notification",
+          "title": "3.Notification",
           "attr": {
             "style": {},
-            "collapsed": true
-          },
-          "ideas": {
-            "1": {
-              "title": "http://xgrommx.github.io/rx-book/content/notification/index.html",
-              "id": 318
-            },
-            "2": {
-              "title": "onNext",
-              "id": 319
-            },
-            "3": {
-              "title": "onError",
-              "id": 320
-            },
-            "4": {
-              "title": "onCompleted",
-              "id": 321
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">Docs API: http://xgrommx.github.io/rx-book/content/notification/index.html</span>"
             }
           },
+          "ideas": {},
           "id": 317
         }
       }
@@ -178,7 +131,7 @@
             "style": {},
             "attachment": {
               "contentType": "text/html",
-              "content": "<ul><li>Let's see how we can display a list of tweets, filter it by hashtags.</li></ul><div>&lt;code&gt;</div><div>var tweets = getTweets();</div><div>tweets</div><div>&nbsp; .filter(t =&gt; t.username === me.un)</div><div>&nbsp; .filter(t =&gt; hasTag(selectedTag))</div><div>&nbsp; .map(t =&gt; {</div><div>&nbsp; &nbsp; t.text = emogize(t.text);</div><div>&nbsp; &nbsp; return t;</div><div>&nbsp; })</div><div>&nbsp; .forEach(t =&gt; render);</div><div>&lt;/code&gt;<br></div><ul><li>We can all agree* functional means: Non-mutating, Stateless, Composable.</li></ul>"
+              "content": "<ul><li>Let's see how we can display a list of tweets, filter it by hashtags.</li></ul><div>&lt;pre&gt;</div><div>&lt;code class=\"js\"&gt;</div><div><div>tweets</div><div>.filter(t =&gt; t.username === me.username)</div><div>.filter(t =&gt; hasTag(selectedHTag, t.text))</div><div>.map(t =&gt; {</div><div>t.text = emogize(t.text);</div><div>return t;</div><div>})</div><div>.forEach(t =&gt; render);</div></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div><div><br></div><ul><li>We can all agree* functional means: Non-mutating, Stateless, Composable.</li></ul><div>&lt;pre&gt;&lt;code class=\"js\"&gt;var hello = \"hi\"&lt;/code&gt;&lt;/pre&gt;</div>"
             }
           }
         },
@@ -247,7 +200,8 @@
         "attachment": {
           "contentType": "text/html",
           "content": "<span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">Maintains a list of objects (observers) and notifies them when the event happens</span><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><br></span></div><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://xgrommx.github.io/rx-book/content/observable/index.html</span><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><br></span></div><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><br></span></div><div><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">This is a link</span></div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><div><br></div>http://xgrommx.github.io/rx-book/content/observer/index.html</span><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><br></span></div>"
-        }
+        },
+        "collapsed": true
       }
     }
   },

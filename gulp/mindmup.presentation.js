@@ -97,7 +97,6 @@ module.exports = function(options) {
 						mindmapAll = mindmap.ideas;
 						traverseMindmap(mindmap.ideas,pArr,undefined);
 						var sortedFileArr = pArr.sort(sortBy('order'));
-						console.log(sortedFileArr);
 						var finalContent = convertToHTML(sortedFileArr);
 						var less= "&lt;"
 						var more = "&gt;"
@@ -109,6 +108,10 @@ module.exports = function(options) {
 			//remove p tags
 			finalContent = finalContent.replaceAll("<span>","");
 			finalContent = finalContent.replaceAll("</span>","");
+
+			finalContent = finalContent.replaceAll("<div>","</br>");
+			finalContent = finalContent.replaceAll("</div>","");
+
 			finalContent = finalContent.replaceAll("<p>","");
 			finalContent = finalContent.replaceAll("</p>","");
 
