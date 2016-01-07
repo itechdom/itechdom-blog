@@ -38,7 +38,7 @@
             "style": {},
             "attachment": {
               "contentType": "text/html",
-              "content": "<span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://channikhabra.github.io/frp-with-rxjs-jschannel-conf/#/</span>"
+              "content": "<a href=\"http://channikhabra.github.io/frp-with-rxjs-jschannel-conf/#/\">http://channikhabra.github.io/frp-with-rxjs-jschannel-conf/#/</a>"
             }
           },
           "ideas": {}
@@ -121,7 +121,8 @@
           159.5,
           -169,
           38
-        ]
+        ],
+        "collapsed": true
       },
       "ideas": {
         "1": {
@@ -131,7 +132,7 @@
             "style": {},
             "attachment": {
               "contentType": "text/html",
-              "content": "<ul><li>Let's see how we can display a list of tweets, filter it by hashtags.</li></ul><div>&lt;pre&gt;</div><div>&lt;code class=\"js\"&gt;</div><div><div>tweets</div><div>.filter(t =&gt; t.username === me.username)</div><div>.filter(t =&gt; hasTag(selectedHTag, t.text))</div><div>.map(t =&gt; {</div><div>t.text = emogize(t.text);</div><div>return t;</div><div>})</div><div>.forEach(t =&gt; render);</div></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div><div><br></div><ul><li>We can all agree* functional means: Non-mutating, Stateless, Composable.</li></ul><div>&lt;pre&gt;&lt;code class=\"js\"&gt;var hello = \"hi\"&lt;/code&gt;&lt;/pre&gt;</div>"
+              "content": "<ul><li>Let's see how we can display a list of tweets, filter it by hashtags.</li></ul>&lt;pre&gt;<br><div>&lt;code class=\"js\"&gt;</div><div><div>tweets</div><div>.filter(t =&gt; t.username === me.username)</div><div>.filter(t =&gt; hasTag(selectedHTag, t.text))</div><div>.forEach(t =&gt; render);</div></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div><div><br></div><ul><li>We can all agree* functional means: Non-mutating, Stateless, Composable.</li></ul><div>&lt;pre&gt;&lt;code class=\"js\"&gt;var hello = \"hi\"&lt;/code&gt;&lt;/pre&gt;</div>"
             }
           }
         },
@@ -154,7 +155,7 @@
             "style": {},
             "attachment": {
               "contentType": "text/html",
-              "content": "<ul><li>Promises are primitive types and serves almost the same purpose</li><li>TODO: Example Comparing between promises and RxJS<br></li></ul>"
+              "content": "<ul><li>Promises are primitive types and serves almost the same purpose</li><li>Except when it comes to to more than one value or chaining promises.</li><li>Canceling promises.</li><li>TODO: Example Comparing between promises and RxJS<br></li></ul>"
             }
           }
         }
@@ -172,13 +173,48 @@
       "id": 145,
       "ideas": {
         "1": {
-          "title": "1.Remember: Everything is a Stream!",
-          "id": 287,
+          "title": "1. Observables",
+          "id": 318,
           "attr": {
             "style": {},
             "attachment": {
               "contentType": "text/html",
-              "content": "<div>&lt;img src=\"http://i.imgur.com/AIimQ8C.jpg\" alt=\"Mantra\"&gt;</div><div><br><div><ul><li>A stream is an evented data</li><li><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://xgrommx.github.io/rx-book/content/guidelines/introduction/index.html</span><br></li></ul></div></div>"
+              "content": "<ul><li>Building blocks of FRP in RxJS<br></li><li>First class objects to represent Asynchronous data<br></li><li>Operators with fabulous Functional grammar<br></li><li>Interoperable with other sync/async data</li></ul><div>We should care because:&nbsp;</div><div><br></div><ul><li>Proposal for adding them to ES2016 (aka ES7)&nbsp;</li><li>Angular 2 supports them as first class citizens</li><li>React will have them as first class citizens</li></ul>"
+            }
+          },
+          "ideas": {
+            "2": {
+              "title": "1.Observables are iterables",
+              "id": 320,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<div><div>Arrays are iterable:</div><div><br></div><div>&lt;pre&gt;</div><div>&lt;code&gt;</div><div>Array</div><div>&nbsp; .of(1, 2, 3, 4, 5)</div><div>&nbsp; .map(x =&gt; x * x)</div><div>&nbsp; .filter(x =&gt; x%2 === 0)</div><div>&nbsp; .reduce((x, acc) =&gt; x + acc)</div></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div><div><br></div><div>So is observables:</div><div><br></div><div>&lt;/pre&gt;</div><div>&lt;code&gt;</div><div>Observable</div><div>&nbsp; .of(1, 2, 3, 4, 5)</div><div>&nbsp; .map(x =&gt; x * x)</div><div>&nbsp; .filter(x =&gt; x%2 === 0)</div><div>&nbsp; .reduce((x, acc) =&gt; x + acc)</div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div>"
+                },
+                "style": {}
+              }
+            },
+            "12": {
+              "title": "2.Observables are lazy",
+              "id": 319,
+              "attr": {
+                "style": {},
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<div>&lt;pre&gt;</div><div>&lt;code&gt;</div><div>let users_ = getUsersObservable();</div><div><br></div><div>let notJohnConners_ =&nbsp;</div><div>&nbsp; users_</div><div>&nbsp; &nbsp; .map(user =&gt; user.fullName)</div><div>&nbsp; &nbsp; .map(name =&gt; name.first + ' ' + name.last)</div><div>&nbsp; &nbsp; .filter(x =&gt; x === 'John Connor');</div><div><br></div><div>notJohnConners_.subscribe(</div><div>&nbsp;(user) =&gt; console.log('New user arrived: ', user),</div><div>&nbsp;(error) =&gt; console.log('Error Occured', error),</div><div>&nbsp;() =&gt; console.log('All Done')</div><div>)</div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div>"
+                }
+              }
+            },
+            "13": {
+              "title": "3. You can make anything into an observable",
+              "id": 321,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "<div>Variables/Arrays</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div><div>var a = [1, 2, 3, 4, 5];</div><div>var a_ = Observable.from(a);</div><div>var b_ = Observable.of(1, 2, 3);</div><div><br></div><div>Promises</div><div><br></div><div>var a = iPromiseOfSomething();</div><div><div>var a_ = Observable.fromPromise(a);</div></div><div><br></div><div>Events</div><div><div>var result = document</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.getElementById('result');</div><div><br></div><div>var source =&nbsp;</div><div>Rx.Observable.fromEvent(result, 'click');</div></div><div><br></div><div><div><br></div><div>Callbacks &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>writeFile = require('fs').writeFile;</div><div><br></div><div>wf_ = Observable</div><div>&nbsp; &nbsp; &nbsp; .fromNodeCallback(writeFile);</div></div><div><br></div><div><br></div><div>Node Streams!!!!!</div><div><a href=\"https://github.com/Reactive-Extensions/rx-node\" target=\"_blank\">https://github.com/Reactive-Extensions/rx-node/blob/master/doc/api/nodejs.md</a><br></div>"
+                },
+                "style": {}
+              }
             }
           }
         },
@@ -188,11 +224,22 @@
           "attr": {
             "attachment": {
               "contentType": "text/html",
-              "content": "<div><span style=\"color: rgb(34, 36, 38); font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 13px; line-height: 16.9px;\">You are correct that Rx streams and EventEmitter are very similar, both are implementations of the Observer pattern.</span></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">The difference is that Rx contains functions for transforming and combining event streams. Imagine for instance that we want to delay each \"response event\" by 2 seconds. With EventEmitter, you would have to subscribe to that, and manually make a timeout:</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">eventEmitter.on('response', function(res) {</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">&nbsp; &nbsp; setTimeout(function() { /* handle res */ }, 2000);</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">});</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">With Rx, you can create a new event stream which is simply the original stream applied to the delay function:</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">responseStream.delay(2000).subscribe(function(res) {</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">&nbsp; &nbsp; /* handle res */</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">});</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">delay() is a simple function, and one of the many others available. There are so many different ways of modifying streams, that it becomes possible to program a lot of application logic just by transforming streams with all the possible functions, instead of relying on low-level logic such as setTimeout.</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">Also check out this visual and interactive exploration of those functions.</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">Node.js reactive extension plugin</span></font></div><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">https://github.com/Reactive-Extensions/rx-node/blob/master/doc/api/nodejs.md</span><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div>"
+              "content": "<div><span style=\"color: rgb(34, 36, 38); font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 13px; line-height: 16.9px;\">You are correct that Rx streams and EventEmitter are very similar, both are implementations of the Observer pattern.</span></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">The difference is that Rx contains functions for transforming and combining event streams. Imagine for instance that we want to delay each \"response event\" by 2 seconds. With EventEmitter, you would have to subscribe to that, and manually make a timeout:</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">eventEmitter.on('response', function(res) {</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">&nbsp; &nbsp; setTimeout(function() { /* handle res */ }, 2000);</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">});</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">With Rx, you can create a new event stream which is simply the original stream applied to the delay function:</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">responseStream.delay(2000).subscribe(function(res) {</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">&nbsp; &nbsp; /* handle res */</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">});</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">delay() is a simple function, and one of the many others available. There are so many different ways of modifying streams, that it becomes possible to program a lot of application logic just by transforming streams with all the possible functions, instead of relying on low-level logic such as setTimeout.</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">Also check out this visual and interactive exploration of those functions.</span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\">Node.js reactive extension plugin</span></font></div><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">https://github.com/Reactive-Extensions/rx-node/blob/master/doc/api/nodejs.md</span><font color=\"#222426\" face=\"Arial, Helvetica Neue, Helvetica, sans-serif\"><span style=\"font-size: 13px; line-height: 16.9px;\"><br></span></font></div><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><br></span></div><div><span style=\"text-align: center; background-color: rgb(224, 224, 224);\"><font color=\"#4f4f4f\" face=\"Helvetica, Arial Unicode MS, sans-serif\"><span style=\"font-size: 12px; line-height: 18px; white-space: pre-wrap;\"><b>RxNode.toEventEmitter(observable, eventName)\n\n# Ⓢ\n\nConverts the given observable sequence to an event emitter with the given event name. The errors are handled on the 'error' event and completion on the 'end' event.\n\nArguments\n\nobservable (Obsesrvable): The observable sequence to convert to an EventEmitter.\neventName (String): The event name to subscribe.\nReturns\n\n(EventEmitter): An EventEmitter which emits the given eventName for each onNext call in addition to 'error' and 'end' events.\n\nExample\n\nvar Rx = require('rx');\nvar RxNode = require('rx-node');\n\nvar source = Rx.Observable.return(42);\n\nvar emitter = RxNode.toEventEmitter(source, 'data');\n\nemitter.on('data', function (data) {\n    console.log('Data: ' + data);\n});\n\nemitter.on('end', function () {\n    console.log('End');\n});\n\n// Ensure to call publish to fire events from the observable\nemitter.publish();\n\n// =&gt; Data: 42\n// =&gt; End\nLocation\n\nindex.js\nStream Handlers\n\nRxNode.fromStream(stream, finishEventName)\n\n# Ⓢ\n\nConverts a flowing stream to an Observable sequence.\n\nArguments\n\nstream (Stream): A stream to convert to a observable sequence.\n[finishEventName] (String): Event that notifies about closed stream. (\"end\" by default)\nReturns\n\n(Observable): An observable sequence which fires on each 'data' event as well as handling 'error' and finish events like end or finish.\n\nExample\n\nvar RxNode = require('rx-node');\n\nvar subscription = RxNode.fromStream(process.stdin, 'end')\n    .subscribe(function (x) { console.log(x); });\n\n// =&gt; r&lt;Buffer 72&gt;\n// =&gt; x&lt;Buffer 78&gt;\nLocation\n\nindex.js\nRxNode.fromReadableStream(stream)\n\n# Ⓢ\n\nConverts a flowing readable stream to an Observable sequence.\n\nArguments\n\nstream (Stream): A stream to convert to a observable sequence.\nReturns\n\n(Observable): An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.\n\nExample\n\nvar RxNode = require('rx-node');\n\nvar subscription = RxNode.fromReadableStream(process.stdin)\n    .subscribe(function (x) { console.log(x); });\n\n// =&gt; r&lt;Buffer 72&gt;\n// =&gt; x&lt;Buffer 78&gt;\nLocation\n\nindex.js\nRxNode.fromWritableStream(stream)\n\n# Ⓢ\n\nConverts a flowing writeable stream to an Observable sequence.\n\nArguments\n\nstream (Stream): A stream to convert to a observable sequence.\nReturns\n\n(Observable): An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.\n\nExample\n\nvar RxNode = require('rx-node');\n\nvar subscription = RxNode.fromWritableStream(process.stdout)\n    .subscribe(function (x) { console.log(x); });\n\n// =&gt; r&lt;Buffer 72&gt;\n// =&gt; x&lt;Buffer 78&gt;\nLocation\n\nindex.js\nRxNode.fromTransformStream(stream)\n\n# Ⓢ\n\nConverts a flowing transform stream to an Observable sequence.\n\nArguments\n\nstream (Stream): A stream to convert to a observable sequence.\nReturns\n\n(Observable): An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.\n\nExample\n\nvar RxNode = require('rx-node');\n\nvar subscription = RxNode.fromTransformStream(getTransformStreamSomehow());\nLocation\n\nindex.js\nRxNode.writeToStream(observable, stream, [encoding])\n\n# Ⓢ\n\nWrites an observable sequence to a stream.\n\nArguments\n\nobservable (Observable): Observable sequence to write to a stream.\nstream (Stream): The stream to write to.\n[encoding] (String): The encoding of the item to write.\nReturns\n\n(Disposable): The subscription handle.\n\nExample\n\nvar Rx = require('rx');\nvar RxNode = require('rx-node');\n\nvar source = Rx.Observable.range(0, 5);\n\nvar subscription = RxNode.writeToStream(source, process.stdout, 'utf8');\n\n// =&gt; 01234\nLocation\n\nindex.js</b></span></font><br></span></div>"
             },
             "style": {}
           },
           "ideas": {}
+        },
+        "13": {
+          "title": "3.Remember: Everything is a Stream!",
+          "id": 287,
+          "attr": {
+            "style": {},
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<div>&lt;img src=\"http://i.imgur.com/AIimQ8C.jpg\" alt=\"Mantra\"&gt;</div><div><br><div><ul><li>A stream is an evented data</li><li><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://xgrommx.github.io/rx-book/content/guidelines/introduction/index.html</span><br></li></ul></div></div>"
+            }
+          }
         }
       },
       "attr": {
