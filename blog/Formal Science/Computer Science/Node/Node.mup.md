@@ -38,6 +38,15 @@
 #### javascript implementation of HTML
 ## Performance
 ### http://www.sitepoint.com/5-easy-performance-tweaks-node-js-express/
+## Security
+### Abusing eval
+#### sending a request with an eval statement
+#### http://bishankochher.blogspot.com/2011/12/nodejs-security-good-bad-and-ugly.html
+##### blog post regarding that
+### Resources
+#### https://nodesecurity.io/resources
+##### node security team
+#### https://speakerdeck.com/ckarande/top-overlooked-security-threats-to-node-dot-js-web-applications
 # Resources
 ## Node Api
 ### https://nodejs.org/api/

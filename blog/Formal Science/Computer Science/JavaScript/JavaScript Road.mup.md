@@ -27,6 +27,23 @@
 #### Event Flow
 ##### Stopping Event propagation
 #### http://domenlightenment.com/#11
+## JS Engines
+### V8
+#### javascript interpreter
+#### https://code.google.com/p/v8/
+##### home page
+## Web Engines
+### Blink
+#### http://www.chromium.org/blink#TOC-Blink-s-Mission:
+#### Resources
+##### the chromium project
+###### http://www.chromium.org/developers
+##### https://en.wikipedia.org/wiki/Comparison_of_web_browser_engines
+###### different browser engines
+##### https://github.com/nwjs/blink
+###### unofficial mirror
+##### https://bitbucket.org/chromiumembedded/cef
+###### best way to use blink is with Chromium embedded framework
 # Thrid Party
 ## jQuery
 jQuery is a library, think of a library as a collection of factories (functions) that produce certain results. You have to learn how to use the library: to reduce time, follow best practices that other people wrote.<div><br></div><div>jQuery has a special syntax the dollar sign, that makes it extremely easy to do DOM manipulation, binding events, create image sliders,&#xA0;</div><div><br></div><div>Learning jQuery will save you time and effort in writing a lot of code to manipulate DOM. Although there are new libraries coming up, It&apos;s used heavily by web developers.&#xA0;</div>

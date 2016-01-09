@@ -16,7 +16,10 @@
 ### sed
 #### http://www.grymoire.com/Unix/Sed.html#uh-0
 #### stream editor
-<ul><li><p>Know basic&#xA0;<code>awk</code>&#xA0;and&#xA0;<code>sed</code>&#xA0;for simple data munging. For example, summing all numbers in the third column of a text file:&#xA0;<code>awk &apos;{ x += $3 } END { print x }&apos;</code>. This is probably 3X faster and 3X shorter than equivalent Python.</p></li></ul>
+<div><h2><a name="uh-1" href="http://www.grymoire.com/Unix/Sed.html#toc-uh-1">The essential command: s for substitution</a></h2><p><i>Sed</i>&#xA0;has several commands, but most people only learn the substitute command:<i>s</i>. The substitute command changes all occurrences of the regular expression into a new value. A simple example is changing &quot;day&quot; in the &quot;old&quot; file to &quot;night&quot; in the &quot;new&quot; file:</p><pre>sed s/day/night/ &lt;old &gt;new
+</pre><p>Or another way (for UNIX beginners),</p><pre>sed s/day/night/ old &gt;new
+</pre><p>and for those who want to test this:</p><pre>echo day | sed s/day/night/ 
+</pre><p>This will output &quot;night&quot;.</p><p>I didn&apos;t put quotes around the argument because this example didn&apos;t need them. If you read my earlier tutorial&#xA0;<a href="http://www.grymoire.com/Unix/Quote.html">on quotes</a>, you would understand why it doesn&apos;t need quotes. However, I recommend you do use quotes. If you have meta-characters in the command, quotes are necessary. And if you aren&apos;t sure, it&apos;s a good habit, and I will henceforth quote future examples to emphasize the &quot;best practice.&quot; Using the strong (single quote) character, that would be:</p></div>
 ### >>
 #### append output to file
 ### >

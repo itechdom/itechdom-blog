@@ -37,6 +37,7 @@ r = 4<div>w = 2</div><div>x = 1</div><div><br></div><div>you can add them up tog
 ## Drivers
 ## Memory Model
 ## IPC
+### Inter process communication
 ## Kernel Mode
 ## User Mode
 ## Execution Environment
@@ -50,6 +51,20 @@ r = 4<div>w = 2</div><div>x = 1</div><div><br></div><div>you can add them up tog
 ##### https://drive.google.com/open?id=0B9tPYCpuqoIrVHZGNTNOYW0xUWs
 ### An interface to the OS
 ## Virtualization
+## Build tools
+### make
+#### https://www.gnu.org/software/make/
+#### get its info from makefile
+## Shared Libraries
+### http://www.ibm.com/developerworks/library/l-lpic1-102-3/
+#### IBM tutorial
+### Statically linked
+### Dynamically Linked
+### http://www.thegeekstuff.com/2012/06/linux-shared-libraries/
+#### simpler tutorial 
+### Similar to the root node_modules
+#### Or system packages
+<h2 id="N10070">Shared libraries</h2><p>When you write a program, you rely on many pieces of code that someone else has already written to perform routine or specialized functions for you. These pieces of code are stored in shared libraries. To use them, you link them with your code, either when you build the program or when you run the program.</p>
 <p>Linux Operating System has primarily three components</p><ul class="list"><li><p><b>Kernel</b>&#xA0;- Kernel is the core part of Linux. It is responsible for all major activities of this operating system. It is consists of various modules and it interacts directly with the underlying hardware. Kernel provides the required abstraction to hide low level hardware details to system or application programs.</p></li><li><p><b>System Library</b>&#xA0;- System libraries are special functions or programs using which application programs or system utilities accesses Kernel&apos;s features. These libraries implements most of the functionalities of the operating system and do not requires kernel module&apos;s code access rights.</p></li><li><p><b>System Utility</b>&#xA0;- System Utility programs are responsible to do specialized, individual level tasks.</p></li></ul>
 # Resources
 ## http://www.tutorialspoint.com/operating_system/os_linux.htm
@@ -60,6 +75,10 @@ r = 4<div>w = 2</div><div>x = 1</div><div><br></div><div>you can add them up tog
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrWWFrekFHNDJMWDQ
 ## Udacity: Advanced OS
 ### https://www.udacity.com/course/viewer#!/c-ud189/l-3652509443/m-641659207
+## System utils
+### source code
+#### git clone git://git.sv.gnu.org/coreutils
+### http://www.gnu.org/software/coreutils/coreutils.html
 # Software
 ## GUI
 ### KDE
@@ -69,8 +88,13 @@ r = 4<div>w = 2</div><div>x = 1</div><div><br></div><div>you can add them up tog
 ### Gnome
 #### https://www.gnome.org/
 # Flavors
-## https://en.m.wikipedia.org/wiki/Red_Star_OS
-### Red Star OS from North Korea
+## Red Star OS
+
+
+### https://www.youtube.com/watch?v=j_9QOgg0GRE
+#### video installing VM
+### https://en.m.wikipedia.org/wiki/Red_Star_OS
+#### Red Star OS from North Korea
 # Programmed in
 ## Kernel
 ### C

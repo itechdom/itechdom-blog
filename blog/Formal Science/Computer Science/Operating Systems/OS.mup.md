@@ -52,6 +52,8 @@ A process is a running program.
 ####### Monolithic
 ### https://github.com/arjun024/mkeykernel?lang=c
 #### one type of Kernel
+### https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System
+#### How to make an operating system
 ## Flavors
 ### DOS
 #### MS-DOS
