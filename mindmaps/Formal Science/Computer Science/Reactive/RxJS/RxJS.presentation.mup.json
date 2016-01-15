@@ -7,7 +7,14 @@
       "title": "How I use it",
       "id": 291,
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true
+      },
+      "ideas": {
+        "1": {
+          "title": "Basic Node.js example",
+          "id": 322
+        }
       }
     },
     "48": {
@@ -15,7 +22,7 @@
       "id": 179,
       "ideas": {
         "1": {
-          "title": "1.book",
+          "title": "rxjs book",
           "id": 181,
           "ideas": {},
           "attr": {
@@ -32,7 +39,7 @@
           }
         },
         "2": {
-          "title": "2.Slidedeck for explaining RxJS",
+          "title": "Slidedeck for explaining RxJS",
           "id": 223,
           "attr": {
             "style": {},
@@ -44,7 +51,7 @@
           "ideas": {}
         },
         "5": {
-          "title": "4.node.js examples with rxjs",
+          "title": "node.js examples with rxjs",
           "id": 257,
           "attr": {
             "style": {},
@@ -149,7 +156,7 @@
           }
         },
         "2.5": {
-          "title": "3.What about Promises?",
+          "title": "3.What about Promises? Todo",
           "id": 295,
           "attr": {
             "style": {},
@@ -180,7 +187,8 @@
             "attachment": {
               "contentType": "text/html",
               "content": "<ul><li>Building blocks of FRP in RxJS<br></li><li>First class objects to represent Asynchronous data<br></li><li>Operators with fabulous Functional grammar<br></li><li>Interoperable with other sync/async data</li></ul><div>We should care because:&nbsp;</div><div><br></div><ul><li>Proposal for adding them to ES2016 (aka ES7)&nbsp;</li><li>Angular 2 supports them as first class citizens</li><li>React will have them as first class citizens</li></ul>"
-            }
+            },
+            "collapsed": true
           },
           "ideas": {
             "2": {
@@ -215,11 +223,15 @@
                 },
                 "style": {}
               }
+            },
+            "14": {
+              "title": "4. Observables are a type",
+              "id": 323
             }
           }
         },
         "2": {
-          "title": "2.How can we use it with Node.js",
+          "title": "2.How can we use it with Node.js ?",
           "id": 258,
           "attr": {
             "attachment": {
@@ -231,7 +243,7 @@
           "ideas": {}
         },
         "13": {
-          "title": "3.Remember: Everything is a Stream!",
+          "title": "3.Remember: Everything is a Stream! TODO: add image",
           "id": 287,
           "attr": {
             "style": {},

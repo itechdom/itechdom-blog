@@ -1,0 +1,95 @@
+{
+  "title": "UX.presentation",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "1.Intro",
+      "id": 2,
+      "attr": {
+        "position": [
+          153.5,
+          -165,
+          1
+        ],
+        "style": {}
+      }
+    },
+    "11": {
+      "title": "2.Prompt Intro",
+      "id": 3,
+      "attr": {
+        "position": [
+          152.5,
+          -65,
+          2
+        ],
+        "style": {},
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<ul><li>Remember as UX designer, you should understand usability from end to end. This includes developers</li><li>What if you worked as a developer with a UX designer, You are given a task to develop a website for NASA that streams images from the moon.</li><li>what are the technical limitations you might find that can influence how you design your website?</li></ul>"
+        }
+      }
+    },
+    "21": {
+      "title": "3.Prompt",
+      "id": 4,
+      "attr": {
+        "position": [
+          185.5,
+          10,
+          3
+        ],
+        "style": {}
+      }
+    },
+    "31": {
+      "title": "4.Discussion",
+      "id": 5,
+      "attr": {
+        "position": [
+          143.5,
+          81,
+          4
+        ],
+        "style": {}
+      }
+    },
+    "41": {
+      "title": "5.Top 3 most challenging things for a developer",
+      "id": 6,
+      "attr": {
+        "position": [
+          127.5,
+          152,
+          5
+        ],
+        "style": {},
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<ul><li>Changing requirements.</li><li>Non consistent design.</li><li>Charts!</li></ul>"
+        }
+      }
+    },
+    "51": {
+      "title": "6.Takeaways",
+      "id": 7,
+      "attr": {
+        "position": [
+          149.5,
+          244,
+          6
+        ],
+        "style": {},
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<ul><li>Pick one design framework or toolset.</li><li>Marry your developer.</li><li>Don't reinvent the wheel.</li></ul>"
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "style": {}
+  }
+}

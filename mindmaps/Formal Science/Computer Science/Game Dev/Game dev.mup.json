@@ -7,8 +7,98 @@
       "title": "Resources",
       "id": 2,
       "ideas": {
-        "1": {
-          "title": "List of engines",
+        "2": {
+          "title": "Jobs in Colorado",
+          "id": 22,
+          "ideas": {
+            "1": {
+              "title": "http://www.gamedevmap.com/index.php?location=Denver",
+              "id": 23
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "4": {
+          "title": "Meta Resource",
+          "id": 26,
+          "ideas": {
+            "1": {
+              "title": "https://github.com/ellisonleao/magictools",
+              "id": 27
+            },
+            "2": {
+              "title": "http://opengameart.org/",
+              "id": 24,
+              "ideas": {
+                "1": {
+                  "title": "Assets Website",
+                  "id": 25
+                }
+              },
+              "attr": {
+                "style": {}
+              }
+            }
+          },
+          "attr": {
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "5": {
+          "title": "http://gamedev.stackexchange.com",
+          "id": 30,
+          "ideas": {
+            "1": {
+              "title": "Game dev stack exchange",
+              "id": 31
+            }
+          },
+          "attr": {
+            "collapsed": true,
+            "style": {}
+          }
+        },
+        "7": {
+          "title": "From concept to 3d art",
+          "id": 33,
+          "attr": {
+            "style": {},
+            "collapsed": true
+          },
+          "ideas": {
+            "1": {
+              "title": "https://www.youtube.com/watch?v=flFEVOMUJ5A",
+              "id": 38
+            },
+            "2": {
+              "title": "https://www.youtube.com/watch?v=jVYzsbBxaQw",
+              "id": 32,
+              "ideas": {},
+              "attr": {
+                "style": {}
+              }
+            },
+            "3": {
+              "title": "https://www.youtube.com/watch?v=uDVShnEjrYw",
+              "id": 39
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {}
+      }
+    },
+    "2": {
+      "title": "Third Party",
+      "id": 6,
+      "ideas": {
+        "2": {
+          "title": "Engines",
           "id": 12,
           "ideas": {
             "1": {
@@ -19,7 +109,8 @@
               "title": "threejs",
               "id": 17,
               "attr": {
-                "style": {}
+                "style": {},
+                "collapsed": true
               },
               "ideas": {
                 "1": {
@@ -40,21 +131,13 @@
                   "title": "https://github.com/cykod/Quintus",
                   "id": 19
                 }
+              },
+              "attr": {
+                "collapsed": true,
+                "style": {}
               }
-            }
-          }
-        }
-      }
-    },
-    "2": {
-      "title": "Third Party",
-      "id": 6,
-      "ideas": {
-        "1": {
-          "title": "Engines",
-          "id": 7,
-          "ideas": {
-            "1": {
+            },
+            "5": {
               "title": "Impact",
               "id": 8,
               "ideas": {
@@ -66,17 +149,35 @@
                   "title": "http://impactjs.com/",
                   "id": 10
                 }
+              },
+              "attr": {
+                "style": {},
+                "collapsed": true
+              }
+            },
+            "6": {
+              "title": "Unreal",
+              "id": 20,
+              "ideas": {
+                "1": {
+                  "title": "https://docs.unrealengine.com/latest/INT/Engine/Blueprints/index.html",
+                  "id": 21
+                }
+              },
+              "attr": {
+                "style": {},
+                "collapsed": true
               }
             }
           },
           "attr": {
-            "attachment": {
-              "contentType": "text/html",
-              "content": "<div>Game Development</div><div><br></div><div>Places to find game designers</div><div><br></div><div>http://www.pixelprospector.com/places-to-find-graphics-artists/</div><div><br></div><div>Unity</div><div><br></div><div>utilities</div><div><br></div><div>http://esotericsoftware.com/</div>"
-            },
             "style": {}
           }
         }
+      },
+      "attr": {
+        "style": {},
+        "collapsed": true
       }
     },
     "-1": {
@@ -86,6 +187,30 @@
         "1": {
           "title": "Game Theory",
           "id": 5
+        },
+        "2": {
+          "title": "Mesh",
+          "id": 28,
+          "ideas": {
+            "1": {
+              "title": "http://gamedev.stackexchange.com/questions/38412/whats-the-difference-between-mesh-and-a-model",
+              "id": 29
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {},
+        "collapsed": true
+      }
+    },
+    "-2": {
+      "title": "Projects",
+      "id": 40,
+      "ideas": {
+        "1": {
+          "title": "Sky Diver",
+          "id": 41
         }
       }
     }

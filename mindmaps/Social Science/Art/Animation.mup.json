@@ -1,0 +1,66 @@
+{
+  "title": "Animation",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "3": {
+      "title": "Projects",
+      "id": 19,
+      "ideas": {},
+      "attr": {
+        "style": {}
+      }
+    },
+    "-1": {
+      "title": "Resources",
+      "id": 3,
+      "ideas": {
+        "2": {
+          "title": "Books",
+          "id": 12,
+          "ideas": {},
+          "attr": {
+            "style": {}
+          }
+        },
+        "3": {
+          "title": "https://www.youtube.com/watch?v=70LmvtvJ7fA",
+          "id": 20,
+          "ideas": {
+            "1": {
+              "title": "Animating in Flash",
+              "id": 21
+            }
+          }
+        },
+        "4": {
+          "title": "https://www.youtube.com/watch?v=O_0gZuqW6y8",
+          "id": 23,
+          "ideas": {
+            "1": {
+              "title": "Animating in Unity 2d",
+              "id": 24
+            }
+          }
+        },
+        "5": {
+          "title": "https://www.youtube.com/watch?v=UbPiCgCkHTE",
+          "id": 25,
+          "ideas": {
+            "1": {
+              "title": "How to make a 2d platformer ",
+              "id": 26
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {}
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "style": {}
+  }
+}
