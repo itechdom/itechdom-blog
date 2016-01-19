@@ -90,7 +90,13 @@
         }
       },
       "attr": {
-        "style": {}
+        "style": {},
+        "collapsed": true,
+        "position": [
+          92,
+          -171,
+          2
+        ]
       }
     },
     "2": {
@@ -109,8 +115,7 @@
               "title": "threejs",
               "id": 17,
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               },
               "ideas": {
                 "1": {
@@ -133,7 +138,6 @@
                 }
               },
               "attr": {
-                "collapsed": true,
                 "style": {}
               }
             },
@@ -151,8 +155,7 @@
                 }
               },
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               }
             },
             "6": {
@@ -168,16 +171,57 @@
                 "style": {},
                 "collapsed": true
               }
+            },
+            "7": {
+              "title": "Phaser",
+              "id": 42,
+              "ideas": {
+                "2": {
+                  "title": "http://phaser.io/tutorials/making-your-first-phaser-game",
+                  "id": 47
+                }
+              }
             }
           },
           "attr": {
-            "style": {}
+            "style": {},
+            "collapsed": true
+          }
+        },
+        "3": {
+          "title": "Rendering",
+          "id": 44,
+          "ideas": {
+            "1": {
+              "title": "Pixi.js",
+              "id": 45,
+              "ideas": {
+                "1": {
+                  "title": "Web gl with canvas fallback",
+                  "id": 46
+                },
+                "2": {
+                  "title": "Examples",
+                  "id": 48,
+                  "ideas": {
+                    "1": {
+                      "title": "http://pixijs.github.io/examples/index.html?s=basics&f=spritesheet.js&title=SpriteSheet%20Animation",
+                      "id": 49
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       },
       "attr": {
         "style": {},
-        "collapsed": true
+        "position": [
+          94,
+          155.5,
+          1
+        ]
       }
     },
     "-1": {
@@ -201,6 +245,11 @@
       },
       "attr": {
         "style": {},
+        "position": [
+          94,
+          -161,
+          3
+        ],
         "collapsed": true
       }
     },
@@ -212,6 +261,14 @@
           "title": "Sky Diver",
           "id": 41
         }
+      },
+      "attr": {
+        "position": [
+          98,
+          165,
+          4
+        ],
+        "style": {}
       }
     }
   },

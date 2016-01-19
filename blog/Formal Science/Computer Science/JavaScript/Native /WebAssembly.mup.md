@@ -15,6 +15,7 @@
 ## https://kripken.github.io/talks/wasm.html#/14
 ### Slides explaining the process of converting javascript to asm.js through ecmascripten
 ## https://hacks.mozilla.org/2015/12/compiling-to-webassembly-its-happening/
+## https://github.com/AdamColton/asmJsMandelbrot.git
 # Concepts
 ## Linking
 Depending on your implementation: compilation or interpretation might happen (compilation is more optimized).

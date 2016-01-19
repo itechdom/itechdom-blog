@@ -23,6 +23,13 @@
 #### http://impactjs.com/
 ### Unreal
 #### https://docs.unrealengine.com/latest/INT/Engine/Blueprints/index.html
+### Phaser
+#### http://phaser.io/tutorials/making-your-first-phaser-game
+## Rendering
+### Pixi.js
+#### Web gl with canvas fallback
+#### Examples
+##### http://pixijs.github.io/examples/index.html?s=basics&f=spritesheet.js&title=SpriteSheet%20Animation
 # Concepts
 ## Game Theory
 ## Mesh

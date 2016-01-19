@@ -92,6 +92,10 @@
         "7": {
           "title": "https://hacks.mozilla.org/2015/12/compiling-to-webassembly-its-happening/",
           "id": 273
+        },
+        "8": {
+          "title": "https://github.com/AdamColton/asmJsMandelbrot.git",
+          "id": 274
         }
       }
     },
