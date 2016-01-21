@@ -9,7 +9,7 @@ var dispatcher = require('../lib/dispatcher/dispatcher.js');
 class postView {
 
 	render(){
-	//	$('app').html(branchit);
+		$('app').html(branchit);
 	}
 	constructor() {
 

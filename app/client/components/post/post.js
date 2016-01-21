@@ -5,6 +5,7 @@ var Rx = require('rx');
 var view = require('./post.view.js');
 var actions = require("./post.actions.js");
 
+
 class postMain{
 
 	constructor(){

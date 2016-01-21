@@ -3,6 +3,7 @@ var $ = require('jquery');
 var Rx = require('rx');
 var actions = require("./client.actions.js");
 
+
 class clientMain{
 
 	constructor(){

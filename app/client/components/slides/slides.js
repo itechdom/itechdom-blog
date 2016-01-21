@@ -10,6 +10,7 @@ var view = require('./slides.view.js');
 var actions = require("./slides.actions.js");
 var model = require("./slides.model.js");
 
+
 class slidesMain{
 
 	constructor(){
@@ -21,6 +22,8 @@ class slidesMain{
 		actions.request$.subscribe(()=>{
 				this.view.render();
 		});
+
 	}
 }
+
 module.exports = new slidesMain();

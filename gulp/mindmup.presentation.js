@@ -90,7 +90,7 @@ module.exports = function(options) {
 			})
 			return slideElement.html();
 		}
-		return gulp.src('./mindmaps/**/*.presentation.mup.json')
+		return gulp.src('./mindmaps/**/RxJS.presentation.mup.json')
 						.pipe(data(function(file) {
 						var mindmap = parseMindmap(file);
 						var pArr = [];

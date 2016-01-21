@@ -1,6 +1,5 @@
 'use strict';
 var reveal = require('reveal.js');
-
 require('reveal.js/css/reveal.css');
 require('reveal.js/css/theme/sky.css');
 require('highlight.js/styles/default.css');
