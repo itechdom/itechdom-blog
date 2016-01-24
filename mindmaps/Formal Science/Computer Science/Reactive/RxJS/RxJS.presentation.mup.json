@@ -7,12 +7,13 @@
       "title": "How I use it",
       "id": 291,
       "attr": {
-        "style": {},
-        "collapsed": true
+        "style": {
+          "background": "#800000"
+        }
       },
       "ideas": {
         "1": {
-          "title": "Basic Node.js example with Wired.js TODO",
+          "title": "1.Basic Node.js example with Wired.js",
           "id": 322
         }
       }
@@ -20,60 +21,18 @@
     "48": {
       "title": "Resources",
       "id": 179,
-      "ideas": {
-        "1": {
-          "title": "rxjs book",
-          "id": 181,
-          "ideas": {},
-          "attr": {
-            "position": [
-              102,
-              -108,
-              1
-            ],
-            "style": {},
-            "attachment": {
-              "contentType": "text/html",
-              "content": "<span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://xgrommx.github.io/rx-book/</span>"
-            }
-          }
-        },
-        "2": {
-          "title": "Slidedeck for explaining RxJS",
-          "id": 223,
-          "attr": {
-            "style": {},
-            "attachment": {
-              "contentType": "text/html",
-              "content": "<a href=\"http://channikhabra.github.io/frp-with-rxjs-jschannel-conf/#/\" target=\"_blank\">http://channikhabra.github.io/frp-with-rxjs-jschannel-conf/#/</a>"
-            }
-          },
-          "ideas": {}
-        },
-        "5": {
-          "title": "node.js examples with rxjs",
-          "id": 257,
-          "attr": {
-            "style": {},
-            "attachment": {
-              "contentType": "text/html",
-              "content": "<span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">https://blog.risingstack.com/functional-reactive-programming-with-the-power-of-nodejs-streams/</span>"
-            }
-          },
-          "ideas": {}
-        },
-        "6": {
-          "title": "https://github.com/mattpodwysocki/RxJSKoans",
-          "id": 324
-        }
-      },
+      "ideas": {},
       "attr": {
         "style": {},
         "attachment": {
           "contentType": "text/html",
-          "content": "<p style=\"box-sizing: border-box; color: rgb(36, 36, 45); font-family: 'Source Sans Pro', Calibri, Helvetica, sans-serif; font-size: 19px; line-height: 30.4px;\">Knowing the basics of ReactiveX is a prerequisite to getting work done with Cycle.js. Instead of teaching RxJS on this site, we recommend a few great learning resources, in case you need to learn more:</p><ul style=\"box-sizing: border-box; color: rgb(36, 36, 45); font-family: 'Source Sans Pro', Calibri, Helvetica, sans-serif; font-size: 19px; line-height: 30.4px;\"><li style=\"box-sizing: border-box;\"><a href=\"https://gist.github.com/staltz/868e7e9bc2a7b8c1f754\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">The introduction to Reactive Programming you’ve been missing</a>: a thorough introduction to RxJS by Cycle.js author Andre Staltz.</li><li style=\"box-sizing: border-box;\"><a href=\"http://introtorx.com/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">Introduction to Rx</a>: an online book focused on Rx.NET, but most concepts map directly to RxJS.</li><li style=\"box-sizing: border-box;\"><a href=\"http://reactivex.io/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">ReactiveX.io</a>: official cross-language documentation site for ReactiveX.</li><li style=\"box-sizing: border-box;\"><a href=\"http://reactivex.io/learnrx/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">Learn Rx</a>: an interactive tutorial with arrays and Observables, by Jafar Husain.</li><li style=\"box-sizing: border-box;\"><a href=\"https://egghead.io/technologies/rx\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">RxJS lessons at Egghead.io</a></li><li style=\"box-sizing: border-box;\"><a href=\"http://xgrommx.github.io/rx-book/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">RxJS GitBook</a></li><li style=\"box-sizing: border-box;\"><a href=\"http://rxmarbles.com/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">RxMarbles</a>: interactive diagrams of RxJS operators, built with Cycle.js.</li><li style=\"box-sizing: border-box;\"><a href=\"https://www.youtube.com/watch?v=XRYN2xt11Ek\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">Async JavaScript at Netflix</a>: video of Jafar Husain introducing RxJS.</li></ul>"
+          "content": "<p style=\"box-sizing: border-box; color: rgb(36, 36, 45); font-family: 'Source Sans Pro', Calibri, Helvetica, sans-serif; font-size: 19px; line-height: 30.4px;\"><br></p><ul style=\"box-sizing: border-box; color: rgb(36, 36, 45); font-family: 'Source Sans Pro', Calibri, Helvetica, sans-serif; font-size: 19px; line-height: 30.4px;\"><li style=\"box-sizing: border-box;\"><a href=\"https://gist.github.com/staltz/868e7e9bc2a7b8c1f754\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">The introduction to Reactive Programming you’ve been missing</a>: a thorough introduction to RxJS by Cycle.js author Andre Staltz.</li><li style=\"box-sizing: border-box;\"><a href=\"http://introtorx.com/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">Introduction to Rx</a>: an online book focused on Rx.NET, but most concepts map directly to RxJS.</li><li style=\"box-sizing: border-box;\"><a href=\"http://reactivex.io/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">ReactiveX.io</a>: official cross-language documentation site for ReactiveX.</li><li style=\"box-sizing: border-box;\"><a href=\"http://reactivex.io/learnrx/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">Learn Rx</a>: an interactive tutorial with arrays and Observables, by Jafar Husain.</li><li style=\"box-sizing: border-box;\"><a href=\"https://egghead.io/technologies/rx\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">RxJS lessons at Egghead.io</a></li><li style=\"box-sizing: border-box;\"><a href=\"http://xgrommx.github.io/rx-book/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">RxJS GitBook</a></li><li style=\"box-sizing: border-box;\"><a href=\"http://rxmarbles.com/\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">RxMarbles</a>: interactive diagrams of RxJS operators, built with Cycle.js.</li><li style=\"box-sizing: border-box;\"><a href=\"https://www.youtube.com/watch?v=XRYN2xt11Ek\" target=\"_blank\" style=\"color: rgb(64, 155, 158); text-decoration: inherit; box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(64, 155, 158);\">Async JavaScript at Netflix</a>: video of Jafar Husain introducing RxJS.</li></ul>"
         },
-        "collapsed": true
+        "position": [
+          187,
+          499,
+          40
+        ]
       }
     },
     "58": {
@@ -81,8 +40,8 @@
       "id": 299,
       "attr": {
         "position": [
-          141,
-          139.5,
+          140,
+          572,
           39
         ],
         "style": {},
@@ -151,8 +110,7 @@
           159.5,
           -169,
           38
-        ],
-        "collapsed": true
+        ]
       },
       "ideas": {
         "1": {
@@ -185,22 +143,10 @@
             "style": {},
             "attachment": {
               "contentType": "text/html",
-              "content": "<ul><li>Promises are primitive types and serve almost the same purpose as RxJS Observables.</li><li>There are a couple of problems with Promises:</li><ul><li>Chaining Promises.</li><li>Canceling promises.</li></ul></ul><div><br></div><div>http://solutionoptimist.com/2013/12/27/javascript-promise-chains-2/<br></div><div>http://stackoverflow.com/questions/29478751/how-to-cancel-an-emcascript6-vanilla-javascript-promise-chain</div>"
+              "content": "<ul><li>Promises are primitive types and serve almost the same purpose as RxJS Observables.</li><li>There are a couple of problems with Promises:</li><ul><li>Chaining Promises.</li><li>Canceling promises.</li></ul></ul><div><br></div><div>http://solutionoptimist.com/2013/12/27/javascript-promise-chains-2/<br></div><div>http://stackoverflow.com/questions/29478751/how-to-cancel-an-emcascript6-vanilla-javascript-promise-chain</div><div><br></div><div>However:</div><div><br></div><div><div><ul><li>Chaining Observables: add it in an array</li><li>Cancelling Observables: subscription.dispose();</li></ul><div><br></div></div><div>Chain promises with Observables</div><div><ul><li>http://stackoverflow.com/questions/29946512/chaining-promises-with-rxjs</li></ul></div></div>"
             }
           },
-          "ideas": {
-            "1": {
-              "title": "1. Rxjs Observables",
-              "id": 326,
-              "attr": {
-                "attachment": {
-                  "contentType": "text/html",
-                  "content": "<div><ul><li>Chaining Observables: add it in an array</li><li>Cancelling Observables: subscription.dispose();</li></ul><div><br></div></div><div>Chain promises with Observables</div><div><ul><li>http://stackoverflow.com/questions/29946512/chaining-promises-with-rxjs</li></ul></div>"
-                },
-                "style": {}
-              }
-            }
-          }
+          "ideas": {}
         }
       }
     },
@@ -227,8 +173,7 @@
             "attachment": {
               "contentType": "text/html",
               "content": "<ul><li>Building blocks of FRP in RxJS<br></li><li>First class objects to represent Asynchronous data<br></li><li>Operators with fabulous Functional grammar<br></li><li>Interoperable with other sync/async data</li></ul><div>We should care because:&nbsp;</div><div><br></div><ul><li>Proposal for adding them to ES2016 (aka ES7)&nbsp;</li><li>Angular 2 supports them as first class citizens</li><li>React will have them as first class citizens</li></ul><div><br></div><div>In short, an Observable is an event stream which can emit zero or more events, and may or may not finish. If it finishes, then it does so by either emitting an error or a special “complete” event.<span style=\"font-size: 14px; font-weight: normal;\"><br></span></div>"
-            },
-            "collapsed": true
+            }
           },
           "ideas": {
             "2": {
@@ -288,7 +233,7 @@
                   "attr": {
                     "attachment": {
                       "contentType": "text/html",
-                      "content": "<div><ul><li>Events</li></ul></div><div><div>&lt;pre&gt;</div><div>&lt;code class=\"js\"&gt;</div><div><div>var result = document</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.getElementById('result');</div><div><br></div><div>var source =&nbsp;</div><div>Rx.Observable.fromEvent(result, 'click');</div></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div></div>"
+                      "content": "<div><ul><li>Events</li></ul></div><div><div>&lt;pre&gt;</div><div>&lt;code class=\"js\"&gt;</div><div><div>var result = document</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.getElementById('result');</div><div><br></div><div>var source =&nbsp;</div><div>Rx.Observable.fromEvent(result, 'click');</div></div><div><br></div><div>source.debounce(300).subscribe(function(event){</div><div>console.log(\"result\");</div><div>})</div><div><br></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div></div>"
                     },
                     "style": {}
                   }
@@ -321,34 +266,12 @@
                   "attr": {
                     "attachment": {
                       "contentType": "text/html",
-                      "content": "<ul><li>Similar to resolve and reject in Promises</li><li>We can create custom observables</li><li>We have three functions: OnComplete, OnError, ...&nbsp;</li></ul><div>&lt;pre&gt;</div><div>&lt;code class=\"js\"&gt;</div><div><br></div><div><div>var source = Rx.Observable.create(function (observer) {</div><div>&nbsp; // Yield a single value and complete</div><div>&nbsp; observer.onNext(42);</div><div>&nbsp; observer.onCompleted();</div><div><br></div><div>&nbsp; // Any cleanup logic might go here</div><div>&nbsp; return function () {</div><div>&nbsp; &nbsp; console.log('disposed');</div><div>&nbsp; }</div><div>});</div><div><br></div><div>var subscription = source.subscribe(</div><div>&nbsp; function (x) { console.log('onNext: %s', x); },</div><div>&nbsp; function (e) { console.log('onError: %s', e); },</div><div>&nbsp; function () { console.log('onCompleted'); });</div><div><br></div><div>// =&gt; onNext: 42</div><div>// =&gt; onCompleted</div><div><br></div><div>subscription.dispose();</div><div>// =&gt; disposed</div></div><div><br></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div>"
+                      "content": "<ul><li>Similar to resolve and reject in Promises</li><li>We can create custom observables</li><li>We have three functions: OnNext, OnComplete, OnError</li></ul><div>&lt;pre&gt;</div><div>&lt;code class=\"js\"&gt;</div><div><br></div><div><div>var source = Rx.Observable.create(function (observer) {</div><div>&nbsp; // Yield a single value and complete</div><div>&nbsp; observer.onNext(42);</div><div>&nbsp; observer.onCompleted();</div><div><br></div><div>&nbsp; // Any cleanup logic might go here</div><div>&nbsp; return function () {</div><div>&nbsp; &nbsp; console.log('disposed');</div><div>&nbsp; }</div><div>});</div><div><br></div><div>var subscription = source.subscribe(</div><div>&nbsp; function (x) { console.log('onNext: %s', x); },</div><div>&nbsp; function (e) { console.log('onError: %s', e); },</div><div>&nbsp; function () { console.log('onCompleted'); });</div><div><br></div><div>// =&gt; onNext: 42</div><div>// =&gt; onCompleted</div><div><br></div><div>subscription.dispose();</div><div>// =&gt; disposed</div></div><div><br></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div>"
                     },
                     "style": {}
                   }
                 }
               }
-            },
-            "14": {
-              "title": "4. Observables are a type",
-              "id": 323,
-              "attr": {
-                "attachment": {
-                  "contentType": "text/html",
-                  "content": "<ul><li>Promises are types as well</li></ul>"
-                },
-                "style": {}
-              }
-            }
-          }
-        },
-        "13": {
-          "title": "2. Remember: Everything is a Stream!",
-          "id": 287,
-          "attr": {
-            "style": {},
-            "attachment": {
-              "contentType": "text/html",
-              "content": "<div>&lt;img src=\"http://i.imgur.com/AIimQ8C.jpg\" alt=\"Mantra\"&gt;</div><div><br><div><ul><li>A stream is an evented data</li><li><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://xgrommx.github.io/rx-book/content/guidelines/introduction/index.html</span><br></li></ul></div></div>"
             }
           }
         }
@@ -357,24 +280,18 @@
         "style": {},
         "attachment": {
           "contentType": "text/html",
-          "content": "<span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">Maintains a list of objects (observers) and notifies them when the event happens</span><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><br></span></div><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">http://xgrommx.github.io/rx-book/content/observable/index.html</span><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><br></span></div><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><br></span></div><div><div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\">This is a link</span></div><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><div><br></div>http://xgrommx.github.io/rx-book/content/observer/index.html</span><span style=\"color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><br></span></div>"
-        },
-        "collapsed": true
+          "content": "<ul><li>Based on the observer and iterator patterns</li><li>Reactive</li><ul><li>Managing your own state when something happens<br></li><li>Module foo and Module bar<br></li><li>Module bar is said to be reactive when it listens to modules foo's changes<br></li><li>Foo doesn't know that bar exists!</li></ul></ul>"
+        }
       }
     },
-    "1.3125": {
+    "15.09375": {
       "title": "What's Reactive Programming",
       "id": 332,
       "attr": {
-        "position": [
-          143.5,
-          -380,
-          40
-        ],
         "style": {},
         "attachment": {
           "contentType": "text/html",
-          "content": "<div><ul><li>Managing your own state when something happens.</li></ul></div><div><ul><li>Module foo and Module bar</li><li>Module bar is said to be reactive when it listens to modules foo's changes</li><li>Foo doesn't know that bar exists!<br></li><li>http://cycle.js.org/observables.html</li></ul></div>"
+          "content": "<div><ul><li>Managing your own state when something happens<br></li><li>Module foo and Module bar<br></li><li>Module bar is said to be reactive when it listens to modules foo's changes<br></li><li>Foo doesn't know that bar exists!<br></li></ul></div>"
         }
       }
     }
