@@ -82,7 +82,7 @@ module.exports = function(options) {
 				count++;
 				if(idea.title){
 					parentId = count;
-					slideElement('.slides').append(`<section class="parent${parentId}"><p>${idea.title}</p></section>`);
+					slideElement('.slides').append(`<section class="parent${parentId}"><h3>${idea.title}</h3></section>`);
 				}
 				if(idea.content){
 					slideElement(`.parent${parentId}`).append('<br>'+idea.content);
