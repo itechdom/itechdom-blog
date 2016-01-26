@@ -101,9 +101,13 @@ module.exports = function(options) {
 						var less= "&lt;"
 						var more = "&gt;"
 
+						var quote = "&quot;"
+
 			//replace code with tags
 			finalContent = finalContent.replaceAll(less,"<");
 			finalContent = finalContent.replaceAll(more,">");
+
+			finalContent = finalContent.replaceAll(quote,'"');
 
 			//remove p tags
 			finalContent = finalContent.replaceAll("<span>","");
