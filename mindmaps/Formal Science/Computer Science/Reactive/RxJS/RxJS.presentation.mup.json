@@ -119,8 +119,7 @@
         "attachment": {
           "contentType": "text/html",
           "content": "Osama Alghanmi<div>Front End Developer @ &lt;i&gt;EffectiveUI&lt;/i&gt;<br><div><br><div>&lt;i class=\"fa fa-github\"&gt;&lt;/i&gt;Github: itechdom</div><div>&lt;i class=\"fa fa-twitter\"&gt;&lt;/i&gt;Twitter: @itechdom</div></div></div>"
-        },
-        "collapsed": true
+        }
       },
       "ideas": {
         "1": {
@@ -130,7 +129,7 @@
             "style": {},
             "attachment": {
               "contentType": "text/html",
-              "content": "<ul><li>Let's see how we can display a list of tweets, filter it by hashtags.</li></ul>&lt;pre&gt;<br><div>&lt;code class=\"js\"&gt;</div><div><div>tweets</div><div>.filter(t =&gt; t.username === me.username)</div><div>.filter(t =&gt; hasTag(selectedHTag, t.text))</div><div>.forEach(t =&gt; render);</div></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div><div>&lt;pre&gt;</div><div>functional means: &lt;b&gt;Non-mutating, Stateless, Composable&lt;/b&gt;</div><div>&lt;/pre&gt;</div>"
+              "content": "<ul><li>Let's see how we can display a list of tweets, filter it by hashtags.</li></ul>&lt;pre&gt;<br><div>&lt;code&gt;</div><div><div>tweets</div><div>.filter(t =&gt; t.username === me.username)</div><div>.filter(t =&gt; hasTag(selectedHTag, t.text))</div><div>.forEach(t =&gt; render);</div></div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;</div><div><br></div><div>&lt;pre&gt;</div><div>functional means: &lt;b&gt;Non-mutating, Stateless, Composable&lt;/b&gt;</div><div>&lt;/pre&gt;</div>"
             }
           }
         },
@@ -153,7 +152,7 @@
             "style": {},
             "attachment": {
               "contentType": "text/html",
-              "content": "<ul><li>Promises are primitive types and serve almost the same purpose as RxJS Observables.</li><li>There are a couple of problems with Promises:</li><ul><li>Chaining Promises.</li><li>Canceling promises.</li></ul></ul><div>However:</div><div><br></div><div><ul><li>Chaining Observables: add it in an array</li><li>Canceling Observables: &lt;pre&gt;&lt;code class=\"js\"&gt;subscription.dispose();&lt;/code&gt;&lt;/pre&gt;</li></ul><div><br></div></div>"
+              "content": "<ul><li>Promises are primitive types and serve almost the same purpose as RxJS Observables.</li><li>There are a couple of problems with Promises:</li><ul><li>Chaining Promises.</li><li>Canceling promises.</li></ul></ul><div>However:</div><div><br></div><div><ul><li>Chaining Observables: add it in an array</li><li>Canceling Observables:&nbsp;</li></ul>&lt;pre&gt;</div><div>&lt;code class=\"js\"&gt;</div><div>subscription.dispose();</div><div>&lt;/code&gt;</div><div>&lt;/pre&gt;<br><div><br></div></div>"
             }
           },
           "ideas": {}
@@ -315,8 +314,7 @@
         }
       },
       "attr": {
-        "style": {},
-        "collapsed": true
+        "style": {}
       }
     },
     "15.09375": {

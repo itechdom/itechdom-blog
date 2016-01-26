@@ -3,17 +3,17 @@ var reveal = require('reveal.js');
 require('reveal.js/css/reveal.css');
 require('reveal.js/css/theme/sky.css');
 require('highlight.js/styles/default.css');
-var hljs = require('highlight.js');
+var customScss = require("./slides.scss");
+
 var $ = require('jquery');
 var template = require('../../../../presentations/RxJS.presentation.mup.html');
-var customScss = require("./slides.scss");
+
 
 class slidesView {
 
 	render(){
 		$('app').html(template);
 		reveal.initialize();
-		hljs.initHighlightingOnLoad();
 	}
 	constructor() {
 

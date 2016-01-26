@@ -13,6 +13,8 @@ var rename = require("gulp-rename");
 var MongoClient = require('mongodb').MongoClient
 var cheerio = require('cheerio');
 var sortBy = require('sort-by');
+var hljs = require('highlight.js');
+
 var slideTemplate = `<div class="reveal">
 <div class="slides">
 </div>
@@ -72,61 +74,82 @@ module.exports = function(options) {
 		{
 			return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
 		} 
+		function cleanHTML(html){
+
+			var less= "&lt;";
+			var more = "&gt;";
+			var quote = "&quot;";
+
+			//replace code with tags
+			html = html.replaceAll(less,"<");
+			html = html.replaceAll(more,">");
+
+			html = html.replaceAll(quote,'"');
+
+			//remove p tags
+			html = html.replaceAll("<span>","");
+			html = html.replaceAll("</span>","");
+
+			html = html.replaceAll("<p>","");
+			html = html.replaceAll("</p>","");
+
+
+			html = html.replaceAll("</div>","");
+			html = html.replaceAll("<div>","<div></div>");
+
+			return html;
+		}
 		function convertToHTML(mindmap){
 			var f = "";
 			var count = 0;
 			var parentId;
+
 			mindmap.map((idea)=>{
 				var fruits = [];
 				var section;
+				var cHTML;
 				count++;
 				if(idea.title){
 					parentId = count;
-					slideElement('.slides').append(`<section class="parent${parentId}"><h3>${idea.title}</h3></section>`);
+					var cleanTitle = cleanHTML(idea.title);
+					slideElement('.slides').append(`<section class="parent${parentId}"><h3>${cleanTitle}</h3></section>`);
 				}
 				if(idea.content){
-					slideElement(`.parent${parentId}`).append('<br>'+idea.content);
+					var cleanContent = cleanHTML(idea.content);
+					var code = cheerio.load(cleanContent);
+					var hCode;
+					code('*').each(function(i, elem) {
+						var codeBlock = code(this).find('code').html();
+						if(codeBlock){
+							hCode = codeBlock;
+						}
+					});
+					slideElement(`.parent${parentId}`).append('<br>'+cleanContent);
+					if(hCode){
+						slideElement(`.parent${parentId}`).find('code').addClass('prettyprint');
+						slideElement(`.parent${parentId}`).find('code').addClass('lang-js');
+					}
 				}
 			})
 			return slideElement.html();
 		}
 		return gulp.src('./mindmaps/**/RxJS.presentation.mup.json')
-						.pipe(data(function(file) {
-						var mindmap = parseMindmap(file);
-						var pArr = [];
-						mindmapAll = mindmap.ideas;
-						traverseMindmap(mindmap.ideas,pArr,undefined);
-						var sortedFileArr = pArr.sort(sortBy('order'));
-						var finalContent = convertToHTML(sortedFileArr);
-						var less= "&lt;"
-						var more = "&gt;"
+			.pipe(data(function(file) {
+				var mindmap = parseMindmap(file);
+				var pArr = [];
+				mindmapAll = mindmap.ideas;
+				traverseMindmap(mindmap.ideas,pArr,undefined);
+				var sortedFileArr = pArr.sort(sortBy('order'));
+				var finalContent = convertToHTML(sortedFileArr);
 
-						var quote = "&quot;"
-
-			//replace code with tags
-			finalContent = finalContent.replaceAll(less,"<");
-			finalContent = finalContent.replaceAll(more,">");
-
-			finalContent = finalContent.replaceAll(quote,'"');
-
-			//remove p tags
-			finalContent = finalContent.replaceAll("<span>","");
-			finalContent = finalContent.replaceAll("</span>","");
-
-			finalContent = finalContent.replaceAll("</div>","");
-			finalContent = finalContent.replaceAll("<div>","<div></div>");
-
-			finalContent = finalContent.replaceAll("<p>","");
-			finalContent = finalContent.replaceAll("</p>","");
-
-			file.contents = new Buffer(finalContent);
-			var nm = file.path.split("/").pop();
-			file.path = process.cwd()+"/presentations/"+nm;
+				file.contents = new Buffer(finalContent);
+				var nm = file.path.split("/").pop();
+				file.path = process.cwd()+"/presentations/"+nm;
 			}))
-			.pipe(rename(function (path) {
+		.pipe(rename(function (path) {
 			path.extname = ".html"
-			}))
-			.pipe(gulp.dest('./presentations'))
-			});
+		}))
+		.pipe(gulp.dest('./presentations'))
+	});
 
-			};
+};
