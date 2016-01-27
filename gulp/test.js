@@ -9,7 +9,7 @@ module.exports = function(options) {
 			// Be sure to return the stream 
 		return gulp.src(options.test)
 			.pipe(karma({
-				configFile: 'karma.conf.js',
+				configFile: 'config/karma.conf.js',
 				action: 'run'
 			}))
 			.on('error', function(err) {
