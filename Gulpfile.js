@@ -9,6 +9,7 @@ var options = {
   src: './app/client/main.js',
   dist: './dist/',
   main:'./app/',
+  drive:"/Users/osama.alghanmi/Google Drive/",
   components:'app/**/*.component.js',
   tmp: '.tmp',
   test:'app/**/*.spec.js',
@@ -28,6 +29,9 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 
 gulp.task('default', function(done){
   sync('webpack:build-dev', 'serve:client' , 'serve:server' , 'watch', done);
+});
+gulp.task('presentation', function(done){
+  sync('mindmap:presentation' , 'watch:presentation', done);
 });
 gulp.task('mindmap:save', function(done){
   sync('mindmap:clean', 'mindmap:db', done);

@@ -22,9 +22,7 @@ var slideTemplate = `<div class="reveal">
 var slideElement = cheerio.load(slideTemplate);
 var mindmapAll;
 module.exports = function(options) {
-
-	gulp.task('mindmap:presentation', function(options) {
-
+	gulp.task('mindmap:presentation', function(done) {
 		function traverseMindmap(mindmap,pArr,parent){
 			for(var key in mindmap){
 				var obj = mindmap[key];
@@ -111,7 +109,8 @@ module.exports = function(options) {
 				count++;
 				if(idea.title){
 					parentId = count;
-					var cleanTitle = cleanHTML(idea.title);
+					var cleanTitle = idea.title.split(".")[1];
+					if(!cleanTitle)cleanTitle = idea.title;
 					slideElement('.slides').append(`<section class="parent${parentId}"><h3>${cleanTitle}</h3></section>`);
 				}
 				if(idea.content){
@@ -133,7 +132,7 @@ module.exports = function(options) {
 			})
 			return slideElement.html();
 		}
-		return gulp.src('./mindmaps/**/RxJS.presentation.mup.json')
+		return gulp.src(options.drive+"**/RxJS.presentation.mup")
 			.pipe(data(function(file) {
 				var mindmap = parseMindmap(file);
 				var pArr = [];
@@ -141,15 +140,15 @@ module.exports = function(options) {
 				traverseMindmap(mindmap.ideas,pArr,undefined);
 				var sortedFileArr = pArr.sort(sortBy('order'));
 				var finalContent = convertToHTML(sortedFileArr);
-
 				file.contents = new Buffer(finalContent);
-				var nm = file.path.split("/").pop();
-				file.path = process.cwd()+"/presentations/"+nm;
 			}))
 		.pipe(rename(function (path) {
-			path.extname = ".html"
+			path.extname = ".html";
+			path.dirname = "./";
 		}))
 		.pipe(gulp.dest('./presentations'))
 	});
-
+	gulp.task('watch:presentation', function(){
+		gulp.watch(options.drive+"**/*.presentation.mup", ['mindmap:presentation']);
+	})
 };
