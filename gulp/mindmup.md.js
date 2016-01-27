@@ -114,7 +114,7 @@ module.exports = function(options) {
 			.pipe(rename(function (path) {
 			path.extname = ".md"
 			}))
-			.pipe(gulp.dest('./blog'))
+			.pipe(gulp.dest('./md-blog'))
 	});
 
 };
