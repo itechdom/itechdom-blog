@@ -2,8 +2,7 @@ var path = require("path");
 var webpack = require("webpack");
 module.exports = {
     entry: {
-        dist: './app/client/main.js',
-	ng:'./other-languages/python-ng2/client/main.js'
+        dist: './app/client/main.js'
     },
     output: {
         path: __dirname + "/dist",
