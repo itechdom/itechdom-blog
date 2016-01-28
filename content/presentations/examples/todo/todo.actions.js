@@ -3,7 +3,7 @@ var Rx = require('rx');
 var serverActions = require('../server/server.actions.js');
 
 var req$ = serverActions.req$.filter((reqObj)=>{
-	return reqObj.req.url == "/blog";
+	return reqObj.req.url == "/todo";
 });
 
 var actions =  {
