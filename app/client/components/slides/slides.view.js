@@ -6,7 +6,7 @@ require('highlight.js/styles/default.css');
 var customScss = require("./slides.scss");
 
 var $ = require('jquery');
-var template = require('../../../../presentations/RxJS.presentation.html');
+var template = require('../../../../content/presentations/RxJS.presentation.html');
 
 
 class slidesView {

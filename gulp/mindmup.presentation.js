@@ -146,7 +146,7 @@ module.exports = function(options) {
 			path.extname = ".html";
 			path.dirname = "./";
 		}))
-		.pipe(gulp.dest('./presentations'))
+		.pipe(gulp.dest('./content/presentations'))
 	});
 	gulp.task('watch:presentation', function(){
 		gulp.watch(options.drive+"**/*.presentation.mup", ['mindmap:presentation']);
