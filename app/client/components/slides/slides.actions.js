@@ -7,9 +7,7 @@ class actionMain{
 
     constructor(){
         return {
-            request$: clientActions['changeRoute$'].filter((d)=> {
-                return d == "/slides";
-            })
+            request$: clientActions['changeRoute$']
         }
     }
 }
