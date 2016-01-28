@@ -2,7 +2,7 @@ var gulp = require("gulp");
 var gutil = require("gulp-util");
 var webpack = require("webpack");
 var WebpackDevServer = require("webpack-dev-server");
-var webpackConfig = require("../config/webpack.config.js");
+var webpackConfig = require("../webpack.config.js");
 
 module.exports = function(options) {
 // The development server (the recommended option for development)
