@@ -62,6 +62,18 @@ module.exports = function(options) {
 			var mindmap = JSON.parse(String(file.contents));
 			return mindmap;
 		}
+		String.prototype.replaceAll = function(str1, str2, ignore) 
+		{
+			return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
+		} 
+
+		function cleanHTML(html){
+			html = html.replaceAll('<code class="js">',"```");
+			html = html.replaceAll('<code>',"```");
+			html = html.replaceAll('</code>',"```");
+			return html;
+		}
+
 		function convertToMarkdown(mindmap){
 			var f = "";
 			mindmap.map((idea)=>{
@@ -72,6 +84,7 @@ module.exports = function(options) {
 					f+="\n";
 				}
 				if(idea.content){
+					var cleanContent = cleanHTML(idea.content);
 					f += idea.content;
 					f+="\n";
 				}
