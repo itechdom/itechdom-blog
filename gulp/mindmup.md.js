@@ -12,11 +12,53 @@ var flatten = require('flat');
 var rename = require("gulp-rename");
 var MongoClient = require('mongodb').MongoClient
 var cheerio = require('cheerio');
-
+var sortBy = require('sort-by');
 
 module.exports = function(options) {
 
 	gulp.task('mindmap:md', function(done) {
+		function traverseMindmap(mindmap,pArr,parent){
+			for(var key in mindmap){
+				var obj = mindmap[key];
+				var pContent = {};
+
+				if(obj.title){
+					pContent.title = obj.title;
+				}
+				if(obj.attr){
+					var attr = obj.attr;
+					var attachment = attr.attachment;
+					if(attachment){
+						pContent.content = attachment.content;
+					}
+				}
+				//if it's decimal, then add the new order to the object by removing any decimal to its order as well
+				if(parent){
+					var pKey = obj.title.split(".")[0];
+					if(parent.order){
+						/**if(key.indexOf(".") > -1){
+						  pContent.order = key.split(".").join(""); 
+						  }
+						 **/
+						if(parent.order.indexOf(".") > -1){
+							pContent.order = parent.order+pKey;
+						}
+						else{
+							pContent.order = parent.order+"."+pKey;
+						}
+					}
+				}
+				else{
+					pContent.order = key.split(".")[0];
+				}
+				obj.order = pContent.order;
+				pContent.order = parseFloat(pContent.order);
+				pContent.id = obj.id;
+				pArr.push(pContent);
+				traverseMindmap(obj.ideas,pArr,obj);
+			}
+		}
+
 		function processMindmap(mindmap){
 			//flatten the json
 			//iterate over all keys
@@ -45,11 +87,11 @@ module.exports = function(options) {
 					case "content":
 						//add proper formatting here
 						//
-        					var element = cheerio.load(flatMindmap[key]);
+						var element = cheerio.load(flatMindmap[key]);
 						var fruits = [];
 						element('*').each(function(i, elem) {
-							 element(this).removeAttr('style');
-							 // fruits[i] = $(this).text();
+							element(this).removeAttr('style');
+							// fruits[i] = $(this).text();
 						});
 						pushedContent.content = element.html();
 						break;
@@ -97,24 +139,26 @@ module.exports = function(options) {
 				var collection = db.collection('hello');
 				collection.insert(
 						{data:json}, function(err, result) {
-							callback(result);
-						});
+											   callback(result);
+										   });
 			}
 
 
 		}
 		return gulp.src(options.drive+'/**/*.mup')
-			.pipe(data(function(file) {
-			var mindmap = parseMindmap(file);
-			var content = processMindmap(mindmap);
-			var finalContent = convertToMarkdown(content);
-			file.contents = new Buffer(finalContent);
-			}))
+						    .pipe(data(function(file) {
+						    var mindmap = parseMindmap(file);
+						    var pArr = [];
+						    traverseMindmap(mindmap.ideas,pArr,undefined);
+						    var sortedFileArr = pArr.sort(sortBy('order'));
+						    var finalContent = convertToMarkdown(sortedFileArr);
+						    file.contents = new Buffer(finalContent);
+						    }))
 
-			.pipe(rename(function (path) {
-			path.extname = ".md"
-			}))
-			.pipe(gulp.dest('./content/md-blog'))
-	});
+						    .pipe(rename(function (path) {
+						    path.extname = ".md"
+						    }))
+						    .pipe(gulp.dest('./content/md-blog'))
+						    });
 
-};
+						    };
