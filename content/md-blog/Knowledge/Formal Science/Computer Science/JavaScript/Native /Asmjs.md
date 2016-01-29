@@ -25,7 +25,7 @@ Depending on your implementation: compilation or interpretation might happen (co
     14 (base 10) = 00000000000000000000000000001110 (base 2)
                    --------------------------------
 14 &amp; 9 (base 10) = 00000000000000000000000000001000 (base 2) = 8 (base 10)
-```</pre>
+```
 #https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
 #Bitwise operations
 <strong style="margin: 0px; padding: 0px; border: 0px; color: rgb(77, 78, 83); font-family: 'Open Sans', Arial, sans-serif; line-height: 21px;">Bitwise operators</strong><span style="color: rgb(77, 78, 83); font-family: 'Open Sans', Arial, sans-serif; line-height: 21px;">&nbsp;treat their operands as a sequence of 32 bits (zeroes and ones), rather than as decimal, hexadecimal, or octal&nbsp;<code style="margin: 0px; padding: 0px; border: 0px; font-family: Consolas, 'Liberation Mono', Courier, monospace; color: rgb(77, 78, 83); font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" title="/en-US/docs/JavaScript/Reference/Global_Objects/Number" style="margin: 0px; padding: 0px; border: 0px; color: rgb(0, 149, 221);">numbers</a>
