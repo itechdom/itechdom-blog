@@ -34,6 +34,7 @@ module.exports = function(options) {
 				}
 				//if it's decimal, then add the new order to the object by removing any decimal to its order as well
 				if(parent){
+					pContent.indent = 2;
 					var pKey = obj.title.split(".")[0];
 					if(parent.order){
 						/**if(key.indexOf(".") > -1){
@@ -50,6 +51,7 @@ module.exports = function(options) {
 				}
 				else{
 					pContent.order = key.split(".")[0];
+					pContent.indent = 1;
 				}
 				obj.order = pContent.order;
 				pContent.order = parseFloat(pContent.order);
@@ -75,9 +77,8 @@ module.exports = function(options) {
 			var f = "";
 			mindmap.map((idea)=>{
 				if(idea.title){
-					//if(idea.order >= 1 || idea.order <=3){
-					//}
-					f+= "#"+idea.title;
+					var h = "#".repeat(idea.indent);
+					f+= h+idea.title;
 					f+="\n";
 				}
 				if(idea.content){
@@ -87,26 +88,6 @@ module.exports = function(options) {
 				}
 			})
 			return f;
-		}
-		function saveToDB(json){
-
-			var url = 'mongodb://localhost:27017/test';
-			MongoClient.connect(url, function(err, db) {
-				console.log("Connected correctly to server");
-				insertDocuments(db, function() {
-					db.close();
-				});
-			});
-			var insertDocuments = function(db, callback) {
-				// Get the documents collection 
-				var collection = db.collection('hello');
-				collection.insert(
-						{data:json}, function(err, result) {
-											   callback(result);
-										   });
-			}
-
-
 		}
 		return gulp.src(options.drive+'/**/*.mup')
 						    .pipe(data(function(file) {
