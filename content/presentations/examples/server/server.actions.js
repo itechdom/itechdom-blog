@@ -13,7 +13,7 @@ var req$ = fromEvent(server,'request',function(req,res){
 });
 
 var actions =   {
-	req$
+	req$:req$
 }
 
 module.exports = actions;
