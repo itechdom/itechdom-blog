@@ -1,4 +1,4 @@
-#Resources
-##http://www.typescriptlang.org/
-#concepts
-##extends javascript with types
+# concepts
+## extends javascript with types
+# Resources
+## http://www.typescriptlang.org/

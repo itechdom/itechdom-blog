@@ -1,4 +1,4 @@
-#Resources
-#Concepts
-#Sentences
-#Words
+# Sentences
+# Words
+# Concepts
+# Resources
