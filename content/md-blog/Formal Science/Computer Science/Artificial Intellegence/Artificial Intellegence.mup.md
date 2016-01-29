@@ -1,3 +1,0 @@
-# http://ai.stanford.edu/~nilsson/QAI/qai.pdf
-## THE QUEST FOR ARTIFICIAL INTELLIGENCE
-A HISTORY OF IDEAS AND ACHIEVEMENTS
