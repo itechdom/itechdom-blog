@@ -109,16 +109,13 @@ module.exports = function(options) {
 		function convertToMarkdown(mindmap){
 			var f = "";
 			mindmap.map((idea)=>{
-				if(idea.title && idea.indent){
-					if(idea.indent >= 1 || idea.indent <=3){
-						var head = "#".repeat(idea.indent);
-						head += " ";
-						f+=head;
-					}
-					f+= idea.title;
+				if(idea.title){
+					//if(idea.order >= 1 || idea.order <=3){
+					//}
+					f+= "#"+idea.title;
 					f+="\n";
 				}
-				if(idea.content && idea.indent){
+				if(idea.content){
 					f += idea.content;
 					f+="\n";
 				}
