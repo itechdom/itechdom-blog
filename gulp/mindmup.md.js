@@ -68,28 +68,6 @@ module.exports = function(options) {
 		} 
 
 		function cleanHTML(html){
-			var less= "&lt;";
-			var more = "&gt;";
-			var quote = "&quot;";
-
-			//replace code with tags
-			html = html.replaceAll(less,"<");
-			html = html.replaceAll(more,">");
-			//remove p tags
-			html = html.replaceAll("<span>","");
-			html = html.replaceAll("</span>","");
-
-			html = html.replaceAll("<p>","");
-			html = html.replaceAll("</p>","");
-
-
-			html = html.replaceAll("</div>","");
-			html = html.replaceAll("<div>","");
-
-
-			html = html.replaceAll('<code class="js">',"```js\n");
-			html = html.replaceAll('<code>',"```\n");
-			html = html.replaceAll('</code>',"\n```");
 			return html;
 		}
 
