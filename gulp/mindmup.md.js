@@ -87,9 +87,9 @@ module.exports = function(options) {
 			html = html.replaceAll("<div>","");
 
 
-			html = html.replaceAll('<code class="js">',"```\n");
+			html = html.replaceAll('<code class="js">',"```js\n");
 			html = html.replaceAll('<code>',"```\n");
-			html = html.replaceAll('</code>',"```\n");
+			html = html.replaceAll('</code>',"\n```");
 			return html;
 		}
 
