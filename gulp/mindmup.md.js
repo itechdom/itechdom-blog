@@ -68,6 +68,15 @@ module.exports = function(options) {
 		} 
 
 		function cleanHTML(html){
+			var less= "&lt;";
+			var more = "&gt;";
+			var quote = "&quot;";
+
+			//replace code with tags
+			html = html.replaceAll(less,"<");
+			html = html.replaceAll(more,">");
+
+
 			html = html.replaceAll('<code class="js">',"```");
 			html = html.replaceAll('<code>',"```");
 			html = html.replaceAll('</code>',"```");

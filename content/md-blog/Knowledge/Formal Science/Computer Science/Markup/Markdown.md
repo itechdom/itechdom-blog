@@ -8,7 +8,7 @@ http://www.sitepoint.com/web-foundations/elements/<div>list of all html elements
 Which of one of these is paragraph tag?<div><br></div><div><ul><li>pe</li><li>par</li><li>p</li><li>po</li></ul></div>
 #Head
 #Link
-How would you link a css file?<div><ul><li>&nbsp;&lt;link type="text/css"&gt;</li><li>&lt;script&gt;</li><li>ddd</li><li>ddd</li></ul></div>
+How would you link a css file?<div><ul><li>&nbsp;<link type="text/css"></li><li><script></li><li>ddd</li><li>ddd</li></ul></div>
 #Selectors
 Reference an HTML element and then apply a style
 #Universal
