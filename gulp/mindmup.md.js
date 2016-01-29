@@ -58,50 +58,6 @@ module.exports = function(options) {
 				traverseMindmap(obj.ideas,pArr,obj);
 			}
 		}
-
-		function processMindmap(mindmap){
-			//flatten the json
-			//iterate over all keys
-			//strip out the numbers and rejoin again
-			//count the number of ideas in the key
-			//indent accordingly
-			//store into a variable
-			//write out that variable 
-			var flatMindmap = flatten(mindmap);
-			var fileArr = [];
-			//add the first title and content (title of the whole mindmap)
-			fileArr[0] = {title:flatMindmap.title,content:flatMindmap.content,indent:0};
-			for(var key in flatMindmap){
-				//determine the level of indentation
-				//By counting the number of ideas occurences
-				var pushedContent = {};
-				var indentLevel = key.split("ideas").length-1;
-				pushedContent.indent = indentLevel;
-				var keyArr = key.split('.');
-				var keyName = keyArr[keyArr.length-1];
-				switch(keyName){
-					case "title":
-						//add proper formatting here 
-						pushedContent.title = flatMindmap[key];
-						break;
-					case "content":
-						//add proper formatting here
-						//
-						var element = cheerio.load(flatMindmap[key]);
-						var fruits = [];
-						element('*').each(function(i, elem) {
-							element(this).removeAttr('style');
-							// fruits[i] = $(this).text();
-						});
-						pushedContent.content = element.html();
-						break;
-				}
-				if(pushedContent.title || pushedContent.content){
-					fileArr.push(pushedContent);
-				}
-			}
-			return fileArr;
-		}
 		function parseMindmap(file){
 			var mindmap = JSON.parse(String(file.contents));
 			return mindmap;
