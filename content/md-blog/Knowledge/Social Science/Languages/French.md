@@ -65,7 +65,7 @@
 }
 
 <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// Exporting the plugin main function
-<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">module.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">exports <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">= gulpPrefixer;
+<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">module.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">exports <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">= gulpPrefixer;</pre>
 #Write
 #Through
 #https://www.npmjs.com/package/through2

@@ -21,7 +21,7 @@
 
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">: <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Model <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">-> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Html
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=
-  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">...
+  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">...</pre>
 #Inputs
 #a way to visualize our application state with HTML
 
@@ -67,7 +67,7 @@
 
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">: <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Model <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">-> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Html
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=
-  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">...
+  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">...</pre>
 #https://github.com/evancz/elm-architecture-tutorial/#example-5-random-gif-viewer
 #I stopped here
 #function a
@@ -115,7 +115,7 @@
 <span class="hljs-title" style="color: rgb(102, 204, 204);">in
     square a + square b
 
-```<p style="line-height: 1.5em; color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium;">Let-expressions are indentation sensitive. Each definition should align with the one above it.
+```</pre><p style="line-height: 1.5em; color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium;">Let-expressions are indentation sensitive. Each definition should align with the one above it.
 #Signal.forwardTo
 #just to forward signals?
 #Is main: port: reserved?
