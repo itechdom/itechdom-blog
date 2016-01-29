@@ -1,0 +1,72 @@
+# Concepts
+## Streams
+### https://nodejs.org/api/stream.html
+#### api for stream
+### FRP
+#### https://blog.risingstack.com/functional-reactive-programming-with-the-power-of-nodejs-streams/
+## Deep vs Shallow Copy
+<ol><li class="mod" data-md="61"><div class="_oDd" data-hveid="36"><span class="_Tgc">A deep&#xA0;<b>copy copies</b>&#xA0;all fields, and makes<b>copies</b>&#xA0;of dynamically allocated memory pointed to by the fields. A deep&#xA0;<b>copy</b>&#xA0;occurs when an object is copied along with the objects to which it refers.&#xA0;<b>Shallow Copy</b>.<b>Shallow copy</b>&#xA0;is a bit-wise&#xA0;<b>copy</b>&#xA0;of an object.</span><span class="_D8e">Oct 8, 2008</span></div></li></ol>
+## Event loop
+### Non-Blocking io
+<div>## Nodejs is Non-Blocking</div><div><br></div><div>What are the things that block?</div><div><br></div><div>* Reads/Writes on the Database</div><div>* Calls to other web services</div><div><br></div><div>* In other web frameworks, we create a separate thread for each request.</div><div>* Nodejs uses only one thread!</div><div><br></div><div><br></div><div>## Events</div><div>&#xA0; &#xA0;&#xA0;</div><div>An event can be, for example:</div><div><br></div><div>* Incoming Connection from the client</div><div>* Incoming Data from the client</div><div>* Server close event.</div><div>* event event event.</div><div><br></div><div><br></div><div>## Events (Continue)</div><div><br></div><div>Let&apos;s look at our server, what are the events our server can have?</div><div><br></div><div>* request</div><div>* connection</div><div>* close</div><div><br></div><div>https://nodejs.org/api/http.html#http_event_request</div><div><br></div><div><br></div><div>## Block Node</div><div><br></div><div>The only way you can block your application is that you don&apos;t end the event callback.</div><div><br></div><div>```</div><div>var http = require(&apos;http&apos;);</div><div><br></div><div>server = http.createServer();</div><div><br></div><div>server.on(&apos;connection&apos;,function(req,res){</div><div><br></div><div>&#xA0; &#xA0; res.writeHead(&quot;hello&quot;);</div><div>&#xA0; &#xA0; res.write(&quot;hi there&quot;);</div><div>&#xA0; &#xA0; console.log(&quot;If you don&apos;t call res.end node will stop the whole application&quot;);</div><div>&#xA0; &#xA0; console.log(&quot;This is a very common mistake&quot;);</div><div>&#xA0; &#xA0;&#xA0;</div><div>});</div><div><br></div><div>server.listen(1337, &apos;127.0.0.1&apos;);</div><div>```</div>
+## Core Modules
+<div id="toc"><h2>Table of Contents</h2></div><div id="apicontent"><ul><li><a href="https://nodejs.org/api/documentation.html" target="_blank">About these Docs</a></li><li><a href="https://nodejs.org/api/synopsis.html" target="_blank">Synopsis</a></li><li><a href="https://nodejs.org/api/assert.html" target="_blank">Assertion Testing</a></li><li><a href="https://nodejs.org/api/buffer.html" target="_blank">Buffer</a></li><li><a href="https://nodejs.org/api/addons.html" target="_blank">C/C++ Addons</a></li><li><a href="https://nodejs.org/api/child_process.html" target="_blank">Child Processes</a></li><li><a href="https://nodejs.org/api/cluster.html" target="_blank">Cluster</a></li><li><a href="https://nodejs.org/api/console.html" target="_blank">Console</a></li><li><a href="https://nodejs.org/api/crypto.html" target="_blank">Crypto</a></li><li><a href="https://nodejs.org/api/debugger.html" target="_blank">Debugger</a></li><li><a href="https://nodejs.org/api/dns.html" target="_blank">DNS</a></li><li><a href="https://nodejs.org/api/domain.html" target="_blank">Domain</a></li><li><a href="https://nodejs.org/api/events.html" target="_blank">Events</a></li><li><a href="https://nodejs.org/api/fs.html" target="_blank">File System</a></li><li><a href="https://nodejs.org/api/globals.html" target="_blank">Globals</a></li><li><a href="https://nodejs.org/api/http.html" target="_blank">HTTP</a></li><li><a href="https://nodejs.org/api/https.html" target="_blank">HTTPS</a></li><li><a href="https://nodejs.org/api/modules.html" target="_blank">Modules</a></li><li><a href="https://nodejs.org/api/net.html" target="_blank">Net</a></li><li><a href="https://nodejs.org/api/os.html" target="_blank">OS</a></li><li><a href="https://nodejs.org/api/path.html" target="_blank">Path</a></li><li><a href="https://nodejs.org/api/process.html" target="_blank">Process</a></li><li><a href="https://nodejs.org/api/punycode.html" target="_blank">Punycode</a></li><li><a href="https://nodejs.org/api/querystring.html" target="_blank">Query Strings</a></li><li><a href="https://nodejs.org/api/readline.html" target="_blank">Readline</a></li><li><a href="https://nodejs.org/api/repl.html" target="_blank">REPL</a></li><li><a href="https://nodejs.org/api/smalloc.html" target="_blank">Smalloc</a></li><li><a href="https://nodejs.org/api/stream.html" target="_blank">Stream</a></li><li><a href="https://nodejs.org/api/string_decoder.html" target="_blank">String Decoder</a></li><li><a href="https://nodejs.org/api/timers.html" target="_blank">Timers</a></li><li><a href="https://nodejs.org/api/tls.html" target="_blank">TLS/SSL</a></li><li><a href="https://nodejs.org/api/tty.html" target="_blank">TTY</a></li><li><a href="https://nodejs.org/api/dgram.html" target="_blank">UDP/Datagram</a></li><li><a href="https://nodejs.org/api/url.html" target="_blank">URL</a></li><li><a href="https://nodejs.org/api/util.html" target="_blank">Utilities</a></li><li><a href="https://nodejs.org/api/vm.html" target="_blank">VM</a></li><li><a href="https://nodejs.org/api/zlib.html" target="_blank">ZLIB</a></li></ul></div>
+### Process
+### Buffer
+## Implementing C++ modules
+### https://nodejs.org/api/addons.html
+## Archeticture
+### Libuv
+#### events
+#### I think there's another library here
+#### https://github.com/libuv/libuv
+### V8
+#### javascript interpreter
+#### https://code.google.com/p/v8/
+##### home page
+<span>Node.js provides an&#xA0;</span><a href="https://en.wikipedia.org/wiki/Event-driven_architecture" title="Event-driven architecture" target="_blank">event-driven architecture</a><span>&#xA0;and a&#xA0;</span><a href="https://en.wikipedia.org/wiki/Non-blocking_I/O" title="Non-blocking I/O" class="mw-redirect" target="_blank">non-blocking I/O</a><span>&#xA0;</span><a href="https://en.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface" target="_blank">API</a><span>&#xA0;that optimizes an application&apos;s throughput and scalability. These technologies are commonly used for&#xA0;</span><a href="https://en.wikipedia.org/wiki/Real-time_web" title="Real-time web" target="_blank">real-time web</a><span>&#xA0;applications.</span>
+## Server Side Rendering
+### https://github.com/runvnc/angular-on-server/wiki/Running-AngularJS-on-the-server-with-Node.js-and-jsdom
+#### attempt to render on server side
+### how would it work?
+#### request comes in
+#### there's a shared route
+#### server renders a little bit
+#### client is served
+#### client renders
+### https://github.com/tmpvar/jsdom
+#### javascript implementation of HTML
+## Performance
+### http://www.sitepoint.com/5-easy-performance-tweaks-node-js-express/
+## Security
+### Abusing eval
+#### sending a request with an eval statement
+#### http://bishankochher.blogspot.com/2011/12/nodejs-security-good-bad-and-ugly.html
+##### blog post regarding that
+### Resources
+#### https://nodesecurity.io/resources
+##### node security team
+#### https://speakerdeck.com/ckarande/top-overlooked-security-threats-to-node-dot-js-web-applications
+# Resources
+## Node Api
+### https://nodejs.org/api/
+## http://nodeschool.io/#workshoppers
+### Nodeschool open source workshops
+### The list
+<div id="learnyounode" class="workshopper"><h4><a class="js-workshop-link" href="https://www.github.com/workshopper/learnyounode" target="_blank">learnyounode</a></h4><p data-i18n="workshopper-learnyounode">Learn the basics of node: asynchronous i/o, http.</p><code data-i18n="workshopper-learnyounode-command">npm install -g learnyounode</code></div><div id="how-to-npm" class="workshopper"><h4><a class="js-workshop-link" href="https://github.com/npm/how-to-npm" target="_blank">How to npm</a></h4><p data-i18n="workshopper-how-to-npm">Learn how to use and create npm modules.</p><code>npm install -g how-to-npm</code></div><div id="streamadventure" class="workshopper"><h4><a class="js-workshop-link" href="https://www.github.com/substack/stream-adventure" target="_blank">stream-adventure</a></h4><p><span data-i18n="workshopper-streamadventure">Learn to compose streaming interfaces with&#xA0;</span><code>.pipe()</code><span data-i18n="workshopper-streamadventure2">.</span></p><code>npm install -g stream-adventure</code></div><div id="streamadventure" class="workshopper"><code><br></code></div><div id="streamadventure" class="workshopper"><code><br></code></div><div id="streamadventure" class="workshopper"><code><div id="javascripting" class="workshopper"><h4><a class="js-workshop-link" href="https://www.github.com/sethvincent/javascripting" target="_blank">javascripting</a></h4><p data-i18n="workshopper-javascripting">Learn the basics of JavaScript. No previous programming experience required.</p><code>npm install -g javascripting</code></div><div id="gitit" class="workshopper"><h4><a class="js-workshop-link" href="https://www.github.com/jlord/git-it" target="_blank">git-it</a></h4><p data-i18n="workshopper-gitit">Learn Git and GitHub basics.</p><code>npm install -g git-it</code></div><div id="scope-chains-closures" class="workshopper"><h4><a href="https://www.github.com/jesstelford/scope-chains-closures" target="_blank">Scope Chains &amp; Closures</a></h4><p data-i18n="workshopper-scope-chains-closures">Learn the details of Scope, Scope Chains, Closures, and Garbage Collection.</p><code>npm install -g scope-chains-closures</code></div></code></div>
+## http://www.technology-ebay.de/the-teams/mobile-de/blog/nodejs-real-world
+### Node.js in Real World
+# Pain Points
+## Does requiring a model provide a copy of the exported object or modifies the global one?
+## Asynchronous vs Callbacks
+## Buffer Vs. Heap?
+### it says that buffer is allocated outside the V8 heap
+#### I am assuming that means that V8 allocated one heap for all its objects
+<ul><li>In V8&#xA0;<code>null</code>,&#xA0;<code>undefined</code>,&#xA0;<code>true</code>&#xA0;and&#xA0;<code>false</code>&#xA0;internally are&#xA0;<a href="http://code.google.com/p/v8/source/browse/trunk/src/objects.h?r=12408#7887" target="_blank">heap allocated objects</a>. If you are comming from Java you can say that&#xA0;<code>true</code>&#xA0;and&#xA0;<code>false</code>&#xA0;in V8 are more like&#xA0;<code>Boolean.TRUE</code>&#xA0;and<code>Boolean.FALSE</code>&#xA0;in Java.</li><li>There is an important difference between&#xA0;<em>real</em>&#xA0;local variables and variables that are captured by closures or shadowed by eval/with. Captures variables are stored in a special heap allocated structure called&#xA0;<a href="http://code.google.com/p/v8/source/browse/trunk/src/contexts.h?r=12394#165" target="_blank">Context</a>&#xA0;and are accessed indirectly. For more details about&#xA0;<em>real</em>&#xA0;vs. context allocates variables see&#xA0;<a href="http://stackoverflow.com/questions/5326300/garbage-collection-with-node-js/5328761#5328761" target="_blank">my answer to a different question</a></li><li><p>V8 has two compilers: non-optimizing (aka full) and optimizing one:</p><ul><li>Non-optimizing compiler can&apos;t store floating point numbers and integers beyond 31-bit (32-bit on x64) on the stack it always boxes them into&#xA0;<a href="http://code.google.com/p/v8/source/browse/trunk/src/objects.h?r=12408#1297" target="_blank">HeapNumber</a>s. It does not try to do register allocation and stores&#xA0;<em>real</em>&#xA0;local variables on the stack.</li><li>Optimizing compiler is much smarter. It does register allocation (linear scan) and can keep full 32-bit integers and floating point numbers on the stack and in the registers (including XMM registers).</li></ul></li><li><p>Speaking of JVM: it can perform so called&#xA0;<em>stack allocation</em>&#xA0;and allocate a non-escaping object on the stack instead of the heap. A more generic optimization (<em>scalar replacement</em>) can sometimes completely eliminate allocation of non-escaping object and explode it into separate fields.</p></li></ul>
+# Third Party
+## Package management
+### NPM
+## Frameworks
+<dl><dt>Frameworks</dt></dl><ul><li>Server frameworks:&#xA0;<a href="https://en.wikipedia.org/wiki/Express.js" title="Express.js">Express.js</a>,&#xA0;<a href="https://en.wikipedia.org/wiki/Socket.IO" title="Socket.IO">Socket.IO</a>, Koa.js, Hapi.js, Total.js, Nodal<sup id="cite_ref-44" class="reference"><a href="https://en.wikipedia.org/wiki/Node.js#cite_note-44">[44]</a></sup><sup id="cite_ref-45" class="reference"><a href="https://en.wikipedia.org/wiki/Node.js#cite_note-45">[45]</a></sup><sup id="cite_ref-46" class="reference"><a href="https://en.wikipedia.org/wiki/Node.js#cite_note-46">[46]</a></sup></li><li>MVC frameworks: Meteor, Derby, Sails, Mean, MeanJS, Tower.js, Nombo, Geddy, Compound, Yahoo! Mojito</li></ul>
+## JSDom + Server Side rendering
+### https://github.com/cheeriojs/cheerio

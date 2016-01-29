@@ -1,0 +1,43 @@
+# resources
+## http://docs.docker.com/mac/step_two/
+### doc how to get started with docker
+## https://docs.docker.com/mac/step_three/
+### whalesay example
+## https://docs.docker.com/engine/userguide/usingdocker/#run-a-simple-application
+### docker docs
+## https://hub.docker.com/
+### hub docker
+## https://github.com/wsargent/docker-cheat-sheet
+### docker cheat sheets
+# concepts
+## Container
+this message appears when you run &lt;pre&gt;&lt;code&gt;docker run hello-world&lt;/code&gt;&lt;/pre&gt;<div><br></div><div><div>Hello from Docker.</div><div>This message shows that your installation appears to be working correctly.</div><div><br></div><div>To generate this message, Docker took the following steps:</div><div>&#xA0;1. The Docker client contacted the Docker daemon.</div><div>&#xA0;2. The Docker daemon pulled the &quot;hello-world&quot; image from the Docker Hub.</div><div>&#xA0;3. The Docker daemon created a new container from that image which runs the</div><div>&#xA0; &#xA0; executable that produces the output you are currently reading.</div><div>&#xA0;4. The Docker daemon streamed that output to the Docker client, which sent it</div><div>&#xA0; &#xA0; to your terminal.</div></div>
+## ubuntu bash example
+docker run -it ubuntu bash<div><br></div><div>&#xA0; -i, --interactive=false &#xA0; &#xA0; &#xA0; &#xA0; Keep STDIN open even if not attached<br></div><div><br></div><div>&#xA0; -t, --tty=false &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; Allocate a pseudo-TTY<br></div>
+### https://docs.docker.com/engine/userguide/dockerizing/
+## Streaming input and outputs
+You can pass commands to docker containers so they can run them<div><br></div><div>docker run -d ubuntu:14.04 /bin/sh -c &quot;while true; do echo hello world; sleep 1; done&quot;<br></div>
+## Daemon
+<h2 id="a-daemonized-hello-world">A daemonized Hello world</h2><h2 id="a-daemonized-hello-world"><p>Now a container that runs a command and then exits has some uses but it&#x2019;s not overly helpful. Let&#x2019;s create a container that runs as a daemon, like most of the applications we&#x2019;re probably going to run with Docker.</p><p>Again we can do this with the&#xA0;<code>docker run</code>&#xA0;command:</p><pre><code class="hljs dns">$ docker run -d ubuntu:14.04 /bin/sh -c &quot;while true<span class="hljs-comment">; do echo hello world; sleep 1; done&quot;</span>
+<span class="hljs-number">1e5535038</span>e<span class="hljs-number">285177d52146</span><span class="hljs-number">59a068137486</span>f96ee<span class="hljs-number">5c2e85a4</span>ac52dc83f2ebe4147
+</code></pre><p>Wait, what? Where&#x2019;s our &#x201C;hello world&#x201D; output? Let&#x2019;s look at what we&#x2019;ve run here. It should look pretty familiar. We ran&#xA0;<code>docker run</code>&#xA0;but this time we specified a flag:&#xA0;<code>-d</code>. The&#xA0;<code>-d</code>&#xA0;flag tells Docker to run the container and put it in the background, to daemonize it.</p><p>We also specified the same image:&#xA0;<code>ubuntu:14.04</code>.</p><p>Finally, we specified a command to run:</p><pre><code class="hljs vim">/bin/<span class="hljs-keyword">sh</span> -<span class="hljs-keyword">c</span> <span class="hljs-string">&quot;while true; do echo hello world; sleep 1; done&quot;</span>
+</code></pre><p>This is the (hello) world&#x2019;s silliest daemon: a shell script that echoes&#xA0;<code>hello world</code>forever.</p><p>So why aren&#x2019;t we seeing any&#xA0;<code>hello world</code>&#x2019;s? Instead Docker has returned a really long string:</p><pre><code class="hljs dns"><span class="hljs-number">1e5535038</span>e<span class="hljs-number">285177d52146</span><span class="hljs-number">59a068137486</span>f96ee<span class="hljs-number">5c2e85a4</span>ac52dc83f2ebe4147
+</code></pre><p>This really long string is called a&#xA0;<em>container ID</em>. It uniquely identifies a container so we can work with it.</p><blockquote><p><strong>Note:</strong>&#xA0;The container ID is a bit long and unwieldy. A bit later, we&#x2019;ll see a shorter ID and ways to name our containers to make working with them easier.</p></blockquote><p>We can use this container ID to see what&#x2019;s happening with our&#xA0;<code>hello world</code>daemon.</p><p>Firstly let&#x2019;s make sure our container is running. We can do that with the&#xA0;<code>docker ps</code>command. The&#xA0;<code>docker ps</code>&#xA0;command queries the Docker daemon for information about all the containers it knows about.</p><pre><code class="hljs swift">$ docker ps
+<span class="hljs-type">CONTAINER</span> <span class="hljs-type">ID</span>  <span class="hljs-type">IMAGE</span>         <span class="hljs-type">COMMAND</span>               <span class="hljs-type">CREATED</span>        <span class="hljs-type">STATUS</span>       <span class="hljs-type">PORTS</span> <span class="hljs-type">NAMES</span>
+1e5535038e28  ubuntu:<span class="hljs-number">14.04</span>  /bin/sh -<span class="hljs-built_in">c</span> &apos;<span class="hljs-keyword">while</span> tr  <span class="hljs-number">2</span> minutes ago  <span class="hljs-type">Up</span> <span class="hljs-number">1</span> minute        insane_babbage
+</code></pre><p>Here we can see our daemonized container. The&#xA0;<code>docker ps</code>&#xA0;has returned some useful information about it, starting with a shorter variant of its container ID:<code>1e5535038e28</code>.</p><p>We can also see the image we used to build it,&#xA0;<code>ubuntu:14.04</code>, the command it is running, its status and an automatically assigned name,&#xA0;<code>insane_babbage</code>.</p><blockquote><p><strong>Note:</strong>&#xA0;Docker automatically generates names for any containers started. We&#x2019;ll see how to specify your own names a bit later.</p></blockquote><p>Okay, so we now know it&#x2019;s running. But is it doing what we asked it to do? To see this we&#x2019;re going to look inside the container using the&#xA0;<code>docker logs</code>&#xA0;command. Let&#x2019;s use the container name Docker assigned.</p><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>docker logs insane_babbage
+hello world
+hello world
+hello world
+. . .
+</code></pre><p>The&#xA0;<code>docker logs</code>&#xA0;command looks inside the container and returns its standard output: in this case the output of our command&#xA0;<code>hello world</code>.</p><p>Awesome! Our daemon is working and we&#x2019;ve just created our first Dockerized application!</p><p>Now we&#x2019;ve established we can create our own containers let&#x2019;s tidy up after ourselves and stop our detached container. To do this we use the&#xA0;<code>docker stop</code>&#xA0;command.</p><pre><code class="hljs vbnet">$ docker <span class="hljs-keyword">stop</span> insane_babbage
+insane_babbage
+</code></pre><p>The&#xA0;<code>docker stop</code>&#xA0;command tells Docker to politely stop the running container. If it succeeds it will return the name of the container it has just stopped.</p><p>Let&#x2019;s check it worked with the&#xA0;<code>docker ps</code>&#xA0;command.</p><pre><code class="hljs vim">$ docker <span class="hljs-keyword">ps</span>
+CONTAINER ID  IMAGE         COMMAND               CREATED        STATUS       PORTS NAMES
+</code></pre><p>Excellent. Our container has been stopped.</p></h2>
+## Docker-compose
+### https://docs.docker.com/compose/
+## Examples of dockerized apps
+### https://docs.docker.com/engine/examples/mongodb/
+## docker machine
+<b>Machine</b><span>&#xA0;lets you create&#xA0;</span><b>Docker</b><span>&#xA0;hosts on your computer, on cloud providers, and inside your own data center. It automatically creates hosts, installs&#xA0;</span><b>Docker</b><span>&#xA0;on them, then configures the&#xA0;</span><b>docker</b><span>&#xA0;client to talk to them. A &#x201C;</span><b>machine</b><span>&#x201D; is the combination of a&#xA0;</span><b>Docker</b><span>&#xA0;host and a configured client.</span>

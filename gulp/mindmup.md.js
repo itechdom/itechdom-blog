@@ -16,7 +16,7 @@ var cheerio = require('cheerio');
 
 module.exports = function(options) {
 
-	gulp.task('mindmap:md', function(options) {
+	gulp.task('mindmap:md', function(done) {
 		function processMindmap(mindmap){
 			//flatten the json
 			//iterate over all keys
@@ -103,7 +103,7 @@ module.exports = function(options) {
 
 
 		}
-		return gulp.src('./mindmaps/**/*.mup.json')
+		return gulp.src(options.drive+'/**/*.mup')
 			.pipe(data(function(file) {
 			var mindmap = parseMindmap(file);
 			var content = processMindmap(mindmap);
@@ -114,7 +114,7 @@ module.exports = function(options) {
 			.pipe(rename(function (path) {
 			path.extname = ".md"
 			}))
-			.pipe(gulp.dest('./md-blog'))
+			.pipe(gulp.dest('./content/md-blog'))
 	});
 
 };
