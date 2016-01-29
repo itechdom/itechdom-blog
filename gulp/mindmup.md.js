@@ -85,7 +85,7 @@ module.exports = function(options) {
 				}
 				if(idea.content){
 					var cleanContent = cleanHTML(idea.content);
-					f += idea.content;
+					f += cleanContent;
 					f+="\n";
 				}
 			})
