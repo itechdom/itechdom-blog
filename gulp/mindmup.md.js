@@ -16,6 +16,14 @@ var sortBy = require('sort-by');
 var mindmapAll;
 var levelsDeep;
 
+/**
+ *
+ * Best way to process this imo is to separate level 0 mindmap titles intot heir own 
+ * Then apply some deep levels styling using one method, this should include appending the rest into the parent
+ *
+ *
+**/
+
 module.exports = function(options) {
 
 	gulp.task('mindmap:md', function(done) {
@@ -104,12 +112,11 @@ module.exports = function(options) {
 		function convertToMarkdown(mindmap){
 			var f = "";
 			mindmap.map((idea)=>{
+				console.log(idea);
 				if(idea.title && idea.level){
-					if(idea.level >= 0 && idea.level <=3){
-						var head = "#".repeat(idea.level);
-						head += " ";
-						f+=head;
-					}
+					var head = "#".repeat(idea.level);
+					head += " ";
+					f+=head;
 					f+= idea.title;
 					f+="\n";
 				}
