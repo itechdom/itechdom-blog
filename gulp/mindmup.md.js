@@ -128,6 +128,7 @@ module.exports = function(options) {
 						    var ordered = sortMindmap(unordered);
 						    ordered.forEach((obj)=>{
 						    	traverseMindmap(obj.ideas,pArr,undefined);
+							pArr.unshift(obj);
 						    })
 						    var finalContent = convertToMarkdown(pArr);
 						    file.contents = new Buffer(finalContent);

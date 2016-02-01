@@ -1,3 +1,8 @@
+# Pain points
+# Project Starters
+# Resources
+# Packages
+# Concepts
 # Differences with JavaScript
 # records
 # Contracts
