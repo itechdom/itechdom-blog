@@ -1,7 +1,3 @@
-# Pain points
-# Project Starters
-# Resources
-# Packages
 # Concepts
 # Differences with JavaScript
 # records
@@ -12,6 +8,10 @@
 <div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">view : Widget -&gt; Element</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">view widget =</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; case widget of</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; ScatterPlot points -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewScatterPlot points</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;"><br></span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; LogData logs -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flow down (map viewLog logs)</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;"><br></span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; TimePlot occurances -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewTimePlot occurances</span></font></div>
 # Immutability
 # Signals and Addresses
+# Pain points
+# Project Starters
+# Resources
+# Packages
 # Functions
 # Signal
 ### http://package.elm-lang.org/packages/elm-lang/core/3.0.0/Signal

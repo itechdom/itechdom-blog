@@ -129,7 +129,7 @@ module.exports = function(options) {
 						    var currentIndex = 0;
 						    ordered.forEach((obj,index)=>{
 						    	traverseMindmap(obj.ideas,pArr,undefined);
-							if(currentIndex=0){
+							if(currentIndex == 0){
 								pArr.splice(0,0,obj);
 								currentIndex = pArr.length-1;
 							}
