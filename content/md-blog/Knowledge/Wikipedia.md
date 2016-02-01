@@ -1,30 +1,30 @@
 # Main
 # Village Pump
-### https://en.wikipedia.org/wiki/Wikipedia:Village_pump
+# https://en.wikipedia.org/wiki/Wikipedia:Village_pump
 ### Technical Issues
 # Community Portal
 ### https://en.wikipedia.org/wiki/Wikipedia:Community_portal
 # Api
-### https://en.wikipedia.org/w/api.php?action=query&titles=Operating_system&prop=revisions&rvprop=content&format=json
+# https://en.wikipedia.org/w/api.php?action=query&titles=Operating_system&prop=revisions&rvprop=content&format=json
 ### example api call
 # Tags to note
-### Current Interest
-### Hobby
-### Remotely Related
-### Related
-### Floating
+# Current Interest
+# Hobby
+# Remotely Related
+# Related
+# Floating
 # Sister Projects
-### Wikimedia Commons
+# Wikimedia Commons
 ### https://commons.wikimedia.org/wiki/Main_Page
 ### Free Media
-### Wikibooks
+# Wikibooks
 ### https://en.wikibooks.org/wiki/Main_Page
 ### Free Text books and Manuals, Extensive
 ### Computer Programming
 ### https://en.wikibooks.org/wiki/Subject:Computer_programming
 ### Education
 ### https://en.wikibooks.org/wiki/Subject:Education
-### Wikidata
+# Wikidata
 ### https://www.wikidata.org/wiki/Wikidata:Main_Page
 <b style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.4px;">Wikidata</b><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.4px;">&nbsp;is a project of the&nbsp;</span><a class="external text" href="https://wikimediafoundation.org/" target="_blank" style="color: rgb(102, 51, 102); padding-right: 13px; font-family: sans-serif; line-height: 22.4px;">Wikimedia Foundation</a><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.4px;">: a free, collaborative, multilingual, secondary database, collecting structured data to provide support for Wikipedia, Wikimedia Commons, the other Wikimedia projects, and well beyond that.</span>
 ### Used By All Other Wiki projects: Wikipedia, MediaWiki, Wikimedia .. etc
@@ -63,7 +63,7 @@
 ### Components
 ### Pain Points
 ### Is there a difference between wikidata and wikipedia index.php?
-### Wikiversity
+# Wikiversity
 ### https://en.wikiversity.org/wiki/Wikiversity:Main_Page
 ### Lessons
 ### Computer Science

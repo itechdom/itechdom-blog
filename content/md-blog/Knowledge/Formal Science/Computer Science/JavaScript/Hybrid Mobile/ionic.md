@@ -1,15 +1,13 @@
 # Intro
 # What's JavaScript
-### What does Javascript Do and Where do you find it?
-<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"><i>You find it in many places:</i></span></div><div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"><i><br></i></span></div><div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"><i>Slide show images,&nbsp;</i></span></div><div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"><i>clicking on something and doing something,</i></span></div><div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"><i>Creating online games,</i></span></div><div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"><i>creating Mobile apps (New)</i></span></div><div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"><i>this slide show is created by JavaScript</i></span></div><div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"><i><br></i></span></div>
+# What does Javascript Do and Where do you find it?
 ### How is JavaScript written: in Statements 
 <div>we load javascript same way we load css files.&nbsp;</div><div><br></div><div>The browser reads the script file line by line. these are essentially instructions. If it succeeds, the browser will show no error. If it fails we can examine the error in the console</div><div><br></div>How does the browser read those statments: Sequantially, line by line.<div><br></div><div><br></div><div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">The rules for valid format and combinations of instructions is called a&nbsp;</span><em style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">computer language</em><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">, sometimes referred to as its</span><em style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">syntax</em><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.</span><br></div><div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><br></span></div><div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">as you go, you will be able to gather different concepts into a knowledge</span></div><div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><br></span></div><div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><br></span></div><div><table style="margin: 0px; padding: 0px; border: 0px; font-size: 12px; vertical-align: baseline; font-family: Tahoma, Geneva, Arial, sans-serif; line-height: 12px; background-color: rgb(255, 255, 255);"><tbody style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline;"><tr style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline;"><td class="answercell" style="margin: 0px; padding: 0px; border: 0px; vertical-align: top;"><div class="post-text" itemprop="text" style="margin: 0px 5px 5px 0px; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; width: 660px; word-wrap: break-word; line-height: 18.2000007629395px;"><p style="margin-bottom: 1em; padding: 0px; border: 0px; vertical-align: baseline; clear: both;"><br class="Apple-interchange-newline">I write very, very detailed instructions for a very, very dumb machine</p></div></td></tr></tbody></table></div>
 ### Write gibberish statement and see if the browser shows an error
 For accessing the command line. type CMD+SHIFT+ the letter i
 ### showing and hiding images as we click
 # Core
-### Variables and Box Analogy
-Variable Name: Box Label<div>Inside the box is the value</div><div><br></div><div>values can be either a number or a string. A String is called that because it's a string of chars.</div><div><br></div><div>Example:&nbsp;</div><div>var a = 2</div><div><br></div><div>----------------</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>----------------</div><div><br></div><div><br></div><div><br></div><div>if you want to get what's inside the box "a"</div><div><br></div><div>you just do this:</div><div><br></div><div>a ! that simple</div>
+# Variables and Box Analogy
 ### Data Types
 String, Number For now
 ### Store variables and display them
@@ -37,15 +35,14 @@ Box with people on Shelves
 ### DOM
 <ul><li>Show the DOM</li><li>Explain that it's composed of objects</li><li>Explain what interactions is made to manipulate the DOM</li><li>DOM is just a list of elements connected together they call it a tree. Where there are children and parents [insert DOM picture here]</li></ul>
 ### TODO list
-### ES6
+# ES6
 # Thrid Party
-### jQuery
-jQuery is a library, think of a library as a collection of factories (functions) that produce certain results. You have to learn how to use the library: to reduce time, follow best practices that other people wrote.<div><br></div><div>jQuery has a special syntax the dollar sign, that makes it extremely easy to do DOM manipulation, binding events, create image sliders,&nbsp;</div><div><br></div><div>Learning jQuery will save you time and effort in writing a lot of code to manipulate DOM. Although there are new libraries coming up, It's used heavily by web developers.&nbsp;</div>
+# jQuery
 ### API
 Is a way to access data in other web systems. Meetup website for example. The web is full of apis that you can leverage:<div><br></div><div>Facebook</div><div>twitter</div><div>google</div><div>foursquare</div><div>etc</div>
 ### jQuery and Ajax
 jQuery has a function called ajax that we call to request data from meetup. Let's see how we do that<div><br></div><div>$.ajax</div><div>{</div><div><br></div><div><br></div><div><br></div><div>}</div>
-### Angularjs
+# Angularjs
 ### 1.0
 ### Concepts
 ### Dependency Injection
@@ -57,7 +54,7 @@ jQuery has a function called ajax that we call to request data from meetup. Let'
 ### Services
 ### Factories
 ### 2.0
-### RxJS
+# RxJS
 ### Concepts
 ### Streams
 ### Observables
@@ -75,9 +72,9 @@ jQuery has a function called ajax that we call to request data from meetup. Let'
 ### UI Builder
 ### There's a React One
 ### https://github.com/ipselon/react-ui-builder
-### React
-### Famous.io
+# React
+# Famous.io
 ### Concepts
 ### Webgl + DOM Rendering
 # Design Patterns
-### https://carldanley.com/javascript-design-patterns/
+# https://carldanley.com/javascript-design-patterns/

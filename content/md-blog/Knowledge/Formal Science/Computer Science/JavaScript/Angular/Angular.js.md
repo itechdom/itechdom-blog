@@ -1,12 +1,12 @@
 # Concepts
 # 2.0
-### What' Different
+# What' Different
 ### uses typescript
 ### data types
 ### Components only structure, controller attached
 ### Scopes
 ### all isolated
-### Concepts
+# Concepts
 ### Archeticture
 ### https://angular.io/docs/ts/latest/guide/architecture.html
 ### Building Blocks
@@ -60,19 +60,19 @@
 ### angular core
 <span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;">The&nbsp;</span><code style="box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);">angular2/core</code><span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;">&nbsp;library is the primary Angular library module from which we get most of what we need.&nbsp;</span>
 # Resources
-### cheat sheet
+# cheat sheet
 ### https://angular.io/docs/ts/latest/guide/cheatsheet.html
-### upgrading from 1.x
+# upgrading from 1.x
 ### https://angular.io/docs/ts/latest/guide/upgrade.html
 # Third Party
-### https://github.com/bevacqua/angular-dragula
+# https://github.com/bevacqua/angular-dragula
 ### Drag and Drop
-### http://plnkr.co/edit/kaOmmXVaBJdUbGUtvDlM?p=info
+# http://plnkr.co/edit/kaOmmXVaBJdUbGUtvDlM?p=info
 ### Angular 2.0 playground
-### Angular universal
+# Angular universal
 ### Server side rendering
 ### https://github.com/angular/universal
-### Zone.js
+# Zone.js
 ### https://www.youtube.com/watch?v=3IqtmUscE_U
 ### debugging, testing, profiling
 ### trace async tasks

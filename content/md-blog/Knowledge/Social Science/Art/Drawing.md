@@ -3,29 +3,29 @@
 # Thinking from left instead of Right side
 # Focus
 # Concepts
-### Upside Down Drawing
-### Drawing from real objects
-### Following Lines
-### Making rough lines and completing them after
-### Drawing Shapes
-### Cartooning
+# Upside Down Drawing
+# Drawing from real objects
+# Following Lines
+# Making rough lines and completing them after
+# Drawing Shapes
+# Cartooning
 ### Placement of features
 ### Drawing a sphere
 ### Proportions
 # Projects
-### Games?
+# Games?
 ### Concealed
 ### https://drive.google.com/open?id=1pU3YEnGdlZ0GyxIZwri9Vt-kNGE46dkDRRyKLBf_hJE
 ### Nice quote from JB developer of Braid
 <p style="box-sizing: inherit; margin-bottom: 0.9rem; padding: 0px; font-size: 0.9rem; line-height: 1.5; text-rendering: optimizeLegibility; color: rgb(34, 34, 34);"><b style="box-sizing: inherit; line-height: inherit;"><i style="box-sizing: inherit; line-height: inherit;">JB:</i></b>&nbsp;Well, a lot of games get designed in a top-down way where you decide before you make the game, what the game is about. Then you decide all the details and then you basically make the details happen. The flaw in that approach is that you’re limited by your initial idea. The most interesting idea that you had is what you’re going to end up making, and probably less than that because games are hard to make so you end up not being able to do everything that you wanted.</p><p style="box-sizing: inherit; margin-bottom: 0.9rem; padding: 0px; font-size: 0.9rem; line-height: 1.5; text-rendering: optimizeLegibility; color: rgb(34, 34, 34);">With (“Braid” and “The Witness”), what I did was a little bit different. I decided at the beginning what the game was probably about, but I didn’t try to figure out all the details. I just looked at what happened with that subject matter and started playing with it. … Sometimes that will make the game become something a little bit different than that initial idea I had, but it always becomes better and more interesting than the original idea. That’s sort of where the magic comes from, you find things that are better than what you (originally) thought of.</p>
 ### DoomDune
 ### https://docs.google.com/document/d/1s1BFAijrT-R8R8Ums2Ql5yzO6PqpF_2YeivEuWldl0U/edit
-### Comics
+# Comics
 # Resources
-### Books
+# Books
 ### Drawing from the right side of the brain
 ### https://read.amazon.com/
-### Online
+# Online
 ### Udemy
 ### https://www.udemy.com/home/my-courses/learning/
 ### Concepts
@@ -111,11 +111,11 @@ Draw anything in shapes, Remember focus only on the shapes
 ### I like this style
 ### http://conceptartworld.com/?p=41050
 ### http://conceptartworld.com/?p=40212
-### Meta Resources
+# Meta Resources
 ### http://www.creativebloq.com/digital-art/10-top-digital-art-resources-5131223
 ### Top 10 digital art websites
 # How to
-### Draw a Human
+# Draw a Human
 ### Eyes
 ### http://zombutts.deviantart.com/art/Simple-Eye-Tutorial-583475654
 ### Poses
@@ -132,10 +132,10 @@ Draw anything in shapes, Remember focus only on the shapes
 ### Body
 ### Female
 ### http://www.deviantart.com/art/Female-Body-Practice-Draw-with-Jazza-571980477
-### Draw a dragon
+# Draw a dragon
 ### Head
 ### http://www.dragoart.com/tuts/5523/1/1/how-to-draw-a-dragon-head.htm
-### Pixel Art
+# Pixel Art
 ### https://www.youtube.com/watch?v=GECdvBzkaCs
 ### https://www.youtube.com/watch?v=ebF1pIxLpnU
 ### Pixel art techniques

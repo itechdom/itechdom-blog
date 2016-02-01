@@ -1,12 +1,11 @@
 # Concepts
 # JSON Graph
-### allows json to have graph and linking (think of it as relations in SQL)
-### Adds identity to model
+# allows json to have graph and linking (think of it as relations in SQL)
+# Adds identity to model
 ### helps with caching and removing duplicates
-### identity path
-### new primitive json types
-<h2 id="new-primitive-value-types" style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: -50px; font-size: 30px; position: relative; border-top-width: 70px; border-top-style: solid; border-top-color: transparent; z-index: -1; background-color: rgb(247, 247, 247); background-clip: padding-box;">New Primitive Value Types</h2><p style="box-sizing: border-box; background-color: rgb(247, 247, 247);">In addition to JSON’s primitive types, JSON Graph introduces three new primitive types:</p><ol style="box-sizing: border-box; background-color: rgb(247, 247, 247);"><li style="box-sizing: border-box;">Reference</li><li style="box-sizing: border-box;">Atom</li><li style="box-sizing: border-box;">Error</li></ol><p style="box-sizing: border-box; background-color: rgb(247, 247, 247);">Each of these types is a JSON Graph object with a “$type” key that differentiates it from regular JSON objects, and describes the type of its “value” key. These three JSON Graph primitive types are always retrieved and replaced in their entirety just like a primitive JSON value. None of the JSON Graph values can be mutated using any of the available abstract JSON Graph operations.</p>
-### reference is like a symbolic link in unix
+# identity path
+# new primitive json types
+# reference is like a symbolic link in unix
 # Paths
 ### A way to access a subset of the JSON Graph
 # Data Sources
@@ -25,12 +24,12 @@
 # Model
 ### implemented on the client
 # Resources
-### http://netflix.github.io/falcor/
-### https://auth0.com/blog/2015/08/28/getting-started-with-falcor/?utm_source=javascriptweekly&utm_medium=email
+# http://netflix.github.io/falcor/
+# https://auth0.com/blog/2015/08/28/getting-started-with-falcor/?utm_source=javascriptweekly&utm_medium=email
 ### Getting started with falcor
 # Pain Points
-### It says one end point, but there's a router
+# It says one end point, but there's a router
 ### not really, they are saying that routes are flexible enough and don't follow a static url to access subsets of data
 # features
-### Does automatic chaching
-### manages data model on client and server
+# Does automatic chaching
+# manages data model on client and server

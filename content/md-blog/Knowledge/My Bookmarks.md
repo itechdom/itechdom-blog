@@ -1,19 +1,19 @@
 #  Branchit
 # Libraries
-### React Ui Builder
+# React Ui Builder
 ### https://github.com/ipselon/react-ui-builder
 React ui builder
-### tree manipulation
+# tree manipulation
 ### https://github.com/afiore/arboreal
-### XML2JS converter
+# XML2JS converter
 ### https://github.com/Leonidas-from-XIV/node-xml2js
-### JS Repl
+# JS Repl
 ### https://github.com/replit/jsrepl
-### Incremental DOM
+# Incremental DOM
 ### https://github.com/google/incremental-dom
-### Independent router
+# Independent router
 ### http://router5.github.io/
-### JS IDE
+# JS IDE
 ### https://github.com/scripted-editor/scripted
 # Command line tutorials
 ### https://github.com/jlevy/the-art-of-command-line?utm_campaign=explore-email&utm_medium=email&utm_source=newsletter&utm_term=weekly
@@ -158,9 +158,9 @@ INVESTIGATING ITS EFFECTIVENESS FOR  
 E‐LEARNING
 ### http://www.eurodl.org/materials/contrib/2014/Domun_Bahadur.pdf
 # I learn
-### Journals
+# Journals
 ### http://thescipub.com/journals/jcs
-### JavaScript
+# JavaScript
 ### Frameworks
 ### cyclejs
 ### http://cycle.js.org/
@@ -229,9 +229,9 @@ E‐LEARNING
 ### General Concepts
 ### Using Small Modules
 ### http://dailyjs.com/2015/07/02/small-modules-complexity-over-size/
-### Courses to Learn computer science
+# Courses to Learn computer science
 ### https://github.com/prakhar1989/awesome-courses
-### Languages
+# Languages
 ### clojure
 ### http://www.creativeapplications.net/tutorials/introduction-to-clojure-part-1/
 ### scala
@@ -252,17 +252,17 @@ E‐LEARNING
 ### https://github.com/sindresorhus/awesome
 ### Criteria for a successful software
 ### http://12factor.net/
-### Prototyping
+# Prototyping
 ### framer
 ### http://framerjs.com/
-### Hardware
+# Hardware
 ### Hardware descriptor language
 ### https://en.m.wikipedia.org/wiki/Hardware_description_language
-### Database
+# Database
 ### streaming
 ### pipeline db
 ### http://www.pipelinedb.com/
-### UX/ UI
+# UX/ UI
 ### Learning
 ### http://uxmastery.com/resources/ux-courses/
 ### List of courses
@@ -270,13 +270,12 @@ E‐LEARNING
 ### http://webdesign.tutsplus.com/series/ux-foundations--webdesign-8418
 ### tools
 ### https://balsamiq.com/
-### SEO
-https://support.google.com/webmasters/answer/189077?hl=en<div>https://support.google.com/webmasters/answer/182192<br></div><div>https://developers.google.com/webmasters/ajax-crawling/docs/getting-started<br></div><div>http://searchengineland.com/the-ultimate-guide-to-multilingual-and-multiregional-seo-157838<br></div>
-### VIM
+# SEO
+# VIM
 ### Cheat sheet
 ### http://www.fprintf.net/vimCheatSheet.html
 ### http://www.viemu.com/vi-vim-cheat-sheet.gif
-### Science
+# Science
 ### Cognitive
 ### How to test human cognition
 ### https://www.google.com/search?q=how+test+humam+cognitive+ability+%3F&oq=how+test+humam+cognitive+ability+%3F&aqs=chrome..69i57.13601j0j4&client=ms-android-tmobile-us&sourceid=chrome-mobile&espv=1&ie=UTF-8
@@ -317,19 +316,19 @@ https://support.google.com/webmasters/answer/189077?hl=en<div>https://support.go
 ### https://drive.google.com/open?id=1bI21YP4PIYUS22zXrdo9wFA0klBLn29oOJJnqXmla74
 ### Branches of science guide
 ### https://drive.google.com/open?id=0B9tPYCpuqoIreENZMzI0cDZiTzg
-### Self Development
+# Self Development
 ### Know your worth
 ### http://offerletter.io/
-### Game Development
+# Game Development
 ### Places to find game designers
 ### http://www.pixelprospector.com/places-to-find-graphics-artists/
 ### Unity
 ### utilities
 ### http://esotericsoftware.com/
 # itechdom
-### CMS
+# CMS
 ### https://github.com/Ulbora/ulboracms
-### JavaScript
+# JavaScript
 ### Angularjs
 ### SEO
 ### https://prerender.io/js-seo/angularjs-seo-get-your-site-indexed-and-to-the-top-of-the-search-results/
@@ -349,7 +348,7 @@ https://support.google.com/webmasters/answer/189077?hl=en<div>https://support.go
 ### Utility
 ### Trine
 ### https://github.com/jussi-kalliokoski/trine
-### Websites on Markup
+# Websites on Markup
 ### How to Node
 ### https://github.com/creationix/howtonode.org
 ### uses
@@ -360,23 +359,23 @@ https://support.google.com/webmasters/answer/189077?hl=en<div>https://support.go
 ### Wheat
 ### Git powered javascript blog
 ### https://www.npmjs.com/package/wheat
-### Free Stock Photos
+# Free Stock Photos
 ### http://www.entrepreneur.com/article/238646
 ### http://www.gratisography.com/
 ### http://blog.hubspot.com/marketing/75-free-stock-photos-im-ht?kwp_0=9739&source=hspd-keywee-450-stock-photos-20150210&kwp_4=78013&kwp_1=125631
-### Easy Api Creation
+# Easy Api Creation
 ### http://deployd.com/
-### CSS TRICKS
+# CSS TRICKS
 ### https://css-tricks.com/seamless-responsive-photo-grid/
 ### http://www.wmyl.se/en/blog/proportional-scaling-responsive-boxes-using-just-css
 ### CSS3
 ### http://spyrestudios.com/28-free-css3-code-snippets/
-### Admin Dashboard
+# Admin Dashboard
 ### http://www.designsave.com/2014/07/best-free-responsive-admin-dashboard-templates.html
-### About Design
+# About Design
 ### color theory
 ### http://www.designyourway.net/blog/inspiration/design-basics-learn-about-color-theory/?utm_source=feedburner&utm_medium=twitter&utm_campaign=Feed%3A+boogiesbc+%28Design+your+way%29
-### banking systems
+# banking systems
 ### ofx
 ### http://www.ofx.net/OFXExamplesPage/OFXExamples.aspx
 ### https://github.com/chilts/node-ofx

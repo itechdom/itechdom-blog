@@ -1,6 +1,6 @@
 # Credit Cards
 # https://www.citicards.com/cards/wv/html/cm/student/credit-card-abcs/how-credit-cards-work/finance-charges-and-fees.html
-### APR Explained
+# APR Explained
 # APR
 ### Divide it by 12
 ### Charged on carry over balance
@@ -25,7 +25,7 @@
 ### Wells Fargo
 ### American Express
 # Budget
-### Monthly/Weekly Budget
+# Monthly/Weekly Budget
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrRXJuMDdfWW1DUXc
 # Resources
 # Tools

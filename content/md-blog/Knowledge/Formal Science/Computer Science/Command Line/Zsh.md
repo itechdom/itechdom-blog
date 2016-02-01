@@ -1,11 +1,8 @@
 # Concepts
 # Key Bindings
-### Moving
-<ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">In Bash, use&nbsp;<strong style="box-sizing: border-box;">ctrl-w</strong>&nbsp;to delete the last word, and&nbsp;<strong style="box-sizing: border-box;">ctrl-u</strong>&nbsp;to delete all the way back to the start of the line. Use&nbsp;<strong style="box-sizing: border-box;">alt-b</strong>&nbsp;and&nbsp;<strong style="box-sizing: border-box;">alt-f</strong>&nbsp;to move by word,&nbsp;<strong style="box-sizing: border-box;">ctrl-a</strong>&nbsp;to move cursor to beginning of line,&nbsp;<strong style="box-sizing: border-box;">ctrl-e</strong>&nbsp;to move cursor to end of line,&nbsp;<strong style="box-sizing: border-box;">ctrl-k</strong>&nbsp;to kill to the end of the line,&nbsp;<strong style="box-sizing: border-box;">ctrl-l</strong>&nbsp;to clear the screen. See&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">man readline</code>&nbsp;for all the default keybindings in Bash. There are a lot. For example&nbsp;<strong style="box-sizing: border-box;">alt-.</strong>&nbsp;cycles through previous arguments, and&nbsp;<strong style="box-sizing: border-box;">alt-</strong>* expands a glob.</p></li></ul>
-### set to vi style
-<ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">Alternatively, if you love vi-style key-bindings, use&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">set -o vi</code>&nbsp;(and&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">set -o emacs</code>&nbsp;to put it back)</p></li></ul>
-### going back to a previous command
-<ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">If you are halfway through typing a command but change your mind, hit&nbsp;<strong style="box-sizing: border-box;">alt-#</strong>&nbsp;to add a&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">#</code>&nbsp;at the beginning and enter it as a comment (or use&nbsp;<strong style="box-sizing: border-box;">ctrl-a</strong>,&nbsp;<strong style="box-sizing: border-box;">#</strong>,&nbsp;<strong style="box-sizing: border-box;">enter</strong>). You can then return to it later via command history.</p></li></ul>
+# Moving
+# set to vi style
+# going back to a previous command
 # commands
 ### check which processes are listening to what
 <ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">Check what processes are listening via&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">netstat -lntp</code>&nbsp;or&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">ss -plat</code>&nbsp;(for TCP; add&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">-u</code>&nbsp;for UDP).</p></li><li style="box-sizing: border-box;"></li></ul>
@@ -104,16 +101,16 @@ find . &nbsp;-name 'grunt-*' -exec rm -r {} +
 # Everyday use
 # Pain Points
 # Third Party
-### https://github.com/robbyrussell/oh-my-zsh
+# https://github.com/robbyrussell/oh-my-zsh
 ### all of zsh configs
 # Resources
-### http://zsh.sourceforge.net/Intro/intro_1.html
+# http://zsh.sourceforge.net/Intro/intro_1.html
 ### zsh manual
-### http://www.zsh.org/
+# http://www.zsh.org/
 ### zsh website
-### https://github.com/robbyrussell/oh-my-zsh
+# https://github.com/robbyrussell/oh-my-zsh
 ### ohmyzsh
-### https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins
+# https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins
 ### plugins
-### https://github.com/robbyrussell/oh-my-zsh/wiki/themes
+# https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ### themes

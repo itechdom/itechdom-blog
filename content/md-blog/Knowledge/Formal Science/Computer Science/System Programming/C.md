@@ -9,22 +9,21 @@
 ### a variable whose value is the address of another
 # Memory Management
 # What it's good for
-### Low level
-### Replacement for Assembly Language
-### Portable
-<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Despite its low-level capabilities, the language was designed to encourage&nbsp;</span><a href="https://en.wikipedia.org/wiki/Cross-platform" title="Cross-platform" style="color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" target="_blank">cross-platform</a><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">&nbsp;programming. A standards-compliant and&nbsp;</span><a href="https://en.wikipedia.org/wiki/Porting" title="Porting" style="color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" target="_blank">portably</a><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">&nbsp;written C program can be compiled for a very wide variety of computer platforms and operating systems with few changes to its source code. The language has become available on a very wide range of platforms, from embedded&nbsp;</span><a href="https://en.wikipedia.org/wiki/Microcontroller" title="Microcontroller" style="color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" target="_blank">microcontrollers</a><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">&nbsp;to&nbsp;</span><a href="https://en.wikipedia.org/wiki/Supercomputer" title="Supercomputer" style="color: rgb(11, 0, 128); font-family: sans-serif; line-height: 22.3999996185303px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" target="_blank">supercomputers</a><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">.</span>
+# Low level
+# Replacement for Assembly Language
+# Portable
 # Resources
-### https://en.wikipedia.org/wiki/C_(programming_language)
-### Blogs
+# https://en.wikipedia.org/wiki/C_(programming_language)
+# Blogs
 ### Web Frameworks in C
 ### https://medium.com/@lucperkins/web-development-in-c-crazy-or-crazy-like-a-fox-ff723209f8f5#.9rf3jjlq5
 # Third Party
-### Web Framework
+# Web Framework
 ### https://kore.io/
 ### https://github.com/davidmoreno/onion
 # Pain Points
-### Lexical Variable Scope
-### Pass by
+# Lexical Variable Scope
+# Pass by
 ### Value
 ### it says function parameters is always passed by value
 ### Pointer

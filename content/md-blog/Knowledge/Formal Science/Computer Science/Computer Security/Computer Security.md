@@ -7,5 +7,5 @@
 ### Black Hat
 ### illegal hacker
 # Resources
-### https://en.wikipedia.org/wiki/Computer_security
+# https://en.wikipedia.org/wiki/Computer_security
 # Jobs

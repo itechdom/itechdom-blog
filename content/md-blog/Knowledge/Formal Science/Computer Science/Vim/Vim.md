@@ -1,29 +1,28 @@
 # Good Vimrc
 # http://dougblack.io/words/a-good-vimrc.html
 # Conventions
-### < >
+# < >
 ### Control whatever is in between
-### Word vs word
-WORD: is a whole word till a comma or any other separator<div>word: is words till a space</div><div><br></div><div><div><br></div></div>
+# Word vs word
 # Plugins
-### Surround
+# Surround
 ### http://vimawesome.com/plugin/surround-vim
 ### ysiw" to surround with " till the next notation
-### Easy Motion
+# Easy Motion
 ### https://github.com/easymotion/vim-easymotion
-### Vimproc
+# Vimproc
 ### https://github.com/Shougo/vimproc.vim
 ### execute commands in Vim
 # Vim Commands
-### Cheat sheet
+# Cheat sheet
 ### http://www.fprintf.net/vimCheatSheet.html
 ### http://www.viemu.com/vi-vim-cheat-sheet.gif
 ### the dot here means there's extra stuff
-### Search for a code in the whole project
+# Search for a code in the whole project
 ### https://lostechies.com/derickbailey/2010/05/11/vim-grep-find-all-occurrences-of-text-in-your-project/
 ### :vimgrep /code_snippet/gj ./**/*.rb
 ### Then type :cw
-### Shortcuts
+# Shortcuts
 ### C
 ### remove everything till you hit the end of the line
 ### R
@@ -78,12 +77,12 @@ WORD: is a whole word till a comma or any other separator<div>word: is words til
 ### .
 ### repeat command
 ### so If i indented the line once I can just type it and it will repeat
-### %s
+# %s
 ### replace
 # Pain Points
-### !
+# !
 ### I dunno
-### |
-### t
-### f
-### m
+# |
+# t
+# f
+# m

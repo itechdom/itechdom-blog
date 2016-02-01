@@ -1,6 +1,6 @@
 # gap
 # Platform Support
-### android
+# android
 ### Screens
 ### Samsung 
 ### S4 - S6
@@ -11,7 +11,7 @@
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrdUlqV3NvcklMMjhqemxBdXQ4cGc0R1BDY1Zn
 ### Version
 ### 4.0x
-### ios
+# ios
 ### 7 or 8?
 ### https://cordova.apache.org/docs/en/5.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide
 # code work
@@ -26,6 +26,6 @@
 ### https://cordova.apache.org/docs/en/5.0.0/plugin_ref_plugman.md.html#Using%20Plugman%20to%20Manage%20Plugins
 # resources
 # native
-### ios
+# ios
 # Backend
-### WP_API
+# WP_API

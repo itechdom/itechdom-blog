@@ -1,6 +1,6 @@
 # Resources
 # https://en.wikipedia.org/wiki/Build_automation
-### Wiki
+# Wiki
 # types
-### CI
+# CI
 ### https://en.wikipedia.org/wiki/Continuous_integration

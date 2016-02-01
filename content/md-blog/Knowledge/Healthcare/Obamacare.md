@@ -1,10 +1,10 @@
 # Resources
 # http://connectforhealthco.com/
-### connect for colorado
+# connect for colorado
 # http://planfinder.connectforhealthco.com/getPlans
 ### plans
 ### around 300 - 400
 # Pain Points
-### What's a broker?
+# What's a broker?
 # Info
-### opens nov 1st
+# opens nov 1st

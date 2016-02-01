@@ -1,11 +1,8 @@
 # Concepts
 # Key Bindings
-### Moving
-<ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">In Bash, use&nbsp;<strong style="box-sizing: border-box;">ctrl-w</strong>&nbsp;to delete the last word, and&nbsp;<strong style="box-sizing: border-box;">ctrl-u</strong>&nbsp;to delete all the way back to the start of the line. Use&nbsp;<strong style="box-sizing: border-box;">alt-b</strong>&nbsp;and&nbsp;<strong style="box-sizing: border-box;">alt-f</strong>&nbsp;to move by word,&nbsp;<strong style="box-sizing: border-box;">ctrl-a</strong>&nbsp;to move cursor to beginning of line,&nbsp;<strong style="box-sizing: border-box;">ctrl-e</strong>&nbsp;to move cursor to end of line,&nbsp;<strong style="box-sizing: border-box;">ctrl-k</strong>&nbsp;to kill to the end of the line,&nbsp;<strong style="box-sizing: border-box;">ctrl-l</strong>&nbsp;to clear the screen. See&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">man readline</code>&nbsp;for all the default keybindings in Bash. There are a lot. For example&nbsp;<strong style="box-sizing: border-box;">alt-.</strong>&nbsp;cycles through previous arguments, and&nbsp;<strong style="box-sizing: border-box;">alt-</strong>* expands a glob.</p></li></ul>
-### set to vi style
-<ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">Alternatively, if you love vi-style key-bindings, use&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">set -o vi</code>&nbsp;(and&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">set -o emacs</code>&nbsp;to put it back)</p></li></ul>
-### going back to a previous command
-<ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">If you are halfway through typing a command but change your mind, hit&nbsp;<strong style="box-sizing: border-box;">alt-#</strong>&nbsp;to add a&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">#</code>&nbsp;at the beginning and enter it as a comment (or use&nbsp;<strong style="box-sizing: border-box;">ctrl-a</strong>,&nbsp;<strong style="box-sizing: border-box;">#</strong>,&nbsp;<strong style="box-sizing: border-box;">enter</strong>). You can then return to it later via command history.</p></li></ul>
+# Moving
+# set to vi style
+# going back to a previous command
 # commands
 ### check which processes are listening to what
 <ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">Check what processes are listening via&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">netstat -lntp</code>&nbsp;or&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">ss -plat</code>&nbsp;(for TCP; add&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">-u</code>&nbsp;for UDP).</p></li><li style="box-sizing: border-box;"></li></ul>
@@ -106,28 +103,25 @@ find . &nbsp;-name 'grunt-*' -exec rm -r {} +<div><br></div><div>the . and 'word
 
 # Everyday use
 # Pain Points
-### What does xargs do? parallelism running multiple commands?
-### How do I use variables
+# What does xargs do? parallelism running multiple commands?
+# How do I use variables
 # Third Party
-### Deal with git in a nice way
+# Deal with git in a nice way
 ### https://github.com/facebook/PathPicker
-### Document Converter
+# Document Converter
 ### http://pandoc.org/
-### JSON Processor
+# JSON Processor
 ### https://stedolan.github.io/jq/
-### Excel/CSV 
-<ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">For Excel or CSV files,&nbsp;<a href="https://github.com/onyxfish/csvkit" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;">csvkit</a>&nbsp;provides&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">in2csv</code>,&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">csvcut</code>,&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">csvjoin</code>,&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">csvgrep</code>, etc.</p></li><li style="box-sizing: border-box;"></li></ul>
-### Amazon
-<ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><p style="box-sizing: border-box; margin-top: 16px; margin-bottom: 16px;">For Amazon S3,&nbsp;<a href="https://github.com/s3tools/s3cmd" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;"><code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">s3cmd</code></a>&nbsp;is convenient and&nbsp;<a href="https://github.com/bloomreach/s4cmd" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;"><code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">s4cmd</code></a>&nbsp;is faster. Amazon's&nbsp;<a href="https://github.com/aws/aws-cli" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;"><code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">aws</code></a>&nbsp;is essential for other AWS-related tasks.</p></li></ul>
-### https://nvbn.github.io/2015/10/08/how-thefuck-works/
+# Excel/CSV 
+# Amazon
+# https://nvbn.github.io/2015/10/08/how-thefuck-works/
 ### How the fuck
 # Resources
-### https://github.com/jlevy/the-art-of-command-line?utm_campaign=explore-email&utm_medium=email&utm_source=newsletter&utm_term=weekly
+# https://github.com/jlevy/the-art-of-command-line?utm_campaign=explore-email&utm_medium=email&utm_source=newsletter&utm_term=weekly
 ### the art of the command line
-### http://cli.learncodethehardway.org/book/
-### More resources
-<h2 style="box-sizing: border-box; margin-top: 1em; margin-bottom: 16px; line-height: 1.225; font-size: 1.75em; position: relative; padding-bottom: 0.3em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;">More resources</h2><ul style="box-sizing: border-box; padding-left: 2em; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><li style="box-sizing: border-box;"><a href="https://github.com/alebcay/awesome-shell" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;">awesome-shell</a>: A curated list of shell tools and resources.</li><li style="box-sizing: border-box;"><a href="http://redsymbol.net/articles/unofficial-bash-strict-mode/" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;">Strict mode</a>&nbsp;for writing better shell scripts.</li><li style="box-sizing: border-box;"><a href="https://github.com/koalaman/shellcheck" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;">shellcheck</a>: A shell script static analysis tool. Essentially, lint for bash/sh/zsh.</li><li style="box-sizing: border-box;"><a href="http://www.dwheeler.com/essays/filenames-in-shell.html" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;">Filenames and Pathnames in Shell</a>: The sadly complex minutiae on how to handle filenames correctly in shell scripts.</li></ul>
+# http://cli.learncodethehardway.org/book/
+# More resources
 # Shells
-### https://en.wikipedia.org/wiki/Bash_(Unix_shell)
-### Bash
-### Zsh
+# https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+# Bash
+# Zsh

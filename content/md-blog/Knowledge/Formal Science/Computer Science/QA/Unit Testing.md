@@ -1,4 +1,4 @@
 # JavaScript
 # Angular.js
-### resources
+# resources
 ### https://docs.angularjs.org/guide/unit-testing

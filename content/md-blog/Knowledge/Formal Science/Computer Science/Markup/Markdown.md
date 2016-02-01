@@ -1,6 +1,6 @@
 # HTML
 # CSS
-### Browser with/ without HTML and CSS
+# Browser with/ without HTML and CSS
 ### Tags
 http://www.sitepoint.com/web-foundations/elements/<div>list of all html elements and their categories</div>
 ### Text

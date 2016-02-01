@@ -50,19 +50,19 @@
 <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// Exporting the plugin main function</span>
 <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">module</span>.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">exports</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> gulpPrefixer;</pre></div>
 # Third party
-### Through
+# Through
 ### https://www.npmjs.com/package/through2
 ### Creates streams that are both readable and writeable
 ### through suggests that files go through two functions
 ### Read
 ### Write
 # Resources
-### https://github.com/substack/stream-handbook
+# https://github.com/substack/stream-handbook
 ### node stream handbook
-### https://github.com/wearefractal/vinyl-fs
+# https://github.com/wearefractal/vinyl-fs
 ### vinyl-fs
 ### metadata with a file?
-### https://github.com/gulpjs/gulp/blob/master/docs/API.md
+# https://github.com/gulpjs/gulp/blob/master/docs/API.md
 ### gulp docs
 ### https://github.com/isaacs/node-glob
 ### glob options

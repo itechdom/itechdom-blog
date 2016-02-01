@@ -118,7 +118,7 @@ module.exports = function(options) {
 			})
 			return f;
 		}
-		return gulp.src(options.drive+'/**/Elm.mup')
+		return gulp.src(options.drive+'/**/*.mup')
 						    .pipe(data(function(file) {
 						    var mindmap = parseMindmap(file);
 						    var pArr = [];

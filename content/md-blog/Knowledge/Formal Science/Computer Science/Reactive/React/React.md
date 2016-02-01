@@ -7,25 +7,24 @@
 ### Redux
 # Standalone Ui Library
 # Thrid Party
-### React Ui Builder
+# React Ui Builder
 ### https://github.com/ipselon/react-ui-builder
-### React Webpack generator
+# React Webpack generator
 ### https://github.com/newtriks/generator-react-webpack#app
-### React Native
+# React Native
 ### https://facebook.github.io/react-native/
 # Resources
-### React + RxJS todo
+# React + RxJS todo
 ### https://github.com/fdecampredon/react-rxjs-todomvc
-### Main Website
+# Main Website
 ### http://facebook.github.io/react/
-### Awesome List
+# Awesome List
 ### https://github.com/enaqx/awesome-react
-### Intro to React
+# Intro to React
 ### http://www.instrument.com/latest/an-introduction-to-react-js
-### Netflix Likes React
+# Netflix Likes React
 ### http://techblog.netflix.com/2015/01/netflix-likes-react.html
-### React Starter Kit
-<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 16px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; background-color: rgb(247, 247, 247);"><span style="color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; background-color: rgb(224, 224, 224);">a skeleton of an "isomorphic" web application / SPA built with React.js, Express, Flux, ES6+, JSX, Babel, PostCSS, Webpack, BrowserSync..</span></pre>
+# React Starter Kit
 ### http://www.reactstarterkit.com/
 ### Testing
 ### Jest
@@ -86,10 +85,10 @@
 ### Post CSS
 ### ES6
 # Similar to 
-### Angularjs Directives
-### Web Components
+# Angularjs Directives
+# Web Components
 # Features
-### Ui Rendered in
+# Ui Rendered in
 ### Server
 ### Client
 ### Mobile

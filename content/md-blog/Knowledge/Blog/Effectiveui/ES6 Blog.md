@@ -1,6 +1,6 @@
 # Concepts
 # Active voice
-### Tasia wrote this
+# Tasia wrote this
 # my tips and my experience
 ### Educational Voice
 # 500 - 700 words
@@ -762,4 +762,4 @@ Every ran into the situation where you wanted variable to be local, well ES6 has
 ###  6 ES6 features you can't miss
 # Brain Dump
 # Resources
-### https://drive.google.com/open?id=0B9tPYCpuqoIreGR3RVlkdDhsMHc
+# https://drive.google.com/open?id=0B9tPYCpuqoIreGR3RVlkdDhsMHc

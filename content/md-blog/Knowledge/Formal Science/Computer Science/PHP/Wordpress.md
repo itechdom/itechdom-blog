@@ -1,11 +1,10 @@
 # Core
 # Vnext/ Asp.net 5
-### https://github.com/aspnet/Home/blob/dev/README.md
-### DNX
-<span style="color: rgb(102, 102, 102); font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; line-height: 22.3999996185303px;">The DNX (a .NET Execution Environment) contains the code required to bootstrap and run an application, including the compilation system, SDK tools, and the native CLR hosts.</span>
+# https://github.com/aspnet/Home/blob/dev/README.md
+# DNX
 ### Includes compilation, sdk, CLR
 ### https://github.com/aspnet/dnx
-### DOCS
+# DOCS
 ### http://docs.asp.net/en/latest/conceptual-overview/aspnet.html
 # .NET
 ### CLR
@@ -19,13 +18,13 @@
 ### https://i-msdn.sec.s-msft.com/dynimg/IC104620.gif
 # QUESTIONS I HAVE
 # Project Starters
-### https://www.nuget.org/packages/Boilerplate.Web.Mvc5/
-### https://visualstudiogallery.msdn.microsoft.com/6cf50a48-fc1e-4eaf-9e82-0b2a6705ca7d
+# https://www.nuget.org/packages/Boilerplate.Web.Mvc5/
+# https://visualstudiogallery.msdn.microsoft.com/6cf50a48-fc1e-4eaf-9e82-0b2a6705ca7d
 # Programmed in
-### C#
+# C#
 ### Tutorials Point
 ### http://www.tutorialspoint.com/csharp/
 ### MSDN
 ### https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx
-### Other
+# Other
 ### Vb.net

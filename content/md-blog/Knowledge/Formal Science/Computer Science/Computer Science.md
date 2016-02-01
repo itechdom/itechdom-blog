@@ -1,12 +1,12 @@
 # Resources
 # Video Series
-### Code Genius
-### Code curry
+# Code Genius
+# Code curry
 # Operating Systems
-### My OS Road
+# My OS Road
 ### https://drive.google.com/open?id=0B9tPYCpuqoIramtYcGVPUngtZjA
 # Computer Archeticture
-### Software Arecheticture
+# Software Arecheticture
 ### Domain Driven Design
 ### http://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon-ebook/dp/B00BCLEBN8/ref=sr_1_3?s=digital-text&ie=UTF8&qid=1449423098&sr=1-3
 ### Book
@@ -43,10 +43,9 @@
 ### Behavior Driven Development
 # Information Systems
 # Software Development
-### https://drive.google.com/open?id=0B9tPYCpuqoIrVUdXYUZ1b1c1SjA
+# https://drive.google.com/open?id=0B9tPYCpuqoIrVUdXYUZ1b1c1SjA
 # Human Computer Interaction
-### Computational NueroScience
-<ul style="margin-bottom: 0px; margin-left: 1em; color: rgb(37, 37, 37); font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; border: 0px; font-stretch: inherit; vertical-align: baseline; list-style-position: inside; box-sizing: border-box; background: none;"><li style="line-height: inherit; margin: 0px 0px 10px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; vertical-align: baseline; box-sizing: border-box; background: none;"><a href="https://en.m.wikipedia.org/wiki/Computational_neuroscience" title="Computational neuroscience" target="_blank" style="color: rgb(90, 54, 150); margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">Computational neuroscience</a>&nbsp;– study of brain function in terms of the information processing properties of the structures that make up the nervous system.</li></ul>
+# Computational NueroScience
 ### Studies the actual Nuerons in terms of their biological structure and simulate them
 ### Different from computational Learning theory 
 ### Software packages simulating Nerves
@@ -55,7 +54,7 @@
 ### Challenges
 ### Overhead in computation, efforts have been done to come up with faster algorithms
 # Computer Security
-### Resources
+# Resources
 ### http://techcrunch.com/2015/08/10/mapping-israels-cyber-security-startups/?ncid=rss&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Techcrunch+%28TechCrunch%29&utm_content=FaceBook&sr_share=facebook
 ### Israeli security startups
 ### I cracked a program for a job Interview

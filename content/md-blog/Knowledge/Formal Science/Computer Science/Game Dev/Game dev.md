@@ -1,6 +1,6 @@
 # Resources
 # Jobs in Colorado
-### http://www.gamedevmap.com/index.php?location=Denver
+# http://www.gamedevmap.com/index.php?location=Denver
 # Meta Resource
 ### https://github.com/ellisonleao/magictools
 ### http://opengameart.org/
@@ -12,7 +12,7 @@
 ### https://www.youtube.com/watch?v=jVYzsbBxaQw
 ### https://www.youtube.com/watch?v=uDVShnEjrYw
 # Third Party
-### Engines
+# Engines
 ### https://html5gameengine.com/
 ### threejs
 ### http://threejs.org/
@@ -25,14 +25,14 @@
 ### https://docs.unrealengine.com/latest/INT/Engine/Blueprints/index.html
 ### Phaser
 ### http://phaser.io/tutorials/making-your-first-phaser-game
-### Rendering
+# Rendering
 ### Pixi.js
 ### Web gl with canvas fallback
 ### Examples
 ### http://pixijs.github.io/examples/index.html?s=basics&f=spritesheet.js&title=SpriteSheet%20Animation
 # Concepts
-### Game Theory
-### Mesh
+# Game Theory
+# Mesh
 ### http://gamedev.stackexchange.com/questions/38412/whats-the-difference-between-mesh-and-a-model
 # Projects
-### Sky Diver
+# Sky Diver

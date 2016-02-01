@@ -1,6 +1,6 @@
 # Concepts
 # File System
-### Permissions
+# Permissions
 ### Groups
 ### owner
 ### u
@@ -65,20 +65,20 @@ r = 4<div>w = 2</div><div>x = 1</div><div><br></div><div>you can add them up tog
 ### Similar to the root node_modules
 ### Or system packages
 # Resources
-### http://www.tutorialspoint.com/operating_system/os_linux.htm
+# http://www.tutorialspoint.com/operating_system/os_linux.htm
 ### Tutorials Point
-### Arechticture
+# Arechticture
 ### http://www.tutorialspoint.com/operating_system/images/linux_os.jpg
-### Books
+# Books
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrWWFrekFHNDJMWDQ
-### Udacity: Advanced OS
+# Udacity: Advanced OS
 ### https://www.udacity.com/course/viewer#!/c-ud189/l-3652509443/m-641659207
-### System utils
+# System utils
 ### source code
 ### git clone git://git.sv.gnu.org/coreutils
 ### http://www.gnu.org/software/coreutils/coreutils.html
 # Software
-### GUI
+# GUI
 ### KDE
 ### KDE
 ### https://en.wikipedia.org/wiki/KDE
@@ -86,7 +86,7 @@ r = 4<div>w = 2</div><div>x = 1</div><div><br></div><div>you can add them up tog
 ### Gnome
 ### https://www.gnome.org/
 # Flavors
-### Red Star OS
+# Red Star OS
 
 
 ### https://www.youtube.com/watch?v=j_9QOgg0GRE
@@ -94,12 +94,12 @@ r = 4<div>w = 2</div><div>x = 1</div><div><br></div><div>you can add them up tog
 ### https://en.m.wikipedia.org/wiki/Red_Star_OS
 ### Red Star OS from North Korea
 # Programmed in
-### Kernel
+# Kernel
 ### C
 ### Tutorials Point
 ### http://www.tutorialspoint.com/csharp/
 ### MSDN
 ### https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx
-### Userland
+# Userland
 ### C++
 ### Python

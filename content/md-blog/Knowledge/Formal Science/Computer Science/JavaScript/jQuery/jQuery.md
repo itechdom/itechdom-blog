@@ -1,10 +1,10 @@
 # Core
 # Concepts
 # Resources
-### https://github.com/jquery/jquery
-### jquery github
+# https://github.com/jquery/jquery
+# jquery github
 # Thrid Party
-### Sizzle
+# Sizzle
 ### CSS Selector Engine
 ### https://github.com/jquery/sizzle
 ### github page
