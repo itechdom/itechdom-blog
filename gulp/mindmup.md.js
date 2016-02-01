@@ -92,15 +92,13 @@ module.exports = function(options) {
 			var f = "";
 			mindmap.map((idea)=>{
 				if(idea.title && idea.level){
-					if(idea.level >= 0 && idea.level <= 3){
 					var head = "#".repeat(idea.level);
-					head+=" ";
+					head += " ";
 					f+=head;
-					}
 					f+= idea.title;
 					f+="\n";
 				}
-				if(idea.content){
+				if(idea.content && idea.level){
 					f += idea.content;
 					f+="\n";
 				}
@@ -116,7 +114,7 @@ module.exports = function(options) {
 				levelsDeep = 0;
 				const unordered = mindmap.ideas;	
 			 	var ordered = sortMindmap(unordered);
-				traverseMindmap(ordered,pArr,undefined);
+				traverseMindmap(mindmap.ideas,pArr,undefined);
 				var finalContent = convertToMarkdown(pArr);
 				file.contents = new Buffer(finalContent);
 			}))
