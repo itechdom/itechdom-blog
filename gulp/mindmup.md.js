@@ -58,17 +58,17 @@ module.exports = function(options) {
 			var ordered = {};
 			var floats = {};
 			Object.keys(unordered)
-			.sort(function(a,b){
-			 floats.a = parseFloat(a);	
-			 floats.b = parseFloat(b);
-			 if(floats.a < floats.b){
-				 return 1; 
-			 }
-			 if(floats.a > floats.b){
-				 return -1;
-			 }
-			 return 0;
-			})	
+				.sort(function(a,b){
+					floats.a = parseFloat(a);	
+					floats.b = parseFloat(b);
+					if(floats.a < floats.b){
+						return 1; 
+					}
+					if(floats.a > floats.b){
+						return -1;
+					}
+					return 0;
+				})	
 			.forEach(function(key) {
 				ordered[key] = unordered[key];
 			});
@@ -93,11 +93,12 @@ module.exports = function(options) {
 			mindmap.map((idea)=>{
 				if(idea.title && idea.level){
 					var head = "#"
-				        head += " ";
+					head += " ";
 					f+=head;
-					f+= idea.title;
-					f+="\n";
 				}
+				f+= idea.title;
+				f+="\n";
+
 				if(idea.content && idea.level){
 					f += idea.content;
 					f+="\n";
@@ -113,7 +114,7 @@ module.exports = function(options) {
 				var mindmapAll = mindmap.ideas;
 				levelsDeep = 0;
 				const unordered = mindmap.ideas;	
-			 	var ordered = sortMindmap(unordered);
+				var ordered = sortMindmap(unordered);
 				traverseMindmap(ordered,pArr,undefined);
 				var finalContent = convertToMarkdown(pArr);
 				file.contents = new Buffer(finalContent);
