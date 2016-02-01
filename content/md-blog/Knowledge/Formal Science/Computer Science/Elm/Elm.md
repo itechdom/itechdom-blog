@@ -8,16 +8,17 @@
 <div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">view : Widget -&gt; Element</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">view widget =</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; case widget of</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; ScatterPlot points -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewScatterPlot points</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;"><br></span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; LogData logs -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flow down (map viewLog logs)</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;"><br></span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; TimePlot occurances -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewTimePlot occurances</span></font></div>
 # Immutability
 # Signals and Addresses
+# Packages
 # Functions
 # Signal
 ### http://package.elm-lang.org/packages/elm-lang/core/3.0.0/Signal
 # Website
-# Packages
+# Resources
 ### http://package.elm-lang.org/packages/elm-lang/core/3.0.0
 # Complete Guide
 # Examples
 # https://pragmaticstudio.com/blog/2014/12/19/getting-started-with-elm
-# Resources
+# Project Starters
 ### third part tutorials
 # https://github.com/evancz/elm-architecture-tutorial/
 ### Archeticture
@@ -68,7 +69,7 @@
 
 ### Inputs
 ### Signals
-# Project Starters
+# Pain points
 ### Application Skeleton
 <pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);"><span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">-- MODEL</span>
 
@@ -136,5 +137,4 @@
 # Let ... in syntax?
 # Signal.forwardTo
 ### just to forward signals?
-# Pain points
 # Is main: port: reserved?
