@@ -28,28 +28,32 @@ module.exports = function(options) {
 
 	gulp.task('mindmap:md', function(done) {
 
+		function processMindmapObject(obj,key){
+			var pObject = {};
+			if(obj.title){
+				pObject.title = obj.title;
+			}
+			if(obj.attr){
+				var attr = obj.attr;
+				var attachment = attr.attachment;
+				if(attachment){
+					pObject.content = attachment.content;
+				}
+			}
+			pObject.key = parseFloat(key);
+			pObject.id = obj.id;
+			return pObject;
+		}
 		function traverseMindmap(mindmap,pArr,parent,level){
 			for(var key in mindmap){
 				var obj = mindmap[key];
-				var pObject = {};
-				if(obj.title){
-					pObject.title = obj.title;
-				}
-				if(obj.attr){
-					var attr = obj.attr;
-					var attachment = attr.attachment;
-					if(attachment){
-						pObject.content = attachment.content;
-					}
-				}
+				var pObject = processMindmapObject(obj,key);
 				if(parent){
 					pObject.level = level;
 				}
 				else{
 					pObject.level = 0;
 				}
-				pObject.key = parseFloat(key);
-				pObject.id = obj.id;
 				pArr.push(pObject);
 				traverseMindmap(obj.ideas,pArr,obj,levelsDeep++);
 			}
@@ -118,33 +122,34 @@ module.exports = function(options) {
 			})
 			return f;
 		}
-		return gulp.src(options.drive+'/**/*.mup')
-						    .pipe(data(function(file) {
-						    var mindmap = parseMindmap(file);
-						    var pArr = [];
-						    var mindmapAll = mindmap.ideas;
-						    levelsDeep = 0;
-						    const unordered = mindmap.ideas;	
-						    var ordered = sortMindmap(unordered);
-						    var currentIndex = 0;
-						    ordered.forEach((obj,index)=>{
-						    	traverseMindmap(obj.ideas,pArr,undefined);
-							if(index == 0){
-								pArr.splice(0,0,obj);
-								currentIndex = pArr.length;
-							}
-							else{
-								pArr.splice(currentIndex,0,obj);
-								currentIndex = pArr.length;
-							}
-					            })
-						    var finalContent = convertToMarkdown(pArr);
-						    file.contents = new Buffer(finalContent);
-						    }))
-						    .pipe(rename(function (path) {
-						    path.extname = ".md"
-						    }))
-						    .pipe(gulp.dest('./content/md-blog'))
-						    });
+		return gulp.src(options.drive+'/**/RxJS.presentation.mup')
+			.pipe(data(function(file) {
+				var mindmap = parseMindmap(file);
+				var pArr = [];
+				var mindmapAll = mindmap.ideas;
+				levelsDeep = 0;
+				const unordered = mindmap.ideas;	
+				var ordered = sortMindmap(unordered);
+				var currentIndex = 0;
+				ordered.forEach((obj,index)=>{
+					traverseMindmap(obj.ideas,pArr,undefined);
+					obj = processMindmapObject(obj,index);
+					if(index == 0){
+						pArr.splice(0,0,obj);
+						currentIndex = pArr.length;
+					}
+					else{
+						pArr.splice(currentIndex,0,obj);
+						currentIndex = pArr.length;
+					}
+				})
+				var finalContent = convertToMarkdown(pArr);
+				file.contents = new Buffer(finalContent);
+			}))
+		.pipe(rename(function (path) {
+			path.extname = ".md"
+		}))
+		.pipe(gulp.dest('./content/md-blog'))
+	});
 
-						    };
+};
