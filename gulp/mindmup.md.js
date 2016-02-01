@@ -133,7 +133,7 @@ module.exports = function(options) {
 								pArr.splice(0,0,obj);
 								currentIndex = pArr.length-1;
 							}
-							pArr.splice(0,0,obj);
+							pArr.splice(currentIndex,0,obj);
 						    })
 						    var finalContent = convertToMarkdown(pArr);
 						    file.contents = new Buffer(finalContent);
