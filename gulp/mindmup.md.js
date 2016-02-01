@@ -22,7 +22,7 @@ var levelsDeep;
  * Then apply some deep levels styling using one method, this should include appending the rest into the parent
  *
  *
-**/
+ **/
 
 module.exports = function(options) {
 
@@ -54,46 +54,25 @@ module.exports = function(options) {
 				traverseMindmap(obj.ideas,pArr,obj,levelsDeep++);
 			}
 		}
-		function processMindmap(mindmap){
-			//flatten the json
-			//iterate over all keys
-			//strip out the numbers and rejoin again
-			//count the number of ideas in the key
-			//indent accordingly
-			//store into a variable
-			//write out that variable
-			var flatMindmap = flatten(mindmap);
-			var fileArr = [];
-			//add the first title and content (title of the whole mindmap)
-			fileArr[0] = {title:flatMindmap.title,content:flatMindmap.content,indent:0};
-			for(var key in flatMindmap){
-				//determine the level of indentation
-				var pushedContent = {};
-				var indentLevel = key.split("ideas").length-1;
-				pushedContent.indent = indentLevel;
-				var keyArr = key.split('.');
-				var keyName = keyArr[keyArr.length-1];
-				switch(keyName){
-					case "title":
-						//add proper formatting here
-						pushedContent.title = flatMindmap[key];
-						break;
-					case "content":
-						//add proper formatting here
-						var element = cheerio.load(flatMindmap[key]);
-						element('*').each(function(i, elem) {
-							element(this).removeAttr('style');
-						});
-						pushedContent.content = element.html();
-						break;
-					case "id":
-						break;
-				}
-				if(pushedContent.title || pushedContent.content){
-					fileArr.push(pushedContent);
-				}
-			}
-			return fileArr;
+		function sortMindmap(unordered){
+			var ordered = {};
+			var floats = {};
+			Object.keys(unordered)
+			.sort(function(a,b){
+			 floats.a = parseFloat(a);	
+			 floats.b = parseFloat(b);
+			 if(floats.a < floats.b){
+				 return 1; 
+			 }
+			 if(floats.a > floats.b){
+				 return -1;
+			 }
+			 return 0;
+			})	
+			.forEach(function(key) {
+				ordered[key] = unordered[key];
+			});
+			return ordered;
 		}
 
 		function parseMindmap(file){
@@ -112,7 +91,6 @@ module.exports = function(options) {
 		function convertToMarkdown(mindmap){
 			var f = "";
 			mindmap.map((idea)=>{
-				console.log(idea);
 				if(idea.title && idea.level){
 					var head = "#".repeat(idea.level);
 					head += " ";
@@ -129,19 +107,21 @@ module.exports = function(options) {
 		}
 
 		return gulp.src(options.drive+'/**/Elm.mup')
-						    .pipe(data(function(file) {
-						    var mindmap = parseMindmap(file);
-						    var pArr = [];
-						    var mindmapAll = mindmap.ideas;
-						    levelsDeep = 0;
-						    traverseMindmap(mindmap.ideas,pArr,undefined);
-						    var finalContent = convertToMarkdown(pArr);
-						    file.contents = new Buffer(finalContent);
-						    }))
-						    .pipe(rename(function (path) {
-						    path.extname = ".md"
-						    }))
-						    .pipe(gulp.dest('./content/md-blog'))
-						    });
+			.pipe(data(function(file) {
+				var mindmap = parseMindmap(file);
+				var pArr = [];
+				var mindmapAll = mindmap.ideas;
+				levelsDeep = 0;
+				const unordered = mindmap.ideas;	
+			 	var ordered = sortMindmap(unordered);
+				traverseMindmap(ordered,pArr,undefined);
+				var finalContent = convertToMarkdown(pArr);
+				file.contents = new Buffer(finalContent);
+			}))
+		.pipe(rename(function (path) {
+			path.extname = ".md"
+		}))
+		.pipe(gulp.dest('./content/md-blog'))
+	});
 
-						    };
+};
