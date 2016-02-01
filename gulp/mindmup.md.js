@@ -59,6 +59,7 @@ module.exports = function(options) {
 			var floats = {};
 			Object.keys(unordered)
 				.sort(function(a,b){
+
 					floats.a = parseFloat(a);	
 					floats.b = parseFloat(b);
 
@@ -81,6 +82,7 @@ module.exports = function(options) {
 					return 0;
 				})	
 			.forEach(function(key) {
+				console.log(key);
 				ordered[key] = unordered[key];
 			});
 			return ordered;
