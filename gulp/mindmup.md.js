@@ -131,11 +131,11 @@ module.exports = function(options) {
 						    	traverseMindmap(obj.ideas,pArr,undefined);
 							if(index == 0){
 								pArr.splice(0,0,obj);
-								currentIndex = pArr.length -1;
+								currentIndex = pArr.length;
 							}
 							else{
 								pArr.splice(currentIndex,0,obj);
-								currentIndex = pArr.length-1;
+								currentIndex = pArr.length;
 							}
 					            })
 						    var finalContent = convertToMarkdown(pArr);

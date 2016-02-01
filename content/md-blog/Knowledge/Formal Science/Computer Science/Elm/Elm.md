@@ -8,18 +8,18 @@
 <div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">view : Widget -&gt; Element</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">view widget =</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; case widget of</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; ScatterPlot points -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewScatterPlot points</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;"><br></span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; LogData logs -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flow down (map viewLog logs)</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;"><br></span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; TimePlot occurances -&gt;</span></font></div><div><font color="#66cccc" face="Source Code Mono, monospace" size="3"><span style="line-height: normal; white-space: pre;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewTimePlot occurances</span></font></div>
 # Immutability
 # Signals and Addresses
-# Packages
 # Functions
+# Packages
 # Signal
 ### http://package.elm-lang.org/packages/elm-lang/core/3.0.0/Signal
 # Website
-# Resources
 ### http://package.elm-lang.org/packages/elm-lang/core/3.0.0
+# Resources
 # Complete Guide
 # Examples
 # https://pragmaticstudio.com/blog/2014/12/19/getting-started-with-elm
-# Project Starters
 ### third part tutorials
+# Project Starters
 # https://github.com/evancz/elm-architecture-tutorial/
 ### Archeticture
 <table class="highlight tab-size js-file-line-container" data-tab-size="8" style="box-sizing: border-box; tab-size: 8; font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 13px; line-height: 18.2000007629395px; background-color: rgb(255, 255, 255);"><tbody style="box-sizing: border-box;"><tr style="box-sizing: border-box;"><td id="LC6" class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;"><span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">  1. Model  - a full definition of the application's state</span></td></tr><tr style="box-sizing: border-box;"><td id="L7" class="blob-num js-line-number" data-line-number="7" style="box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; white-space: nowrap; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; color: rgba(0, 0, 0, 0.298039); vertical-align: top; text-align: right; border-style: solid; border-color: rgb(238, 238, 238); border-width: 0px 1px 0px 0px; cursor: pointer; -webkit-user-select: none;"></td><td id="LC7" class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;"><span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">  2. Update - a way to step the application state forward</span></td></tr><tr style="box-sizing: border-box;"><td id="L8" class="blob-num js-line-number" data-line-number="8" style="box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; white-space: nowrap; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; color: rgba(0, 0, 0, 0.298039); vertical-align: top; text-align: right; border-style: solid; border-color: rgb(238, 238, 238); border-width: 0px 1px 0px 0px; cursor: pointer; -webkit-user-select: none;"></td><td id="LC8" class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;"><span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">  3. View   - a way to visualize our application state with HTML</span></td></tr><tr style="box-sizing: border-box;"><td id="L9" class="blob-num js-line-number" data-line-number="9" style="box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; white-space: nowrap; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; color: rgba(0, 0, 0, 0.298039); vertical-align: top; text-align: right; border-style: solid; border-color: rgb(238, 238, 238); border-width: 0px 1px 0px 0px; cursor: pointer; -webkit-user-select: none;"></td><td id="LC9" class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;"><span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">  4. Inputs - the signals necessary to manage events</span></td></tr></tbody></table>
@@ -69,7 +69,6 @@
 
 ### Inputs
 ### Signals
-# Pain points
 ### Application Skeleton
 <pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);"><span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">-- MODEL</span>
 
@@ -92,6 +91,7 @@
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">:</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Model</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">-&gt;</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Html</span>
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view </span><span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span>
   <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">...</span></pre>
+# Pain points
 # What the hell are all these arrows
 ### Simple
 ### a:List String -> int
