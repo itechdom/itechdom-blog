@@ -91,14 +91,11 @@ module.exports = function(options) {
 		function convertToMarkdown(mindmap){
 			var f = "";
 			mindmap.map((idea)=>{
-				if(idea.title && idea.level){
-					var head = "#"
-					head += " ";
-					f+=head;
-				}
+				var head = "#"
+				head += " ";
+				f+=head;
 				f+= idea.title;
 				f+="\n";
-
 				if(idea.content && idea.level){
 					f += idea.content;
 					f+="\n";
