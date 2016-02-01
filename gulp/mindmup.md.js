@@ -129,7 +129,11 @@ module.exports = function(options) {
 						    var currentIndex = 0;
 						    ordered.forEach((obj,index)=>{
 						    	traverseMindmap(obj.ideas,pArr,undefined);
-							pArr.splice(index,0,obj.title);
+							if(currentIndex=0){
+								pArr.splice(0,0,obj);
+								currentIndex = pArr.length-1;
+							}
+							pArr.splice(0,0,obj);
 						    })
 						    var finalContent = convertToMarkdown(pArr);
 						    file.contents = new Buffer(finalContent);
