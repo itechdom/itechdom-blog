@@ -114,7 +114,7 @@ module.exports = function(options) {
 				levelsDeep = 0;
 				const unordered = mindmap.ideas;	
 			 	var ordered = sortMindmap(unordered);
-				traverseMindmap(mindmap.ideas,pArr,undefined);
+				traverseMindmap(ordered,pArr,undefined);
 				var finalContent = convertToMarkdown(pArr);
 				file.contents = new Buffer(finalContent);
 			}))
