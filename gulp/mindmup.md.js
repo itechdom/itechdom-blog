@@ -61,9 +61,20 @@ module.exports = function(options) {
 				.sort(function(a,b){
 					floats.a = parseFloat(a);	
 					floats.b = parseFloat(b);
+
+					//when both numbers are above 0 (right side of the mindmap), then reverse sort
+					if(floats.a > 0 && floats.b > 0){
+						if(floats.a < floats.b){
+							return -1;
+						}
+						else{
+							return 1;
+						}
+					}
 					if(floats.a < floats.b){
 						return 1; 
 					}
+
 					if(floats.a > floats.b){
 						return -1;
 					}
@@ -74,7 +85,6 @@ module.exports = function(options) {
 			});
 			return ordered;
 		}
-
 		function parseMindmap(file){
 			var mindmap = JSON.parse(String(file.contents));
 			return mindmap;
@@ -95,34 +105,33 @@ module.exports = function(options) {
 				if(idea.level){
 					head+="##";
 				}
-				head += " ";
-				f+=head;
-				f+= idea.title;
+			head += " ";
+			f+=head;
+			f+= idea.title;
+			f+="\n";
+			if(idea.content && idea.level){
+				f += idea.content;
 				f+="\n";
-				if(idea.content && idea.level){
-					f += idea.content;
-					f+="\n";
-				}
+			}
 			})
 			return f;
 		}
-
 		return gulp.src(options.drive+'/**/*.mup')
-			.pipe(data(function(file) {
-				var mindmap = parseMindmap(file);
-				var pArr = [];
-				var mindmapAll = mindmap.ideas;
-				levelsDeep = 0;
-				const unordered = mindmap.ideas;	
-				var ordered = sortMindmap(unordered);
-				traverseMindmap(ordered,pArr,undefined);
-				var finalContent = convertToMarkdown(pArr);
-				file.contents = new Buffer(finalContent);
-			}))
-		.pipe(rename(function (path) {
-			path.extname = ".md"
-		}))
-		.pipe(gulp.dest('./content/md-blog'))
-	});
+						    .pipe(data(function(file) {
+						    var mindmap = parseMindmap(file);
+						    var pArr = [];
+						    var mindmapAll = mindmap.ideas;
+						    levelsDeep = 0;
+						    const unordered = mindmap.ideas;	
+						    var ordered = sortMindmap(unordered);
+						    traverseMindmap(ordered,pArr,undefined);
+						    var finalContent = convertToMarkdown(pArr);
+						    file.contents = new Buffer(finalContent);
+						    }))
+						    .pipe(rename(function (path) {
+						    path.extname = ".md"
+						    }))
+						    .pipe(gulp.dest('./content/md-blog'))
+						    });
 
-};
+						    };
