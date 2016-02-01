@@ -93,6 +93,7 @@ module.exports = function(options) {
 			mindmap.map((idea)=>{
 				var head = "#"
 				head += " ";
+				if(idea.level)f+=idea.level;
 				f+=head;
 				f+= idea.title;
 				f+="\n";
