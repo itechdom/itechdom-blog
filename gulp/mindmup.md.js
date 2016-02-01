@@ -13,51 +13,37 @@ var rename = require("gulp-rename");
 var MongoClient = require('mongodb').MongoClient
 var cheerio = require('cheerio');
 var sortBy = require('sort-by');
+var mindmapAll;
+var levelsDeep;
 
 module.exports = function(options) {
 
 	gulp.task('mindmap:md', function(done) {
-		function traverseMindmap(mindmap,pArr,parent){
+
+		function traverseMindmap(mindmap,pArr,parent,level){
 			for(var key in mindmap){
 				var obj = mindmap[key];
-				var pContent = {};
-
+				var pObject = {};
 				if(obj.title){
-					pContent.title = obj.title;
+					pObject.title = obj.title;
 				}
 				if(obj.attr){
 					var attr = obj.attr;
 					var attachment = attr.attachment;
 					if(attachment){
-						pContent.content = attachment.content;
+						pObject.content = attachment.content;
 					}
 				}
-				//if it's decimal, then add the new order to the object by removing any decimal to its order as well
 				if(parent){
-					pContent.indent = 2;
-					var pKey = obj.title.split(".")[0];
-					if(parent.order){
-						/**if(key.indexOf(".") > -1){
-						  pContent.order = key.split(".").join(""); 
-						  }
-						 **/
-						if(parent.order.indexOf(".") > -1){
-							pContent.order = parent.order+pKey;
-						}
-						else{
-							pContent.order = parent.order+"."+pKey;
-						}
-					}
+					pObject.level = level;
 				}
 				else{
-					pContent.order = key.split(".")[0];
-					pContent.indent = 1;
+					pObject.level = 0;
 				}
-				obj.order = pContent.order;
-				pContent.order = parseFloat(pContent.order);
-				pContent.id = obj.id;
-				pArr.push(pContent);
-				traverseMindmap(obj.ideas,pArr,obj);
+				pObject.key = parseFloat(key);
+				pObject.id = obj.id;
+				pArr.push(pObject);
+				traverseMindmap(obj.ideas,pArr,obj,levelsDeep++);
 			}
 		}
 		function processMindmap(mindmap){
@@ -86,14 +72,13 @@ module.exports = function(options) {
 						break;
 					case "content":
 						//add proper formatting here
-						//
 						var element = cheerio.load(flatMindmap[key]);
-						var fruits = [];
 						element('*').each(function(i, elem) {
 							element(this).removeAttr('style');
-							// fruits[i] = $(this).text();
 						});
 						pushedContent.content = element.html();
+						break;
+					case "id":
 						break;
 				}
 				if(pushedContent.title || pushedContent.content){
@@ -135,11 +120,34 @@ module.exports = function(options) {
 			})
 			return f;
 		}
-		return gulp.src(options.drive+'/**/*.mup')
+		function convertToMarkdown(mindmap){
+			var f = "";
+			mindmap.map((idea)=>{
+				if(idea.title && idea.level){
+					if(idea.level >= 1 || idea.level <=3){
+						var head = "#".repeat(idea.level);
+						head += " ";
+						f+=head;
+					}
+					f+= idea.title;
+					f+="\n";
+				}
+				if(idea.content && idea.level){
+					f += idea.content;
+					f+="\n";
+				}
+			})
+			return f;
+		}
+
+		return gulp.src(options.drive+'/**/Elm.mup')
 						    .pipe(data(function(file) {
 						    var mindmap = parseMindmap(file);
-						    var content = processMindmap(mindmap);
-						    var finalContent = convertToMarkdown(content);
+						    var pArr = [];
+						    var mindmapAll = mindmap.ideas;
+						    levelsDeep = 0;
+						    traverseMindmap(mindmap.ideas,pArr,undefined);
+						    var finalContent = convertToMarkdown(pArr);
 						    file.contents = new Buffer(finalContent);
 						    }))
 
