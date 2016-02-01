@@ -44,18 +44,18 @@ module.exports = function(options) {
 			pObject.id = obj.id;
 			return pObject;
 		}
-		function traverseMindmap(mindmap,pArr,parent,level){
+		function traverseMindmap(mindmap,pArr,level){
 			for(var key in mindmap){
 				var obj = mindmap[key];
 				var pObject = processMindmapObject(obj,key);
-				if(parent){
-					pObject.level = level;
+				if(!level){
+					pObject.level = 1;
 				}
 				else{
-					pObject.level = 0;
+					pObject.level = level;
 				}
 				pArr.push(pObject);
-				traverseMindmap(obj.ideas,pArr,obj,levelsDeep++);
+				traverseMindmap(obj.ideas,pArr,levelsDeep++);
 			}
 		}
 		function sortMindmap(unordered){
@@ -132,7 +132,7 @@ module.exports = function(options) {
 				var ordered = sortMindmap(unordered);
 				var currentIndex = 0;
 				ordered.forEach((obj,index)=>{
-					traverseMindmap(obj.ideas,pArr,undefined);
+					traverseMindmap(obj.ideas,pArr);
 					obj = processMindmapObject(obj,index);
 					if(index == 0){
 						pArr.splice(0,0,obj);
