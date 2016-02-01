@@ -1,8 +1,8 @@
-# Pain points
-# Project Starters
-# Resources
-# Packages
-# Concepts
+# undefined
+# undefined
+# undefined
+# undefined
+# undefined
 # Differences with JavaScript
 # records
 # Contracts
