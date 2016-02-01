@@ -104,27 +104,8 @@ module.exports = function(options) {
 		function convertToMarkdown(mindmap){
 			var f = "";
 			mindmap.map((idea)=>{
-				if(idea.title && idea.indent){
-					if(idea.indent >= 1 || idea.indent <=3){
-						var head = "#".repeat(idea.indent);
-						head += " ";
-						f+=head;
-					}
-					f+= idea.title;
-					f+="\n";
-				}
-				if(idea.content && idea.indent){
-					f += idea.content;
-					f+="\n";
-				}
-			})
-			return f;
-		}
-		function convertToMarkdown(mindmap){
-			var f = "";
-			mindmap.map((idea)=>{
 				if(idea.title && idea.level){
-					if(idea.level >= 1 || idea.level <=3){
+					if(idea.level >= 0 && idea.level <=3){
 						var head = "#".repeat(idea.level);
 						head += " ";
 						f+=head;
@@ -150,7 +131,6 @@ module.exports = function(options) {
 						    var finalContent = convertToMarkdown(pArr);
 						    file.contents = new Buffer(finalContent);
 						    }))
-
 						    .pipe(rename(function (path) {
 						    path.extname = ".md"
 						    }))
