@@ -115,7 +115,7 @@ module.exports = function(options) {
 			f+=head;
 			f+= idea.title;
 			f+="\n";
-			if(idea.content && idea.level){
+			if(idea.content){
 				f += idea.content;
 				f+="\n";
 			}
