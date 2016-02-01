@@ -29,8 +29,10 @@ module.exports = function(options) {
 	gulp.task('mindmap:md', function(done) {
 
 		function traverseMindmap(mindmap,pArr,parent,level){
-			for(var key in mindmap){
-				var obj = mindmap[key];
+			if(!Array.isArray(mindmap)){
+				return;
+			}
+			mindmap.forEach((obj)=>{
 				var pObject = {};
 				if(obj.title){
 					pObject.title = obj.title;
@@ -48,15 +50,15 @@ module.exports = function(options) {
 				else{
 					pObject.level = 0;
 				}
-				pObject.key = parseFloat(key);
 				pObject.id = obj.id;
 				pArr.push(pObject);
 				traverseMindmap(obj.ideas,pArr,obj,levelsDeep++);
-			}
+			})
 		}
 		function sortMindmap(unordered){
 			var ordered = {};
 			var floats = {};
+			var arr = [];
 			Object.keys(unordered)
 				.sort(function(a,b){
 
@@ -82,10 +84,9 @@ module.exports = function(options) {
 					return 0;
 				})	
 			.forEach(function(key) {
-				console.log(key);
-				ordered[key] = unordered[key];
+				arr.push(unordered[key]);
 			});
-			return ordered;
+			return arr;
 		}
 		function parseMindmap(file){
 			var mindmap = JSON.parse(String(file.contents));
@@ -118,7 +119,7 @@ module.exports = function(options) {
 			})
 			return f;
 		}
-		return gulp.src(options.drive+'/**/*.mup')
+		return gulp.src(options.drive+'/**/Elm.mup')
 						    .pipe(data(function(file) {
 						    var mindmap = parseMindmap(file);
 						    var pArr = [];
