@@ -6,15 +6,27 @@ var mindmupParse = require("../gulp-custom/mindmup.parser.js");
 
 module.exports = function(options) {
 	gulp.task('mindmap:presentation', function(done) {
-		return gulp.src(options.drive+"**/RxJS.presentation.mup")
+		return gulp.src(options.drive+"**/*.presentation.mup")
 			.pipe(data(function(file) {
-				var mindmap = parseMindmap(file);
-				var pArr = [];
-				mindmapAll = mindmap.ideas;
-				traverseMindmap(mindmap.ideas,pArr,undefined);
-				var sortedFileArr = pArr.sort(sortBy('order'));
-				var finalContent = convertToHTML(sortedFileArr);
-				file.contents = new Buffer(finalContent);
+			var mindmap = mindmupParse.toJson(file);
+			var pArr = [];
+			const unordered = mindmap.ideas;	
+			var ordered = mindmupParse.sort(unordered);
+			var currentIndex = 0;
+			ordered.forEach((obj,index)=>{
+				mindmupParse.flatten(obj.ideas,pArr);
+				obj = mindmupParse.processItem(obj,index);
+				if(index == 0){
+					pArr.splice(0,0,obj);
+					currentIndex = pArr.length;
+				}
+				else{
+					pArr.splice(currentIndex,0,obj);
+					currentIndex = pArr.length;
+				}
+			})
+			var finalContent = mindmupParse.toHTML(pArr);
+			file.contents = new Buffer(finalContent);
 			}))
 		.pipe(rename(function (path) {
 			path.extname = ".html";

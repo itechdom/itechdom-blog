@@ -106,7 +106,7 @@ var ops = {
 		})
 		return f;
 	}
-	,convertToHTML(mindmap){
+	,toHTML(mindmap){
 		var f = "";
 		var count = 0;
 		var parentId;
@@ -122,7 +122,7 @@ var ops = {
 				slideElement('.slides').append(`<section class="parent${parentId}"><h3>${cleanTitle}</h3></section>`);
 			}
 			if(idea.content){
-				var cleanContent = cleanHTML(idea.content);
+				var cleanContent = this.cleanHTML(idea.content);
 				var code = cheerio.load(cleanContent);
 				var hCode;
 				code('*').each(function(i, elem) {
