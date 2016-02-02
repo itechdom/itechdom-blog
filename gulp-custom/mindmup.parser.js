@@ -22,8 +22,18 @@ var ops = {
 		pObject.id = obj.id;
 		return pObject;
 	}
-	,traverse(mindmap,operation){
-
+	,clean(mindmap){
+		for(var key in mindmap){
+			var obj = mindmap[key];
+			if(!levelsDeep){
+				var levelsDeep = 0;
+			}
+			var pObject = this.processItem(obj,key);
+			pObject.level = levelsDeep;
+			pObject.ideas = obj.ideas;
+			mindmap[key] = pObject
+			this.clean(obj.ideas,levelsDeep++);
+		}
 	}
 	,flatten(mindmap,pArr,level){
 		for(var key in mindmap){
@@ -108,7 +118,7 @@ var ops = {
 			<div class="slides">
 			</div>
 			</div>`
-		var slideElement = cheerio.load(slideTemplate);
+			var slideElement = cheerio.load(slideTemplate);
 		mindmap.map((idea)=>{
 			count++;
 			if(idea.title){
