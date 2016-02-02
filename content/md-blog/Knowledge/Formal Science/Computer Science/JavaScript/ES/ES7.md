@@ -1,12 +1,12 @@
 # Resources
-# https://github.com/ericdouglas/ES6-Learning
-# an awesome list of many resources
-# https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond
+### https://github.com/ericdouglas/ES6-Learning
+### an awesome list of many resources
+### https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond
 ### getify you don't know js: ES6
-# Playgrounds
+### Playgrounds
 ### http://www.es6fiddle.net/
 ### http://babeljs.io/repl/
-# Slides
+### Slides
 ### https://dl.dropboxusercontent.com/u/3531958/es6-favorite-parts/index.html#/
 ### nice slides with comparision
 ### http://cdn.oreillystatic.com/en/assets/1/event/93/An%20Overview%20of%20ECMAScript%206%20Presentation.pdf
@@ -14,8 +14,8 @@
 ### http://charlesbking.com/power_of_es6/#/38
 ### nice slides with runnable javascript
 # Concepts
-# What's ES6
-# How do I use ES6
+### What's ES6
+### How do I use ES6
 ### transpiling
 <h2 style="box-sizing: border-box; margin-top: 1em; margin-bottom: 16px; line-height: 1.225; font-size: 1.75em; position: relative; padding-bottom: 0.3em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;">Transpiling</h2><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">Made even worse by the rapid evolution of features, a problem arises for JS developers who at once may both strongly desire to use new features while at the same time being slapped with the reality that their sites/apps may need to support older browsers without such support.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">The way ES5 appears to have played out in the broader industry, the typical mindset was that code bases waited to adopt ES5 until most if not all pre-ES5 environments had fallen out of their support spectrum. As a result, many are just recently (at the time of this writing) starting to adopt things like&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">strict</code>&nbsp;mode, which landed in ES5 over five years ago.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">It's widely considered to be a harmful approach for the future of the JS ecosystem to wait around and trail the specification by so many years. All those responsible for evolving the language desire for developers to begin basing their code on the new features and patterns as soon as they stabilize in specification form and browsers have a chance to implement them.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">So how do we resolve this seeming contradiction? The answer is tooling, specifically a technique called&nbsp;<em style="box-sizing: border-box;">transpiling</em>(transformation + compiling). Roughly, the idea is to use a special tool to transform your ES6 code into equivalent (or close!) matches that work in ES5 environments.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">For example, consider shorthand property definitions (see "Object Literal Extensions" in Chapter 2). Here's the ES6 form:</p><div class="highlight highlight-js" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);"><span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">var</span> foo <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> [<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">1</span>,<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">2</span>,<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">3</span>];
 
@@ -46,7 +46,7 @@ obj.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);"
         <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">return</span> v1 <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">===</span> v2;
     };
 }</pre></div><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><strong style="box-sizing: border-box;">Tip:</strong>&nbsp;Pay attention to the outer&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">if</code>&nbsp;statement guard wrapped around the polyfill. This is an important detail, which means the snippet only defines its fallback behavior for older environments where the API in question isn't already defined; it would be very rare that you'd want to overwrite an existing API.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">There's a great collection of ES6 shims called "ES6 Shim" (<a href="https://github.com/paulmillr/es6-shim/" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;">https://github.com/paulmillr/es6-shim/</a>) that you should definitely adopt as a standard part of any new JS project!</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">It is assumed that JS will continue to evolve constantly, with browsers rolling out support for features continually rather than in large chunks. So the best strategy for keeping updated as it evolves is to just introduce polyfill shims into your code base, and a transpiler step into your build workflow, right now and get used to that new reality.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">If you decide to keep the status quo and just wait around for all browsers without a feature supported to go away before you start using the feature, you're always going to be way behind. You'll sadly be missing out on all the innovations designed to make writing JavaScript more effective, efficient, and robust.</p>
-# Syntax
+### Syntax
 ### Scope
 ### Spread && Rest
 <h2 style="box-sizing: border-box; margin-top: 1em; margin-bottom: 16px; line-height: 1.225; font-size: 1.75em; position: relative; padding-bottom: 0.3em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;">Spread/Rest</h2><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">ES6 introduces a new&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">...</code>&nbsp;operator that's typically referred to as the&nbsp;<em style="box-sizing: border-box;">spread</em>&nbsp;or&nbsp;<em style="box-sizing: border-box;">rest</em>&nbsp;operator, depending on where/how it's used. Let's take a look:</p><div class="highlight highlight-js" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);"><span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">function</span> <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">foo</span>(<span class="pl-smi" style="box-sizing: border-box;">x</span>,<span class="pl-smi" style="box-sizing: border-box;">y</span>,<span class="pl-smi" style="box-sizing: border-box;">z</span>) {
@@ -1045,34 +1045,34 @@ a[Symbol.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 1
 ### String value that can't be repeated
 ### Review
 <h2 style="box-sizing: border-box; margin-top: 1em; margin-bottom: 16px; line-height: 1.225; font-size: 1.75em; position: relative; padding-bottom: 0.3em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;">Review</h2><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">ES6 adds a heap of new syntax forms to JavaScript, so there's plenty to learn!</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">Most of these are designed to ease the pain points of common programming idioms, such as setting default values to function parameters and gathering the "rest" of the parameters into an array. Destructuring is a powerful tool for more concisely expressing assignments of values from arrays and nested objects.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">While features like&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">=&gt;</code>&nbsp;arrow functions appear to also be all about shorter and nicer-looking syntax, they actually have very specific behaviors that you should intentionally use only in appropriate situations.</p><p style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px; margin-bottom: 0px !important;">Expanded Unicode support, new tricks for regular expressions, and even a new primitive&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">symbol</code>&nbsp;type round out the syntactic evolution of ES6.</p>
-# Organization
+### Organization
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch3.md
 ### Iterators
 ### Generators
-# Async && Flow Control
+### Async && Flow Control
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch4.md
 ### Promises
 ### Thenable
 ### Generator + Promises
-# Collections
+### Collections
 ### Map
 ### Sets
 ### Typed Arrays
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch5.md
-# Api Additions
+### Api Additions
 ### Any additions to existing types
 ### Arrays
 ### Objects
-# Meta Programming
+### Meta Programming
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch7.md
 ### Proxies
 ### ...
-# Beyond ES6
+### Beyond ES6
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch8.md
 # My presentaion
-# What's ES6
+### What's ES6
 ### names: ES6, ES2015, Harmony
-# How do I use ES6
+### How do I use ES6
 ### transpiling
 <h2 style="box-sizing: border-box; margin-top: 1em; margin-bottom: 16px; line-height: 1.225; font-size: 1.75em; position: relative; padding-bottom: 0.3em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;">Transpiling</h2><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">Made even worse by the rapid evolution of features, a problem arises for JS developers who at once may both strongly desire to use new features while at the same time being slapped with the reality that their sites/apps may need to support older browsers without such support.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">The way ES5 appears to have played out in the broader industry, the typical mindset was that code bases waited to adopt ES5 until most if not all pre-ES5 environments had fallen out of their support spectrum. As a result, many are just recently (at the time of this writing) starting to adopt things like&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">strict</code>&nbsp;mode, which landed in ES5 over five years ago.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">It's widely considered to be a harmful approach for the future of the JS ecosystem to wait around and trail the specification by so many years. All those responsible for evolving the language desire for developers to begin basing their code on the new features and patterns as soon as they stabilize in specification form and browsers have a chance to implement them.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">So how do we resolve this seeming contradiction? The answer is tooling, specifically a technique called&nbsp;<em style="box-sizing: border-box;">transpiling</em>(transformation + compiling). Roughly, the idea is to use a special tool to transform your ES6 code into equivalent (or close!) matches that work in ES5 environments.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">For example, consider shorthand property definitions (see "Object Literal Extensions" in Chapter 2). Here's the ES6 form:</p><div class="highlight highlight-js" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);"><span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">var</span> foo <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> [<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">1</span>,<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">2</span>,<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">3</span>];
 
@@ -1103,7 +1103,7 @@ obj.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);"
         <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">return</span> v1 <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">===</span> v2;
     };
 }</pre></div><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><strong style="box-sizing: border-box;">Tip:</strong>&nbsp;Pay attention to the outer&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">if</code>&nbsp;statement guard wrapped around the polyfill. This is an important detail, which means the snippet only defines its fallback behavior for older environments where the API in question isn't already defined; it would be very rare that you'd want to overwrite an existing API.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">There's a great collection of ES6 shims called "ES6 Shim" (<a href="https://github.com/paulmillr/es6-shim/" style="box-sizing: border-box; color: rgb(64, 120, 192); background-color: transparent;">https://github.com/paulmillr/es6-shim/</a>) that you should definitely adopt as a standard part of any new JS project!</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">It is assumed that JS will continue to evolve constantly, with browsers rolling out support for features continually rather than in large chunks. So the best strategy for keeping updated as it evolves is to just introduce polyfill shims into your code base, and a transpiler step into your build workflow, right now and get used to that new reality.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">If you decide to keep the status quo and just wait around for all browsers without a feature supported to go away before you start using the feature, you're always going to be way behind. You'll sadly be missing out on all the innovations designed to make writing JavaScript more effective, efficient, and robust.</p>
-# Syntax
+### Syntax
 ### Scope
 ### Spread && Rest
 <h2 style="box-sizing: border-box; margin-top: 1em; margin-bottom: 16px; line-height: 1.225; font-size: 1.75em; position: relative; padding-bottom: 0.3em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;">Spread/Rest</h2><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">ES6 introduces a new&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">...</code>&nbsp;operator that's typically referred to as the&nbsp;<em style="box-sizing: border-box;">spread</em>&nbsp;or&nbsp;<em style="box-sizing: border-box;">rest</em>&nbsp;operator, depending on where/how it's used. Let's take a look:</p><div class="highlight highlight-js" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;"><pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);"><span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">function</span> <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">foo</span>(<span class="pl-smi" style="box-sizing: border-box;">x</span>,<span class="pl-smi" style="box-sizing: border-box;">y</span>,<span class="pl-smi" style="box-sizing: border-box;">z</span>) {
@@ -2102,34 +2102,34 @@ a[Symbol.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 1
 ### String value that can't be repeated
 ### Review
 <h2 style="box-sizing: border-box; margin-top: 1em; margin-bottom: 16px; line-height: 1.225; font-size: 1.75em; position: relative; padding-bottom: 0.3em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;">Review</h2><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">ES6 adds a heap of new syntax forms to JavaScript, so there's plenty to learn!</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">Most of these are designed to ease the pain points of common programming idioms, such as setting default values to function parameters and gathering the "rest" of the parameters into an array. Destructuring is a powerful tool for more concisely expressing assignments of values from arrays and nested objects.</p><p style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">While features like&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">=&gt;</code>&nbsp;arrow functions appear to also be all about shorter and nicer-looking syntax, they actually have very specific behaviors that you should intentionally use only in appropriate situations.</p><p style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px; margin-bottom: 0px !important;">Expanded Unicode support, new tricks for regular expressions, and even a new primitive&nbsp;<code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; padding: 0.2em 0px; margin: 0px; background-color: rgba(0, 0, 0, 0.0392157);">symbol</code>&nbsp;type round out the syntactic evolution of ES6.</p>
-# Organization
+### Organization
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch3.md
 ### Iterators
 ### Generators
 ### Interfaces
 ### Classes
 ### Modules
-# Async && Flow Control
+### Async && Flow Control
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch4.md
 ### Promises
 ### Thenable
 ### Generator + Promises
-# Collections
+### Collections
 ### Map
 ### Sets
 ### Typed Arrays
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch5.md
-# Api Additions
+### Api Additions
 ### Any additions to existing types
 ### Arrays
 ### Objects
-# Meta Programming
+### Meta Programming
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch7.md
 ### Proxies
 ### ...
-# Beyond ES6
+### Beyond ES6
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch8.md
-# Different approaches
+### Different approaches
 ### ES5 to 6 demo
 ### Looking at changes to exisiting features
 ### Additions

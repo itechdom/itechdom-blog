@@ -1,7 +1,7 @@
 # Core
-# Asm.js
-# https://drive.google.com/open?id=0B9tPYCpuqoIrSmZzXzVxT2RCOEE
-# ES 
+### Asm.js
+### https://drive.google.com/open?id=0B9tPYCpuqoIrSmZzXzVxT2RCOEE
+### ES 
 ### ES5
 ### ES6/2015
 ### Concepts
@@ -16,7 +16,7 @@
 ### Async
 ### Await
 ### https://jakearchibald.com/2014/es7-async-functions/
-# DOM
+### DOM
 ### http://domenlightenment.com/#1.1
 ### Everything inherits from Node
 <h2 id="1.4" style="font-family: Tahoma; font-size: 1.3em; border-radius: 4px; margin-top: 80px; margin-bottom: 24px; padding: 8px; color: rgb(51, 51, 51); line-height: normal; background: rgb(247, 247, 249);">1.4 Properties and methods for working nodes</h2><p style="line-height: 1.8em; font-family: Helvetica; font-size: 16px;">Like we have been discussing all node objects (e.g&nbsp;<em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">Element</em>,&nbsp;<em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">Attr</em>,&nbsp;<em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">Text</em>&nbsp;etc...) inherit properties and methods from a primary&nbsp;<em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">Node</em>&nbsp;object. These properties and methods are the baseline values and functions for manipulating, inspecting, and traversing the DOM. In addtion to the properties and methods provided by the node interface there are a great deal of other relevant properties and methods that are provided by sub node interfaces such as the&nbsp;<em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">document</em>,&nbsp;<em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">HTMLElement</em>, or&nbsp;<em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">HTML*Element</em>&nbsp;interface.</p><p style="line-height: 1.8em; font-family: Helvetica; font-size: 16px;">Below I list out the most common&nbsp;<em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">Node</em>&nbsp;properties and methods inherited by all node objects including the relevant inherited properties for working with nodes from sub-node interfaces.</p><span style="font-family: Helvetica; font-size: 16px; line-height: normal;">Node Properties:</span><ul style="font-family: Helvetica; font-size: 16px; line-height: normal;"><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">childNodes</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">firstChild</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">lastChild</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">nextSibling</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">nodeName</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">nodeType</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">nodeValue</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">parentNode</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">previousSibling</em></li></ul><span style="font-family: Helvetica; font-size: 16px; line-height: normal;">Node Methods:</span><ul style="font-family: Helvetica; font-size: 16px; line-height: normal;"><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">appendChild()</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">cloneNode()</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">compareDocumentPosition()</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">contains()</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">hasChildNodes()</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">insertBefore()</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">isEqualNode()</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">removeChild()</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">replaceChild()</em></li></ul><p style="line-height: 1.8em; font-family: Helvetica; font-size: 16px;">Document Methods:</p><ul style="font-family: Helvetica; font-size: 16px; line-height: normal;"><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">document.createElement()</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">document.createTextNode()</em></li></ul><p style="line-height: 1.8em; font-family: Helvetica; font-size: 16px;">HTML * Element Properties:</p><ul style="font-family: Helvetica; font-size: 16px; line-height: normal;"><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">innerHTML</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">outerHTML</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">textContent</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">innerText</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">outerText</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">firstElementChild</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">lastElementChild</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">nextElementChild</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">previousElementChild</em></li><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">children</em></li></ul><p style="line-height: 1.8em; font-family: Helvetica; font-size: 16px;">HTML element Methods:</p><ul style="font-family: Helvetica; font-size: 16px; line-height: normal;"><li style="list-style-type: disc; padding: 3.79688px 0px; line-height: 1.6em;"><em style="color: rgb(96, 96, 96); font-family: 'Courier New', Courier, monospace;">insertAdjacentHTML()</em></li></ul>
@@ -27,12 +27,12 @@
 ### Event Flow
 ### Stopping Event propagation
 ### http://domenlightenment.com/#11
-# JS Engines
+### JS Engines
 ### V8
 ### javascript interpreter
 ### https://code.google.com/p/v8/
 ### home page
-# Web Engines
+### Web Engines
 ### Blink
 ### http://www.chromium.org/blink#TOC-Blink-s-Mission:
 ### Resources
@@ -45,12 +45,13 @@
 ### https://bitbucket.org/chromiumembedded/cef
 ### best way to use blink is with Chromium embedded framework
 # Thrid Party
-# jQuery
+### jQuery
+jQuery is a library, think of a library as a collection of factories (functions) that produce certain results. You have to learn how to use the library: to reduce time, follow best practices that other people wrote.<div><br></div><div>jQuery has a special syntax the dollar sign, that makes it extremely easy to do DOM manipulation, binding events, create image sliders,&nbsp;</div><div><br></div><div>Learning jQuery will save you time and effort in writing a lot of code to manipulate DOM. Although there are new libraries coming up, It's used heavily by web developers.&nbsp;</div>
 ### API
 Is a way to access data in other web systems. Meetup website for example. The web is full of apis that you can leverage:<div><br></div><div>Facebook</div><div>twitter</div><div>google</div><div>foursquare</div><div>etc</div>
 ### jQuery and Ajax
 jQuery has a function called ajax that we call to request data from meetup. Let's see how we do that<div><br></div><div>$.ajax</div><div>{</div><div><br></div><div><br></div><div><br></div><div>}</div>
-# Angularjs
+### Angularjs
 ### 1.0
 ### Concepts
 ### Dependency Injection
@@ -62,40 +63,40 @@ jQuery has a function called ajax that we call to request data from meetup. Let'
 ### Services
 ### Factories
 ### 2.0
-# RxJS
+### RxJS
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrc1dpTGJKaTFKRUE
-# React
-# Famous.io
+### React
+### Famous.io
 ### Concepts
 ### Webgl + DOM Rendering
-# Webpack
+### Webpack
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrVUhpN3FQQ3k4MnM
-# Gulp
-# Babel
+### Gulp
+### Babel
 ### https://babeljs.io/
-# ESlint
+### ESlint
 ### Linter for ES2015
-# continuous integration
+### continuous integration
 ### https://en.wikipedia.org/wiki/Continuous_integration#Software
 ### Travis-ci
 <span style="color: rgb(34, 34, 34); font-size: 15px; line-height: 19.5px;">The simpilest way to explain Travis CI is that it runs your program's tests every time you commit to GitHub (This can be configured in many ways, and you can always disables builds on some branches). The point of this is that you can often discover very quickly if your commit broke something, and fix it before it becomes a problem. I would reccomend running Travis CI on every GitHub repo that you have unit tests in and is using a programming language supported by Travis CI. Since setting up Travis CI is very easy, I don't normally see a good reason not to use it, unless you don't care if you have passing tests in your program. Feel free to leave a comment if you have any more questions. You can read more about Travis CI&nbsp;</span><a href="http://docs.travis-ci.com/" style="margin: 0px; padding: 0px; border: 0px; font-size: 15px; cursor: pointer; color: rgb(12, 101, 165); line-height: 19.5px;">here</a><span style="color: rgb(34, 34, 34); font-size: 15px; line-height: 19.5px;">.</span>
 ### https://travis-ci.org/
 ### ci
-# Aurelia
+### Aurelia
 ### Framework
-# Falore
+### Falore
 ### https://netflix.github.io/falcor/starter/what-is-falcor.html
 ### Represent you model the same way on the client and server
-# Animation Framework
+### Animation Framework
 ### http://www.sequencejs.com/
 # Concepts
-# Isomorphic
-# Lexical scoping
+### Isomorphic
+### Lexical scoping
 ### http://stackoverflow.com/questions/1047454/what-is-lexical-scope
 ### great example of lexical vs. dynamic scoping
 ### https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 ### Closures remembers the environment it was created in
-# Most Important functions
+### Most Important functions
 ### https://davidwalsh.name/essential-javascript-functions
 ### debounce
 <p style="padding: 0px; border: 0px; margin-bottom: 30px; color: rgba(0, 0, 0, 0.8); font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 22px; letter-spacing: 0.16px; line-height: 33px;">The debounce function can be a game-changer when it comes to&nbsp;event-fueled performance. &nbsp;If you aren't using a debouncing function with a&nbsp;<code style="padding-right: 6px; padding-left: 6px; border: 0px; margin: 0px; font-size: 17.6px; color: rgb(0, 0, 0); background: rgb(240, 240, 240);">scroll</code>,&nbsp;<code style="padding-right: 6px; padding-left: 6px; border: 0px; margin: 0px; font-size: 17.6px; color: rgb(0, 0, 0); background: rgb(240, 240, 240);">resize</code>,&nbsp;<code style="padding-right: 6px; padding-left: 6px; border: 0px; margin: 0px; font-size: 17.6px; color: rgb(0, 0, 0); background: rgb(240, 240, 240);">key*</code>event, you're probably doing it&nbsp;wrong. &nbsp;Here's a&nbsp;<code style="padding-right: 6px; padding-left: 6px; border: 0px; margin: 0px; font-size: 17.6px; color: rgb(0, 0, 0); background: rgb(240, 240, 240);">debounce</code>function to keep your code&nbsp;efficient:</p><pre class=" language-js" prism="1" style="border-right-width: 0px; border-left-width: 0px; border-top-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); margin-bottom: 30px; font-size: 16px; tab-size: 4; color: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; direction: ltr; white-space: pre; word-break: normal; word-wrap: normal; line-height: 1.5; overflow: auto; letter-spacing: 0.16px; padding: 20px 0px !important; background: rgb(245, 242, 240);"><span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// Returns a function, that, as long as it continues to be invoked, will not</span>
@@ -164,18 +165,19 @@ window<span class="token punctuation" style="padding: 0px; border: 0px; margin: 
 <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">canOnlyFireOnce</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span> <span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// "Fired!"</span>
 <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">canOnlyFireOnce</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span> <span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// nada</span></pre><p style="padding: 0px; border: 0px; margin-bottom: 30px; color: rgba(0, 0, 0, 0.8); font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 22px; letter-spacing: 0.16px; line-height: 33px;">The&nbsp;<code style="padding-right: 6px; padding-left: 6px; border: 0px; margin: 0px; font-size: 17.6px; color: rgb(0, 0, 0); background: rgb(240, 240, 240);">once</code>&nbsp;function ensures a given function can only be called once, thus prevent duplicate initialization!</p>
 # Design Patterns
-# https://carldanley.com/javascript-design-patterns/
+<h2 style="font-family: 'Gilda Display', sans-serif; color: rgb(0, 0, 0); line-height: 33px;">Modern Day JavaScript Design Patterns</h2><p style="font-family: 'Gilda Display', sans-serif; color: rgb(34, 34, 34); font-size: 22px; line-height: 33px;">Below is a list of each JavaScript design pattern I've had the opportunity to write about with breakdowns on various aspects of that pattern such as their advantages and disadvantages. Browse away!</p><p style="font-family: 'Gilda Display', sans-serif; color: rgb(34, 34, 34); font-size: 22px; line-height: 33px;"><a href="http://carldanley.com/js-module-pattern/" style="color: rgb(236, 59, 25);">The Module Pattern</a>&nbsp;<br><a href="http://carldanley.com/js-revealing-module-pattern/" style="color: rgb(236, 59, 25);">The Revealing Module Pattern</a>&nbsp;<br><a href="http://carldanley.com/js-singleton-pattern/" style="color: rgb(236, 59, 25);">The Singleton Pattern</a>&nbsp;<br><a href="http://carldanley.com/js-observer-pattern/" style="color: rgb(236, 59, 25);">The Observer Pattern</a>&nbsp;<br><a href="http://carldanley.com/js-mediator-pattern/" style="color: rgb(236, 59, 25);">The Mediator Pattern</a>&nbsp;<br><a href="http://carldanley.com/js-prototype-pattern/" style="color: rgb(236, 59, 25);">The Prototype Pattern</a>&nbsp;<br><a href="http://carldanley.com/js-facade-pattern/" style="color: rgb(236, 59, 25);">The Facade Pattern</a>&nbsp;<br><a href="http://carldanley.com/js-factory-pattern/" style="color: rgb(236, 59, 25);">The Factory Pattern</a></p>
+### https://carldanley.com/javascript-design-patterns/
 # Paradigms
-# Functional
-# Functional Reactive
+### Functional
+### Functional Reactive
 ### RxJS
-# OOP
+### OOP
 # Resources
-# JS in one Pic
+### JS in one Pic
 ### http://coodict.github.io/javascript-in-one-pic/
-# You don't Know JS
+### You don't Know JS
 ### https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/ch1.md
-# Functional Programming
+### Functional Programming
 ### Relies on the idea of function from math
 ### One input and one output
 ### no side effects
@@ -245,14 +247,14 @@ shout(<span class="hljs-string" style="box-sizing: border-box; -webkit-tap-highl
 <span class="hljs-comment" style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; color: rgb(142, 144, 140);">//pointfree</span>
 <span class="hljs-keyword" style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; color: rgb(137, 89, 168);">var</span> snakeCase = compose(replace(<span class="hljs-regexp" style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; color: rgb(200, 40, 41);">/\s+/ig</span>, <span class="hljs-string" style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; color: rgb(113, 140, 0);">'_'</span>), toLowerCase);</code></pre>
 ### relies on category theory
-# http://jsforcats.com/#strings
+### http://jsforcats.com/#strings
 ### Javascript for cats, beginner javascript
-# https://www.youtube.com/watch?v=H4sSldXv_S4
+### https://www.youtube.com/watch?v=H4sSldXv_S4
 ### Teaching JS with JS
 # Programmed in
-# Coffee
-# Clojure
-# Ruby
-# TypeScript
-# Elm
-# WebAssembly
+### Coffee
+### Clojure
+### Ruby
+### TypeScript
+### Elm
+### WebAssembly

@@ -34,7 +34,7 @@ var ops = {
 	,flatten(mindmap,pArr,level){
 		for(var key in mindmap){
 			var obj = mindmap[key];
-			var pObject = processMindmapObject(obj,key);
+			var pObject = this.processItem(obj,key);
 			if(!level){
 				pObject.level = 1;
 			}
@@ -42,7 +42,10 @@ var ops = {
 				pObject.level = level;
 			}
 			pArr.push(pObject);
-			traverseMindmap(obj.ideas,pArr,levelsDeep++);
+			if(!levelsDeep){
+				var levelsDeep = 0;
+			}
+			this.flatten(obj.ideas,pArr,levelsDeep++);
 		}
 	}
 	,sort(unordered){
@@ -78,14 +81,14 @@ var ops = {
 		});
 		return arr;
 	}
-	,parse(file){
+	,toJson(file){
 		var mindmap = JSON.parse(String(file.contents));
 		return mindmap;
 	}
 	,cleanHTML(html){
 		return html;
 	}
-	,convertToMarkdown(mindmap){
+	,ToMarkdown(mindmap){
 		var f = "";
 		mindmap.map((idea)=>{
 			var head = "#"

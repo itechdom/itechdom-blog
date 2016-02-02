@@ -1,9 +1,9 @@
 # Concepts
-# RFP
-# Connected Components
-# Visualized path of operation
+### RFP
+### Connected Components
+### Visualized path of operation
 # Code Work
-# Client
+### Client
 ### Components
 ### Arranged in a meaningful fashion by connecting to different I/O stream
 ### Debugger
@@ -14,7 +14,7 @@
 ### Spinners
 ### Todo
 ### Debugger
-# Server
+### Server
 ### Main
 ### Components
 ### Hopefully the same way we run client

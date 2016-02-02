@@ -1,6 +1,6 @@
 # core
-# 3.0
-# sass
+### 3.0
+### sass
 ### Variables
 ### Global variables
 ### Scaffolding
@@ -26,5 +26,5 @@
 ### Utilities 
 ### responsive
 ### non
-# Templates
+### Templates
 ### https://github.com/IronSummitMedia/startbootstrap-simple-sidebar
