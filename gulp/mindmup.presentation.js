@@ -7,7 +7,7 @@ var mindmupParse = require("../gulp-custom/mindmup.parser.js");
 module.exports = function(options) {
 	gulp.task('mindmap:presentation', function(done) {
 		return gulp.src(options.drive+"**/*.presentation.mup")
-			.pipe(data(function(file) {
+		.pipe(data(function(file) {
 			var mindmap = mindmupParse.toJson(file);
 			var pArr = [];
 			const unordered = mindmap.ideas;	
@@ -27,12 +27,12 @@ module.exports = function(options) {
 			})
 			var finalContent = mindmupParse.toHTML(pArr);
 			file.contents = new Buffer(finalContent);
-			}))
-		.pipe(rename(function (path) {
-			path.extname = ".html";
-			path.dirname = "./";
 		}))
-		.pipe(gulp.dest('./content/presentations'))
+	.pipe(rename(function (path) {
+		path.extname = ".html";
+		path.dirname = "./";
+	}))
+	.pipe(gulp.dest('./content/presentations'))
 	});
 	gulp.task('watch:presentation', function(){
 		gulp.watch(options.drive+"**/*.presentation.mup", ['mindmap:presentation']);

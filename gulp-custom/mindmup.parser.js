@@ -1,10 +1,4 @@
 var cheerio = require('cheerio');
-var slideTemplate = `<div class="reveal">
-<div class="slides">
-</div>
-</div>`
-var slideElement = cheerio.load(slideTemplate);
-
 
 String.prototype.replaceAll = function(str1, str2, ignore) 
 {
@@ -110,10 +104,12 @@ var ops = {
 		var f = "";
 		var count = 0;
 		var parentId;
+		var slideTemplate = `<div class="reveal">
+			<div class="slides">
+			</div>
+			</div>`
+		var slideElement = cheerio.load(slideTemplate);
 		mindmap.map((idea)=>{
-			var fruits = [];
-			var section;
-			var cHTML;
 			count++;
 			if(idea.title){
 				parentId = count;

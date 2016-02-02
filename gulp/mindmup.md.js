@@ -29,6 +29,7 @@ module.exports = function(options) {
 					currentIndex = pArr.length;
 				}
 			})
+			
 			var finalContent = mindmupParse.ToMarkdown(pArr);
 			file.contents = new Buffer(finalContent);
 		}))
