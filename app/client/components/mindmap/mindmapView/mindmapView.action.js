@@ -14,4 +14,4 @@ class mindmapViewActionMain{
 
 }
 
-module.exports = mindmapViewActionMain();
+module.exports = new mindmapViewActionMain();

@@ -14,4 +14,4 @@ class mindmapDraggableActionMain{
 
 }
 
-module.exports = mindmapDraggableActionMain();
+module.exports = new mindmapDraggableActionMain();

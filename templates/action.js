@@ -14,4 +14,4 @@ class <%= name %>ActionMain{
 
 }
 
-module.exports = <%= name %>ActionMain();
+module.exports = new <%= name %>ActionMain();

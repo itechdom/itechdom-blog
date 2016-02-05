@@ -8,4 +8,4 @@ class <%= name %>Main{
 		this.actions = actions;
 	}
 }
-module.exports = new Main();
+module.exports = new <%= name %>Main();
