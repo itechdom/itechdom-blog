@@ -5,3 +5,4 @@ require("./src/scss/main.scss");
 //require("./components/admin/admin.js");
 //require("./components/post/post.js");
 require("./components/slides/slides.js");
+require("./components/mindmap/mindmap.js");
