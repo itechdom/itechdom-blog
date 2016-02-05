@@ -6,6 +6,8 @@ var sync = require('run-sequence');
 
 
 var options = {
+  client:'./app/client/',
+  server:'./app/server/',
   src: './app/client/main.js',
   dist: './dist/',
   main:'./app/',

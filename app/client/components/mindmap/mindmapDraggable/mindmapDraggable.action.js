@@ -5,7 +5,7 @@ var EventEmitter = require('events').EventEmitter,
 	customEvent = new EventEmitter();
 
 
-class <%= name %>ActionMain{
+class mindmapDraggableActionMain{
 	constructor(){
 		return {
 			request$: Rx.Observable.fromEvent(document,'DOMContentLoaded'),
@@ -14,4 +14,4 @@ class <%= name %>ActionMain{
 
 }
 
-module.exports = <%= name %>ActionMain();
+module.exports = mindmapDraggableActionMain();
