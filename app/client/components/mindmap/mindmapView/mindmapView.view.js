@@ -1,14 +1,75 @@
 'use strict';
 var template = require('./mindmapView.html');
 var $ = require('jquery');
+var PIXI = require('pixi.js');
 
-class mindmapViewView {
+class mindmapView {
 
 	render(){
-		$('app').html(template);
+		var renderer = PIXI.autoDetectRenderer(800, 800, { antialias: true });
+		console.log(window.innerWidth,window.innerHeight);
+		document.body.appendChild(renderer.view);
+
+		var stage = new PIXI.Container();
+
+		stage.interactive = true;
+
+		var style = {
+			font : 'bold italic 36px Arial',
+			fill : '#F7EDCA',
+			stroke : '#4a1850',
+			strokeThickness : 5,
+			dropShadow : true,
+			dropShadowColor : '#000000',
+			dropShadowAngle : Math.PI / 6,
+			dropShadowDistance : 6,
+			wordWrap : true,
+			wordWrapWidth : 440
+		};
+
+
+		var basicText = new PIXI.Text('Basic text in pixi',style);
+		basicText.x = 200;
+		basicText.y = 200;
+
+		stage.addChild(basicText);
+
+		var graphics = new PIXI.Graphics();
+
+		// set a fill and a line style again and draw a rectangle
+		graphics.lineStyle(2, 0x0000FF, 1);
+		graphics.beginFill(0xFF700B, 1);
+		graphics.drawRect(0, 0, 120, 120);
+
+
+		stage.addChild(graphics);
+
+		console.log(graphics);
+
+		// run the render loop
+		animate();
+
+		var flag = false;
+		function animate() {
+			basicText.text = graphics.y;
+			if(graphics.y >= 500 || flag ){
+				flag= true;
+				basicText.text = "I am going up";
+				graphics.x--;
+				graphics.y--;
+			}
+			if(graphics.y < 100 || !flag){
+				flag = false;
+				basicText.text = "I am going down";
+				graphics.x++;
+				graphics.y++;
+			}
+			renderer.render(stage);
+			requestAnimationFrame( animate );
+		}
 	}
 	constructor() {
 
 	}
 }
-module.exports = new mindmapViewView();
+module.exports = new mindmapView();
