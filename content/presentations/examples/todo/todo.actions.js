@@ -2,22 +2,22 @@
 var Rx = require('rx');
 var serverActions = require('../server/server.actions.js');
 
-var request$ = serverActions.request$.filter((reqObj)=>{
+var req$ = serverActions.req$.filter((reqObj)=>{
 	return reqObj.req.url == "/todo";
 });
 
 var actions =  {
-	request$,
-	get$:request$.filter((reqObj)=>{
+	req$,
+	get$:req$.filter((reqObj)=>{
 		return reqObj.req.method == 'GET';
 	}),
-	post$:request$.filter((reqObj)=>{
+	post$:req$.filter((reqObj)=>{
 		return reqObj.req.method == 'POST';
 	}),
-	update$:request$.filter((reqObj)=>{
+	update$:req$.filter((reqObj)=>{
 		return reqObj.req.method == 'UPDATE';
 	}),
-	delete$:request$.filter((reqObj)=>{
+	delete$:req$.filter((reqObj)=>{
 		return reqObj.req.method == 'DELETE';
 	})
 }
