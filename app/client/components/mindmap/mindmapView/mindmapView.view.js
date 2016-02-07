@@ -52,17 +52,22 @@ class mindmapView {
 		var flag = false;
 		function animate() {
 			basicText.text = graphics.y;
-			if(graphics.y >= 500 || flag ){
-				flag= true;
-				basicText.text = "I am going up";
-				graphics.x--;
-				graphics.y--;
-			}
-			if(graphics.y < 100 || !flag){
-				flag = false;
+			if(graphics.y === 0 || flag){
+				flag = true;
 				basicText.text = "I am going down";
 				graphics.x++;
 				graphics.y++;
+			}
+			if(graphics.y === 500 || !flag){
+				if(graphics.y ===  0){
+					flag = true;
+				}
+				else{
+				flag = false
+				}
+				basicText.text = "I am going up";
+				graphics.x--;
+				graphics.y--;
 			}
 			renderer.render(stage);
 			requestAnimationFrame( animate );
