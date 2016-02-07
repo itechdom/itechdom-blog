@@ -41,10 +41,19 @@ class mindmapView {
 		graphics.beginFill(0xFF700B, 1);
 		graphics.drawRect(0, 0, 120, 120);
 
+		var graphics2 = new PIXI.Graphics();
+		graphics2.lineStyle(2, 0x0000FF, 1);
+		graphics2.beginFill(0xFF700B, 1);
+		graphics2.drawRect(200, 200, 120, 120);
+
+
+		var graphics3 = new PIXI.Graphics();
 
 		stage.addChild(graphics);
+		stage.addChild(graphics2);
+		stage.addChild(graphics3);
 
-		console.log(graphics);
+		renderer.render(stage);
 
 		// run the render loop
 		animate();
@@ -54,21 +63,33 @@ class mindmapView {
 			basicText.text = graphics.y;
 			if(graphics.y === 0 || flag){
 				flag = true;
-				basicText.text = "I am going down";
 				graphics.x++;
 				graphics.y++;
+
+				graphics2.x = graphics2.x + 3;
+				graphics2.y = graphics2.y + 1;
 			}
 			if(graphics.y === 500 || !flag){
 				if(graphics.y ===  0){
 					flag = true;
 				}
 				else{
-				flag = false
+					flag = false
 				}
-				basicText.text = "I am going up";
-				graphics.x--;
-				graphics.y--;
+
+				graphics.x --;
+				graphics.y --;
+
+				graphics2.x --;
+				graphics2.y --;
+
 			}
+			graphics3.clear();
+			graphics3.lineStyle(1, 0x0000FF, 1);
+			graphics3.moveTo(graphics.x + 120, graphics.y + 120);
+			graphics3.lineTo(graphics2.x + 200, graphics2.y + 200);
+			graphics3.endFill();
+
 			renderer.render(stage);
 			requestAnimationFrame( animate );
 		}
