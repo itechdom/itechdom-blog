@@ -10,72 +10,49 @@
 ### Archeticture
 ### https://angular.io/docs/ts/latest/guide/architecture.html
 ### Building Blocks
-<p style="box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif;">The architecture diagram identifies the eight main building blocks of an Angular 2 application:</p><ol style="box-sizing: border-box; margin-bottom: 16px; margin-left: 0px; font-size: 16px; opacity: 0.87; line-height: 28px; padding-left: 32px; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif;"><li style="box-sizing: border-box;"><a href="https://angular.io/docs/ts/latest/guide/architecture.html#module" style="box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;">Module</a></li><li style="box-sizing: border-box;"><a href="https://angular.io/docs/ts/latest/guide/architecture.html#component" style="box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;">Component</a></li><li style="box-sizing: border-box;"><a href="https://angular.io/docs/ts/latest/guide/architecture.html#template" style="box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;">Template</a></li><li style="box-sizing: border-box;"><a href="https://angular.io/docs/ts/latest/guide/architecture.html#metadata" style="box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;">Metadata</a></li><li style="box-sizing: border-box;"><a href="https://angular.io/docs/ts/latest/guide/architecture.html#data-binding" style="box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;">Data Binding</a></li><li style="box-sizing: border-box;"><a href="https://angular.io/docs/ts/latest/guide/architecture.html#service" style="box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;">Service</a></li><li style="box-sizing: border-box;"><a href="https://angular.io/docs/ts/latest/guide/architecture.html#directive" style="box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;">Directive</a></li><li style="box-sizing: border-box;"><a href="https://angular.io/docs/ts/latest/guide/architecture.html#dependency-injection" style="box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); background: 0px 0px transparent;">Dependency Injection</a></li></ol>
+The architecture diagram identifies the eight main building blocks of an Angular 2 application:
+
+1.  [Module](https://angular.io/docs/ts/latest/guide/architecture.html#module)
+2.  [Component](https://angular.io/docs/ts/latest/guide/architecture.html#component)
+3.  [Template](https://angular.io/docs/ts/latest/guide/architecture.html#template)
+4.  [Metadata](https://angular.io/docs/ts/latest/guide/architecture.html#metadata)
+5.  [Data Binding](https://angular.io/docs/ts/latest/guide/architecture.html#data-binding)
+6.  [Service](https://angular.io/docs/ts/latest/guide/architecture.html#service)
+7.  [Directive](https://angular.io/docs/ts/latest/guide/architecture.html#directive)
+8.  [Dependency Injection](https://angular.io/docs/ts/latest/guide/architecture.html#dependency-injection)
 ### Modules
 ### Library modules or Barrels
 ### Public facade of other libraries?
 ### component
-<span style="color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px;">Angular creates, updates, and destroys components as the user moves through the application. The developer can take action at each moment in this lifecycle through optional&#xA0;</span><a href="https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html" style="box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: 0px 0px; background-repeat: initial;">Lifecycle Hooks</a><span style="color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px;">.</span>
+<span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;">Angular creates, updates, and destroys components as the user moves through the application. The developer can take action at each moment in this lifecycle through optional </span>[Lifecycle Hooks](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html)<span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;">.</span>
 ### component lifecycle
 ### https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html
 ### other components
 ### Routing
 ### https://angular.io/docs/ts/latest/guide/router.html
 ### metadata
-<code-example language="ts" format="linenums" style="box-sizing: border-box; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; line-height: normal;"><pre class="prettyprint linenums lang-ts prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Monaco, &apos;Lucida Console&apos;, monospace; color: rgb(92, 112, 122); width: auto; position: relative; line-height: 24px; margin-bottom: 24px; border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px; background: rgb(245, 246, 247);"><ol class="linenums" style="box-sizing: border-box; margin-bottom: 0px; margin-left: 0px; opacity: 0.87; line-height: 28px; padding: 16px 32px 16px 56px; overflow: auto; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><li class="L0" style="box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;"><code ng-non-bindable="" style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="lit" style="box-sizing: border-box; color: rgb(100, 127, 17);">@Component</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">({</span>
+<code-example language="ts" format="linenums" style="box-sizing: border-box; color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; line-height: normal;">
 
-```
+<pre class="prettyprint linenums lang-ts prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Monaco, 'Lucida Console', monospace; color: rgb(92, 112, 122); width: auto; position: relative; line-height: 24px; margin-bottom: 24px; border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px; background: rgb(245, 246, 247);">
 
-</li><li class="L1" style="box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;"><code ng-non-bindable="" style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="pln" style="box-sizing: border-box;">  selector</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">:</span><span class="pln" style="box-sizing: border-box;">    </span><span class="str" style="box-sizing: border-box; color: rgb(100, 127, 17);">&apos;hero-list&apos;</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">,</span>
+1.  `<span class="lit" style="box-sizing: border-box; color: rgb(100, 127, 17);">@Component</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">({</span>`
+2.  ` <span class="pln" style="box-sizing: border-box;">selector</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">:</span> <span class="pln" style="box-sizing: border-box;"></span> <span class="str" style="box-sizing: border-box; color: rgb(100, 127, 17);">'hero-list'</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">,</span>`
+3.  ` <span class="pln" style="box-sizing: border-box;">templateUrl</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">:</span> <span class="pln" style="box-sizing: border-box;"></span> <span class="str" style="box-sizing: border-box; color: rgb(100, 127, 17);">'app/hero-list.component.html'</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">,</span>`
+4.  ` <span class="pln" style="box-sizing: border-box;">directives</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">:</span> <span class="pln" style="box-sizing: border-box;"></span> <span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">[</span><span class="typ" style="box-sizing: border-box; color: rgb(212, 54, 105);">HeroDetailComponent</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">],</span>`
+5.  ` <span class="pln" style="box-sizing: border-box;">providers</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">:</span> <span class="pln" style="box-sizing: border-box;"></span> <span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">[</span><span class="typ" style="box-sizing: border-box; color: rgb(212, 54, 105);">HeroService</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">]</span>`
+6.  `<span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">})</span>`
+7.  `<span class="kwd" style="box-sizing: border-box; color: rgb(212, 54, 105);">export</span> <span class="pln" style="box-sizing: border-box;"></span> <span class="kwd" style="box-sizing: border-box; color: rgb(212, 54, 105);">class</span> <span class="pln" style="box-sizing: border-box;"></span> <span class="typ" style="box-sizing: border-box; color: rgb(212, 54, 105);">HeroesComponent</span> <span class="pln" style="box-sizing: border-box;"></span> <span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">{</span> <span class="pln" style="box-sizing: border-box;"></span> <span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">...</span> <span class="pln" style="box-sizing: border-box;"></span> <span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">}</span>`
 
-```
+</pre>
 
-</li><li class="L2" style="box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;"><code ng-non-bindable="" style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="pln" style="box-sizing: border-box;">  templateUrl</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">:</span><span class="pln" style="box-sizing: border-box;"> </span><span class="str" style="box-sizing: border-box; color: rgb(100, 127, 17);">&apos;app/hero-list.component.html&apos;</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">,</span>
+</code-example>
 
-```
-
-</li><li class="L3" style="box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;"><code ng-non-bindable="" style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="pln" style="box-sizing: border-box;">  directives</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">:</span><span class="pln" style="box-sizing: border-box;">  </span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">[</span><span class="typ" style="box-sizing: border-box; color: rgb(212, 54, 105);">HeroDetailComponent</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">],</span>
-
-```
-
-</li><li class="L4" style="box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;"><code ng-non-bindable="" style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="pln" style="box-sizing: border-box;">  providers</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">:</span><span class="pln" style="box-sizing: border-box;">   </span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">[</span><span class="typ" style="box-sizing: border-box; color: rgb(212, 54, 105);">HeroService</span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">]</span>
-
-```
-
-</li><li class="L5" style="box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 5px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;"><code ng-non-bindable="" style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">})</span>
-
-```
-
-</li><li class="L6" style="box-sizing: border-box; color: rgb(122, 139, 148); margin-bottom: 0px; line-height: normal; list-style-type: decimal; font-size: 12px; background: none;"><code ng-non-bindable="" style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 13px; border-radius: 2px; color: rgb(92, 112, 122); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="kwd" style="box-sizing: border-box; color: rgb(212, 54, 105);">export</span><span class="pln" style="box-sizing: border-box;"> </span><span class="kwd" style="box-sizing: border-box; color: rgb(212, 54, 105);">class</span><span class="pln" style="box-sizing: border-box;"> </span><span class="typ" style="box-sizing: border-box; color: rgb(212, 54, 105);">HeroesComponent</span><span class="pln" style="box-sizing: border-box;"> </span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">{</span><span class="pln" style="box-sizing: border-box;"> </span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">...</span><span class="pln" style="box-sizing: border-box;"> </span><span class="pun" style="box-sizing: border-box; color: rgb(122, 139, 148);">}</span>
-
-```
-
-</li></ol></pre></code-example><p style="box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif;">Here we see the&#xA0;<code style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; background: rgb(245, 246, 247);">@Component
-
-```
-
-&#xA0;decorator which (no surprise) identifies the class immediately below it as a Component class.</p><p style="box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif;"><br></p><p style="box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif;"><br></p>
+Here we see the `@Component` decorator which (no surprise) identifies the class immediately below it as a Component class.
 ### The architectural take-away is that we must add metadata to our code so that Angular knows what to do.
 ### we use decorators in TS
 ### @
 ### other decorators
-<span style="color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px;">We apply other metadata decorators in a similar fashion to guide Angular behavior. The&#xA0;</span><code style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);">@Injectable
-
-```
-
-<span style="color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px;">,&#xA0;</span><code style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);">@Input
-
-```
-
-<span style="color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px;">,&#xA0;</span><code style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);">@Output
-
-```
-
-<span style="color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px;">,</span><code style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);">@RouterConfig
-
-```
-
-<span style="color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px;">&#xA0;are a few of the more popular decorators we&apos;ll master as our Angular knowledge grows.</span>
+<span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;">We apply other metadata decorators in a similar fashion to guide Angular behavior. The </span>`@Injectable`<span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;">, </span>`@Input`<span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;">, </span>`@Output`<span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;">,</span>`@RouterConfig`<span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;"> are a few of the more popular decorators we'll master as our Angular knowledge grows.</span>
 ### Data binding
 ### ()
 ### event
@@ -86,7 +63,13 @@
 ### The service
 ### Well defined class that does a specific thing
 ### Examples
-<p style="box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif;">Examples include:</p><ul style="box-sizing: border-box; margin-bottom: 16px; margin-left: 0px; font-size: 16px; opacity: 0.87; line-height: 28px; padding-left: 32px; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif;"><li style="box-sizing: border-box;">logging service</li><li style="box-sizing: border-box;">data service</li><li style="box-sizing: border-box;">message bus</li><li style="box-sizing: border-box;">tax calculator</li><li style="box-sizing: border-box;">application configuration</li></ul>
+Examples include:
+
+*   logging service
+*   data service
+*   message bus
+*   tax calculator
+*   application configuration
 ### Dependency Injection
 ### https://angular.io/docs/ts/latest/guide/dependency-injection.html
 ### A nice way to understand Di
@@ -106,11 +89,7 @@
 ### Examples
 ### ngModel
 ### angular core
-<span style="color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px;">The&#xA0;</span><code style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);">angular2/core
-
-```
-
-<span style="color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif; font-size: 16px; line-height: 28px;">&#xA0;library is the primary Angular library module from which we get most of what we need.&#xA0;</span>
+<span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;">The </span>`angular2/core`<span style="color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;"> library is the primary Angular library module from which we get most of what we need. </span>
 # Resources
 ### cheat sheet
 ### https://angular.io/docs/ts/latest/guide/cheatsheet.html

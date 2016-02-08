@@ -1,232 +1,173 @@
 # Variables
-<h2 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 3em; line-height: 1.25em; font-weight: 300; letter-spacing: -0.03125em; color: rgb(102, 153, 153); padding-top: 0px; padding-bottom: 0.5em; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif;">Variables</h2><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you&apos;ll want to reuse. Sass uses the&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">$
+## Variables
 
-```
+Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the `$` symbol to make something a variable. Here's an example:
 
-&#xA0;symbol to make something a variable. Here&apos;s an example:</p><ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist" style="box-sizing: border-box; margin-right: -1em; margin-bottom: -4.5em; margin-left: 0px; border: 0px; outline: 0px; line-height: 24px; font-size: 16px; list-style: none; min-height: 0px; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif;"><li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="topic-2-SCSS" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-2-SCSS" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1" style="box-sizing: border-box; color: rgb(128, 140, 153); float: left; padding: 0.75em 1em; cursor: text; background-color: transparent;">SCSS</a></li><li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="topic-2-Sass" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-2-Sass" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2" style="box-sizing: border-box; color: rgb(179, 115, 153); float: left; padding: 0.75em 1em; background-color: transparent;">Sass</a></li></ul><div id="topic-2-SCSS" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><h3 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif; padding-top: 2.25em; padding-bottom: 0.75em; font-size: 1em; line-height: 1.5em; text-transform: uppercase; letter-spacing: 0.03125em; color: rgb(128, 140, 153);">SCSS SYNTAX</h3><pre class="highlight scss" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 2em; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nv" style="box-sizing: border-box; color: rgb(0, 128, 128);">$font-stack</span><span class="p" style="box-sizing: border-box;">:</span>    <span class="n" style="box-sizing: border-box;">Helvetica</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">sans-serif</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="nv" style="box-sizing: border-box; color: rgb(0, 128, 128);">$primary-color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="mh" style="box-sizing: border-box; color: rgb(0, 153, 153);">#333</span><span class="p" style="box-sizing: border-box;">;</span>
+*   [SCSS](http://sass-lang.com/guide#topic-2-SCSS)
+*   [Sass](http://sass-lang.com/guide#topic-2-Sass)
 
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">body</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">font</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">100%</span> <span class="nv" style="box-sizing: border-box; color: rgb(0, 128, 128);">$font-stack</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nv" style="box-sizing: border-box; color: rgb(0, 128, 128);">$primary-color</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
+<div id="topic-2-SCSS" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
+### SCSS SYNTAX
 
-```
+    $font-stack:    Helvetica, sans-serif;
+    $primary-color: #333;
 
-</pre></div><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">When the Sass is processed, it takes the variables we define for the&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">$font-stack
-
-```
-
-and&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">$primary-color
-
-```
-
-&#xA0;and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the&#xA0;site.</p><pre class="highlight css" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 24px; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">body</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">font</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">100%</span> <span class="n" style="box-sizing: border-box;">Helvetica</span><span class="p" style="box-sizing: border-box;">,</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">sans-serif</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">#333</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-
-```
-
-</pre><div><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="p" style="box-sizing: border-box;"><br></span>
-
-```
+    body {
+      font: 100% $font-stack;
+      color: $primary-color;
+    }
 
 </div>
+
+When the Sass is processed, it takes the variables we define for the `$font-stack`and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
+
+    body {
+      font: 100% Helvetica, sans-serif;
+      color: #333;
+    }
+
+<div>`<span class="p" style="box-sizing: border-box;">  
+</span>`</div>
 # Imports
-<h2 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 3em; line-height: 1.25em; font-weight: 300; letter-spacing: -0.03125em; color: rgb(102, 153, 153); padding-top: 0px; padding-bottom: 0.5em; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif;">Import</h2><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">CSS has an import option that lets you split your CSS into smaller, more maintainable portions. The only drawback is that each time you use&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">@import
+## Import
 
-```
+CSS has an import option that lets you split your CSS into smaller, more maintainable portions. The only drawback is that each time you use `@import` in CSS it creates another HTTP request. Sass builds on top of the current CSS `@import`but instead of requiring an HTTP request, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser.
 
-&#xA0;in CSS it creates another HTTP request. Sass builds on top of the current CSS&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">@import
+Let's say you have a couple of Sass files, `_reset.scss` and `base.scss`. We want to import `_reset.scss` into `base.scss`.
 
-```
+*   [SCSS](http://sass-lang.com/guide#topic-5-SCSS)
+*   [Sass](http://sass-lang.com/guide#topic-5-Sass)
 
-but instead of requiring an HTTP request, Sass will take the file that you want to import and combine it with the file you&apos;re importing into so you can serve a single CSS file to the web browser.</p><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">Let&apos;s say you have a couple of Sass files,&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">_reset.scss
+<div id="topic-5-SCSS" aria-labelledby="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-```
+### SCSS SYNTAX
 
-&#xA0;and&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">base.scss
+    // _reset.scss
 
-```
+    html,
+    body,
+    ul,
+    ol {
+       margin: 0;
+      padding: 0;
+    }
 
-. We want to import&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">_reset.scss
+    // base.scss
 
-```
+    @import 'reset';
 
-&#xA0;into&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">base.scss
+    body {
+      font: 100% Helvetica, sans-serif;
+      background-color: #efefef;
+    }
 
-```
+</div>
 
-.</p><ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist" style="box-sizing: border-box; margin-right: -1em; margin-bottom: -4.5em; margin-left: 0px; border: 0px; outline: 0px; line-height: 24px; font-size: 16px; list-style: none; min-height: 0px; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif;"><li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="topic-5-SCSS" aria-labelledby="ui-id-5" aria-selected="true" aria-expanded="true" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-5-SCSS" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5" style="box-sizing: border-box; color: rgb(128, 140, 153); float: left; padding: 0.75em 1em; cursor: text; background-color: transparent;">SCSS</a></li><li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="topic-5-Sass" aria-labelledby="ui-id-6" aria-selected="false" aria-expanded="false" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-5-Sass" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-6" style="box-sizing: border-box; color: rgb(179, 115, 153); float: left; padding: 0.75em 1em; background-color: transparent;">Sass</a></li></ul><div id="topic-5-SCSS" aria-labelledby="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><h3 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif; padding-top: 2.25em; padding-bottom: 0.75em; font-size: 1em; line-height: 1.5em; text-transform: uppercase; letter-spacing: 0.03125em; color: rgb(128, 140, 153);">SCSS SYNTAX</h3><pre class="highlight scss" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 2em; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="c1" style="box-sizing: border-box; color: rgb(153, 153, 136); font-style: italic;">// _reset.scss
-</span>
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">html</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span>
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">body</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span>
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">ul</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span>
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">ol</span> <span class="p" style="box-sizing: border-box;">{</span>
-   <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">margin</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">0</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">padding</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">0</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
+Notice we're using `@import 'reset';` in the `base.scss` file. When you import a file you don't need to include the file extension `.scss`. Sass is smart and will figure it out for you. When you generate the CSS you'll get:
 
+    html, body, ul, ol {
+      margin: 0;
+      padding: 0;
+    }
 
-```
-
-</pre><pre class="highlight scss" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 2em; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="c1" style="box-sizing: border-box; color: rgb(153, 153, 136); font-style: italic;">// base.scss
-</span>
-<span class="k" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">@import</span> <span class="s1" style="box-sizing: border-box; color: rgb(221, 17, 68);">&apos;reset&apos;</span><span class="p" style="box-sizing: border-box;">;</span>
-
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">body</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">font</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">100%</span> <span class="n" style="box-sizing: border-box;">Helvetica</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">sans-serif</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">background-color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="mh" style="box-sizing: border-box; color: rgb(0, 153, 153);">#efefef</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-
-```
-
-</pre></div><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">Notice we&apos;re using&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">@import &apos;reset&apos;;
-
-```
-
-&#xA0;in the&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">base.scss
-
-```
-
-&#xA0;file. When you import a file you don&apos;t need to include the file extension&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">.scss
-
-```
-
-. Sass is smart and will figure it out for you. When you generate the CSS you&apos;ll&#xA0;get:</p><pre class="highlight css" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 24px; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">html</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span> <span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">body</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span> <span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">ul</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span> <span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">ol</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">margin</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">0</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">padding</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">0</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">body</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">font</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">100%</span> <span class="n" style="box-sizing: border-box;">Helvetica</span><span class="p" style="box-sizing: border-box;">,</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">sans-serif</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">background-color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">#efefef</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-```
-
-</pre>
+    body {
+      font: 100% Helvetica, sans-serif;
+      background-color: #efefef;
+    }
 ### Css lets you do it, but it will do a separate HTTP request each time
 # Nesting
-<h2 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 3em; line-height: 1.25em; font-weight: 300; letter-spacing: -0.03125em; color: rgb(102, 153, 153); padding-top: 0px; padding-bottom: 0.5em; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif;">Nesting</h2><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">When writing HTML you&apos;ve probably noticed that it has a clear nested and visual hierarchy. CSS, on the other hand, doesn&apos;t.</p><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.</p><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">With that in mind, here&apos;s an example of some typical styles for a site&apos;s&#xA0;navigation:</p><ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist" style="box-sizing: border-box; margin-right: -1em; margin-bottom: -4.5em; margin-left: 0px; border: 0px; outline: 0px; line-height: 24px; font-size: 16px; list-style: none; min-height: 0px; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif;"><li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="topic-3-SCSS" aria-labelledby="ui-id-3" aria-selected="true" aria-expanded="true" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-3-SCSS" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3" style="box-sizing: border-box; color: rgb(128, 140, 153); float: left; padding: 0.75em 1em; cursor: text; background-color: transparent;">SCSS</a></li><li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="topic-3-Sass" aria-labelledby="ui-id-4" aria-selected="false" aria-expanded="false" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-3-Sass" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4" style="box-sizing: border-box; color: rgb(179, 115, 153); float: left; padding: 0.75em 1em; background-color: transparent;">Sass</a></li></ul><div id="topic-3-SCSS" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><h3 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif; padding-top: 2.25em; padding-bottom: 0.75em; font-size: 1em; line-height: 1.5em; text-transform: uppercase; letter-spacing: 0.03125em; color: rgb(128, 140, 153);">SCSS SYNTAX</h3><pre class="highlight scss" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 2em; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">nav</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">ul</span> <span class="p" style="box-sizing: border-box;">{</span>
-    <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">margin</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">0</span><span class="p" style="box-sizing: border-box;">;</span>
-    <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">padding</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">0</span><span class="p" style="box-sizing: border-box;">;</span>
-    <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">list-style</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">none</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="p" style="box-sizing: border-box;">}</span>
+## Nesting
 
-  <span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">li</span> <span class="p" style="box-sizing: border-box;">{</span> <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">display</span><span class="p" style="box-sizing: border-box;">:</span> <span class="n" style="box-sizing: border-box;">inline-block</span><span class="p" style="box-sizing: border-box;">;</span> <span class="p" style="box-sizing: border-box;">}</span>
+When writing HTML you've probably noticed that it has a clear nested and visual hierarchy. CSS, on the other hand, doesn't.
 
-  <span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">a</span> <span class="p" style="box-sizing: border-box;">{</span>
-    <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">display</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">block</span><span class="p" style="box-sizing: border-box;">;</span>
-    <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">padding</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">6px</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">12px</span><span class="p" style="box-sizing: border-box;">;</span>
-    <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">text-decoration</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">none</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="p" style="box-sizing: border-box;">}</span>
-<span class="p" style="box-sizing: border-box;">}</span>
+Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.
 
+With that in mind, here's an example of some typical styles for a site's navigation:
 
-```
+*   [SCSS](http://sass-lang.com/guide#topic-3-SCSS)
+*   [Sass](http://sass-lang.com/guide#topic-3-Sass)
 
-</pre></div><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">You&apos;ll notice that the&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">ul
+<div id="topic-3-SCSS" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-```
+### SCSS SYNTAX
 
-,&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">li
+    nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
 
-```
+      li { display: inline-block; }
 
-, and&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">a
+      a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+      }
+    }
 
-```
+</div>
 
-&#xA0;selectors are nested inside the&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">nav
+You'll notice that the `ul`, `li`, and `a` selectors are nested inside the `nav` selector. This is a great way to organize your CSS and make it more readable. When you generate the CSS you'll get something like this:
 
-```
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
 
-&#xA0;selector. This is a great way to organize your CSS and make it more readable. When you generate the CSS you&apos;ll get something like&#xA0;this:</p><pre class="highlight css" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 24px; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">nav</span> <span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">ul</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">margin</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">0</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">padding</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">0</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">list-style</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">none</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
+    nav li {
+      display: inline-block;
+    }
 
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">nav</span> <span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">li</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">display</span><span class="p" style="box-sizing: border-box;">:</span> <span class="n" style="box-sizing: border-box;">inline-block</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">nav</span> <span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">a</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">display</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">block</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">padding</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">6px</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">12px</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">text-decoration</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">none</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-```
-
-</pre>
+    nav a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
 # Operators
-<ul class="slides" style="box-sizing: border-box; margin-bottom: 0px; margin-left: 0px; padding-top: 1em; padding-bottom: 1em; list-style: none; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;"><li id="topic-8" class="ui-tabs ui-widget ui-widget-content ui-corner-all" style="box-sizing: border-box; position: relative; padding: 0px;"><h2 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 3em; line-height: 1.25em; font-weight: 300; letter-spacing: -0.03125em; color: rgb(102, 153, 153); padding-top: 0px; padding-bottom: 0.5em; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif;">Operators</h2><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em;">Doing math in your CSS is very helpful. Sass has a handful of standard math operators like&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">+
+*   ## Operators
 
-```
+    Doing math in your CSS is very helpful. Sass has a handful of standard math operators like `+`, `-`, `*`, `/`, and `%`. In our example we're going to do some simple math to calculate widths for an `aside` & `article`.
 
-,&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">-
+    *   [SCSS](http://sass-lang.com/guide#topic-8-SCSS)
+    *   [Sass](http://sass-lang.com/guide#topic-8-Sass)
 
-```
+    <div id="topic-8-SCSS" aria-labelledby="ui-id-11" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; background: none;">
 
-,&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">*
+    ### SCSS SYNTAX
 
-```
+        .container { width: 100%; }
 
-,&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">/
+        article[role="main"] {
+          float: left;
+          width: 600px / 960px * 100%;
+        }
 
-```
+        aside[role="complimentary"] {
+          float: right;
+          width: 300px / 960px * 100%;
+        }
 
-, and&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">%
+    </div>
 
-```
+    We've created a very simple fluid grid, based on 960px. Operations in Sass let us do something like take pixel values and convert them to percentages without much hassle. The generated CSS will look like:
 
-. In our example we&apos;re going to do some simple math to calculate widths for an&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">aside
+        .container {
+          width: 100%;
+        }
 
-```
+        article[role="main"] {
+          float: left;
+          width: 62.5%;
+        }
 
-&#xA0;&amp;&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">article
-
-```
-
-.</p><ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist" style="box-sizing: border-box; margin-right: -1em; margin-bottom: -4.5em; margin-left: 0px; border: 0px; outline: 0px; line-height: inherit; list-style: none; min-height: 0px; max-width: 37.5em;"><li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="topic-8-SCSS" aria-labelledby="ui-id-11" aria-selected="true" aria-expanded="true" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-8-SCSS" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-11" style="box-sizing: border-box; color: rgb(128, 140, 153); float: left; padding: 0.75em 1em; cursor: text; background-color: transparent;">SCSS</a></li><li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="topic-8-Sass" aria-labelledby="ui-id-12" aria-selected="false" aria-expanded="false" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-8-Sass" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-12" style="box-sizing: border-box; color: rgb(179, 115, 153); float: left; padding: 0.75em 1em; background-color: transparent;">Sass</a></li></ul><div id="topic-8-SCSS" aria-labelledby="ui-id-11" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; background: none;"><h3 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif; padding-top: 2.25em; padding-bottom: 0.75em; font-size: 1em; line-height: 1.5em; text-transform: uppercase; letter-spacing: 0.03125em; color: rgb(128, 140, 153);">SCSS SYNTAX</h3><pre class="highlight scss" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 2em; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.container</span> <span class="p" style="box-sizing: border-box;">{</span> <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">width</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">100%</span><span class="p" style="box-sizing: border-box;">;</span> <span class="p" style="box-sizing: border-box;">}</span>
-
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">article</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">[</span><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">role</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">=</span><span class="s2" style="box-sizing: border-box; color: rgb(221, 17, 68);">&quot;main&quot;</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">]</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">float</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">left</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">width</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">600px</span> <span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">/</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">960px</span> <span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">*</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">100%</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">aside</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">[</span><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">role</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">=</span><span class="s2" style="box-sizing: border-box; color: rgb(221, 17, 68);">&quot;complimentary&quot;</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">]</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">float</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">right</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">width</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">300px</span> <span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">/</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">960px</span> <span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">*</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">100%</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-
-```
-
-</pre></div><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em;">We&apos;ve created a very simple fluid grid, based on 960px. Operations in Sass let us do something like take pixel values and convert them to percentages without much hassle. The generated CSS will look like:</p><pre class="highlight css" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 2em; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.container</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">width</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">100%</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">article</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">[</span><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">role</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">=</span><span class="err" style="box-sizing: border-box; color: rgb(166, 23, 23); background: none;">&quot;</span><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">main</span><span class="err" style="box-sizing: border-box; color: rgb(166, 23, 23); background: none;">&quot;</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">]</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">float</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">left</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">width</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">62.5%</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-<span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">aside</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">[</span><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">role</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">=</span><span class="err" style="box-sizing: border-box; color: rgb(166, 23, 23); background: none;">&quot;</span><span class="nt" style="box-sizing: border-box; color: rgb(0, 0, 128);">complimentary</span><span class="err" style="box-sizing: border-box; color: rgb(166, 23, 23); background: none;">&quot;</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">]</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">float</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">right</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">width</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">31.25%</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-```
-
-</pre></li></ul>
+        aside[role="complimentary"] {
+          float: right;
+          width: 31.25%;
+        }
 # Thrid Party
 ### http://ianlunn.github.io/Hover/
 ### Hovers for sass
@@ -241,130 +182,100 @@ but instead of requiring an HTTP request, Sass will take the file that you want 
 ### https://github.com/mrmrs/colors
 ### Smaller defaults for colors
 # Partials
-<h2 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 3em; line-height: 1.25em; font-weight: 300; letter-spacing: -0.03125em; color: rgb(102, 153, 153); padding-top: 0px; padding-bottom: 0.5em; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif;">Partials</h2><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">You can create partial Sass files that contain little snippets of CSS that you can include in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is simply a Sass file named with a leading underscore. You might name it something like&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">_partial.scss
+## Partials
 
-```
-
-. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">@import
-
-```
-
-&#xA0;directive.</p>
+You can create partial Sass files that contain little snippets of CSS that you can include in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is simply a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@import` directive.
 # Mixins
-<h2 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 3em; line-height: 1.25em; font-weight: 300; letter-spacing: -0.03125em; color: rgb(102, 153, 153); padding-top: 0px; padding-bottom: 0.5em; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif;">Mixins</h2><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">Some things in CSS are a bit tedious to write, especially with CSS3 and the many vendor prefixes that exist. A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. A good use of a mixin is for vendor prefixes. Here&apos;s an example for&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">border-radius
+## Mixins
 
-```
+Some things in CSS are a bit tedious to write, especially with CSS3 and the many vendor prefixes that exist. A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. A good use of a mixin is for vendor prefixes. Here's an example for `border-radius`
 
-</p><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">.</p><ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist" style="box-sizing: border-box; margin-right: -1em; margin-bottom: -4.5em; margin-left: 0px; border: 0px; outline: 0px; line-height: 24px; font-size: 16px; list-style: none; min-height: 0px; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif;"><li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="topic-6-SCSS" aria-labelledby="ui-id-7" aria-selected="true" aria-expanded="true" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-6-SCSS" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-7" style="box-sizing: border-box; color: rgb(128, 140, 153); float: left; padding: 0.75em 1em; cursor: text; background-color: transparent;">SCSS</a></li><li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="topic-6-Sass" aria-labelledby="ui-id-8" aria-selected="false" aria-expanded="false" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-6-Sass" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-8" style="box-sizing: border-box; color: rgb(179, 115, 153); float: left; padding: 0.75em 1em; background-color: transparent;">Sass</a></li></ul><div id="topic-6-SCSS" aria-labelledby="ui-id-7" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><h3 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif; padding-top: 2.25em; padding-bottom: 0.75em; font-size: 1em; line-height: 1.5em; text-transform: uppercase; letter-spacing: 0.03125em; color: rgb(128, 140, 153);">SCSS SYNTAX</h3><pre class="highlight scss" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 2em; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="k" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">@mixin</span> <span class="nf" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border-radius</span><span class="p" style="box-sizing: border-box;">(</span><span class="nv" style="box-sizing: border-box; color: rgb(0, 128, 128);">$radius</span><span class="p" style="box-sizing: border-box;">)</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="na" style="box-sizing: border-box; color: rgb(0, 128, 128);">-webkit-border-radius</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nv" style="box-sizing: border-box; color: rgb(0, 128, 128);">$radius</span><span class="p" style="box-sizing: border-box;">;</span>
-     <span class="na" style="box-sizing: border-box; color: rgb(0, 128, 128);">-moz-border-radius</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nv" style="box-sizing: border-box; color: rgb(0, 128, 128);">$radius</span><span class="p" style="box-sizing: border-box;">;</span>
-      <span class="na" style="box-sizing: border-box; color: rgb(0, 128, 128);">-ms-border-radius</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nv" style="box-sizing: border-box; color: rgb(0, 128, 128);">$radius</span><span class="p" style="box-sizing: border-box;">;</span>
-          <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border-radius</span><span class="p" style="box-sizing: border-box;">:</span> <span class="nv" style="box-sizing: border-box; color: rgb(0, 128, 128);">$radius</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
+.
 
-<span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.box</span> <span class="p" style="box-sizing: border-box;">{</span> <span class="k" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">@include</span> <span class="nd" style="box-sizing: border-box; color: rgb(60, 93, 93); font-weight: bold;">border-radius</span><span class="p" style="box-sizing: border-box;">(</span><span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">10px</span><span class="p" style="box-sizing: border-box;">);</span> <span class="p" style="box-sizing: border-box;">}</span>
+*   [SCSS](http://sass-lang.com/guide#topic-6-SCSS)
+*   [Sass](http://sass-lang.com/guide#topic-6-Sass)
 
+<div id="topic-6-SCSS" aria-labelledby="ui-id-7" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-```
+### SCSS SYNTAX
 
-</pre></div><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">To create a mixin you use the&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">@mixin
+    @mixin border-radius($radius) {
+      -webkit-border-radius: $radius;
+         -moz-border-radius: $radius;
+          -ms-border-radius: $radius;
+              border-radius: $radius;
+    }
 
-```
-
-&#xA0;directive and give it a name. We&apos;ve named our mixin&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">border-radius
-
-```
-
-. We&apos;re also using the variable&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">$radius
-
-```
-
-&#xA0;inside the parentheses so we can pass in a radius of whatever we want. After you create your mixin, you can then use it as a CSS declaration starting with&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">@include
-
-```
-
-&#xA0;followed by the name of the mixin. When your CSS is generated it&apos;ll look like this:</p><pre class="highlight css" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 24px; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.box</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">-webkit-border-radius</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">10px</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">-moz-border-radius</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">10px</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">-ms-border-radius</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">10px</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border-radius</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">10px</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-
-```
-
-</pre><div><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="p" style="box-sizing: border-box;"><br></span>
-
-```
+    .box { @include border-radius(10px); }
 
 </div>
+
+To create a mixin you use the `@mixin` directive and give it a name. We've named our mixin `border-radius`. We're also using the variable `$radius` inside the parentheses so we can pass in a radius of whatever we want. After you create your mixin, you can then use it as a CSS declaration starting with `@include` followed by the name of the mixin. When your CSS is generated it'll look like this:
+
+    .box {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      border-radius: 10px;
+    }
+
+<div>`<span class="p" style="box-sizing: border-box;">  
+</span>`</div>
 ### functions
 # Extend/Inheritance
-<h2 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 3em; line-height: 1.25em; font-weight: 300; letter-spacing: -0.03125em; color: rgb(102, 153, 153); padding-top: 0px; padding-bottom: 0.5em; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif;">Extend/Inheritance</h2><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">This is one of the most useful features of Sass. Using&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">@extend
+## Extend/Inheritance
 
-```
+This is one of the most useful features of Sass. Using `@extend` lets you share a set of CSS properties from one selector to another. It helps keep your Sass very DRY. In our example we're going to create a simple series of messaging for errors, warnings and successes.
 
-&#xA0;lets you share a set of CSS properties from one selector to another. It helps keep your Sass very DRY. In our example we&apos;re going to create a simple series of messaging for errors, warnings and successes.</p><ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist" style="box-sizing: border-box; margin-right: -1em; margin-bottom: -4.5em; margin-left: 0px; border: 0px; outline: 0px; line-height: 24px; font-size: 16px; list-style: none; min-height: 0px; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif;"><li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="topic-7-SCSS" aria-labelledby="ui-id-9" aria-selected="true" aria-expanded="true" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-7-SCSS" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-9" style="box-sizing: border-box; color: rgb(128, 140, 153); float: left; padding: 0.75em 1em; cursor: text; background-color: transparent;">SCSS</a></li><li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="topic-7-Sass" aria-labelledby="ui-id-10" aria-selected="false" aria-expanded="false" style="box-sizing: border-box; list-style: none; float: right; position: relative; top: 0px; margin: 0px; border-bottom-width: 0px; padding: 0px; white-space: nowrap;"><a href="http://sass-lang.com/guide#topic-7-Sass" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-10" style="box-sizing: border-box; color: rgb(179, 115, 153); float: left; padding: 0.75em 1em; background-color: transparent;">Sass</a></li></ul><div id="topic-7-SCSS" aria-labelledby="ui-id-9" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><h3 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-family: source-serif-pro, Georgia, &apos;Times New Roman&apos;, Times, serif; padding-top: 2.25em; padding-bottom: 0.75em; font-size: 1em; line-height: 1.5em; text-transform: uppercase; letter-spacing: 0.03125em; color: rgb(128, 140, 153);">SCSS SYNTAX</h3><pre class="highlight scss" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 2em; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.message</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">1px</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">solid</span> <span class="mh" style="box-sizing: border-box; color: rgb(0, 153, 153);">#ccc</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">padding</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">10px</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="mh" style="box-sizing: border-box; color: rgb(0, 153, 153);">#333</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
+*   [SCSS](http://sass-lang.com/guide#topic-7-SCSS)
+*   [Sass](http://sass-lang.com/guide#topic-7-Sass)
 
-<span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.success</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="k" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">@extend</span> <span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.message</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border-color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="no" style="box-sizing: border-box; color: rgb(0, 128, 128);">green</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
+<div id="topic-7-SCSS" aria-labelledby="ui-id-9" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.error</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="k" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">@extend</span> <span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.message</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border-color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="no" style="box-sizing: border-box; color: rgb(0, 128, 128);">red</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
+### SCSS SYNTAX
 
-<span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.warning</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="k" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">@extend</span> <span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.message</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border-color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="no" style="box-sizing: border-box; color: rgb(0, 128, 128);">yellow</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
+    .message {
+      border: 1px solid #ccc;
+      padding: 10px;
+      color: #333;
+    }
 
+    .success {
+      @extend .message;
+      border-color: green;
+    }
 
-```
+    .error {
+      @extend .message;
+      border-color: red;
+    }
 
-</pre></div><p style="box-sizing: border-box; margin-bottom: 0px; padding-bottom: 1.5em; max-width: 37.5em; color: rgb(72, 76, 85); font-family: source-sans-pro, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">What the above code does is allow you to take the CSS properties in&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">.message
+    .warning {
+      @extend .message;
+      border-color: yellow;
+    }
 
-```
+</div>
 
-&#xA0;and apply them to&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">.success
+What the above code does is allow you to take the CSS properties in `.message` and apply them to `.success`, `.error`, & `.warning`. The magic happens with the generated CSS, and this helps you avoid having to write multiple class names on HTML elements. This is what it looks like:
 
-```
+    .message, .success, .error, .warning {
+      border: 1px solid #cccccc;
+      padding: 10px;
+      color: #333;
+    }
 
-,&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">.error
+    .success {
+      border-color: green;
+    }
 
-```
+    .error {
+      border-color: red;
+    }
 
-, &amp;&#xA0;<code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-radius: 4px; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 0; white-space: pre-wrap; padding: 0.25em; background: rgb(248, 248, 248);">.warning
-
-```
-
-. The magic happens with the generated CSS, and this helps you avoid having to write multiple class names on HTML elements. This is what it looks&#xA0;like:</p><pre class="highlight css" style="box-sizing: content-box; overflow: auto; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: 0.75em; border-color: rgb(235, 235, 235); color: rgb(0, 51, 102); line-height: 24px; margin-top: auto; margin-bottom: 25px; padding: 1em; background: rgb(248, 248, 248);"><code style="box-sizing: border-box; font-family: source-code-pro, Consolas, &apos;Andale Mono WT&apos;, &apos;Andale Mono&apos;, &apos;Lucida Console&apos;, &apos;Lucida Sans Typewriter&apos;, &apos;DejaVu Sans Mono&apos;, &apos;Bitstream Vera Sans Mono&apos;, &apos;Liberation Mono&apos;, &apos;Nimbus Mono L&apos;, Monaco, &apos;Courier New&apos;, Courier, monospace; font-size: inherit; border-radius: 4px; color: rgb(0, 51, 102); line-height: inherit; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.message</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span> <span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.success</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span> <span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.error</span><span class="o" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: bold;">,</span> <span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.warning</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">1px</span> <span class="nb" style="box-sizing: border-box; color: rgb(0, 134, 179);">solid</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">#cccccc</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">padding</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">10px</span><span class="p" style="box-sizing: border-box;">;</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="m" style="box-sizing: border-box; color: rgb(0, 153, 153);">#333</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-<span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.success</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border-color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="no" style="box-sizing: border-box; color: rgb(0, 128, 128);">green</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-<span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.error</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border-color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="no" style="box-sizing: border-box; color: rgb(0, 128, 128);">red</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-<span class="nc" style="box-sizing: border-box; color: rgb(68, 85, 136); font-weight: bold;">.warning</span> <span class="p" style="box-sizing: border-box;">{</span>
-  <span class="nl" style="box-sizing: border-box; color: rgb(153, 0, 0); font-weight: bold;">border-color</span><span class="p" style="box-sizing: border-box;">:</span> <span class="no" style="box-sizing: border-box; color: rgb(0, 128, 128);">yellow</span><span class="p" style="box-sizing: border-box;">;</span>
-<span class="p" style="box-sizing: border-box;">}</span>
-
-```
-
-</pre>
+    .warning {
+      border-color: yellow;
+    }
 ### Include some selector within another
 # Sass Vs. Less
 ### https://css-tricks.com/sass-vs-less/

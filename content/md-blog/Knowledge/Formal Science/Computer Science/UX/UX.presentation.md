@@ -1,11 +1,22 @@
 # 1.Intro
-David&apos;s Slides
+David's Slides
 # 2.Prompt Intro
-<ul><li>As UX designer, you should understand usability from end to end. This spans all the way from customer insight, user interviews and all the way to delivery.</li><li>The end user is the ultimate goal. Developers are users (we are humans, not robots) &#xA0;... :(</li></ul>
+*   As UX designer, you should understand usability from end to end. This spans all the way from customer insight, user interviews and all the way to delivery.
+*   The end user is the ultimate goal. Developers are users (we are humans, not robots)  ... :(
 # 3.Prompt
-<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">Congrats you are a developer working for UXlovesDev company! You are:</span><br style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;"><ul><li><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">working on a GPS system just like Google Maps and Wayz.</span><br></li><li><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">system will be used as a website and an app.&#xA0;</span><br></li></ul><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">What are the technical&#xA0;</span><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">limitations that you may face as a developer? In a group, discuss and come&#xA0;</span><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">up with those limitations.</span>
+<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">Congrats you are a developer working for UXlovesDev company! You are:</span>  
+
+*   <span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">working on a GPS system just like Google Maps and Wayz.</span>  
+
+*   <span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">system will be used as a website and an app. </span>  
+
+<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">What are the technical </span><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">limitations that you may face as a developer? In a group, discuss and come </span><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">up with those limitations.</span>
 # 4.Discussion
 # 5.Top 3 most challenging things for a developer
-<ul><li>Changing requirements. This is challenging for everyone.</li><li>Non consistent design. Using two separate frameworks (Bootstrap + Material with a sprinkle of jQuery plugins).</li><li>Charts!</li></ul>
+*   Changing requirements. This is challenging for everyone.
+*   Non consistent design. Using two separate frameworks (Bootstrap + Material with a sprinkle of jQuery plugins).
+*   Charts!
 # 6.Takeaways
-<ul><li>Don&apos;t reinvent the wheel. Pick one design framework or toolset. Frameworks that are already there should be a plus (Material Design, Bootstrap ... etc)</li><li>You can be as creative as you want within reasonable constraints</li><li>Marry your developer</li></ul>
+*   Don't reinvent the wheel. Pick one design framework or toolset. Frameworks that are already there should be a plus (Material Design, Bootstrap ... etc)
+*   You can be as creative as you want within reasonable constraints
+*   Marry your developer

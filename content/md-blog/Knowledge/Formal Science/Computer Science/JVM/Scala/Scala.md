@@ -3,7 +3,32 @@
 ### Higher Order functions
 ### Functional
 ### Lang features
-<div>SEAMLESS JAVA INTEROP<br></div><div>Scala runs on the JVM, so Java and Scala stacks can be freely mixed for totally seamless integration.</div><div><br></div><div>TYPE INFERENCE</div><div>So the type system doesn&#x2019;t feel so static. Don&#x2019;t work for the type system. Let the type system work for you!</div><div><br></div><div>CONCURRENCY</div><div>&amp; DISTRIBUTION</div><div>Use data-parallel operations on collections, use actors for concurrency and distribution, or futures for asynchronous programming.</div><div><br></div><div>TRAITS</div><div>Combine the flexibility of Java-style interfaces with the power of classes. Think principled multiple-inheritance.</div><div><br></div><div>PATTERN MATCHING</div><div>Think &#x201C;switch&#x201D; on steroids. Match against class hierarchies, sequences, and more.</div><div><br></div><div>HIGHER-ORDER FUNCTIONS</div><div>Functions are first-class objects. Compose them with guaranteed type safety. Use them anywhere, pass them to anything.</div>
+<div>SEAMLESS JAVA INTEROP  
+</div>
+
+<div>Scala runs on the JVM, so Java and Scala stacks can be freely mixed for totally seamless integration.</div>
+
+<div>TYPE INFERENCE</div>
+
+<div>So the type system doesn’t feel so static. Don’t work for the type system. Let the type system work for you!</div>
+
+<div>CONCURRENCY</div>
+
+<div>& DISTRIBUTION</div>
+
+<div>Use data-parallel operations on collections, use actors for concurrency and distribution, or futures for asynchronous programming.</div>
+
+<div>TRAITS</div>
+
+<div>Combine the flexibility of Java-style interfaces with the power of classes. Think principled multiple-inheritance.</div>
+
+<div>PATTERN MATCHING</div>
+
+<div>Think “switch” on steroids. Match against class hierarchies, sequences, and more.</div>
+
+<div>HIGHER-ORDER FUNCTIONS</div>
+
+<div>Functions are first-class objects. Compose them with guaranteed type safety. Use them anywhere, pass them to anything.</div>
 ### Actors
 ### Currently Akka actors
 ### Classes 
@@ -40,7 +65,17 @@
 ### play framework
 ### scalatara
 ### akka
-<div>Build powerful concurrent &amp; distributed applications</div><div>more easily. Akka is a toolkit and runtime</div><div>for building highly concurrent,</div><div>distributed, and resilient</div><div>message-driven applications</div><div>on the JVM.</div>
+<div>Build powerful concurrent & distributed applications</div>
+
+<div>more easily. Akka is a toolkit and runtime</div>
+
+<div>for building highly concurrent,</div>
+
+<div>distributed, and resilient</div>
+
+<div>message-driven applications</div>
+
+<div>on the JVM.</div>
 ### Scala actors are deprecated in favor of akka
 ### spray
 ### https://github.com/spray/spray
@@ -69,7 +104,36 @@
 ### build tool
 # Pain Point
 ### What's the reverse arrow -> in Scala loops
-The left-arrow &lt;- operator is called a generator, so named because it&apos;s generating individual values from a range.<div><br></div><div><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">Following is the example of for loop with range using i to j syntax:</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;"><br></span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">&lt;code&gt;object Test {</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">&#xA0; &#xA0;def main(args: Array[String]) {</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">&#xA0; &#xA0; &#xA0; var a = 0;</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">&#xA0; &#xA0; &#xA0; // for loop execution with a range</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">&#xA0; &#xA0; &#xA0; for( a &lt;- 1 to 10){</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">&#xA0; &#xA0; &#xA0; &#xA0; &#xA0;println( &quot;Value of a: &quot; + a );</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">&#xA0; &#xA0; &#xA0; }</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">&#xA0; &#xA0;}</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">}</span></font></p><p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><span style="font-size: 15px; line-height: 24px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;">&lt;/code&gt;</span></p></div>
+The left-arrow <- operator is called a generator, so named because it's generating individual values from a range.
+
+<div>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">Following is the example of for loop with range using i to j syntax:</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">  
+</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;"><code>object Test {</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">   def main(args: Array[String]) {</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">      var a = 0;</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">      // for loop execution with a range</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">      for( a <- 1 to 10){</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">         println( "Value of a: " + a );</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">      }</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">   }</span></font>
+
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">}</span></font>
+
+<span style="font-size: 15px; line-height: 24px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;"></code></span>
+
+</div>
 ### Blocks vs Functions
 ### http://stackoverflow.com/questions/19007611/understanding-scala-blocks
 ### blocks similar to anonymous classes in java
