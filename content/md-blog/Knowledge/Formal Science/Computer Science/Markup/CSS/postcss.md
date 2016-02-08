@@ -6,7 +6,7 @@ Think of variables as a way to store information that you want to reuse througho
 *   [SCSS](http://sass-lang.com/guide#topic-2-SCSS)
 *   [Sass](http://sass-lang.com/guide#topic-2-Sass)
 
-<div id="topic-2-SCSS" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+
 
 ### SCSS SYNTAX
 
@@ -18,7 +18,7 @@ Think of variables as a way to store information that you want to reuse througho
       color: $primary-color;
     }
 
-</div>
+
 
 When the Sass is processed, it takes the variables we define for the `$font-stack`and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
 
@@ -27,8 +27,8 @@ When the Sass is processed, it takes the variables we define for the `$font-sta
       color: #333;
     }
 
-<div>`<span class="p" style="box-sizing: border-box;">  
-</span>`</div>
+`  
+`
 # Imports
 ## Import
 
@@ -39,7 +39,7 @@ Let's say you have a couple of Sass files, `_reset.scss` and `base.scss`. We 
 *   [SCSS](http://sass-lang.com/guide#topic-5-SCSS)
 *   [Sass](http://sass-lang.com/guide#topic-5-Sass)
 
-<div id="topic-5-SCSS" aria-labelledby="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+
 
 ### SCSS SYNTAX
 
@@ -62,7 +62,7 @@ Let's say you have a couple of Sass files, `_reset.scss` and `base.scss`. We 
       background-color: #efefef;
     }
 
-</div>
+
 
 Notice we're using `@import 'reset';` in the `base.scss` file. When you import a file you don't need to include the file extension `.scss`. Sass is smart and will figure it out for you. When you generate the CSS you'll get:
 
@@ -88,7 +88,7 @@ With that in mind, here's an example of some typical styles for a site's naviga
 *   [SCSS](http://sass-lang.com/guide#topic-3-SCSS)
 *   [Sass](http://sass-lang.com/guide#topic-3-Sass)
 
-<div id="topic-3-SCSS" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+
 
 ### SCSS SYNTAX
 
@@ -108,7 +108,7 @@ With that in mind, here's an example of some typical styles for a site's naviga
       }
     }
 
-</div>
+
 
 You'll notice that the `ul`, `li`, and `a` selectors are nested inside the `nav` selector. This is a great way to organize your CSS and make it more readable. When you generate the CSS you'll get something like this:
 
@@ -135,7 +135,7 @@ You'll notice that the `ul`, `li`, and `a` selectors are nested inside the 
     *   [SCSS](http://sass-lang.com/guide#topic-8-SCSS)
     *   [Sass](http://sass-lang.com/guide#topic-8-Sass)
 
-    <div id="topic-8-SCSS" aria-labelledby="ui-id-11" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; background: none;">
+    
 
     ### SCSS SYNTAX
 
@@ -151,7 +151,7 @@ You'll notice that the `ul`, `li`, and `a` selectors are nested inside the 
           width: 300px / 960px * 100%;
         }
 
-    </div>
+    
 
     We've created a very simple fluid grid, based on 960px. Operations in Sass let us do something like take pixel values and convert them to percentages without much hassle. The generated CSS will look like:
 
@@ -181,10 +181,10 @@ As a result, PostCSS offers three main benefits:
 *   **Future CSS:** PostCSS plugins can read and rebuild an entire document, meaning that they can provide new language features. For example, [cssnext](http://cssnext.io/) transpiles the latest W3C drafts to current CSS syntax.
 *   **New abilities:** PostCSS plugins can read and change every part of styles. It makes many new classes of tools possible. [Autoprefixer](https://github.com/postcss/autoprefixer), [`rtlcss`](https://github.com/MohammadYounes/rtlcss), [`doiuse`](https://github.com/anandthakker/doiuse) or [`postcss-colorblind`](https://github.com/btholt/postcss-colorblind)are good examples.
 
-<div><font face="Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif"><span style="font-size: 16px;">  
-</span></font></div>
+  
 
-<div>
+
+
 
 ### Syntaxes
 
@@ -202,7 +202,7 @@ As a result, PostCSS offers three main benefits:
 
 Go to [postcss.parts](http://postcss.parts/) for a searchable catalog of the plugins mentioned below.
 
-</div>
+
 # Partials
 ## Partials
 
@@ -217,7 +217,7 @@ Some things in CSS are a bit tedious to write, especially with CSS3 and the many
 *   [SCSS](http://sass-lang.com/guide#topic-6-SCSS)
 *   [Sass](http://sass-lang.com/guide#topic-6-Sass)
 
-<div id="topic-6-SCSS" aria-labelledby="ui-id-7" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+
 
 ### SCSS SYNTAX
 
@@ -230,7 +230,7 @@ Some things in CSS are a bit tedious to write, especially with CSS3 and the many
 
     .box { @include border-radius(10px); }
 
-</div>
+
 
 To create a mixin you use the `@mixin` directive and give it a name. We've named our mixin `border-radius`. We're also using the variable `$radius` inside the parentheses so we can pass in a radius of whatever we want. After you create your mixin, you can then use it as a CSS declaration starting with `@include` followed by the name of the mixin. When your CSS is generated it'll look like this:
 
@@ -241,8 +241,8 @@ To create a mixin you use the `@mixin` directive and give it a name. We've nam
       border-radius: 10px;
     }
 
-<div>`<span class="p" style="box-sizing: border-box;">  
-</span>`</div>
+`  
+`
 ### functions
 # Extend/Inheritance
 ## Extend/Inheritance
@@ -252,7 +252,7 @@ This is one of the most useful features of Sass. Using `@extend` lets you shar
 *   [SCSS](http://sass-lang.com/guide#topic-7-SCSS)
 *   [Sass](http://sass-lang.com/guide#topic-7-Sass)
 
-<div id="topic-7-SCSS" aria-labelledby="ui-id-9" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="box-sizing: border-box; border-width: 0px; padding: 0px; color: rgb(72, 76, 85); font-family: source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+
 
 ### SCSS SYNTAX
 
@@ -277,7 +277,7 @@ This is one of the most useful features of Sass. Using `@extend` lets you shar
       border-color: yellow;
     }
 
-</div>
+
 
 What the above code does is allow you to take the CSS properties in `.message` and apply them to `.success`, `.error`, & `.warning`. The magic happens with the generated CSS, and this helps you avoid having to write multiple class names on HTML elements. This is what it looks like:
 

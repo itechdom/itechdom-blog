@@ -4,17 +4,17 @@
 ### https://github.com/spray/spray
 ### Rest framework
 ### akka
-<div>Build powerful concurrent & distributed applications</div>
+Build powerful concurrent & distributed applications
 
-<div>more easily. Akka is a toolkit and runtime</div>
+more easily. Akka is a toolkit and runtime
 
-<div>for building highly concurrent,</div>
+for building highly concurrent,
 
-<div>distributed, and resilient</div>
+distributed, and resilient
 
-<div>message-driven applications</div>
+message-driven applications
 
-<div>on the JVM.</div>
+on the JVM.
 ### http://akka.io/
 ### http://doc.akka.io/docs/akka/2.4.1/AkkaScala.pdf?_ga=1.26298109.1307030342.1450652163
 ### akka docs in PDF
