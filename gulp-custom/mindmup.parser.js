@@ -112,8 +112,8 @@ var ops = {
 		if(idea.content){
 			var el = cheerio.load(idea.content);
 			idea.content = el.root().text();
-			idea.content = idea.content.replaceAll('<code>','```\n');
-			idea.content = idea.content.replaceAll('</code>','\n```');
+			idea.content = idea.content.replaceAll('<code>','```\n\n');
+			idea.content = idea.content.replaceAll('</code>','\n\n```');
 			idea.content = idea.content.replaceAll('<pre>','');
 			idea.content = idea.content.replaceAll('</pre>','');
 

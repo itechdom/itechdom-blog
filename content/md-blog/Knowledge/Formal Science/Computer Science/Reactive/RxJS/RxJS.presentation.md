@@ -46,6 +46,7 @@ Remember: we return a new Observable every time we do any transformation
 `var a = iPromiseOfSomething();var a_ = Observable.fromPromise(a); ````
 ### 3.Events
     var result = document               .getElementById('result');var source = Rx.Observable.fromEvent(result, 'click');var observer = Rx.Observer.create(    function (x) {        console.log('Next: ' + x);    },    function (err) {        console.log('Error: ' + err);    },    function () {        console.log('Completed');    });source.subscribe(observer)
+
     ``` Rx will truncate multiple arguments from events, you can use the selector function to combine all of them
 ### 4.Callbacks
 `writeFile = require('fs').writeFile;wf_ = Observable      .fromNodeCallback(writeFile); ````
