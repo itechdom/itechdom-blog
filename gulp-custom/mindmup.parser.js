@@ -35,6 +35,9 @@ var ops = {
 			this.clean(obj.ideas,levelsDeep++);
 		}
 	}
+	,isHTML(){
+		///<[a-z][\s\S]*>/i.test()
+	}
 	,flatten(mindmap,pArr,level){
 		for(var key in mindmap){
 			var obj = mindmap[key];

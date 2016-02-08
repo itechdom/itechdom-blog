@@ -80,8 +80,8 @@ class mindmapView {
 				graphics.x --;
 				graphics.y --;
 
-				graphics2.x --;
-				graphics2.y --;
+				graphics2.x = graphics2.x - 3;
+				graphics2.y = graphics2.y - 1;
 
 			}
 			graphics3.clear();
