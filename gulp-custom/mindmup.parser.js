@@ -109,8 +109,8 @@ var ops = {
 		f+= idea.title;
 		f+="\n";
 		if(idea.content){
-			var el = cheerio.load(idea.content);
-			idea.content = el.root().text();
+			//var el = cheerio.load(idea.content);
+			//idea.content = el.root().text();
 			idea.content = idea.content.replaceAll('<code>','```\n');
 			idea.content = idea.content.replaceAll('</code>','\n```');
 			//idea.content = this.cleanHTML(idea.content);	
