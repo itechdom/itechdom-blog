@@ -135,13 +135,14 @@ var ops = {
 			count++;
 			if(idea.title){
 				parentId = count;
-				var cleanTitle = idea.title.split(".")[1];
-				if(!cleanTitle)cleanTitle = idea.title;
+				var cleanTitle = idea.title;
 				slideElement('.slides').append(`<section class="parent${parentId}"><h3>${cleanTitle}</h3></section>`);
 			}
 			if(idea.content){
-				var cleanContent = this.cleanHTML(idea.content);
-				var code = cheerio.load(cleanContent);
+				var code = cheerio.load(idea.content);
+				idea.content= idea.content.replaceAll('&lt;','<');
+				idea.content = idea.content.replaceAll('&gt;','>');
+				var cleanContent = idea.content;
 				var hCode;
 				code('*').each(function(i, elem) {
 					var codeBlock = code(this).find('code').html();
