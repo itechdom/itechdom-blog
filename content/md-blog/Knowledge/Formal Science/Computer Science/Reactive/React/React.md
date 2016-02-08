@@ -25,7 +25,7 @@
 ### Netflix Likes React
 ### http://techblog.netflix.com/2015/01/netflix-likes-react.html
 ### React Starter Kit
-
+a skeleton of an "isomorphic" web application / SPA built with React.js, Express, Flux, ES6+, JSX, Babel, PostCSS, Webpack, BrowserSync..
 ### http://www.reactstarterkit.com/
 ### Testing
 ### Jest

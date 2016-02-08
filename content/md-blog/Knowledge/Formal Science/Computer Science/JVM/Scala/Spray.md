@@ -4,7 +4,7 @@
 ### https://github.com/spray/spray
 ### Rest framework
 ### akka
-
+Build powerful concurrent & distributed applicationsmore easily. Akka is a toolkit and runtimefor building highly concurrent,distributed, and resilientmessage-driven applicationson the JVM.
 ### http://akka.io/
 ### http://doc.akka.io/docs/akka/2.4.1/AkkaScala.pdf?_ga=1.26298109.1307030342.1450652163
 ### akka docs in PDF

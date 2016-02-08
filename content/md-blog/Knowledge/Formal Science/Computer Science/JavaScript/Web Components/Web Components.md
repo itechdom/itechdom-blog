@@ -9,6 +9,6 @@
 # Resources
 ### http://www.w3.org/wiki/WebComponents/
 ### Web Components Spec
-
+Shadow DOMSpec: Shadow DOM - W3C Editor's DraftTutorial: Shadow DOM 101 - HTML5RocksCustom ElementsSpec: Custom Elements - W3C Editor's DraftTutorial: Custom Elements - HTML5RocksHTML ImportsSpec: HTML Imports - W3C Editor's DraftTutorial: HTML Imports: #include for the web - HTML5 RocksYou should always refer to W3C Editor's Draft of each spec. Working Draft should be considered obsolete. Don't refer to Working Draft except as a historical artifact.
 ### https://github.com/mateusortiz/webcomponents-the-right-way#specifications
 ### All about it

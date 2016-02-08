@@ -271,7 +271,7 @@ E‐LEARNING
 ### tools
 ### https://balsamiq.com/
 ### SEO
-https://support.google.com/webmasters/answer/189077?hl=en
+https://support.google.com/webmasters/answer/189077?hl=enhttps://support.google.com/webmasters/answer/182192https://developers.google.com/webmasters/ajax-crawling/docs/getting-startedhttp://searchengineland.com/the-ultimate-guide-to-multilingual-and-multiregional-seo-157838
 ### VIM
 ### Cheat sheet
 ### http://www.fprintf.net/vimCheatSheet.html
@@ -292,7 +292,7 @@ https://support.google.com/webmasters/answer/189077?hl=en
 ### Computer Hardware
 ### Building a computer
 ### my computer hardware
-
+http://pcpartpicker.com/user/alanhenry/saved/1x7thttp://www.amazon.com/gp/offer-listing/B009HP42J4/ref=dp_olp_used?ie=UTF8&condition=usedhttp://www.amazon.com/gp/offer-listing/B000R2GC08/ref=sr_pi_pm_mupnf_1_8?s=pc&ie=UTF8&qid=1396791179&sr=1-8&keywords=internal+hard+drive&condition=usedhttp://www.amazon.com/AMD-FD6300WMHKBOX-FX-6300-Processor-Edition/dp/B009O7YORKhttp://pcpartpicker.com/user/alanhenry/saved/1x6N
 ### Computer Software
 ### Mobile Dev
 ### Android

@@ -1,5 +1,5 @@
 # Operating Systems
-
+Operating systems – set of software that manages computer hardware resources and provides common services for computer programs
 ### My OS Road
 ### https://drive.google.com/open?id=0B9tPYCpuqoIramtYcGVPUngtZjA
 # Computer Archeticture
@@ -11,39 +11,51 @@
 ### making early on decision for the structure of systems
 ### Based on Stakeholders needs
 ### Activities
-
+Architecture activities[edit]There are many activities that a software architect performs. A software architect typically works with project managers, discusses architecturally significant requirements with stakeholders, designs a software architecture, evaluates a design, communicates with designers and stakeholders, documents the architectural design and more.[22] There are four core activities in software architecture design.[23] These core architecture activities are performed iteratively and at different stages of the initial software development life-cycle, as well as over the evolution of a system.Architectural Analysis is the process of understanding the environment in which a proposed system or systems will operate and determining the requirements for the system. The input or requirements to the analysis activity can come from any number of stakeholders and include items such as:what the system will do when operational (the functional requirements)how well the system will perform runtime non-functional requirements such as reliability, operability, performance efficiency, security, compatibility defined in ISO/IEC 25010:2011 standard [24]development-time non-functional requirements such as maintainability and transferability defined in ISO 25010:2011 standard [24]business requirements and environmental contexts of a system that may change over time, such as legal, social, financial, competitive, and technology concerns [25]Architectural Synthesis or design is the process of creating an architecture. Given the architecturally significant requirements determined by the analysis, the current state of the design and the results of any evaluation activities, the design is created and improved. See [3]:pp.311–326[23] for a discussion of various techniques for improving a current design.Architecture Evaluation is the process of determining how well the current design or a portion of it satisfies the requirements derived during analysis. An evaluation can occur whenever an architect is considering a design decision, it can occur after some portion of the design has been completed, it can occur after the final design has been completed or it can occur after the system has been constructed. Some of the available software architecture evaluation techniques include Architecture Tradeoff Analysis Method (ATAM) and TARA.[26] Frameworks for comparing the techniques are discussed in frameworks such as SARA Report [15] and Architecture reviews: practice and experience.[27]Architecture Evolution is the process of maintaining and adapting an existing software architecture to meet requirement and environmental changes. As software architecture provides a fundamental structure of a software system, its evolution and maintenance would necessarily impact its fundamental structure. As such, architecture evolution is concerned with adding new functionality as well as maintaining existing functionality and system behaviour.Architecture requires critical supporting activities. These supporting activities take place throughout the core software architecture process. They include knowledge management and communication, design reasoning and decision making, and documentation.
 ### Styles and Patterns
-
+Architectural styles and patterns[edit]Main article: Software Architecture styles and patternsAn architectural pattern is a general, reusable solution to a commonly occurring problem in software architecture within a given context. Architectural patterns are often documented as software design patterns.Following traditional building architecture, a 'software architectural style' is a specific method of construction, characterized by the features that make it notable" (Architectural style). "An architectural style defines: a family of systems in terms of a pattern of structural organization; a vocabulary of components and connectors, with constraints on how they can be combined."[31]"Architectural styles are reusable 'packages' of design decisions and constraints that are applied to an architecture to induce chosen desirable qualities."[32]There are many recognized architectural patterns and styles, among them:BlackboardClient-server (2-tier, 3-tier, n-tier, cloud computing exhibit this style)Component-basedData-centricEvent-driven (or Implicit invocation)Layered (or Multilayered architecture)Monolithic applicationPeer-to-peer (P2P)Pipes and filtersPlug-insRepresentational state transfer (REST)Rule-basedService-orientedMicroservices architectureShared nothing architectureSpace-based architectureSome treat architectural patterns and architectural styles as the same,[33] some treat styles as specializations of patterns. What they have in common is both patterns and styles are idioms for architects to use, they "provide a common language"[33] or "vocabulary"[31] with which to describe classes of systems.
 ### https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns
 ### further resource
 ### Reflection
-
+Reflection (computer programming)From Wikipedia, the free encyclopediaIn computer science, reflection is the ability of a computer program to examine (see type introspection) and modify its own structure and behavior (specifically the values, meta-data, properties and functions) at runtime.[1]
 ### Ability of a program to change its behavior on run time
 ### Example
+Examples[edit]The following code snippets create an instance foo of class Foo, and invoke its method hello. For each programming language, normal and reflection-based call sequences are shown.ECMAScript[edit]The following is an example in ECMAScript, and therefore also applies to JavaScript and ActionScript:// Without reflection
+new Foo.hello()
 
+// With reflection
+
+// assuming that Foo resides in this
+new this['Foo']['hello']()
+
+// or without assumption
+new (eval('Foo'))['hello']()
+
+// or simply
+eval('new Foo.hello()')
 ### + agile
-
+Software architecture and agile development[edit]Main article: Agile developmentThere are also concerns that software architecture leads to too much Big Design Up Front, especially among proponents of Agile software development. A number of methods have been developed to balance the trade-offs of up-front design and agility,[34] including the agile method DSDM which mandates a "Foundations" phase during which "just enough" architectural foundations are laid. IEEE Software devoted a special issue[35] to the interaction between agility and architecture.
 ### Big design upfront
 ### Not adaptive
 ### Behavior Driven Development
 # Information Systems
-
+Information systems – study of complementary networks of hardware and software that people and organizations use to collect, filter, process, create, and distribute dataBusiness informatics – discipline combining information technology (IT), informatics and management concepts.Information technology –Management information systems – provides information that is needed to manage organizations efficiently and effectivelyHealth informatics – discipline at the intersection of information science, computer science, and health care.
 # Software Development
-
+Programming languages – artificial language designed to communicate instructions to a machine, particularly a computerProgramming paradigms – fundamental style of computer programmingObject-oriented programming – programming paradigm using "objects" – data structures consisting of data fields and methods together with their interactions – to design applications and computer programsFunctional programming – programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable dataProgram semantics – field concerned with the rigorous mathematical study of the meaning of programming languagesType theory – any of several formal systems that can serve as alternatives to naive set theory, or the study of such formalisms in generalCompilers – computer program (or set of programs) that transforms source code written in a programming language (the source language) into another computer language (the target language, often having a binary form known as object code)Concurrent programming languages – form of computing in which programs are designed as collections of interacting computational processes that may be executed in parallel
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrVUdXYUZ1b1c1SjA
 # Human Computer Interaction
-
+Human-computer interaction – study, planning, and design of the interaction between people (users) and computers.Numerical analysis – study of algorithms that use numerical approximation (as opposed to general symbolic manipulations) for the problems of mathematical analysis (as distinguished from discrete mathematics).Algebraic (symbolic) computation – relates to algorithms and software for manipulating mathematical expressions and equations in symbolic form, as opposed to manipulating the approximations of specific numerical quantities represented by those symbols. Software applications that perform symbolic calculations are called computer algebra systems.Computational number theory – study of algorithms for performing number theoretic computationsComputational mathematics – involves mathematical research in areas of science where computing plays a central and essential role, emphasizing algorithms, numerical methods, and symbolic methodsScientific computing (Computational science) –Computational biology (bioinformatics) – involves the development and application of data-analytical and theoretical methods, mathematical modeling and computational simulation techniques to the study of biological, behavioral, and social systems.Computational science – subfield of computer science concerned with constructing mathematical models and quantitative analysis techniques and using computers to analyze and solve scientific problemsComputational chemistry – branch of chemistry that uses principles of computer science to assist in solving chemical problemsComputational neuroscience – study of brain function in terms of the information processing properties of the structures that make up the nervous system.Computer-aided engineering – broad usage of computer software to aid in engineering tasks.Finite element analysis – numerical technique for finding approximate solutions of partial differential equations (PDE) as well as integral equations.Computational fluid dynamics – branch of fluid mechanics that uses numerical methods and algorithms to solve and analyze problems that involve fluid flows.Computational economics – research discipline at the interface between computer science and economic and management scienceComputational sociology – branch of sociology that uses computationally intensive methods to analyze and model social phenomena.Computational finance – cross-disciplinary field which relies on computational intelligence, mathematical finance, numerical methods and computer simulations to make trading, hedging and investment decisions, as well as facilitating the risk management of those decisionsHumanities computing (Digital Humanities) – area of research, teaching, and creation concerned with the intersection of computing and the disciplines of the humanities
 ### Computational NueroScience
-
+Computational neuroscience – study of brain function in terms of the information processing properties of the structures that make up the nervous system.
 ### Studies the actual Nuerons in terms of their biological structure and simulate them
 ### Different from computational Learning theory 
 ### Software packages simulating Nerves
-
+There are many software packages, such as GENESIS and NEURON, that allow rapid and systematic in silico modeling of realistic neurons. Blue Brain, a project founded by Henry Markram from the École Polytechnique Fédérale de Lausanne, aims to construct a biophysically detailed simulation of a cortical column on the Blue Gene supercomputer.
 ### It's somewhat puzzling how neurons can be uniform while being sparse. Artificial neural networks don't possess such quality
 ### Challenges
 ### Overhead in computation, efforts have been done to come up with faster algorithms
 # Computer Security
-
+Computer security – branch of computer technology known as information security as applied to computers and networks.reliability – system design approach and associated service implementation that ensures a prearranged level of operational performance will be met during a contractual measurement period.Cryptography – practice and study of hiding information.Fault-tolerant computing – property that enables a system (often computer-based) to continue operating properly in the event of the failure of (or one or more faults within) some of its components
 ### Resources
 ### http://techcrunch.com/2015/08/10/mapping-israels-cyber-security-startups/?ncid=rss&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Techcrunch+%28TechCrunch%29&utm_content=FaceBook&sr_share=facebook
 ### Israeli security startups

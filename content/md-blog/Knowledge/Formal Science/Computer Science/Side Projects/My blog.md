@@ -40,7 +40,7 @@
 ### https://github.com/mindmup/mapjs
 ### map.js
 ### Dependencies
-
+DependenciesThis library depends on the following projects:JQueryUnderscore.JsJQuery HotKeysHammer.JS JQuery PluginColor JSThey are automatically downloaded using NPM and can be converted to a single file,lib/dependencies.js using the following command:npm run pretest
 ### two routes
 ### either I customize a new mindmup instance
 ### or I create a parser for it

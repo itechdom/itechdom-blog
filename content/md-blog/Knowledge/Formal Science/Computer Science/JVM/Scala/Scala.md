@@ -3,7 +3,7 @@
 ### Higher Order functions
 ### Functional
 ### Lang features
-
+SEAMLESS JAVA INTEROPScala runs on the JVM, so Java and Scala stacks can be freely mixed for totally seamless integration.TYPE INFERENCESo the type system doesn’t feel so static. Don’t work for the type system. Let the type system work for you!CONCURRENCY& DISTRIBUTIONUse data-parallel operations on collections, use actors for concurrency and distribution, or futures for asynchronous programming.TRAITSCombine the flexibility of Java-style interfaces with the power of classes. Think principled multiple-inheritance.PATTERN MATCHINGThink “switch” on steroids. Match against class hierarchies, sequences, and more.HIGHER-ORDER FUNCTIONSFunctions are first-class objects. Compose them with guaranteed type safety. Use them anywhere, pass them to anything.
 ### Actors
 ### Currently Akka actors
 ### Classes 
@@ -40,7 +40,7 @@
 ### play framework
 ### scalatara
 ### akka
-
+Build powerful concurrent & distributed applicationsmore easily. Akka is a toolkit and runtimefor building highly concurrent,distributed, and resilientmessage-driven applicationson the JVM.
 ### Scala actors are deprecated in favor of akka
 ### spray
 ### https://github.com/spray/spray
@@ -69,7 +69,9 @@
 ### build tool
 # Pain Point
 ### What's the reverse arrow -> in Scala loops
-The left-arrow &lt;- operator is called a generator, so named because it's generating individual values from a range.
+The left-arrow <- operator is called a generator, so named because it's generating individual values from a range.Following is the example of for loop with range using i to j syntax:```
+object Test {   def main(args: Array[String]) {      var a = 0;      // for loop execution with a range      for( a <- 1 to 10){         println( "Value of a: " + a );      }   }}
+```
 ### Blocks vs Functions
 ### http://stackoverflow.com/questions/19007611/understanding-scala-blocks
 ### blocks similar to anonymous classes in java

@@ -1,5 +1,5 @@
 # Concepts
-
+Linux Operating System has primarily three componentsKernel - Kernel is the core part of Linux. It is responsible for all major activities of this operating system. It is consists of various modules and it interacts directly with the underlying hardware. Kernel provides the required abstraction to hide low level hardware details to system or application programs.System Library - System libraries are special functions or programs using which application programs or system utilities accesses Kernel's features. These libraries implements most of the functionalities of the operating system and do not requires kernel module's code access rights.System Utility - System Utility programs are responsible to do specialized, individual level tasks.
 ### File System
 ### Permissions
 ### Groups
@@ -26,14 +26,14 @@
 ### + or - to add or delete
 ### r or w or x
 ### You can also use a number
-r = 4
+r = 4w = 2x = 1you can add them up together like so:chmod u+_rwxr___ | chmod u+740
 ### How do I  know who is the owner or group or all
 ### are scripts executed by the owner considered owner permission 
 ### IE: node or python ...
 ### you own the file system, you assign programs to write/read/execute
-
+so brew can't modify a folder unless you change the permission, nor it will accept a sudo.
 ### Advanced Permission
-
+Advanced PermissionsThe special permissions flag can be marked with any of the following:_ - no special permissionsd - directoryl - The file or directory is a symbolic links - This indicated the setuid/setgid permissions. This is not set displayed in the special permission part of the permissions display, but is represented as a s in the read portion of the owner or group permissions.t - This indicates the sticky bit permissions. This is not set displayed in the special permission part of the permissions display, but is represented as a t in the executable portion of the all users permissions
 ### Kernel
 ### Drivers
 ### Memory Model
@@ -57,7 +57,7 @@ r = 4
 ### https://www.gnu.org/software/make/
 ### get its info from makefile
 ### Shared Libraries
-
+Shared librariesWhen you write a program, you rely on many pieces of code that someone else has already written to perform routine or specialized functions for you. These pieces of code are stored in shared libraries. To use them, you link them with your code, either when you build the program or when you run the program.
 ### http://www.ibm.com/developerworks/library/l-lpic1-102-3/
 ### IBM tutorial
 ### Statically linked
