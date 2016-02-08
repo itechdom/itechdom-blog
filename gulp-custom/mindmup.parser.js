@@ -93,8 +93,6 @@ var ops = {
 		return mindmap;
 	}
 	,cleanHTML(html){
-		var el = cheerio.load(html);
-		html = el.root().text();
 		html = html.replace(/<(?:.|\n)*?>/gm, '');
 		return html;
 	}
@@ -111,6 +109,10 @@ var ops = {
 		f+= idea.title;
 		f+="\n";
 		if(idea.content){
+			var el = cheerio.load(idea.content);
+			idea.content = el.root().text();
+			idea.content = idea.content.replaceAll('<code>','```\n');
+			idea.content = idea.content.replaceAll('</code>','\n```');
 			idea.content = this.cleanHTML(idea.content);	
 			f += idea.content;
 			f+="\n";

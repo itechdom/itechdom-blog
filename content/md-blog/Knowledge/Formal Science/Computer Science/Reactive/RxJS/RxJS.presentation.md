@@ -1,7 +1,9 @@
 # Intro to RxJS
 Osama AlghanmiFront End Developer @ EffectiveUIitechdom@itechdom
 ### 1.Start with an example
- Let's see how we can display a list of tweets, filter it by hashtags. var tweets = getTweets( );tweets.filter(t => t.username === me.username).filter(t => hasTag(selectedHTag, t.text)).forEach(t => render); functional means: Non-mutating, Stateless, Composable
+ Let's see how we can display a list of tweets, filter it by hashtags. ```
+var tweets = getTweets( );tweets.filter(t => t.username === me.username).filter(t => hasTag(selectedHTag, t.text)).forEach(t => render);
+``` functional means: Non-mutating, Stateless, Composable
 ### 2. Harsh Reality
 In the previous example, getTweets is asynchronousEasy! The solution is:
 ### 4.What about Promises?
@@ -13,23 +15,33 @@ Promises serve almost the same purpose as RxJS ObservablesProblems with Promises
 Building blocks of FRP in RxJSFirst class objects to represent Asynchronous DataOperators with fabulous Functional GrammarInteroperable with other sync/async data An Observable is an event stream which can emit zero or more events, and may or may not finish. If it finishes, then it does so by either emitting an error or a special “complete” event.
 ### 1. Arrays Are iterable
 Array  .of(1, 2, 3, 4, 5)  .map(x => x * x)  .filter(x => x%2 === 0)  .reduce((x, acc) => x + acc)
+```
 ### 2.Observables are iterables
-Observable  .of(1, 2, 3, 4, 5)  .map(x => x * x)  .filter(x => x%2 === 0)  .reduce((x, acc) => x + acc) Remember: we return a new Observable every time we do any transformation
+```
+Observable  .of(1, 2, 3, 4, 5)  .map(x => x * x)  .filter(x => x%2 === 0)  .reduce((x, acc) => x + acc)
+``` Remember: we return a new Observable every time we do any transformation
 ### 3.Observables are lazy
 let users_ = getUsersObservable();let notJohnConners_ =   users_    .map(user => user.fullName)    .map(name => name.first + ' ' + name.last)    .filter(x => x === 'John Connor');notJohnConners_.subscribe( (user) => console.log('New user arrived: ', user), (error) => console.log('Error Occured', error), () => console.log('All Done'))
+```
 ### 4.You can make anything into an observable
 ### 1.Arrays
-var a = [1, 2, 3, 4, 5];var a$ = Observable.from(a);var b$ = Observable.of(1, 2, 3);    
+var a = [1, 2, 3, 4, 5];var a$ = Observable.from(a);var b$ = Observable.of(1, 2, 3);
+```    
 ### 2.Promises
 var a = iPromiseOfSomething();var a_ = Observable.fromPromise(a);
+```
 ### 3.Events
-var result = document               .getElementById('result');var source = Rx.Observable.fromEvent(result, 'click');var observer = Rx.Observer.create(    function (x) {        console.log('Next: ' + x);    },    function (err) {        console.log('Error: ' + err);    },    function () {        console.log('Completed');    });source.subscribe(observer) Rx will truncate multiple arguments from events, you can use the selector function to combine all of them
+var result = document               .getElementById('result');var source = Rx.Observable.fromEvent(result, 'click');var observer = Rx.Observer.create(    function (x) {        console.log('Next: ' + x);    },    function (err) {        console.log('Error: ' + err);    },    function () {        console.log('Completed');    });source.subscribe(observer)
+``` Rx will truncate multiple arguments from events, you can use the selector function to combine all of them
 ### 4.Callbacks
 writeFile = require('fs').writeFile;wf_ = Observable      .fromNodeCallback(writeFile);
+```
 ### 5.Custom Observables
 Similar to resolve and reject in PromisesWe can create custom observablesWe have three functions: OnNext, OnComplete, OnErrorvar source = Rx.Observable.create(function (observer) {  observer.onNext(42);  observer.onCompleted();  return function () {    console.log('disposed');  }});var subscription = source.subscribe(  function (x) { console.log('onNext: %s', x); },  function (e) { console.log('onError: %s', e); },  function () { console.log('onCompleted'); });subscription.dispose();
+```
 ### 5. You can combine multiple Observables
 var api1 = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow";var api2 = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=Computer%20Science";var promise1 = $.get(api1);var promise2 = $.get(api2);var source1 = Rx.Observable.fromPromise(promise1);var source2= Rx.Observable.fromPromise(promise2);var combined = Rx.Observable.concat(source1,source2);
+```
 # Reactive Programming
 RxJS is Based on the observer and iterator patternsReactive can be explained as: Module Foo and Module BarModule Bar is said to be reactive when it listens to modules Foo's changesFoo doesn't know that Bar exists!
 ### 1. Imperative Programming
@@ -37,7 +49,9 @@ RxJS is Based on the observer and iterator patternsReactive can be explained as:
 ### 2. Reactive Programming
 
 # Excercise
+```
 test('querying over events', function () {  var results = 0;  var e = new EventEmitter();  Observable.fromEvent(e, 'click')    .filter(function (click) { return click.x === click.y })    .map(function (click) { return __ + __; })    .subscribe(function (x) { results = x; });  e.emit('click', {x: 100, y: 50});  e.emit('click', {x: 75,  y: 75});  e.emit('click', {x: 40,  y: 80});  equal(results, 150);// fill in the __ inside map});
+```
 # How I use it
 ### 1.Node Example
 
