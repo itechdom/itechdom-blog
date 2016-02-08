@@ -22,7 +22,7 @@ Angular creates, updates, and destroys components as the user moves through the 
 ### Routing
 ### https://angular.io/docs/ts/latest/guide/router.html
 ### metadata
-@Component({ selector: 'hero-list', templateUrl: 'app/hero-list.component.html', directives: [HeroDetailComponent], providers: [HeroService]})export class HeroesComponent { ... }Here we see the @Component decorator which (no surprise) identifies the class immediately below it as a Component class.
+@Component({  selector:    'hero-list',  templateUrl: 'app/hero-list.component.html',  directives:  [HeroDetailComponent],  providers:   [HeroService]})export class HeroesComponent { ... }Here we see the @Component decorator which (no surprise) identifies the class immediately below it as a Component class.
 ### The architectural take-away is that we must add metadata to our code so that Angular knows what to do.
 ### we use decorators in TS
 ### @
@@ -58,7 +58,7 @@ Examples include:logging servicedata servicemessage bustax calculatorapplication
 ### Examples
 ### ngModel
 ### angular core
-The angular2/core library is the primary Angular library module from which we get most of what we need.
+The angular2/core library is the primary Angular library module from which we get most of what we need. 
 # Resources
 ### cheat sheet
 ### https://angular.io/docs/ts/latest/guide/cheatsheet.html

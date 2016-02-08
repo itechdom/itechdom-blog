@@ -20,7 +20,19 @@ Architectural styles and patterns[edit]Main article: Software Architecture styl
 Reflection (computer programming)From Wikipedia, the free encyclopediaIn computer science, reflection is the ability of a computer program to examine (see type introspection) and modify its own structure and behavior (specifically the values, meta-data, properties and functions) at runtime.[1]
 ### Ability of a program to change its behavior on run time
 ### Example
-Examples[edit]The following code snippets create an instance foo of class Foo, and invoke its method hello. For each programming language, normal and reflection-based call sequences are shown.ECMAScript[edit]The following is an example in ECMAScript, and therefore also applies to JavaScript and ActionScript:// Without reflection new Foo.hello() // With reflection // assuming that Foo resides in this new this['Foo']['hello']() // or without assumption new (eval('Foo'))['hello']() // or simply eval('new Foo.hello()')
+Examples[edit]The following code snippets create an instance foo of class Foo, and invoke its method hello. For each programming language, normal and reflection-based call sequences are shown.ECMAScript[edit]The following is an example in ECMAScript, and therefore also applies to JavaScript and ActionScript:// Without reflection
+new Foo.hello()
+
+// With reflection
+
+// assuming that Foo resides in this
+new this['Foo']['hello']()
+
+// or without assumption
+new (eval('Foo'))['hello']()
+
+// or simply
+eval('new Foo.hello()')
 ### + agile
 Software architecture and agile development[edit]Main article: Agile developmentThere are also concerns that software architecture leads to too much Big Design Up Front, especially among proponents of Agile software development. A number of methods have been developed to balance the trade-offs of up-front design and agility,[34] including the agile method DSDM which mandates a "Foundations" phase during which "just enough" architectural foundations are laid. IEEE Software devoted a special issue[35] to the interaction between agility and architecture.
 ### Big design upfront

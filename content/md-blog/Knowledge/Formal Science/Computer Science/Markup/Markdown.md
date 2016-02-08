@@ -1,5 +1,5 @@
 # HTML
-HTML, HyperText Markup Language, gives content structure and meaning by defining that content as, for example, headings, paragraphs, or images.Test: Choose an html syntax
+HTML, HyperText Markup Language, gives content structure and meaning by defining that content as, for example, headings, paragraphs, or images.Test: Choose an html syntax 
 ### CSS
 CSS, or Cascading Style Sheets, is a presentation language created to style the appearance of content—using, for example, fonts or colors.Test: Select the syntax style
 ### Browser with/ without HTML and CSS
@@ -9,7 +9,7 @@ http://www.sitepoint.com/web-foundations/elements/list of all html elements and 
 Which of one of these is paragraph tag?peparppo
 ### Head
 ### Link
-How would you link a css file? dddddd
+How would you link a css file? <link type="text/css"><script>dddddd
 ### Selectors
 Reference an HTML element and then apply a style
 ### Universal

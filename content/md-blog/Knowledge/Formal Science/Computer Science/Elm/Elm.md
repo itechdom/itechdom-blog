@@ -1,10 +1,12 @@
 # Concepts
 ### Differences with JavaScript
-LiteralsJavaScriptElm333.14153.1415"Hello world!""Hello world!"Multiline strings not widely supported"""multiline string"""'Hello world!'Cannot use single quotes for stringsNo distinction between characters and strings'a'trueTrue[1,2,3][1,2,3]Objects / RecordsJavaScriptElm{ x: 3, y: 4 }{ x = 3, y = 4 }point.xpoint.xpoint.x = 42{ point | x  x + yMath.max(3, 4)max 3 4Math.min(1, Math.pow(2, 4))min 1 (2^4)numbers.map(Math.sqrt)List.map sqrt numberspoints.map(function(p) { return p.x })List.map .x pointsControl FlowJavaScriptElm3 > 2 ? 'cat' : 'dog'if 3 > 2 then "cat" else "dog"var x = 42; ...let x = 42 in ...return 42Everything is an expression, no need for returnStringsJavaScriptElm'abc' + '123'"abc" ++ "123"'abc'.lengthString.length "abc"'abc'.toUpperCase()String.toUpper "abc"'abc' + 123"abc" ++ toString 123
+LiteralsJavaScriptElm333.14153.1415"Hello world!""Hello world!"Multiline strings not widely supported"""multiline string"""'Hello world!'Cannot use single quotes for stringsNo distinction between characters and strings'a'trueTrue[1,2,3][1,2,3]Objects / RecordsJavaScriptElm{ x: 3, y: 4 }{ x = 3, y = 4 }point.xpoint.xpoint.x = 42{ point | x <- 42 }FunctionsJavaScriptElmfunction(x,y) { return x + y; }\x y -> x + yMath.max(3, 4)max 3 4Math.min(1, Math.pow(2, 4))min 1 (2^4)numbers.map(Math.sqrt)List.map sqrt numberspoints.map(function(p) { return p.x })List.map .x pointsControl FlowJavaScriptElm3 > 2 ? 'cat' : 'dog'if 3 > 2 then "cat" else "dog"var x = 42; ...let x = 42 in ...return 42Everything is an expression, no need for returnStringsJavaScriptElm'abc' + '123'"abc" ++ "123"'abc'.lengthString.length "abc"'abc'.toUpperCase()String.toUpper "abc"'abc' + 123"abc" ++ toString 123
 ### records
 you can define a record like this:bill = {name = "gates"}access with:bill.nameor.name billto update{ bill | name <- "Nye" }It is important to notice that we do not make destructive updates. In other words, when we update some fields of bill we actually create a new record rather than overwriting the existing one. Elm makes this efficient by sharing as much content as possible. If you update one of ten fields, the new record will share all of the nine unchanged values.
 ### Contracts
-fortyTwo : Int fortyTwo = 42
+fortyTwo : Int
+fortyTwo =
+  42
 ### type annotation
 ### to rule out runtime errors
 ### you can define your own type?
@@ -28,9 +30,29 @@ Learn by ExampleWalk through a sequence of small examples, building skills one a
 # Project Starters
 ### https://github.com/evancz/elm-architecture-tutorial/
 ### Archeticture
-1\. Model - a full definition of the application's state 2\. Update - a way to step the application state forward 3\. View - a way to visualize our application state with HTML 4\. Inputs - the signals necessary to manage events
+  1. Model  - a full definition of the application's state  2. Update - a way to step the application state forward  3. View   - a way to visualize our application state with HTML  4. Inputs - the signals necessary to manage events
 ### Application Skeleton
--- MODEL type alias Model = { ... } -- UPDATE type Action = Reset | ... update : Action -> Model -> Model update action model = case action of Reset -> ... ... -- VIEW view : Model -> Html view = ...
+-- MODEL
+
+type alias Model = { ... }
+
+
+-- UPDATE
+
+type Action = Reset | ...
+
+update : Action -> Model -> Model
+update action model =
+  case action of
+    Reset -> ...
+    ...
+
+
+-- VIEW
+
+view : Model -> Html
+view =
+  ...
 ### https://github.com/evancz/elm-architecture-tutorial/#example-5-random-gif-viewer
 ### I stopped here
 ### Pattern
@@ -45,7 +67,7 @@ Learn by ExampleWalk through a sequence of small examples, building skills one a
 ### Signals
 ### https://github.com/evancz/elm-todomvc
 ### todo mvc
-1\. Model - a full definition of the application's state 2\. Update - a way to step the application state forward 3\. View - a way to visualize our application state with HTML 4\. Inputs - the signals necessary to manage events
+  1. Model  - a full definition of the application's state  2. Update - a way to step the application state forward  3. View   - a way to visualize our application state with HTML  4. Inputs - the signals necessary to manage events
 ### Update
 ### Moves our application forward
 ### Model
@@ -56,7 +78,27 @@ Learn by ExampleWalk through a sequence of small examples, building skills one a
 ### Inputs
 ### Signals
 ### Application Skeleton
--- MODEL type alias Model = { ... } -- UPDATE type Action = Reset | ... update : Action -> Model -> Model update action model = case action of Reset -> ... ... -- VIEW view : Model -> Html view = ...
+-- MODEL
+
+type alias Model = { ... }
+
+
+-- UPDATE
+
+type Action = Reset | ...
+
+update : Action -> Model -> Model
+update action model =
+  case action of
+    Reset -> ...
+    ...
+
+
+-- VIEW
+
+view : Model -> Html
+view =
+  ...
 # Pain points
 ### What the hell are all these arrows
 ### Simple
@@ -74,13 +116,40 @@ Learn by ExampleWalk through a sequence of small examples, building skills one a
 ### http://elm-lang.org/examples/checkboxes
 ### one of the examples
 ### updating a record, shortcut? but what's Model here is it to specify the type?
-{ model | red  (x,y) lib = { id x = x } -- polymorphic fields (lib.id 42 == 42) (lib.id [] == []) type alias Location = { line:Int, column:Int }
+{ model | red <- bool }it will return a the whole objectthis is not ORpoint = { x = 3, y = 4 }       -- create a record
+
+point.x                        -- access field
+map .x [point,{x=0,y=0}]       -- field access function
+
+{ point - x }                  -- remove field
+{ point | z = 12 }             -- add field
+{ point - x | z = point.x }    -- rename field
+{ point - x | x = 6 }          -- update field
+
+{ point | x <- 6 }             -- nicer way to update a field
+{ point | x <- point.x + 1
+        , y <- point.y + 1 }   -- batch update fields
+
+dist {x,y} = sqrt (x^2 + y^2)  -- pattern matching on fields
+\{x,y} -> (x,y)
+
+lib = { id x = x }             -- polymorphic fields
+(lib.id 42 == 42)
+(lib.id [] == [])
+
+type alias Location = { line:Int, column:Int }
 ### Elm-Views
 ### What's address
 ### I know it's a signal
 ### How is it routing to an action/update?
 ### Let ... in syntax?
-Let Expressionslet n = 42 (a,b) = (3,4) {x,y} = { x=3, y=4 } square n = n * n in square a + square b Let-expressions are indentation sensitive. Each definition should align with the one above it.
+Let Expressionslet n = 42
+    (a,b) = (3,4)
+    {x,y} = { x=3, y=4 }
+    square n = n * n
+in
+    square a + square b
+Let-expressions are indentation sensitive. Each definition should align with the one above it.
 ### Signal.forwardTo
 ### just to forward signals?
 ### Is main: port: reserved?

@@ -117,10 +117,9 @@ var ops = {
 			idea.content = idea.content.replaceAll('<pre>','');
 			idea.content = idea.content.replaceAll('</pre>','');
 
-			idea.content = toMarkdown(idea.content);
-			idea.content = this.cleanHTML(idea.content);	
+			//idea.content = toMarkdown(idea.content);
+			//idea.content = this.cleanHTML(idea.content);	
 
-			console.log(idea.content);
 			f += idea.content;
 			f+="\n";
 		}

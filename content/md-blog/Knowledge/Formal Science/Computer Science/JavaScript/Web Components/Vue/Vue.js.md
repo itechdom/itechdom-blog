@@ -1,7 +1,10 @@
 # Core
 # Concepts
 # Code Analysis
-* API conventions: * - public API methods/properties are prefiexed with `$` * - internal methods/properties are prefixed with `_` * - non-prefixed properties are assumed to be proxied user * data.
+* API conventions: * - public API methods/properties are prefiexed with `$` * - internal methods/properties are prefixed with `_` * - non-prefixed properties are assumed to be proxied user *   data.
+
+
+
 ### Vue.js
 ### All the other components extend this?
 ### All Vue components have an option object

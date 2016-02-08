@@ -1,10 +1,6 @@
 # Intro
 ### What's JavaScript
-We saw before how we used html and css to display things on the browserthe browser essentially reads the html and css and figure out how to display themexample:p{font-size:80px} 
-
-hello world
-
-with Javascript: we telling the browser to do more things than just display this text or any other html elements:things like: go to javascript and where to find itJavaScript is a programming language with syntax. just like a real language.a programming language commonly used to create interactive websites. Using HTML and CSS only is very limited in their own way. You can use HTML and CSS to achieve a lot of things, but unfortunately this falls short in many Cases. This is when JavaScript comes in handy.
+We saw before how we used html and css to display things on the browserthe browser essentially reads the html and css and figure out how to display themexample:<style>p{font-size:80px}</style> <p>hello world</p>with Javascript: we telling the browser to do more things than just display this text or any other html elements:things like: go to javascript and where to find itJavaScript is a programming language with syntax. just like a real language.a programming language commonly used to create interactive websites. Using HTML and CSS only is very limited in their own way. You can use HTML and CSS to achieve a lot of things, but unfortunately this falls short in many Cases. This is when JavaScript comes in handy.
 ### What does Javascript Do and Where do you find it?
 You find it in many places:Slide show images, clicking on something and doing something,Creating online games,creating Mobile apps (New)this slide show is created by JavaScript
 ### How is JavaScript written: in Statements 
@@ -63,7 +59,7 @@ Functions are like recepies that are repeated in your application. When you make
 ### Global Scope and Function Scope
 whatever boxes we have in the factory (function), we can't access outside of it.function {a = 2}
 ### Loops
-sometimes we need to repeat statements instead of copying and pasting them so if I wanted to write hello 20 times, I would do something like thislog hellolog hellolog hellowhat if we
+sometimes we need to repeat statements instead of copying and pasting them so if I wanted to write hello 20 times, I would do something like thislog hellolog hellolog hellowhat if we 
 ### Arrays
 Numbered Shelfs and contains boxes 0,1,2,3,4 ... etc
 ### Objects

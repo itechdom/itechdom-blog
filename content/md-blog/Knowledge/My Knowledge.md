@@ -67,7 +67,7 @@ The decorative arts are arts or crafts concerned with the design and manufactu
 ### Applied Arts
  On the other hand, crafts and design are sometimes considered applied art. Some art followers have argued that the difference between fine art and applied art has more to do with value judgments made about the art than any clear definitional difference.[14] However, even fine art often has goals beyond pure creativity and self-expression. The purpose of works of art may be to communicate ideas, such as in politically, spiritually, or philosophically motivated art; to create a sense of beauty (see aesthetics); to explore the nature of perception; for pleasure; or to generate strong emotions. The purpose may also be seemingly nonexistent.
 ### Visual Art
-visual arts, which includes the creation of images or objects in fields including painting, sculpture, printmaking, photography, and other visual media.
+visual arts, which includes the creation of images or objects in fields including painting, sculpture, printmaking, photography, and other visual media. 
 ### Painting
 ### Drawing
 ### My Drawing Road
