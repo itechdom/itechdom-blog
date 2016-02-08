@@ -25,7 +25,7 @@
 
 ```
 
-<p style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; margin-bottom: 16px; font-size: 16px; letter-spacing: 0.2px; line-height: 25.6px;">Similarly, you can compose different asynchronous streams to turn them into actions before feeding them to&#xA0;<code style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace; font-size: 13.6px; direction: ltr; padding: 0.2em 0px; margin: 0px; background-color: rgb(247, 247, 247);">store.dispatch()
+</pre><p style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; margin-bottom: 16px; font-size: 16px; letter-spacing: 0.2px; line-height: 25.6px;">Similarly, you can compose different asynchronous streams to turn them into actions before feeding them to&#xA0;<code style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace; font-size: 13.6px; direction: ltr; padding: 0.2em 0px; margin: 0px; background-color: rgb(247, 247, 247);">store.dispatch()
 
 ```
 

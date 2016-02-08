@@ -28,7 +28,7 @@ You can pass commands to docker containers so they can run them<div><br></div><d
 
 ```
 
-<p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">Wait, what? Where&#x2019;s our &#x201C;hello world&#x201D; output? Let&#x2019;s look at what we&#x2019;ve run here. It should look pretty familiar. We ran&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">docker run
+</pre><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">Wait, what? Where&#x2019;s our &#x201C;hello world&#x201D; output? Let&#x2019;s look at what we&#x2019;ve run here. It should look pretty familiar. We ran&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">docker run
 
 ```
 
@@ -49,7 +49,7 @@ You can pass commands to docker containers so they can run them<div><br></div><d
 
 ```
 
-<p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">This is the (hello) world&#x2019;s silliest daemon: a shell script that echoes&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">hello world
+</pre><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">This is the (hello) world&#x2019;s silliest daemon: a shell script that echoes&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">hello world
 
 ```
 
@@ -62,7 +62,7 @@ forever.</p><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px;
 
 ```
 
-<p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">This really long string is called a&#xA0;<em style="box-sizing: inherit; line-height: inherit;">container ID</em>. It uniquely identifies a container so we can work with it.</p><blockquote style="padding-top: 0.5625rem; padding-right: 1.25rem; padding-left: 1.1875rem; margin-bottom: 1.25rem; border-left-width: 0px; border-left-color: black; letter-spacing: normal; box-sizing: inherit; line-height: 1.6; font-size: 16px;"><p style="margin-bottom: 1.25rem; font-size: 1rem; line-height: 1.6; box-sizing: inherit; padding: 0px; font-family: inherit; text-rendering: optimizeLegibility; letter-spacing: 1px;"><strong style="box-sizing: inherit; line-height: inherit;">Note:</strong>&#xA0;The container ID is a bit long and unwieldy. A bit later, we&#x2019;ll see a shorter ID and ways to name our containers to make working with them easier.</p></blockquote><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">We can use this container ID to see what&#x2019;s happening with our&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">hello world
+</pre><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">This really long string is called a&#xA0;<em style="box-sizing: inherit; line-height: inherit;">container ID</em>. It uniquely identifies a container so we can work with it.</p><blockquote style="padding-top: 0.5625rem; padding-right: 1.25rem; padding-left: 1.1875rem; margin-bottom: 1.25rem; border-left-width: 0px; border-left-color: black; letter-spacing: normal; box-sizing: inherit; line-height: 1.6; font-size: 16px;"><p style="margin-bottom: 1.25rem; font-size: 1rem; line-height: 1.6; box-sizing: inherit; padding: 0px; font-family: inherit; text-rendering: optimizeLegibility; letter-spacing: 1px;"><strong style="box-sizing: inherit; line-height: inherit;">Note:</strong>&#xA0;The container ID is a bit long and unwieldy. A bit later, we&#x2019;ll see a shorter ID and ways to name our containers to make working with them easier.</p></blockquote><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">We can use this container ID to see what&#x2019;s happening with our&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">hello world
 
 ```
 
@@ -81,7 +81,7 @@ command. The&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-famil
 
 ```
 
-<p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">Here we can see our daemonized container. The&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">docker ps
+</pre><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">Here we can see our daemonized container. The&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">docker ps
 
 ```
 
@@ -110,7 +110,7 @@ hello world
 
 ```
 
-<p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">The&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">docker logs
+</pre><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">The&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">docker logs
 
 ```
 
@@ -128,7 +128,7 @@ insane_babbage
 
 ```
 
-<p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">The&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">docker stop
+</pre><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">The&#xA0;<code style="padding: 0.125rem 0.3125rem 0.0625rem; font-family: Consolas, &apos;Liberation Mono&apos;, Courier, monospace; color: rgb(51, 51, 51); border-color: rgb(255, 203, 148); box-sizing: inherit; background-color: rgb(248, 248, 248);">docker stop
 
 ```
 
@@ -142,7 +142,7 @@ CONTAINER ID  IMAGE         COMMAND               CREATED        STATUS       PO
 
 ```
 
-<p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">Excellent. Our container has been stopped.</p></h2>
+</pre><p style="margin-bottom: 1.25rem; box-sizing: inherit; padding: 0px; font-size: 16px; line-height: 1.6; text-rendering: optimizeLegibility; color: rgb(5, 14, 26);">Excellent. Our container has been stopped.</p></h2>
 ### Docker-compose
 ### https://docs.docker.com/compose/
 ### Examples of dockerized apps

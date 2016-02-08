@@ -97,7 +97,7 @@ Depending on your implementation: compilation or interpretation might happen (co
 
 ```
 
-</div>
+</pre></div>
 # New Standard
 ### http://www.2ality.com/2015/06/web-assembly.html
 ### Web Assembly and why

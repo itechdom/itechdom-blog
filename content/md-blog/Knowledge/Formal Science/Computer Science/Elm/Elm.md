@@ -224,7 +224,7 @@ you can define a record like this:<div>bill = {name = &quot;gates&quot;}</div><d
 
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">:</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Model</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">-&gt;</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Html</span>
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view </span><span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span>
-  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">...</span>
+  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">...</span></pre>
 ### https://github.com/evancz/elm-architecture-tutorial/#example-5-random-gif-viewer
 ### I stopped here
 ### Pattern
@@ -270,7 +270,7 @@ you can define a record like this:<div>bill = {name = &quot;gates&quot;}</div><d
 
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">:</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Model</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">-&gt;</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">Html</span>
 <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">view </span><span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span>
-  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">...</span>
+  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">...</span></pre>
 # Pain points
 ### What the hell are all these arrows
 ### Simple
@@ -325,7 +325,7 @@ you can define a record like this:<div>bill = {name = &quot;gates&quot;}</div><d
 
 ```
 
-<p style="line-height: 1.5em; color: rgb(41, 60, 75); font-family: &apos;Source Sans Pro&apos;, &apos;Trebuchet MS&apos;, &apos;Lucida Grande&apos;, &apos;Bitstream Vera Sans&apos;, &apos;Helvetica Neue&apos;, sans-serif; font-size: medium;">Let-expressions are indentation sensitive. Each definition should align with the one above it.</p>
+</pre><p style="line-height: 1.5em; color: rgb(41, 60, 75); font-family: &apos;Source Sans Pro&apos;, &apos;Trebuchet MS&apos;, &apos;Lucida Grande&apos;, &apos;Bitstream Vera Sans&apos;, &apos;Helvetica Neue&apos;, sans-serif; font-size: medium;">Let-expressions are indentation sensitive. Each definition should align with the one above it.</p>
 ### Signal.forwardTo
 ### just to forward signals?
 ### Is main: port: reserved?

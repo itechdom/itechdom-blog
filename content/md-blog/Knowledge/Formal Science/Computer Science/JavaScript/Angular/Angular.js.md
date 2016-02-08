@@ -50,7 +50,7 @@
 
 ```
 
-</li></ol></code-example><p style="box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif;">Here we see the&#xA0;<code style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; background: rgb(245, 246, 247);">@Component
+</li></ol></pre></code-example><p style="box-sizing: border-box; line-height: 28px; margin-bottom: 16px; font-size: 16px; opacity: 0.87; padding: 0px; color: rgb(26, 35, 38); font-family: Roboto, &apos;Helvetica Neue Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Lucida Grande&apos;, sans-serif;">Here we see the&#xA0;<code style="box-sizing: border-box; font-family: Monaco, &apos;Lucida Console&apos;, monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; background: rgb(245, 246, 247);">@Component
 
 ```
 

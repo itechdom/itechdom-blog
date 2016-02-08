@@ -10,7 +10,7 @@
 
 ```
 
-</div>
+</pre></div>
 ### Capturing
 <div>### capturing</div><div><br></div><div>* We can specify variables in regex that we can refer to later</div><div>* The exampel below stores month, day and year when given a date.</div><div><br></div><div>```ruby</div><div><br></div><div>(?&lt;month&gt;\d{1,2})\/(?&lt;day&gt;\d{1,2})\/(?&lt;year&gt;\d{4})</div><div>```</div><div><br></div><div>Then we can do something like this:</div><div>```ruby</div><div>date_string = &quot;06/11/1985&quot;</div><div>pattern = /(?&lt;month&gt;\d{1,2})\/(?&lt;day&gt;\d{1,2})\/(?&lt;year&gt;\d{4})/</div><div>result = date_string.match(pattern)</div><div># we can now access the days, month and year</div><div>result[:day] #11</div><div>result[:month] #06</div><div>result[:year] #1985</div><div><br></div><div>```</div><div><br></div><div><br></div><div>### exercise</div><div><br></div><div>* Write a pattern that will take a decimal number (ie: 3.4)</div><div>* It captures the number in dollars and cents</div><div>* display the dollars and cents in that number</div><div>* You should modify the previous example</div><div>```ruby</div><div>(?&lt;month&gt;\d{1,2})\/(?&lt;day&gt;\d{1,2})\/(?&lt;year&gt;\d{4})</div><div>```</div>
 ### Ways to use Regex

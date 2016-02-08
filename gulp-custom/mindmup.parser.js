@@ -115,8 +115,8 @@ var ops = {
 
 			idea.content = idea.content.replaceAll('<code>','\n\n```\n\n');
 			idea.content = idea.content.replaceAll('</code>','\n\n```\n\n');
-			idea.content = idea.content.replaceAll('<pre>','');
-			idea.content = idea.content.replaceAll('</pre>','');
+			//idea.content = idea.content.replaceAll('<pre>','');
+			//idea.content = idea.content.replaceAll('</pre>','');
 
 			//idea.content = toMarkdown(idea.content);
 			//idea.content = this.cleanHTML(idea.content);	
