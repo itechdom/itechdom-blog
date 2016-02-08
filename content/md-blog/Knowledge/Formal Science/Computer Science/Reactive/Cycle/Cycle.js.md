@@ -30,53 +30,53 @@
 
 *   The dom driver goes through and returns this:
 
+<div>
 
+<div>    return {</div>
 
-    return {
+<div>      observable: rootElem$,</div>
 
-      observable: rootElem$,
+<div>      namespace: [],</div>
 
-      namespace: [],
+<div>      select: makeElementSelector(rootElem$),</div>
 
-      select: makeElementSelector(rootElem$),
+<div>      events: makeEventsSelector(rootElem$, []),</div>
 
-      events: makeEventsSelector(rootElem$, []),
+<div>      dispose: () => disposable.dispose(),</div>
 
-      dispose: () => disposable.dispose(),
+<div>      isolateSource,</div>
 
-      isolateSource,
+<div>      isolateSink,</div>
 
-      isolateSink,
+<div>    }</div>
 
-    }
+</div>
 
-
-
-
+<div>
 
 *   The cycle run goes through these steps: it ties both main and drivers together
 
+<div>
 
+<div>  let sinkProxies = makeSinkProxies(drivers)</div>
 
-  let sinkProxies = makeSinkProxies(drivers)
+<div>  let sources = callDrivers(drivers, sinkProxies)</div>
 
-  let sources = callDrivers(drivers, sinkProxies)
+<div>  let sinks = main(sources)</div>
 
-  let sinks = main(sources)
+<div>  let subscription = replicateMany(sinks, sinkProxies).subscribe()</div>
 
-  let subscription = replicateMany(sinks, sinkProxies).subscribe()
+<div>  let sinksWithDispose = attachDisposeToSinks(sinks, subscription)</div>
 
-  let sinksWithDispose = attachDisposeToSinks(sinks, subscription)
+<div>  let sourcesWithDispose = attachDisposeToSources(sources)</div>
 
-  let sourcesWithDispose = attachDisposeToSources(sources)
+<div>  return {sources: sourcesWithDispose, sinks: sinksWithDispose}</div>
 
-  return {sources: sourcesWithDispose, sinks: sinksWithDispose}
+</div>
 
+</div>
 
-
-
-
-
+<div>
 
 This is where Cycle.js comes in: you only need to specify`main()` and `domDriver()`, and give it to the Cycle.js`run()` command which connects them circularly. 
 
@@ -88,10 +88,10 @@ we use start with to initiate something between main and drivers
 
 isolateSink and isolateSource are to not make one component pollute another
 
-
+</div>
 # Paradigms
 # Pain Points
-_Sinks_ are instructions from `main()` to drivers to perform side effects, and _sources_ are readable side effects. HTTP requests are sinks, and HTTP responses are sources
+_Sinks_<span style="color: rgb(36, 36, 45); font-family: 'Source Sans Pro', Calibri, Helvetica, sans-serif; font-size: 19px; line-height: 30.4px;"> are instructions from </span>`main()`<span style="color: rgb(36, 36, 45); font-family: 'Source Sans Pro', Calibri, Helvetica, sans-serif; font-size: 19px; line-height: 30.4px;"> to drivers to perform side effects, and </span>_sources_<span style="color: rgb(36, 36, 45); font-family: 'Source Sans Pro', Calibri, Helvetica, sans-serif; font-size: 19px; line-height: 30.4px;"> are readable side effects. HTTP requests are sinks, and HTTP responses are sources</span>
 ### Sinks
 ### Whatever goes to the user
 ### Sources

@@ -6,7 +6,7 @@
 ### Best Regex trick
 # Concepts
 ### Basics
-
+<div id="wmd-preview-section-34" class="wmd-preview-section preview-content" style="box-sizing: border-box; color: rgb(63, 63, 63); font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 26.1000003814697px; text-align: justify; outline: none !important; background-color: rgb(246, 246, 246);">
 
 ### Regex Basics
 
@@ -20,9 +20,9 @@
 *   \A Start of string
 *   \z End of string
 
+</div>
 
-
-
+<div id="wmd-preview-section-35" class="wmd-preview-section preview-content" style="box-sizing: border-box; color: rgb(63, 63, 63); font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 26.1000003814697px; text-align: justify; outline: none !important; background-color: rgb(246, 246, 246);">
 
 ### Shortcuts (meta characters)
 
@@ -35,9 +35,9 @@
 *   \W Any non-word character
 *   \b Any word boundary character
 
+</div>
 
-
-
+<div id="wmd-preview-section-36" class="wmd-preview-section preview-content" style="box-sizing: border-box; color: rgb(63, 63, 63); font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 26.1000003814697px; text-align: justify; outline: none !important; background-color: rgb(246, 246, 246);">
 
 ### Groups
 
@@ -50,99 +50,99 @@
 *   {3,} 3 or more of a
 *   a{3,6} Between 3 and 6 of a
 
+</div>
 
-
-
+<div id="wmd-preview-section-37" class="wmd-preview-section preview-content" style="box-sizing: border-box; color: rgb(63, 63, 63); font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 26.1000003814697px; text-align: justify; outline: none !important; background-color: rgb(246, 246, 246);">
 
 ### Characters that needs to be escaped.
 
 *   They are escaped with a backward slash \\
 *   Characters are:
 
+</div>
 
-
-
+<div id="wmd-preview-section-38" class="wmd-preview-section preview-content" style="box-sizing: border-box; color: rgb(63, 63, 63); font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 26.1000003814697px; text-align: justify; outline: none !important; background-color: rgb(246, 246, 246);">
 
     . | ( ) [ ] { } + \ ^ $ * ?
 
-
+</div>
 ### Capturing
-### capturing
+<div>### capturing</div>
 
-* We can specify variables in regex that we can refer to later
+<div>* We can specify variables in regex that we can refer to later</div>
 
-* The exampel below stores month, day and year when given a date.
+<div>* The exampel below stores month, day and year when given a date.</div>
 
-```ruby
+<div>```ruby</div>
 
-(?\d{1,2})\/(?\d{1,2})\/(?\d{4})
+<div>(?<month>\d{1,2})\/(?<day>\d{1,2})\/(?<year>\d{4})</div>
 
-```
+<div>```</div>
 
-Then we can do something like this:
+<div>Then we can do something like this:</div>
 
-```ruby
+<div>```ruby</div>
 
-date_string = "06/11/1985"
+<div>date_string = "06/11/1985"</div>
 
-pattern = /(?\d{1,2})\/(?\d{1,2})\/(?\d{4})/
+<div>pattern = /(?<month>\d{1,2})\/(?<day>\d{1,2})\/(?<year>\d{4})/</div>
 
-result = date_string.match(pattern)
+<div>result = date_string.match(pattern)</div>
 
-# we can now access the days, month and year
+<div># we can now access the days, month and year</div>
 
-result[:day] #11
+<div>result[:day] #11</div>
 
-result[:month] #06
+<div>result[:month] #06</div>
 
-result[:year] #1985
+<div>result[:year] #1985</div>
 
-```
+<div>```</div>
 
-### exercise
+<div>### exercise</div>
 
-* Write a pattern that will take a decimal number (ie: 3.4)
+<div>* Write a pattern that will take a decimal number (ie: 3.4)</div>
 
-* It captures the number in dollars and cents
+<div>* It captures the number in dollars and cents</div>
 
-* display the dollars and cents in that number
+<div>* display the dollars and cents in that number</div>
 
-* You should modify the previous example
+<div>* You should modify the previous example</div>
 
-```ruby
+<div>```ruby</div>
 
-(?\d{1,2})\/(?\d{1,2})\/(?\d{4})
+<div>(?<month>\d{1,2})\/(?<day>\d{1,2})\/(?<year>\d{4})</div>
 
-```
+<div>```</div>
 ### Ways to use Regex
-### Ways to Use Regex in Ruby
+<div>### Ways to Use Regex in Ruby</div>
 
-* Match
+<div>* Match</div>
 
-* Scan
+<div>* Scan</div>
 
-* =~
+<div>* =~</div>
 
-* Gsub
+<div>* Gsub</div>
 
-* Split
+<div>* Split</div>
 
-```ruby
+<div>```ruby</div>
 
-a = /a/
+<div>a = /a/</div>
 
-a.class # Regexp
+<div>a.class # Regexp</div>
 
-myString = "A woman once said. A man once said. A child once said"
+<div>myString = "A woman once said. A man once said. A child once said"</div>
 
-match = myString.match(a) #this will return a
+<div>match = myString.match(a) #this will return a</div>
 
-match = myString.scan(a) #this will return ["a", "a", "a", "a", "a"]
+<div>match = myString.scan(a) #this will return ["a", "a", "a", "a", "a"]</div>
 
-match = myString.gsub(a,"b") #this will replace all a(s) with b, leaving behind capital A
+<div>match = myString.gsub(a,"b") #this will replace all a(s) with b, leaving behind capital A</div>
 
-myString =~ a #return the index of the first occurance 
+<div>myString =~ a #return the index of the first occurance </div>
 
-match = myString.split(a) # split a string by a(s)
+<div>match = myString.split(a) # split a string by a(s)</div>
 
-```
+<div>```</div>

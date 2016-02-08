@@ -54,84 +54,84 @@
 ### Explanation
 ### Acts as a proxy, takes a source and emits it to its subscribers
 ### Nice Example
-The following example illustrates the proxy and broadcast nature of a Subject. We first create a source sequence which produces an integer every 1 second. We then create a Subject, and pass it as an observer to the source so that it will receive all the values pushed out by this source sequence. After that, we create another two subscriptions, this time with the subject as the source. The subSubject1 and subSubject2 subscriptions will then receive any value passed down (from the source) by the Subject.
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">The following example illustrates the proxy and broadcast nature of a Subject. We first create a source sequence which produces an integer every 1 second. We then create a Subject, and pass it as an observer to the source so that it will receive all the values pushed out by this source sequence. After that, we create another two subscriptions, this time with the subject as the source. The subSubject1 and subSubject2 subscriptions will then receive any value passed down (from the source) by the Subject.</span>
 
-  
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">  
+</span>
 
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// Every second</span>
 
-// Every second
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">var source = Rx.Observable.interval(1000);</span>
 
-var source = Rx.Observable.interval(1000);
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">  
+</span>
 
-  
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">var subject = new Rx.Subject();</span>
 
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">  
+</span>
 
-var subject = new Rx.Subject();
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">var subSource = source.subscribe(subject);</span>
 
-  
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">  
+</span>
 
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">var subSubject1 = subject.subscribe(</span>
 
-var subSource = source.subscribe(subject);
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    x => console.log('Value published to observer #1: ' + x),</span>
 
-  
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    e => console.log('onError: ' + e.message),</span>
 
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    () => console.log('onCompleted'));</span>
 
-var subSubject1 = subject.subscribe(
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">  
+</span>
 
-    x => console.log('Value published to observer #1: ' + x),
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">var subSubject2 = subject.subscribe(</span>
 
-    e => console.log('onError: ' + e.message),
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    x => console.log('Value published to observer #2: ' + x),</span>
 
-    () => console.log('onCompleted'));
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    e => console.log('onError: ' + e.message),</span>
 
-  
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    () => console.log('onCompleted'));</span>
 
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">  
+</span>
 
-var subSubject2 = subject.subscribe(
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">setTimeout(() => {</span>
 
-    x => console.log('Value published to observer #2: ' + x),
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    // Clean up</span>
 
-    e => console.log('onError: ' + e.message),
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    subject.onCompleted();</span>
 
-    () => console.log('onCompleted'));
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    subSubject1.dispose();</span>
 
-  
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">    subSubject2.dispose();</span>
 
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">}, 5000);</span>
 
-setTimeout(() => {
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">  
+</span>
 
-    // Clean up
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => Value published to observer #1: 0</span>
 
-    subject.onCompleted();
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => Value published to observer #2: 0</span>
 
-    subSubject1.dispose();
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => Value published to observer #1: 1</span>
 
-    subSubject2.dispose();
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => Value published to observer #2: 1</span>
 
-}, 5000);
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => Value published to observer #1: 2</span>
 
-  
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => Value published to observer #2: 2</span>
 
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => Value published to observer #1: 3</span>
 
-// => Value published to observer #1: 0
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => Value published to observer #2: 3</span>
 
-// => Value published to observer #2: 0
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => onCompleted</span>
 
-// => Value published to observer #1: 1
-
-// => Value published to observer #2: 1
-
-// => Value published to observer #1: 2
-
-// => Value published to observer #2: 2
-
-// => Value published to observer #1: 3
-
-// => Value published to observer #2: 3
-
-// => onCompleted
-
-// => onCompleted
+<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 27.2px;">// => onCompleted</span>
 ### Types of Subjects
 ## Different types of Subjects
 

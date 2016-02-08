@@ -1,9 +1,9 @@
 # pain points
 Focusing on a drawing and taking my time, I am too quick to move to something else. My field pushed me to do so. I have a small attention span. Is there a way I can find a form of art that matches this style? if not, what can I do to make myself focus on painting and most importantly precision.
 
-How do I learn precision?
+<div>How do I learn precision?</div>
 
-Thinking from the left side of the brain
+<div>Thinking from the left side of the brain</div>
 ### Precision
 ### Thinking from left instead of Right side
 ### Focus
@@ -42,13 +42,13 @@ With (“Braid” and “The Witness”), what I did was a little bit different.
 ### Contour Lines
 Defines where and object begins and end.
 
-Move your finger around the apple to create cross contour lines.
+<div><span style="color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);">Move your finger around the apple to create cross contour lines.</span></div>
 ### they are outlines
 ### Exercise
-Experiment with different types of lines.
+<span style="color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);">Experiment with different types of lines.</span>
 
-  
-
+<div><span style="color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);">  
+</span></div>
 ### Quality
 ### Exercise
 Don't look at the paper and don't lift the pencil and just observe the object

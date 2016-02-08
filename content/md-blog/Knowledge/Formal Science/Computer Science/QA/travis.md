@@ -7,7 +7,7 @@
 ### CI
 ### https://en.wikipedia.org/wiki/Continuous_integration
 # Similar services
-## Continuous integration tools[[edit](https://en.wikipedia.org/w/index.php?title=List_of_build_automation_software&action=edit&section=4 "Edit section: Continuous integration tools")]
+## <span class="mw-headline" id="Continuous_integration_tools">Continuous integration tools</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=List_of_build_automation_software&action=edit&section=4 "Edit section: Continuous integration tools")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
 *   [AnthillPro](https://en.wikipedia.org/wiki/AnthillPro "AnthillPro"), build automation with pipeline support for deployment automation and testing. Cross-platform, cross-language
 *   [Bamboo](https://en.wikipedia.org/wiki/Bamboo_(software) "Bamboo (software)"), continuous integration software

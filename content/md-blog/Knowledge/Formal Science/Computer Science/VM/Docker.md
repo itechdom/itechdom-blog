@@ -11,43 +11,43 @@
 ### docker cheat sheets
 # concepts
 ### Container
-this message appears when you run docker run hello-world
+this message appears when you run <pre><code>docker run hello-world</code></pre>
 
+<div>
 
+<div>Hello from Docker.</div>
 
-Hello from Docker.
+<div>This message shows that your installation appears to be working correctly.</div>
 
-This message shows that your installation appears to be working correctly.
+<div>To generate this message, Docker took the following steps:</div>
 
-To generate this message, Docker took the following steps:
+<div> 1\. The Docker client contacted the Docker daemon.</div>
 
- 1\. The Docker client contacted the Docker daemon.
+<div> 2\. The Docker daemon pulled the "hello-world" image from the Docker Hub.</div>
 
- 2\. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+<div> 3\. The Docker daemon created a new container from that image which runs the</div>
 
- 3\. The Docker daemon created a new container from that image which runs the
+<div>    executable that produces the output you are currently reading.</div>
 
-    executable that produces the output you are currently reading.
+<div> 4\. The Docker daemon streamed that output to the Docker client, which sent it</div>
 
- 4\. The Docker daemon streamed that output to the Docker client, which sent it
+<div>    to your terminal.</div>
 
-    to your terminal.
-
-
+</div>
 ### ubuntu bash example
 docker run -it ubuntu bash
 
-  -i, --interactive=false         Keep STDIN open even if not attached  
+<div>  -i, --interactive=false         Keep STDIN open even if not attached  
+</div>
 
-
-  -t, --tty=false                 Allocate a pseudo-TTY  
-
+<div>  -t, --tty=false                 Allocate a pseudo-TTY  
+</div>
 ### https://docs.docker.com/engine/userguide/dockerizing/
 ### Streaming input and outputs
 You can pass commands to docker containers so they can run them
 
-docker run -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"  
-
+<div>docker run -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"  
+</div>
 ### Daemon
 ## A daemonized Hello world
 
@@ -122,4 +122,4 @@ Excellent. Our container has been stopped.
 ### Examples of dockerized apps
 ### https://docs.docker.com/engine/examples/mongodb/
 ### docker machine
-**Machine** lets you create **Docker** hosts on your computer, on cloud providers, and inside your own data center. It automatically creates hosts, installs **Docker** on them, then configures the **docker** client to talk to them. A “**machine**” is the combination of a **Docker** host and a configured client.
+**Machine**<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; line-height: 19.2px;"> lets you create </span>**Docker**<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; line-height: 19.2px;"> hosts on your computer, on cloud providers, and inside your own data center. It automatically creates hosts, installs </span>**Docker**<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; line-height: 19.2px;"> on them, then configures the </span>**docker**<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; line-height: 19.2px;"> client to talk to them. A “</span>**machine**<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; line-height: 19.2px;">” is the combination of a </span>**Docker**<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; line-height: 19.2px;"> host and a configured client.</span>

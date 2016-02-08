@@ -3,32 +3,32 @@
 ### Higher Order functions
 ### Functional
 ### Lang features
-SEAMLESS JAVA INTEROP  
+<div>SEAMLESS JAVA INTEROP  
+</div>
 
+<div>Scala runs on the JVM, so Java and Scala stacks can be freely mixed for totally seamless integration.</div>
 
-Scala runs on the JVM, so Java and Scala stacks can be freely mixed for totally seamless integration.
+<div>TYPE INFERENCE</div>
 
-TYPE INFERENCE
+<div>So the type system doesn’t feel so static. Don’t work for the type system. Let the type system work for you!</div>
 
-So the type system doesn’t feel so static. Don’t work for the type system. Let the type system work for you!
+<div>CONCURRENCY</div>
 
-CONCURRENCY
+<div>& DISTRIBUTION</div>
 
-& DISTRIBUTION
+<div>Use data-parallel operations on collections, use actors for concurrency and distribution, or futures for asynchronous programming.</div>
 
-Use data-parallel operations on collections, use actors for concurrency and distribution, or futures for asynchronous programming.
+<div>TRAITS</div>
 
-TRAITS
+<div>Combine the flexibility of Java-style interfaces with the power of classes. Think principled multiple-inheritance.</div>
 
-Combine the flexibility of Java-style interfaces with the power of classes. Think principled multiple-inheritance.
+<div>PATTERN MATCHING</div>
 
-PATTERN MATCHING
+<div>Think “switch” on steroids. Match against class hierarchies, sequences, and more.</div>
 
-Think “switch” on steroids. Match against class hierarchies, sequences, and more.
+<div>HIGHER-ORDER FUNCTIONS</div>
 
-HIGHER-ORDER FUNCTIONS
-
-Functions are first-class objects. Compose them with guaranteed type safety. Use them anywhere, pass them to anything.
+<div>Functions are first-class objects. Compose them with guaranteed type safety. Use them anywhere, pass them to anything.</div>
 ### Actors
 ### Currently Akka actors
 ### Classes 
@@ -65,17 +65,17 @@ Functions are first-class objects. Compose them with guaranteed type safety. Use
 ### play framework
 ### scalatara
 ### akka
-Build powerful concurrent & distributed applications
+<div>Build powerful concurrent & distributed applications</div>
 
-more easily. Akka is a toolkit and runtime
+<div>more easily. Akka is a toolkit and runtime</div>
 
-for building highly concurrent,
+<div>for building highly concurrent,</div>
 
-distributed, and resilient
+<div>distributed, and resilient</div>
 
-message-driven applications
+<div>message-driven applications</div>
 
-on the JVM.
+<div>on the JVM.</div>
 ### Scala actors are deprecated in favor of akka
 ### spray
 ### https://github.com/spray/spray
@@ -104,34 +104,36 @@ on the JVM.
 ### build tool
 # Pain Point
 ### What's the reverse arrow -> in Scala loops
-The left-arrow 
+The left-arrow <- operator is called a generator, so named because it's generating individual values from a range.
 
-Following is the example of for loop with range using i to j syntax:
+<div>
 
-  
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">Following is the example of for loop with range using i to j syntax:</span></font>
 
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">  
+</span></font>
 
-object Test {
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;"><code>object Test {</span></font>
 
-   def main(args: Array[String]) {
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">   def main(args: Array[String]) {</span></font>
 
-      var a = 0;
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">      var a = 0;</span></font>
 
-      // for loop execution with a range
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">      // for loop execution with a range</span></font>
 
-      for( a 
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">      for( a <- 1 to 10){</span></font>
 
-         println( "Value of a: " + a );
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">         println( "Value of a: " + a );</span></font>
 
-      }
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">      }</span></font>
 
-   }
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">   }</span></font>
 
-}
+<font color="#000000" face="Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif"><span style="font-size: 15px; line-height: 24px;">}</span></font>
 
+<span style="font-size: 15px; line-height: 24px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;"></code></span>
 
-
-
+</div>
 ### Blocks vs Functions
 ### http://stackoverflow.com/questions/19007611/understanding-scala-blocks
 ### blocks similar to anonymous classes in java
