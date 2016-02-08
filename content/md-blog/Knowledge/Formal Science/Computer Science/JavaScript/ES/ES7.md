@@ -199,7 +199,7 @@ console.log( x, y, z );             // ReferenceErrorThere's a subtle but super-
 
 var o = { a: X, b: Y };
 
-console.log( o.a, o.b );            // 10 20In { a: X, b: Y }, we know that a is the object property, and X is the source value that gets assigned to it. In other words, the syntactic pattern is target: source, or more obviously, property-alias: value. We intuitively understand this because it's the same as = assignment, where the pattern is target = source.However, when you use object destructuring assignment -- that is, putting the { .. } object literal-looking syntax on the lefthand side of the = operator -- you invert that target: source pattern.Recall:var { x: bam, y: baz, z: bap } = bar();The syntactic pattern here is source: target (or value: variable-alias). x: bam means the x property is the source value and bam is the target variable to assign to. In other words, object literals are target  target. See how that's flipped?There's another way to think about this syntax though, which may help ease the confusion. Consider:var aa = 10, bb = 20;
+console.log( o.a, o.b );            // 10 20In { a: X, b: Y }, we know that a is the object property, and X is the source value that gets assigned to it. In other words, the syntactic pattern is target: source, or more obviously, property-alias: value. We intuitively understand this because it's the same as = assignment, where the pattern is target = source.However, when you use object destructuring assignment -- that is, putting the { .. } object literal-looking syntax on the lefthand side of the = operator -- you invert that target: source pattern.Recall:var { x: bam, y: baz, z: bap } = bar();The syntactic pattern here is source: target (or value: variable-alias). x: bam means the x property is the source value and bam is the target variable to assign to. In other words, object literals are target <-- source, and object destructuring assignments are source --> target. See how that's flipped?There's another way to think about this syntax though, which may help ease the confusion. Consider:var aa = 10, bb = 20;
 
 var o = { x: aa, y: bb };
 var     { x: AA, y: BB } = o;
@@ -806,7 +806,62 @@ re1.lastIndex;          // 0 -- not updated
 
 re1.lastIndex = 4;
 re1.test( str );        // true -- ignored `lastIndex`
-re1.lastIndex;          // 4 -- not updatedThree things to observe about this snippet:test(..) doesn't pay any attention to lastIndex's value, and always just performs its match from the beginning of the input string.Because our pattern does not have a ^ start-of-input anchor, the search for "foo" is free to move ahead through the whole string looking for a match.lastIndex is not updated by test(..).Now, let's try a sticky mode regular expression:var re2 = /foo/y,       //  0 is an incompatible combination that will always cause a failed match.Note: While y does not alter the meaning of ^ in any way, the m multiline mode does, such that ^ means start-of-input or start of text after a newline. So, if you combine y and m flags together for a pattern, you can find multiple ^-rooted matches in a string. But remember: because it's y sticky, you'll have to make sure lastIndex is pointing at the correct new line position (likely by matching to the end of the line) each subsequent time, or no subsequent matches will be made.Regular Expression flagsPrior to ES6, if you wanted to examine a regular expression object to see what flags it had applied, you needed to parse them out -- ironically, probably with another regular expression -- from the content of the source property, such as:var re = /foo/ig;
+re1.lastIndex;          // 4 -- not updatedThree things to observe about this snippet:test(..) doesn't pay any attention to lastIndex's value, and always just performs its match from the beginning of the input string.Because our pattern does not have a ^ start-of-input anchor, the search for "foo" is free to move ahead through the whole string looking for a match.lastIndex is not updated by test(..).Now, let's try a sticky mode regular expression:var re2 = /foo/y,       // <-- notice the `y` sticky flag
+    str = "++foo++";
+
+re2.lastIndex;          // 0
+re2.test( str );        // false -- "foo" not found at `0`
+re2.lastIndex;          // 0
+
+re2.lastIndex = 2;
+re2.test( str );        // true
+re2.lastIndex;          // 5 -- updated to after previous match
+
+re2.test( str );        // false
+re2.lastIndex;          // 0 -- reset after previous match failureAnd so our new observations about sticky mode:test(..) uses lastIndex as the exact and only position in str to look to make a match. There is no moving ahead to look for the match -- it's either there at the lastIndex position or not.If a match is made, test(..) updates lastIndex to point to the character immediately following the match. If a match fails, test(..) resets lastIndex back to 0.Normal non-sticky patterns that aren't otherwise ^-rooted to the start-of-input are free to move ahead in the input string looking for a match. But sticky mode restricts the pattern to matching just at the position of lastIndex.As I suggested at the beginning of this section, another way of looking at this is that y implies a virtual anchor at the beginning of the pattern that is relative (aka constrains the start of the match) to exactly the lastIndex position.Warning: In previous literature on the topic, it has alternatively been asserted that this behavior is like y implying a ^(start-of-input) anchor in the pattern. This is inaccurate. We'll explain in further detail in "Anchored Sticky" later.Sticky PositioningIt may seem strangely limiting that to use y for repeated matches, you have to manually ensure lastIndex is in the exact right position, as it has no move-ahead capability for matching.Here's one possible scenario: if you know that the match you care about is always going to be at a position that's a multiple of a number (e.g., 0, 10, 20, etc.), you can just construct a limited pattern matching what you care about, but then manually set lastIndex each time before match to those fixed positions.Consider:var re = /f../y,
+    str = "foo       far       fad";
+
+str.match( re );        // ["foo"]
+
+re.lastIndex = 10;
+str.match( re );        // ["far"]
+
+re.lastIndex = 20;
+str.match( re );        // ["fad"]However, if you're parsing a string that isn't formatted in fixed positions like that, figuring out what to set lastIndex to before each match is likely going to be untenable.There's a saving nuance to consider here. y requires that lastIndex be in the exact position for a match to occur. But it doesn't strictly require that you manually set lastIndex.Instead, you can construct your expressions in such a way that they capture in each main match everything before and after the thing you care about, up to right before the next thing you'll care to match.Because lastIndex will set to the next character beyond the end of a match, if you've matched everything up to that point, lastIndex will always be in the correct position for the y pattern to start from the next time.Warning: If you can't predict the structure of the input string in a sufficiently patterned way like that, this technique may not be suitable and you may not be able to use y.Having structured string input is likely the most practical scenario where y will be capable of performing repeated matching throughout a string. Consider:var re = /\d+\.\s(.*?)(?:\s|$)/y
+    str = "1. foo 2. bar 3. baz";
+
+str.match( re );        // [ "1. foo ", "foo" ]
+
+re.lastIndex;           // 7 -- correct position!
+str.match( re );        // [ "2. bar ", "bar" ]
+
+re.lastIndex;           // 14 -- correct position!
+str.match( re );        // ["3. baz", "baz"]This works because I knew something ahead of time about the structure of the input string: there is always a numeral prefix like "1. " before the desired match ("foo", etc.), and either a space after it, or the end of the string ($ anchor). So the regular expression I constructed captures all of that in each main match, and then I use a matching group ( )so that the stuff I really care about is separated out for convenience.After the first match ("1. foo "), the lastIndex is 7, which is already the position needed to start the next match, for"2. bar ", and so on.If you're going to use y sticky mode for repeated matches, you'll probably want to look for opportunities to havelastIndex automatically positioned as we've just demonstrated.Sticky Versus GlobalSome readers may be aware that you can emulate something like this lastIndex-relative matching with the g global match flag and the exec(..) method, as so:var re = /o+./g,        // <-- look, `g`!
+    str = "foot book more";
+
+re.exec( str );         // ["oot"]
+re.lastIndex;           // 4
+
+re.exec( str );         // ["ook"]
+re.lastIndex;           // 9
+
+re.exec( str );         // ["or"]
+re.lastIndex;           // 13
+
+re.exec( str );         // null -- no more matches!
+re.lastIndex;           // 0 -- starts over now!While it's true that g pattern matches with exec(..) start their matching from lastIndex's current value, and also update lastIndex after each match (or failure), this is not the same thing as y's behavior.Notice in the previous snippet that "ook", located at position 6, was matched and found by the second exec(..) call, even though at the time, lastIndex was 4 (from the end of the previous match). Why? Because as we said earlier, non-sticky matches are free to move ahead in their matching. A sticky mode expression would have failed here, because it would not be allowed to move ahead.In addition to perhaps undesired move-ahead matching behavior, another downside to just using g instead of y is thatg changes the behavior of some matching methods, like str.match(re).Consider:var re = /o+./g,        // <-- look, `g`!
+    str = "foot book more";
+
+str.match( re );        // ["oot","ook","or"]See how all the matches were returned at once? Sometimes that's OK, but sometimes that's not what you want.The y sticky flag will give you one-at-a-time progressive matching with utilities like test(..) and match(..). Just make sure the lastIndex is always in the right position for each match!Anchored StickyAs we warned earlier, it's inaccurate to think of sticky mode as implying a pattern starts with ^. The ^ anchor has a distinct meaning in regular expressions, which is not altered by sticky mode. ^ is an anchor that always refers to the beginning of the input, and is not in any way relative to lastIndex.Besides poor/inaccurate documentation on this topic, the confusion is unfortunately strengthened further because an older pre-ES6 experiment with sticky mode in Firefox did make ^ relative to lastIndex, so that behavior has been around for years.ES6 elected not to do it that way. ^ in a pattern means start-of-input absolutely and only.As a consequence, a pattern like /^foo/y will always and only find a "foo" match at the beginning of a string, if it's allowed to match there. If lastIndex is not 0, the match will fail. Consider:var re = /^foo/y,
+    str = "foo";
+
+re.test( str );         // true
+re.test( str );         // false
+re.lastIndex;           // 0 -- reset after failure
+
+re.lastIndex = 1;
+re.test( str );         // false -- failed for positioning
+re.lastIndex;           // 0 -- reset after failureBottom line: y plus ^ plus lastIndex > 0 is an incompatible combination that will always cause a failed match.Note: While y does not alter the meaning of ^ in any way, the m multiline mode does, such that ^ means start-of-input or start of text after a newline. So, if you combine y and m flags together for a pattern, you can find multiple ^-rooted matches in a string. But remember: because it's y sticky, you'll have to make sure lastIndex is pointing at the correct new line position (likely by matching to the end of the line) each subsequent time, or no subsequent matches will be made.Regular Expression flagsPrior to ES6, if you wanted to examine a regular expression object to see what flags it had applied, you needed to parse them out -- ironically, probably with another regular expression -- from the content of the source property, such as:var re = /foo/ig;
 
 re.toString();          // "/foo/ig"
 
@@ -1201,7 +1256,7 @@ console.log( x, y, z );             // ReferenceErrorThere's a subtle but super-
 
 var o = { a: X, b: Y };
 
-console.log( o.a, o.b );            // 10 20In { a: X, b: Y }, we know that a is the object property, and X is the source value that gets assigned to it. In other words, the syntactic pattern is target: source, or more obviously, property-alias: value. We intuitively understand this because it's the same as = assignment, where the pattern is target = source.However, when you use object destructuring assignment -- that is, putting the { .. } object literal-looking syntax on the lefthand side of the = operator -- you invert that target: source pattern.Recall:var { x: bam, y: baz, z: bap } = bar();The syntactic pattern here is source: target (or value: variable-alias). x: bam means the x property is the source value and bam is the target variable to assign to. In other words, object literals are target  target. See how that's flipped?There's another way to think about this syntax though, which may help ease the confusion. Consider:var aa = 10, bb = 20;
+console.log( o.a, o.b );            // 10 20In { a: X, b: Y }, we know that a is the object property, and X is the source value that gets assigned to it. In other words, the syntactic pattern is target: source, or more obviously, property-alias: value. We intuitively understand this because it's the same as = assignment, where the pattern is target = source.However, when you use object destructuring assignment -- that is, putting the { .. } object literal-looking syntax on the lefthand side of the = operator -- you invert that target: source pattern.Recall:var { x: bam, y: baz, z: bap } = bar();The syntactic pattern here is source: target (or value: variable-alias). x: bam means the x property is the source value and bam is the target variable to assign to. In other words, object literals are target <-- source, and object destructuring assignments are source --> target. See how that's flipped?There's another way to think about this syntax though, which may help ease the confusion. Consider:var aa = 10, bb = 20;
 
 var o = { x: aa, y: bb };
 var     { x: AA, y: BB } = o;
@@ -1808,7 +1863,62 @@ re1.lastIndex;          // 0 -- not updated
 
 re1.lastIndex = 4;
 re1.test( str );        // true -- ignored `lastIndex`
-re1.lastIndex;          // 4 -- not updatedThree things to observe about this snippet:test(..) doesn't pay any attention to lastIndex's value, and always just performs its match from the beginning of the input string.Because our pattern does not have a ^ start-of-input anchor, the search for "foo" is free to move ahead through the whole string looking for a match.lastIndex is not updated by test(..).Now, let's try a sticky mode regular expression:var re2 = /foo/y,       //  0 is an incompatible combination that will always cause a failed match.Note: While y does not alter the meaning of ^ in any way, the m multiline mode does, such that ^ means start-of-input or start of text after a newline. So, if you combine y and m flags together for a pattern, you can find multiple ^-rooted matches in a string. But remember: because it's y sticky, you'll have to make sure lastIndex is pointing at the correct new line position (likely by matching to the end of the line) each subsequent time, or no subsequent matches will be made.Regular Expression flagsPrior to ES6, if you wanted to examine a regular expression object to see what flags it had applied, you needed to parse them out -- ironically, probably with another regular expression -- from the content of the source property, such as:var re = /foo/ig;
+re1.lastIndex;          // 4 -- not updatedThree things to observe about this snippet:test(..) doesn't pay any attention to lastIndex's value, and always just performs its match from the beginning of the input string.Because our pattern does not have a ^ start-of-input anchor, the search for "foo" is free to move ahead through the whole string looking for a match.lastIndex is not updated by test(..).Now, let's try a sticky mode regular expression:var re2 = /foo/y,       // <-- notice the `y` sticky flag
+    str = "++foo++";
+
+re2.lastIndex;          // 0
+re2.test( str );        // false -- "foo" not found at `0`
+re2.lastIndex;          // 0
+
+re2.lastIndex = 2;
+re2.test( str );        // true
+re2.lastIndex;          // 5 -- updated to after previous match
+
+re2.test( str );        // false
+re2.lastIndex;          // 0 -- reset after previous match failureAnd so our new observations about sticky mode:test(..) uses lastIndex as the exact and only position in str to look to make a match. There is no moving ahead to look for the match -- it's either there at the lastIndex position or not.If a match is made, test(..) updates lastIndex to point to the character immediately following the match. If a match fails, test(..) resets lastIndex back to 0.Normal non-sticky patterns that aren't otherwise ^-rooted to the start-of-input are free to move ahead in the input string looking for a match. But sticky mode restricts the pattern to matching just at the position of lastIndex.As I suggested at the beginning of this section, another way of looking at this is that y implies a virtual anchor at the beginning of the pattern that is relative (aka constrains the start of the match) to exactly the lastIndex position.Warning: In previous literature on the topic, it has alternatively been asserted that this behavior is like y implying a ^(start-of-input) anchor in the pattern. This is inaccurate. We'll explain in further detail in "Anchored Sticky" later.Sticky PositioningIt may seem strangely limiting that to use y for repeated matches, you have to manually ensure lastIndex is in the exact right position, as it has no move-ahead capability for matching.Here's one possible scenario: if you know that the match you care about is always going to be at a position that's a multiple of a number (e.g., 0, 10, 20, etc.), you can just construct a limited pattern matching what you care about, but then manually set lastIndex each time before match to those fixed positions.Consider:var re = /f../y,
+    str = "foo       far       fad";
+
+str.match( re );        // ["foo"]
+
+re.lastIndex = 10;
+str.match( re );        // ["far"]
+
+re.lastIndex = 20;
+str.match( re );        // ["fad"]However, if you're parsing a string that isn't formatted in fixed positions like that, figuring out what to set lastIndex to before each match is likely going to be untenable.There's a saving nuance to consider here. y requires that lastIndex be in the exact position for a match to occur. But it doesn't strictly require that you manually set lastIndex.Instead, you can construct your expressions in such a way that they capture in each main match everything before and after the thing you care about, up to right before the next thing you'll care to match.Because lastIndex will set to the next character beyond the end of a match, if you've matched everything up to that point, lastIndex will always be in the correct position for the y pattern to start from the next time.Warning: If you can't predict the structure of the input string in a sufficiently patterned way like that, this technique may not be suitable and you may not be able to use y.Having structured string input is likely the most practical scenario where y will be capable of performing repeated matching throughout a string. Consider:var re = /\d+\.\s(.*?)(?:\s|$)/y
+    str = "1. foo 2. bar 3. baz";
+
+str.match( re );        // [ "1. foo ", "foo" ]
+
+re.lastIndex;           // 7 -- correct position!
+str.match( re );        // [ "2. bar ", "bar" ]
+
+re.lastIndex;           // 14 -- correct position!
+str.match( re );        // ["3. baz", "baz"]This works because I knew something ahead of time about the structure of the input string: there is always a numeral prefix like "1. " before the desired match ("foo", etc.), and either a space after it, or the end of the string ($ anchor). So the regular expression I constructed captures all of that in each main match, and then I use a matching group ( )so that the stuff I really care about is separated out for convenience.After the first match ("1. foo "), the lastIndex is 7, which is already the position needed to start the next match, for"2. bar ", and so on.If you're going to use y sticky mode for repeated matches, you'll probably want to look for opportunities to havelastIndex automatically positioned as we've just demonstrated.Sticky Versus GlobalSome readers may be aware that you can emulate something like this lastIndex-relative matching with the g global match flag and the exec(..) method, as so:var re = /o+./g,        // <-- look, `g`!
+    str = "foot book more";
+
+re.exec( str );         // ["oot"]
+re.lastIndex;           // 4
+
+re.exec( str );         // ["ook"]
+re.lastIndex;           // 9
+
+re.exec( str );         // ["or"]
+re.lastIndex;           // 13
+
+re.exec( str );         // null -- no more matches!
+re.lastIndex;           // 0 -- starts over now!While it's true that g pattern matches with exec(..) start their matching from lastIndex's current value, and also update lastIndex after each match (or failure), this is not the same thing as y's behavior.Notice in the previous snippet that "ook", located at position 6, was matched and found by the second exec(..) call, even though at the time, lastIndex was 4 (from the end of the previous match). Why? Because as we said earlier, non-sticky matches are free to move ahead in their matching. A sticky mode expression would have failed here, because it would not be allowed to move ahead.In addition to perhaps undesired move-ahead matching behavior, another downside to just using g instead of y is thatg changes the behavior of some matching methods, like str.match(re).Consider:var re = /o+./g,        // <-- look, `g`!
+    str = "foot book more";
+
+str.match( re );        // ["oot","ook","or"]See how all the matches were returned at once? Sometimes that's OK, but sometimes that's not what you want.The y sticky flag will give you one-at-a-time progressive matching with utilities like test(..) and match(..). Just make sure the lastIndex is always in the right position for each match!Anchored StickyAs we warned earlier, it's inaccurate to think of sticky mode as implying a pattern starts with ^. The ^ anchor has a distinct meaning in regular expressions, which is not altered by sticky mode. ^ is an anchor that always refers to the beginning of the input, and is not in any way relative to lastIndex.Besides poor/inaccurate documentation on this topic, the confusion is unfortunately strengthened further because an older pre-ES6 experiment with sticky mode in Firefox did make ^ relative to lastIndex, so that behavior has been around for years.ES6 elected not to do it that way. ^ in a pattern means start-of-input absolutely and only.As a consequence, a pattern like /^foo/y will always and only find a "foo" match at the beginning of a string, if it's allowed to match there. If lastIndex is not 0, the match will fail. Consider:var re = /^foo/y,
+    str = "foo";
+
+re.test( str );         // true
+re.test( str );         // false
+re.lastIndex;           // 0 -- reset after failure
+
+re.lastIndex = 1;
+re.test( str );         // false -- failed for positioning
+re.lastIndex;           // 0 -- reset after failureBottom line: y plus ^ plus lastIndex > 0 is an incompatible combination that will always cause a failed match.Note: While y does not alter the meaning of ^ in any way, the m multiline mode does, such that ^ means start-of-input or start of text after a newline. So, if you combine y and m flags together for a pattern, you can find multiple ^-rooted matches in a string. But remember: because it's y sticky, you'll have to make sure lastIndex is pointing at the correct new line position (likely by matching to the end of the line) each subsequent time, or no subsequent matches will be made.Regular Expression flagsPrior to ES6, if you wanted to examine a regular expression object to see what flags it had applied, you needed to parse them out -- ironically, probably with another regular expression -- from the content of the source property, such as:var re = /foo/ig;
 
 re.toString();          // "/foo/ig"
 

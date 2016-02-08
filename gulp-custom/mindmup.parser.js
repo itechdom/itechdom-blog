@@ -113,7 +113,7 @@ var ops = {
 			idea.content = el.root().text();
 			idea.content = idea.content.replaceAll('<code>','```\n');
 			idea.content = idea.content.replaceAll('</code>','\n```');
-			idea.content = this.cleanHTML(idea.content);	
+			//idea.content = this.cleanHTML(idea.content);	
 			f += idea.content;
 			f+="\n";
 		}

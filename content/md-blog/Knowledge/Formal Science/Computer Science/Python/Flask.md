@@ -1,7 +1,7 @@
 # Concepts
 ### Decorators
 ### great example
-def get_text(name):   return "lorem ipsum, {0} dolor sit amet".format(name)def p_decorate(func):   def func_wrapper(name):       return "{0}".format(func(name))   return func_wrappermy_get_text = p_decorate(get_text)print my_get_text("John")
+def get_text(name):   return "lorem ipsum, {0} dolor sit amet".format(name)def p_decorate(func):   def func_wrapper(name):       return "<p>{0}</p>".format(func(name))   return func_wrappermy_get_text = p_decorate(get_text)print my_get_text("John")
 ### add behavior to existing function without modifying their behavior
 ### Routing
 ### http://flask.pocoo.org/docs/0.10/quickstart/#routing

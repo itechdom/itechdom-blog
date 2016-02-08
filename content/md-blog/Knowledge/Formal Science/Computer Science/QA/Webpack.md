@@ -20,7 +20,7 @@ module.exports = {
     path: 'build',
     filename: '[name].js' // Template based on keys in entry above
   }
-};For profile, insert  into your page. Do a similar thing for feed.
+};For profile, insert <script src="build/Profile.js"></script> into your page. Do a similar thing for feed.
 ### Optimizing Shared Code
 8. Optimizing common codeFeed and Profile share a lot in common (like React and the common stylesheets and components). webpack can figure out what they have in common and make a shared bundle that can be cached between pages:// webpack.config.js
 
@@ -39,7 +39,7 @@ module.exports = {
     filename: '[name].js' // Template based on keys in entry above
   },
   plugins: [commonsPlugin]
-};Add  before the script tag you added in the previous step and enjoy the free caching.
+};Add <script src="build/common.js"></script> before the script tag you added in the previous step and enjoy the free caching.
 ### Async loading
 9. Async loadingCommonJS is synchronous but webpack provides a way to asynchronously specify dependencies. This is useful for client-side routers, where you want the router on every page, but you don't want to have to download features until you actually need them.Specify the split point where you want to load asynchronously. For example:if (window.location.pathname === '/feed') {
   showLoadingState();

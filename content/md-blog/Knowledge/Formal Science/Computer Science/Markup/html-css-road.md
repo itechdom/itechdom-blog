@@ -9,7 +9,7 @@ http://www.sitepoint.com/web-foundations/elements/list of all html elements and 
 Which of one of these is paragraph tag?peparppo
 ### Head
 ### Link
-How would you link a css file? dddddd
+How would you link a css file? <link type="text/css"><script>dddddd
 ### Selectors
 Reference an HTML element and then apply a style
 ### Universal

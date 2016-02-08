@@ -11,7 +11,16 @@ Here is the factorial function in Haskell, defined in a few different ways:-- 
 factorial :: (Integral a) => a -> a
 
 -- Using recursion
-factorial n | n  0 then n * factorial (n-1) else 1
+factorial n | n < 2 = 1
+factorial n = n * factorial (n - 1)
+
+-- Using recursion, with guards
+factorial n
+  | n < 2     = 1
+  | otherwise = n * factorial (n - 1)
+
+-- Using recursion but written without pattern matching
+factorial n = if n > 0 then n * factorial (n-1) else 1
 
 -- Using a list
 factorial n = product [1..n]
