@@ -152,7 +152,6 @@ var ops = {
 				slideElement(`.parent${parentId}`).append('<br>'+cleanContent);
 				if(hCode){
 					slideElement(`.parent${parentId}`).find('code').addClass('prettyprint');
-					slideElement(`.parent${parentId}`).find('code').addClass('lang-js');
 				}
 			}
 		})
