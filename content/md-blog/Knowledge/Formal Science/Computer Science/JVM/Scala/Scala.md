@@ -69,7 +69,7 @@ Build powerful concurrent & distributed applicationsmore easily. Akka is a toolk
 ### build tool
 # Pain Point
 ### What's the reverse arrow -> in Scala loops
-The left-arrow <- operator is called a generator, so named because it's generating individual values from a range.Following is the example of for loop with range using i to j syntax:``` object Test {   def main(args: Array[String]) {      var a = 0;      // for loop execution with a range      for( a <- 1 to 10){         println( "Value of a: " + a );      }   }} ```
+The left-arrow <- operator is called a generator, so named because it's generating individual values from a range.Following is the example of for loop with range using i to j syntax: ``` object Test {   def main(args: Array[String]) {      var a = 0;      // for loop execution with a range      for( a <- 1 to 10){         println( "Value of a: " + a );      }   }} ```
 ### Blocks vs Functions
 ### http://stackoverflow.com/questions/19007611/understanding-scala-blocks
 ### blocks similar to anonymous classes in java
