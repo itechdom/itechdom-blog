@@ -35,8 +35,8 @@ var ops = {
 			this.clean(obj.ideas,levelsDeep++);
 		}
 	}
-	,isHTML(){
-		///<[a-z][\s\S]*>/i.test()
+	,isHTML(content){
+		return /<[a-z][\s\S]*>/i.test(content)
 	}
 	,flatten(mindmap,pArr,level){
 		for(var key in mindmap){
@@ -93,9 +93,13 @@ var ops = {
 		return mindmap;
 	}
 	,cleanHTML(html){
+		var el = cheerio.load(html);
+		html = el.root().text();
+		html = html.replace(/<(?:.|\n)*?>/gm, '');
 		return html;
 	}
 	,ToMarkdown(mindmap){
+		
 		var f = "";
 		mindmap.map((idea)=>{
 			var head = "#"
@@ -107,6 +111,7 @@ var ops = {
 		f+= idea.title;
 		f+="\n";
 		if(idea.content){
+			idea.content = this.cleanHTML(idea.content);	
 			f += idea.content;
 			f+="\n";
 		}
