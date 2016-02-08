@@ -1,6 +1,6 @@
 # Core
 ### Vnext/ Asp.net 5
-<div>
+
 
 In summary, with ASP.NET 5 you gain the following foundational improvements:
 
@@ -16,142 +16,142 @@ In summary, with ASP.NET 5 you gain the following foundational improvements:
 *   Build and run cross-platform ASP.NET apps on Windows, Mac and Linux
 *   Open source and community focused
 
-</div>
+
 ### https://github.com/aspnet/Home/blob/dev/README.md
 ### DNX
-<span style="color: rgb(102, 102, 102); font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; line-height: 22.3999996185303px;">The DNX (a .NET Execution Environment) contains the code required to bootstrap and run an application, including the compilation system, SDK tools, and the native CLR hosts.</span>
+The DNX (a .NET Execution Environment) contains the code required to bootstrap and run an application, including the compilation system, SDK tools, and the native CLR hosts.
 ### Includes compilation, sdk, CLR
 ### https://github.com/aspnet/dnx
 ### DOCS
 ### http://docs.asp.net/en/latest/conceptual-overview/aspnet.html
 ### .NET
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;"><span style="color: rgb(64, 64, 64); font-family: Lato, proxima-nova, 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 24px; background-color: rgb(252, 252, 252);">.NET Core is a small version of the .NET framework that is optimized for web apps and supports Linux and Mac environments</span>  
-</dt>
+.NET Core is a small version of the .NET framework that is optimized for web apps and supports Linux and Mac environments  
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[.NET Framework Conceptual Overview](https://msdn.microsoft.com/en-us/library/zw4w595w(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[.NET Framework Conceptual Overview](https://msdn.microsoft.com/en-us/library/zw4w595w(v=vs.100).aspx)
+
+
 
 Introduces the .NET Framework architecture and its features.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[Installing the .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[Installing the .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.100).aspx)
+
+
 
 Provides information about .NET Framework stand-alone executable and Web bootstrapper packages, language packs, and installation requirements.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[Common Language Runtime (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[Common Language Runtime (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4(v=vs.100).aspx)
+
+
 
 Explains the features and benefits of the common language runtime, a run-time environment that manages the execution of code and provides services that simplify the development process.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[Common Type System](https://msdn.microsoft.com/en-us/library/zcx1eb1e(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[Common Type System](https://msdn.microsoft.com/en-us/library/zcx1eb1e(v=vs.100).aspx)
+
+
 
 Identifies the types supported by the common language runtime.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[Metadata and Self-Describing Components](https://msdn.microsoft.com/en-us/library/xcd8txaw(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[Metadata and Self-Describing Components](https://msdn.microsoft.com/en-us/library/xcd8txaw(v=vs.100).aspx)
+
+
 
 Explains how the .NET Framework simplifies component interoperation by allowing compilers to emit additional declarative information, or metadata, into all modules and assemblies.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[Cross-Language Interoperability](https://msdn.microsoft.com/en-us/library/a2c7tshk(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[Cross-Language Interoperability](https://msdn.microsoft.com/en-us/library/a2c7tshk(v=vs.100).aspx)
+
+
 
 Explains how managed objects created in different programming languages can interact with one another.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[Assemblies in the Common Language Runtime](https://msdn.microsoft.com/en-us/library/k3677y81(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[Assemblies in the Common Language Runtime](https://msdn.microsoft.com/en-us/library/k3677y81(v=vs.100).aspx)
+
+
 
 Defines the concept of assemblies, which are collections of types and resources that form logical units of functionality. Assemblies are the fundamental units of deployment, version control, reuse, activation scoping, and security permissions.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[Application Domains](https://msdn.microsoft.com/en-us/library/2bh4z9hs(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[Application Domains](https://msdn.microsoft.com/en-us/library/2bh4z9hs(v=vs.100).aspx)
+
+
 
 Explains how to use application domains to provide isolation between applications.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[.NET Framework Class Library Overview](https://msdn.microsoft.com/en-us/library/hfa3fa08(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[.NET Framework Class Library Overview](https://msdn.microsoft.com/en-us/library/hfa3fa08(v=vs.100).aspx)
+
+
 
 Introduces the library of types provided by the .NET Framework, which expedites and optimizes the development process and gives you access to system functionality.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[Runtime Hosts](https://msdn.microsoft.com/en-us/library/a51xd4ze(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[Runtime Hosts](https://msdn.microsoft.com/en-us/library/a51xd4ze(v=vs.100).aspx)
+
+
 
 Describes the runtime hosts supported by the .NET Framework, including ASP.NET, Internet Explorer, and shell executables.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[.NET Framework Guidelines and Best Practices](https://msdn.microsoft.com/en-us/library/ms184412(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[.NET Framework Guidelines and Best Practices](https://msdn.microsoft.com/en-us/library/ms184412(v=vs.100).aspx)
+
+
 
 Provides links to topics that describe principles, tips, and techniques for implementing .NET Framework technologies.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[How-to and Walkthrough Directory](https://msdn.microsoft.com/en-us/library/ms184413(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[How-to and Walkthrough Directory](https://msdn.microsoft.com/en-us/library/ms184413(v=vs.100).aspx)
+
+
 
 Provides links to topics that provide example code, describe how to perform particular tasks, and describe complete scenarios.
 
-</dd>
 
-<dt style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 17.5499992370605px;">[.NET Framework System Requirements](https://msdn.microsoft.com/en-us/library/8z6watww(v=vs.100).aspx)</dt>
 
-<dd style="color: rgb(0, 0, 0); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17.5499992370605px;">
+[.NET Framework System Requirements](https://msdn.microsoft.com/en-us/library/8z6watww(v=vs.100).aspx)
+
+
 
 Provides hardware, operating system, and software requirements for the .NET Framework.
 
-</dd>
-### CLR
-<div><span style="color: rgb(42, 42, 42); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 18px;">The common language runtime is the foundation of the .NET Framework. You can think of the runtime as an agent that manages code at execution time, providing core services such as memory management, thread management, and remoting, while also enforcing strict type safety and other forms of code accuracy that promote security and robustness. In fact, the concept of code management is a fundamental principle of the runtime. Code that targets the runtime is known as managed code, while code that does not target the runtime is known as unmanaged code. The class library is a comprehensive, object-oriented collection of reusable types that you can use to develop applications ranging from traditional command-line or graphical user interface (GUI) applications to applications based on the latest innovations provided by ASP.NET, such as Web Forms and XML Web services.</span></div>
 
-<div><span style="color: rgb(42, 42, 42); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 18px;">You can think of the runtime as an agent that manages code at execution time</span>  
-</div>
+### CLR
+The common language runtime is the foundation of the .NET Framework. You can think of the runtime as an agent that manages code at execution time, providing core services such as memory management, thread management, and remoting, while also enforcing strict type safety and other forms of code accuracy that promote security and robustness. In fact, the concept of code management is a fundamental principle of the runtime. Code that targets the runtime is known as managed code, while code that does not target the runtime is known as unmanaged code. The class library is a comprehensive, object-oriented collection of reusable types that you can use to develop applications ranging from traditional command-line or graphical user interface (GUI) applications to applications based on the latest innovations provided by ASP.NET, such as Web Forms and XML Web services.
+
+You can think of the runtime as an agent that manages code at execution time  
+
 
 Runs your code, Manages your memeory, enbales cross platform support. You program on any language and CLR handles everything for you.
 
-<div><span style="color: rgb(42, 42, 42); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 18px;">The common language runtime makes it easy to design components and applications whose objects interact across languages. Objects written in different languages can communicate with each other, and their behaviors can be tightly integrated. For example, you can define a class and then use a different language to derive a class from your original class or call a method on the original class. You can also pass an instance of a class to a method of a class written in a different language. This cross-language integration is possible because language compilers and tools that target the runtime use a common type system defined by the runtime, and they follow the runtime's rules for defining new types, as well as for creating, using, persisting, and binding to types.</span>  
-</div>
+The common language runtime makes it easy to design components and applications whose objects interact across languages. Objects written in different languages can communicate with each other, and their behaviors can be tightly integrated. For example, you can define a class and then use a different language to derive a class from your original class or call a method on the original class. You can also pass an instance of a class to a method of a class written in a different language. This cross-language integration is possible because language compilers and tools that target the runtime use a common type system defined by the runtime, and they follow the runtime's rules for defining new types, as well as for creating, using, persisting, and binding to types.  
 
-<div><span style="color: rgb(42, 42, 42); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 18px;">  
-</span></div>
 
-<div><span style="color: rgb(42, 42, 42); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 18px;">Registration information and state data are no longer stored in the registry where they can be difficult to establish and maintain. Instead, information about the types you define (and their dependencies) is stored with the code as metadata, making the tasks of component replication and removal much less complicated.</span><span style="color: rgb(42, 42, 42); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 18px;">  
-</span></div>
+  
 
-<div><span style="color: rgb(42, 42, 42); font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 18px;">  
-</span></div>
 
-<div>
+Registration information and state data are no longer stored in the registry where they can be difficult to establish and maintain. Instead, information about the types you define (and their dependencies) is stored with the code as metadata, making the tasks of component replication and removal much less complicated.  
+
+
+  
+
+
+
 
 The runtime provides the following benefits:
 
@@ -173,7 +173,7 @@ The runtime provides the following benefits:
 
 *   Use of delegates instead of function pointers for increased type safety and security. For more information about delegates, see [Common Type System](https://msdn.microsoft.com/en-us/library/zcx1eb1e(v=vs.110).aspx).
 
-</div>
+
 ### Common Type system
 The common type system defines how types are declared, used, and managed in the common language runtime, and is also an important part of the runtime's support for cross-language integration. The common type system performs the following functions:
 
@@ -214,13 +214,13 @@ For example, the Windows Forms classes are a comprehensive set of reusable types
 ### QUESTIONS I HAVE
 Not sure the steps of execution:
 
-<div>is it :</div>
+is it :
 
-<div>CLR -> Compiler -> Assembly</div>
+CLR -> Compiler -> Assembly
 
-<div>or </div>
+or 
 
-<div>Compiler -> CLR -> Assembly ?</div>
+Compiler -> CLR -> Assembly ?
 # Project Starters
 ### https://www.nuget.org/packages/Boilerplate.Web.Mvc5/
 ### https://visualstudiogallery.msdn.microsoft.com/6cf50a48-fc1e-4eaf-9e82-0b2a6705ca7d

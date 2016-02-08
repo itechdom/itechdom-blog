@@ -25,7 +25,7 @@ Each of these types is a JSON Graph object with a “$type” key that different
 ### Paths
 ### A way to access a subset of the JSON Graph
 ### Data Sources
-<span style="background-color: rgb(247, 247, 247);">A DataSource is an interface which can be implemented to expose </span>[JSON Graph](http://netflix.github.io/falcor/documentation/jsongraph.html)<span style="background-color: rgb(247, 247, 247);"> information to a </span>[Model](http://netflix.github.io/falcor/documentation/model.html)<span style="background-color: rgb(247, 247, 247);">. Every DataSource is associated with a single </span>[JSON Graph](http://netflix.github.io/falcor/documentation/jsongraph.html)<span style="background-color: rgb(247, 247, 247);"> object. </span>[Models](http://netflix.github.io/falcor/documentation/model.html)<span style="background-color: rgb(247, 247, 247);"> execute </span>[JSON Graph](http://netflix.github.io/falcor/documentation/jsongraph.html) <span style="background-color: rgb(247, 247, 247);">operations (get, set, and call) to retrieve values from the DataSource’s </span>[JSON Graph](http://netflix.github.io/falcor/documentation/jsongraph.html)<span style="background-color: rgb(247, 247, 247);"> object. DataSources may retrieve JSON Graph information from anywhere, including device memory, a remote machine, or even a lazily-run computation.</span>
+A DataSource is an interface which can be implemented to expose [JSON Graph](http://netflix.github.io/falcor/documentation/jsongraph.html) information to a [Model](http://netflix.github.io/falcor/documentation/model.html). Every DataSource is associated with a single [JSON Graph](http://netflix.github.io/falcor/documentation/jsongraph.html) object. [Models](http://netflix.github.io/falcor/documentation/model.html) execute [JSON Graph](http://netflix.github.io/falcor/documentation/jsongraph.html) operations (get, set, and call) to retrieve values from the DataSource’s [JSON Graph](http://netflix.github.io/falcor/documentation/jsongraph.html) object. DataSources may retrieve JSON Graph information from anywhere, including device memory, a remote machine, or even a lazily-run computation.
 ### Every data source is associated with one json graph
 ### Image showing relationship between model and data source
 ### http://netflix.github.io/falcor/documentation/datasource.png
@@ -42,10 +42,10 @@ Falcor ships with the following DataSource implementations:
 *   Router (server only)
 *   ModelDataSource
 ### Router
-<div>The Falcor Router  
-</div>
+The Falcor Router  
 
-<div>A Falcor Router is an implementation of the DataSource interface. Falcor Model objects use DataSources to retrieve JSON Graph data. However Models typically run on the client and Routers typically run on the Application server. As a result communication between a Model and the Router is typically remoted across the network using an HttpDataSource</div>
+
+A Falcor Router is an implementation of the DataSource interface. Falcor Model objects use DataSources to retrieve JSON Graph data. However Models typically run on the client and Routers typically run on the Application server. As a result communication between a Model and the Router is typically remoted across the network using an HttpDataSource
 ### Models run on the client
 ### Router runs on the server
 ### results in an http communication

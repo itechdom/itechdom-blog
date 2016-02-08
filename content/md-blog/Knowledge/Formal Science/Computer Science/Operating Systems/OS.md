@@ -22,12 +22,12 @@
 
 *   Use `xargs` (or `parallel`). It's very powerful. Note you can control how many items execute per line (`-L`) as well as parallelism (`-P`). If you're not sure if it'll do the right thing, use `xargs echo`first. Also, `-I{}` is handy. Examples:
 
-<div class="highlight highlight-bash" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
-<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      find <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">.</span> -name <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>*.py<span class="pl-pds" style="box-sizing: border-box;">'</span></span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> xargs grep some_function
-      cat hosts <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> xargs -I{} ssh root@{} hostname</pre>
 
-</div>
+      find . -name '*.py' | xargs grep some_function
+      cat hosts | xargs -I{} ssh root@{} hostname
+
+
 
 *   `pstree -p` is a helpful display of the process tree.
 
@@ -47,64 +47,38 @@
 
 *   In Bash scripts, use `set -x` (or the variant `set -v`, which logs raw input, including unexpanded variables and comments) for debugging output. Use strict modes unless you have a good reason not to: Use `set -e` to abort on errors (nonzero exit code). Use `set -u` to detect unset variable usages. Consider `set -o pipefail` too, to on errors within pipes, too (though read up on it more if you do, as this topic is a bit subtle). For more involved scripts, also use `trap` on EXIT or ERR. A useful habit is to start a script like this, which will make it detect and abort on common errors and print a message:
 
-<div class="highlight highlight-bash" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
-<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">set</span> -euo pipefail
-      <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">trap</span> <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">"</span>echo 'error: Script failed: see failed command above'<span class="pl-pds" style="box-sizing: border-box;">"</span></span> ERR</pre>
 
-</div>
+      set -euo pipefail
+      trap "echo 'error: Script failed: see failed command above'" ERR
+
+
 
 *   In Bash scripts, subshells (written with parentheses) are convenient ways to group commands. A common example is to temporarily move to a different working directory, e.g.
 
-<div class="highlight highlight-bash" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
-<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);"># do something in current dir</span>
-      (<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">cd</span> /some/other/dir <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">&&</span> other-command)
-      <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);"># continue in original dir</span></pre>
 
-</div>
+      # do something in current dir
+      (cd /some/other/dir && other-command)
+      # continue in original dir
+
+
 
 *   In Bash, note there are lots of kinds of variable expansion. Checking a variable exists: `${name:?error message}`. For example, if a Bash script requires a single argument, just write`input_file=${1:?usage: $0 input_file}`. Arithmetic expansion: `i=$(( (i + 1) % 5 ))`. Sequences: `{1..10}`. Trimming of strings: `${var%suffix}` and `${var#prefix}`. For example if`var=foo.pdf`, then `echo ${var%.pdf}.txt` prints `foo.txt`.
 
 *   Brace expansion using `{`...`}` can reduce having to re-type similar text and automate combinations of items. This is helpful in examples like `mv foo.{txt,pdf} some-dir` (which moves both files), `cp somefile{,.bak}` (which expands to `cp somefile somefile.bak`) or `mkdir -p test-{a,b,c}/subtest-{1,2,3}` (which expands all possible combinations and creates a directory tree).
 
-*   The output of a command can be treated like a file via `<(some command)`. For example, compare local `/etc/hosts` with a remote one:
+*   The output of a command can be treated like a file via `
 
-<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
+      diff /etc/hosts ssh somehost cat /etc/hosts)
 
-<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      diff /etc/hosts <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;"><(</span>ssh somehost cat /etc/hosts<span class="pl-pds" style="box-sizing: border-box;">)</span></span></pre>
 
-</div>
 
-*   Know about "here documents" in Bash, as in `cat <<EOF ...`.
+*   Know about "here documents" in Bash, as in `cat logfile 2>&1` or`some-command &>logfile`. Often, to ensure a command does not leave an open file handle to standard input, tying it to the terminal you are in, it is also good practice to add `
 
-*   In Bash, redirect both standard output and standard error via: `some-command >logfile 2>&1` or`some-command &>logfile`. Often, to ensure a command does not leave an open file handle to standard input, tying it to the terminal you are in, it is also good practice to add `</dev/null`.
+      stat -c '%A %a %n' /etc/timezone
 
-*   Use `man ascii` for a good ASCII table, with hex and decimal values. For general encoding info,`man unicode`, `man utf-8`, and `man latin1` are helpful.
 
-*   Use `screen` or [`tmux`](https://tmux.github.io/) to multiplex the screen, especially useful on remote ssh sessions and to detach and re-attach to a session. A more minimal alternative for session persistence only is`dtach`.
-
-*   In ssh, knowing how to port tunnel with `-L` or `-D` (and occasionally `-R`) is useful, e.g. to access web sites from a remote server.
-
-*   It can be useful to make a few optimizations to your ssh configuration; for example, this`~/.ssh/config` contains settings to avoid dropped connections in certain network environments, uses compression (which is helpful with scp over low-bandwidth connections), and multiplex channels to the same server with a local control file:
-
-          TCPKeepAlive=yes
-          ServerAliveInterval=15
-          ServerAliveCountMax=6
-          Compression=yes
-          ControlMaster auto
-          ControlPath /tmp/%r@%h:%p
-          ControlPersist yes
-
-*   A few other options relevant to ssh are security sensitive and should be enabled with care, e.g. per subnet or host or in trusted networks: `StrictHostKeyChecking=no`, `ForwardAgent=yes`
-
-*   To get the permissions on a file in octal form, which is useful for system configuration but not available in `ls` and easy to bungle, use something like
-
-<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
-
-<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      stat -c <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>%A %a %n<span class="pl-pds" style="box-sizing: border-box;">'</span></span> /etc/timezone</pre>
-
-</div>
 
 *   For interactive selection of values from the output of another command, use [`percol`](https://github.com/mooz/percol) or [`fzf`](https://github.com/junegunn/fzf).
 
@@ -135,9 +109,9 @@
 ### Steps to run a specific program
 Program is loaded through an OS loader, There's a memory footprint created which contains:
 
-<div>Heap (dynamic memory allocation), Stack (managing function calls) and Global Data (Access to global data).</div>
+Heap (dynamic memory allocation), Stack (managing function calls) and Global Data (Access to global data).
 
-<div>Applications can request more resources during running.</div>
+Applications can request more resources during running.
 ### Program vs Process
 A process is a running program.
 ### Process vs Thread
@@ -173,26 +147,26 @@ A process is a running program.
 ### Virtualization
 Everything is handled usually by mapping. There are two main concepts:
 
-<div>guest OS: whatever you install on your virutal box</div>
+guest OS: whatever you install on your virutal box
 
-<div>Host OS: your main OS.</div>
+Host OS: your main OS.
 ### Solutions
 ### Docker
-**Docker** is an [open-source](https://en.wikipedia.org/wiki/Open-source "Open-source") project that automates the deployment of [applications](https://en.wikipedia.org/wiki/Application_software "Application software") inside [software containers](https://en.wikipedia.org/wiki/Software_container "Software container"), by providing an additional layer of abstraction and automation of [operating-system-level virtualization](https://en.wikipedia.org/wiki/Operating-system-level_virtualization "Operating-system-level virtualization") on [Linux](https://en.wikipedia.org/wiki/Linux "Linux"), [Mac OS](https://en.wikipedia.org/wiki/Mac_OS "Mac OS") and [Windows](https://en.wikipedia.org/wiki/Windows "Windows").<sup id="cite_ref-SYS-CON_Media_2-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[2]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-SYS-CON_Media-2)</sup>
+**Docker** is an [open-source](https://en.wikipedia.org/wiki/Open-source "Open-source") project that automates the deployment of [applications](https://en.wikipedia.org/wiki/Application_software "Application software") inside [software containers](https://en.wikipedia.org/wiki/Software_container "Software container"), by providing an additional layer of abstraction and automation of [operating-system-level virtualization](https://en.wikipedia.org/wiki/Operating-system-level_virtualization "Operating-system-level virtualization") on [Linux](https://en.wikipedia.org/wiki/Linux "Linux"), [Mac OS](https://en.wikipedia.org/wiki/Mac_OS "Mac OS") and [Windows](https://en.wikipedia.org/wiki/Windows "Windows").[[2]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-SYS-CON_Media-2)
 
-According to industry analyst firm 451 Research, "Docker is a tool that can package an application and its dependencies in a virtual container that can run on any Linux server. This helps enable flexibility and portability on where the application can run, whether [on premises](https://en.wikipedia.org/wiki/On-premises_software "On-premises software"), public cloud, private cloud, bare metal, etc."<sup id="cite_ref-Linux_3-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[3]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-Linux-3)</sup>
+According to industry analyst firm 451 Research, "Docker is a tool that can package an application and its dependencies in a virtual container that can run on any Linux server. This helps enable flexibility and portability on where the application can run, whether [on premises](https://en.wikipedia.org/wiki/On-premises_software "On-premises software"), public cloud, private cloud, bare metal, etc."[[3]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-Linux-3)
 ### Archeticture
 ### https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Docker-linux-interfaces.svg/400px-Docker-linux-interfaces.svg.png
 ### Overview
-Docker implements a high-level [API](https://en.wikipedia.org/wiki/Application_programming_interface "Application programming interface") to provide lightweight containers that run processes in isolation.<sup id="cite_ref-infoq-201303_5-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[5]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-infoq-201303-5)</sup>
+Docker implements a high-level [API](https://en.wikipedia.org/wiki/Application_programming_interface "Application programming interface") to provide lightweight containers that run processes in isolation.[[5]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-infoq-201303-5)
 
-It uses resource isolation features of the [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel "Linux kernel") such as [cgroups](https://en.wikipedia.org/wiki/Cgroups "Cgroups") and kernel [namespaces](https://en.wikipedia.org/wiki/Linux_namespaces "Linux namespaces") to allow independent "containers" to run within a single Linux instance, avoiding the overhead of starting and maintaining [virtual machines](https://en.wikipedia.org/wiki/Virtual_machine "Virtual machine").<sup id="cite_ref-6" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[6]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-6)</sup>
+It uses resource isolation features of the [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel "Linux kernel") such as [cgroups](https://en.wikipedia.org/wiki/Cgroups "Cgroups") and kernel [namespaces](https://en.wikipedia.org/wiki/Linux_namespaces "Linux namespaces") to allow independent "containers" to run within a single Linux instance, avoiding the overhead of starting and maintaining [virtual machines](https://en.wikipedia.org/wiki/Virtual_machine "Virtual machine").[[6]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-6)
 
-Building on top of facilities provided by the [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel "Linux kernel") (primarily cgroups and namespaces), a Docker container, unlike a virtual machine, does not require or include a separate operating system.<sup id="cite_ref-Linux_3-1" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[3]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-Linux-3)</sup> Instead, it relies on the kernel's functionality and uses resource isolation (CPU, memory, block I/O, network, etc.) and [separate namespaces](https://en.wikipedia.org/wiki/Namespace_isolation "Namespace isolation") to isolate the application's view of the operating system. Docker accesses the Linux kernel's virtualization features either directly using the <span style="font-family: monospace, monospace;">libcontainer</span>library, which is available since Docker 0.9, or indirectly via <span style="font-family: monospace, monospace;">[libvirt](https://en.wikipedia.org/wiki/Libvirt "Libvirt")</span>, LXC ([Linux Containers](https://en.wikipedia.org/wiki/Linux_Containers "Linux Containers")) or <span style="font-family: monospace, monospace;">[systemd-nspawn](https://en.wikipedia.org/wiki/Systemd-nspawn "Systemd-nspawn")</span>.<sup id="cite_ref-docker-blog-201403_4-1" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[4]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-docker-blog-201403-4)</sup><sup id="cite_ref-infoq-201403_7-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[7]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-infoq-201403-7)</sup>
+Building on top of facilities provided by the [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel "Linux kernel") (primarily cgroups and namespaces), a Docker container, unlike a virtual machine, does not require or include a separate operating system.[[3]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-Linux-3) Instead, it relies on the kernel's functionality and uses resource isolation (CPU, memory, block I/O, network, etc.) and [separate namespaces](https://en.wikipedia.org/wiki/Namespace_isolation "Namespace isolation") to isolate the application's view of the operating system. Docker accesses the Linux kernel's virtualization features either directly using the libcontainerlibrary, which is available since Docker 0.9, or indirectly via [libvirt](https://en.wikipedia.org/wiki/Libvirt "Libvirt"), LXC ([Linux Containers](https://en.wikipedia.org/wiki/Linux_Containers "Linux Containers")) or [systemd-nspawn](https://en.wikipedia.org/wiki/Systemd-nspawn "Systemd-nspawn").[[4]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-docker-blog-201403-4)[[7]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-infoq-201403-7)
 
 By using containers, resources can be isolated, services restricted, and processes provisioned to have an almost completely private view of the operating system with their own process ID space, file system structure, and network interfaces. Multiple containers share the same kernel, but each container can be constrained to only use a defined amount of resources such as CPU, memory and I/O.
 
-Using Docker to create and manage containers may simplify the creation of highly [distributed systems](https://en.wikipedia.org/wiki/Distributed_system "Distributed system"), by allowing multiple applications, worker tasks and other processes to run autonomously on a single physical machine or across multiple virtual machines. This allows the deployment of nodes to be performed as the resources become available or when more nodes are needed, allowing a [platform as a service](https://en.wikipedia.org/wiki/Platform_as_a_service "Platform as a service") (PaaS)-style of deployment and scaling for systems like [Apache Cassandra](https://en.wikipedia.org/wiki/Apache_Cassandra "Apache Cassandra"),[MongoDB](https://en.wikipedia.org/wiki/MongoDB "MongoDB") or [Riak](https://en.wikipedia.org/wiki/Riak "Riak"). Docker also simplifies the creation and operation of task or workload queues and other distributed systems.<sup id="cite_ref-CloudAve_8-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[8]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-CloudAve-8)</sup><sup id="cite_ref-Iron.io_9-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[9]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-Iron.io-9)</sup>
+Using Docker to create and manage containers may simplify the creation of highly [distributed systems](https://en.wikipedia.org/wiki/Distributed_system "Distributed system"), by allowing multiple applications, worker tasks and other processes to run autonomously on a single physical machine or across multiple virtual machines. This allows the deployment of nodes to be performed as the resources become available or when more nodes are needed, allowing a [platform as a service](https://en.wikipedia.org/wiki/Platform_as_a_service "Platform as a service") (PaaS)-style of deployment and scaling for systems like [Apache Cassandra](https://en.wikipedia.org/wiki/Apache_Cassandra "Apache Cassandra"),[MongoDB](https://en.wikipedia.org/wiki/MongoDB "MongoDB") or [Riak](https://en.wikipedia.org/wiki/Riak "Riak"). Docker also simplifies the creation and operation of task or workload queues and other distributed systems.[[8]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-CloudAve-8)[[9]](https://en.wikipedia.org/wiki/Docker_(software)#cite_note-Iron.io-9)
 ### Benefit
 ### Runs the Same everywhere
 ### Lightweight and better than other virtualization services
@@ -211,7 +185,7 @@ Using Docker to create and manage containers may simplify the creation of highly
 ### Docker vs Vagrant
 [http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-io-for-creating-an-isolated-environment](http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-io-for-creating-an-isolated-environment)
 
-<div>
+
 
 f your purpose is the isolation, I think docker is what you want.
 
@@ -221,12 +195,12 @@ Docker on the other hand uses kernel cgroup and namespacing via lxc. It means th
 
 The only reason you could want to use vagrant is if you need to do BSD, Windows or other non-linux development on your ubuntu box. Otherwise, go for Docker.
 
-</div>
+
 ### VirtuallBox
 ### Kernel
 ### Standards
 ### POSIX
-**POSIX**<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> (</span><span class="nowrap" style="white-space: nowrap; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"><span class="IPA nopopups">[/<span style="border-bottom-width: 1px; border-bottom-style: dotted;"><span title="/ˈ/ primary stress follows">ˈ</span><span title="'p' in 'pie'">p</span><span title="/ɒ/ short 'o' in 'body'">ɒ</span><span title="'z' in 'Zion'">z</span><span title="/ɪ/ short 'i' in 'bid'">ɪ</span><span title="'k' in 'kind'">k</span><span title="'s' in 'sigh'">s</span></span>/](https://en.wikipedia.org/wiki/Help:IPA_for_English "Help:IPA for English")</span></span><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> </span><span title="English pronunciation respelling" class="Unicode" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">[_**<span class="smallcaps"><span class="SMALLCAPS" style="font-variant: small-caps;"><span class="NOCAPS" style="text-transform: lowercase;">poz</span></span></span>**-iks_](https://en.wikipedia.org/wiki/Wikipedia:Pronunciation_respelling_key "Wikipedia:Pronunciation respelling key")</span><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">), an acronym for </span>**Portable Operating System Interface**<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">,</span><sup id="cite_ref-1" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[1]](https://en.wikipedia.org/wiki/POSIX#cite_note-1)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> is a family of </span>[standards](https://en.wikipedia.org/wiki/Standardization "Standardization")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> specified by the </span>[IEEE Computer Society](https://en.wikipedia.org/wiki/IEEE_Computer_Society "IEEE Computer Society")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> for maintaining compatibility between </span>[operating systems](https://en.wikipedia.org/wiki/Operating_system "Operating system")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">. POSIX defines the </span>[application programming interface](https://en.wikipedia.org/wiki/Application_programming_interface "Application programming interface")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> (API), along with command line </span>[shells](https://en.wikipedia.org/wiki/Unix_shell "Unix shell")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> and utility interfaces, for software compatibility with variants of </span>[Unix](https://en.wikipedia.org/wiki/Unix "Unix")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> and other operating systems.</span><sup id="cite_ref-FAQ_2-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[2]](https://en.wikipedia.org/wiki/POSIX#cite_note-FAQ-2)</sup><sup id="cite_ref-IET_3-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[3]](https://en.wikipedia.org/wiki/POSIX#cite_note-IET-3)</sup>
+**POSIX** ([/ˈpɒzɪks/](https://en.wikipedia.org/wiki/Help:IPA_for_English "Help:IPA for English") [_**poz**-iks_](https://en.wikipedia.org/wiki/Wikipedia:Pronunciation_respelling_key "Wikipedia:Pronunciation respelling key")), an acronym for **Portable Operating System Interface**,[[1]](https://en.wikipedia.org/wiki/POSIX#cite_note-1) is a family of [standards](https://en.wikipedia.org/wiki/Standardization "Standardization") specified by the [IEEE Computer Society](https://en.wikipedia.org/wiki/IEEE_Computer_Society "IEEE Computer Society") for maintaining compatibility between [operating systems](https://en.wikipedia.org/wiki/Operating_system "Operating system"). POSIX defines the [application programming interface](https://en.wikipedia.org/wiki/Application_programming_interface "Application programming interface") (API), along with command line [shells](https://en.wikipedia.org/wiki/Unix_shell "Unix shell") and utility interfaces, for software compatibility with variants of [Unix](https://en.wikipedia.org/wiki/Unix "Unix") and other operating systems.[[2]](https://en.wikipedia.org/wiki/POSIX#cite_note-FAQ-2)[[3]](https://en.wikipedia.org/wiki/POSIX#cite_note-IET-3)
 ### https://en.wikipedia.org/wiki/POSIX
 ### A family of standards  to provide compatibility with different operating systems
 ### Compatible OSs

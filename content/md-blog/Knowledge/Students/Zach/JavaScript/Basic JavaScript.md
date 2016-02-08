@@ -1,25 +1,25 @@
 # Variables
 **Explanation:**
 
-<div>
 
-<div>Variables serve as a way for us to store different kinds of data ( characters, numbers, boolean). It's the most essential part of any program.</div>
 
-<div>
+Variables serve as a way for us to store different kinds of data ( characters, numbers, boolean). It's the most essential part of any program.
 
-<div>**Examples:**</div>
 
-<div>var student= "Zach";</div>
 
-<div>We use quotes to denote that we are storing the "Zach" in the variable (Box) student. Think of **var student** as a box that we store the String (this is what we call a list of characters).</div>
+**Examples:**
 
-<div>**Why do variables Exist?**</div>
+var student= "Zach";
 
-<div>Simply because we can reuse them later. I can display the variable **student** somewhere else in my program or pass to a function (we will see that a little later).</div>
+We use quotes to denote that we are storing the "Zach" in the variable (Box) student. Think of **var student** as a box that we store the String (this is what we call a list of characters).
 
-<div>**Exercises:**</div>
+**Why do variables Exist?**
 
-<div>
+Simply because we can reuse them later. I can display the variable **student** somewhere else in my program or pass to a function (we will see that a little later).
+
+**Exercises:**
+
+
 
 *   If you are using Chrome, type: CTRL+SHIFT+I. This will open the developer console.
 *   Experiment with different variables.  
@@ -28,41 +28,41 @@
 *   type: **alert(student),** then press enter
 *   This will display the name in a dialog.
 
-<div>Also you can check out this link which explains the different types of variables</div>
+Also you can check out this link which explains the different types of variables
 
-</div>
 
-<div>
+
+
 
 *   [http://gitbookio.gitbooks.io/javascript/content/basics/types.html](http://gitbookio.gitbooks.io/javascript/content/basics/types.html)  
 
-</div>
 
-<div>**Alternative Readings:**</div>
 
-<div>
+**Alternative Readings:**
 
-<div>Check out:</div>
 
-<div>
+
+Check out:
+
+
 
 *   [http://gitbookio.gitbooks.io/javascript/content/basics/variables.html](http://gitbookio.gitbooks.io/javascript/content/basics/variables.html)
 
-</div>
 
-</div>
 
-<div>**Questions:**</div>
 
-<div>Please list all your questions here and I will answer them as soon as possible.</div>
 
-</div>
+**Questions:**
 
-</div>
+Please list all your questions here and I will answer them as soon as possible.
 
-<div>1\. I think you meant to say "var student=12345". If that was a test i passed! haha. It opened a dialogue box and said 12345.</div>
 
-<div>2\. It seems Javascript is a loosely typed language bc these two = right?</div>
+
+
+
+1\. I think you meant to say "var student=12345". If that was a test i passed! haha. It opened a dialogue box and said 12345.
+
+2\. It seems Javascript is a loosely typed language bc these two = right?
 
     var bar = 42;
     var baz = "42";
@@ -77,38 +77,38 @@
 ### Objects
 **Explanation:**
 
-<div>
 
-<div>Arrays and Objects includes other variable types in them. </div>
 
-<div>Analogy: book shelves</div>
+Arrays and Objects includes other variable types in them. 
 
-<div>
+Analogy: book shelves
 
-<div>**Examples:**</div>
 
-<div>Combining variables together to make a shopping list.</div>
 
-<div>**Exercises:**</div>
+**Examples:**
 
-<div>Scratch</div>
+Combining variables together to make a shopping list.
 
-<div>Code Academy</div>
+**Exercises:**
 
-<div>Chrome Browser</div>
+Scratch
 
-<div>**Alternative Readings:**</div>
+Code Academy
 
-<div>[http://gitbookio.gitbooks.io/javascript/content/objects/index.html](http://gitbookio.gitbooks.io/javascript/content/objects/index.html)  
-</div>
+Chrome Browser
 
-<div>**Questions:**</div>
+**Alternative Readings:**
 
-<div>Please list all your questions here and I will answer them as soon as possible.</div>
+[http://gitbookio.gitbooks.io/javascript/content/objects/index.html](http://gitbookio.gitbooks.io/javascript/content/objects/index.html)  
 
-</div>
 
-</div>
+**Questions:**
+
+Please list all your questions here and I will answer them as soon as possible.
+
+
+
+
 # External Resources
 External Sites that teach JS
 ### Code Academy

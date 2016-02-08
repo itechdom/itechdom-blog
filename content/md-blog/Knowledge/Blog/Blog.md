@@ -6,38 +6,38 @@
 ### What about SEO?
 # potentially uses
 ### zpresent
-<span id="docs-internal-guid-5048dd95-5c52-c93c-a450-5c4ba1576e68">
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">The folder structure can be:</span>
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">01-intro ></span>
+The folder structure can be:
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">00-index.md</span>
+01-intro >
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">01-intro.md</span>
+00-index.md
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">02-justification</span>
+01-intro.md
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">example ></span>
+02-justification
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">index.js</span>
+example >
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">index.html</span>
+index.js
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">index.css</span>
+index.html
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">exercise ></span>
+index.css
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">index.js</span>
+exercise >
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">index.html</span>
+index.js
 
-<span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><span class="Apple-tab-span" style="white-space:pre;"></span></span><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">index.css</span>
+index.html
 
-<div><span style="font-size: 18.6666666666667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">  
-</span></div>
+index.css
 
-</span>
+  
+
+
+
 ### https://github.com/itechdom/zpresent
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrZFlvQWI0Y2o1eFU
 # Effective ui
@@ -46,135 +46,135 @@
 ### Tasia wrote this
 ### my tips and my experience
 # Brain Dump
-<span id="docs-internal-guid-a5f09b5a-5ba1-1acd-25b5-ce2a8d1c6b2f">
 
-# <span style="font-size: 21.3333333333333px; font-family: 'Trebuchet MS'; color: rgb(0, 0, 0); font-weight: 400; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">BRAINSTORM</span>
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Physically storing your data at friends’ makes more sense</span><span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">  
-    </span><span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">than “in the cloud” for privacy concerns. Once deployed we want to document</span><span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">  
-    </span><span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">the inner workings and setting-up process of the network.</span>
+# BRAINSTORM
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Create a qa website where you submit your while code and people can look at it</span>
+*   Physically storing your data at friends’ makes more sense  
+    than “in the cloud” for privacy concerns. Once deployed we want to document  
+    the inner workings and setting-up process of the network.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">ask people to join you in teaching (show the people from your major who can help you)</span>
+*   Create a qa website where you submit your while code and people can look at it
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">share your notes to learn.</span>
+*   ask people to join you in teaching (show the people from your major who can help you)
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">when loading provide some entertainment (user created images).</span>
+*   share your notes to learn.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">the idea that we have different approaches to learning a new subject.</span>
+*   when loading provide some entertainment (user created images).
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">seperate representation from implementation.</span>
+*   the idea that we have different approaches to learning a new subject.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Take a document and turn a written document to mindmap or visual.</span>
+*   seperate representation from implementation.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Pull changes to the concepts and notify users.</span>
+*   Take a document and turn a written document to mindmap or visual.
 
-*   <span style="font-size: 14.6666666666667px; color: rgb(56, 118, 29); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">one alternative idea of branchit is to scan a book for relative information and tells you to read specific sections that will solve your proble</span><span style="font-size: 14.6666666666667px; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">m.</span>
+*   Pull changes to the concepts and notify users.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Scratch to reveal ur prize (saw it on easel js)</span>
+*   one alternative idea of branchit is to scan a book for relative information and tells you to read specific sections that will solve your problem.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Browser extension to look for courses when accessing a website.</span>
+*   Scratch to reveal ur prize (saw it on easel js)
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Put a lot of examples that the user can change to understand more.</span>
+*   Browser extension to look for courses when accessing a website.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Other users can explain parts of the concept that seems to be vague by users who have the same major and age.</span>
+*   Put a lot of examples that the user can change to understand more.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Suggested and what people are currently learning (trends)</span>
+*   Other users can explain parts of the concept that seems to be vague by users who have the same major and age.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Copy parts of a certain texts you read from the web and add them to your collection of notes, Example, I saw someone mentioning a point about why I use Backbone with Rails?</span>
+*   Suggested and what people are currently learning (trends)
 
-*   <span style="font-size: 14.6666666666667px; color: rgb(56, 118, 29); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">concept has many sub-concpets (sub skills are more advanced level) and relationship can be optional (you don't have to master this sk</span><span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">ill)</span>
+*   Copy parts of a certain texts you read from the web and add them to your collection of notes, Example, I saw someone mentioning a point about why I use Backbone with Rails?
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">concepts has many examples</span>
+*   concept has many sub-concpets (sub skills are more advanced level) and relationship can be optional (you don't have to master this skill)
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">concept has many exercises (practices)</span>
+*   concepts has many examples
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">concept : description (the explanation of the concept)</span>
+*   concept has many exercises (practices)
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">user has many notes linked to each concept (inner table)</span>
+*   concept : description (the explanation of the concept)
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">join a squad of the users with the same skills, finish a team task and win a badge</span>
+*   user has many notes linked to each concept (inner table)
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">learn from my project (uses code editor) …</span>
+*   join a squad of the users with the same skills, finish a team task and win a badge
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Donate for a person who taught you something, just tip him.</span>
+*   learn from my project (uses code editor) …
 
-*   <span style="font-size: 14.6666666666667px; color: rgb(56, 118, 29); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Taking the users input on how long it takes them to finish a task(average), the calendar (per week) , come up with a plan if , if it satisfies the user, then we rank it up, if not we vote it down</span><span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">.</span>
+*   Donate for a person who taught you something, just tip him.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Create different Mirrors for all branches (profiles). Users will get an "optimized content as close as possible to what they already know. People with history major get the history of the mathmatician who created a an equation.</span>
+*   Taking the users input on how long it takes them to finish a task(average), the calendar (per week) , come up with a plan if , if it satisfies the user, then we rank it up, if not we vote it down.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">I am gonna use the profile of a Arab -> Scientific -> Math -> Programmer -> Java</span>
+*   Create different Mirrors for all branches (profiles). Users will get an "optimized content as close as possible to what they already know. People with history major get the history of the mathmatician who created a an equation.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Map KHAN ACADEMY !</span>
+*   I am gonna use the profile of a Arab -> Scientific -> Math -> Programmer -> Java
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">SCRUM :</span>
+*   Map KHAN ACADEMY !
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Build a Java tutorial and challenge it to be the best Java tutorial ever or it could be the best JS tutorial in the world !</span>
+*   SCRUM :
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">prototype version.</span>
+*   Build a Java tutorial and challenge it to be the best Java tutorial ever or it could be the best JS tutorial in the world !
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Iron man style of concepts visualization.</span>
+*   prototype version.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Things that requires the machine to take longer can tell the user to wait for a little bit (maybe a day till everything is ready)</span>
+*   Iron man style of concepts visualization.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">People get confused when you lower the level of complexity of your explanation.</span>
+*   Things that requires the machine to take longer can tell the user to wait for a little bit (maybe a day till everything is ready)
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Training computer to know the attention span of users. Warming the user up in the beginning of each session.</span>
+*   People get confused when you lower the level of complexity of your explanation.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">get the first example, don't understand, move to another one. Examples are tailored for the types of users.if a user doesn't understand something, give him the alternative explanation from another user.</span>
+*   Training computer to know the attention span of users. Warming the user up in the beginning of each session.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Suggest a branch to user while typing.</span>
+*   get the first example, don't understand, move to another one. Examples are tailored for the types of users.if a user doesn't understand something, give him the alternative explanation from another user.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Look at me coding this, screen videos // for Q&A</span>
+*   Suggest a branch to user while typing.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">There are many ways to do something, if there's a feature in a language that can make things easier, we say so ...</span>
+*   Look at me coding this, screen videos // for Q&A
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Examples generated by users (code snipets)</span>
+*   There are many ways to do something, if there's a feature in a language that can make things easier, we say so ...
 
-*   [<span style="font-size: 14.6666666666667px; color: rgb(17, 85, 204); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">http://en.wikibooks.org/wiki/Java_Programming</span>](http://en.wikibooks.org/wiki/Java_Programming)<span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">: good resource for finding content</span>
+*   Examples generated by users (code snipets)
 
-*   [<span style="font-size: 14.6666666666667px; color: rgb(17, 85, 204); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">http://en.wikiversity.org/wiki/Learning_Java</span>](http://en.wikiversity.org/wiki/Learning_Java)<span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">: Java Tutorial, scroll down were levels are created.</span>
+*   [http://en.wikibooks.org/wiki/Java_Programming](http://en.wikibooks.org/wiki/Java_Programming): good resource for finding content
 
-*   [<span style="font-size: 14.6666666666667px; color: rgb(17, 85, 204); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">http://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html</span>](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html)<span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">: Oracles tutorial</span>
+*   [http://en.wikiversity.org/wiki/Learning_Java](http://en.wikiversity.org/wiki/Learning_Java): Java Tutorial, scroll down were levels are created.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Design must be simple and clear. No multiple pages to get to the information. W3School succeeded because it doesn't make you think.</span>
+*   [http://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html): Oracles tutorial
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Users contribute to the avatar too.</span>
+*   Design must be simple and clear. No multiple pages to get to the information. W3School succeeded because it doesn't make you think.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Arrays are variables also, how do I stack them as concepts but link them as explanation? make everything a concept?</span>
+*   Users contribute to the avatar too.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">go through the concepts and then unlock more concepts as you go through everything … Or concepts align according to your level?</span>
+*   Arrays are variables also, how do I stack them as concepts but link them as explanation? make everything a concept?
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">what's the line between an explanation and a concept? explanation is a weak concept that can stand by its own.</span>
+*   go through the concepts and then unlock more concepts as you go through everything … Or concepts align according to your level?
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">how to implement a diff feature for comparison between languages?for example, java has all these features and compared to javascript, this is the difference ……</span>
+*   what's the line between an explanation and a concept? explanation is a weak concept that can stand by its own.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">combine classes and objects together, the writer of the course or language has to reuse the current concepts and does a diff to them?</span>
+*   how to implement a diff feature for comparison between languages?for example, java has all these features and compared to javascript, this is the difference ……
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Map your skills</span>
+*   combine classes and objects together, the writer of the course or language has to reuse the current concepts and does a diff to them?
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">explanations has levels , users will be notified once they reach a certain level that a concept is opened for them to view it. They can open an explanation if they want, but they are notified that this concept is a little beyond the basics.</span>
+*   Map your skills
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">give +1 or +Number for every action a user make</span>
+*   explanations has levels , users will be notified once they reach a certain level that a concept is opened for them to view it. They can open an explanation if they want, but they are notified that this concept is a little beyond the basics.
 
-*   <span style="font-size: 14.6666666666667px; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">THE CODE EDITOR:</span>
+*   give +1 or +Number for every action a user make
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Paste your code and get what references to look out in our website?</span>
+*   THE CODE EDITOR:
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">use Ace, user pastes the code and then clicks analyze,</span>
+*   Paste your code and get what references to look out in our website?
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">we go through the code (search for foldings?),</span>
+*   use Ace, user pastes the code and then clicks analyze,
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">then get what's the current rules is being used to highlight? (look at the highlighting rules and then extend then hook to them to do something?)</span>
+*   we go through the code (search for foldings?),
 
-<span style="font-size: 14.6666666666667px; font-family: Arial; color: rgb(56, 118, 29); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">           look for the concept and link to it.</span>
+*   then get what's the current rules is being used to highlight? (look at the highlighting rules and then extend then hook to them to do something?)
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Play game and generate code behind it.</span>
+           look for the concept and link to it.
 
-*   <span style="font-size: 14.6666666666667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Use google glass to make users see content related to their knowledge.</span>
+*   Play game and generate code behind it.
 
-</span>
+*   Use google glass to make users see content related to their knowledge.
+
+
 # Resources
 ### https://github.com/itechdom/itechdom-blog
 ### github repo

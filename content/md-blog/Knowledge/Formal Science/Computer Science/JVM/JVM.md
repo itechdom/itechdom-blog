@@ -1,139 +1,139 @@
 # Intro
 ### What's JavaScript
-> <span id="docs-internal-guid-d499e770-7436-1deb-17ec-631fa62e6aa6">  
-> </span>
+>   
+> 
 
-<span id="docs-internal-guid-d499e770-7436-1deb-17ec-631fa62e6aa6">
 
-1.  <div style="margin-left: -20px;">
 
-    <div data-dobid="dfn" style="display: inline;">We saw before how we used html and css to display things on the browser</div>
+1.  
 
-    </div>
+    We saw before how we used html and css to display things on the browser
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">the browser essentially reads the html and css and figure out how to display them</span></font></div>
+    
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
-</span></font></div>
+the browser essentially reads the html and css and figure out how to display them
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
-</span></font></div>
+  
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">example:</span></font></div>
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
-</span></font></div>
+  
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;"><style></span></font></div>
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">p{</span></font></div>
+example:
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">font-size:80px</span></font></div>
+  
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">}</span></font></div>
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;"></style></span></font></div>
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
-</span></font></div>
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;"> <p>hello world</p></span></font></div>
+p{
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
-</span></font></div>
+font-size:80px
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">with Javascript: we telling the browser to do more things than just display this text or any other html elements:</span></font></div>
+}
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
-</span></font></div>
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">things like: go to javascript and where to find it</span></font></div>
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
-</span></font></div>
+  
 
-<div>JavaScript is a programming language with syntax. just like a real language.</div>
 
-2.  <div class="lr_dct_sf_sen vk_txt" style="padding-top: 10px; font-weight: lighter !important;">
+ hello world
 
-    <div style="margin-left: 20px;">
+  
 
-    <div style="margin-left: -20px;">
 
-    <div data-dobid="dfn" style="display: inline;">a programming language commonly used to create interactive websites. Using HTML and CSS only is very limited in their own way. You can use HTML and CSS to achieve a lot of things, but unfortunately this falls short in many Cases. This is when JavaScript comes in handy.</div>
+with Javascript: we telling the browser to do more things than just display this text or any other html elements:
 
-    </div>
+  
 
-    </div>
 
-    </div>
+things like: go to javascript and where to find it
 
-<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
-</span></font></div>
+  
 
-</span>
+
+JavaScript is a programming language with syntax. just like a real language.
+
+2.  
+
+    
+
+    
+
+    a programming language commonly used to create interactive websites. Using HTML and CSS only is very limited in their own way. You can use HTML and CSS to achieve a lot of things, but unfortunately this falls short in many Cases. This is when JavaScript comes in handy.
+
+    
+
+    
+
+    
+
+  
+
+
+
 ### What does Javascript Do and Where do you find it?
-<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_You find it in many places:_</span></div>
+_You find it in many places:_
 
-<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"></span></div>
 
-<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_Slide show images, _</span></div>
 
-<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_clicking on something and doing something,_</span></div>
+_Slide show images, _
 
-<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_Creating online games,_</span></div>
+_clicking on something and doing something,_
 
-<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_creating Mobile apps (New)_</span></div>
+_Creating online games,_
 
-<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_this slide show is created by JavaScript_</span></div>
+_creating Mobile apps (New)_
 
-<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"></span></div>
+_this slide show is created by JavaScript_
+
+
 ### How is JavaScript written: in Statements 
-<div>we load javascript same way we load css files. </div>
+we load javascript same way we load css files. 
 
-<div>The browser reads the script file line by line. these are essentially instructions. If it succeeds, the browser will show no error. If it fails we can examine the error in the console</div>
+The browser reads the script file line by line. these are essentially instructions. If it succeeds, the browser will show no error. If it fails we can examine the error in the console
 
 How does the browser read those statments: Sequantially, line by line.
 
-<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">The rules for valid format and combinations of instructions is called a </span>_computer language_<span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">, sometimes referred to as its</span>_syntax_<span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.</span>  
-</div>
+The rules for valid format and combinations of instructions is called a _computer language_, sometimes referred to as its_syntax_, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.  
 
-<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">  
-</span></div>
 
-<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">as you go, you will be able to gather different concepts into a knowledge</span></div>
+  
 
-<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">  
-</span></div>
 
-<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">  
-</span></div>
+as you go, you will be able to gather different concepts into a knowledge
 
-<div>
+  
 
-<table style="margin: 0px; padding: 0px; border: 0px; font-size: 12px; vertical-align: baseline; font-family: Tahoma, Geneva, Arial, sans-serif; line-height: 12px; background-color: rgb(255, 255, 255);">
 
-<tbody style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline;">
+  
 
-<tr style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline;">
 
-<td class="answercell" style="margin: 0px; padding: 0px; border: 0px; vertical-align: top;">
 
-<div class="post-text" itemprop="text" style="margin: 0px 5px 5px 0px; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; width: 660px; word-wrap: break-word; line-height: 18.2000007629395px;">
+
+
+
+
+
+
+
+
+
+
 
 I write very, very detailed instructions for a very, very dumb machine
 
-</div>
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-</div>
+
+
+
+
+
+
 ### Write gibberish statement and see if the browser shows an error
 For accessing the command line. type CMD+SHIFT+ the letter i
 ### showing and hiding images as we click
@@ -169,127 +169,127 @@ This category encompasses those Java-based libraries that are specific to Androi
 ### Application Components
 There are following four main components that can be used within an Android application:
 
-<table class="table table-bordered" style="box-sizing: border-box; border-collapse: collapse; width: 604px; border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); color: rgb(49, 49, 49); font-family: 'Open Sans', Arial, sans-serif; line-height: 22px;">
 
-<tbody style="box-sizing: border-box;">
 
-<tr style="box-sizing: border-box;">
 
-<th style="box-sizing: border-box; line-height: 1.42857143; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgb(221, 221, 221); border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); width: 150px; background: rgb(238, 238, 238);">Components</th>
 
-<th style="box-sizing: border-box; line-height: 1.42857143; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgb(221, 221, 221); border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); background: rgb(238, 238, 238);">Description</th>
 
-</tr>
 
-<tr style="box-sizing: border-box;">
+Components
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Activities</td>
+Description
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">They dictate the UI and handle the user interaction to the smart phone screen</td>
 
-</tr>
 
-<tr style="box-sizing: border-box;">
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Services</td>
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">They handle background processing associated with an application.</td>
+Activities
 
-</tr>
+They dictate the UI and handle the user interaction to the smart phone screen
 
-<tr style="box-sizing: border-box;">
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Broadcast Receivers</td>
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">They handle communication between Android OS and applications.</td>
 
-</tr>
 
-<tr style="box-sizing: border-box;">
+Services
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Content Providers</td>
+They handle background processing associated with an application.
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">They handle data and database management issues.</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-<div>
+Broadcast Receivers
+
+They handle communication between Android OS and applications.
+
+
+
+
+
+Content Providers
+
+They handle data and database management issues.
+
+
+
+
+
+
+
+
 
 ## Additional Components
 
 There are additional components which will be used in the construction of above mentioned entities, their logic, and wiring between them. These components are −
 
-<table class="table table-bordered" style="box-sizing: border-box; border-collapse: collapse; width: 604px; border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); color: rgb(49, 49, 49); font-family: 'Open Sans', Arial, sans-serif; line-height: 22px;">
 
-<tbody style="box-sizing: border-box;">
 
-<tr style="box-sizing: border-box;">
 
-<th style="box-sizing: border-box; line-height: 1.42857143; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgb(221, 221, 221); border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); background: rgb(238, 238, 238);">Components</th>
 
-<th style="box-sizing: border-box; line-height: 1.42857143; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgb(221, 221, 221); border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); background: rgb(238, 238, 238);">Description</th>
 
-</tr>
 
-<tr style="box-sizing: border-box;">
+Components
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Fragments</td>
+Description
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Represents a portion of user interface in an Activity.</td>
 
-</tr>
 
-<tr style="box-sizing: border-box;">
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Views</td>
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">UI elements that are drawn on-screen including buttons, lists forms etc.</td>
+Fragments
 
-</tr>
+Represents a portion of user interface in an Activity.
 
-<tr style="box-sizing: border-box;">
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Layouts</td>
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">View hierarchies that control screen format and appearance of the views.</td>
 
-</tr>
 
-<tr style="box-sizing: border-box;">
+Views
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Intents</td>
+UI elements that are drawn on-screen including buttons, lists forms etc.
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Messages wiring components together.</td>
 
-</tr>
 
-<tr style="box-sizing: border-box;">
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Resources</td>
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">External elements, such as strings, constants and drawable pictures.</td>
+Layouts
 
-</tr>
+View hierarchies that control screen format and appearance of the views.
 
-<tr style="box-sizing: border-box;">
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Manifest</td>
 
-<td style="box-sizing: border-box; line-height: 1.42857143; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221);">Configuration file for the application.  
 
-</td>
 
-</tr>
+Intents
 
-</tbody>
+Messages wiring components together.
 
-</table>
 
-</div>
+
+
+
+Resources
+
+External elements, such as strings, constants and drawable pictures.
+
+
+
+
+
+Manifest
+
+Configuration file for the application.  
+
+
+
+
+
+
+
+
+
+
 ### Activities
 ### Converted by Dalvik and run
 ### Has a life cycle
@@ -307,177 +307,177 @@ There are additional components which will be used in the construction of above 
 ### has a life cycle
 ### one activity can have many fragments
 ### Intent/ Filters
-<span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; line-height: 24px; text-align: justify;">An Android </span>**Intent**<span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; line-height: 24px; text-align: justify;"> is an abstract description of an operation to be performed. It can be used with </span>**startActivity**<span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; line-height: 24px; text-align: justify;"> to launch an Activity, </span>**broadcastIntent**<span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; line-height: 24px; text-align: justify;"> to send it to any interested BroadcastReceiver components, and </span>**startService(Intent)**<span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; line-height: 24px; text-align: justify;"> or </span>**bindService(Intent, ServiceConnection, int) **<span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; line-height: 24px; text-align: justify;">to communicate with a background Service.</span>
+An Android **Intent** is an abstract description of an operation to be performed. It can be used with **startActivity** to launch an Activity, **broadcastIntent** to send it to any interested BroadcastReceiver components, and **startService(Intent)** or **bindService(Intent, ServiceConnection, int) **to communicate with a background Service.
 ### used to signify some intent or action to be performed
 # Java
 ### Core
 ### Variables and Box Analogy
 Variable Name: Box Label
 
-<div>Inside the box is the value</div>
+Inside the box is the value
 
-<div>values can be either a number or a string. A String is called that because it's a string of chars.</div>
+values can be either a number or a string. A String is called that because it's a string of chars.
 
-<div>Example: </div>
+Example: 
 
-<div>var a = 2</div>
+var a = 2
 
-<div>----------------</div>
+----------------
 
-<div>          2           </div>
+          2           
 
-<div>----------------</div>
+----------------
 
-<div>if you want to get what's inside the box "a"</div>
+if you want to get what's inside the box "a"
 
-<div>you just do this:</div>
+you just do this:
 
-<div>a ! that simple</div>
+a ! that simple
 ### Data Types
 String, Number For now
 ### Store variables and display them
 Write a program that will create different variables and use Alert to display those values
 ### Number (Math) Expressions and String Expressions
-<div>Don't be alarmed, this is just  
-</div>
+Don't be alarmed, this is just  
 
-<div>+ - * /</div>
 
-<div>String Expressions is just adding Strings together. This is when the difference between a text and a number comes in. If you add two strings together you join them.</div>
++ - * /
+
+String Expressions is just adding Strings together. This is when the difference between a text and a number comes in. If you add two strings together you join them.
 ### life time supply example
 Reference an HTML element and then apply a style
 ### If statments and logic
 Comparisions and Logic
 
-<div>Write it out as words first the convert it to JavaScript untill you get used to it</div>
+Write it out as words first the convert it to JavaScript untill you get used to it
 
-<div>If bananas are greater than 5 then display the result</div>
+If bananas are greater than 5 then display the result
 
-<div>if bananas > 5 {</div>
+if bananas > 5 {
 
-<div>
 
-> <div>alert "you need more bananas"</div>
 
-</div>
+> alert "you need more bananas"
 
-<div>}</div>
 
-<div>else (any other case){</div>
 
-<div>alert "you have enough bananas"</div>
+}
 
-<div>}</div>
+else (any other case){
+
+alert "you have enough bananas"
+
+}
 ### Check the supply of Bananas and display something
 ### Functions
-<div>Functions are like recepies that are repeated in your application. When you make hard boiled eggs what do you do? this could be like a function? a list of instructions that we store in a recepie that yield some result</div>
+Functions are like recepies that are repeated in your application. When you make hard boiled eggs what do you do? this could be like a function? a list of instructions that we store in a recepie that yield some result
 
-<div>this is how we tell the browser to store it:</div>
+this is how we tell the browser to store it:
 
-<div>for example function a ( )</div>
+for example function a ( )
 
-<div>take a value</div>
+take a value
 
-<div>multiply it with 2</div>
+multiply it with 2
 
-<div>return the value to whoever called it</div>
+return the value to whoever called it
 
-<div>ingridents are the variables we pass to the function </div>
+ingridents are the variables we pass to the function 
 
-<div>the food that's made is what the function returns</div>
+the food that's made is what the function returns
 
-<div>list of examples</div>
+list of examples
 
-<div>sometimes we buy food that's already made so we don't have to make anything.</div>
+sometimes we buy food that's already made so we don't have to make anything.
 
-<div>sometimes you call function without knowing what they contain, which is something we do all the time in programming</div>
+sometimes you call function without knowing what they contain, which is something we do all the time in programming
 
-<div>think of functions as factories that have a collection of statments</div>
+think of functions as factories that have a collection of statments
 
-<div>it could take a box and modify it then return a new box</div>
+it could take a box and modify it then return a new box
 
-<div>It's like a belt, on one end there's processing, on the other there's a box</div>
+It's like a belt, on one end there's processing, on the other there's a box
 
-<div>Some factories don't accept boxes, they produce them.</div>
+Some factories don't accept boxes, they produce them.
 
-<div>you can package it as you like</div>
+you can package it as you like
 
-<div>Example</div>
+Example
 
-<div>var a = "hello"</div>
+var a = "hello"
 
-<div>alert "hello"</div>
+alert "hello"
 
-<div>Instead of writing this every time, we can store it in a box (variable) and retrieve it late</div>
+Instead of writing this every time, we can store it in a box (variable) and retrieve it late
 
-<div>by doing this</div>
+by doing this
 
-<div>function BoxLabel ( ){</div>
+function BoxLabel ( ){
 
-<div>var a = "help"</div>
+var a = "help"
 
-<div>alert a</div>
+alert a
 
-<div>}</div>
+}
 
-<div>BoxLabel ( )</div>
+BoxLabel ( )
 
-<div>How do I make functions even more powerfull, make them a little more useful, abstract, lets say you want to add two numbers together and you want the user to supply the numbers and you get the results</div>
+How do I make functions even more powerfull, make them a little more useful, abstract, lets say you want to add two numbers together and you want the user to supply the numbers and you get the results
 
-<div>this is usefull, because it make it easy to call that box and make it easier for people to reuse it for any two numbers.</div>
+this is usefull, because it make it easy to call that box and make it easier for people to reuse it for any two numbers.
 
-<div>  
-Example:</div>
+  
+Example:
 
-<div>function addTwoNumbers(a,b){</div>
+function addTwoNumbers(a,b){
 
-<div>return a+b</div>
+return a+b
 
-<div>}</div>
+}
 
-<div>results =  addTwoNumbers(1,2)</div>
+results =  addTwoNumbers(1,2)
 
-<div>alert results</div>
+alert results
 ### Store the functions to calculate the bananas to make your program simpler
 ### Global Scope and Function Scope
 whatever boxes we have in the factory (function), we can't access outside of it.
 
-<div>function {</div>
+function {
 
-<div>a = 2  
-</div>
+a = 2  
 
-<div>}</div>
+
+}
 ### Loops
 sometimes we need to repeat statements instead of copying and pasting them 
 
-<div>so if I wanted to write hello 20 times, I would do something like this</div>
+so if I wanted to write hello 20 times, I would do something like this
 
-<div>log hello</div>
+log hello
 
-<div>log hello</div>
+log hello
 
-<div>log hello</div>
+log hello
 
-<div>what if we </div>
+what if we 
 ### Arrays
 Numbered Shelfs and contains boxes 0,1,2,3,4 ... etc
 ### Objects
-<div>think of objects as any entity that has properties, a person is an object, a car is an object. Anything that you can describe could be an object.</div>
+think of objects as any entity that has properties, a person is an object, a car is an object. Anything that you can describe could be an object.
 
-<div>This how we create objects in JS</div>
+This how we create objects in JS
 
-<div>{</div>
+{
 
-<div>name: "hello"</div>
+name: "hello"
 
-<div>age: 21</div>
+age: 21
 
-<div>}</div>
+}
 
 We move to a more complex example here, we have a box and inside of that box is a Person! WHAAAT?!!!!
 
-<div>Each person has name, age</div>
+Each person has name, age
 ### Array Of Objects
 Box with people on Shelves
 # Project Starters

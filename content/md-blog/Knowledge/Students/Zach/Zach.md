@@ -1,11 +1,11 @@
 # 4 week program to learn how to program in JavaScript
 ### Introduction to Computer Programming
-<div>The link below is just a general introduction to programming. This is just to worm you up. This is a series written by wiki volunteers that introduces you to concepts that all programming languages share. Don't worry about understanding everything. This is , again, just a worm up.  
-</div>
+The link below is just a general introduction to programming. This is just to worm you up. This is a series written by wiki volunteers that introduces you to concepts that all programming languages share. Don't worry about understanding everything. This is , again, just a worm up.  
 
-<div>**Instructions:**</div>
 
-<div>
+**Instructions:**
+
+
 
 *   go to:** [https://en.wikiversity.org/wiki/Introduction_to_Programming/About_Programming](https://en.wikiversity.org/wiki/Introduction_to_Programming/About_Programming)  
     **
@@ -13,22 +13,22 @@
 
 *   This will take you to other lessons till you get to scopes in programming. After that it will take you to **introduction to programming with Java**. That's when you should **stop.**
 
-<div>**Feedback:**</div>
+**Feedback:**
 
-<div>Please write here any feedback/questions about what you learned. </div>
+Please write here any feedback/questions about what you learned. 
 
-</div>
+
 ### Basic JavaScript
-<div>A link to the mind map under JavaScript. </div>
+A link to the mind map under JavaScript. 
 
 [https://drive.google.com/open?id=0B9tPYCpuqoIrR1UwVGRpZWpXTlU](https://drive.google.com/open?id=0B9tPYCpuqoIrR1UwVGRpZWpXTlU)
 ### Intermediate JavaScript
 DOM, 
 
-<div>Events & Asynchronous Programming  
-</div>
+Events & Asynchronous Programming  
 
-<div>Ajax and remote services</div>
+
+Ajax and remote services
 ### Apply Intermediate JavaScript to Pebble Watch
 It's time to apply all the concepts you have learned so far.
 ### Advanced JavaScript
@@ -55,7 +55,7 @@ Patterns and Paradigms in JavaScript
     *   [Data structures](https://en.m.wikipedia.org/wiki/Data_structures "Data structures") – particular way of storing and organizing data in a computer so that it can be used efficiently.
     *   [Computer architecture](https://en.m.wikipedia.org/wiki/Computer_architecture "Computer architecture") – In computer science and engineering, computer architecture is the practical art of selecting and interconnecting hardware components to create computers that meet functional, performance and cost goals and the formal modeling of those systems.
         *   [VLSI design](https://en.m.wikipedia.org/wiki/Very-large-scale_integration "Very-large-scale integration") – process of creating integrated circuits by combining thousands of transistors into a single chip
-    *   [Computer communications (networks)](https://en.m.wikipedia.org/wiki/Computer_networking "Computer networking")<span style="font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; background-color: initial;"> – collection of hardware components and computers interconnected by communication channels that allow sharing of resources and information</span>  
+    *   [Computer communications (networks)](https://en.m.wikipedia.org/wiki/Computer_networking "Computer networking") – collection of hardware components and computers interconnected by communication channels that allow sharing of resources and information  
 
     *   *   [Information theory](https://en.m.wikipedia.org/wiki/Information_theory "Information theory") – branch of applied mathematics and electrical engineering involving the quantification of information
         *   Internet – global system of interconnected computer networks that use the standard Internet protocol suite (often called TCP/IP, although not all applications use TCP) to serve billions of users worldwide.
@@ -105,9 +105,9 @@ Concepts that are shared across all Programming Languages
 ### Patterns
 # Design Patterns
 
-<div class="content" style="box-sizing: border-box; margin: 0px; color: rgb(68, 68, 68); font-family: 'PT Sans', sans-serif; font-size: 16px; line-height: 22.3999996185303px;">
 
-In software engineering, a <span style="box-sizing: border-box; margin: 0px; font-weight: 700;">design pattern</span> is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+
+In software engineering, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
 
 ### Uses of Design Patterns
 
@@ -121,7 +121,7 @@ In addition, patterns allow developers to communicate using well-known, well und
 
 These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
 
-<div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 225px;">[![Example of Abstract Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory_example1.svg)](https://sourcemaking.com/design_patterns/abstract_factory)</div>
+[![Example of Abstract Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory_example1.svg)](https://sourcemaking.com/design_patterns/abstract_factory)
 
 *   [Abstract Factory](https://sourcemaking.com/design_patterns/abstract_factory "Provides a way to encapsulate a group of individual factories that have a common theme.")  
     Creates an instance of several families of classes
@@ -140,7 +140,7 @@ These design patterns are all about class instantiation. This pattern can be fur
 
 These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.
 
-<div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 225px;">[![](https://sourcemaking.com/files/v2/content/patterns/Decorator_example.svg)](https://sourcemaking.com/design_patterns/decorator)</div>
+[![](https://sourcemaking.com/files/v2/content/patterns/Decorator_example.svg)](https://sourcemaking.com/design_patterns/decorator)
 
 *   [Adapter](https://sourcemaking.com/design_patterns/adapter "Adapts one interface for a class into one that a client expects.")  
     Match interfaces of different classes
@@ -154,7 +154,7 @@ These design patterns are all about Class and Object composition. Structural cla
     A single class that represents an entire subsystem
 *   [Flyweight](https://sourcemaking.com/design_patterns/flyweight "When many objects must be manipulated and these cannot afford to have extraneous data, flyweight is appropriate.")  
     A fine-grained instance used for efficient sharing
-*   <div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 218.6875px;">[![](https://sourcemaking.com/files/v2/content/patterns/Proxy_example1.svg)](https://sourcemaking.com/design_patterns/proxy)</div>
+*   [![](https://sourcemaking.com/files/v2/content/patterns/Proxy_example1.svg)](https://sourcemaking.com/design_patterns/proxy)
 
     [Private Class Data](https://sourcemaking.com/design_patterns/private_class_data "Restricts accessor/mutator access")  
     Restricts accessor/mutator access
@@ -165,7 +165,7 @@ These design patterns are all about Class and Object composition. Structural cla
 
 These design patterns are all about Class's objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.
 
-<div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 225px;">[![](https://sourcemaking.com/files/v2/content/patterns/Interpreter_example1.svg)](https://sourcemaking.com/design_patterns/interpreter)</div>
+[![](https://sourcemaking.com/files/v2/content/patterns/Interpreter_example1.svg)](https://sourcemaking.com/design_patterns/interpreter)
 
 *   [Chain of responsibility](https://sourcemaking.com/design_patterns/chain_of_responsibility "Source of command objects and a series of processing objects.")  
     A way of passing a request between a chain of objects
@@ -183,7 +183,7 @@ These design patterns are all about Class's objects communication. Behavioral pa
     Designed to act as a default value of an object
 *   [Observer](https://sourcemaking.com/design_patterns/observer "Observes the state of an object in a program.")  
     A way of notifying change to a number of classes
-*   <div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 218.6875px;">[![](https://sourcemaking.com/files/v2/content/patterns/State_example1.svg)](https://sourcemaking.com/design_patterns/state)</div>
+*   [![](https://sourcemaking.com/files/v2/content/patterns/State_example1.svg)](https://sourcemaking.com/design_patterns/state)
 
     [State](https://sourcemaking.com/design_patterns/state "Represent the state of an object.")  
     Alter an object's behavior when its state changes
@@ -194,13 +194,13 @@ These design patterns are all about Class's objects communication. Behavioral pa
 *   [Visitor](https://sourcemaking.com/design_patterns/visitor "A way of separating an algorithm from an object structure.")  
     Defines a new operation to a class without change
 
-</div>
+
 ### Architectural patterns
-<div style="margin: 0px; padding: 0px; border: 0px; font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; font-stretch: inherit; line-height: 26.3999996185303px; vertical-align: baseline; color: rgb(37, 37, 37); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-An **architectural pattern** is a general, reusable solution to a commonly occurring problem in[software architecture](https://en.m.wikipedia.org/wiki/Software_architecture "Software architecture") within a given context.<sup id="cite_ref-TMD_1-0" class="reference" style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: 0.75em; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1; vertical-align: super; background: none;">[<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; background: none;">[</span>1<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; background: none;">]</span>](https://en.m.wikipedia.org/wiki/Architectural_pattern#cite_note-TMD-1)</sup>Architectural patterns are similar to software [design patterns](https://en.m.wikipedia.org/wiki/Design_pattern_(computer_science) "Design pattern (computer science)") but have a broader scope. The architectural patterns address various issues in [software engineering](https://en.m.wikipedia.org/wiki/Software_engineering "Software engineering"), such as [computer hardware](https://en.m.wikipedia.org/wiki/Computer_hardware "Computer hardware")performance limitations, [high availability](https://en.m.wikipedia.org/wiki/High_availability "High availability") and minimization of a [business risk](https://en.m.wikipedia.org/wiki/Business_risk "Business risk"). Some architectural patterns have been implemented within [software frameworks](https://en.m.wikipedia.org/wiki/Software_framework "Software framework").
 
-</div>
+An **architectural pattern** is a general, reusable solution to a commonly occurring problem in[software architecture](https://en.m.wikipedia.org/wiki/Software_architecture "Software architecture") within a given context.[[1]](https://en.m.wikipedia.org/wiki/Architectural_pattern#cite_note-TMD-1)Architectural patterns are similar to software [design patterns](https://en.m.wikipedia.org/wiki/Design_pattern_(computer_science) "Design pattern (computer science)") but have a broader scope. The architectural patterns address various issues in [software engineering](https://en.m.wikipedia.org/wiki/Software_engineering "Software engineering"), such as [computer hardware](https://en.m.wikipedia.org/wiki/Computer_hardware "Computer hardware")performance limitations, [high availability](https://en.m.wikipedia.org/wiki/High_availability "High availability") and minimization of a [business risk](https://en.m.wikipedia.org/wiki/Business_risk "Business risk"). Some architectural patterns have been implemented within [software frameworks](https://en.m.wikipedia.org/wiki/Software_framework "Software framework").
+
+
 ### https://en.m.wikipedia.org/wiki/Architectural_pattern
 ### Has all archetictural patterns
 ### Design patterns
@@ -209,19 +209,19 @@ An **architectural pattern** is a general, reusable solution to a commonly occ
 ### Dependency injection
 ### http://stackoverflow.com/questions/130794/what-is-dependency-injection
 ### Paradigms
-<table class="vertical-navbox nowraplinks" style="font-size: 12.3199996948242px; color: rgb(37, 37, 37); font-family: sans-serif; clear: right; width: 22em; margin: 0px 0px 1em 1em; border: 1px solid rgb(170, 170, 170); padding: 0.2em; -webkit-border-horizontal-spacing: 0.4em; text-align: center; line-height: 1.4em; background: rgb(249, 249, 249);">
 
-<tbody>
 
-<tr>
 
-<th style="padding: 0.2em 0.4em; font-size: 17.8639984130859px; line-height: 1.2em;">[Programming paradigms](https://en.wikipedia.org/wiki/Programming_paradigm "Programming paradigm")</th>
 
-</tr>
 
-<tr>
 
-<td style="padding: 0px 0.1em 0.4em; text-align: left;">
+[Programming paradigms](https://en.wikipedia.org/wiki/Programming_paradigm "Programming paradigm")
+
+
+
+
+
+
 
 *   [Action](https://en.wikipedia.org/wiki/Action_language "Action language")
 *   [Agent-oriented](https://en.wikipedia.org/wiki/Agent-oriented_programming "Agent-oriented programming")
@@ -236,7 +236,7 @@ An **architectural pattern** is a general, reusable solution to a commonly occ
         *   [Flow-based](https://en.wikipedia.org/wiki/Flow-based_programming "Flow-based programming")
         *   Cell-oriented ([spreadsheets](https://en.wikipedia.org/wiki/Spreadsheet "Spreadsheet"))
         *   [Reactive](https://en.wikipedia.org/wiki/Reactive_programming "Reactive programming")
-    *   <span class="selflink" style="font-weight: 700; white-space: nowrap;">Functional</span>
+    *   Functional
         *   [Functional logic](https://en.wikipedia.org/wiki/Functional_logic_programming "Functional logic programming")
     *   [Logic](https://en.wikipedia.org/wiki/Logic_programming "Logic programming")
         *   [Abductive logic](https://en.wikipedia.org/wiki/Abductive_logic_programming "Abductive logic programming")
@@ -295,26 +295,26 @@ An **architectural pattern** is a general, reusable solution to a commonly occ
 *   [Probabilistic](https://en.wikipedia.org/wiki/Probabilistic_programming_language "Probabilistic programming language")
 *   [Concept](https://en.wikipedia.org/wiki/Concept_programming "Concept programming")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
+
+
+
+
 ### Functional Reactive Programming
 ### Object Oriented Programming
 ### Functional Programming
 ### Basics
 Variables, types, operators/ flow control (and, or,if,else...)
 
-<div>, loops, functions</div>
+, loops, functions
 
-<div>  
+  
 
-<div>error handling, objects, classes, interface, inheritance</div>
+error handling, objects, classes, interface, inheritance
 
-</div>
+
 ### Wikiversity Courses
 ### https://en.wikiversity.org/wiki/Introduction_to_Programming
 ### https://en.wikiversity.org/wiki/Introduction_to_Algorithms
@@ -322,7 +322,7 @@ Variables, types, operators/ flow control (and, or,if,else...)
 ### Data Science
 ### https://en.wikipedia.org/wiki/Data_science
 ### Relates to
-## <span class="mw-headline" id="Research_areas">Research areas</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Data_science&action=edit&section=5 "Edit section: Research areas")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+## Research areas[[edit](https://en.wikipedia.org/w/index.php?title=Data_science&action=edit&section=5 "Edit section: Research areas")]
 
 As an interdisciplinary subject, data science draws scientific inquiry from a broad range of academic subject areas. Some areas of research are:
 
@@ -365,19 +365,19 @@ As an interdisciplinary subject, data science draws scientific inquiry from a br
 ### Statistical Learning Model inspired by the brain
 ### Interconnected Nodes capable of Learning given a certain input
 ### Example: Handwriting recognition
-<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">For example, a neural network for </span>[handwriting recognition](https://en.m.wikipedia.org/wiki/Handwriting_recognition "Handwriting recognition")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> is defined by a set of input neurons which may be activated by the pixels of an input image. After being weighted and transformed by a</span>[function](https://en.m.wikipedia.org/wiki/Function_(mathematics) "Function (mathematics)")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> (determined by the network's designer), the activations of these neurons are then passed on to other neurons. This process is repeated until finally, an output neuron is activated. This determines which character was read.</span>
+For example, a neural network for [handwriting recognition](https://en.m.wikipedia.org/wiki/Handwriting_recognition "Handwriting recognition") is defined by a set of input neurons which may be activated by the pixels of an input image. After being weighted and transformed by a[function](https://en.m.wikipedia.org/wiki/Function_(mathematics) "Function (mathematics)") (determined by the network's designer), the activations of these neurons are then passed on to other neurons. This process is repeated until finally, an output neuron is activated. This determines which character was read.
 ### One of the theories: Hebbian Learning, cell a takes part in stimulating cell b
 ### https://en.m.wikipedia.org/wiki/Hebbian_theory
 ### Connectionism
 [Connectionism](https://en.m.wikipedia.org/wiki/Connectionism)
 
-<div>
 
-**Connectionism** is a set of approaches in the fields of [artificial intelligence](https://en.m.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"), [cognitive psychology](https://en.m.wikipedia.org/wiki/Cognitive_psychology "Cognitive psychology"), [cognitive science](https://en.m.wikipedia.org/wiki/Cognitive_science "Cognitive science"), [neuroscience](https://en.m.wikipedia.org/wiki/Neuroscience "Neuroscience"), and[philosophy of mind](https://en.m.wikipedia.org/wiki/Philosophy_of_mind "Philosophy of mind"), that models [mental](https://en.m.wikipedia.org/wiki/Mind "Mind") or [behavioral](https://en.m.wikipedia.org/wiki/Behavior "Behavior") phenomena as the [emergent processes](https://en.m.wikipedia.org/wiki/Emergence "Emergence") of _interconnected networks of simple units_. The term was introduced by [Donald Hebb](https://en.m.wikipedia.org/wiki/Donald_Hebb "Donald Hebb") in the 1940's.<sup id="cite_ref-1" class="reference" style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: 0.75em; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1; vertical-align: super; background: none;">[<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; background: none;">[</span>1<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; background: none;">]</span>](https://en.m.wikipedia.org/wiki/Connectionism#cite_note-1)</sup> There are many forms of connectionism, but the most common forms use [neural network](https://en.m.wikipedia.org/wiki/Neural_network "Neural network")models.
 
-</div>
+**Connectionism** is a set of approaches in the fields of [artificial intelligence](https://en.m.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"), [cognitive psychology](https://en.m.wikipedia.org/wiki/Cognitive_psychology "Cognitive psychology"), [cognitive science](https://en.m.wikipedia.org/wiki/Cognitive_science "Cognitive science"), [neuroscience](https://en.m.wikipedia.org/wiki/Neuroscience "Neuroscience"), and[philosophy of mind](https://en.m.wikipedia.org/wiki/Philosophy_of_mind "Philosophy of mind"), that models [mental](https://en.m.wikipedia.org/wiki/Mind "Mind") or [behavioral](https://en.m.wikipedia.org/wiki/Behavior "Behavior") phenomena as the [emergent processes](https://en.m.wikipedia.org/wiki/Emergence "Emergence") of _interconnected networks of simple units_. The term was introduced by [Donald Hebb](https://en.m.wikipedia.org/wiki/Donald_Hebb "Donald Hebb") in the 1940's.[[1]](https://en.m.wikipedia.org/wiki/Connectionism#cite_note-1) There are many forms of connectionism, but the most common forms use [neural network](https://en.m.wikipedia.org/wiki/Neural_network "Neural network")models.
+
+
 ### Activiation is an important concept: 
-<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">In most connectionist models, networks change over time. A closely related and very common aspect of connectionist models is </span>_activation_<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">. At any time, a unit in the network has an activation, which is a numerical value intended to represent some aspect of the unit. For example, if the units in the model are neurons, the activation could represent the </span>[probability](https://en.m.wikipedia.org/wiki/Probability "Probability")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> that the neuron would generate an </span>[action potential](https://en.m.wikipedia.org/wiki/Action_potential "Action potential")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> spike. Activation typically spreads to all the other units connected to it. Spreading activation is always a feature of neural network models, and it is very common in connectionist models used by </span>[cognitive psychologists](https://en.m.wikipedia.org/wiki/Cognitive_psychology "Cognitive psychology")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">.</span>
+In most connectionist models, networks change over time. A closely related and very common aspect of connectionist models is _activation_. At any time, a unit in the network has an activation, which is a numerical value intended to represent some aspect of the unit. For example, if the units in the model are neurons, the activation could represent the [probability](https://en.m.wikipedia.org/wiki/Probability "Probability") that the neuron would generate an [action potential](https://en.m.wikipedia.org/wiki/Action_potential "Action potential") spike. Activation typically spreads to all the other units connected to it. Spreading activation is always a feature of neural network models, and it is very common in connectionist models used by [cognitive psychologists](https://en.m.wikipedia.org/wiki/Cognitive_psychology "Cognitive psychology").
 ### Incorporates a lot of dynamic systems theory
 ### Mathematics
 *   [Mathematics](https://en.m.wikipedia.org/wiki/Outline_of_mathematics "Outline of mathematics") – search for fundamental truths in pattern, quantity, and change.
@@ -464,7 +464,7 @@ As an interdisciplinary subject, data science draws scientific inquiry from a br
 ### Algebra
 ### Linear Algebra
 ### Statistics
-<div>[Statistics](https://en.m.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> – collection, analysis, interpretation, and presentation of data.</span>
+[Statistics](https://en.m.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics") – collection, analysis, interpretation, and presentation of data.
 
 *   [Computational statistics](https://en.m.wikipedia.org/wiki/Computational_statistics "Computational statistics") – interface between statistics and computer science.
     *   [Data mining](https://en.m.wikipedia.org/wiki/Data_mining "Data mining") – process that results in the discovery of new patterns in large data sets
@@ -494,7 +494,7 @@ As an interdisciplinary subject, data science draws scientific inquiry from a br
     *   [Sampling theory](https://en.m.wikipedia.org/wiki/Statistics "Statistics") – study of the collection, organization, analysis, and interpretation of data.
     *   [Survey methodology](https://en.m.wikipedia.org/wiki/Survey_(statistics) "Survey (statistics)") – field that studies the sampling of individuals from a population with a view towards making statistical inferences about the population using the sample.
 
-</div>
+
 ### Accounting
 ### Definition
 ### http://allaccountingcareers.com/accounting-faqs

@@ -86,7 +86,7 @@
             *   [Chemical kinetics](https://en.m.wikipedia.org/wiki/Chemical_kinetics "Chemical kinetics") – the study of rates of chemical processes.
             *   [Chemical thermodynamics](https://en.m.wikipedia.org/wiki/Chemical_thermodynamics "Chemical thermodynamics") – study of the interrelation of heat and work with chemical reactions or with physical changes of state within the confines of the laws of thermodynamics.
             *   [Electrochemistry](https://en.m.wikipedia.org/wiki/Electrochemistry "Electrochemistry") – branch of chemistry that studies chemical reactions which take place in a solution at the interface of an electron conductor (a metal or a semiconductor) and an ionic conductor (the electrolyte), and which involve electron transfer between the electrode and the electrolyte or species in solution.
-            *   [Femtochemistry](https://en.m.wikipedia.org/wiki/Femtochemistry "Femtochemistry") – Femtochemistry is the science that studies chemical reactions on extremely short timescales, approximately 10<sup style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: 0.75em; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1; vertical-align: super; box-sizing: border-box; background: none;">−15</sup> seconds (one femtosecond, hence the name).
+            *   [Femtochemistry](https://en.m.wikipedia.org/wiki/Femtochemistry "Femtochemistry") – Femtochemistry is the science that studies chemical reactions on extremely short timescales, approximately 10−15 seconds (one femtosecond, hence the name).
             *   [Mathematical chemistry](https://en.m.wikipedia.org/wiki/Mathematical_chemistry "Mathematical chemistry") – area of research engaged in novel applications of mathematics to chemistry; it concerns itself principally with the mathematical modeling of chemical phenomena.
             *   [Mechanochemistry](https://en.m.wikipedia.org/wiki/Mechanochemistry "Mechanochemistry") – coupling of the mechanical and the chemical phenomena on a molecular scale and includes mechanical breakage, chemical behaviour of mechanically stressed solids (e.g., stress-corrosion cracking), tribology, polymer degradation under shear, cavitation-related phenomena (e.g., sonochemistry and sonoluminescence), shock wave chemistry and physics, and even the burgeoning field of molecular machines.
             *   [Physical organic chemistry](https://en.m.wikipedia.org/wiki/Physical_organic_chemistry "Physical organic chemistry") – study of the interrelationships between structure and reactivity in organic molecules.
@@ -255,7 +255,7 @@
 ### https://en.wikipedia.org/wiki/Cynology
 ### dogs
 # Social Science
-<div class="collapsible-block open-block" id="content-collapsible-block-1" aria-pressed="true" aria-expanded="true" style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; clear: both; width: 892.8125px; background: none;">
+
 
 *   [Anthropology](https://en.m.wikipedia.org/wiki/Anthropology "Anthropology") – study of humans, past and present, that draws and builds upon knowledge from the social sciences and biological sciences, as well as the humanities and the natural sciences.
     *   [Anthropology of religion](https://en.m.wikipedia.org/wiki/Anthropology_of_religion "Anthropology of religion") – study of religious institutions in relation to other social institutions, and the comparison of religious beliefs and practices across cultures
@@ -284,7 +284,7 @@
 *   [Demography](https://en.m.wikipedia.org/wiki/Demography "Demography") – statistical study of human populations and sub-populations.
 *   [Development studies](https://en.m.wikipedia.org/wiki/Development_studies "Development studies") – multidisciplinary branch of social science which addresses issues of concern to developing countries.
 
-*   [Economics](https://en.m.wikipedia.org/wiki/Outline_of_economics "Outline of economics") – analyzes the production, distribution, and consumption of goods and services. Not considered a science by some thinkers <sup id="cite_ref-4" class="reference" style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: 0.75em; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1; vertical-align: super; box-sizing: border-box; background: none;">[<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">[</span>4<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">]</span>](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-4)</sup> It aims to explain how economies work and how economic agents interact.
+*   [Economics](https://en.m.wikipedia.org/wiki/Outline_of_economics "Outline of economics") – analyzes the production, distribution, and consumption of goods and services. Not considered a science by some thinkers [[4]](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-4) It aims to explain how economies work and how economic agents interact.
     *   [Macroeconomics](https://en.m.wikipedia.org/wiki/Macroeconomics "Macroeconomics") – branch of economics dealing with the performance, structure, behavior, and decision-making of the whole economy
     *   [Microeconomics](https://en.m.wikipedia.org/wiki/Microeconomics "Microeconomics") – branch of economics that studies the behavior of individual households and firms in making decisions on the allocation of limited resources
     *   [Behavioural economics](https://en.m.wikipedia.org/wiki/Behavioural_economics "Behavioural economics") – Behavioral economics and the related field, behavioral finance, study the effects of social, cognitive and emotional factors on the economic decisions of individuals and institutions and the consequences for market prices, returns and the resource allocation.
@@ -421,7 +421,7 @@
 *   [Media studies](https://en.m.wikipedia.org/wiki/Media_studies "Media studies") – academic discipline and field of study that deals with the content, history and effects of various media; in particular, the 'mass media'.
     *   [Communication studies](https://en.m.wikipedia.org/wiki/Communication_studies "Communication studies") – academic field that deals with processes of human communication, commonly defined as the sharing of symbols to create meaning.
 
-*   [Philosophy](https://en.m.wikipedia.org/wiki/Outline_of_philosophy "Outline of philosophy") – study of general and fundamental problems concerning matters such as existence, knowledge, values, reason, mind, and language. Academic philosophy is considered a science by some.<sup id="cite_ref-5" class="reference" style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: 0.75em; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1; vertical-align: super; box-sizing: border-box; background: none;">[<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">[</span>5<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">]</span>](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-5)</sup> Others say that philosophy is not a science but it is instead a precursor of it.<sup id="cite_ref-6" class="reference" style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: 0.75em; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1; vertical-align: super; box-sizing: border-box; background: none;">[<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">[</span>6<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">]</span>](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-6)</sup> The role of philosophy is also a philosophical question.<sup id="cite_ref-7" class="reference" style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: 0.75em; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1; vertical-align: super; box-sizing: border-box; background: none;">[<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">[</span>7<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">]</span>](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-7)</sup>
+*   [Philosophy](https://en.m.wikipedia.org/wiki/Outline_of_philosophy "Outline of philosophy") – study of general and fundamental problems concerning matters such as existence, knowledge, values, reason, mind, and language. Academic philosophy is considered a science by some.[[5]](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-5) Others say that philosophy is not a science but it is instead a precursor of it.[[6]](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-6) The role of philosophy is also a philosophical question.[[7]](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-7)
     *   [Philosophy of language](https://en.m.wikipedia.org/wiki/Philosophy_of_language "Philosophy of language") – is concerned with four central problems: the nature of meaning, language use, language cognition, and the relationship between language and reality.
     *   [Philosophy of information](https://en.m.wikipedia.org/wiki/Philosophy_of_information "Philosophy of information") – (PI) is the area of research that studies conceptual issues arising at the intersection of computer science, information science, information technology, and philosophy.
     *   [Political philosophy](https://en.m.wikipedia.org/wiki/Political_philosophy "Political philosophy") – is the study of topics such as politics, liberty, justice, property, rights, law, and the enforcement of a legal code by authority.
@@ -501,9 +501,9 @@
     *   [Criminology](https://en.m.wikipedia.org/wiki/Criminology "Criminology") – study of the nature, extent, causes, and control of criminal behavior in both the individual and in society.
     *   [Demography](https://en.m.wikipedia.org/wiki/Demography "Demography") – statistical study of human populations and sub-populations.
 
-</div>
 
-## <span class="mw-headline" id="History_of_social_science" style="margin: 0px; padding: 0px 45px 0px 0px; border: 0px; font-size: 24px; font-stretch: inherit; line-height: 31.2000007629395px; vertical-align: baseline; box-sizing: border-box; color: rgb(37, 37, 37); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"></span>
+
+## 
 ### Education
 ### https://en.wikipedia.org/wiki/Outline_of_education
 ### Outline of Education
@@ -571,7 +571,7 @@
 ### Japenese
 ### French
 ### Economics
-*   [Economics](https://en.m.wikipedia.org/wiki/Outline_of_economics "Outline of economics") – analyzes the production, distribution, and consumption of goods and services. Not considered a science by some thinkers <sup id="cite_ref-4" class="reference" style="font-size: 0.75em; line-height: 1; vertical-align: super; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; box-sizing: border-box; background: none;">[<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">[</span>4<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; box-sizing: border-box; background: none;">]</span>](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-4)</sup> It aims to explain how economies work and how economic agents interact.
+*   [Economics](https://en.m.wikipedia.org/wiki/Outline_of_economics "Outline of economics") – analyzes the production, distribution, and consumption of goods and services. Not considered a science by some thinkers [[4]](https://en.m.wikipedia.org/wiki/Branches_of_social_science#cite_note-4) It aims to explain how economies work and how economic agents interact.
     *   [Macroeconomics](https://en.m.wikipedia.org/wiki/Macroeconomics "Macroeconomics") – branch of economics dealing with the performance, structure, behavior, and decision-making of the whole economy
     *   [Microeconomics](https://en.m.wikipedia.org/wiki/Microeconomics "Microeconomics") – branch of economics that studies the behavior of individual households and firms in making decisions on the allocation of limited resources
     *   [Behavioural economics](https://en.m.wikipedia.org/wiki/Behavioural_economics "Behavioural economics") – Behavioral economics and the related field, behavioral finance, study the effects of social, cognitive and emotional factors on the economic decisions of individuals and institutions and the consequences for market prices, returns and the resource allocation.
@@ -619,9 +619,9 @@
 ### Wikipedia Article on Art
 ### Philosophers
 ### Essence of art
-<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">The nature of art has been described by philosopher </span>[Richard Wollheim](https://en.wikipedia.org/wiki/Richard_Wollheim "Richard Wollheim")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> as "one of the most elusive of the traditional problems of human culture".</span><sup id="cite_ref-15" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[15]](https://en.wikipedia.org/wiki/Art#cite_note-15)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> Art has been defined as a vehicle for the expression or communication of emotions and ideas, a means for exploring and appreciating </span>[formal elements](https://en.wikipedia.org/wiki/Formalism_(art) "Formalism (art)")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> for their own sake, and as </span>_[mimesis](https://en.wikipedia.org/wiki/Mimesis "Mimesis")_<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> or </span>[representation](https://en.wikipedia.org/wiki/Representation_(arts) "Representation (arts)")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">. Art as mimesis has deep roots in the philosophy of </span>[Aristotle](https://en.wikipedia.org/wiki/Aristotle "Aristotle")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">.</span><sup id="cite_ref-Levinson5_16-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[16]](https://en.wikipedia.org/wiki/Art#cite_note-Levinson5-16)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> </span>[Leo Tolstoy](https://en.wikipedia.org/wiki/Leo_Tolstoy "Leo Tolstoy")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> identified art as a use of indirect means to communicate from one person to another.</span><sup id="cite_ref-Levinson5_16-1" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[16]](https://en.wikipedia.org/wiki/Art#cite_note-Levinson5-16)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> </span>[Benedetto Croce](https://en.wikipedia.org/wiki/Benedetto_Croce "Benedetto Croce")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> and </span>[R.G. Collingwood](https://en.wikipedia.org/wiki/R.G._Collingwood "R.G. Collingwood")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> advanced the </span>[idealist](https://en.wikipedia.org/wiki/Idealism "Idealism")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> view that art expresses emotions, and that the work of art therefore essentially exists in the mind of the creator.</span><sup id="cite_ref-17" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[17]](https://en.wikipedia.org/wiki/Art#cite_note-17)</sup><sup id="cite_ref-18" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[18]](https://en.wikipedia.org/wiki/Art#cite_note-18)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> The theory of art as form has its roots in the philosophy of </span>[Immanuel Kant](https://en.wikipedia.org/wiki/Immanuel_Kant "Immanuel Kant")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, and was developed in the early twentieth century by </span>[Roger Fry](https://en.wikipedia.org/wiki/Roger_Fry "Roger Fry")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> and </span>[Clive Bell](https://en.wikipedia.org/wiki/Clive_Bell "Clive Bell")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">. More recently, thinkers influenced by</span>[Martin Heidegger](https://en.wikipedia.org/wiki/Martin_Heidegger "Martin Heidegger")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> have interpreted art as the means by which a community develops for itself a medium for self-expression and interpretation.</span><sup id="cite_ref-19" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[19]](https://en.wikipedia.org/wiki/Art#cite_note-19)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> </span>[George Dickie](https://en.wikipedia.org/wiki/George_Dickie_(philosopher) "George Dickie (philosopher)")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> has offered an</span>[institutional theory of art](https://en.wikipedia.org/wiki/Institutional_theory_of_art "Institutional theory of art")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> that defines a work of art as any artifact upon which a qualified person or persons acting on behalf of the social institution commonly referred to as "the </span>[art world](https://en.wikipedia.org/wiki/Art_world "Art world")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">" has conferred "the status of candidate for appreciation".</span><sup id="cite_ref-20" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[20]](https://en.wikipedia.org/wiki/Art#cite_note-20)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> Larry Shiner has described fine art as "not an essence or a fate but something we have made. Art as we have generally understood it is a European invention barely two hundred years old.”</span><sup id="cite_ref-21" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[21]](https://en.wikipedia.org/wiki/Art#cite_note-21)</sup>
+The nature of art has been described by philosopher [Richard Wollheim](https://en.wikipedia.org/wiki/Richard_Wollheim "Richard Wollheim") as "one of the most elusive of the traditional problems of human culture".[[15]](https://en.wikipedia.org/wiki/Art#cite_note-15) Art has been defined as a vehicle for the expression or communication of emotions and ideas, a means for exploring and appreciating [formal elements](https://en.wikipedia.org/wiki/Formalism_(art) "Formalism (art)") for their own sake, and as _[mimesis](https://en.wikipedia.org/wiki/Mimesis "Mimesis")_ or [representation](https://en.wikipedia.org/wiki/Representation_(arts) "Representation (arts)"). Art as mimesis has deep roots in the philosophy of [Aristotle](https://en.wikipedia.org/wiki/Aristotle "Aristotle").[[16]](https://en.wikipedia.org/wiki/Art#cite_note-Levinson5-16) [Leo Tolstoy](https://en.wikipedia.org/wiki/Leo_Tolstoy "Leo Tolstoy") identified art as a use of indirect means to communicate from one person to another.[[16]](https://en.wikipedia.org/wiki/Art#cite_note-Levinson5-16) [Benedetto Croce](https://en.wikipedia.org/wiki/Benedetto_Croce "Benedetto Croce") and [R.G. Collingwood](https://en.wikipedia.org/wiki/R.G._Collingwood "R.G. Collingwood") advanced the [idealist](https://en.wikipedia.org/wiki/Idealism "Idealism") view that art expresses emotions, and that the work of art therefore essentially exists in the mind of the creator.[[17]](https://en.wikipedia.org/wiki/Art#cite_note-17)[[18]](https://en.wikipedia.org/wiki/Art#cite_note-18) The theory of art as form has its roots in the philosophy of [Immanuel Kant](https://en.wikipedia.org/wiki/Immanuel_Kant "Immanuel Kant"), and was developed in the early twentieth century by [Roger Fry](https://en.wikipedia.org/wiki/Roger_Fry "Roger Fry") and [Clive Bell](https://en.wikipedia.org/wiki/Clive_Bell "Clive Bell"). More recently, thinkers influenced by[Martin Heidegger](https://en.wikipedia.org/wiki/Martin_Heidegger "Martin Heidegger") have interpreted art as the means by which a community develops for itself a medium for self-expression and interpretation.[[19]](https://en.wikipedia.org/wiki/Art#cite_note-19) [George Dickie](https://en.wikipedia.org/wiki/George_Dickie_(philosopher) "George Dickie (philosopher)") has offered an[institutional theory of art](https://en.wikipedia.org/wiki/Institutional_theory_of_art "Institutional theory of art") that defines a work of art as any artifact upon which a qualified person or persons acting on behalf of the social institution commonly referred to as "the [art world](https://en.wikipedia.org/wiki/Art_world "Art world")" has conferred "the status of candidate for appreciation".[[20]](https://en.wikipedia.org/wiki/Art#cite_note-20) Larry Shiner has described fine art as "not an essence or a fate but something we have made. Art as we have generally understood it is a European invention barely two hundred years old.”[[21]](https://en.wikipedia.org/wiki/Art#cite_note-21)
 ### What's Art?
-<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Art is an act of expressing feelings, thoughts, and observations.</span><sup id="cite_ref-30" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[30]](https://en.wikipedia.org/wiki/Art#cite_note-30)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> There is an understanding that is reached with the material as a result of handling it, which facilitates one's thought processes</span>
+Art is an act of expressing feelings, thoughts, and observations.[[30]](https://en.wikipedia.org/wiki/Art#cite_note-30) There is an understanding that is reached with the material as a result of handling it, which facilitates one's thought processes
 ### General Outline
 *   [Architecture](https://en.wikipedia.org/wiki/Outline_of_architecture "Outline of architecture"), process and product of planning, designing and construction. Architectural works, in the material form of buildings, are often perceived as cultural and political symbols and as works of art.
 *   [Arts and crafts](https://en.wikipedia.org/wiki/Outline_of_crafts "Outline of crafts")
@@ -660,88 +660,88 @@
 *   [Typography](https://en.wikipedia.org/wiki/Typography "Typography")
 *   [Video art](https://en.wikipedia.org/wiki/Video_art "Video art")
 ### Fine Art
-<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">The second, and more recent, sense of the word </span>_art_<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> as an abbreviation for </span>_creative art_<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> or </span>_fine art_<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> emerged in the early 17th century.</span><sup id="cite_ref-13" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[13]](https://en.wikipedia.org/wiki/Art#cite_note-13)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> Fine art refers to a skill used to express the artist's creativity, or to engage the audience's aesthetic sensibilities, or to draw the audience towards consideration of more refined or </span>_finer_<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> work of art.</span>
+The second, and more recent, sense of the word _art_ as an abbreviation for _creative art_ or _fine art_ emerged in the early 17th century.[[13]](https://en.wikipedia.org/wiki/Art#cite_note-13) Fine art refers to a skill used to express the artist's creativity, or to engage the audience's aesthetic sensibilities, or to draw the audience towards consideration of more refined or _finer_ work of art.
 ### Commercial Art
-<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Often, if the skill is being used in a common or practical way, people will consider it a craft instead of art. Likewise, if the skill is being used in a commercial or industrial way, it may be considered </span>[commercial art](https://en.wikipedia.org/wiki/Commercial_art "Commercial art")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> instead of fine art</span>
+Often, if the skill is being used in a common or practical way, people will consider it a craft instead of art. Likewise, if the skill is being used in a commercial or industrial way, it may be considered [commercial art](https://en.wikipedia.org/wiki/Commercial_art "Commercial art") instead of fine art
 ### interactive media
 ### https://en.wikipedia.org/wiki/Interactive_media
 ### Decorative
-<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">The </span>**decorative arts**<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> are arts or crafts concerned with the design and manufacture of beautiful objects that are also functional. It includes</span>[interior design](https://en.wikipedia.org/wiki/Interior_design "Interior design")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, but not usually </span>[architecture](https://en.wikipedia.org/wiki/Architecture "Architecture")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">. The decorative arts are often categorized in opposition to the "</span>[fine arts](https://en.wikipedia.org/wiki/Fine_art "Fine art")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">", namely, </span>[painting](https://en.wikipedia.org/wiki/Painting "Painting")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">,</span>[drawing](https://en.wikipedia.org/wiki/Drawing "Drawing")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, </span>[photography](https://en.wikipedia.org/wiki/Photography "Photography")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, and large-scale </span>[sculpture](https://en.wikipedia.org/wiki/Sculpture "Sculpture")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, which generally have no function other than to be seen</span>
+The **decorative arts** are arts or crafts concerned with the design and manufacture of beautiful objects that are also functional. It includes[interior design](https://en.wikipedia.org/wiki/Interior_design "Interior design"), but not usually [architecture](https://en.wikipedia.org/wiki/Architecture "Architecture"). The decorative arts are often categorized in opposition to the "[fine arts](https://en.wikipedia.org/wiki/Fine_art "Fine art")", namely, [painting](https://en.wikipedia.org/wiki/Painting "Painting"),[drawing](https://en.wikipedia.org/wiki/Drawing "Drawing"), [photography](https://en.wikipedia.org/wiki/Photography "Photography"), and large-scale [sculpture](https://en.wikipedia.org/wiki/Sculpture "Sculpture"), which generally have no function other than to be seen
 ### Applied Arts
-<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> On the other hand, crafts and design are sometimes considered </span>[applied art](https://en.wikipedia.org/wiki/Applied_art "Applied art")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">. Some art followers have argued that the difference between fine art and applied art has more to do with value judgments made about the art than any clear definitional difference.</span><sup id="cite_ref-14" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block; color: rgb(37, 37, 37); font-family: sans-serif;">[[14]](https://en.wikipedia.org/wiki/Art#cite_note-14)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> However, even fine art often has goals beyond pure creativity and self-expression. The purpose of works of art may be to communicate ideas, such as in politically, spiritually, or philosophically motivated art; to create a sense of beauty (see </span>[aesthetics](https://en.wikipedia.org/wiki/Aesthetics "Aesthetics")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">); to explore the nature of perception; for pleasure; or to generate strong </span>[emotions](https://en.wikipedia.org/wiki/Emotion "Emotion")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">. The purpose may also be seemingly nonexistent.</span>
+ On the other hand, crafts and design are sometimes considered [applied art](https://en.wikipedia.org/wiki/Applied_art "Applied art"). Some art followers have argued that the difference between fine art and applied art has more to do with value judgments made about the art than any clear definitional difference.[[14]](https://en.wikipedia.org/wiki/Art#cite_note-14) However, even fine art often has goals beyond pure creativity and self-expression. The purpose of works of art may be to communicate ideas, such as in politically, spiritually, or philosophically motivated art; to create a sense of beauty (see [aesthetics](https://en.wikipedia.org/wiki/Aesthetics "Aesthetics")); to explore the nature of perception; for pleasure; or to generate strong [emotions](https://en.wikipedia.org/wiki/Emotion "Emotion"). The purpose may also be seemingly nonexistent.
 ### Visual Art
-[visual arts](https://en.wikipedia.org/wiki/Visual_arts "Visual arts")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, which includes the creation of images or objects in fields including painting, sculpture, </span>[printmaking](https://en.wikipedia.org/wiki/Printmaking "Printmaking")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, photography, and other visual media. </span>
+[visual arts](https://en.wikipedia.org/wiki/Visual_arts "Visual arts"), which includes the creation of images or objects in fields including painting, sculpture, [printmaking](https://en.wikipedia.org/wiki/Printmaking "Printmaking"), photography, and other visual media. 
 ### Painting
 ### Drawing
 ### My Drawing Road
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrZWoyc3hWVlNUdVE
 ### Modern Art
-<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">A common contemporary criticism of some </span>[modern art](https://en.wikipedia.org/wiki/Modern_art "Modern art")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> occurs along the lines of objecting to the apparent lack of skill or ability required in the production of the artistic object. In conceptual art, </span>[Marcel Duchamp](https://en.wikipedia.org/wiki/Marcel_Duchamp "Marcel Duchamp")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">'s "</span>[Fountain](https://en.wikipedia.org/wiki/Fountain_(Duchamp) "Fountain (Duchamp)")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">" is among the first examples of pieces wherein the artist used found objects ("ready-made") and exercised no traditionally recognised set of skills. </span>[Tracey Emin](https://en.wikipedia.org/wiki/Tracey_Emin "Tracey Emin")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">'s </span>_My Bed_<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, or </span>[Damien Hirst](https://en.wikipedia.org/wiki/Damien_Hirst "Damien Hirst")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">'s </span>_The Physical Impossibility of Death in the Mind of Someone Living_<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> follow this example and also manipulate the mass media. Emin slept (and engaged in other activities) in her bed before placing the result in a gallery as work of art. Hirst came up with the conceptual design for the artwork but has left most of the eventual creation of many works to employed artisans. Hirst's celebrity is founded entirely on his ability to produce shocking concepts. The actual production in many conceptual and contemporary works of art is a matter of assembly of found objects. However, there are many modernist and contemporary artists who continue to excel in the skills of drawing and painting and in creating </span>_hands-on_<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> works of art.</span>
+A common contemporary criticism of some [modern art](https://en.wikipedia.org/wiki/Modern_art "Modern art") occurs along the lines of objecting to the apparent lack of skill or ability required in the production of the artistic object. In conceptual art, [Marcel Duchamp](https://en.wikipedia.org/wiki/Marcel_Duchamp "Marcel Duchamp")'s "[Fountain](https://en.wikipedia.org/wiki/Fountain_(Duchamp) "Fountain (Duchamp)")" is among the first examples of pieces wherein the artist used found objects ("ready-made") and exercised no traditionally recognised set of skills. [Tracey Emin](https://en.wikipedia.org/wiki/Tracey_Emin "Tracey Emin")'s _My Bed_, or [Damien Hirst](https://en.wikipedia.org/wiki/Damien_Hirst "Damien Hirst")'s _The Physical Impossibility of Death in the Mind of Someone Living_ follow this example and also manipulate the mass media. Emin slept (and engaged in other activities) in her bed before placing the result in a gallery as work of art. Hirst came up with the conceptual design for the artwork but has left most of the eventual creation of many works to employed artisans. Hirst's celebrity is founded entirely on his ability to produce shocking concepts. The actual production in many conceptual and contemporary works of art is a matter of assembly of found objects. However, there are many modernist and contemporary artists who continue to excel in the skills of drawing and painting and in creating _hands-on_ works of art.
 ### Performaing Arts
 https://en.wikipedia.org/wiki/Performing_arts
 ### Music
 ### Guitar
 ### Purpose of Art
 ### Non Motiviated
-### <span class="mw-headline" id="Non-motivated_functions_of_art">Non-motivated functions of art</span>
+### Non-motivated functions of art
 
 The non-motivated purposes of art are those that are integral to being human, transcend the individual, or do not fulfill a specific external purpose. In this sense, Art, as creativity, is something humans must do by their very nature (i.e., no other species creates art), and is therefore beyond utility.
 
 1.  _[Basic human instinct for harmony, balance, rhythm](https://en.wikipedia.org/wiki/Fine_arts "Fine arts")._ Art at this level is not an action or an object, but an internal appreciation of balance and harmony (beauty), and therefore an aspect of being human beyond utility.
 
-    > "Imitation, then, is one instinct of our nature. Next, there is the instinct for 'harmony' and rhythm, meters being manifestly sections of rhythm. Persons, therefore, starting with this natural gift developed by degrees their special aptitudes, till their rude improvisations gave birth to Poetry." -Aristotle<sup id="cite_ref-31" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[31]](https://en.wikipedia.org/wiki/Art#cite_note-31)</sup>
+    > "Imitation, then, is one instinct of our nature. Next, there is the instinct for 'harmony' and rhythm, meters being manifestly sections of rhythm. Persons, therefore, starting with this natural gift developed by degrees their special aptitudes, till their rude improvisations gave birth to Poetry." -Aristotle[[31]](https://en.wikipedia.org/wiki/Art#cite_note-31)
 
 2.  _Experience of the mysterious._ Art provides a way to experience one's self in relation to the universe. This experience may often come unmotivated, as one appreciates art, music or poetry.
 
-    > "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science." -Albert Einstein<sup id="cite_ref-32" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[32]](https://en.wikipedia.org/wiki/Art#cite_note-32)</sup>
+    > "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science." -Albert Einstein[[32]](https://en.wikipedia.org/wiki/Art#cite_note-32)
 
 3.  _Expression of the imagination._ Art provides a means to express the imagination in non-grammatic ways that are not tied to the formality of spoken or written language. Unlike words, which come in sequences and each of which have a definite meaning, art provides a range of forms, symbols and ideas with meanings that are malleable.
 
-    > "Jupiter's eagle [as an example of art] is not, like logical (aesthetic) attributes of an object, the concept of the sublimity and majesty of creation, but rather something else – something that gives the imagination an incentive to spread its flight over a whole host of kindred representations that provoke more thought than admits of expression in a concept determined by words. They furnish an aesthetic idea, which serves the above rational idea as a substitute for logical presentation, but with the proper function, however, of animating the mind by opening out for it a prospect into a field of kindred representations stretching beyond its ken." -Immanuel Kant<sup id="cite_ref-33" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[33]](https://en.wikipedia.org/wiki/Art#cite_note-33)</sup>
+    > "Jupiter's eagle [as an example of art] is not, like logical (aesthetic) attributes of an object, the concept of the sublimity and majesty of creation, but rather something else – something that gives the imagination an incentive to spread its flight over a whole host of kindred representations that provoke more thought than admits of expression in a concept determined by words. They furnish an aesthetic idea, which serves the above rational idea as a substitute for logical presentation, but with the proper function, however, of animating the mind by opening out for it a prospect into a field of kindred representations stretching beyond its ken." -Immanuel Kant[[33]](https://en.wikipedia.org/wiki/Art#cite_note-33)
 
 4.  _Ritualistic and symbolic functions._ In many cultures, art is used in rituals, performances and dances as a decoration or symbol. While these often have no specific utilitarian (motivated) purpose, anthropologists know that they often serve a purpose at the level of meaning within a particular culture. This meaning is not furnished by any one individual, but is often the result of many generations of change, and of a cosmological relationship within the culture.
 
-    > "Most scholars who deal with rock paintings or objects recovered from prehistoric contexts that cannot be explained in utilitarian terms and are thus categorized as decorative, ritual or symbolic, are aware of the trap posed by the term 'art'." -Silva Tomaskova<sup id="cite_ref-34" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[34]](https://en.wikipedia.org/wiki/Art#cite_note-34)</sup>
+    > "Most scholars who deal with rock paintings or objects recovered from prehistoric contexts that cannot be explained in utilitarian terms and are thus categorized as decorative, ritual or symbolic, are aware of the trap posed by the term 'art'." -Silva Tomaskova[[34]](https://en.wikipedia.org/wiki/Art#cite_note-34)
 ### Motivated
-### <span class="mw-headline" id="Motivated_functions_of_art">Motivated functions of art</span>
+### Motivated functions of art
 
 Motivated purposes of art refer to intentional, conscious actions on the part of the artists or creator. These may be to bring about political change, to comment on an aspect of society, to convey a specific emotion or mood, to address personal psychology, to illustrate another discipline, to (with commercial arts) to sell a product, or simply as a form of communication.
 
 1.  _Communication._ Art, at its simplest, is a form of communication. As most forms of communication have an intent or goal directed toward another individual, this is a motivated purpose. Illustrative arts, such as scientific illustration, are a form of art as communication. Maps are another example. However, the content need not be scientific. Emotions, moods and feelings are also communicated through art.
 
-    > "[Art is a set of] artefacts or images with symbolic meanings as a means of communication." -Steve Mithen<sup id="cite_ref-35" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[35]](https://en.wikipedia.org/wiki/Art#cite_note-35)</sup>
+    > "[Art is a set of] artefacts or images with symbolic meanings as a means of communication." -Steve Mithen[[35]](https://en.wikipedia.org/wiki/Art#cite_note-35)
 
-2.  _Art as entertainment_. Art may seek to bring about a particular emotion or mood, for the purpose of relaxing or entertaining the viewer. This is often the function of the art industries of Motion Pictures and Video Games.<sup class="noprint Inline-Template Template-Fact" style="line-height: 1; font-size: 11.1999998092651px; white-space: nowrap;">[_[<span title="This claim needs references to reliable sources. (July 2013)">citation needed</span>](https://en.wikipedia.org/wiki/Wikipedia:Citation_needed "Wikipedia:Citation needed")_]</sup>
+2.  _Art as entertainment_. Art may seek to bring about a particular emotion or mood, for the purpose of relaxing or entertaining the viewer. This is often the function of the art industries of Motion Pictures and Video Games.[_[citation needed](https://en.wikipedia.org/wiki/Wikipedia:Citation_needed "Wikipedia:Citation needed")_]
 3.  _The Avante-Garde. Art for political change._ One of the defining functions of early twentieth-century art has been to use visual images to bring about political change. Art movements that had this goal—[Dadaism](https://en.wikipedia.org/wiki/Dadaism "Dadaism"), [Surrealism](https://en.wikipedia.org/wiki/Surrealism "Surrealism"), [Russian constructivism](https://en.wikipedia.org/wiki/Russian_constructivism "Russian constructivism"), and [Abstract Expressionism](https://en.wikipedia.org/wiki/Abstract_Expressionism "Abstract Expressionism"), among others—are collectively referred to as the _avante-garde_arts.
 
-    > "By contrast, the realistic attitude, inspired by positivism, from Saint Thomas Aquinas to Anatole France, clearly seems to me to be hostile to any intellectual or moral advancement. I loathe it, for it is made up of mediocrity, hate, and dull conceit. It is this attitude which today gives birth to these ridiculous books, these insulting plays. It constantly feeds on and derives strength from the newspapers and stultifies both science and art by assiduously flattering the lowest of tastes; clarity bordering on stupidity, a dog's life." -André Breton (Surrealism)<sup id="cite_ref-36" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[36]](https://en.wikipedia.org/wiki/Art#cite_note-36)</sup>
+    > "By contrast, the realistic attitude, inspired by positivism, from Saint Thomas Aquinas to Anatole France, clearly seems to me to be hostile to any intellectual or moral advancement. I loathe it, for it is made up of mediocrity, hate, and dull conceit. It is this attitude which today gives birth to these ridiculous books, these insulting plays. It constantly feeds on and derives strength from the newspapers and stultifies both science and art by assiduously flattering the lowest of tastes; clarity bordering on stupidity, a dog's life." -André Breton (Surrealism)[[36]](https://en.wikipedia.org/wiki/Art#cite_note-36)
 
-4.  _Art as a "free zone"_, removed from the action of the social censure. Unlike the [avant-garde](https://en.wikipedia.org/wiki/Avant-garde "Avant-garde") movements, which wanted to erase cultural differences in order to produce new universal values, [contemporary art](https://en.wikipedia.org/wiki/Contemporary_art "Contemporary art") has enhanced its tolerance towards cultural differences as well as its critical and liberating functions (social inquiry, activism, subversion, deconstruction...), becoming a more open place for research and experimentation.<sup id="cite_ref-37" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[37]](https://en.wikipedia.org/wiki/Art#cite_note-37)</sup>
+4.  _Art as a "free zone"_, removed from the action of the social censure. Unlike the [avant-garde](https://en.wikipedia.org/wiki/Avant-garde "Avant-garde") movements, which wanted to erase cultural differences in order to produce new universal values, [contemporary art](https://en.wikipedia.org/wiki/Contemporary_art "Contemporary art") has enhanced its tolerance towards cultural differences as well as its critical and liberating functions (social inquiry, activism, subversion, deconstruction...), becoming a more open place for research and experimentation.[[37]](https://en.wikipedia.org/wiki/Art#cite_note-37)
 5.  _Art for social inquiry, subversion and/or anarchy._ While similar to art for political change, subversive or deconstructivist art may seek to question aspects of society without any specific political goal. In this case, the function of art may be simply to criticize some aspect of society.
 
-    <div class="center" style="width: 1081.203125px;">
+    
 
-    <div class="thumb tnone" style="margin-left: auto; margin-right: auto; margin-bottom: 0.5em; width: auto; background-color: transparent;">
+    
 
-    <div class="thumbinner" style="margin-left: auto; margin-right: auto; min-width: 100px; border: 1px solid rgb(204, 204, 204); padding: 3px; font-size: 13.1599998474121px; overflow: hidden; width: 702px; background-color: rgb(249, 249, 249);">[![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Graffiti_Panorama_rome.jpg/700px-Graffiti_Panorama_rome.jpg)](https://en.wikipedia.org/wiki/File:Graffiti_Panorama_rome.jpg)
+    [![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Graffiti_Panorama_rome.jpg/700px-Graffiti_Panorama_rome.jpg)](https://en.wikipedia.org/wiki/File:Graffiti_Panorama_rome.jpg)
 
-    <div class="thumbcaption" style="margin-left: auto; margin-right: auto; border: none; line-height: 1.4em; padding: 3px; font-size: 12.370400428772px; text-align: left;">
+    
 
-    <div class="magnify" style="margin-left: 3px; margin-right: 0px; float: right;">[](https://en.wikipedia.org/wiki/File:Graffiti_Panorama_rome.jpg "Enlarge")</div>
+    [](https://en.wikipedia.org/wiki/File:Graffiti_Panorama_rome.jpg "Enlarge")
 
-    [Spray-paint](https://en.wikipedia.org/wiki/Aerosol_paint "Aerosol paint") [graffiti](https://en.wikipedia.org/wiki/Graffiti "Graffiti") on a wall in Rome</div>
+    [Spray-paint](https://en.wikipedia.org/wiki/Aerosol_paint "Aerosol paint") [graffiti](https://en.wikipedia.org/wiki/Graffiti "Graffiti") on a wall in Rome
 
-    </div>
+    
 
-    </div>
+    
 
-    </div>
+    
 
     [Graffiti art](https://en.wikipedia.org/wiki/Graffiti#Uses "Graffiti") and other types of [street art](https://en.wikipedia.org/wiki/Street_art "Street art") are graphics and images that are [spray-painted](https://en.wikipedia.org/wiki/Spray_painting "Spray painting") or [stencilled](https://en.wikipedia.org/wiki/Stencil "Stencil") on publicly viewable walls, buildings, buses, trains, and bridges, usually without permission. Certain art forms, such as graffiti, may also be illegal when they break laws (in this case vandalism).
-6.  _Art for social causes._ Art can be used to raise awareness for a large variety of causes. A number of art activities were aimed at raising awareness of [autism](https://en.wikipedia.org/wiki/Autism "Autism"),<sup id="cite_ref-38" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[38]](https://en.wikipedia.org/wiki/Art#cite_note-38)</sup><sup id="cite_ref-39" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[39]](https://en.wikipedia.org/wiki/Art#cite_note-39)</sup><sup id="cite_ref-40" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[40]](https://en.wikipedia.org/wiki/Art#cite_note-40)</sup>cancer,<sup id="cite_ref-41" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[41]](https://en.wikipedia.org/wiki/Art#cite_note-41)</sup><sup id="cite_ref-42" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[42]](https://en.wikipedia.org/wiki/Art#cite_note-42)</sup><sup id="cite_ref-43" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[43]](https://en.wikipedia.org/wiki/Art#cite_note-43)</sup> [human trafficking](https://en.wikipedia.org/wiki/Human_trafficking "Human trafficking"),<sup id="cite_ref-44" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[44]](https://en.wikipedia.org/wiki/Art#cite_note-44)</sup><sup id="cite_ref-45" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[45]](https://en.wikipedia.org/wiki/Art#cite_note-45)</sup> and a variety of other topics, such as ocean conservation,<sup id="cite_ref-46" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[46]](https://en.wikipedia.org/wiki/Art#cite_note-46)</sup> human rights in [Darfur](https://en.wikipedia.org/wiki/Darfur "Darfur"),<sup id="cite_ref-47" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[47]](https://en.wikipedia.org/wiki/Art#cite_note-47)</sup> murdered and missing Aboriginal women,<sup id="cite_ref-48" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[48]](https://en.wikipedia.org/wiki/Art#cite_note-48)</sup> elder abuse,<sup id="cite_ref-49" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[49]](https://en.wikipedia.org/wiki/Art#cite_note-49)</sup> and pollution.<sup id="cite_ref-50" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[50]](https://en.wikipedia.org/wiki/Art#cite_note-50)</sup> [Trashion](https://en.wikipedia.org/wiki/Trashion "Trashion"), using trash to make fashion, practiced by artists such as [Marina DeBris](https://en.wikipedia.org/wiki/Marina_DeBris "Marina DeBris") is one example of using art to raise awareness about pollution.
+6.  _Art for social causes._ Art can be used to raise awareness for a large variety of causes. A number of art activities were aimed at raising awareness of [autism](https://en.wikipedia.org/wiki/Autism "Autism"),[[38]](https://en.wikipedia.org/wiki/Art#cite_note-38)[[39]](https://en.wikipedia.org/wiki/Art#cite_note-39)[[40]](https://en.wikipedia.org/wiki/Art#cite_note-40)cancer,[[41]](https://en.wikipedia.org/wiki/Art#cite_note-41)[[42]](https://en.wikipedia.org/wiki/Art#cite_note-42)[[43]](https://en.wikipedia.org/wiki/Art#cite_note-43) [human trafficking](https://en.wikipedia.org/wiki/Human_trafficking "Human trafficking"),[[44]](https://en.wikipedia.org/wiki/Art#cite_note-44)[[45]](https://en.wikipedia.org/wiki/Art#cite_note-45) and a variety of other topics, such as ocean conservation,[[46]](https://en.wikipedia.org/wiki/Art#cite_note-46) human rights in [Darfur](https://en.wikipedia.org/wiki/Darfur "Darfur"),[[47]](https://en.wikipedia.org/wiki/Art#cite_note-47) murdered and missing Aboriginal women,[[48]](https://en.wikipedia.org/wiki/Art#cite_note-48) elder abuse,[[49]](https://en.wikipedia.org/wiki/Art#cite_note-49) and pollution.[[50]](https://en.wikipedia.org/wiki/Art#cite_note-50) [Trashion](https://en.wikipedia.org/wiki/Trashion "Trashion"), using trash to make fashion, practiced by artists such as [Marina DeBris](https://en.wikipedia.org/wiki/Marina_DeBris "Marina DeBris") is one example of using art to raise awareness about pollution.
 7.  _Art for psychological and healing purposes._ Art is also used by art therapists, psychotherapists and clinical psychologists as [art therapy](https://en.wikipedia.org/wiki/Art_therapy "Art therapy"). The [Diagnostic Drawing Series](https://en.wikipedia.org/wiki/Art_therapy#The_Diagnostic_Drawing_Series_.28DDS.29 "Art therapy"), for example, is used to determine the personality and emotional functioning of a patient. The end product is not the principal goal in this case, but rather a process of healing, through creative acts, is sought. The resultant piece of artwork may also offer insight into the troubles experienced by the subject and may suggest suitable approaches to be used in more conventional forms of psychiatric therapy.
-8.  _Art for propaganda, or commercialism._ Art is often utilized as a form of propaganda, and thus can be used to subtly influence popular conceptions or mood. In a similar way, art that tries to sell a product also influences mood and emotion. In both cases, the purpose of art here is to subtly manipulate the viewer into a particular emotional or psychological response toward a particular idea or object.<sup id="cite_ref-51" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[51]](https://en.wikipedia.org/wiki/Art#cite_note-51)</sup>
-9.  _Art as a fitness indicator._ It has been argued that the ability of the human brain by far exceeds what was needed for survival in the ancestral environment. One [evolutionary psychology](https://en.wikipedia.org/wiki/Evolutionary_psychology "Evolutionary psychology") explanation for this is that the human brain and associated traits (such as artistic ability and creativity) are the human equivalent of the [peacock](https://en.wikipedia.org/wiki/Peacock "Peacock")'s tail. The purpose of the male peacock's extravagant tail has been argued to be to attract females (see also [Fisherian runaway](https://en.wikipedia.org/wiki/Fisherian_runaway "Fisherian runaway") and [handicap principle](https://en.wikipedia.org/wiki/Handicap_principle "Handicap principle")). According to this theory superior execution of art was evolutionary important because it attracted mates.<sup id="cite_ref-Dutton_52-0" class="reference" style="line-height: 1; font-size: 11.1999998092651px; display: inline-block;">[[52]](https://en.wikipedia.org/wiki/Art#cite_note-Dutton-52)</sup>
+8.  _Art for propaganda, or commercialism._ Art is often utilized as a form of propaganda, and thus can be used to subtly influence popular conceptions or mood. In a similar way, art that tries to sell a product also influences mood and emotion. In both cases, the purpose of art here is to subtly manipulate the viewer into a particular emotional or psychological response toward a particular idea or object.[[51]](https://en.wikipedia.org/wiki/Art#cite_note-51)
+9.  _Art as a fitness indicator._ It has been argued that the ability of the human brain by far exceeds what was needed for survival in the ancestral environment. One [evolutionary psychology](https://en.wikipedia.org/wiki/Evolutionary_psychology "Evolutionary psychology") explanation for this is that the human brain and associated traits (such as artistic ability and creativity) are the human equivalent of the [peacock](https://en.wikipedia.org/wiki/Peacock "Peacock")'s tail. The purpose of the male peacock's extravagant tail has been argued to be to attract females (see also [Fisherian runaway](https://en.wikipedia.org/wiki/Fisherian_runaway "Fisherian runaway") and [handicap principle](https://en.wikipedia.org/wiki/Handicap_principle "Handicap principle")). According to this theory superior execution of art was evolutionary important because it attracted mates.[[52]](https://en.wikipedia.org/wiki/Art#cite_note-Dutton-52)
 
 The functions of art described above are not mutually exclusive, as many of them may overlap. For example, art for the purpose of entertainment may also seek to sell a product, i.e. the movie or video game.
 # Humanities
@@ -768,7 +768,7 @@ The functions of art described above are not mutually exclusive, as many of them
     *   [Data structures](https://en.m.wikipedia.org/wiki/Data_structures "Data structures") – particular way of storing and organizing data in a computer so that it can be used efficiently.
     *   [Computer architecture](https://en.m.wikipedia.org/wiki/Computer_architecture "Computer architecture") – In computer science and engineering, computer architecture is the practical art of selecting and interconnecting hardware components to create computers that meet functional, performance and cost goals and the formal modeling of those systems.
         *   [VLSI design](https://en.m.wikipedia.org/wiki/Very-large-scale_integration "Very-large-scale integration") – process of creating integrated circuits by combining thousands of transistors into a single chip
-    *   [Computer communications (networks)](https://en.m.wikipedia.org/wiki/Computer_networking "Computer networking")<span style="font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; background-color: initial;"> – collection of hardware components and computers interconnected by communication channels that allow sharing of resources and information</span>  
+    *   [Computer communications (networks)](https://en.m.wikipedia.org/wiki/Computer_networking "Computer networking") – collection of hardware components and computers interconnected by communication channels that allow sharing of resources and information  
 
     *   *   [Information theory](https://en.m.wikipedia.org/wiki/Information_theory "Information theory") – branch of applied mathematics and electrical engineering involving the quantification of information
         *   Internet – global system of interconnected computer networks that use the standard Internet protocol suite (often called TCP/IP, although not all applications use TCP) to serve billions of users worldwide.
@@ -825,9 +825,9 @@ The functions of art described above are not mutually exclusive, as many of them
 ### Patterns
 # Design Patterns
 
-<div class="content" style="box-sizing: border-box; margin: 0px; color: rgb(68, 68, 68); font-family: 'PT Sans', sans-serif; font-size: 16px; line-height: 22.3999996185303px;">
 
-In software engineering, a <span style="box-sizing: border-box; margin: 0px; font-weight: 700;">design pattern</span> is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+
+In software engineering, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
 
 ### Uses of Design Patterns
 
@@ -841,7 +841,7 @@ In addition, patterns allow developers to communicate using well-known, well und
 
 These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
 
-<div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 225px;">[![Example of Abstract Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory_example1.svg)](https://sourcemaking.com/design_patterns/abstract_factory)</div>
+[![Example of Abstract Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory_example1.svg)](https://sourcemaking.com/design_patterns/abstract_factory)
 
 *   [Abstract Factory](https://sourcemaking.com/design_patterns/abstract_factory "Provides a way to encapsulate a group of individual factories that have a common theme.")  
     Creates an instance of several families of classes
@@ -860,7 +860,7 @@ These design patterns are all about class instantiation. This pattern can be fur
 
 These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.
 
-<div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 225px;">[![](https://sourcemaking.com/files/v2/content/patterns/Decorator_example.svg)](https://sourcemaking.com/design_patterns/decorator)</div>
+[![](https://sourcemaking.com/files/v2/content/patterns/Decorator_example.svg)](https://sourcemaking.com/design_patterns/decorator)
 
 *   [Adapter](https://sourcemaking.com/design_patterns/adapter "Adapts one interface for a class into one that a client expects.")  
     Match interfaces of different classes
@@ -874,7 +874,7 @@ These design patterns are all about Class and Object composition. Structural cla
     A single class that represents an entire subsystem
 *   [Flyweight](https://sourcemaking.com/design_patterns/flyweight "When many objects must be manipulated and these cannot afford to have extraneous data, flyweight is appropriate.")  
     A fine-grained instance used for efficient sharing
-*   <div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 218.6875px;">[![](https://sourcemaking.com/files/v2/content/patterns/Proxy_example1.svg)](https://sourcemaking.com/design_patterns/proxy)</div>
+*   [![](https://sourcemaking.com/files/v2/content/patterns/Proxy_example1.svg)](https://sourcemaking.com/design_patterns/proxy)
 
     [Private Class Data](https://sourcemaking.com/design_patterns/private_class_data "Restricts accessor/mutator access")  
     Restricts accessor/mutator access
@@ -885,7 +885,7 @@ These design patterns are all about Class and Object composition. Structural cla
 
 These design patterns are all about Class's objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.
 
-<div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 225px;">[![](https://sourcemaking.com/files/v2/content/patterns/Interpreter_example1.svg)](https://sourcemaking.com/design_patterns/interpreter)</div>
+[![](https://sourcemaking.com/files/v2/content/patterns/Interpreter_example1.svg)](https://sourcemaking.com/design_patterns/interpreter)
 
 *   [Chain of responsibility](https://sourcemaking.com/design_patterns/chain_of_responsibility "Source of command objects and a series of processing objects.")  
     A way of passing a request between a chain of objects
@@ -903,7 +903,7 @@ These design patterns are all about Class's objects communication. Behavioral pa
     Designed to act as a default value of an object
 *   [Observer](https://sourcemaking.com/design_patterns/observer "Observes the state of an object in a program.")  
     A way of notifying change to a number of classes
-*   <div class="ebook_ignore" style="box-sizing: border-box; margin: 0px; float: right; width: 218.6875px;">[![](https://sourcemaking.com/files/v2/content/patterns/State_example1.svg)](https://sourcemaking.com/design_patterns/state)</div>
+*   [![](https://sourcemaking.com/files/v2/content/patterns/State_example1.svg)](https://sourcemaking.com/design_patterns/state)
 
     [State](https://sourcemaking.com/design_patterns/state "Represent the state of an object.")  
     Alter an object's behavior when its state changes
@@ -914,13 +914,13 @@ These design patterns are all about Class's objects communication. Behavioral pa
 *   [Visitor](https://sourcemaking.com/design_patterns/visitor "A way of separating an algorithm from an object structure.")  
     Defines a new operation to a class without change
 
-</div>
+
 ### Architectural patterns
-<div style="margin: 0px; padding: 0px; border: 0px; font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; font-stretch: inherit; line-height: 26.3999996185303px; vertical-align: baseline; color: rgb(37, 37, 37); background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-An **architectural pattern** is a general, reusable solution to a commonly occurring problem in[software architecture](https://en.m.wikipedia.org/wiki/Software_architecture "Software architecture") within a given context.<sup id="cite_ref-TMD_1-0" class="reference" style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: 0.75em; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1; vertical-align: super; background: none;">[<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; background: none;">[</span>1<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; background: none;">]</span>](https://en.m.wikipedia.org/wiki/Architectural_pattern#cite_note-TMD-1)</sup>Architectural patterns are similar to software [design patterns](https://en.m.wikipedia.org/wiki/Design_pattern_(computer_science) "Design pattern (computer science)") but have a broader scope. The architectural patterns address various issues in [software engineering](https://en.m.wikipedia.org/wiki/Software_engineering "Software engineering"), such as [computer hardware](https://en.m.wikipedia.org/wiki/Computer_hardware "Computer hardware")performance limitations, [high availability](https://en.m.wikipedia.org/wiki/High_availability "High availability") and minimization of a [business risk](https://en.m.wikipedia.org/wiki/Business_risk "Business risk"). Some architectural patterns have been implemented within [software frameworks](https://en.m.wikipedia.org/wiki/Software_framework "Software framework").
 
-</div>
+An **architectural pattern** is a general, reusable solution to a commonly occurring problem in[software architecture](https://en.m.wikipedia.org/wiki/Software_architecture "Software architecture") within a given context.[[1]](https://en.m.wikipedia.org/wiki/Architectural_pattern#cite_note-TMD-1)Architectural patterns are similar to software [design patterns](https://en.m.wikipedia.org/wiki/Design_pattern_(computer_science) "Design pattern (computer science)") but have a broader scope. The architectural patterns address various issues in [software engineering](https://en.m.wikipedia.org/wiki/Software_engineering "Software engineering"), such as [computer hardware](https://en.m.wikipedia.org/wiki/Computer_hardware "Computer hardware")performance limitations, [high availability](https://en.m.wikipedia.org/wiki/High_availability "High availability") and minimization of a [business risk](https://en.m.wikipedia.org/wiki/Business_risk "Business risk"). Some architectural patterns have been implemented within [software frameworks](https://en.m.wikipedia.org/wiki/Software_framework "Software framework").
+
+
 ### https://en.m.wikipedia.org/wiki/Architectural_pattern
 ### Has all archetictural patterns
 ### Design patterns
@@ -929,19 +929,19 @@ An **architectural pattern** is a general, reusable solution to a commonly occ
 ### Dependency injection
 ### http://stackoverflow.com/questions/130794/what-is-dependency-injection
 ### Paradigms
-<table class="vertical-navbox nowraplinks" style="font-size: 12.3199996948242px; color: rgb(37, 37, 37); font-family: sans-serif; clear: right; width: 22em; margin: 0px 0px 1em 1em; border: 1px solid rgb(170, 170, 170); padding: 0.2em; -webkit-border-horizontal-spacing: 0.4em; text-align: center; line-height: 1.4em; background: rgb(249, 249, 249);">
 
-<tbody>
 
-<tr>
 
-<th style="padding: 0.2em 0.4em; font-size: 17.8639984130859px; line-height: 1.2em;">[Programming paradigms](https://en.wikipedia.org/wiki/Programming_paradigm "Programming paradigm")</th>
 
-</tr>
 
-<tr>
 
-<td style="padding: 0px 0.1em 0.4em; text-align: left;">
+[Programming paradigms](https://en.wikipedia.org/wiki/Programming_paradigm "Programming paradigm")
+
+
+
+
+
+
 
 *   [Action](https://en.wikipedia.org/wiki/Action_language "Action language")
 *   [Agent-oriented](https://en.wikipedia.org/wiki/Agent-oriented_programming "Agent-oriented programming")
@@ -956,7 +956,7 @@ An **architectural pattern** is a general, reusable solution to a commonly occ
         *   [Flow-based](https://en.wikipedia.org/wiki/Flow-based_programming "Flow-based programming")
         *   Cell-oriented ([spreadsheets](https://en.wikipedia.org/wiki/Spreadsheet "Spreadsheet"))
         *   [Reactive](https://en.wikipedia.org/wiki/Reactive_programming "Reactive programming")
-    *   <span class="selflink" style="font-weight: 700; white-space: nowrap;">Functional</span>
+    *   Functional
         *   [Functional logic](https://en.wikipedia.org/wiki/Functional_logic_programming "Functional logic programming")
     *   [Logic](https://en.wikipedia.org/wiki/Logic_programming "Logic programming")
         *   [Abductive logic](https://en.wikipedia.org/wiki/Abductive_logic_programming "Abductive logic programming")
@@ -1015,13 +1015,13 @@ An **architectural pattern** is a general, reusable solution to a commonly occ
 *   [Probabilistic](https://en.wikipedia.org/wiki/Probabilistic_programming_language "Probabilistic programming language")
 *   [Concept](https://en.wikipedia.org/wiki/Concept_programming "Concept programming")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
+
+
+
+
 ### Functional Reactive Programming
 ### Object Oriented Programming
 ### Functional Programming
@@ -1030,13 +1030,13 @@ An **architectural pattern** is a general, reusable solution to a commonly occ
 ### Basics
 Variables, types, operators/ flow control (and, or,if,else...)
 
-<div>, loops, functions</div>
+, loops, functions
 
-<div>  
+  
 
-<div>error handling, objects, classes, interface, inheritance</div>
+error handling, objects, classes, interface, inheritance
 
-</div>
+
 ### Wikiversity Courses
 ### https://en.wikiversity.org/wiki/Introduction_to_Programming
 ### https://en.wikiversity.org/wiki/Introduction_to_Algorithms
@@ -1049,25 +1049,25 @@ Variables, types, operators/ flow control (and, or,if,else...)
 ### http://www.learnhowtobecome.org/computer-programmer/
 ### How to Become a programmer
 ### Program Execution
-<table class="vertical-navbox nowraplinks" style="font-size: 12.3199996948242px; color: rgb(37, 37, 37); font-family: sans-serif; clear: right; width: 22em; margin: 0.5em 0px 1em 1em; border: 1px solid rgb(170, 170, 170); padding: 0.2em; -webkit-border-horizontal-spacing: 0.4em; text-align: center; line-height: 1.4em; background: rgb(249, 249, 249);">
 
-<tbody>
 
-<tr>
 
-<th style="padding: 0.2em 0.4em; font-size: 17.8639984130859px; line-height: 1.2em;">[Program execution](https://en.wikipedia.org/wiki/Execution_(computing) "Execution (computing)")</th>
 
-</tr>
 
-<tr>
 
-<th style="padding: 0.1em;">General topics</th>
+[Program execution](https://en.wikipedia.org/wiki/Execution_(computing) "Execution (computing)")
 
-</tr>
 
-<tr>
 
-<td style="padding: 0px 0.1em 0.4em; text-align: left;">
+
+
+General topics
+
+
+
+
+
+
 
 *   [Runtime system](https://en.wikipedia.org/wiki/Runtime_system "Runtime system")
 *   [Runtime library](https://en.wikipedia.org/wiki/Runtime_library "Runtime library")
@@ -1078,21 +1078,21 @@ Variables, types, operators/ flow control (and, or,if,else...)
 *   [Source code](https://en.wikipedia.org/wiki/Source_code "Source code")
 *   [Object code](https://en.wikipedia.org/wiki/Object_code "Object code")
 *   [Bytecode](https://en.wikipedia.org/wiki/Bytecode "Bytecode")
-*   <span class="selflink" style="font-weight: 700; white-space: nowrap;">Machine code</span>
+*   Machine code
 
-</td>
 
-</tr>
 
-<tr>
 
-<th style="padding: 0.1em;">Specific runtimes</th>
 
-</tr>
 
-<tr>
 
-<td style="padding: 0px 0.1em 0.4em; text-align: left;">
+Specific runtimes
+
+
+
+
+
+
 
 *   [Android Runtime](https://en.wikipedia.org/wiki/Android_Runtime "Android Runtime") (ART)
 *   [crt0](https://en.wikipedia.org/wiki/Crt0 "Crt0")
@@ -1100,20 +1100,20 @@ Variables, types, operators/ flow control (and, or,if,else...)
 *   [Dalvik](https://en.wikipedia.org/wiki/Dalvik_(software) "Dalvik (software)")
 *   [Java virtual machine](https://en.wikipedia.org/wiki/Java_virtual_machine "Java virtual machine") (JVM)
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
+
+
+
+
 ### Compilers
 ### https://en.wikipedia.org/wiki/Compiler
 ### Converts one language to another
 ### Object Code
-**Object code**<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, or sometimes an </span>**object module**<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, is what a computer </span>[compiler](https://en.wikipedia.org/wiki/Compiler "Compiler")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> produces.</span><sup id="cite_ref-1" class="reference" style="line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate; color: rgb(37, 37, 37); font-family: sans-serif;">[[1]](https://en.wikipedia.org/wiki/Object_code#cite_note-1)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> In a general sense object code is a sequence of </span>[statements](https://en.wikipedia.org/wiki/Statement_(computer_science) "Statement (computer science)")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> or instructions in a computer language,</span><sup id="cite_ref-2" class="reference" style="line-height: 1; font-size: 11.1999998092651px; unicode-bidi: -webkit-isolate; color: rgb(37, 37, 37); font-family: sans-serif;">[[2]](https://en.wikipedia.org/wiki/Object_code#cite_note-2)</sup><span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> usually a </span>[machine code](https://en.wikipedia.org/wiki/Machine_code "Machine code")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> language (i.e., </span>[binary](https://en.wikipedia.org/wiki/Binary_file "Binary file")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">) or an intermediate language such as</span>[RTL](https://en.wikipedia.org/wiki/Register_Transfer_Language "Register Transfer Language")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">.</span>
+**Object code**, or sometimes an **object module**, is what a computer [compiler](https://en.wikipedia.org/wiki/Compiler "Compiler") produces.[[1]](https://en.wikipedia.org/wiki/Object_code#cite_note-1) In a general sense object code is a sequence of [statements](https://en.wikipedia.org/wiki/Statement_(computer_science) "Statement (computer science)") or instructions in a computer language,[[2]](https://en.wikipedia.org/wiki/Object_code#cite_note-2) usually a [machine code](https://en.wikipedia.org/wiki/Machine_code "Machine code") language (i.e., [binary](https://en.wikipedia.org/wiki/Binary_file "Binary file")) or an intermediate language such as[RTL](https://en.wikipedia.org/wiki/Register_Transfer_Language "Register Transfer Language").
 ### Usually a machine code language
-**Machine code**<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> or </span>**machine language**<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> is a set of </span>[instructions](https://en.wikipedia.org/wiki/Instruction_(computer_science) "Instruction (computer science)") <span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">executed directly by a </span>[computer](https://en.wikipedia.org/wiki/Computer "Computer")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">'s </span>[central processing unit](https://en.wikipedia.org/wiki/Central_processing_unit "Central processing unit")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> (CPU). Each instruction performs a very specific task, such as a load, a </span>[jump](https://en.wikipedia.org/wiki/Jump_instruction "Jump instruction")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">, or an</span>[ALU](https://en.wikipedia.org/wiki/Arithmetic_logic_unit "Arithmetic logic unit")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> operation on a unit of data in a </span>[CPU register](https://en.wikipedia.org/wiki/Processor_register "Processor register")<span style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;"> or memory. Every program directly executed by a CPU is made up of a series of such instructions.</span>
+**Machine code** or **machine language** is a set of [instructions](https://en.wikipedia.org/wiki/Instruction_(computer_science) "Instruction (computer science)") executed directly by a [computer](https://en.wikipedia.org/wiki/Computer "Computer")'s [central processing unit](https://en.wikipedia.org/wiki/Central_processing_unit "Central processing unit") (CPU). Each instruction performs a very specific task, such as a load, a [jump](https://en.wikipedia.org/wiki/Jump_instruction "Jump instruction"), or an[ALU](https://en.wikipedia.org/wiki/Arithmetic_logic_unit "Arithmetic logic unit") operation on a unit of data in a [CPU register](https://en.wikipedia.org/wiki/Processor_register "Processor register") or memory. Every program directly executed by a CPU is made up of a series of such instructions.
 ### To create an executable program
 ### An Example of a simpler compiler
 ### https://github.com/esumii/min-caml
@@ -1221,7 +1221,7 @@ General skills that help you as a programmer
 ### Pattern Recognition
 recognizing errors
 
-<div>recognizing a pattern in a program and how it runs</div>
+recognizing a pattern in a program and how it runs
 ### building blocks
 Knowing the architecture of software and how to build off of blocks
 ### Experimentation/ be creative
@@ -1282,7 +1282,7 @@ Knowing the architecture of software and how to build off of blocks
 ### Studies the actual Nuerons in terms of their biological structure and simulate them
 ### Different from computational Learning theory 
 ### Software packages simulating Nerves
-<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">There are many software packages, such as </span>[GENESIS](https://en.m.wikipedia.org/wiki/GENESIS_(software) "GENESIS (software)")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> and </span>[NEURON](https://en.m.wikipedia.org/wiki/Neuron_(software) "Neuron (software)")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">, that allow rapid and systematic </span>_in silico_<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> modeling of realistic neurons. </span>[Blue Brain](https://en.m.wikipedia.org/wiki/Blue_Brain "Blue Brain")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">, a project founded by </span>[Henry Markram](https://en.m.wikipedia.org/wiki/Henry_Markram "Henry Markram")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> from the </span>[École Polytechnique Fédérale de Lausanne](https://en.m.wikipedia.org/wiki/%C3%89cole_Polytechnique_F%C3%A9d%C3%A9rale_de_Lausanne "École Polytechnique Fédérale de Lausanne")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">, aims to construct a biophysically detailed simulation of a </span>[cortical column](https://en.m.wikipedia.org/wiki/Cortical_column "Cortical column")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> on the </span>[Blue Gene](https://en.m.wikipedia.org/wiki/Blue_Gene "Blue Gene")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> </span>[supercomputer](https://en.m.wikipedia.org/wiki/Supercomputer "Supercomputer")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">.</span>
+There are many software packages, such as [GENESIS](https://en.m.wikipedia.org/wiki/GENESIS_(software) "GENESIS (software)") and [NEURON](https://en.m.wikipedia.org/wiki/Neuron_(software) "Neuron (software)"), that allow rapid and systematic _in silico_ modeling of realistic neurons. [Blue Brain](https://en.m.wikipedia.org/wiki/Blue_Brain "Blue Brain"), a project founded by [Henry Markram](https://en.m.wikipedia.org/wiki/Henry_Markram "Henry Markram") from the [École Polytechnique Fédérale de Lausanne](https://en.m.wikipedia.org/wiki/%C3%89cole_Polytechnique_F%C3%A9d%C3%A9rale_de_Lausanne "École Polytechnique Fédérale de Lausanne"), aims to construct a biophysically detailed simulation of a [cortical column](https://en.m.wikipedia.org/wiki/Cortical_column "Cortical column") on the [Blue Gene](https://en.m.wikipedia.org/wiki/Blue_Gene "Blue Gene") [supercomputer](https://en.m.wikipedia.org/wiki/Supercomputer "Supercomputer").
 ### It's somewhat puzzling how neurons can be uniform while being sparse. Artificial neural networks don't possess such quality
 ### Challenges
 ### Overhead in computation, efforts have been done to come up with faster algorithms
@@ -1301,19 +1301,19 @@ Knowing the architecture of software and how to build off of blocks
 ### Statistical Learning Model inspired by the brain
 ### Interconnected Nodes capable of Learning given a certain input
 ### Example: Handwriting recognition
-<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">For example, a neural network for </span>[handwriting recognition](https://en.m.wikipedia.org/wiki/Handwriting_recognition "Handwriting recognition")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> is defined by a set of input neurons which may be activated by the pixels of an input image. After being weighted and transformed by a</span>[function](https://en.m.wikipedia.org/wiki/Function_(mathematics) "Function (mathematics)")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> (determined by the network's designer), the activations of these neurons are then passed on to other neurons. This process is repeated until finally, an output neuron is activated. This determines which character was read.</span>
+For example, a neural network for [handwriting recognition](https://en.m.wikipedia.org/wiki/Handwriting_recognition "Handwriting recognition") is defined by a set of input neurons which may be activated by the pixels of an input image. After being weighted and transformed by a[function](https://en.m.wikipedia.org/wiki/Function_(mathematics) "Function (mathematics)") (determined by the network's designer), the activations of these neurons are then passed on to other neurons. This process is repeated until finally, an output neuron is activated. This determines which character was read.
 ### One of the theories: Hebbian Learning, cell a takes part in stimulating cell b
 ### https://en.m.wikipedia.org/wiki/Hebbian_theory
 ### Connectionism
 [Connectionism](https://en.m.wikipedia.org/wiki/Connectionism)
 
-<div>
 
-**Connectionism** is a set of approaches in the fields of [artificial intelligence](https://en.m.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"), [cognitive psychology](https://en.m.wikipedia.org/wiki/Cognitive_psychology "Cognitive psychology"), [cognitive science](https://en.m.wikipedia.org/wiki/Cognitive_science "Cognitive science"), [neuroscience](https://en.m.wikipedia.org/wiki/Neuroscience "Neuroscience"), and[philosophy of mind](https://en.m.wikipedia.org/wiki/Philosophy_of_mind "Philosophy of mind"), that models [mental](https://en.m.wikipedia.org/wiki/Mind "Mind") or [behavioral](https://en.m.wikipedia.org/wiki/Behavior "Behavior") phenomena as the [emergent processes](https://en.m.wikipedia.org/wiki/Emergence "Emergence") of _interconnected networks of simple units_. The term was introduced by [Donald Hebb](https://en.m.wikipedia.org/wiki/Donald_Hebb "Donald Hebb") in the 1940's.<sup id="cite_ref-1" class="reference" style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: 0.75em; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1; vertical-align: super; background: none;">[<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; background: none;">[</span>1<span style="margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; background: none;">]</span>](https://en.m.wikipedia.org/wiki/Connectionism#cite_note-1)</sup> There are many forms of connectionism, but the most common forms use [neural network](https://en.m.wikipedia.org/wiki/Neural_network "Neural network")models.
 
-</div>
+**Connectionism** is a set of approaches in the fields of [artificial intelligence](https://en.m.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"), [cognitive psychology](https://en.m.wikipedia.org/wiki/Cognitive_psychology "Cognitive psychology"), [cognitive science](https://en.m.wikipedia.org/wiki/Cognitive_science "Cognitive science"), [neuroscience](https://en.m.wikipedia.org/wiki/Neuroscience "Neuroscience"), and[philosophy of mind](https://en.m.wikipedia.org/wiki/Philosophy_of_mind "Philosophy of mind"), that models [mental](https://en.m.wikipedia.org/wiki/Mind "Mind") or [behavioral](https://en.m.wikipedia.org/wiki/Behavior "Behavior") phenomena as the [emergent processes](https://en.m.wikipedia.org/wiki/Emergence "Emergence") of _interconnected networks of simple units_. The term was introduced by [Donald Hebb](https://en.m.wikipedia.org/wiki/Donald_Hebb "Donald Hebb") in the 1940's.[[1]](https://en.m.wikipedia.org/wiki/Connectionism#cite_note-1) There are many forms of connectionism, but the most common forms use [neural network](https://en.m.wikipedia.org/wiki/Neural_network "Neural network")models.
+
+
 ### Activiation is an important concept: 
-<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">In most connectionist models, networks change over time. A closely related and very common aspect of connectionist models is </span>_activation_<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">. At any time, a unit in the network has an activation, which is a numerical value intended to represent some aspect of the unit. For example, if the units in the model are neurons, the activation could represent the </span>[probability](https://en.m.wikipedia.org/wiki/Probability "Probability")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> that the neuron would generate an </span>[action potential](https://en.m.wikipedia.org/wiki/Action_potential "Action potential")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> spike. Activation typically spreads to all the other units connected to it. Spreading activation is always a feature of neural network models, and it is very common in connectionist models used by </span>[cognitive psychologists](https://en.m.wikipedia.org/wiki/Cognitive_psychology "Cognitive psychology")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;">.</span>
+In most connectionist models, networks change over time. A closely related and very common aspect of connectionist models is _activation_. At any time, a unit in the network has an activation, which is a numerical value intended to represent some aspect of the unit. For example, if the units in the model are neurons, the activation could represent the [probability](https://en.m.wikipedia.org/wiki/Probability "Probability") that the neuron would generate an [action potential](https://en.m.wikipedia.org/wiki/Action_potential "Action potential") spike. Activation typically spreads to all the other units connected to it. Spreading activation is always a feature of neural network models, and it is very common in connectionist models used by [cognitive psychologists](https://en.m.wikipedia.org/wiki/Cognitive_psychology "Cognitive psychology").
 ### Incorporates a lot of dynamic systems theory
 ### Programming
 ### http://www.amazon.com/Introduction-Machine-Learning-Python-Sarah/dp/1449369413
@@ -1335,7 +1335,7 @@ Knowing the architecture of software and how to build off of blocks
 ### My Effective Ui Road
 ### https://drive.google.com/open?id=0B9tPYCpuqoIrNTlvVFBRYkhRRTg
 ### Computer Communications (Networks)
-*   [Computer communications (networks)](https://en.m.wikipedia.org/wiki/Computer_networking "Computer networking")<span style="font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; background-color: initial;"> – collection of hardware components and computers interconnected by communication channels that allow sharing of resources and information</span>  
+*   [Computer communications (networks)](https://en.m.wikipedia.org/wiki/Computer_networking "Computer networking") – collection of hardware components and computers interconnected by communication channels that allow sharing of resources and information  
 
 *   *   [Information theory](https://en.m.wikipedia.org/wiki/Information_theory "Information theory") – branch of applied mathematics and electrical engineering involving the quantification of information
     *   Internet – global system of interconnected computer networks that use the standard Internet protocol suite (often called TCP/IP, although not all applications use TCP) to serve billions of users worldwide.
@@ -1432,7 +1432,7 @@ Knowing the architecture of software and how to build off of blocks
 ### https://github.com/andrewhayward/dijkstra
 ### dijkstra
 ### Statistics
-<div>[Statistics](https://en.m.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics")<span style="color: rgb(37, 37, 37); font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', sans-serif; font-size: 16px; line-height: 26.3999996185303px;"> – collection, analysis, interpretation, and presentation of data.</span>
+[Statistics](https://en.m.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics") – collection, analysis, interpretation, and presentation of data.
 
 *   [Computational statistics](https://en.m.wikipedia.org/wiki/Computational_statistics "Computational statistics") – interface between statistics and computer science.
     *   [Data mining](https://en.m.wikipedia.org/wiki/Data_mining "Data mining") – process that results in the discovery of new patterns in large data sets
@@ -1462,7 +1462,7 @@ Knowing the architecture of software and how to build off of blocks
     *   [Sampling theory](https://en.m.wikipedia.org/wiki/Statistics "Statistics") – study of the collection, organization, analysis, and interpretation of data.
     *   [Survey methodology](https://en.m.wikipedia.org/wiki/Survey_(statistics) "Survey (statistics)") – field that studies the sampling of individuals from a population with a view towards making statistical inferences about the population using the sample.
 
-</div>
+
 ### Systems Science
 *   [Systems science](https://en.m.wikipedia.org/wiki/Systems_science "Systems science") – interdisciplinary field of science that studies the nature of complex systems in nature, society, and science.
     *   [Chaos theory](https://en.m.wikipedia.org/wiki/Chaos_theory "Chaos theory") – field of study in mathematics, with applications in several disciplines including physics, engineering, economics, biology, and philosophy; studies the behavior of dynamical systems that are highly sensitive to initial conditions.
@@ -1492,21 +1492,21 @@ Knowing the architecture of software and how to build off of blocks
         *   [Systems neuroscience](https://en.m.wikipedia.org/wiki/Systems_neuroscience "Systems neuroscience") – subdiscipline of neuroscience and systems biology that studies the function of neural circuits and systems.
         *   [Systems psychology](https://en.m.wikipedia.org/wiki/Systems_psychology "Systems psychology") – branch of applied psychology that studies human behaviour and experience in complex systems.
 # Academic Discplines Category
-## <span class="mw-headline" id="Humanities">Humanities</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=2 "Edit section: Humanities")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+## Humanities[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=2 "Edit section: Humanities")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Humanities](https://en.wikipedia.org/wiki/Humanities "Humanities") and [Outline of the humanities](https://en.wikipedia.org/wiki/Outline_of_the_humanities "Outline of the humanities")</div>
+Main articles: [Humanities](https://en.wikipedia.org/wiki/Humanities "Humanities") and [Outline of the humanities](https://en.wikipedia.org/wiki/Outline_of_the_humanities "Outline of the humanities")
 
-### <span class="mw-headline" id="Human_history">Human history</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=3 "Edit section: Human history")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Human history[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=3 "Edit section: Human history")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [History](https://en.wikipedia.org/wiki/History "History") and [Branches of history](https://en.wikipedia.org/wiki/Outline_of_history#History_by_field "Outline of history")</div>
+Main articles: [History](https://en.wikipedia.org/wiki/History "History") and [Branches of history](https://en.wikipedia.org/wiki/Outline_of_history#History_by_field "Outline of history")
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
 
 *   [African history](https://en.wikipedia.org/wiki/African_history "African history")
 *   [American history](https://en.wikipedia.org/wiki/American_history "American history")
@@ -1521,9 +1521,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Iranian history](https://en.wikipedia.org/wiki/History_of_Iran "History of Iran")
 *   [Indian history](https://en.wikipedia.org/wiki/History_of_India "History of India") ([outline](https://en.wikipedia.org/wiki/Outline_of_ancient_India "Outline of ancient India"))
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Indonesian history](https://en.wikipedia.org/wiki/History_of_Indonesia "History of Indonesia")
 *   [Intellectual history](https://en.wikipedia.org/wiki/Intellectual_history "Intellectual history")
@@ -1537,27 +1537,27 @@ Knowing the architecture of software and how to build off of blocks
 *   [Technological history](https://en.wikipedia.org/wiki/History_of_Technology "History of Technology")
 *   [World history](https://en.wikipedia.org/wiki/World_history "World history")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Linguistics">Linguistics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=4 "Edit section: Linguistics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Linguistics](https://en.wikipedia.org/wiki/Linguistics "Linguistics") and [Outline of linguistics](https://en.wikipedia.org/wiki/Outline_of_linguistics "Outline of linguistics")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Language arts](https://en.wikipedia.org/wiki/Language_arts "Language arts")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Linguistics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=4 "Edit section: Linguistics")]
 
-<tr>
+Main articles: [Linguistics](https://en.wikipedia.org/wiki/Linguistics "Linguistics") and [Outline of linguistics](https://en.wikipedia.org/wiki/Outline_of_linguistics "Outline of linguistics")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [Language arts](https://en.wikipedia.org/wiki/Language_arts "Language arts")
+
+
+
+
+
+
+
+
 
 *   [Classics](https://en.wikipedia.org/wiki/Classics "Classics") ([outline](https://en.wikipedia.org/wiki/Outline_of_classical_studies "Outline of classical studies"))
 *   [Languages](https://en.wikipedia.org/wiki/Languages "Languages")
@@ -1574,9 +1574,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Historical linguistics](https://en.wikipedia.org/wiki/Historical_linguistics "Historical linguistics")
 *   [History of linguistics](https://en.wikipedia.org/wiki/History_of_linguistics "History of linguistics")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Interlinguistics](https://en.wikipedia.org/wiki/Interlinguistics "Interlinguistics")
 *   [Language arts](https://en.wikipedia.org/wiki/Language_arts "Language arts")
@@ -1594,17 +1594,17 @@ Knowing the architecture of software and how to build off of blocks
 *   [Usage](https://en.wikipedia.org/wiki/Usage "Usage")
 *   [Word usage](https://en.wikipedia.org/wiki/Word_usage "Word usage")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Literature">Literature</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=5 "Edit section: Literature")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Literature](https://en.wikipedia.org/wiki/Literature "Literature") and [Outline of literature](https://en.wikipedia.org/wiki/Outline_of_literature "Outline of literature")</div>
+
+
+
+### Literature[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=5 "Edit section: Literature")]
+
+Main articles: [Literature](https://en.wikipedia.org/wiki/Literature "Literature") and [Outline of literature](https://en.wikipedia.org/wiki/Outline_of_literature "Outline of literature")
 
 *   [Poetry](https://en.wikipedia.org/wiki/Poetry "Poetry")
 *   [Comparative literature](https://en.wikipedia.org/wiki/Comparative_literature "Comparative literature")
@@ -1633,19 +1633,19 @@ Knowing the architecture of software and how to build off of blocks
     *   [Screenwriting](https://en.wikipedia.org/wiki/Screenwriting "Screenwriting")
     *   [Playwrighting](https://en.wikipedia.org/wiki/Playwrighting "Playwrighting")
 
-### <span class="mw-headline" id="Arts">Arts</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=6 "Edit section: Arts")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Arts[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=6 "Edit section: Arts")]
 
 **Performing arts**
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Performing arts](https://en.wikipedia.org/wiki/Performing_arts "Performing arts") and [Outline of performing arts](https://en.wikipedia.org/wiki/Outline_of_performing_arts "Outline of performing arts")</div>
+Main articles: [Performing arts](https://en.wikipedia.org/wiki/Performing_arts "Performing arts") and [Outline of performing arts](https://en.wikipedia.org/wiki/Outline_of_performing_arts "Outline of performing arts")
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1126px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 561px; vertical-align: top;">
+
+
+
+
 
 *   [Arts administration](https://en.wikipedia.org/wiki/Arts_administration "Arts administration")
 *   [Music](https://en.wikipedia.org/wiki/Music "Music") ([outline](https://en.wikipedia.org/wiki/Outline_of_music "Outline of music"))
@@ -1675,9 +1675,9 @@ Knowing the architecture of software and how to build off of blocks
     *   [Recording](https://en.wikipedia.org/wiki/Recording "Recording")
     *   [Orchestral studies](https://en.wikipedia.org/wiki/Orchestra "Orchestra")
 
-</td>
 
-<td style="width: 561px; vertical-align: top;">
+
+
 
 *   [Dance](https://en.wikipedia.org/wiki/Dance "Dance") ([outline](https://en.wikipedia.org/wiki/Outline_of_dance "Outline of dance"))
     *   [Choreography](https://en.wikipedia.org/wiki/Choreography "Choreography")
@@ -1706,25 +1706,25 @@ Knowing the architecture of software and how to build off of blocks
     *   [Spoken word](https://en.wikipedia.org/wiki/Spoken_word "Spoken word")
     *   [Storytelling](https://en.wikipedia.org/wiki/Storytelling "Storytelling")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
+
+
+
+
 
 **Visual arts**
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em;">Main articles: [Visual arts](https://en.wikipedia.org/wiki/Visual_arts "Visual arts") and [Outline of visual arts](https://en.wikipedia.org/wiki/Outline_of_visual_arts "Outline of visual arts")</div>
+Main articles: [Visual arts](https://en.wikipedia.org/wiki/Visual_arts "Visual arts") and [Outline of visual arts](https://en.wikipedia.org/wiki/Outline_of_visual_arts "Outline of visual arts")
 
 *   [Animation](https://en.wikipedia.org/wiki/Animation "Animation")
 *   [Architecture](https://en.wikipedia.org/wiki/Architecture "Architecture") ([outline](https://en.wikipedia.org/wiki/Outline_of_architecture "Outline of architecture"))
@@ -1744,9 +1744,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Sculpture](https://en.wikipedia.org/wiki/Sculpture "Sculpture") ([outline](https://en.wikipedia.org/wiki/Outline_of_sculpture "Outline of sculpture"))
 *   [Video Art](https://en.wikipedia.org/wiki/Video_Art "Video Art")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 **Applied arts**
 
@@ -1768,25 +1768,25 @@ Knowing the architecture of software and how to build off of blocks
 *   [Printmaking](https://en.wikipedia.org/wiki/Printmaking "Printmaking")
 *   [Studio art](https://en.wikipedia.org/wiki/Studio_art "Studio art")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Philosophy">Philosophy</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=7 "Edit section: Philosophy")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Philosophy](https://en.wikipedia.org/wiki/Philosophy "Philosophy") and [Outline of philosophy](https://en.wikipedia.org/wiki/Outline_of_philosophy "Outline of philosophy")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Philosophy[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=7 "Edit section: Philosophy")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Philosophy](https://en.wikipedia.org/wiki/Philosophy "Philosophy") and [Outline of philosophy](https://en.wikipedia.org/wiki/Outline_of_philosophy "Outline of philosophy")
+
+
+
+
+
+
+
+
 
 *   [Meta-philosophy](https://en.wikipedia.org/wiki/Meta-philosophy "Meta-philosophy")
 *   [Metaphysics](https://en.wikipedia.org/wiki/Metaphysics "Metaphysics")   ([outline](https://en.wikipedia.org/wiki/Outline_of_metaphysics "Outline of metaphysics"))
@@ -1824,9 +1824,9 @@ Knowing the architecture of software and how to build off of blocks
     *   [Aristotelianism](https://en.wikipedia.org/wiki/Aristotelianism "Aristotelianism")
     *   [Analytic philosophy](https://en.wikipedia.org/wiki/Analytic_philosophy "Analytic philosophy")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   *   [Continental philosophy](https://en.wikipedia.org/wiki/Continental_philosophy "Continental philosophy")
     *   [Eastern philosophy](https://en.wikipedia.org/wiki/Eastern_philosophy "Eastern philosophy")
@@ -1859,27 +1859,27 @@ Knowing the architecture of software and how to build off of blocks
     *   [Philosophy of engineering](https://en.wikipedia.org/wiki/Philosophy_of_engineering "Philosophy of engineering")
     *   [Systems philosophy](https://en.wikipedia.org/wiki/Systems_philosophy "Systems philosophy")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Religion">Religion</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=8 "Edit section: Religion")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Religious studies](https://en.wikipedia.org/wiki/Religious_studies "Religious studies") and [Outline of religion](https://en.wikipedia.org/wiki/Outline_of_religion "Outline of religion")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [List of religions and spiritual traditions](https://en.wikipedia.org/wiki/List_of_religions_and_spiritual_traditions "List of religions and spiritual traditions")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Religion[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=8 "Edit section: Religion")]
 
-<tr>
+Main articles: [Religious studies](https://en.wikipedia.org/wiki/Religious_studies "Religious studies") and [Outline of religion](https://en.wikipedia.org/wiki/Outline_of_religion "Outline of religion")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [List of religions and spiritual traditions](https://en.wikipedia.org/wiki/List_of_religions_and_spiritual_traditions "List of religions and spiritual traditions")
+
+
+
+
+
+
+
+
 
 *   [Abrahamic religions](https://en.wikipedia.org/wiki/Abrahamic_religions "Abrahamic religions")
     *   [Christianity](https://en.wikipedia.org/wiki/Christianity "Christianity") ([outline](https://en.wikipedia.org/wiki/Outline_of_Christianity "Outline of Christianity"))
@@ -1902,9 +1902,9 @@ Knowing the architecture of software and how to build off of blocks
     *   [Tenrikyo](https://en.wikipedia.org/wiki/Tenrikyo "Tenrikyo")
     *   [Oomoto](https://en.wikipedia.org/wiki/Oomoto "Oomoto")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   Other religions
     *   [African religions](https://en.wikipedia.org/wiki/Religion_in_Africa "Religion in Africa")
@@ -1921,29 +1921,29 @@ Knowing the architecture of software and how to build off of blocks
     *   [Agnosticism](https://en.wikipedia.org/wiki/Agnostic "Agnostic")
     *   [Atheism](https://en.wikipedia.org/wiki/Atheism "Atheism") ([outline](https://en.wikipedia.org/wiki/Outline_of_atheism "Outline of atheism")) and [religious humanism](https://en.wikipedia.org/wiki/Religious_humanism "Religious humanism")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-## <span class="mw-headline" id="Social_sciences">Social sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=9 "Edit section: Social sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Social sciences](https://en.wikipedia.org/wiki/Social_sciences "Social sciences") and [Outline of social science](https://en.wikipedia.org/wiki/Outline_of_social_science "Outline of social science")</div>
 
-### <span class="mw-headline" id="Anthropology">Anthropology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=10 "Edit section: Anthropology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Anthropology](https://en.wikipedia.org/wiki/Anthropology "Anthropology") and [Outline of anthropology](https://en.wikipedia.org/wiki/Outline_of_anthropology "Outline of anthropology")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+## Social sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=9 "Edit section: Social sciences")]
 
-<tbody>
+Main articles: [Social sciences](https://en.wikipedia.org/wiki/Social_sciences "Social sciences") and [Outline of social science](https://en.wikipedia.org/wiki/Outline_of_social_science "Outline of social science")
 
-<tr>
+### Anthropology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=10 "Edit section: Anthropology")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Anthropology](https://en.wikipedia.org/wiki/Anthropology "Anthropology") and [Outline of anthropology](https://en.wikipedia.org/wiki/Outline_of_anthropology "Outline of anthropology")
+
+
+
+
+
+
+
+
 
 *   [Biological anthropology](https://en.wikipedia.org/wiki/Biological_anthropology "Biological anthropology")
     *   [Forensic anthropology](https://en.wikipedia.org/wiki/Forensic_anthropology "Forensic anthropology")
@@ -1960,9 +1960,9 @@ Knowing the architecture of software and how to build off of blocks
     *   [Ethnolinguistics](https://en.wikipedia.org/wiki/Ethnolinguistics "Ethnolinguistics")
     *   [Sociolinguistics](https://en.wikipedia.org/wiki/Sociolinguistics "Sociolinguistics")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Cultural anthropology](https://en.wikipedia.org/wiki/Cultural_anthropology "Cultural anthropology")
     *   [Anthropology of religion](https://en.wikipedia.org/wiki/Anthropology_of_religion "Anthropology of religion")
@@ -1978,19 +1978,19 @@ Knowing the architecture of software and how to build off of blocks
     *   [Psychological anthropology](https://en.wikipedia.org/wiki/Psychological_anthropology "Psychological anthropology")
 *   [Social anthropology](https://en.wikipedia.org/wiki/Social_anthropology "Social anthropology")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Archaeology">Archaeology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=11 "Edit section: Archaeology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Archaeology](https://en.wikipedia.org/wiki/Archaeology "Archaeology"), [Outline of archaeology](https://en.wikipedia.org/wiki/Outline_of_archaeology "Outline of archaeology") and [Archaeological sub-disciplines](https://en.wikipedia.org/wiki/Archaeological_sub-disciplines "Archaeological sub-disciplines")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Branches of archaeology](https://en.wikipedia.org/wiki/Archaeological_sub-disciplines "Archaeological sub-disciplines")</div>
+
+
+### Archaeology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=11 "Edit section: Archaeology")]
+
+Main articles: [Archaeology](https://en.wikipedia.org/wiki/Archaeology "Archaeology"), [Outline of archaeology](https://en.wikipedia.org/wiki/Outline_of_archaeology "Outline of archaeology") and [Archaeological sub-disciplines](https://en.wikipedia.org/wiki/Archaeological_sub-disciplines "Archaeological sub-disciplines")
+
+See also: [Branches of archaeology](https://en.wikipedia.org/wiki/Archaeological_sub-disciplines "Archaeological sub-disciplines")
 
 *   [Classical archaeology](https://en.wikipedia.org/wiki/Classical_archaeology "Classical archaeology")
 *   [Egyptology](https://en.wikipedia.org/wiki/Egyptology "Egyptology")
@@ -2001,9 +2001,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Paleoanthropology](https://en.wikipedia.org/wiki/Paleoanthropology "Paleoanthropology")
 *   [Prehistoric archaeology](https://en.wikipedia.org/wiki/Prehistoric_archaeology "Prehistoric archaeology")
 
-### <span class="mw-headline" id="Area_studies">Area studies</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=12 "Edit section: Area studies")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Area studies[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=12 "Edit section: Area studies")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Area studies](https://en.wikipedia.org/wiki/Area_studies "Area studies")</div>
+Main article: [Area studies](https://en.wikipedia.org/wiki/Area_studies "Area studies")
 
 *   [African studies](https://en.wikipedia.org/wiki/African_studies "African studies")
 *   [American studies](https://en.wikipedia.org/wiki/American_studies "American studies")
@@ -2029,17 +2029,17 @@ Knowing the architecture of software and how to build off of blocks
 *   [Middle East studies](https://en.wikipedia.org/wiki/Middle_East_studies "Middle East studies")
 *   Russian and Eastern European studies
 
-### <span class="mw-headline" id="Cultural_and_ethnic_studies">Cultural and ethnic studies</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=13 "Edit section: Cultural and ethnic studies")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Cultural and ethnic studies[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=13 "Edit section: Cultural and ethnic studies")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Cultural studies](https://en.wikipedia.org/wiki/Cultural_studies "Cultural studies") and [Ethnic studies](https://en.wikipedia.org/wiki/Ethnic_studies "Ethnic studies")</div>
+Main articles: [Cultural studies](https://en.wikipedia.org/wiki/Cultural_studies "Cultural studies") and [Ethnic studies](https://en.wikipedia.org/wiki/Ethnic_studies "Ethnic studies")
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
 
 *   [Asian studies](https://en.wikipedia.org/wiki/Asian_studies "Asian studies")
 *   [Asian American studies](https://en.wikipedia.org/wiki/Asian_American_studies "Asian American studies")
@@ -2049,9 +2049,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Latino studies](https://en.wikipedia.org/wiki/Latino_studies "Latino studies")
 *   [Native American studies](https://en.wikipedia.org/wiki/Native_American_studies "Native American studies")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   Indigenous (non-American) studies
 *   European studies
@@ -2060,25 +2060,25 @@ Knowing the architecture of software and how to build off of blocks
 *   [Deaf studies](https://en.wikipedia.org/wiki/Deaf_studies "Deaf studies")
 *   Sexuality studies
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Economics">Economics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=14 "Edit section: Economics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Economics](https://en.wikipedia.org/wiki/Economics "Economics") and [Outline of economics](https://en.wikipedia.org/wiki/Outline_of_economics "Outline of economics")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Economics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=14 "Edit section: Economics")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Economics](https://en.wikipedia.org/wiki/Economics "Economics") and [Outline of economics](https://en.wikipedia.org/wiki/Outline_of_economics "Outline of economics")
+
+
+
+
+
+
+
+
 
 *   [Agricultural economics](https://en.wikipedia.org/wiki/Agricultural_economics "Agricultural economics")
 *   [Anarchist economics](https://en.wikipedia.org/wiki/Anarchist_economics "Anarchist economics")
@@ -2106,9 +2106,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Growth economics](https://en.wikipedia.org/wiki/Economic_growth "Economic growth")
 *   [Human development theory](https://en.wikipedia.org/wiki/Human_development_theory "Human development theory")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Industrial organization](https://en.wikipedia.org/wiki/Industrial_organization "Industrial organization")
 *   [Information economics](https://en.wikipedia.org/wiki/Information_economics "Information economics")
@@ -2136,25 +2136,25 @@ Knowing the architecture of software and how to build off of blocks
 *   [Transport economics](https://en.wikipedia.org/wiki/Transport_economics "Transport economics")
 *   [Welfare economics](https://en.wikipedia.org/wiki/Welfare_economics "Welfare economics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Gender_and_sexuality_studies">Gender and sexuality studies</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=15 "Edit section: Gender and sexuality studies")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Gender and sexuality studies](https://en.wikipedia.org/wiki/Gender_and_sexuality_studies "Gender and sexuality studies")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Gender and sexuality studies[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=15 "Edit section: Gender and sexuality studies")]
 
-<td style="width: 533px; vertical-align: top;">
+Main article: [Gender and sexuality studies](https://en.wikipedia.org/wiki/Gender_and_sexuality_studies "Gender and sexuality studies")
+
+
+
+
+
+
+
+
 
 *   [Feminine psychology](https://en.wikipedia.org/wiki/Feminine_psychology "Feminine psychology")
 *   [Gender studies](https://en.wikipedia.org/wiki/Gender_studies "Gender studies")/[Gender theory](https://en.wikipedia.org/wiki/Gender_theory "Gender theory")
@@ -2163,9 +2163,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Human sexuality](https://en.wikipedia.org/wiki/Human_sexuality "Human sexuality") ([outline](https://en.wikipedia.org/wiki/Outline_of_human_sexuality "Outline of human sexuality"))
 *   [Masculine psychology](https://en.wikipedia.org/wiki/Masculine_psychology "Masculine psychology")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Men's studies](https://en.wikipedia.org/wiki/Men%27s_studies "Men's studies")
 *   [Queer studies](https://en.wikipedia.org/wiki/Queer_studies "Queer studies")/[Queer theory](https://en.wikipedia.org/wiki/Queer_theory "Queer theory")
@@ -2173,25 +2173,25 @@ Knowing the architecture of software and how to build off of blocks
 *   [Sexology](https://en.wikipedia.org/wiki/Sexology "Sexology")
 *   [Women's studies](https://en.wikipedia.org/wiki/Women%27s_studies "Women's studies")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Geography">Geography</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=16 "Edit section: Geography")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Geography](https://en.wikipedia.org/wiki/Geography "Geography") and [Outline of geography](https://en.wikipedia.org/wiki/Outline_of_geography "Outline of geography")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Geography[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=16 "Edit section: Geography")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Geography](https://en.wikipedia.org/wiki/Geography "Geography") and [Outline of geography](https://en.wikipedia.org/wiki/Outline_of_geography "Outline of geography")
+
+
+
+
+
+
+
+
 
 *   [Cartography](https://en.wikipedia.org/wiki/Cartography "Cartography") ([outline](https://en.wikipedia.org/wiki/Outline_of_cartography "Outline of cartography"))
 *   [Human geography](https://en.wikipedia.org/wiki/Human_geography "Human geography")
@@ -2212,9 +2212,9 @@ Knowing the architecture of software and how to build off of blocks
         *   [Tourism geography](https://en.wikipedia.org/wiki/Tourism_geography "Tourism geography")
     *   [Urban geography](https://en.wikipedia.org/wiki/Urban_geography "Urban geography")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Environmental geography](https://en.wikipedia.org/wiki/Environmental_geography "Environmental geography")
 *   [Physical geography](https://en.wikipedia.org/wiki/Physical_geography "Physical geography")
@@ -2233,25 +2233,25 @@ Knowing the architecture of software and how to build off of blocks
 *   [Regional geography](https://en.wikipedia.org/wiki/Regional_geography "Regional geography")
 *   [Remote sensing](https://en.wikipedia.org/wiki/Remote_sensing "Remote sensing")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Political_science">Political science</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=17 "Edit section: Political science")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Political science](https://en.wikipedia.org/wiki/Political_science "Political science") and [Outline of politics](https://en.wikipedia.org/wiki/Outline_of_politics "Outline of politics")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Political science[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=17 "Edit section: Political science")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Political science](https://en.wikipedia.org/wiki/Political_science "Political science") and [Outline of politics](https://en.wikipedia.org/wiki/Outline_of_politics "Outline of politics")
+
+
+
+
+
+
+
+
 
 *   [American politics](https://en.wikipedia.org/wiki/American_politics "American politics")
 *   [Canadian politics](https://en.wikipedia.org/wiki/Canadian_politics "Canadian politics")
@@ -2265,9 +2265,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Peace and conflict studies](https://en.wikipedia.org/wiki/Peace_and_conflict_studies "Peace and conflict studies")
 *   [Policy studies](https://en.wikipedia.org/wiki/Policy_studies "Policy studies")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Political behavior](https://en.wikipedia.org/wiki/Political_behavior "Political behavior")
 *   [Political culture](https://en.wikipedia.org/wiki/Political_culture "Political culture")
@@ -2281,27 +2281,27 @@ Knowing the architecture of software and how to build off of blocks
 *   [Public policy](https://en.wikipedia.org/wiki/Public_policy "Public policy")
 *   [Social choice theory](https://en.wikipedia.org/wiki/Social_choice_theory "Social choice theory")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Psychology">Psychology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=18 "Edit section: Psychology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Psychology](https://en.wikipedia.org/wiki/Psychology "Psychology"), [Outline of psychology](https://en.wikipedia.org/wiki/Outline_of_psychology "Outline of psychology") and [List of psychology disciplines](https://en.wikipedia.org/wiki/List_of_psychology_disciplines "List of psychology disciplines")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Branches of psychology](https://en.wikipedia.org/wiki/Psychology#Subfields "Psychology"), [Cognitive science](https://en.wikipedia.org/wiki/Cognitive_science "Cognitive science"), [Affective science](https://en.wikipedia.org/wiki/Affective_science "Affective science") and [Behavioural sciences](https://en.wikipedia.org/wiki/Behavioural_sciences "Behavioural sciences")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Psychology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=18 "Edit section: Psychology")]
 
-<tr>
+Main articles: [Psychology](https://en.wikipedia.org/wiki/Psychology "Psychology"), [Outline of psychology](https://en.wikipedia.org/wiki/Outline_of_psychology "Outline of psychology") and [List of psychology disciplines](https://en.wikipedia.org/wiki/List_of_psychology_disciplines "List of psychology disciplines")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [Branches of psychology](https://en.wikipedia.org/wiki/Psychology#Subfields "Psychology"), [Cognitive science](https://en.wikipedia.org/wiki/Cognitive_science "Cognitive science"), [Affective science](https://en.wikipedia.org/wiki/Affective_science "Affective science") and [Behavioural sciences](https://en.wikipedia.org/wiki/Behavioural_sciences "Behavioural sciences")
+
+
+
+
+
+
+
+
 
 *   [Abnormal psychology](https://en.wikipedia.org/wiki/Abnormal_psychology "Abnormal psychology")
 *   [Applied psychology](https://en.wikipedia.org/wiki/Applied_psychology "Applied psychology")
@@ -2330,9 +2330,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Humanistic psychology](https://en.wikipedia.org/wiki/Humanistic_psychology "Humanistic psychology")
 *   [Indigenous psychology](https://en.wikipedia.org/wiki/Indigenous_psychology "Indigenous psychology")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Legal psychology](https://en.wikipedia.org/wiki/Legal_psychology "Legal psychology")
 *   [Media psychology](https://en.wikipedia.org/wiki/Media_psychology "Media psychology")
@@ -2359,25 +2359,25 @@ Knowing the architecture of software and how to build off of blocks
 *   [Social psychology](https://en.wikipedia.org/wiki/Social_psychology_(psychology) "Social psychology (psychology)")
 *   [Sport psychology](https://en.wikipedia.org/wiki/Sport_psychology "Sport psychology")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Sociology">Sociology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=19 "Edit section: Sociology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Sociology](https://en.wikipedia.org/wiki/Sociology "Sociology") and [Outline of sociology](https://en.wikipedia.org/wiki/Outline_of_sociology "Outline of sociology")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Sociology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=19 "Edit section: Sociology")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Sociology](https://en.wikipedia.org/wiki/Sociology "Sociology") and [Outline of sociology](https://en.wikipedia.org/wiki/Outline_of_sociology "Outline of sociology")
+
+
+
+
+
+
+
+
 
 *   [Applied sociology](https://en.wikipedia.org/wiki/Applied_sociology "Applied sociology")
     *   [Political sociology](https://en.wikipedia.org/wiki/Political_sociology "Political sociology")
@@ -2413,9 +2413,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Social change](https://en.wikipedia.org/wiki/Social_change "Social change")
 *   [Social transformation](https://en.wikipedia.org/wiki/Social_transformation "Social transformation")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Social control](https://en.wikipedia.org/wiki/Social_control "Social control")
     *   [Pure sociology](https://en.wikipedia.org/wiki/Pure_sociology "Pure sociology")
@@ -2447,35 +2447,35 @@ Knowing the architecture of software and how to build off of blocks
 *   [Urban studies](https://en.wikipedia.org/wiki/Urban_studies "Urban studies") or [Urban sociology](https://en.wikipedia.org/wiki/Urban_sociology "Urban sociology")/[Rural sociology](https://en.wikipedia.org/wiki/Rural_sociology "Rural sociology")
 *   [Visual sociology](https://en.wikipedia.org/wiki/Visual_sociology "Visual sociology")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-## <span class="mw-headline" id="Natural_sciences">Natural sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=20 "Edit section: Natural sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Natural science](https://en.wikipedia.org/wiki/Natural_science "Natural science"), [Outline of natural science](https://en.wikipedia.org/wiki/Outline_of_natural_science "Outline of natural science") and [Outline of applied science](https://en.wikipedia.org/wiki/Outline_of_applied_science "Outline of applied science")</div>
 
-### <span class="mw-headline" id="Biology">Biology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=21 "Edit section: Biology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Life sciences](https://en.wikipedia.org/wiki/Life_sciences "Life sciences")</div>
 
-<dl style="margin-top: 0.2em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
+## Natural sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=20 "Edit section: Natural sciences")]
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Biology](https://en.wikipedia.org/wiki/Biology "Biology") ([outline](https://en.wikipedia.org/wiki/Outline_of_biology "Outline of biology")), [Branches of life sciences](https://en.wikipedia.org/wiki/List_of_biology_disciplines "List of biology disciplines")_</dd>
+Main articles: [Natural science](https://en.wikipedia.org/wiki/Natural_science "Natural science"), [Outline of natural science](https://en.wikipedia.org/wiki/Outline_of_natural_science "Outline of natural science") and [Outline of applied science](https://en.wikipedia.org/wiki/Outline_of_applied_science "Outline of applied science")
 
-</dl>
+### Biology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=21 "Edit section: Biology")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main article: [Life sciences](https://en.wikipedia.org/wiki/Life_sciences "Life sciences")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Biology](https://en.wikipedia.org/wiki/Biology "Biology") ([outline](https://en.wikipedia.org/wiki/Outline_of_biology "Outline of biology")), [Branches of life sciences](https://en.wikipedia.org/wiki/List_of_biology_disciplines "List of biology disciplines")_
+
+
+
+
+
+
+
+
+
+
 
 *   [Aerobiology](https://en.wikipedia.org/wiki/Aerobiology "Aerobiology")
 *   [Anatomy](https://en.wikipedia.org/wiki/Anatomy "Anatomy")
@@ -2517,9 +2517,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Mycology](https://en.wikipedia.org/wiki/Mycology "Mycology")
 *   [Nutrition](https://en.wikipedia.org/wiki/Nutrition "Nutrition") ([outline](https://en.wikipedia.org/wiki/Outline_of_nutrition "Outline of nutrition"))
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Neuroscience](https://en.wikipedia.org/wiki/Neuroscience "Neuroscience") ([outline](https://en.wikipedia.org/wiki/Outline_of_neuroscience "Outline of neuroscience"))
     *   [Behavioral neuroscience](https://en.wikipedia.org/wiki/Behavioral_neuroscience "Behavioral neuroscience")
@@ -2560,31 +2560,31 @@ Knowing the architecture of software and how to build off of blocks
     *   [Zootomy](https://en.wikipedia.org/wiki/Zootomy "Zootomy")
     *   [Zoosemiotics](https://en.wikipedia.org/wiki/Zoosemiotics "Zoosemiotics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Chemistry">Chemistry</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=22 "Edit section: Chemistry")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Chemistry](https://en.wikipedia.org/wiki/Chemistry "Chemistry") and [Outline of chemistry](https://en.wikipedia.org/wiki/Outline_of_chemistry "Outline of chemistry")</div>
 
-<dl style="margin-top: 0.2em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of chemistry](https://en.wikipedia.org/wiki/Pure_chemistry "Pure chemistry")_</dd>
 
-</dl>
+### Chemistry[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=22 "Edit section: Chemistry")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Chemistry](https://en.wikipedia.org/wiki/Chemistry "Chemistry") and [Outline of chemistry](https://en.wikipedia.org/wiki/Outline_of_chemistry "Outline of chemistry")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of chemistry](https://en.wikipedia.org/wiki/Pure_chemistry "Pure chemistry")_
+
+
+
+
+
+
+
+
+
+
 
 *   [Agrochemistry](https://en.wikipedia.org/wiki/Agrochemistry "Agrochemistry")
 *   [Analytical chemistry](https://en.wikipedia.org/wiki/Analytical_chemistry "Analytical chemistry")
@@ -2611,9 +2611,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Mathematical chemistry](https://en.wikipedia.org/wiki/Mathematical_chemistry "Mathematical chemistry")
 *   [Mechanochemistry](https://en.wikipedia.org/wiki/Mechanochemistry "Mechanochemistry")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Medicinal chemistry](https://en.wikipedia.org/wiki/Medicinal_chemistry "Medicinal chemistry")
 *   [Molecular biology](https://en.wikipedia.org/wiki/Molecular_biology "Molecular biology")
@@ -2641,31 +2641,31 @@ Knowing the architecture of software and how to build off of blocks
 *   [Theoretical chemistry](https://en.wikipedia.org/wiki/Theoretical_chemistry "Theoretical chemistry")
 *   [Thermochemistry](https://en.wikipedia.org/wiki/Thermochemistry "Thermochemistry")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Physics">Physics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=23 "Edit section: Physics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Physics](https://en.wikipedia.org/wiki/Physics "Physics") and [Outline of physics](https://en.wikipedia.org/wiki/Outline_of_physics "Outline of physics")</div>
 
-<dl style="margin-top: 0.2em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of physics](https://en.wikipedia.org/wiki/List_of_basic_physics_topics "List of basic physics topics")_</dd>
 
-</dl>
+### Physics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=23 "Edit section: Physics")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Physics](https://en.wikipedia.org/wiki/Physics "Physics") and [Outline of physics](https://en.wikipedia.org/wiki/Outline_of_physics "Outline of physics")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of physics](https://en.wikipedia.org/wiki/List_of_basic_physics_topics "List of basic physics topics")_
+
+
+
+
+
+
+
+
+
+
 
 *   [Acoustics](https://en.wikipedia.org/wiki/Acoustics "Acoustics")
 *   [Applied Physics](https://en.wikipedia.org/wiki/Applied_Physics "Applied Physics")
@@ -2681,9 +2681,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Geophysics](https://en.wikipedia.org/wiki/Geophysics "Geophysics") ([outline](https://en.wikipedia.org/wiki/Outline_of_geophysics "Outline of geophysics"))
 *   [Mathematical physics](https://en.wikipedia.org/wiki/Mathematical_physics "Mathematical physics")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Medical physics](https://en.wikipedia.org/wiki/Medical_physics "Medical physics")
 *   [Mechanics](https://en.wikipedia.org/wiki/Mechanics "Mechanics")
@@ -2700,31 +2700,31 @@ Knowing the architecture of software and how to build off of blocks
 *   [Thermodynamics](https://en.wikipedia.org/wiki/Thermodynamics "Thermodynamics")
 *   [Vehicle dynamics](https://en.wikipedia.org/wiki/Vehicle_dynamics "Vehicle dynamics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Earth_sciences">Earth sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=24 "Edit section: Earth sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Earth science](https://en.wikipedia.org/wiki/Earth_science "Earth science") and [Outline of earth science](https://en.wikipedia.org/wiki/Outline_of_earth_science "Outline of earth science")</div>
 
-<dl style="margin-top: 0.2em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of earth sciences](https://en.wikipedia.org/wiki/Earth_science#Partial_list_of_the_major_earth_science_topics "Earth science")_</dd>
 
-</dl>
+### Earth sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=24 "Edit section: Earth sciences")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Earth science](https://en.wikipedia.org/wiki/Earth_science "Earth science") and [Outline of earth science](https://en.wikipedia.org/wiki/Outline_of_earth_science "Outline of earth science")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of earth sciences](https://en.wikipedia.org/wiki/Earth_science#Partial_list_of_the_major_earth_science_topics "Earth science")_
+
+
+
+
+
+
+
+
+
+
 
 *   [Edaphology](https://en.wikipedia.org/wiki/Edaphology "Edaphology")
 *   [Environmental science](https://en.wikipedia.org/wiki/Environmental_science "Environmental science")
@@ -2740,9 +2740,9 @@ Knowing the architecture of software and how to build off of blocks
 *   [Hydrogeology](https://en.wikipedia.org/wiki/Hydrogeology "Hydrogeology")
 *   [Hydrology](https://en.wikipedia.org/wiki/Hydrology "Hydrology") ([outline](https://en.wikipedia.org/wiki/Outline_of_hydrology "Outline of hydrology"))
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Meteorology](https://en.wikipedia.org/wiki/Meteorology "Meteorology") ([outline](https://en.wikipedia.org/wiki/Outline_of_meteorology "Outline of meteorology"))
 *   [Mineralogy](https://en.wikipedia.org/wiki/Mineralogy "Mineralogy")
@@ -2757,27 +2757,27 @@ Knowing the architecture of software and how to build off of blocks
 *   [Tectonics](https://en.wikipedia.org/wiki/Tectonics "Tectonics")
 *   [Volcanology](https://en.wikipedia.org/wiki/Volcanology "Volcanology")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Space_sciences">Space sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=25 "Edit section: Space sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Space science](https://en.wikipedia.org/wiki/Space_science "Space science")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Outline of astronomy](https://en.wikipedia.org/wiki/Outline_of_astronomy "Outline of astronomy")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Space sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=25 "Edit section: Space sciences")]
 
-<tr>
+Main article: [Space science](https://en.wikipedia.org/wiki/Space_science "Space science")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [Outline of astronomy](https://en.wikipedia.org/wiki/Outline_of_astronomy "Outline of astronomy")
+
+
+
+
+
+
+
+
 
 *   [Astrobiology](https://en.wikipedia.org/wiki/Astrobiology "Astrobiology")
 *   [Astronomy](https://en.wikipedia.org/wiki/Astronomy "Astronomy") ([outline](https://en.wikipedia.org/wiki/Outline_of_astronomy "Outline of astronomy"))
@@ -2793,9 +2793,9 @@ Knowing the architecture of software and how to build off of blocks
     *   [Gravitational astronomy](https://en.wikipedia.org/wiki/Gravity "Gravity")
         *   [Black holes](https://en.wikipedia.org/wiki/Black_hole "Black hole")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   *   [Interstellar medium](https://en.wikipedia.org/wiki/Interstellar_medium "Interstellar medium")
     *   [Numerical simulations](https://en.wikipedia.org/wiki/Direct_numerical_simulation "Direct numerical simulation")
@@ -2812,31 +2812,31 @@ Knowing the architecture of software and how to build off of blocks
         *   [Stellar nucleosynthesis](https://en.wikipedia.org/wiki/Stellar_nucleosynthesis "Stellar nucleosynthesis")
 *   [Planetary science](https://en.wikipedia.org/wiki/Planetary_science "Planetary science") (alternatively, a part of [earth science](https://en.wikipedia.org/wiki/Earth_science "Earth science"))
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-## <span class="mw-headline" id="Formal_sciences">Formal sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=26 "Edit section: Formal sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Formal sciences](https://en.wikipedia.org/wiki/Formal_sciences "Formal sciences")</div>
 
-### <span class="mw-headline" id="Mathematics">Mathematics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=27 "Edit section: Mathematics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-#### <span class="mw-headline" id="Applied_Mathematics">Applied Mathematics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=28 "Edit section: Applied Mathematics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Applied mathematics](https://en.wikipedia.org/wiki/Applied_mathematics "Applied mathematics")</div>
+## Formal sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=26 "Edit section: Formal sciences")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main article: [Formal sciences](https://en.wikipedia.org/wiki/Formal_sciences "Formal sciences")
 
-<tbody>
+### Mathematics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=27 "Edit section: Mathematics")]
 
-<tr>
+#### Applied Mathematics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=28 "Edit section: Applied Mathematics")]
 
-<td style="width: 533px; vertical-align: top;">
+Main article: [Applied mathematics](https://en.wikipedia.org/wiki/Applied_mathematics "Applied mathematics")
+
+
+
+
+
+
+
+
 
 *   [Statistics](https://en.wikipedia.org/wiki/Statistics "Statistics") ([outline](https://en.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics"))
     *   [Mathematical statistics](https://en.wikipedia.org/wiki/Mathematical_statistics "Mathematical statistics")
@@ -2858,9 +2858,9 @@ Knowing the architecture of software and how to build off of blocks
     *   [Stochastic processes](https://en.wikipedia.org/wiki/Stochastic_processes "Stochastic processes")
     *   [Optimal maintenance](https://en.wikipedia.org/wiki/Optimal_maintenance "Optimal maintenance")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Dynamical systems](https://en.wikipedia.org/wiki/Dynamical_systems "Dynamical systems")
     *   [Chaos theory](https://en.wikipedia.org/wiki/Chaos_theory "Chaos theory")
@@ -2880,31 +2880,31 @@ Knowing the architecture of software and how to build off of blocks
 *   [Graph theory](https://en.wikipedia.org/wiki/Graph_theory "Graph theory")
 *   [Game theory](https://en.wikipedia.org/wiki/Game_theory "Game theory")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-#### <span class="mw-headline" id="Pure_Mathematics">Pure Mathematics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=29 "Edit section: Pure Mathematics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Mathematics](https://en.wikipedia.org/wiki/Mathematics "Mathematics") and [Outline of mathematics](https://en.wikipedia.org/wiki/Outline_of_mathematics "Outline of mathematics")</div>
 
-<dl style="margin-top: 0.2em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of mathematics](https://en.wikipedia.org/wiki/Areas_of_mathematics "Areas of mathematics") and AMS [Mathematics Subject Classification](http://www.ams.org/msc/)_</dd>
 
-</dl>
+#### Pure Mathematics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=29 "Edit section: Pure Mathematics")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Mathematics](https://en.wikipedia.org/wiki/Mathematics "Mathematics") and [Outline of mathematics](https://en.wikipedia.org/wiki/Outline_of_mathematics "Outline of mathematics")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of mathematics](https://en.wikipedia.org/wiki/Areas_of_mathematics "Areas of mathematics") and AMS [Mathematics Subject Classification](http://www.ams.org/msc/)_
+
+
+
+
+
+
+
+
+
+
 
 *   [Algebra](https://en.wikipedia.org/wiki/Algebra "Algebra") ([outline](https://en.wikipedia.org/wiki/Outline_of_algebra "Outline of algebra"))
     *   [Group theory](https://en.wikipedia.org/wiki/Group_theory "Group theory")
@@ -2944,9 +2944,9 @@ Knowing the architecture of software and how to build off of blocks
     *   [Ergodic theory](https://en.wikipedia.org/wiki/Ergodic_theory "Ergodic theory")
     *   [Stochastic process](https://en.wikipedia.org/wiki/Stochastic_process "Stochastic process")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Geometry](https://en.wikipedia.org/wiki/Geometry "Geometry") ([outline](https://en.wikipedia.org/wiki/Outline_of_geometry "Outline of geometry")) and [Topology](https://en.wikipedia.org/wiki/Topology "Topology")
     *   [General topology](https://en.wikipedia.org/wiki/General_topology "General topology")
@@ -2972,33 +2972,33 @@ Knowing the architecture of software and how to build off of blocks
     *   [Modal logic](https://en.wikipedia.org/wiki/Modal_logic "Modal logic")
     *   [Intuitionistic logic](https://en.wikipedia.org/wiki/Intuitionistic_logic "Intuitionistic logic")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Computer_sciences">Computer sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=30 "Edit section: Computer sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Computer sciences](https://en.wikipedia.org/wiki/Computer_sciences "Computer sciences") and [Outline of computer science](https://en.wikipedia.org/wiki/Outline_of_computer_science "Outline of computer science")</div>
 
-<dl style="margin-top: 0.2em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [ACM Computing Classification System](https://en.wikipedia.org/wiki/ACM_Computing_Classification_System "ACM Computing Classification System")_</dd>
 
-</dl>
+### Computer sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=30 "Edit section: Computer sciences")]
+
+Main articles: [Computer sciences](https://en.wikipedia.org/wiki/Computer_sciences "Computer sciences") and [Outline of computer science](https://en.wikipedia.org/wiki/Outline_of_computer_science "Outline of computer science")
+
+
+
+_See also [ACM Computing Classification System](https://en.wikipedia.org/wiki/ACM_Computing_Classification_System "ACM Computing Classification System")_
+
+
 
 _Also a branch of electrical engineering_
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
 
 *   [Theory of computation](https://en.wikipedia.org/wiki/Theory_of_computation "Theory of computation")
     *   [Automata theory](https://en.wikipedia.org/wiki/Automata_theory "Automata theory") ([Formal languages](https://en.wikipedia.org/wiki/Formal_languages "Formal languages"))
@@ -3046,9 +3046,9 @@ _Also a branch of electrical engineering_
     *   [Compilers](https://en.wikipedia.org/wiki/Compilers "Compilers")
 *   [Human-computer interaction](https://en.wikipedia.org/wiki/Human-computer_interaction "Human-computer interaction")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Information science](https://en.wikipedia.org/wiki/Information_science "Information science") ([outline](https://en.wikipedia.org/wiki/Outline_of_information_science "Outline of information science"))
     *   [Data management](https://en.wikipedia.org/wiki/Data_management "Data management")
@@ -3095,25 +3095,25 @@ _Also a branch of electrical engineering_
     *   [Humanistic informatics](https://en.wikipedia.org/wiki/Humanistic_informatics "Humanistic informatics")
     *   [Community informatics](https://en.wikipedia.org/wiki/Community_informatics "Community informatics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Logic">Logic</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=31 "Edit section: Logic")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Logic](https://en.wikipedia.org/wiki/Logic "Logic") and [Outline of logic](https://en.wikipedia.org/wiki/Outline_of_logic "Outline of logic")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1126px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Logic[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=31 "Edit section: Logic")]
 
-<td style="width: 373px; vertical-align: top;">
+Main articles: [Logic](https://en.wikipedia.org/wiki/Logic "Logic") and [Outline of logic](https://en.wikipedia.org/wiki/Outline_of_logic "Outline of logic")
+
+
+
+
+
+
+
+
 
 *   [Mathematical logic](https://en.wikipedia.org/wiki/Mathematical_logic "Mathematical logic")
     *   [Set theory](https://en.wikipedia.org/wiki/Set_theory "Set theory")
@@ -3123,9 +3123,9 @@ _Also a branch of electrical engineering_
     *   [Modal logic](https://en.wikipedia.org/wiki/Modal_logic "Modal logic")
     *   [Intuitionistic logic](https://en.wikipedia.org/wiki/Intuitionistic_logic "Intuitionistic logic")
 
-</td>
 
-<td style="width: 373px; vertical-align: top;">
+
+
 
 *   [Philosophical logic](https://en.wikipedia.org/wiki/Philosophical_logic "Philosophical logic")
     *   [Logical reasoning](https://en.wikipedia.org/wiki/Logical_reasoning "Logical reasoning")
@@ -3133,9 +3133,9 @@ _Also a branch of electrical engineering_
         *   [Deontic logic](https://en.wikipedia.org/wiki/Deontic_logic "Deontic logic")
         *   [Doxastic logic](https://en.wikipedia.org/wiki/Doxastic_logic "Doxastic logic")
 
-</td>
 
-<td style="width: 374px; vertical-align: top;">
+
+
 
 *   [Logic in computer science](https://en.wikipedia.org/wiki/Logic_in_computer_science "Logic in computer science")
     *   [Programming language semantics](https://en.wikipedia.org/wiki/Formal_semantics_of_programming_languages "Formal semantics of programming languages")
@@ -3145,25 +3145,25 @@ _Also a branch of electrical engineering_
     *   [Multi-valued logic](https://en.wikipedia.org/wiki/Multi-valued_logic "Multi-valued logic")
         *   [Fuzzy logic](https://en.wikipedia.org/wiki/Fuzzy_logic "Fuzzy logic")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Statistics">Statistics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=32 "Edit section: Statistics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Statistics](https://en.wikipedia.org/wiki/Statistics "Statistics") and [Outline of statistics](https://en.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Statistics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=32 "Edit section: Statistics")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Statistics](https://en.wikipedia.org/wiki/Statistics "Statistics") and [Outline of statistics](https://en.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics")
+
+
+
+
+
+
+
+
 
 *   [Computational statistics](https://en.wikipedia.org/wiki/Computational_statistics "Computational statistics")
     *   [Data mining](https://en.wikipedia.org/wiki/Data_mining "Data mining")
@@ -3176,9 +3176,9 @@ _Also a branch of electrical engineering_
 *   [Sample Survey](https://en.wikipedia.org/wiki/Survey_Sampling "Survey Sampling")
     *   [Sampling theory](https://en.wikipedia.org/wiki/Statistical_sampling "Statistical sampling")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Statistical modelling](https://en.wikipedia.org/wiki/Statistical_model "Statistical model")
     *   [Biostatistics](https://en.wikipedia.org/wiki/Biostatistics "Biostatistics")
@@ -3194,25 +3194,25 @@ _Also a branch of electrical engineering_
         *   [Probability](https://en.wikipedia.org/wiki/Probability "Probability") ([outline](https://en.wikipedia.org/wiki/Outline_of_probability "Outline of probability"))
     *   [Survey methodology](https://en.wikipedia.org/wiki/Survey_(statistics) "Survey (statistics)")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Systems_science">Systems science</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=33 "Edit section: Systems science")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Systems science](https://en.wikipedia.org/wiki/Systems_science "Systems science")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Systems science[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=33 "Edit section: Systems science")]
 
-<td style="width: 354px; vertical-align: top;">
+Main article: [Systems science](https://en.wikipedia.org/wiki/Systems_science "Systems science")
+
+
+
+
+
+
+
+
 
 *   [Chaos theory](https://en.wikipedia.org/wiki/Chaos_theory "Chaos theory")
 *   [Conceptual systems](https://en.wikipedia.org/wiki/Conceptual_systems "Conceptual systems")
@@ -3232,9 +3232,9 @@ _Also a branch of electrical engineering_
     *   [Dynamical systems](https://en.wikipedia.org/wiki/Dynamical_systems "Dynamical systems")
     *   [Perceptual control theory](https://en.wikipedia.org/wiki/Perceptual_control_theory "Perceptual control theory")
 
-</td>
 
-<td style="width: 354px; vertical-align: top;">
+
+
 
 *   [Operations research](https://en.wikipedia.org/wiki/Operations_research "Operations research")
 *   [Systems biology](https://en.wikipedia.org/wiki/Systems_biology "Systems biology")
@@ -3253,9 +3253,9 @@ _Also a branch of electrical engineering_
     *   [Systems analysis](https://en.wikipedia.org/wiki/Systems_analysis "Systems analysis")
 *   [Systems theory in anthropology](https://en.wikipedia.org/wiki/Systems_theory_in_anthropology "Systems theory in anthropology")
 
-</td>
 
-<td style="width: 355px; vertical-align: top;">
+
+
 
 *   [Systems psychology](https://en.wikipedia.org/wiki/Systems_psychology "Systems psychology")
     *   [Ergonomics](https://en.wikipedia.org/wiki/Ergonomics "Ergonomics")
@@ -3272,29 +3272,29 @@ _Also a branch of electrical engineering_
     *   [Mathematical system theory](https://en.wikipedia.org/wiki/Mathematical_system_theory "Mathematical system theory")
     *   [World-systems theory](https://en.wikipedia.org/wiki/World-systems_theory "World-systems theory")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-## <span class="mw-headline" id="Professions">Professions</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=34 "Edit section: Professions")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Profession](https://en.wikipedia.org/wiki/Profession "Profession")</div>
 
-### <span class="mw-headline" id="Agriculture">Agriculture</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=35 "Edit section: Agriculture")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Agriculture](https://en.wikipedia.org/wiki/Agriculture "Agriculture") and [Outline of agriculture](https://en.wikipedia.org/wiki/Outline_of_agriculture "Outline of agriculture")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+## Professions[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=34 "Edit section: Professions")]
 
-<tbody>
+Main article: [Profession](https://en.wikipedia.org/wiki/Profession "Profession")
 
-<tr>
+### Agriculture[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=35 "Edit section: Agriculture")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Agriculture](https://en.wikipedia.org/wiki/Agriculture "Agriculture") and [Outline of agriculture](https://en.wikipedia.org/wiki/Outline_of_agriculture "Outline of agriculture")
+
+
+
+
+
+
+
+
 
 *   [Agroecology](https://en.wikipedia.org/wiki/Agroecology "Agroecology")
 *   [Agronomy](https://en.wikipedia.org/wiki/Agronomy "Agronomy")
@@ -3307,9 +3307,9 @@ _Also a branch of electrical engineering_
     *   [Biological systems engineering](https://en.wikipedia.org/wiki/Biological_systems_engineering "Biological systems engineering")
     *   [Food engineering](https://en.wikipedia.org/wiki/Food_engineering "Food engineering")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Aquaculture](https://en.wikipedia.org/wiki/Aquaculture "Aquaculture")
 *   [Enology](https://en.wikipedia.org/wiki/Enology "Enology")
@@ -3321,25 +3321,25 @@ _Also a branch of electrical engineering_
     *   [Pomology](https://en.wikipedia.org/wiki/Pomology "Pomology")
 *   [Viticulture](https://en.wikipedia.org/wiki/Viticulture "Viticulture")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Architecture_and_design">Architecture and design</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=36 "Edit section: Architecture and design")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Architecture](https://en.wikipedia.org/wiki/Architecture "Architecture"), [Outline of architecture](https://en.wikipedia.org/wiki/Outline_of_architecture "Outline of architecture"), [Design](https://en.wikipedia.org/wiki/Design "Design") and [Outline of design](https://en.wikipedia.org/wiki/Outline_of_design "Outline of design")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Architecture and design[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=36 "Edit section: Architecture and design")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Architecture](https://en.wikipedia.org/wiki/Architecture "Architecture"), [Outline of architecture](https://en.wikipedia.org/wiki/Outline_of_architecture "Outline of architecture"), [Design](https://en.wikipedia.org/wiki/Design "Design") and [Outline of design](https://en.wikipedia.org/wiki/Outline_of_design "Outline of design")
+
+
+
+
+
+
+
+
 
 *   [Architectural Analytics](https://en.wikipedia.org/wiki/Architectural_Analytics "Architectural Analytics")
 *   [Historic preservation](https://en.wikipedia.org/wiki/Historic_preservation "Historic preservation")
@@ -3352,9 +3352,9 @@ _Also a branch of electrical engineering_
         *   [Type design](https://en.wikipedia.org/wiki/Type_design "Type design")
     *   [Technical drawing](https://en.wikipedia.org/wiki/Technical_drawing "Technical drawing")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Industrial design](https://en.wikipedia.org/wiki/Industrial_design "Industrial design") ([product design](https://en.wikipedia.org/wiki/Product_design "Product design"))
     *   [Ergonomics](https://en.wikipedia.org/wiki/Ergonomics "Ergonomics") ([outline](https://en.wikipedia.org/wiki/Outline_of_ergonomics "Outline of ergonomics"))
@@ -3368,25 +3368,25 @@ _Also a branch of electrical engineering_
 *   [Fashion design](https://en.wikipedia.org/wiki/Fashion_design "Fashion design")
 *   [Textile design](https://en.wikipedia.org/wiki/Textile_design "Textile design")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Business">Business</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=37 "Edit section: Business")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Business](https://en.wikipedia.org/wiki/Business "Business") and [Business education](https://en.wikipedia.org/wiki/Business_education "Business education")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Business[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=37 "Edit section: Business")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Business](https://en.wikipedia.org/wiki/Business "Business") and [Business education](https://en.wikipedia.org/wiki/Business_education "Business education")
+
+
+
+
+
+
+
+
 
 *   [Accounting scholarship](https://en.wikipedia.org/wiki/Accounting_scholarship "Accounting scholarship")
 *   [Business administration](https://en.wikipedia.org/wiki/Business_administration "Business administration")
@@ -3403,9 +3403,9 @@ _Also a branch of electrical engineering_
     *   [Labor economics](https://en.wikipedia.org/wiki/Labor_economics "Labor economics")
     *   [Labor history](https://en.wikipedia.org/wiki/Labor_history_(discipline) "Labor history (discipline)")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Information systems](https://en.wikipedia.org/wiki/Information_systems "Information systems") ([Business informatics](https://en.wikipedia.org/wiki/Business_informatics "Business informatics"))
     *   [Management information systems](https://en.wikipedia.org/wiki/Management_information_systems "Management information systems")
@@ -3417,25 +3417,25 @@ _Also a branch of electrical engineering_
 *   [Risk management](https://en.wikipedia.org/wiki/Risk_management "Risk management") and [insurance](https://en.wikipedia.org/wiki/Insurance "Insurance")
 *   [Systems science](https://en.wikipedia.org/wiki/Systems_science "Systems science")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Divinity">Divinity</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=38 "Edit section: Divinity")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Divinity (academic discipline)](https://en.wikipedia.org/wiki/Divinity_(academic_discipline) "Divinity (academic discipline)")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Divinity[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=38 "Edit section: Divinity")]
 
-<td style="width: 533px; vertical-align: top;">
+Main article: [Divinity (academic discipline)](https://en.wikipedia.org/wiki/Divinity_(academic_discipline) "Divinity (academic discipline)")
+
+
+
+
+
+
+
+
 
 *   [Canon law](https://en.wikipedia.org/wiki/Canon_law "Canon law")
 *   [Church history](https://en.wikipedia.org/wiki/History_of_Christianity "History of Christianity")
@@ -3448,9 +3448,9 @@ _Also a branch of electrical engineering_
     *   [Sacred music](https://en.wikipedia.org/wiki/Sacred_music "Sacred music")
     *   [Missiology](https://en.wikipedia.org/wiki/Missiology "Missiology")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Hermeneutics](https://en.wikipedia.org/wiki/Hermeneutics "Hermeneutics")
 *   Scriptural study and languages
@@ -3466,25 +3466,25 @@ _Also a branch of electrical engineering_
     *   [Systematic theology](https://en.wikipedia.org/wiki/Systematic_theology "Systematic theology")
     *   [Christian ethics](https://en.wikipedia.org/wiki/Christian_ethics "Christian ethics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Education">Education</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=39 "Edit section: Education")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Education](https://en.wikipedia.org/wiki/Education "Education") and [Outline of education](https://en.wikipedia.org/wiki/Outline_of_education "Outline of education")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Education[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=39 "Edit section: Education")]
 
-<td style="width: 1067px; vertical-align: top;">
+Main articles: [Education](https://en.wikipedia.org/wiki/Education "Education") and [Outline of education](https://en.wikipedia.org/wiki/Outline_of_education "Outline of education")
+
+
+
+
+
+
+
+
 
 *   [Comparative education](https://en.wikipedia.org/wiki/Comparative_education "Comparative education")
 *   [Consumer education](https://en.wikipedia.org/wiki/Consumer_education "Consumer education")
@@ -3526,31 +3526,31 @@ _Also a branch of electrical engineering_
 *   [Educational technology](https://en.wikipedia.org/wiki/Educational_technology "Educational technology")
 *   [Distance education](https://en.wikipedia.org/wiki/Distance_education "Distance education")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Engineering">Engineering</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=40 "Edit section: Engineering")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Engineering](https://en.wikipedia.org/wiki/Engineering "Engineering"), [Outline of engineering](https://en.wikipedia.org/wiki/Outline_of_engineering "Outline of engineering") and [Engineering education](https://en.wikipedia.org/wiki/Engineering_education "Engineering education")</div>
 
-<dl style="margin-top: 0.2em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of engineering](https://en.wikipedia.org/wiki/List_of_basic_engineering_topics#Branches_of_engineering "List of basic engineering topics")_</dd>
 
-</dl>
+### Engineering[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=40 "Edit section: Engineering")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Engineering](https://en.wikipedia.org/wiki/Engineering "Engineering"), [Outline of engineering](https://en.wikipedia.org/wiki/Outline_of_engineering "Outline of engineering") and [Engineering education](https://en.wikipedia.org/wiki/Engineering_education "Engineering education")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of engineering](https://en.wikipedia.org/wiki/List_of_basic_engineering_topics#Branches_of_engineering "List of basic engineering topics")_
+
+
+
+
+
+
+
+
+
+
 
 **[Chemical Engineering](https://en.wikipedia.org/wiki/Chemical_Engineering "Chemical Engineering")**
 
@@ -3606,9 +3606,9 @@ _Also a branch of electrical engineering_
 *   [Telecommunications engineering](https://en.wikipedia.org/wiki/Telecommunications_engineering "Telecommunications engineering")
 *   [Quantum Computing](https://en.wikipedia.org/wiki/Quantum_Computing "Quantum Computing")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 **[Materials Science and Engineering](https://en.wikipedia.org/wiki/Materials_Science "Materials Science")**
 
@@ -3646,25 +3646,25 @@ _Also a branch of electrical engineering_
 *   [Thermodynamics](https://en.wikipedia.org/wiki/Thermodynamics "Thermodynamics")
 *   [Vehicle engineering](https://en.wikipedia.org/wiki/Vehicle_engineering "Vehicle engineering")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Environmental_studies_and_forestry">Environmental studies and forestry</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=41 "Edit section: Environmental studies and forestry")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Environmental studies](https://en.wikipedia.org/wiki/Environmental_studies "Environmental studies") and [Forestry](https://en.wikipedia.org/wiki/Forestry "Forestry")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Environmental studies and forestry[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=41 "Edit section: Environmental studies and forestry")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Environmental studies](https://en.wikipedia.org/wiki/Environmental_studies "Environmental studies") and [Forestry](https://en.wikipedia.org/wiki/Forestry "Forestry")
+
+
+
+
+
+
+
+
 
 *   [Environmental management](https://en.wikipedia.org/wiki/Environmental_management "Environmental management")
     *   [Coastal management](https://en.wikipedia.org/wiki/Coastal_management "Coastal management")
@@ -3673,9 +3673,9 @@ _Also a branch of electrical engineering_
     *   [Natural resource management](https://en.wikipedia.org/wiki/Natural_resource_management "Natural resource management")
     *   [Wildlife management](https://en.wikipedia.org/wiki/Wildlife_management "Wildlife management")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Environmental policy](https://en.wikipedia.org/wiki/Environmental_policy "Environmental policy")
 *   [Recreation ecology](https://en.wikipedia.org/wiki/Recreation_ecology "Recreation ecology")
@@ -3685,55 +3685,55 @@ _Also a branch of electrical engineering_
 *   [Toxicology](https://en.wikipedia.org/wiki/Toxicology "Toxicology")
 *   Ecology
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Family_and_consumer_science">Family and consumer science</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=42 "Edit section: Family and consumer science")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Family and consumer science](https://en.wikipedia.org/wiki/Family_and_consumer_science "Family and consumer science")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Family and consumer science[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=42 "Edit section: Family and consumer science")]
 
-<td style="width: 533px; vertical-align: top;">
+Main article: [Family and consumer science](https://en.wikipedia.org/wiki/Family_and_consumer_science "Family and consumer science")
+
+
+
+
+
+
+
+
 
 *   [Consumer education](https://en.wikipedia.org/wiki/Consumer_education "Consumer education")
 *   Housing
 *   [Interior design](https://en.wikipedia.org/wiki/Interior_design "Interior design")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Nutrition](https://en.wikipedia.org/wiki/Nutrition "Nutrition") ([outline](https://en.wikipedia.org/wiki/Outline_of_nutrition "Outline of nutrition"))
     *   [Foodservice management](https://en.wikipedia.org/wiki/Foodservice "Foodservice")
 *   [Textiles](https://en.wikipedia.org/wiki/Textile "Textile")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Human_physical_performance_and_recreation">Human physical performance and recreation</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=43 "Edit section: Human physical performance and recreation")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+### Human physical performance and recreation[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=43 "Edit section: Human physical performance and recreation")]
+
+
+
+
+
+
+
+
 
 *   [Biomechanics](https://en.wikipedia.org/wiki/Biomechanics "Biomechanics") / [Sports biomechanics](https://en.wikipedia.org/wiki/Sports_biomechanics "Sports biomechanics")
 *   [Sports coaching](https://en.wikipedia.org/wiki/Sports_coaching "Sports coaching")
@@ -3746,9 +3746,9 @@ _Also a branch of electrical engineering_
 *   [Exercise physiology](https://en.wikipedia.org/wiki/Exercise_physiology "Exercise physiology")
 *   [Kinesiology](https://en.wikipedia.org/wiki/Kinesiology "Kinesiology") / Exercise science / Human performance
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Leisure studies](https://en.wikipedia.org/wiki/Leisure_studies "Leisure studies")
 *   [Physical education](https://en.wikipedia.org/wiki/Physical_education "Physical education") / Pedagogy
@@ -3762,25 +3762,25 @@ _Also a branch of electrical engineering_
     *   [Athletic training](https://en.wikipedia.org/wiki/Athletic_training "Athletic training")
 *   [Toy and amusement design](https://en.wikipedia.org/wiki/Toy "Toy")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Journalism.2C_media_studies_and_communication">Journalism, media studies and communication</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=44 "Edit section: Journalism, media studies and communication")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Journalism](https://en.wikipedia.org/wiki/Journalism "Journalism"), [Media studies](https://en.wikipedia.org/wiki/Media_studies "Media studies") and [Communication studies](https://en.wikipedia.org/wiki/Communication_studies "Communication studies")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Journalism, media studies and communication[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=44 "Edit section: Journalism, media studies and communication")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Journalism](https://en.wikipedia.org/wiki/Journalism "Journalism"), [Media studies](https://en.wikipedia.org/wiki/Media_studies "Media studies") and [Communication studies](https://en.wikipedia.org/wiki/Communication_studies "Communication studies")
+
+
+
+
+
+
+
+
 
 *   [Journalism](https://en.wikipedia.org/wiki/Journalism "Journalism") ([outline](https://en.wikipedia.org/wiki/Outline_of_journalism "Outline of journalism"))
     *   [Broadcast journalism](https://en.wikipedia.org/wiki/Broadcast_journalism "Broadcast journalism")
@@ -3796,9 +3796,9 @@ _Also a branch of electrical engineering_
         *   [Television studies](https://en.wikipedia.org/wiki/Television_studies "Television studies")
     *   [Internet](https://en.wikipedia.org/wiki/Internet "Internet") ([outline](https://en.wikipedia.org/wiki/Outline_of_the_Internet "Outline of the Internet"))
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Communication studies](https://en.wikipedia.org/wiki/Communication_studies "Communication studies")
     *   [Advertising](https://en.wikipedia.org/wiki/Advertising "Advertising")
@@ -3817,25 +3817,25 @@ _Also a branch of electrical engineering_
     *   [Technical writing](https://en.wikipedia.org/wiki/Technical_writing "Technical writing")
     *   [Translation](https://en.wikipedia.org/wiki/Translation "Translation")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Law">Law</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=45 "Edit section: Law")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Law](https://en.wikipedia.org/wiki/Law "Law") and [Outline of law](https://en.wikipedia.org/wiki/Outline_of_law "Outline of law")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Law[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=45 "Edit section: Law")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Law](https://en.wikipedia.org/wiki/Law "Law") and [Outline of law](https://en.wikipedia.org/wiki/Outline_of_law "Outline of law")
+
+
+
+
+
+
+
+
 
 *   [Canon law](https://en.wikipedia.org/wiki/Canon_law "Canon law")
 *   [Comparative law](https://en.wikipedia.org/wiki/Comparative_law "Comparative law")
@@ -3850,9 +3850,9 @@ _Also a branch of electrical engineering_
 *   [Jewish law](https://en.wikipedia.org/wiki/Jewish_law "Jewish law") ([outline](https://en.wikipedia.org/wiki/Outline_of_Jewish_law "Outline of Jewish law"))
 *   [Jurisprudence](https://en.wikipedia.org/wiki/Jurisprudence "Jurisprudence") (Philosophy of Law)
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Civil law](https://en.wikipedia.org/wiki/Civil_law_(common_law) "Civil law (common law)")
     *   [Admiralty law](https://en.wikipedia.org/wiki/Admiralty_law "Admiralty law")
@@ -3868,61 +3868,61 @@ _Also a branch of electrical engineering_
     *   [Tax law](https://en.wikipedia.org/wiki/Tax_law "Tax law")
     *   [Tort law](https://en.wikipedia.org/wiki/Tort_law "Tort law") ([outline](https://en.wikipedia.org/wiki/Outline_of_tort_law "Outline of tort law"))
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Library_and_museum_studies">Library and museum studies</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=46 "Edit section: Library and museum studies")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Library science](https://en.wikipedia.org/wiki/Library_science "Library science") and [Museology](https://en.wikipedia.org/wiki/Museology "Museology")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Library and museum studies[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=46 "Edit section: Library and museum studies")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Library science](https://en.wikipedia.org/wiki/Library_science "Library science") and [Museology](https://en.wikipedia.org/wiki/Museology "Museology")
+
+
+
+
+
+
+
+
 
 *   [Archival science](https://en.wikipedia.org/wiki/Archival_science "Archival science")
 *   [Bibliometrics](https://en.wikipedia.org/wiki/Bibliometrics "Bibliometrics")
     *   [Citation analysis](https://en.wikipedia.org/wiki/Citation_analysis "Citation analysis")
 *   [Conservation science](https://en.wikipedia.org/wiki/Conservation_science_(cultural_heritage) "Conservation science (cultural heritage)")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Informatics](https://en.wikipedia.org/wiki/Informatics_(academic_field) "Informatics (academic field)")
 *   [Information architecture](https://en.wikipedia.org/wiki/Information_architecture "Information architecture")
 *   [Museology](https://en.wikipedia.org/wiki/Museology "Museology")
     *   [Museum administration](https://en.wikipedia.org/wiki/Arts_administration "Arts administration")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Medicine">Medicine</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=47 "Edit section: Medicine")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Medicine](https://en.wikipedia.org/wiki/Medicine "Medicine"), [Healthcare science](https://en.wikipedia.org/wiki/Healthcare_science "Healthcare science") and [Outline of healthcare science](https://en.wikipedia.org/wiki/Outline_of_healthcare_science "Outline of healthcare science")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Branches of medicine](https://en.wikipedia.org/wiki/Branches_of_medicine "Branches of medicine")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Medicine[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=47 "Edit section: Medicine")]
 
-<tr>
+Main articles: [Medicine](https://en.wikipedia.org/wiki/Medicine "Medicine"), [Healthcare science](https://en.wikipedia.org/wiki/Healthcare_science "Healthcare science") and [Outline of healthcare science](https://en.wikipedia.org/wiki/Outline_of_healthcare_science "Outline of healthcare science")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [Branches of medicine](https://en.wikipedia.org/wiki/Branches_of_medicine "Branches of medicine")
+
+
+
+
+
+
+
+
 
 *   [Clinical laboratory sciences](https://en.wikipedia.org/wiki/Clinical_laboratory_sciences "Clinical laboratory sciences")/[Clinical pathology](https://en.wikipedia.org/wiki/Clinical_pathology "Clinical pathology")/[Laboratory medicine](https://en.wikipedia.org/wiki/Laboratory_medicine "Laboratory medicine")
     *   [Clinical biochemistry](https://en.wikipedia.org/wiki/Clinical_biochemistry "Clinical biochemistry")
@@ -3973,9 +3973,9 @@ _Also a branch of electrical engineering_
     *   [Neurology](https://en.wikipedia.org/wiki/Neurology "Neurology")
     *   [Neurosurgery](https://en.wikipedia.org/wiki/Neurosurgery "Neurosurgery")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   *   [Obstetrics](https://en.wikipedia.org/wiki/Obstetrics "Obstetrics")   ([outline](https://en.wikipedia.org/wiki/Outline_of_obstetrics "Outline of obstetrics"))
     *   [Ophthalmology](https://en.wikipedia.org/wiki/Ophthalmology "Ophthalmology")
@@ -4017,25 +4017,25 @@ _Also a branch of electrical engineering_
     *   [Andrology](https://en.wikipedia.org/wiki/Andrology "Andrology")
 *   [Veterinary medicine](https://en.wikipedia.org/wiki/Veterinary_medicine "Veterinary medicine")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Military_sciences">Military sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=48 "Edit section: Military sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Military science](https://en.wikipedia.org/wiki/Military_science "Military science") and [Outline of military science and technology](https://en.wikipedia.org/wiki/Outline_of_military_science_and_technology "Outline of military science and technology")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Military sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=48 "Edit section: Military sciences")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Military science](https://en.wikipedia.org/wiki/Military_science "Military science") and [Outline of military science and technology](https://en.wikipedia.org/wiki/Outline_of_military_science_and_technology "Outline of military science and technology")
+
+
+
+
+
+
+
+
 
 *   [Amphibious warfare](https://en.wikipedia.org/wiki/Amphibious_warfare "Amphibious warfare")
 *   [Artillery](https://en.wikipedia.org/wiki/Artillery "Artillery")
@@ -4085,9 +4085,9 @@ _Also a branch of electrical engineering_
     *   [Staff](https://en.wikipedia.org/wiki/Staff_(military) "Staff (military)")
     *   [Technology and equipment](https://en.wikipedia.org/wiki/Military_technology "Military technology")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Strategy](https://en.wikipedia.org/wiki/Strategy "Strategy")
     *   [Attrition](https://en.wikipedia.org/wiki/Attrition_warfare "Attrition warfare")
@@ -4139,17 +4139,17 @@ _Also a branch of electrical engineering_
     *   [Theater (warfare)](https://en.wikipedia.org/wiki/Theater_(warfare) "Theater (warfare)")
     *   [War crimes](https://en.wikipedia.org/wiki/War_crime "War crime")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Public_administration">Public administration</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=49 "Edit section: Public administration")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Public administration](https://en.wikipedia.org/wiki/Public_administration "Public administration")</div>
+
+
+
+### Public administration[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=49 "Edit section: Public administration")]
+
+Main article: [Public administration](https://en.wikipedia.org/wiki/Public_administration "Public administration")
 
 *   [Corrections](https://en.wikipedia.org/wiki/Corrections "Corrections")
 *   [Conservation biology](https://en.wikipedia.org/wiki/Conservation_biology "Conservation biology")
@@ -4170,9 +4170,9 @@ _Also a branch of electrical engineering_
     *   [Public policy school](https://en.wikipedia.org/wiki/Public_policy_school "Public policy school")
     *   [Regulation](https://en.wikipedia.org/wiki/Regulation "Regulation")
 
-#### <span class="mw-headline" id="Public_policy">Public policy</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=50 "Edit section: Public policy")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+#### Public policy[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=50 "Edit section: Public policy")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Public policy](https://en.wikipedia.org/wiki/Public_policy "Public policy")</div>
+Main article: [Public policy](https://en.wikipedia.org/wiki/Public_policy "Public policy")
 
 *   [Agricultural policy](https://en.wikipedia.org/wiki/Agricultural_policy "Agricultural policy")
 *   [Commercial policy](https://en.wikipedia.org/wiki/Commercial_policy "Commercial policy")
@@ -4210,9 +4210,9 @@ _Also a branch of electrical engineering_
 *   [Social policy](https://en.wikipedia.org/wiki/Social_policy "Social policy")
 *   [Public policy by country](https://en.wikipedia.org/wiki/List_of_public_policy_topics_by_country "List of public policy topics by country")
 
-### <span class="mw-headline" id="Social_work">Social work</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=51 "Edit section: Social work")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Social work[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=51 "Edit section: Social work")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Social work](https://en.wikipedia.org/wiki/Social_work "Social work")</div>
+Main article: [Social work](https://en.wikipedia.org/wiki/Social_work "Social work")
 
 *   [Child welfare](https://en.wikipedia.org/wiki/Child_welfare "Child welfare")
 *   [Community practice](https://en.wikipedia.org/wiki/Community_practice "Community practice")
@@ -4225,7 +4225,7 @@ _Also a branch of electrical engineering_
 *   [Mental health](https://en.wikipedia.org/wiki/Mental_health "Mental health")
 *   [School social work](https://en.wikipedia.org/wiki/School_social_worker "School social worker")
 
-### <span class="mw-headline" id="Transportation">Transportation</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=52 "Edit section: Transportation")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Transportation[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=52 "Edit section: Transportation")]
 
 *   [Highway safety](https://en.wikipedia.org/wiki/Highway_safety "Highway safety")
 *   [Infographics](https://en.wikipedia.org/wiki/Infographics "Infographics")
@@ -4236,21 +4236,21 @@ _Also a branch of electrical engineering_
 *   [Mass transit](https://en.wikipedia.org/wiki/Mass_transit "Mass transit")
 ### https://en.wikipedia.org/wiki/Outline_of_academic_disciplines#Economics
 ### Social Science
-## <span class="mw-headline" id="Social_sciences">Social sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=9 "Edit section: Social sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+## Social sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=9 "Edit section: Social sciences")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Social sciences](https://en.wikipedia.org/wiki/Social_sciences "Social sciences") and [Outline of social science](https://en.wikipedia.org/wiki/Outline_of_social_science "Outline of social science")</div>
+Main articles: [Social sciences](https://en.wikipedia.org/wiki/Social_sciences "Social sciences") and [Outline of social science](https://en.wikipedia.org/wiki/Outline_of_social_science "Outline of social science")
 
-### <span class="mw-headline" id="Anthropology">Anthropology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=10 "Edit section: Anthropology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Anthropology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=10 "Edit section: Anthropology")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Anthropology](https://en.wikipedia.org/wiki/Anthropology "Anthropology") and [Outline of anthropology](https://en.wikipedia.org/wiki/Outline_of_anthropology "Outline of anthropology")</div>
+Main articles: [Anthropology](https://en.wikipedia.org/wiki/Anthropology "Anthropology") and [Outline of anthropology](https://en.wikipedia.org/wiki/Outline_of_anthropology "Outline of anthropology")
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
 
 *   [Biological anthropology](https://en.wikipedia.org/wiki/Biological_anthropology "Biological anthropology")
     *   [Forensic anthropology](https://en.wikipedia.org/wiki/Forensic_anthropology "Forensic anthropology")
@@ -4267,9 +4267,9 @@ _Also a branch of electrical engineering_
     *   [Ethnolinguistics](https://en.wikipedia.org/wiki/Ethnolinguistics "Ethnolinguistics")
     *   [Sociolinguistics](https://en.wikipedia.org/wiki/Sociolinguistics "Sociolinguistics")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Cultural anthropology](https://en.wikipedia.org/wiki/Cultural_anthropology "Cultural anthropology")
     *   [Anthropology of religion](https://en.wikipedia.org/wiki/Anthropology_of_religion "Anthropology of religion")
@@ -4285,19 +4285,19 @@ _Also a branch of electrical engineering_
     *   [Psychological anthropology](https://en.wikipedia.org/wiki/Psychological_anthropology "Psychological anthropology")
 *   [Social anthropology](https://en.wikipedia.org/wiki/Social_anthropology "Social anthropology")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Archaeology">Archaeology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=11 "Edit section: Archaeology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Archaeology](https://en.wikipedia.org/wiki/Archaeology "Archaeology"), [Outline of archaeology](https://en.wikipedia.org/wiki/Outline_of_archaeology "Outline of archaeology") and [Archaeological sub-disciplines](https://en.wikipedia.org/wiki/Archaeological_sub-disciplines "Archaeological sub-disciplines")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Branches of archaeology](https://en.wikipedia.org/wiki/Archaeological_sub-disciplines "Archaeological sub-disciplines")</div>
+
+
+### Archaeology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=11 "Edit section: Archaeology")]
+
+Main articles: [Archaeology](https://en.wikipedia.org/wiki/Archaeology "Archaeology"), [Outline of archaeology](https://en.wikipedia.org/wiki/Outline_of_archaeology "Outline of archaeology") and [Archaeological sub-disciplines](https://en.wikipedia.org/wiki/Archaeological_sub-disciplines "Archaeological sub-disciplines")
+
+See also: [Branches of archaeology](https://en.wikipedia.org/wiki/Archaeological_sub-disciplines "Archaeological sub-disciplines")
 
 *   [Classical archaeology](https://en.wikipedia.org/wiki/Classical_archaeology "Classical archaeology")
 *   [Egyptology](https://en.wikipedia.org/wiki/Egyptology "Egyptology")
@@ -4308,9 +4308,9 @@ _Also a branch of electrical engineering_
 *   [Paleoanthropology](https://en.wikipedia.org/wiki/Paleoanthropology "Paleoanthropology")
 *   [Prehistoric archaeology](https://en.wikipedia.org/wiki/Prehistoric_archaeology "Prehistoric archaeology")
 
-### <span class="mw-headline" id="Area_studies">Area studies</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=12 "Edit section: Area studies")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Area studies[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=12 "Edit section: Area studies")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Area studies](https://en.wikipedia.org/wiki/Area_studies "Area studies")</div>
+Main article: [Area studies](https://en.wikipedia.org/wiki/Area_studies "Area studies")
 
 *   [African studies](https://en.wikipedia.org/wiki/African_studies "African studies")
 *   [American studies](https://en.wikipedia.org/wiki/American_studies "American studies")
@@ -4336,17 +4336,17 @@ _Also a branch of electrical engineering_
 *   [Middle East studies](https://en.wikipedia.org/wiki/Middle_East_studies "Middle East studies")
 *   Russian and Eastern European studies
 
-### <span class="mw-headline" id="Cultural_and_ethnic_studies">Cultural and ethnic studies</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=13 "Edit section: Cultural and ethnic studies")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Cultural and ethnic studies[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=13 "Edit section: Cultural and ethnic studies")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Cultural studies](https://en.wikipedia.org/wiki/Cultural_studies "Cultural studies") and [Ethnic studies](https://en.wikipedia.org/wiki/Ethnic_studies "Ethnic studies")</div>
+Main articles: [Cultural studies](https://en.wikipedia.org/wiki/Cultural_studies "Cultural studies") and [Ethnic studies](https://en.wikipedia.org/wiki/Ethnic_studies "Ethnic studies")
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
 
 *   [Asian studies](https://en.wikipedia.org/wiki/Asian_studies "Asian studies")
 *   [Asian American studies](https://en.wikipedia.org/wiki/Asian_American_studies "Asian American studies")
@@ -4356,9 +4356,9 @@ _Also a branch of electrical engineering_
 *   [Latino studies](https://en.wikipedia.org/wiki/Latino_studies "Latino studies")
 *   [Native American studies](https://en.wikipedia.org/wiki/Native_American_studies "Native American studies")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   Indigenous (non-American) studies
 *   European studies
@@ -4367,25 +4367,25 @@ _Also a branch of electrical engineering_
 *   [Deaf studies](https://en.wikipedia.org/wiki/Deaf_studies "Deaf studies")
 *   Sexuality studies
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Economics">Economics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=14 "Edit section: Economics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Economics](https://en.wikipedia.org/wiki/Economics "Economics") and [Outline of economics](https://en.wikipedia.org/wiki/Outline_of_economics "Outline of economics")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Economics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=14 "Edit section: Economics")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Economics](https://en.wikipedia.org/wiki/Economics "Economics") and [Outline of economics](https://en.wikipedia.org/wiki/Outline_of_economics "Outline of economics")
+
+
+
+
+
+
+
+
 
 *   [Agricultural economics](https://en.wikipedia.org/wiki/Agricultural_economics "Agricultural economics")
 *   [Anarchist economics](https://en.wikipedia.org/wiki/Anarchist_economics "Anarchist economics")
@@ -4413,9 +4413,9 @@ _Also a branch of electrical engineering_
 *   [Growth economics](https://en.wikipedia.org/wiki/Economic_growth "Economic growth")
 *   [Human development theory](https://en.wikipedia.org/wiki/Human_development_theory "Human development theory")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Industrial organization](https://en.wikipedia.org/wiki/Industrial_organization "Industrial organization")
 *   [Information economics](https://en.wikipedia.org/wiki/Information_economics "Information economics")
@@ -4443,25 +4443,25 @@ _Also a branch of electrical engineering_
 *   [Transport economics](https://en.wikipedia.org/wiki/Transport_economics "Transport economics")
 *   [Welfare economics](https://en.wikipedia.org/wiki/Welfare_economics "Welfare economics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Gender_and_sexuality_studies">Gender and sexuality studies</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=15 "Edit section: Gender and sexuality studies")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Gender and sexuality studies](https://en.wikipedia.org/wiki/Gender_and_sexuality_studies "Gender and sexuality studies")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Gender and sexuality studies[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=15 "Edit section: Gender and sexuality studies")]
 
-<td style="width: 533px; vertical-align: top;">
+Main article: [Gender and sexuality studies](https://en.wikipedia.org/wiki/Gender_and_sexuality_studies "Gender and sexuality studies")
+
+
+
+
+
+
+
+
 
 *   [Feminine psychology](https://en.wikipedia.org/wiki/Feminine_psychology "Feminine psychology")
 *   [Gender studies](https://en.wikipedia.org/wiki/Gender_studies "Gender studies")/[Gender theory](https://en.wikipedia.org/wiki/Gender_theory "Gender theory")
@@ -4470,9 +4470,9 @@ _Also a branch of electrical engineering_
 *   [Human sexuality](https://en.wikipedia.org/wiki/Human_sexuality "Human sexuality") ([outline](https://en.wikipedia.org/wiki/Outline_of_human_sexuality "Outline of human sexuality"))
 *   [Masculine psychology](https://en.wikipedia.org/wiki/Masculine_psychology "Masculine psychology")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Men's studies](https://en.wikipedia.org/wiki/Men%27s_studies "Men's studies")
 *   [Queer studies](https://en.wikipedia.org/wiki/Queer_studies "Queer studies")/[Queer theory](https://en.wikipedia.org/wiki/Queer_theory "Queer theory")
@@ -4480,25 +4480,25 @@ _Also a branch of electrical engineering_
 *   [Sexology](https://en.wikipedia.org/wiki/Sexology "Sexology")
 *   [Women's studies](https://en.wikipedia.org/wiki/Women%27s_studies "Women's studies")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Geography">Geography</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=16 "Edit section: Geography")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Geography](https://en.wikipedia.org/wiki/Geography "Geography") and [Outline of geography](https://en.wikipedia.org/wiki/Outline_of_geography "Outline of geography")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Geography[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=16 "Edit section: Geography")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Geography](https://en.wikipedia.org/wiki/Geography "Geography") and [Outline of geography](https://en.wikipedia.org/wiki/Outline_of_geography "Outline of geography")
+
+
+
+
+
+
+
+
 
 *   [Cartography](https://en.wikipedia.org/wiki/Cartography "Cartography") ([outline](https://en.wikipedia.org/wiki/Outline_of_cartography "Outline of cartography"))
 *   [Human geography](https://en.wikipedia.org/wiki/Human_geography "Human geography")
@@ -4519,9 +4519,9 @@ _Also a branch of electrical engineering_
         *   [Tourism geography](https://en.wikipedia.org/wiki/Tourism_geography "Tourism geography")
     *   [Urban geography](https://en.wikipedia.org/wiki/Urban_geography "Urban geography")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Environmental geography](https://en.wikipedia.org/wiki/Environmental_geography "Environmental geography")
 *   [Physical geography](https://en.wikipedia.org/wiki/Physical_geography "Physical geography")
@@ -4540,25 +4540,25 @@ _Also a branch of electrical engineering_
 *   [Regional geography](https://en.wikipedia.org/wiki/Regional_geography "Regional geography")
 *   [Remote sensing](https://en.wikipedia.org/wiki/Remote_sensing "Remote sensing")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Political_science">Political science</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=17 "Edit section: Political science")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Political science](https://en.wikipedia.org/wiki/Political_science "Political science") and [Outline of politics](https://en.wikipedia.org/wiki/Outline_of_politics "Outline of politics")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Political science[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=17 "Edit section: Political science")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Political science](https://en.wikipedia.org/wiki/Political_science "Political science") and [Outline of politics](https://en.wikipedia.org/wiki/Outline_of_politics "Outline of politics")
+
+
+
+
+
+
+
+
 
 *   [American politics](https://en.wikipedia.org/wiki/American_politics "American politics")
 *   [Canadian politics](https://en.wikipedia.org/wiki/Canadian_politics "Canadian politics")
@@ -4572,9 +4572,9 @@ _Also a branch of electrical engineering_
 *   [Peace and conflict studies](https://en.wikipedia.org/wiki/Peace_and_conflict_studies "Peace and conflict studies")
 *   [Policy studies](https://en.wikipedia.org/wiki/Policy_studies "Policy studies")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Political behavior](https://en.wikipedia.org/wiki/Political_behavior "Political behavior")
 *   [Political culture](https://en.wikipedia.org/wiki/Political_culture "Political culture")
@@ -4588,27 +4588,27 @@ _Also a branch of electrical engineering_
 *   [Public policy](https://en.wikipedia.org/wiki/Public_policy "Public policy")
 *   [Social choice theory](https://en.wikipedia.org/wiki/Social_choice_theory "Social choice theory")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Psychology">Psychology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=18 "Edit section: Psychology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Psychology](https://en.wikipedia.org/wiki/Psychology "Psychology"), [Outline of psychology](https://en.wikipedia.org/wiki/Outline_of_psychology "Outline of psychology") and [List of psychology disciplines](https://en.wikipedia.org/wiki/List_of_psychology_disciplines "List of psychology disciplines")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Branches of psychology](https://en.wikipedia.org/wiki/Psychology#Subfields "Psychology"), [Cognitive science](https://en.wikipedia.org/wiki/Cognitive_science "Cognitive science"), [Affective science](https://en.wikipedia.org/wiki/Affective_science "Affective science") and [Behavioural sciences](https://en.wikipedia.org/wiki/Behavioural_sciences "Behavioural sciences")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Psychology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=18 "Edit section: Psychology")]
 
-<tr>
+Main articles: [Psychology](https://en.wikipedia.org/wiki/Psychology "Psychology"), [Outline of psychology](https://en.wikipedia.org/wiki/Outline_of_psychology "Outline of psychology") and [List of psychology disciplines](https://en.wikipedia.org/wiki/List_of_psychology_disciplines "List of psychology disciplines")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [Branches of psychology](https://en.wikipedia.org/wiki/Psychology#Subfields "Psychology"), [Cognitive science](https://en.wikipedia.org/wiki/Cognitive_science "Cognitive science"), [Affective science](https://en.wikipedia.org/wiki/Affective_science "Affective science") and [Behavioural sciences](https://en.wikipedia.org/wiki/Behavioural_sciences "Behavioural sciences")
+
+
+
+
+
+
+
+
 
 *   [Abnormal psychology](https://en.wikipedia.org/wiki/Abnormal_psychology "Abnormal psychology")
 *   [Applied psychology](https://en.wikipedia.org/wiki/Applied_psychology "Applied psychology")
@@ -4637,9 +4637,9 @@ _Also a branch of electrical engineering_
 *   [Humanistic psychology](https://en.wikipedia.org/wiki/Humanistic_psychology "Humanistic psychology")
 *   [Indigenous psychology](https://en.wikipedia.org/wiki/Indigenous_psychology "Indigenous psychology")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Legal psychology](https://en.wikipedia.org/wiki/Legal_psychology "Legal psychology")
 *   [Media psychology](https://en.wikipedia.org/wiki/Media_psychology "Media psychology")
@@ -4666,25 +4666,25 @@ _Also a branch of electrical engineering_
 *   [Social psychology](https://en.wikipedia.org/wiki/Social_psychology_(psychology) "Social psychology (psychology)")
 *   [Sport psychology](https://en.wikipedia.org/wiki/Sport_psychology "Sport psychology")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Sociology">Sociology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=19 "Edit section: Sociology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Sociology](https://en.wikipedia.org/wiki/Sociology "Sociology") and [Outline of sociology](https://en.wikipedia.org/wiki/Outline_of_sociology "Outline of sociology")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Sociology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=19 "Edit section: Sociology")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Sociology](https://en.wikipedia.org/wiki/Sociology "Sociology") and [Outline of sociology](https://en.wikipedia.org/wiki/Outline_of_sociology "Outline of sociology")
+
+
+
+
+
+
+
+
 
 *   [Applied sociology](https://en.wikipedia.org/wiki/Applied_sociology "Applied sociology")
     *   [Political sociology](https://en.wikipedia.org/wiki/Political_sociology "Political sociology")
@@ -4720,9 +4720,9 @@ _Also a branch of electrical engineering_
 *   [Social change](https://en.wikipedia.org/wiki/Social_change "Social change")
 *   [Social transformation](https://en.wikipedia.org/wiki/Social_transformation "Social transformation")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Social control](https://en.wikipedia.org/wiki/Social_control "Social control")
     *   [Pure sociology](https://en.wikipedia.org/wiki/Pure_sociology "Pure sociology")
@@ -4754,31 +4754,31 @@ _Also a branch of electrical engineering_
 *   [Urban studies](https://en.wikipedia.org/wiki/Urban_studies "Urban studies") or [Urban sociology](https://en.wikipedia.org/wiki/Urban_sociology "Urban sociology")/[Rural sociology](https://en.wikipedia.org/wiki/Rural_sociology "Rural sociology")
 *   [Visual sociology](https://en.wikipedia.org/wiki/Visual_sociology "Visual sociology")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
+
+
+
+
 ### Formal Science
-## <span class="mw-headline" id="Formal_sciences">Formal sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=26 "Edit section: Formal sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+## Formal sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=26 "Edit section: Formal sciences")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Formal sciences](https://en.wikipedia.org/wiki/Formal_sciences "Formal sciences")</div>
+Main article: [Formal sciences](https://en.wikipedia.org/wiki/Formal_sciences "Formal sciences")
 
-### <span class="mw-headline" id="Mathematics">Mathematics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=27 "Edit section: Mathematics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Mathematics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=27 "Edit section: Mathematics")]
 
-#### <span class="mw-headline" id="Applied_Mathematics">Applied Mathematics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=28 "Edit section: Applied Mathematics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+#### Applied Mathematics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=28 "Edit section: Applied Mathematics")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Applied mathematics](https://en.wikipedia.org/wiki/Applied_mathematics "Applied mathematics")</div>
+Main article: [Applied mathematics](https://en.wikipedia.org/wiki/Applied_mathematics "Applied mathematics")
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
 
 *   [Statistics](https://en.wikipedia.org/wiki/Statistics "Statistics") ([outline](https://en.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics"))
     *   [Mathematical statistics](https://en.wikipedia.org/wiki/Mathematical_statistics "Mathematical statistics")
@@ -4800,9 +4800,9 @@ _Also a branch of electrical engineering_
     *   [Stochastic processes](https://en.wikipedia.org/wiki/Stochastic_processes "Stochastic processes")
     *   [Optimal maintenance](https://en.wikipedia.org/wiki/Optimal_maintenance "Optimal maintenance")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Dynamical systems](https://en.wikipedia.org/wiki/Dynamical_systems "Dynamical systems")
     *   [Chaos theory](https://en.wikipedia.org/wiki/Chaos_theory "Chaos theory")
@@ -4822,31 +4822,31 @@ _Also a branch of electrical engineering_
 *   [Graph theory](https://en.wikipedia.org/wiki/Graph_theory "Graph theory")
 *   [Game theory](https://en.wikipedia.org/wiki/Game_theory "Game theory")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-#### <span class="mw-headline" id="Pure_Mathematics">Pure Mathematics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=29 "Edit section: Pure Mathematics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Mathematics](https://en.wikipedia.org/wiki/Mathematics "Mathematics") and [Outline of mathematics](https://en.wikipedia.org/wiki/Outline_of_mathematics "Outline of mathematics")</div>
 
-<dl style="margin-bottom: 0.5em; margin-top: 0.2em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of mathematics](https://en.wikipedia.org/wiki/Areas_of_mathematics "Areas of mathematics") and AMS [Mathematics Subject Classification](http://www.ams.org/msc/)_</dd>
 
-</dl>
+#### Pure Mathematics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=29 "Edit section: Pure Mathematics")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Mathematics](https://en.wikipedia.org/wiki/Mathematics "Mathematics") and [Outline of mathematics](https://en.wikipedia.org/wiki/Outline_of_mathematics "Outline of mathematics")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of mathematics](https://en.wikipedia.org/wiki/Areas_of_mathematics "Areas of mathematics") and AMS [Mathematics Subject Classification](http://www.ams.org/msc/)_
+
+
+
+
+
+
+
+
+
+
 
 *   [Algebra](https://en.wikipedia.org/wiki/Algebra "Algebra") ([outline](https://en.wikipedia.org/wiki/Outline_of_algebra "Outline of algebra"))
     *   [Group theory](https://en.wikipedia.org/wiki/Group_theory "Group theory")
@@ -4886,9 +4886,9 @@ _Also a branch of electrical engineering_
     *   [Ergodic theory](https://en.wikipedia.org/wiki/Ergodic_theory "Ergodic theory")
     *   [Stochastic process](https://en.wikipedia.org/wiki/Stochastic_process "Stochastic process")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Geometry](https://en.wikipedia.org/wiki/Geometry "Geometry") ([outline](https://en.wikipedia.org/wiki/Outline_of_geometry "Outline of geometry")) and [Topology](https://en.wikipedia.org/wiki/Topology "Topology")
     *   [General topology](https://en.wikipedia.org/wiki/General_topology "General topology")
@@ -4914,33 +4914,33 @@ _Also a branch of electrical engineering_
     *   [Modal logic](https://en.wikipedia.org/wiki/Modal_logic "Modal logic")
     *   [Intuitionistic logic](https://en.wikipedia.org/wiki/Intuitionistic_logic "Intuitionistic logic")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Computer_sciences">Computer sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=30 "Edit section: Computer sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Computer sciences](https://en.wikipedia.org/wiki/Computer_sciences "Computer sciences") and [Outline of computer science](https://en.wikipedia.org/wiki/Outline_of_computer_science "Outline of computer science")</div>
 
-<dl style="margin-bottom: 0.5em; margin-top: 0.2em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [ACM Computing Classification System](https://en.wikipedia.org/wiki/ACM_Computing_Classification_System "ACM Computing Classification System")_</dd>
 
-</dl>
+### Computer sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=30 "Edit section: Computer sciences")]
+
+Main articles: [Computer sciences](https://en.wikipedia.org/wiki/Computer_sciences "Computer sciences") and [Outline of computer science](https://en.wikipedia.org/wiki/Outline_of_computer_science "Outline of computer science")
+
+
+
+_See also [ACM Computing Classification System](https://en.wikipedia.org/wiki/ACM_Computing_Classification_System "ACM Computing Classification System")_
+
+
 
 _Also a branch of electrical engineering_
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
 
 *   [Theory of computation](https://en.wikipedia.org/wiki/Theory_of_computation "Theory of computation")
     *   [Automata theory](https://en.wikipedia.org/wiki/Automata_theory "Automata theory") ([Formal languages](https://en.wikipedia.org/wiki/Formal_languages "Formal languages"))
@@ -4988,9 +4988,9 @@ _Also a branch of electrical engineering_
     *   [Compilers](https://en.wikipedia.org/wiki/Compilers "Compilers")
 *   [Human-computer interaction](https://en.wikipedia.org/wiki/Human-computer_interaction "Human-computer interaction")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Information science](https://en.wikipedia.org/wiki/Information_science "Information science") ([outline](https://en.wikipedia.org/wiki/Outline_of_information_science "Outline of information science"))
     *   [Data management](https://en.wikipedia.org/wiki/Data_management "Data management")
@@ -5037,25 +5037,25 @@ _Also a branch of electrical engineering_
     *   [Humanistic informatics](https://en.wikipedia.org/wiki/Humanistic_informatics "Humanistic informatics")
     *   [Community informatics](https://en.wikipedia.org/wiki/Community_informatics "Community informatics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Logic">Logic</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=31 "Edit section: Logic")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Logic](https://en.wikipedia.org/wiki/Logic "Logic") and [Outline of logic](https://en.wikipedia.org/wiki/Outline_of_logic "Outline of logic")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1126px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Logic[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=31 "Edit section: Logic")]
 
-<td style="width: 373px; vertical-align: top;">
+Main articles: [Logic](https://en.wikipedia.org/wiki/Logic "Logic") and [Outline of logic](https://en.wikipedia.org/wiki/Outline_of_logic "Outline of logic")
+
+
+
+
+
+
+
+
 
 *   [Mathematical logic](https://en.wikipedia.org/wiki/Mathematical_logic "Mathematical logic")
     *   [Set theory](https://en.wikipedia.org/wiki/Set_theory "Set theory")
@@ -5065,9 +5065,9 @@ _Also a branch of electrical engineering_
     *   [Modal logic](https://en.wikipedia.org/wiki/Modal_logic "Modal logic")
     *   [Intuitionistic logic](https://en.wikipedia.org/wiki/Intuitionistic_logic "Intuitionistic logic")
 
-</td>
 
-<td style="width: 373px; vertical-align: top;">
+
+
 
 *   [Philosophical logic](https://en.wikipedia.org/wiki/Philosophical_logic "Philosophical logic")
     *   [Logical reasoning](https://en.wikipedia.org/wiki/Logical_reasoning "Logical reasoning")
@@ -5075,9 +5075,9 @@ _Also a branch of electrical engineering_
         *   [Deontic logic](https://en.wikipedia.org/wiki/Deontic_logic "Deontic logic")
         *   [Doxastic logic](https://en.wikipedia.org/wiki/Doxastic_logic "Doxastic logic")
 
-</td>
 
-<td style="width: 374px; vertical-align: top;">
+
+
 
 *   [Logic in computer science](https://en.wikipedia.org/wiki/Logic_in_computer_science "Logic in computer science")
     *   [Programming language semantics](https://en.wikipedia.org/wiki/Formal_semantics_of_programming_languages "Formal semantics of programming languages")
@@ -5087,25 +5087,25 @@ _Also a branch of electrical engineering_
     *   [Multi-valued logic](https://en.wikipedia.org/wiki/Multi-valued_logic "Multi-valued logic")
         *   [Fuzzy logic](https://en.wikipedia.org/wiki/Fuzzy_logic "Fuzzy logic")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Statistics">Statistics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=32 "Edit section: Statistics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Statistics](https://en.wikipedia.org/wiki/Statistics "Statistics") and [Outline of statistics](https://en.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Statistics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=32 "Edit section: Statistics")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Statistics](https://en.wikipedia.org/wiki/Statistics "Statistics") and [Outline of statistics](https://en.wikipedia.org/wiki/Outline_of_statistics "Outline of statistics")
+
+
+
+
+
+
+
+
 
 *   [Computational statistics](https://en.wikipedia.org/wiki/Computational_statistics "Computational statistics")
     *   [Data mining](https://en.wikipedia.org/wiki/Data_mining "Data mining")
@@ -5118,9 +5118,9 @@ _Also a branch of electrical engineering_
 *   [Sample Survey](https://en.wikipedia.org/wiki/Survey_Sampling "Survey Sampling")
     *   [Sampling theory](https://en.wikipedia.org/wiki/Statistical_sampling "Statistical sampling")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Statistical modelling](https://en.wikipedia.org/wiki/Statistical_model "Statistical model")
     *   [Biostatistics](https://en.wikipedia.org/wiki/Biostatistics "Biostatistics")
@@ -5136,25 +5136,25 @@ _Also a branch of electrical engineering_
         *   [Probability](https://en.wikipedia.org/wiki/Probability "Probability") ([outline](https://en.wikipedia.org/wiki/Outline_of_probability "Outline of probability"))
     *   [Survey methodology](https://en.wikipedia.org/wiki/Survey_(statistics) "Survey (statistics)")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Systems_science">Systems science</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=33 "Edit section: Systems science")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Systems science](https://en.wikipedia.org/wiki/Systems_science "Systems science")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Systems science[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=33 "Edit section: Systems science")]
 
-<td style="width: 354px; vertical-align: top;">
+Main article: [Systems science](https://en.wikipedia.org/wiki/Systems_science "Systems science")
+
+
+
+
+
+
+
+
 
 *   [Chaos theory](https://en.wikipedia.org/wiki/Chaos_theory "Chaos theory")
 *   [Conceptual systems](https://en.wikipedia.org/wiki/Conceptual_systems "Conceptual systems")
@@ -5174,9 +5174,9 @@ _Also a branch of electrical engineering_
     *   [Dynamical systems](https://en.wikipedia.org/wiki/Dynamical_systems "Dynamical systems")
     *   [Perceptual control theory](https://en.wikipedia.org/wiki/Perceptual_control_theory "Perceptual control theory")
 
-</td>
 
-<td style="width: 354px; vertical-align: top;">
+
+
 
 *   [Operations research](https://en.wikipedia.org/wiki/Operations_research "Operations research")
 *   [Systems biology](https://en.wikipedia.org/wiki/Systems_biology "Systems biology")
@@ -5195,9 +5195,9 @@ _Also a branch of electrical engineering_
     *   [Systems analysis](https://en.wikipedia.org/wiki/Systems_analysis "Systems analysis")
 *   [Systems theory in anthropology](https://en.wikipedia.org/wiki/Systems_theory_in_anthropology "Systems theory in anthropology")
 
-</td>
 
-<td style="width: 355px; vertical-align: top;">
+
+
 
 *   [Systems psychology](https://en.wikipedia.org/wiki/Systems_psychology "Systems psychology")
     *   [Ergonomics](https://en.wikipedia.org/wiki/Ergonomics "Ergonomics")
@@ -5214,29 +5214,29 @@ _Also a branch of electrical engineering_
     *   [Mathematical system theory](https://en.wikipedia.org/wiki/Mathematical_system_theory "Mathematical system theory")
     *   [World-systems theory](https://en.wikipedia.org/wiki/World-systems_theory "World-systems theory")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
+
+
+
+
 ### Humanities
-## <span class="mw-headline" id="Humanities">Humanities</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=2 "Edit section: Humanities")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+## Humanities[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=2 "Edit section: Humanities")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Humanities](https://en.wikipedia.org/wiki/Humanities "Humanities") and [Outline of the humanities](https://en.wikipedia.org/wiki/Outline_of_the_humanities "Outline of the humanities")</div>
+Main articles: [Humanities](https://en.wikipedia.org/wiki/Humanities "Humanities") and [Outline of the humanities](https://en.wikipedia.org/wiki/Outline_of_the_humanities "Outline of the humanities")
 
-### <span class="mw-headline" id="Human_history">Human history</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=3 "Edit section: Human history")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Human history[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=3 "Edit section: Human history")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [History](https://en.wikipedia.org/wiki/History "History") and [Branches of history](https://en.wikipedia.org/wiki/Outline_of_history#History_by_field "Outline of history")</div>
+Main articles: [History](https://en.wikipedia.org/wiki/History "History") and [Branches of history](https://en.wikipedia.org/wiki/Outline_of_history#History_by_field "Outline of history")
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
 
 *   [African history](https://en.wikipedia.org/wiki/African_history "African history")
 *   [American history](https://en.wikipedia.org/wiki/American_history "American history")
@@ -5251,9 +5251,9 @@ _Also a branch of electrical engineering_
 *   [Iranian history](https://en.wikipedia.org/wiki/History_of_Iran "History of Iran")
 *   [Indian history](https://en.wikipedia.org/wiki/History_of_India "History of India") ([outline](https://en.wikipedia.org/wiki/Outline_of_ancient_India "Outline of ancient India"))
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Indonesian history](https://en.wikipedia.org/wiki/History_of_Indonesia "History of Indonesia")
 *   [Intellectual history](https://en.wikipedia.org/wiki/Intellectual_history "Intellectual history")
@@ -5267,27 +5267,27 @@ _Also a branch of electrical engineering_
 *   [Technological history](https://en.wikipedia.org/wiki/History_of_Technology "History of Technology")
 *   [World history](https://en.wikipedia.org/wiki/World_history "World history")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Linguistics">Linguistics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=4 "Edit section: Linguistics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Linguistics](https://en.wikipedia.org/wiki/Linguistics "Linguistics") and [Outline of linguistics](https://en.wikipedia.org/wiki/Outline_of_linguistics "Outline of linguistics")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Language arts](https://en.wikipedia.org/wiki/Language_arts "Language arts")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Linguistics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=4 "Edit section: Linguistics")]
 
-<tr>
+Main articles: [Linguistics](https://en.wikipedia.org/wiki/Linguistics "Linguistics") and [Outline of linguistics](https://en.wikipedia.org/wiki/Outline_of_linguistics "Outline of linguistics")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [Language arts](https://en.wikipedia.org/wiki/Language_arts "Language arts")
+
+
+
+
+
+
+
+
 
 *   [Classics](https://en.wikipedia.org/wiki/Classics "Classics") ([outline](https://en.wikipedia.org/wiki/Outline_of_classical_studies "Outline of classical studies"))
 *   [Languages](https://en.wikipedia.org/wiki/Languages "Languages")
@@ -5304,9 +5304,9 @@ _Also a branch of electrical engineering_
 *   [Historical linguistics](https://en.wikipedia.org/wiki/Historical_linguistics "Historical linguistics")
 *   [History of linguistics](https://en.wikipedia.org/wiki/History_of_linguistics "History of linguistics")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Interlinguistics](https://en.wikipedia.org/wiki/Interlinguistics "Interlinguistics")
 *   [Language arts](https://en.wikipedia.org/wiki/Language_arts "Language arts")
@@ -5324,17 +5324,17 @@ _Also a branch of electrical engineering_
 *   [Usage](https://en.wikipedia.org/wiki/Usage "Usage")
 *   [Word usage](https://en.wikipedia.org/wiki/Word_usage "Word usage")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Literature">Literature</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=5 "Edit section: Literature")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Literature](https://en.wikipedia.org/wiki/Literature "Literature") and [Outline of literature](https://en.wikipedia.org/wiki/Outline_of_literature "Outline of literature")</div>
+
+
+
+### Literature[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=5 "Edit section: Literature")]
+
+Main articles: [Literature](https://en.wikipedia.org/wiki/Literature "Literature") and [Outline of literature](https://en.wikipedia.org/wiki/Outline_of_literature "Outline of literature")
 
 *   [Poetry](https://en.wikipedia.org/wiki/Poetry "Poetry")
 *   [Comparative literature](https://en.wikipedia.org/wiki/Comparative_literature "Comparative literature")
@@ -5363,19 +5363,19 @@ _Also a branch of electrical engineering_
     *   [Screenwriting](https://en.wikipedia.org/wiki/Screenwriting "Screenwriting")
     *   [Playwrighting](https://en.wikipedia.org/wiki/Playwrighting "Playwrighting")
 
-### <span class="mw-headline" id="Arts">Arts</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=6 "Edit section: Arts")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Arts[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=6 "Edit section: Arts")]
 
 **Performing arts**
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Performing arts](https://en.wikipedia.org/wiki/Performing_arts "Performing arts") and [Outline of performing arts](https://en.wikipedia.org/wiki/Outline_of_performing_arts "Outline of performing arts")</div>
+Main articles: [Performing arts](https://en.wikipedia.org/wiki/Performing_arts "Performing arts") and [Outline of performing arts](https://en.wikipedia.org/wiki/Outline_of_performing_arts "Outline of performing arts")
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1126px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 561px; vertical-align: top;">
+
+
+
+
 
 *   [Arts administration](https://en.wikipedia.org/wiki/Arts_administration "Arts administration")
 *   [Music](https://en.wikipedia.org/wiki/Music "Music") ([outline](https://en.wikipedia.org/wiki/Outline_of_music "Outline of music"))
@@ -5405,9 +5405,9 @@ _Also a branch of electrical engineering_
     *   [Recording](https://en.wikipedia.org/wiki/Recording "Recording")
     *   [Orchestral studies](https://en.wikipedia.org/wiki/Orchestra "Orchestra")
 
-</td>
 
-<td style="width: 561px; vertical-align: top;">
+
+
 
 *   [Dance](https://en.wikipedia.org/wiki/Dance "Dance") ([outline](https://en.wikipedia.org/wiki/Outline_of_dance "Outline of dance"))
     *   [Choreography](https://en.wikipedia.org/wiki/Choreography "Choreography")
@@ -5436,25 +5436,25 @@ _Also a branch of electrical engineering_
     *   [Spoken word](https://en.wikipedia.org/wiki/Spoken_word "Spoken word")
     *   [Storytelling](https://en.wikipedia.org/wiki/Storytelling "Storytelling")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
+
+
+
+
 
 **Visual arts**
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em;">Main articles: [Visual arts](https://en.wikipedia.org/wiki/Visual_arts "Visual arts") and [Outline of visual arts](https://en.wikipedia.org/wiki/Outline_of_visual_arts "Outline of visual arts")</div>
+Main articles: [Visual arts](https://en.wikipedia.org/wiki/Visual_arts "Visual arts") and [Outline of visual arts](https://en.wikipedia.org/wiki/Outline_of_visual_arts "Outline of visual arts")
 
 *   [Animation](https://en.wikipedia.org/wiki/Animation "Animation")
 *   [Architecture](https://en.wikipedia.org/wiki/Architecture "Architecture") ([outline](https://en.wikipedia.org/wiki/Outline_of_architecture "Outline of architecture"))
@@ -5474,9 +5474,9 @@ _Also a branch of electrical engineering_
 *   [Sculpture](https://en.wikipedia.org/wiki/Sculpture "Sculpture") ([outline](https://en.wikipedia.org/wiki/Outline_of_sculpture "Outline of sculpture"))
 *   [Video Art](https://en.wikipedia.org/wiki/Video_Art "Video Art")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 **Applied arts**
 
@@ -5498,25 +5498,25 @@ _Also a branch of electrical engineering_
 *   [Printmaking](https://en.wikipedia.org/wiki/Printmaking "Printmaking")
 *   [Studio art](https://en.wikipedia.org/wiki/Studio_art "Studio art")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Philosophy">Philosophy</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=7 "Edit section: Philosophy")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Philosophy](https://en.wikipedia.org/wiki/Philosophy "Philosophy") and [Outline of philosophy](https://en.wikipedia.org/wiki/Outline_of_philosophy "Outline of philosophy")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Philosophy[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=7 "Edit section: Philosophy")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Philosophy](https://en.wikipedia.org/wiki/Philosophy "Philosophy") and [Outline of philosophy](https://en.wikipedia.org/wiki/Outline_of_philosophy "Outline of philosophy")
+
+
+
+
+
+
+
+
 
 *   [Meta-philosophy](https://en.wikipedia.org/wiki/Meta-philosophy "Meta-philosophy")
 *   [Metaphysics](https://en.wikipedia.org/wiki/Metaphysics "Metaphysics")   ([outline](https://en.wikipedia.org/wiki/Outline_of_metaphysics "Outline of metaphysics"))
@@ -5554,9 +5554,9 @@ _Also a branch of electrical engineering_
     *   [Aristotelianism](https://en.wikipedia.org/wiki/Aristotelianism "Aristotelianism")
     *   [Analytic philosophy](https://en.wikipedia.org/wiki/Analytic_philosophy "Analytic philosophy")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   *   [Continental philosophy](https://en.wikipedia.org/wiki/Continental_philosophy "Continental philosophy")
     *   [Eastern philosophy](https://en.wikipedia.org/wiki/Eastern_philosophy "Eastern philosophy")
@@ -5589,27 +5589,27 @@ _Also a branch of electrical engineering_
     *   [Philosophy of engineering](https://en.wikipedia.org/wiki/Philosophy_of_engineering "Philosophy of engineering")
     *   [Systems philosophy](https://en.wikipedia.org/wiki/Systems_philosophy "Systems philosophy")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Religion">Religion</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=8 "Edit section: Religion")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Religious studies](https://en.wikipedia.org/wiki/Religious_studies "Religious studies") and [Outline of religion](https://en.wikipedia.org/wiki/Outline_of_religion "Outline of religion")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [List of religions and spiritual traditions](https://en.wikipedia.org/wiki/List_of_religions_and_spiritual_traditions "List of religions and spiritual traditions")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Religion[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=8 "Edit section: Religion")]
 
-<tr>
+Main articles: [Religious studies](https://en.wikipedia.org/wiki/Religious_studies "Religious studies") and [Outline of religion](https://en.wikipedia.org/wiki/Outline_of_religion "Outline of religion")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [List of religions and spiritual traditions](https://en.wikipedia.org/wiki/List_of_religions_and_spiritual_traditions "List of religions and spiritual traditions")
+
+
+
+
+
+
+
+
 
 *   [Abrahamic religions](https://en.wikipedia.org/wiki/Abrahamic_religions "Abrahamic religions")
     *   [Christianity](https://en.wikipedia.org/wiki/Christianity "Christianity") ([outline](https://en.wikipedia.org/wiki/Outline_of_Christianity "Outline of Christianity"))
@@ -5632,9 +5632,9 @@ _Also a branch of electrical engineering_
     *   [Tenrikyo](https://en.wikipedia.org/wiki/Tenrikyo "Tenrikyo")
     *   [Oomoto](https://en.wikipedia.org/wiki/Oomoto "Oomoto")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   Other religions
     *   [African religions](https://en.wikipedia.org/wiki/Religion_in_Africa "Religion in Africa")
@@ -5651,35 +5651,35 @@ _Also a branch of electrical engineering_
     *   [Agnosticism](https://en.wikipedia.org/wiki/Agnostic "Agnostic")
     *   [Atheism](https://en.wikipedia.org/wiki/Atheism "Atheism") ([outline](https://en.wikipedia.org/wiki/Outline_of_atheism "Outline of atheism")) and [religious humanism](https://en.wikipedia.org/wiki/Religious_humanism "Religious humanism")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
+
+
+
+
 ### Natural Science
-## <span class="mw-headline" id="Natural_sciences">Natural sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=20 "Edit section: Natural sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+## Natural sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=20 "Edit section: Natural sciences")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Natural science](https://en.wikipedia.org/wiki/Natural_science "Natural science"), [Outline of natural science](https://en.wikipedia.org/wiki/Outline_of_natural_science "Outline of natural science") and [Outline of applied science](https://en.wikipedia.org/wiki/Outline_of_applied_science "Outline of applied science")</div>
+Main articles: [Natural science](https://en.wikipedia.org/wiki/Natural_science "Natural science"), [Outline of natural science](https://en.wikipedia.org/wiki/Outline_of_natural_science "Outline of natural science") and [Outline of applied science](https://en.wikipedia.org/wiki/Outline_of_applied_science "Outline of applied science")
 
-### <span class="mw-headline" id="Biology">Biology</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=21 "Edit section: Biology")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Biology[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=21 "Edit section: Biology")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Life sciences](https://en.wikipedia.org/wiki/Life_sciences "Life sciences")</div>
+Main article: [Life sciences](https://en.wikipedia.org/wiki/Life_sciences "Life sciences")
 
-<dl style="margin-bottom: 0.5em; margin-top: 0.2em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Biology](https://en.wikipedia.org/wiki/Biology "Biology") ([outline](https://en.wikipedia.org/wiki/Outline_of_biology "Outline of biology")), [Branches of life sciences](https://en.wikipedia.org/wiki/List_of_biology_disciplines "List of biology disciplines")_</dd>
 
-</dl>
+_See also [Biology](https://en.wikipedia.org/wiki/Biology "Biology") ([outline](https://en.wikipedia.org/wiki/Outline_of_biology "Outline of biology")), [Branches of life sciences](https://en.wikipedia.org/wiki/List_of_biology_disciplines "List of biology disciplines")_
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
+
+
 
 *   [Aerobiology](https://en.wikipedia.org/wiki/Aerobiology "Aerobiology")
 *   [Anatomy](https://en.wikipedia.org/wiki/Anatomy "Anatomy")
@@ -5721,9 +5721,9 @@ _Also a branch of electrical engineering_
 *   [Mycology](https://en.wikipedia.org/wiki/Mycology "Mycology")
 *   [Nutrition](https://en.wikipedia.org/wiki/Nutrition "Nutrition") ([outline](https://en.wikipedia.org/wiki/Outline_of_nutrition "Outline of nutrition"))
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Neuroscience](https://en.wikipedia.org/wiki/Neuroscience "Neuroscience") ([outline](https://en.wikipedia.org/wiki/Outline_of_neuroscience "Outline of neuroscience"))
     *   [Behavioral neuroscience](https://en.wikipedia.org/wiki/Behavioral_neuroscience "Behavioral neuroscience")
@@ -5764,31 +5764,31 @@ _Also a branch of electrical engineering_
     *   [Zootomy](https://en.wikipedia.org/wiki/Zootomy "Zootomy")
     *   [Zoosemiotics](https://en.wikipedia.org/wiki/Zoosemiotics "Zoosemiotics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Chemistry">Chemistry</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=22 "Edit section: Chemistry")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Chemistry](https://en.wikipedia.org/wiki/Chemistry "Chemistry") and [Outline of chemistry](https://en.wikipedia.org/wiki/Outline_of_chemistry "Outline of chemistry")</div>
 
-<dl style="margin-bottom: 0.5em; margin-top: 0.2em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of chemistry](https://en.wikipedia.org/wiki/Pure_chemistry "Pure chemistry")_</dd>
 
-</dl>
+### Chemistry[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=22 "Edit section: Chemistry")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Chemistry](https://en.wikipedia.org/wiki/Chemistry "Chemistry") and [Outline of chemistry](https://en.wikipedia.org/wiki/Outline_of_chemistry "Outline of chemistry")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of chemistry](https://en.wikipedia.org/wiki/Pure_chemistry "Pure chemistry")_
+
+
+
+
+
+
+
+
+
+
 
 *   [Agrochemistry](https://en.wikipedia.org/wiki/Agrochemistry "Agrochemistry")
 *   [Analytical chemistry](https://en.wikipedia.org/wiki/Analytical_chemistry "Analytical chemistry")
@@ -5815,9 +5815,9 @@ _Also a branch of electrical engineering_
 *   [Mathematical chemistry](https://en.wikipedia.org/wiki/Mathematical_chemistry "Mathematical chemistry")
 *   [Mechanochemistry](https://en.wikipedia.org/wiki/Mechanochemistry "Mechanochemistry")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Medicinal chemistry](https://en.wikipedia.org/wiki/Medicinal_chemistry "Medicinal chemistry")
 *   [Molecular biology](https://en.wikipedia.org/wiki/Molecular_biology "Molecular biology")
@@ -5845,31 +5845,31 @@ _Also a branch of electrical engineering_
 *   [Theoretical chemistry](https://en.wikipedia.org/wiki/Theoretical_chemistry "Theoretical chemistry")
 *   [Thermochemistry](https://en.wikipedia.org/wiki/Thermochemistry "Thermochemistry")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Physics">Physics</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=23 "Edit section: Physics")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Physics](https://en.wikipedia.org/wiki/Physics "Physics") and [Outline of physics](https://en.wikipedia.org/wiki/Outline_of_physics "Outline of physics")</div>
 
-<dl style="margin-bottom: 0.5em; margin-top: 0.2em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of physics](https://en.wikipedia.org/wiki/List_of_basic_physics_topics "List of basic physics topics")_</dd>
 
-</dl>
+### Physics[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=23 "Edit section: Physics")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Physics](https://en.wikipedia.org/wiki/Physics "Physics") and [Outline of physics](https://en.wikipedia.org/wiki/Outline_of_physics "Outline of physics")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of physics](https://en.wikipedia.org/wiki/List_of_basic_physics_topics "List of basic physics topics")_
+
+
+
+
+
+
+
+
+
+
 
 *   [Acoustics](https://en.wikipedia.org/wiki/Acoustics "Acoustics")
 *   [Applied Physics](https://en.wikipedia.org/wiki/Applied_Physics "Applied Physics")
@@ -5885,9 +5885,9 @@ _Also a branch of electrical engineering_
 *   [Geophysics](https://en.wikipedia.org/wiki/Geophysics "Geophysics") ([outline](https://en.wikipedia.org/wiki/Outline_of_geophysics "Outline of geophysics"))
 *   [Mathematical physics](https://en.wikipedia.org/wiki/Mathematical_physics "Mathematical physics")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Medical physics](https://en.wikipedia.org/wiki/Medical_physics "Medical physics")
 *   [Mechanics](https://en.wikipedia.org/wiki/Mechanics "Mechanics")
@@ -5904,31 +5904,31 @@ _Also a branch of electrical engineering_
 *   [Thermodynamics](https://en.wikipedia.org/wiki/Thermodynamics "Thermodynamics")
 *   [Vehicle dynamics](https://en.wikipedia.org/wiki/Vehicle_dynamics "Vehicle dynamics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Earth_sciences">Earth sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=24 "Edit section: Earth sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Earth science](https://en.wikipedia.org/wiki/Earth_science "Earth science") and [Outline of earth science](https://en.wikipedia.org/wiki/Outline_of_earth_science "Outline of earth science")</div>
 
-<dl style="margin-bottom: 0.5em; margin-top: 0.2em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of earth sciences](https://en.wikipedia.org/wiki/Earth_science#Partial_list_of_the_major_earth_science_topics "Earth science")_</dd>
 
-</dl>
+### Earth sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=24 "Edit section: Earth sciences")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Earth science](https://en.wikipedia.org/wiki/Earth_science "Earth science") and [Outline of earth science](https://en.wikipedia.org/wiki/Outline_of_earth_science "Outline of earth science")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of earth sciences](https://en.wikipedia.org/wiki/Earth_science#Partial_list_of_the_major_earth_science_topics "Earth science")_
+
+
+
+
+
+
+
+
+
+
 
 *   [Edaphology](https://en.wikipedia.org/wiki/Edaphology "Edaphology")
 *   [Environmental science](https://en.wikipedia.org/wiki/Environmental_science "Environmental science")
@@ -5944,9 +5944,9 @@ _Also a branch of electrical engineering_
 *   [Hydrogeology](https://en.wikipedia.org/wiki/Hydrogeology "Hydrogeology")
 *   [Hydrology](https://en.wikipedia.org/wiki/Hydrology "Hydrology") ([outline](https://en.wikipedia.org/wiki/Outline_of_hydrology "Outline of hydrology"))
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Meteorology](https://en.wikipedia.org/wiki/Meteorology "Meteorology") ([outline](https://en.wikipedia.org/wiki/Outline_of_meteorology "Outline of meteorology"))
 *   [Mineralogy](https://en.wikipedia.org/wiki/Mineralogy "Mineralogy")
@@ -5961,27 +5961,27 @@ _Also a branch of electrical engineering_
 *   [Tectonics](https://en.wikipedia.org/wiki/Tectonics "Tectonics")
 *   [Volcanology](https://en.wikipedia.org/wiki/Volcanology "Volcanology")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Space_sciences">Space sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=25 "Edit section: Space sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Space science](https://en.wikipedia.org/wiki/Space_science "Space science")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Outline of astronomy](https://en.wikipedia.org/wiki/Outline_of_astronomy "Outline of astronomy")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Space sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=25 "Edit section: Space sciences")]
 
-<tr>
+Main article: [Space science](https://en.wikipedia.org/wiki/Space_science "Space science")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [Outline of astronomy](https://en.wikipedia.org/wiki/Outline_of_astronomy "Outline of astronomy")
+
+
+
+
+
+
+
+
 
 *   [Astrobiology](https://en.wikipedia.org/wiki/Astrobiology "Astrobiology")
 *   [Astronomy](https://en.wikipedia.org/wiki/Astronomy "Astronomy") ([outline](https://en.wikipedia.org/wiki/Outline_of_astronomy "Outline of astronomy"))
@@ -5997,9 +5997,9 @@ _Also a branch of electrical engineering_
     *   [Gravitational astronomy](https://en.wikipedia.org/wiki/Gravity "Gravity")
         *   [Black holes](https://en.wikipedia.org/wiki/Black_hole "Black hole")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   *   [Interstellar medium](https://en.wikipedia.org/wiki/Interstellar_medium "Interstellar medium")
     *   [Numerical simulations](https://en.wikipedia.org/wiki/Direct_numerical_simulation "Direct numerical simulation")
@@ -6016,29 +6016,29 @@ _Also a branch of electrical engineering_
         *   [Stellar nucleosynthesis](https://en.wikipedia.org/wiki/Stellar_nucleosynthesis "Stellar nucleosynthesis")
 *   [Planetary science](https://en.wikipedia.org/wiki/Planetary_science "Planetary science") (alternatively, a part of [earth science](https://en.wikipedia.org/wiki/Earth_science "Earth science"))
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
+
+
+
+
 ### Professions
-## <span class="mw-headline" id="Professions">Professions</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=34 "Edit section: Professions")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+## Professions[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=34 "Edit section: Professions")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Profession](https://en.wikipedia.org/wiki/Profession "Profession")</div>
+Main article: [Profession](https://en.wikipedia.org/wiki/Profession "Profession")
 
-### <span class="mw-headline" id="Agriculture">Agriculture</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=35 "Edit section: Agriculture")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Agriculture[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=35 "Edit section: Agriculture")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Agriculture](https://en.wikipedia.org/wiki/Agriculture "Agriculture") and [Outline of agriculture](https://en.wikipedia.org/wiki/Outline_of_agriculture "Outline of agriculture")</div>
+Main articles: [Agriculture](https://en.wikipedia.org/wiki/Agriculture "Agriculture") and [Outline of agriculture](https://en.wikipedia.org/wiki/Outline_of_agriculture "Outline of agriculture")
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+
+
+
+
 
 *   [Agroecology](https://en.wikipedia.org/wiki/Agroecology "Agroecology")
 *   [Agronomy](https://en.wikipedia.org/wiki/Agronomy "Agronomy")
@@ -6051,9 +6051,9 @@ _Also a branch of electrical engineering_
     *   [Biological systems engineering](https://en.wikipedia.org/wiki/Biological_systems_engineering "Biological systems engineering")
     *   [Food engineering](https://en.wikipedia.org/wiki/Food_engineering "Food engineering")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Aquaculture](https://en.wikipedia.org/wiki/Aquaculture "Aquaculture")
 *   [Enology](https://en.wikipedia.org/wiki/Enology "Enology")
@@ -6065,25 +6065,25 @@ _Also a branch of electrical engineering_
     *   [Pomology](https://en.wikipedia.org/wiki/Pomology "Pomology")
 *   [Viticulture](https://en.wikipedia.org/wiki/Viticulture "Viticulture")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Architecture_and_design">Architecture and design</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=36 "Edit section: Architecture and design")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Architecture](https://en.wikipedia.org/wiki/Architecture "Architecture"), [Outline of architecture](https://en.wikipedia.org/wiki/Outline_of_architecture "Outline of architecture"), [Design](https://en.wikipedia.org/wiki/Design "Design") and [Outline of design](https://en.wikipedia.org/wiki/Outline_of_design "Outline of design")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Architecture and design[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=36 "Edit section: Architecture and design")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Architecture](https://en.wikipedia.org/wiki/Architecture "Architecture"), [Outline of architecture](https://en.wikipedia.org/wiki/Outline_of_architecture "Outline of architecture"), [Design](https://en.wikipedia.org/wiki/Design "Design") and [Outline of design](https://en.wikipedia.org/wiki/Outline_of_design "Outline of design")
+
+
+
+
+
+
+
+
 
 *   [Architectural Analytics](https://en.wikipedia.org/wiki/Architectural_Analytics "Architectural Analytics")
 *   [Historic preservation](https://en.wikipedia.org/wiki/Historic_preservation "Historic preservation")
@@ -6096,9 +6096,9 @@ _Also a branch of electrical engineering_
         *   [Type design](https://en.wikipedia.org/wiki/Type_design "Type design")
     *   [Technical drawing](https://en.wikipedia.org/wiki/Technical_drawing "Technical drawing")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Industrial design](https://en.wikipedia.org/wiki/Industrial_design "Industrial design") ([product design](https://en.wikipedia.org/wiki/Product_design "Product design"))
     *   [Ergonomics](https://en.wikipedia.org/wiki/Ergonomics "Ergonomics") ([outline](https://en.wikipedia.org/wiki/Outline_of_ergonomics "Outline of ergonomics"))
@@ -6112,25 +6112,25 @@ _Also a branch of electrical engineering_
 *   [Fashion design](https://en.wikipedia.org/wiki/Fashion_design "Fashion design")
 *   [Textile design](https://en.wikipedia.org/wiki/Textile_design "Textile design")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Business">Business</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=37 "Edit section: Business")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Business](https://en.wikipedia.org/wiki/Business "Business") and [Business education](https://en.wikipedia.org/wiki/Business_education "Business education")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Business[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=37 "Edit section: Business")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Business](https://en.wikipedia.org/wiki/Business "Business") and [Business education](https://en.wikipedia.org/wiki/Business_education "Business education")
+
+
+
+
+
+
+
+
 
 *   [Accounting scholarship](https://en.wikipedia.org/wiki/Accounting_scholarship "Accounting scholarship")
 *   [Business administration](https://en.wikipedia.org/wiki/Business_administration "Business administration")
@@ -6147,9 +6147,9 @@ _Also a branch of electrical engineering_
     *   [Labor economics](https://en.wikipedia.org/wiki/Labor_economics "Labor economics")
     *   [Labor history](https://en.wikipedia.org/wiki/Labor_history_(discipline) "Labor history (discipline)")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Information systems](https://en.wikipedia.org/wiki/Information_systems "Information systems") ([Business informatics](https://en.wikipedia.org/wiki/Business_informatics "Business informatics"))
     *   [Management information systems](https://en.wikipedia.org/wiki/Management_information_systems "Management information systems")
@@ -6161,25 +6161,25 @@ _Also a branch of electrical engineering_
 *   [Risk management](https://en.wikipedia.org/wiki/Risk_management "Risk management") and [insurance](https://en.wikipedia.org/wiki/Insurance "Insurance")
 *   [Systems science](https://en.wikipedia.org/wiki/Systems_science "Systems science")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Divinity">Divinity</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=38 "Edit section: Divinity")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Divinity (academic discipline)](https://en.wikipedia.org/wiki/Divinity_(academic_discipline) "Divinity (academic discipline)")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Divinity[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=38 "Edit section: Divinity")]
 
-<td style="width: 533px; vertical-align: top;">
+Main article: [Divinity (academic discipline)](https://en.wikipedia.org/wiki/Divinity_(academic_discipline) "Divinity (academic discipline)")
+
+
+
+
+
+
+
+
 
 *   [Canon law](https://en.wikipedia.org/wiki/Canon_law "Canon law")
 *   [Church history](https://en.wikipedia.org/wiki/History_of_Christianity "History of Christianity")
@@ -6192,9 +6192,9 @@ _Also a branch of electrical engineering_
     *   [Sacred music](https://en.wikipedia.org/wiki/Sacred_music "Sacred music")
     *   [Missiology](https://en.wikipedia.org/wiki/Missiology "Missiology")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Hermeneutics](https://en.wikipedia.org/wiki/Hermeneutics "Hermeneutics")
 *   Scriptural study and languages
@@ -6210,25 +6210,25 @@ _Also a branch of electrical engineering_
     *   [Systematic theology](https://en.wikipedia.org/wiki/Systematic_theology "Systematic theology")
     *   [Christian ethics](https://en.wikipedia.org/wiki/Christian_ethics "Christian ethics")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Education">Education</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=39 "Edit section: Education")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Education](https://en.wikipedia.org/wiki/Education "Education") and [Outline of education](https://en.wikipedia.org/wiki/Outline_of_education "Outline of education")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Education[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=39 "Edit section: Education")]
 
-<td style="width: 1067px; vertical-align: top;">
+Main articles: [Education](https://en.wikipedia.org/wiki/Education "Education") and [Outline of education](https://en.wikipedia.org/wiki/Outline_of_education "Outline of education")
+
+
+
+
+
+
+
+
 
 *   [Comparative education](https://en.wikipedia.org/wiki/Comparative_education "Comparative education")
 *   [Consumer education](https://en.wikipedia.org/wiki/Consumer_education "Consumer education")
@@ -6270,31 +6270,31 @@ _Also a branch of electrical engineering_
 *   [Educational technology](https://en.wikipedia.org/wiki/Educational_technology "Educational technology")
 *   [Distance education](https://en.wikipedia.org/wiki/Distance_education "Distance education")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Engineering">Engineering</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=40 "Edit section: Engineering")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Engineering](https://en.wikipedia.org/wiki/Engineering "Engineering"), [Outline of engineering](https://en.wikipedia.org/wiki/Outline_of_engineering "Outline of engineering") and [Engineering education](https://en.wikipedia.org/wiki/Engineering_education "Engineering education")</div>
 
-<dl style="margin-bottom: 0.5em; margin-top: 0.2em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">
 
-<dd style="margin-left: 1.6em; margin-bottom: 0.1em; margin-right: 0px;">_See also [Branches of engineering](https://en.wikipedia.org/wiki/List_of_basic_engineering_topics#Branches_of_engineering "List of basic engineering topics")_</dd>
 
-</dl>
+### Engineering[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=40 "Edit section: Engineering")]
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+Main articles: [Engineering](https://en.wikipedia.org/wiki/Engineering "Engineering"), [Outline of engineering](https://en.wikipedia.org/wiki/Outline_of_engineering "Outline of engineering") and [Engineering education](https://en.wikipedia.org/wiki/Engineering_education "Engineering education")
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+_See also [Branches of engineering](https://en.wikipedia.org/wiki/List_of_basic_engineering_topics#Branches_of_engineering "List of basic engineering topics")_
+
+
+
+
+
+
+
+
+
+
 
 **[Chemical Engineering](https://en.wikipedia.org/wiki/Chemical_Engineering "Chemical Engineering")**
 
@@ -6331,9 +6331,9 @@ _Also a branch of electrical engineering_
 *   [Structural Mechanics](https://en.wikipedia.org/wiki/Structural_Mechanics "Structural Mechanics")
 *   [Surveying](https://en.wikipedia.org/wiki/Surveying "Surveying")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 **[Materials Science and Engineering](https://en.wikipedia.org/wiki/Materials_Science "Materials Science")**
 
@@ -6371,25 +6371,25 @@ _Also a branch of electrical engineering_
 *   [Thermodynamics](https://en.wikipedia.org/wiki/Thermodynamics "Thermodynamics")
 *   [Vehicle engineering](https://en.wikipedia.org/wiki/Vehicle_engineering "Vehicle engineering")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Environmental_studies_and_forestry">Environmental studies and forestry</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=41 "Edit section: Environmental studies and forestry")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Environmental studies](https://en.wikipedia.org/wiki/Environmental_studies "Environmental studies") and [Forestry](https://en.wikipedia.org/wiki/Forestry "Forestry")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Environmental studies and forestry[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=41 "Edit section: Environmental studies and forestry")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Environmental studies](https://en.wikipedia.org/wiki/Environmental_studies "Environmental studies") and [Forestry](https://en.wikipedia.org/wiki/Forestry "Forestry")
+
+
+
+
+
+
+
+
 
 *   [Environmental management](https://en.wikipedia.org/wiki/Environmental_management "Environmental management")
     *   [Coastal management](https://en.wikipedia.org/wiki/Coastal_management "Coastal management")
@@ -6398,9 +6398,9 @@ _Also a branch of electrical engineering_
     *   [Natural resource management](https://en.wikipedia.org/wiki/Natural_resource_management "Natural resource management")
     *   [Wildlife management](https://en.wikipedia.org/wiki/Wildlife_management "Wildlife management")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Environmental policy](https://en.wikipedia.org/wiki/Environmental_policy "Environmental policy")
 *   [Recreation ecology](https://en.wikipedia.org/wiki/Recreation_ecology "Recreation ecology")
@@ -6410,55 +6410,55 @@ _Also a branch of electrical engineering_
 *   [Toxicology](https://en.wikipedia.org/wiki/Toxicology "Toxicology")
 *   Ecology
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Family_and_consumer_science">Family and consumer science</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=42 "Edit section: Family and consumer science")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Family and consumer science](https://en.wikipedia.org/wiki/Family_and_consumer_science "Family and consumer science")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Family and consumer science[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=42 "Edit section: Family and consumer science")]
 
-<td style="width: 533px; vertical-align: top;">
+Main article: [Family and consumer science](https://en.wikipedia.org/wiki/Family_and_consumer_science "Family and consumer science")
+
+
+
+
+
+
+
+
 
 *   [Consumer education](https://en.wikipedia.org/wiki/Consumer_education "Consumer education")
 *   Housing
 *   [Interior design](https://en.wikipedia.org/wiki/Interior_design "Interior design")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Nutrition](https://en.wikipedia.org/wiki/Nutrition "Nutrition") ([outline](https://en.wikipedia.org/wiki/Outline_of_nutrition "Outline of nutrition"))
     *   [Foodservice management](https://en.wikipedia.org/wiki/Foodservice "Foodservice")
 *   [Textiles](https://en.wikipedia.org/wiki/Textile "Textile")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Human_physical_performance_and_recreation">Human physical performance and recreation</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=43 "Edit section: Human physical performance and recreation")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
 
-<td style="width: 533px; vertical-align: top;">
+### Human physical performance and recreation[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=43 "Edit section: Human physical performance and recreation")]
+
+
+
+
+
+
+
+
 
 *   [Biomechanics](https://en.wikipedia.org/wiki/Biomechanics "Biomechanics") / [Sports biomechanics](https://en.wikipedia.org/wiki/Sports_biomechanics "Sports biomechanics")
 *   [Sports coaching](https://en.wikipedia.org/wiki/Sports_coaching "Sports coaching")
@@ -6471,9 +6471,9 @@ _Also a branch of electrical engineering_
 *   [Exercise physiology](https://en.wikipedia.org/wiki/Exercise_physiology "Exercise physiology")
 *   [Kinesiology](https://en.wikipedia.org/wiki/Kinesiology "Kinesiology") / Exercise science / Human performance
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Leisure studies](https://en.wikipedia.org/wiki/Leisure_studies "Leisure studies")
 *   [Physical education](https://en.wikipedia.org/wiki/Physical_education "Physical education") / Pedagogy
@@ -6487,25 +6487,25 @@ _Also a branch of electrical engineering_
     *   [Athletic training](https://en.wikipedia.org/wiki/Athletic_training "Athletic training")
 *   [Toy and amusement design](https://en.wikipedia.org/wiki/Toy "Toy")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Journalism.2C_media_studies_and_communication">Journalism, media studies and communication</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=44 "Edit section: Journalism, media studies and communication")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Journalism](https://en.wikipedia.org/wiki/Journalism "Journalism"), [Media studies](https://en.wikipedia.org/wiki/Media_studies "Media studies") and [Communication studies](https://en.wikipedia.org/wiki/Communication_studies "Communication studies")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Journalism, media studies and communication[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=44 "Edit section: Journalism, media studies and communication")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Journalism](https://en.wikipedia.org/wiki/Journalism "Journalism"), [Media studies](https://en.wikipedia.org/wiki/Media_studies "Media studies") and [Communication studies](https://en.wikipedia.org/wiki/Communication_studies "Communication studies")
+
+
+
+
+
+
+
+
 
 *   [Journalism](https://en.wikipedia.org/wiki/Journalism "Journalism") ([outline](https://en.wikipedia.org/wiki/Outline_of_journalism "Outline of journalism"))
     *   [Broadcast journalism](https://en.wikipedia.org/wiki/Broadcast_journalism "Broadcast journalism")
@@ -6521,9 +6521,9 @@ _Also a branch of electrical engineering_
         *   [Television studies](https://en.wikipedia.org/wiki/Television_studies "Television studies")
     *   [Internet](https://en.wikipedia.org/wiki/Internet "Internet") ([outline](https://en.wikipedia.org/wiki/Outline_of_the_Internet "Outline of the Internet"))
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Communication studies](https://en.wikipedia.org/wiki/Communication_studies "Communication studies")
     *   [Advertising](https://en.wikipedia.org/wiki/Advertising "Advertising")
@@ -6542,25 +6542,25 @@ _Also a branch of electrical engineering_
     *   [Technical writing](https://en.wikipedia.org/wiki/Technical_writing "Technical writing")
     *   [Translation](https://en.wikipedia.org/wiki/Translation "Translation")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Law">Law</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=45 "Edit section: Law")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Law](https://en.wikipedia.org/wiki/Law "Law") and [Outline of law](https://en.wikipedia.org/wiki/Outline_of_law "Outline of law")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Law[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=45 "Edit section: Law")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Law](https://en.wikipedia.org/wiki/Law "Law") and [Outline of law](https://en.wikipedia.org/wiki/Outline_of_law "Outline of law")
+
+
+
+
+
+
+
+
 
 *   [Canon law](https://en.wikipedia.org/wiki/Canon_law "Canon law")
 *   [Comparative law](https://en.wikipedia.org/wiki/Comparative_law "Comparative law")
@@ -6575,9 +6575,9 @@ _Also a branch of electrical engineering_
 *   [Jewish law](https://en.wikipedia.org/wiki/Jewish_law "Jewish law") ([outline](https://en.wikipedia.org/wiki/Outline_of_Jewish_law "Outline of Jewish law"))
 *   [Jurisprudence](https://en.wikipedia.org/wiki/Jurisprudence "Jurisprudence") (Philosophy of Law)
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Civil law](https://en.wikipedia.org/wiki/Civil_law_(common_law) "Civil law (common law)")
     *   [Admiralty law](https://en.wikipedia.org/wiki/Admiralty_law "Admiralty law")
@@ -6593,61 +6593,61 @@ _Also a branch of electrical engineering_
     *   [Tax law](https://en.wikipedia.org/wiki/Tax_law "Tax law")
     *   [Tort law](https://en.wikipedia.org/wiki/Tort_law "Tort law") ([outline](https://en.wikipedia.org/wiki/Outline_of_tort_law "Outline of tort law"))
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Library_and_museum_studies">Library and museum studies</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=46 "Edit section: Library and museum studies")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Library science](https://en.wikipedia.org/wiki/Library_science "Library science") and [Museology](https://en.wikipedia.org/wiki/Museology "Museology")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Library and museum studies[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=46 "Edit section: Library and museum studies")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Library science](https://en.wikipedia.org/wiki/Library_science "Library science") and [Museology](https://en.wikipedia.org/wiki/Museology "Museology")
+
+
+
+
+
+
+
+
 
 *   [Archival science](https://en.wikipedia.org/wiki/Archival_science "Archival science")
 *   [Bibliometrics](https://en.wikipedia.org/wiki/Bibliometrics "Bibliometrics")
     *   [Citation analysis](https://en.wikipedia.org/wiki/Citation_analysis "Citation analysis")
 *   [Conservation science](https://en.wikipedia.org/wiki/Conservation_science_(cultural_heritage) "Conservation science (cultural heritage)")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Informatics](https://en.wikipedia.org/wiki/Informatics_(academic_field) "Informatics (academic field)")
 *   [Information architecture](https://en.wikipedia.org/wiki/Information_architecture "Information architecture")
 *   [Museology](https://en.wikipedia.org/wiki/Museology "Museology")
     *   [Museum administration](https://en.wikipedia.org/wiki/Arts_administration "Arts administration")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Medicine">Medicine</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=47 "Edit section: Medicine")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Medicine](https://en.wikipedia.org/wiki/Medicine "Medicine"), [Healthcare science](https://en.wikipedia.org/wiki/Healthcare_science "Healthcare science") and [Outline of healthcare science](https://en.wikipedia.org/wiki/Outline_of_healthcare_science "Outline of healthcare science")</div>
 
-<div class="hatnote" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; margin-top: -0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">See also: [Branches of medicine](https://en.wikipedia.org/wiki/Branches_of_medicine "Branches of medicine")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
+### Medicine[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=47 "Edit section: Medicine")]
 
-<tr>
+Main articles: [Medicine](https://en.wikipedia.org/wiki/Medicine "Medicine"), [Healthcare science](https://en.wikipedia.org/wiki/Healthcare_science "Healthcare science") and [Outline of healthcare science](https://en.wikipedia.org/wiki/Outline_of_healthcare_science "Outline of healthcare science")
 
-<td style="width: 533px; vertical-align: top;">
+See also: [Branches of medicine](https://en.wikipedia.org/wiki/Branches_of_medicine "Branches of medicine")
+
+
+
+
+
+
+
+
 
 *   [Clinical laboratory sciences](https://en.wikipedia.org/wiki/Clinical_laboratory_sciences "Clinical laboratory sciences")/[Clinical pathology](https://en.wikipedia.org/wiki/Clinical_pathology "Clinical pathology")/[Laboratory medicine](https://en.wikipedia.org/wiki/Laboratory_medicine "Laboratory medicine")
     *   [Clinical biochemistry](https://en.wikipedia.org/wiki/Clinical_biochemistry "Clinical biochemistry")
@@ -6698,9 +6698,9 @@ _Also a branch of electrical engineering_
     *   [Neurology](https://en.wikipedia.org/wiki/Neurology "Neurology")
     *   [Neurosurgery](https://en.wikipedia.org/wiki/Neurosurgery "Neurosurgery")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   *   [Obstetrics](https://en.wikipedia.org/wiki/Obstetrics "Obstetrics")   ([outline](https://en.wikipedia.org/wiki/Outline_of_obstetrics "Outline of obstetrics"))
     *   [Ophthalmology](https://en.wikipedia.org/wiki/Ophthalmology "Ophthalmology")
@@ -6742,25 +6742,25 @@ _Also a branch of electrical engineering_
     *   [Andrology](https://en.wikipedia.org/wiki/Andrology "Andrology")
 *   [Veterinary medicine](https://en.wikipedia.org/wiki/Veterinary_medicine "Veterinary medicine")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Military_sciences">Military sciences</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=48 "Edit section: Military sciences")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main articles: [Military science](https://en.wikipedia.org/wiki/Military_science "Military science") and [Outline of military science and technology](https://en.wikipedia.org/wiki/Outline_of_military_science_and_technology "Outline of military science and technology")</div>
 
-<table class="multicol" role="presentation" style="color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px; padding: 0px; border: 0px; width: 1069px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
 
-<tbody>
 
-<tr>
+### Military sciences[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=48 "Edit section: Military sciences")]
 
-<td style="width: 533px; vertical-align: top;">
+Main articles: [Military science](https://en.wikipedia.org/wiki/Military_science "Military science") and [Outline of military science and technology](https://en.wikipedia.org/wiki/Outline_of_military_science_and_technology "Outline of military science and technology")
+
+
+
+
+
+
+
+
 
 *   [Amphibious warfare](https://en.wikipedia.org/wiki/Amphibious_warfare "Amphibious warfare")
 *   [Artillery](https://en.wikipedia.org/wiki/Artillery "Artillery")
@@ -6810,9 +6810,9 @@ _Also a branch of electrical engineering_
     *   [Staff](https://en.wikipedia.org/wiki/Staff_(military) "Staff (military)")
     *   [Technology and equipment](https://en.wikipedia.org/wiki/Military_technology "Military technology")
 
-</td>
 
-<td style="width: 532px; vertical-align: top;">
+
+
 
 *   [Strategy](https://en.wikipedia.org/wiki/Strategy "Strategy")
     *   [Attrition](https://en.wikipedia.org/wiki/Attrition_warfare "Attrition warfare")
@@ -6864,17 +6864,17 @@ _Also a branch of electrical engineering_
     *   [Theater (warfare)](https://en.wikipedia.org/wiki/Theater_(warfare) "Theater (warfare)")
     *   [War crimes](https://en.wikipedia.org/wiki/War_crime "War crime")
 
-</td>
 
-</tr>
 
-</tbody>
 
-</table>
 
-### <span class="mw-headline" id="Public_administration">Public administration</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=49 "Edit section: Public administration")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Public administration](https://en.wikipedia.org/wiki/Public_administration "Public administration")</div>
+
+
+
+### Public administration[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=49 "Edit section: Public administration")]
+
+Main article: [Public administration](https://en.wikipedia.org/wiki/Public_administration "Public administration")
 
 *   [Corrections](https://en.wikipedia.org/wiki/Corrections "Corrections")
 *   [Conservation biology](https://en.wikipedia.org/wiki/Conservation_biology "Conservation biology")
@@ -6895,9 +6895,9 @@ _Also a branch of electrical engineering_
     *   [Public policy school](https://en.wikipedia.org/wiki/Public_policy_school "Public policy school")
     *   [Regulation](https://en.wikipedia.org/wiki/Regulation "Regulation")
 
-#### <span class="mw-headline" id="Public_policy">Public policy</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=50 "Edit section: Public policy")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+#### Public policy[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=50 "Edit section: Public policy")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Public policy](https://en.wikipedia.org/wiki/Public_policy "Public policy")</div>
+Main article: [Public policy](https://en.wikipedia.org/wiki/Public_policy "Public policy")
 
 *   [Agricultural policy](https://en.wikipedia.org/wiki/Agricultural_policy "Agricultural policy")
 *   [Commercial policy](https://en.wikipedia.org/wiki/Commercial_policy "Commercial policy")
@@ -6935,9 +6935,9 @@ _Also a branch of electrical engineering_
 *   [Social policy](https://en.wikipedia.org/wiki/Social_policy "Social policy")
 *   [Public policy by country](https://en.wikipedia.org/wiki/List_of_public_policy_topics_by_country "List of public policy topics by country")
 
-### <span class="mw-headline" id="Social_work">Social work</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=51 "Edit section: Social work")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Social work[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=51 "Edit section: Social work")]
 
-<div class="hatnote relarticle mainarticle" style="font-style: italic; padding-left: 1.6em; margin-bottom: 0.5em; color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.3999996185303px;">Main article: [Social work](https://en.wikipedia.org/wiki/Social_work "Social work")</div>
+Main article: [Social work](https://en.wikipedia.org/wiki/Social_work "Social work")
 
 *   [Child welfare](https://en.wikipedia.org/wiki/Child_welfare "Child welfare")
 *   [Community practice](https://en.wikipedia.org/wiki/Community_practice "Community practice")
@@ -6950,7 +6950,7 @@ _Also a branch of electrical engineering_
 *   [Mental health](https://en.wikipedia.org/wiki/Mental_health "Mental health")
 *   [School social work](https://en.wikipedia.org/wiki/School_social_worker "School social worker")
 
-### <span class="mw-headline" id="Transportation">Transportation</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=52 "Edit section: Transportation")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
+### Transportation[[edit](https://en.wikipedia.org/w/index.php?title=Outline_of_academic_disciplines&action=edit&section=52 "Edit section: Transportation")]
 
 *   [Highway safety](https://en.wikipedia.org/wiki/Highway_safety "Highway safety")
 *   [Infographics](https://en.wikipedia.org/wiki/Infographics "Infographics")

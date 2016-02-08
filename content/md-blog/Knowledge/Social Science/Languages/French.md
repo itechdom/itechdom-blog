@@ -8,53 +8,53 @@
 ### What does a good plugin look like?
 ### What does a good plugin look like?
 
-<div class="highlight highlight-js" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
-<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);"><span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// through2 is a thin wrapper around node transform streams</span>
-<span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">var</span> through <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">require</span>(<span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>through2<span class="pl-pds" style="box-sizing: border-box;">'</span></span>);
-<span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">var</span> gutil <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">require</span>(<span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>gulp-util<span class="pl-pds" style="box-sizing: border-box;">'</span></span>);
-<span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">var</span> PluginError <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> gutil.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">PluginError</span>;
 
-<span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// Consts</span>
-<span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">const</span> <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">PLUGIN_NAME</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>gulp-prefixer<span class="pl-pds" style="box-sizing: border-box;">'</span></span>;
+// through2 is a thin wrapper around node transform streams
+var through = require('through2');
+var gutil = require('gulp-util');
+var PluginError = gutil.PluginError;
 
-<span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">function</span> <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">prefixStream</span>(<span class="pl-smi" style="box-sizing: border-box;">prefixText</span>) {
-  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">var</span> stream <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">through</span>();
-  stream.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">write</span>(prefixText);
-  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">return</span> stream;
+// Consts
+const PLUGIN_NAME = 'gulp-prefixer';
+
+function prefixStream(prefixText) {
+  var stream = through();
+  stream.write(prefixText);
+  return stream;
 }
 
-<span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// Plugin level function(dealing with files)</span>
-<span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">function</span> <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">gulpPrefixer</span>(<span class="pl-smi" style="box-sizing: border-box;">prefixText</span>) {
+// Plugin level function(dealing with files)
+function gulpPrefixer(prefixText) {
 
-  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">if</span> (<span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">!</span>prefixText) {
-    <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">throw</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">new</span> <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">PluginError</span>(<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">PLUGIN_NAME</span>, <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>Missing prefix text!<span class="pl-pds" style="box-sizing: border-box;">'</span></span>);
+  if (!prefixText) {
+    throw new PluginError(PLUGIN_NAME, 'Missing prefix text!');
   }
-  prefixText <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">new</span> <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">Buffer</span>(prefixText); <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// allocate ahead of time</span>
+  prefixText = new Buffer(prefixText); // allocate ahead of time
 
-  <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// Creating a stream through which each file will pass</span>
-  <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">return</span> through.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">obj</span>(<span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">function</span>(<span class="pl-smi" style="box-sizing: border-box;">file</span>, <span class="pl-smi" style="box-sizing: border-box;">enc</span>, <span class="pl-smi" style="box-sizing: border-box;">cb</span>) {
-    <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">if</span> (file.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">isNull</span>()) {
-      <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// return empty file</span>
-      <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">return</span> <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">cb</span>(<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">null</span>, file);
+  // Creating a stream through which each file will pass
+  return through.obj(function(file, enc, cb) {
+    if (file.isNull()) {
+      // return empty file
+      return cb(null, file);
     }
-    <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">if</span> (file.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">isBuffer</span>()) {
-      file.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">contents</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> Buffer.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">concat</span>([prefixText, file.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">contents</span>]);
+    if (file.isBuffer()) {
+      file.contents = Buffer.concat([prefixText, file.contents]);
     }
-    <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">if</span> (file.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">isStream</span>()) {
-      file.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">contents</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> file.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">contents</span>.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">pipe</span>(<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">prefixStream</span>(prefixText));
+    if (file.isStream()) {
+      file.contents = file.contents.pipe(prefixStream(prefixText));
     }
 
-    <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">cb</span>(<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">null</span>, file);
+    cb(null, file);
 
   });
 
 }
 
-<span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);">// Exporting the plugin main function</span>
-<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">module</span>.<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">exports</span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">=</span> gulpPrefixer;</pre>
+// Exporting the plugin main function
+module.exports = gulpPrefixer;
 
-</div>
+
 # Third party
 ### Through
 ### https://www.npmjs.com/package/through2
