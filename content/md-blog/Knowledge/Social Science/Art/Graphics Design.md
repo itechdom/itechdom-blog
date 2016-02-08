@@ -2,7 +2,7 @@
 # Concepts
 ### Elements of graphics design
 ### Line
-## <span style="box-sizing: border-box;">1\. The line</span>
+## 1\. The line
 
 The line is usually present in every design, even if it is a solid border of 1px or a dotted one of 5px. Every website has lines, but the minimalistic style which became more popular in the past couple of years tries to erase the lines from the layouts, or at least to decrease the use of them.
 
@@ -17,19 +17,19 @@ The minimalistic style which I’ve talked about earlier uses either less solid 
 Many years ago solid lines were very popular because they determined the style of the design: rigid, solid and organized. The web changed in the past years and this style is not very popular anymore, especially for designers’ portfolios and other pages with a strong need of a personal touch.
 ### Indicates which sections are separated to focus the user attention
 ### Shape
-## <span style="box-sizing: border-box;">2\. The shape</span>
+## 2\. The shape
 
 The shape, or the form, is the second most used element of a web design. They are actually lines combined in different shapes. The forms are still popular and this is because if there is something that needs to stand out, forms are one of the ways to do it. There can be circles, squares, rectangles, triangles or any other abstract shape; most of the designs include at least one of these. Minimalistic designs use it a lot, because they are often based on illustrations and drawings. The old style of designing websites included shapes too, so they remained popular throughout the time and will probably continue being like that.
 
 Like lines, shapes are also associated by the human mind with different movements. For example, circles are associated with movement and nature, while squares are often seen as structured, basic designs. Just like with the lines, the color, style, background or texture of a shape can totally change the viewer’s perception.
 ### Texture
-## <span style="box-sizing: border-box;">3\. Textures</span>
+## 3\. Textures
 
 The textures were not very popular a couple of years ago, but they tend to become more and more used. They replaced (or compete with, if we can call it a competition) the single-colored backgrounds. Textures can look similar to solid background colors, but if they are analyzed closer, small but effective differences can be noticed.
 
 Texture styles include paper, stone, concrete, brick, fabric and natural elements, among flat or smooth colors. Textures can also be subtle or pronounced and can be used sparingly or liberally. They work with pretty much everything. Even if they do not seem important, the textures can totally change a website and offer a totally different visual impact.
 ### Color
-## <span style="box-sizing: border-box;">4\. Color</span>
+## 4\. Color
 
 The color may even be the most important element of a design, because it offers the most powerful visual impact at a single glance. Color is obvious and does not need basic graphic skills to be noticed. While lines and shapes mean the same thing as in the reality, only at a little more profound level, the color means exactly the same thing as in the nature. Color creates emotions – red is passionate, blue is calm, green is natural. Even if you don’t realize this, colors have a clear effect on your mind.
 
@@ -39,12 +39,12 @@ Therefore color theory is very important to know, because not many designers can
 
 I am not saying you have to know all of them, but knowing how hue, saturation, shade, tint, tone or chroma work together is crucial for a graphic designer.
 ### Value
-## <span style="box-sizing: border-box;">5\. Value</span>
+## 5\. Value
 
 I did not specify value above, even if it is closely related to color, because value is more general and represents how dark or light a design is. Value has a lot to do with mood too, only at a more profound level. Understanding colors will take you close to perfection, but knowing how value works will take you beyond this. Lighter designs offer a different impact and feeling than the dark ones and you need an expert eye to notice differences and decide which one is the best.
 ### How dark or light a color is
 ### Space
-## <span style="box-sizing: border-box;">6\. Space</span>
+## 6\. Space
 
 The space and how it is used is crucially important in design. Lately the “white space” (also called negative space) became used widely because it allows the human eye to read easier. For whoever is not familiar with the term “white space”, it does not mean precisely space filled with white, but every area of the design which is only filled with the background color. You can see several examples below to better understand the concept.
 

@@ -31,52 +31,52 @@ Here is the breakdown of the numbers for the first month of John\'s credit card 
 *   Principal: $2,000
 *   Interest: $33.33 ($2,000 x (20%/12))
 *   Payment: $60 (3% of remaining balance)
-*   Principal Repayment (payment - interest<span style="-webkit-text-stroke-width: 0.150000005960464px;">): $26.67</span>
+*   Principal Repayment (payment - interest): $26.67
 *   Remaining Balance: $1,973.33 ($2,000 - $26.67)
 
 These calculations are done every month until the credit card debt is paid off.
 
 In the end, John pays $4,240 in total over 15 years to absolve the $2,000 in credit card debt. The interest that John pays over the 15 years totals $2,240, higher than the original credit card debt.
 
-<table align="center" border="0" cellpadding="0" cellspacing="0" style="-webkit-tap-highlight-color: transparent; border-collapse: separate; color: rgb(0, 0, 0); font-family: gandhiserif-regular-webfont, Helvetica, Arial, Verdana, sans-serif; font-size: 15px; line-height: normal; -webkit-text-stroke-width: 0.150000005960464px;">
 
-<tbody style="-webkit-tap-highlight-color: transparent;">
 
-<tr style="-webkit-tap-highlight-color: transparent;">
 
-<td style="-webkit-tap-highlight-color: transparent;">![john.gif](http://i.investopedia.com/inv/articles/site/john.gif)</td>
 
-</tr>
 
-</tbody>
 
-</table>
+![john.gif](http://i.investopedia.com/inv/articles/site/john.gif)
+
+
+
+
+
+
 
 Because Jane paid an extra $10 a month, she pays a total $3,276 over seven years to absolve the $2,000 in credit card debt. Jane pays a total $1,276 in interest.
 
-<table align="center" border="0" cellpadding="0" cellspacing="0" style="-webkit-tap-highlight-color: transparent; border-collapse: separate; color: rgb(0, 0, 0); font-family: gandhiserif-regular-webfont, Helvetica, Arial, Verdana, sans-serif; font-size: 15px; line-height: normal; -webkit-text-stroke-width: 0.150000005960464px;">
 
-<tbody style="-webkit-tap-highlight-color: transparent;">
 
-<tr style="-webkit-tap-highlight-color: transparent;">
 
-<td style="-webkit-tap-highlight-color: transparent;">![jane.gif](http://i.investopedia.com/inv/articles/site/jane.gif)</td>
 
-</tr>
 
-</tbody>
 
-</table>
+![jane.gif](http://i.investopedia.com/inv/articles/site/jane.gif)
+
+
+
+
+
+
 
 The extra $10 a month saves Jane almost $1,000 and cuts her repayment period by more than seven years!
 
 The lesson here is that every little bit counts. Paying twice your minimum or more can drastically cut down the time it takes to pay off the balance, which leads to lower interest charges.  
 However, as we will see below, it\'s wise not to pay only your minimum or even just a little more than your minimum. It\'s best simply not to carry a balance at all.
 
-<span style="-webkit-tap-highlight-color: transparent; color: rgb(0, 0, 0); font-family: gandhiserif-regular-webfont, Helvetica, Arial, Verdana, sans-serif; font-size: 15px; line-height: normal; -webkit-text-stroke-width: 0.150000005960464px;">  
+  
 
 Read more: [Understanding Credit Card Interest](http://www.investopedia.com/articles/01/061301.asp#ixzz3kVHvPTm0) [http://www.investopedia.com/articles/01/061301.asp#ixzz3kVHvPTm0](http://www.investopedia.com/articles/01/061301.asp#ixzz3kVHvPTm0)   
-Follow us: [Investopedia on Facebook](http://ec.tynt.com/b/rf?id=arwjQmCEqr4l6Cadbi-bnq&u=Investopedia)</span>
+Follow us: [Investopedia on Facebook](http://ec.tynt.com/b/rf?id=arwjQmCEqr4l6Cadbi-bnq&u=Investopedia)
 ### Terms
 ### Billing Cycle
 ### Statement

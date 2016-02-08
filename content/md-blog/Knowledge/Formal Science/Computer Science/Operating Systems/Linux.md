@@ -34,28 +34,28 @@ Linux Operating System has primarily three components
 ### You can also use a number
 r = 4
 
-<div>w = 2</div>
+w = 2
 
-<div>x = 1</div>
+x = 1
 
-<div>you can add them up together like so:</div>
+you can add them up together like so:
 
-<div>chmod u+_rwxr___ | chmod u+740</div>
+chmod u+_rwxr___ | chmod u+740
 ### How do I  know who is the owner or group or all
 ### are scripts executed by the owner considered owner permission 
 ### IE: node or python ...
 ### you own the file system, you assign programs to write/read/execute
-<span style="color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);">so brew can't modify a folder unless you change the permission, nor it will accept a sudo.</span>
+so brew can't modify a folder unless you change the permission, nor it will accept a sudo.
 ### Advanced Permission
-**<span style="font-size: 11px;"><span style="font-family: arial, helvetica, sans-serif;">Advanced Permissions</span></span>**
+**Advanced Permissions**
 
-<span style="font-size: 11px;"><span style="font-family: arial, helvetica, sans-serif;">The special permissions flag can be marked with any of the following:</span></span>
+The special permissions flag can be marked with any of the following:
 
-*   <span style="font-size: 11px;"><span style="font-family: arial, helvetica, sans-serif;">**_** - no special permissions</span></span>
-*   <span style="font-size: 11px;"><span style="font-family: arial, helvetica, sans-serif;">_**d**_ - directory</span></span>
-*   <span style="font-size: 11px;"><span style="font-family: arial, helvetica, sans-serif;">_**l** _- The file or directory is a symbolic link</span></span>
-*   <span style="font-size: 11px;"><span style="font-family: arial, helvetica, sans-serif;">_**s**_ - This indicated the setuid/setgid permissions. This is not set displayed in the special permission part of the permissions display, but is represented as a **s** in the read portion of the owner or group permissions.</span></span>
-*   <span style="font-size: 11px;"><span style="font-family: arial, helvetica, sans-serif;">_**t**_ - This indicates the sticky bit permissions. This is not set displayed in the special permission part of the permissions display, but is represented as a **t** in the executable portion of the all users permissions</span></span>
+*   **_** - no special permissions
+*   _**d**_ - directory
+*   _**l** _- The file or directory is a symbolic link
+*   _**s**_ - This indicated the setuid/setgid permissions. This is not set displayed in the special permission part of the permissions display, but is represented as a **s** in the read portion of the owner or group permissions.
+*   _**t**_ - This indicates the sticky bit permissions. This is not set displayed in the special permission part of the permissions display, but is represented as a **t** in the executable portion of the all users permissions
 ### Kernel
 ### Drivers
 ### Memory Model

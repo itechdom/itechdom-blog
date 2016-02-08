@@ -25,29 +25,27 @@
 ### references 
 ### Pointers
 ### << with cout
-### Overloading << and >>
+### Overloading >
 
-<span style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;">The above is verbose so a more elegant way is provided. The C++ language does </span>_not_<span style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;"> include an I/O system, but one of its core concepts is that it is extendible. Although its operator set cannot be increased, the meanings of operators depend on the context in which they are used. When applied to new objects the meaning can be redefined. So, the left shift operator << has, in the standard I/O library, been overloaded to be the put function when its left hand argument is an input stream. Hence:-</span>
+The above is verbose so a more elegant way is provided. The C++ language does _not_ include an I/O system, but one of its core concepts is that it is extendible. Although its operator set cannot be increased, the meanings of operators depend on the context in which they are used. When applied to new objects the meaning can be redefined. So, the left shift operator 
 
-<pre style="color: rgb(0, 0, 0); line-height: normal;">cout <<  "x = ";
-</pre>
+cout 
 
-<span style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;">is the same as</span>
+is the same as
 
-<pre style="color: rgb(0, 0, 0); line-height: normal;">put(cout,"x = ");
-</pre>
+put(cout,"x = ");
 
-<span style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;">The side effect is to output the right hand variable and the expression produces a value that is an output stream (technically its a </span>[reference](http://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/Companion/glossary/reference.html)<span style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;"> to an output stream, but it amounts to the same thing). This value can be used again as the left hand size of a <<. So to call the put functions 3 times as before:-</span>
 
-<pre style="color: rgb(0, 0, 0); line-height: normal;">cout << "x = " << x << "\n";
-</pre>
+The side effect is to output the right hand variable and the expression produces a value that is an output stream (technically its a [reference](http://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/Companion/glossary/reference.html) to an output stream, but it amounts to the same thing). This value can be used again as the left hand size of a 
 
-<span style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal;">because the << operator is evaluated left to right. It take a little getting used to for a FORTRAN programmer, but after a while you get used to seeing this as a cout object with a stream of values flowing into it.</span>
+cout 
+
+because the 
 
 As you might expect, input simply reverses the sign on the flow, so to read 3 numbers from the input stream and store them in x, y, z:-
 
-<pre style="color: rgb(0, 0, 0); line-height: normal;">cin >> x >> y >> z;
-</pre>
+cin >> x >> y >> z;
+
 ### binary shift
 ### http://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/Companion/cxx_crib/input_output.html
 # Resources

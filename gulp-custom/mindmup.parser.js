@@ -115,7 +115,7 @@ var ops = {
 				var el = cheerio.load(idea.content);
 				idea.content = el.root().html();
 				idea.content = toMarkdown(idea.content);
-				//idea.content = this.cleanHTML(idea.content);
+				idea.content = this.cleanHTML(idea.content);
 				f += idea.content;
 				f+="\n";
 			}

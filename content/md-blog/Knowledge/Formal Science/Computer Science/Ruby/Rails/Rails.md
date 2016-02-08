@@ -7,331 +7,331 @@
 # Concepts
 ### Asset Pipeline
 ### What?
-<div>#### What</div>
+#### What
 
-<div>The asset pipeline provides a framework to concatenate and minify or compress JavaScript and CSS assets. It also adds the ability to write these assets in other languages and pre-processors such as CoffeeScript, Sass and ERB.</div>
+The asset pipeline provides a framework to concatenate and minify or compress JavaScript and CSS assets. It also adds the ability to write these assets in other languages and pre-processors such as CoffeeScript, Sass and ERB.
 
-<div>The asset pipeline is technically no longer a core feature of Rails 4, it has been extracted out of the framework into the sprockets-rails gem that is included in your Rails projects.</div>
+The asset pipeline is technically no longer a core feature of Rails 4, it has been extracted out of the framework into the sprockets-rails gem that is included in your Rails projects.
 
-<div>The asset pipeline is enabled by default.</div>
+The asset pipeline is enabled by default.
 
-<div>#### Main Features</div>
+#### Main Features
 
-<div>Asset concatenation</div>
+Asset concatenation
 
-<div>Asset minification</div>
+Asset minification
 
-<div>Precompilation</div>
+Precompilation
 
-<div>The first feature of the pipeline is to concatenate assets, which can reduce the number of requests that a browser makes to render a web page. Fewer requests can mean faster loading for your application.</div>
+The first feature of the pipeline is to concatenate assets, which can reduce the number of requests that a browser makes to render a web page. Fewer requests can mean faster loading for your application.
 
-<div>Sprockets concatenates all JavaScript files into one master .js file and all CSS files into one master .css file. You can customize this strategy to group files any way you like.</div>
+Sprockets concatenates all JavaScript files into one master .js file and all CSS files into one master .css file. You can customize this strategy to group files any way you like.
 
-<div>In production, Rails inserts an MD5 fingerprint into each filename so that the file is cached by the web browser. You can invalidate the cache by altering this fingerprint, which happens automatically whenever you change the file contents.</div>
+In production, Rails inserts an MD5 fingerprint into each filename so that the file is cached by the web browser. You can invalidate the cache by altering this fingerprint, which happens automatically whenever you change the file contents.
 
-<div>The second feature of the asset pipeline is asset minification or compression. For CSS files, this is done by removing whitespace and comments. For JavaScript, more complex processes can be applied. You can choose from a set of built in options or specify your own.</div>
+The second feature of the asset pipeline is asset minification or compression. For CSS files, this is done by removing whitespace and comments. For JavaScript, more complex processes can be applied. You can choose from a set of built in options or specify your own.
 
-<div>The third feature of the asset pipeline is it allows coding assets via a higher-level language, with precompilation down to the actual assets. Supported languages include Sass for CSS, CoffeeScript for JavaScript, and ERB for both by default.</div>
+The third feature of the asset pipeline is it allows coding assets via a higher-level language, with precompilation down to the actual assets. Supported languages include Sass for CSS, CoffeeScript for JavaScript, and ERB for both by default.
 
-<div>#### Fingerprinting</div>
+#### Fingerprinting
 
-<div>Fingerprinting is a technique that makes the name of a file dependent on the contents of the file. When the file contents change, the filename is also changed. For content that is static or infrequently changed, this provides an easy way to tell whether two versions of a file are identical, even across different servers or deployment dates.</div>
+Fingerprinting is a technique that makes the name of a file dependent on the contents of the file. When the file contents change, the filename is also changed. For content that is static or infrequently changed, this provides an easy way to tell whether two versions of a file are identical, even across different servers or deployment dates.
 
-<div>When a filename is unique and based on its content, HTTP headers can be set to encourage caches everywhere (whether at CDNs, at ISPs, in networking equipment, or in web browsers) to keep their own copy of the content. When the content is updated, the fingerprint will change. This will cause the remote clients to request a new copy of the content. This is generally known as cache busting.</div>
+When a filename is unique and based on its content, HTTP headers can be set to encourage caches everywhere (whether at CDNs, at ISPs, in networking equipment, or in web browsers) to keep their own copy of the content. When the content is updated, the fingerprint will change. This will cause the remote clients to request a new copy of the content. This is generally known as cache busting.
 
-<div>The technique sprockets uses for fingerprinting is to insert a hash of the content into the name, usually at the end. For example a CSS file global.css</div>
+The technique sprockets uses for fingerprinting is to insert a hash of the content into the name, usually at the end. For example a CSS file global.css
 
-<div>#### Fingerprinting Example</div>
+#### Fingerprinting Example
 
-<div>global.css</div>
+global.css
 
-<div>global-908e25f4bf641868d8683022a5b62f54.css</div>
+global-908e25f4bf641868d8683022a5b62f54.css
 
-<div>This is the how Rails names an asset file with MD5 fingerprinting. Every time that the contents of the file change, Rails create a new filename forcing the browser to load it’s contents again.</div>
+This is the how Rails names an asset file with MD5 fingerprinting. Every time that the contents of the file change, Rails create a new filename forcing the browser to load it’s contents again.
 
-<div>Rails used to attach a date at the end of the filename, but that strategy had three problems:</div>
+Rails used to attach a date at the end of the filename, but that strategy had three problems:
 
-<div><span class="Apple-tab-span" style="white-space:pre"><span style="white-space: normal;"></span></span>- Not all caches reliably cached filenames when used a date parameter</div>
+- Not all caches reliably cached filenames when used a date parameter
 
-<div><span class="Apple-tab-span" style="white-space:pre"><span style="white-space: normal;"></span></span>- If different nodes had different time stamps, then you could get many different asset names per node.</div>
+- If different nodes had different time stamps, then you could get many different asset names per node.
 
-<div><span class="Apple-tab-span" style="white-space:pre"><span style="white-space: normal;"></span></span>- If you deployed, it didn’t matter whether the contents had change, the cache was going to be invalidated therefore loading all the assets again.</div>
+- If you deployed, it didn’t matter whether the contents had change, the cache was going to be invalidated therefore loading all the assets again.
 
-<div><span class="Apple-tab-span" style="white-space:pre"><span style="white-space: normal;"></span></span></div>
 
-<div>global.css</div>
 
-<div>/stylesheets/global.css?1309495796</div>
+global.css
 
-<div>This is how the asset file looked before in Rails.</div>
+/stylesheets/global.css?1309495796
+
+This is how the asset file looked before in Rails.
 ### Asset Organization
-<div>#### Asset Organization</div>
+#### Asset Organization
 
-<div>Pipeline assets can be placed inside an application in one of three locations: app/assets, lib/assets or vendor/assets.</div>
+Pipeline assets can be placed inside an application in one of three locations: app/assets, lib/assets or vendor/assets.
 
-<div>#### Main Folders</div>
+#### Main Folders
 
-<div>app/assets</div>
+app/assets
 
-<div>lib/assets</div>
+lib/assets
 
-<div>vendor/assets</div>
+vendor/assets
 
-<div>app/assets is for assets that are owned by the application, such as custom images, JavaScript files or stylesheets.</div>
+app/assets is for assets that are owned by the application, such as custom images, JavaScript files or stylesheets.
 
-<div>lib/assets is for your own libraries' code that doesn't really fit into the scope of the application or those libraries which are shared across applications.</div>
+lib/assets is for your own libraries' code that doesn't really fit into the scope of the application or those libraries which are shared across applications.
 
-<div>vendor/assets is for assets that are owned by outside entities, such as code for JavaScript plugins and CSS frameworks. Keep in mind that third party code with references to other files also processed by the asset Pipeline (images, stylesheets, etc.), will need to be rewritten to use helpers like asset_path.</div>
+vendor/assets is for assets that are owned by outside entities, such as code for JavaScript plugins and CSS frameworks. Keep in mind that third party code with references to other files also processed by the asset Pipeline (images, stylesheets, etc.), will need to be rewritten to use helpers like asset_path.
 
-<div>#### Asset directories are arbitrary</div>
+#### Asset directories are arbitrary
 
-<div>By default, Rails places three sub-directories in your app/assets directory. These are completely arbitrary. You can name these directories whatever you want or add other directories.</div>
+By default, Rails places three sub-directories in your app/assets directory. These are completely arbitrary. You can name these directories whatever you want or add other directories.
 
-<div>Rails will pick up new files in your app/assets directory, but you have to reset the server if you add a new directory to the app/assets.</div>
+Rails will pick up new files in your app/assets directory, but you have to reset the server if you add a new directory to the app/assets.
 
-<div>Anything in the pipeline will be available at the /assets URL. So, the app/assets/javascripts/application.js in your asset pipeline will be available in development at http://localhost:3000/assets/application.js. app/assets/stylesheets/application.css will also be available at the root of your asset directory. </div>
+Anything in the pipeline will be available at the /assets URL. So, the app/assets/javascripts/application.js in your asset pipeline will be available in development at http://localhost:3000/assets/application.js. app/assets/stylesheets/application.css will also be available at the root of your asset directory. 
 
-<div>The asset pipeline will completely flatten your directory structure when you spin up your development server or precompile your assets.</div>
+The asset pipeline will completely flatten your directory structure when you spin up your development server or precompile your assets.
 
-<div>#### Example</div>
+#### Example
 
-<div>app/assets/javascripts/home.js</div>
+app/assets/javascripts/home.js
 
-<div>lib/assets/javascripts/moovinator.js</div>
+lib/assets/javascripts/moovinator.js
 
-<div>vendor/assets/tino_cochino/slider.js</div>
+vendor/assets/tino_cochino/slider.js
 
-<div>vendor/assets/barbie_hair/phonebox.js</div>
+vendor/assets/barbie_hair/phonebox.js
 
-<div>Let’s say that you have these files under your assets. Rails doesn’t care the subfolders that you use. It will flatten them all and put them under the assets url.</div>
+Let’s say that you have these files under your assets. Rails doesn’t care the subfolders that you use. It will flatten them all and put them under the assets url.
 
-<div>http://localhost:3000/assets/home.js </div>
+http://localhost:3000/assets/home.js 
 
-<div>http://localhost:3000/assets/moovinator.js </div>
+http://localhost:3000/assets/moovinator.js 
 
-<div>http://localhost:3000/assets/slider.js </div>
+http://localhost:3000/assets/slider.js 
 
-<div>http://localhost:3000/assets/phonebox.js</div>
+http://localhost:3000/assets/phonebox.js
 
-<div>This will be referenced like this.</div>
+This will be referenced like this.
 ### Asset Lookup
-<div>#### Asset Lookup</div>
+#### Asset Lookup
 
-<div>Enter this in the rails console</div>
+Enter this in the rails console
 
-<div>> y Rails.application.config.assets.paths</div>
+> y Rails.application.config.assets.paths
 
-<div>At it's core, the asset pipeline is a list of load paths. You can see these load paths by firing up the Rails console.</div>
+At it's core, the asset pipeline is a list of load paths. You can see these load paths by firing up the Rails console.
 
-<div>The y method just formats the hash as YAML.</div>
+The y method just formats the hash as YAML.
 
-<div>This is my load path</div>
+This is my load path
 
-<div>---</div>
+---
 
-<div>- "/Users/Jorge/Dropbox/projects/classes/storedom/app/assets/images"</div>
+- "/Users/Jorge/Dropbox/projects/classes/storedom/app/assets/images"
 
-<div>- "/Users/Jorge/Dropbox/projects/classes/storedom/app/assets/javascripts"</div>
+- "/Users/Jorge/Dropbox/projects/classes/storedom/app/assets/javascripts"
 
-<div>- "/Users/Jorge/Dropbox/projects/classes/storedom/app/assets/stylesheets"</div>
+- "/Users/Jorge/Dropbox/projects/classes/storedom/app/assets/stylesheets"
 
-<div>- "/Users/Jorge/Dropbox/projects/classes/storedom/vendor/assets/javascripts"</div>
+- "/Users/Jorge/Dropbox/projects/classes/storedom/vendor/assets/javascripts"
 
-<div>- "/Users/Jorge/Dropbox/projects/classes/storedom/vendor/assets/stylesheets"</div>
+- "/Users/Jorge/Dropbox/projects/classes/storedom/vendor/assets/stylesheets"
 
-<div>- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/less-rails-bootstrap-3.2.0/app/assets/fonts"</div>
+- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/less-rails-bootstrap-3.2.0/app/assets/fonts"
 
-<div>- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/less-rails-bootstrap-3.2.0/app/assets/javascripts"</div>
+- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/less-rails-bootstrap-3.2.0/app/assets/javascripts"
 
-<div>- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/less-rails-bootstrap-3.2.0/app/assets/stylesheets"</div>
+- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/less-rails-bootstrap-3.2.0/app/assets/stylesheets"
 
-<div>- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/turbolinks-2.2.2/lib/assets/javascripts"</div>
+- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/turbolinks-2.2.2/lib/assets/javascripts"
 
-<div>- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/jquery-rails-3.1.1/vendor/assets/javascripts"</div>
+- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/jquery-rails-3.1.1/vendor/assets/javascripts"
 
-<div>- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/coffee-rails-4.0.1/lib/assets/javascripts"</div>
+- "/Users/Jorge/.rvm/gems/ruby-2.1.3/gems/coffee-rails-4.0.1/lib/assets/javascripts"
 
-<div>The asset pipeline works its way through your load path. The first asset with a given name wins. </div>
+The asset pipeline works its way through your load path. The first asset with a given name wins. 
 
-<div>If you had an asset named app/assets/stylesheet.css.scss and another called vendor/assets/stylesheet.css.scss, the asset in your app/assets directory would win because it occurs first in the load path.</div>
+If you had an asset named app/assets/stylesheet.css.scss and another called vendor/assets/stylesheet.css.scss, the asset in your app/assets directory would win because it occurs first in the load path.
 
-<div>Adding to the Search Path</div>
+Adding to the Search Path
 
-<div>By default, Rails will search the first set of directories directly under app/assets, lib/assets, vendor/assets. You can add additional paths to the asset pipeline.</div>
+By default, Rails will search the first set of directories directly under app/assets, lib/assets, vendor/assets. You can add additional paths to the asset pipeline.
 
-<div>Let's say you're living in the future and you want to include some Adobe Flash. And you want to store your flashy Flash apps in app/flash/assets—in an effort from infecting your other assets with a case of the early 2000s. You can add that path to the asset pipeline in config/initializers/assets.rb.</div>
+Let's say you're living in the future and you want to include some Adobe Flash. And you want to store your flashy Flash apps in app/flash/assets—in an effort from infecting your other assets with a case of the early 2000s. You can add that path to the asset pipeline in config/initializers/assets.rb.
 
-<div>Add this line to the config/initializers/assets.rb</div>
+Add this line to the config/initializers/assets.rb
 
-<div>Rails.application.config.assets.paths << Rails.root.join("app", "flash", "assets")</div>
+Rails.application.config.assets.paths 
 
-<div>create a flashy.txt file</div>
+create a flashy.txt file
 
-<div>$ touch app/flash/assets/flashy.txt</div>
+$ touch app/flash/assets/flashy.txt
 
-<div>put this into flashy.txt</div>
+put this into flashy.txt
 
-<div>Rockin’ like 2002</div>
+Rockin’ like 2002
 
-<div>visit this path</div>
+visit this path
 
-<div>http://localhost:3000/assets/flashy.txt</div>
+http://localhost:3000/assets/flashy.txt
 ### Manifests
-<div>#### What are Manifests?</div>
+#### What are Manifests?
 
-<div>Manifests are a way to pull in other, related files. So, if I request application.js and it requires another.js in it's manifest, I will get both of them.</div>
+Manifests are a way to pull in other, related files. So, if I request application.js and it requires another.js in it's manifest, I will get both of them.
 
-<div>#### Application.js</div>
+#### Application.js
 
-<div>Let’s look at the application.js</div>
+Let’s look at the application.js
 
-<div>// require_tree</div>
+// require_tree
 
-<div>// require_directory .</div>
+// require_directory .
 
-<div>Define the files manually</div>
+Define the files manually
 
-<div>// require_tree . requires all of the files in that directory and all subdirectories.</div>
+// require_tree . requires all of the files in that directory and all subdirectories.
 
-<div>// require_directory . loads all of the files in the directory but not the subdirectories.</div>
+// require_directory . loads all of the files in the directory but not the subdirectories.
 
-<div>Alternatively, you can manually define the files you want to include.</div>
+Alternatively, you can manually define the files you want to include.
 
-<div>In this example, we're looking at application.js; so, we're using JavaScript comments. If you're in application.css then it would be in CSS comments.</div>
+In this example, we're looking at application.js; so, we're using JavaScript comments. If you're in application.css then it would be in CSS comments.
 
-<div>//= require jquery</div>
+//= require jquery
 
-<div>//= require jquery_ujs</div>
+//= require jquery_ujs
 
-<div>//= require twitter/bootstrap</div>
+//= require twitter/bootstrap
 
-<div>//= require turbolinks</div>
+//= require turbolinks
 
-<div>//= require_tree .</div>
+//= require_tree .
 
-<div>This is the application.js in Storedom.</div>
+This is the application.js in Storedom.
 
-<div>Remember that order matters.</div>
+Remember that order matters.
 
-<div>#### Manifest Directives</div>
+#### Manifest Directives
 
-<div>require</div>
+require
 
-<div>include </div>
+include 
 
-<div>require_self</div>
+require_self
 
-<div>require_directory</div>
+require_directory
 
-<div>require_tree</div>
+require_tree
 
-<div>depend_on</div>
+depend_on
 
-<div>stub</div>
+stub
 
-<div>require grabs an asset and puts it in our bundle once.</div>
+require grabs an asset and puts it in our bundle once.
 
-<div>include works a lot like require, but it will allow you to include a file more than once. (I have yet to find a practical use for this directive.)</div>
+include works a lot like require, but it will allow you to include a file more than once. (I have yet to find a practical use for this directive.)
 
-<div>require_self tells Sprockets to load the body of the current file before loading any of the dependencies. You would use this if you wrote any styles or JavaScript in application.css or application.js respectively and you wanted Sprockets to load that code before loading any of the required assets.</div>
+require_self tells Sprockets to load the body of the current file before loading any of the dependencies. You would use this if you wrote any styles or JavaScript in application.css or application.js respectively and you wanted Sprockets to load that code before loading any of the required assets.
 
-<div>require_directory requires all of the source files of the same format in a given directory. It only goes one level deep.</div>
+require_directory requires all of the source files of the same format in a given directory. It only goes one level deep.
 
-<div>require_tree works like require_directory, but it also traverses subdirectories.</div>
+require_tree works like require_directory, but it also traverses subdirectories.
 
-<div>depend_on announces that you depend on a file, but does not include it in the asset bundle.</div>
+depend_on announces that you depend on a file, but does not include it in the asset bundle.
 
-<div>stub blacklists a dependency from the bundle.</div>
+stub blacklists a dependency from the bundle.
 
-<div>#### SASS / SCSS</div>
+#### SASS / SCSS
 
-<div>Use @import instead of require</div>
+Use @import instead of require
 ### ActionView helpers
-<div>#### ActionView Helpers</div>
+#### ActionView Helpers
 
-<div><%= stylesheet_link_tag "application", :media => "all" %></div>
+ "all" %>
 
-<div><%= javascript_include_tag "application" %>  </div>
+  
 
-<div>You’ve probably seen this.</div>
+You’ve probably seen this.
 
-<div>ActionView gives you a set of helper methods that you can use in your views to include assets.</div>
+ActionView gives you a set of helper methods that you can use in your views to include assets.
 
-<div>audio_path("horse.wav")  # /audios/horse.wav</div>
+audio_path("horse.wav")  # /audios/horse.wav
 
-<div>audio_tag("sound")       # <audio src="/audios/sound"/></div>
+audio_tag("sound")       # 
 
-<div>font_path("font.ttf")    # /fonts/font.ttf</div>
+font_path("font.ttf")    # /fonts/font.ttf
 
-<div>image_path("edit.png")   # "/images/edit.png"</div>
+image_path("edit.png")   # "/images/edit.png"
 
-<div>image_tag("dog.png")     # <img src="/images/dog.png" alt="Dog"/></div>
+image_tag("dog.png")     # 
 
-<div>video_path("hd.avi")     # /videos/hd.avi</div>
+video_path("hd.avi")     # /videos/hd.avi
 
-<div>video_tag("trailer.ogg") # <video src="/videos/trailer.ogg"/></div>
+video_tag("trailer.ogg") # 
 
-<div>See ActionView::Helpers::AssetTagHelper documentation for more information.</div>
+See ActionView::Helpers::AssetTagHelper documentation for more information.
 
-<div>The sass-rails gem also has a set of helpers that allow you to reference other assets without having to know their exact location. This should help you resist the temptation of using ERB in your .scss assets.</div>
+The sass-rails gem also has a set of helpers that allow you to reference other assets without having to know their exact location. This should help you resist the temptation of using ERB in your .scss assets.
 ### Env Setup
-<div>#### Debugging Assets</div>
+#### Debugging Assets
 
-<div>As we mentioned in the beginning, the whole idea of the asset pipeline is to concatenate everything into one file, because performance. But, we'll notice that when we spin up our application in development, we'll see many files listed in the resources tab of the Chrome Developer Tools.</div>
+As we mentioned in the beginning, the whole idea of the asset pipeline is to concatenate everything into one file, because performance. But, we'll notice that when we spin up our application in development, we'll see many files listed in the resources tab of the Chrome Developer Tools.
 
-<div>Open config/environments/development.rb</div>
+Open config/environments/development.rb
 
-<div>config.assets.debug = true</div>
+config.assets.debug = true
 
-<div>This is because this functionality is disabled in config/environments/development.rb:</div>
+This is because this functionality is disabled in config/environments/development.rb:
 
-<div>Debug mode disables concatenation and preprocessing of assets. This option causes significant delays in view rendering with a large number of complex assets. However it is useful for debugging.</div>
+Debug mode disables concatenation and preprocessing of assets. This option causes significant delays in view rendering with a large number of complex assets. However it is useful for debugging.
 
-<div>This option is turned off in production.</div>
+This option is turned off in production.
 
-<div>#### Precompile assets</div>
+#### Precompile assets
 
-<div>If you request an asset in development, Rails will check public/assets first. If your asset is not there, it will hit up the asset pipeline and compile it on the fly. This is useful in development because you're likely to be making frequent changes and edits to those files. But, it would also be a performance bottleneck in production if Rails had to compile those files on every request.</div>
+If you request an asset in development, Rails will check public/assets first. If your asset is not there, it will hit up the asset pipeline and compile it on the fly. This is useful in development because you're likely to be making frequent changes and edits to those files. But, it would also be a performance bottleneck in production if Rails had to compile those files on every request.
 
-<div>Your assets have to be either required in your asset pipeline or precompiled</div>
+Your assets have to be either required in your asset pipeline or precompiled
 
-<div>To do so, you can either include them in the manifest or indicate your app to precompile it.</div>
+To do so, you can either include them in the manifest or indicate your app to precompile it.
 
-<div>In app/assets/stylesheets/application.css</div>
+In app/assets/stylesheets/application.css
 
-<div>// = require_self</div>
+// = require_self
 
-<div>// = require 'site'</div>
+// = require 'site'
 
-<div>Let's say you had a stylesheet called site.css.scss. You could simply require it in application.css.</div>
+Let's say you had a stylesheet called site.css.scss. You could simply require it in application.css.
 
-<div>In config/initializers/assets.rb</div>
+In config/initializers/assets.rb
 
-<div>config.assets.precompile += %w( site.css )</div>
+config.assets.precompile += %w( site.css )
 
-<div>Alternatively, you can add it to the precompile list similar to the way we added a load path earlier.</div>
+Alternatively, you can add it to the precompile list similar to the way we added a load path earlier.
 
-<div>However, in practice, by establishing the require_tree ., Rails got you covered.</div>
+However, in practice, by establishing the require_tree ., Rails got you covered.
 
-<div>#### What happens when we precompile?</div>
+#### What happens when we precompile?
 
-<div>When you run rake assets:precompile, Rails goes through your assets and copies everything over to public/assets. It then creates application.js and application.css by reading the manifests. It does not look at any other file unless you explicitly tell it to.</div>
+When you run rake assets:precompile, Rails goes through your assets and copies everything over to public/assets. It then creates application.js and application.css by reading the manifests. It does not look at any other file unless you explicitly tell it to.
 
-<div>When using config.assets.precompile, the file extension of the target file matters. config.assets.precompile += %w( site ) will not work.</div>
+When using config.assets.precompile, the file extension of the target file matters. config.assets.precompile += %w( site ) will not work.
 
-<div>JavaScripts and stylesheets must either be included in a manifest or explicitly added to the config.assets.precompile directive.</div>
+JavaScripts and stylesheets must either be included in a manifest or explicitly added to the config.assets.precompile directive.
 
-<div>Rails copies all the assets into  public/assets</div>
+Rails copies all the assets into  public/assets
 
-<div>Rails then creates an application.js and application.css by reading the manifests</div>
+Rails then creates an application.js and application.css by reading the manifests
 
-<div>When using config.assets.precompile, the file extension matters. </div>
+When using config.assets.precompile, the file extension matters. 
 
-<div>When you run rake assets:precompile, Rails goes through your assets and copies everything over to public/assets. It then creates application.js and application.css by reading the manifests. </div>
+When you run rake assets:precompile, Rails goes through your assets and copies everything over to public/assets. It then creates application.js and application.css by reading the manifests. 
 
-<div>When using config.assets.precompile, that the file extension matters. config.assets.precompile += %w( site ) will not work.</div>
+When using config.assets.precompile, that the file extension matters. config.assets.precompile += %w( site ) will not work.
 
-<div>JavaScripts and stylesheets must either be included in a manifest or explicitly added to the config.assets.precompile directive.</div>
+JavaScripts and stylesheets must either be included in a manifest or explicitly added to the config.assets.precompile directive.
 ### MVC
 
 
@@ -339,456 +339,456 @@
 ### Rack
 ### Routing
 ### Action Mailer
-<div>#### Action Mailers</div>
+#### Action Mailers
 
-<div>* Similar to controllers:</div>
+* Similar to controllers:
 
-<div>    * they inherit from ActionMailer::Base</div>
+    * they inherit from ActionMailer::Base
 
-<div>    * they have layouts </div>
+    * they have layouts 
 
-<div>    * they have custom methods</div>
+    * they have custom methods
 
-<div>* http://guides.rubyonrails.org/action_mailer_basics.html</div>
+* http://guides.rubyonrails.org/action_mailer_basics.html
 
-<div>#### The mailer</div>
+#### The mailer
 
-<div>* How to generate mailers:</div>
+* How to generate mailers:
 
-<div>```ruby</div>
+```ruby
 
-<div>rails generate mailer YourNameMailer</div>
+rails generate mailer YourNameMailer
 
-<div>```</div>
+```
 
-<div>* Layouts are specified in:</div>
+* Layouts are specified in:
 
-<div>```ruby</div>
+```ruby
 
-<div>class ApplicationMailer < ActionMailer::Base</div>
+class ApplicationMailer 
 
-<div>  layout 'mailer'</div>
+  layout 'mailer'
 
-<div>end</div>
+end
 
-<div>```</div>
+```
 
-<div>```ruby</div>
+```ruby
 
-<div>class UserMailer < ApplicationMailer</div>
+class UserMailer 
 
-<div>  default from: 'notifications@example.com'</div>
+  default from: 'notifications@example.com'
 
-<div>  def welcome_email(user)</div>
+  def welcome_email(user)
 
-<div>    @user = user</div>
+    @user = user
 
-<div>    mail(to: @user.email, subject: 'Welcome to My Awesome Site')</div>
+    mail(to: @user.email, subject: 'Welcome to My Awesome Site')
 
-<div>  end</div>
+  end
 
-<div>end</div>
+end
 
-<div>```</div>
+```
 
-<div>#### Connecting to a controller</div>
+#### Connecting to a controller
 
-<div>* Where to call mailers</div>
+* Where to call mailers
 
-<div>* Sending now or later?</div>
+* Sending now or later?
 
-<div>```ruby</div>
+```ruby
 
-<div>class UsersController < ApplicationController</div>
+class UsersController 
 
-<div>  # POST /users</div>
+  # POST /users
 
-<div>  # POST /users.json</div>
+  # POST /users.json
 
-<div>  def create</div>
+  def create
 
-<div>    @user = User.new(params[:user])</div>
+    @user = User.new(params[:user])
 
-<div>      if @user.save</div>
+      if @user.save
 
-<div>        # Tell the UserMailer to send a welcome email after save, hence the later</div>
+        # Tell the UserMailer to send a welcome email after save, hence the later
 
-<div>        UserMailer.welcome_email(@user).deliver_later</div>
+        UserMailer.welcome_email(@user).deliver_later
 
-<div>        redirect_to(@user, notice: 'User was successfully created.')</div>
+        redirect_to(@user, notice: 'User was successfully created.')
 
-<div>      else</div>
+      else
 
-<div>        render action: 'new' </div>
+        render action: 'new' 
 
-<div>      end</div>
+      end
 
-<div>  end</div>
+  end
 
-<div>end</div>
+end
 
-<div>```</div>
+```
 
-<div>#### Layouts</div>
+#### Layouts
 
-<div>* Due to some email clients not accepting HTML formatted emails, we use text only emails.</div>
+* Due to some email clients not accepting HTML formatted emails, we use text only emails.
 
-<div>#### Configuration</div>
+#### Configuration
 
-<div>* We will use Mandrill</div>
+* We will use Mandrill
 
-<div>* Configuration is done in Application.rb</div>
+* Configuration is done in Application.rb
 
-<div>```ruby</div>
+```ruby
 
-<div>     config.action_mailer.delivery_method = :smtp </div>
+     config.action_mailer.delivery_method = :smtp 
 
-<div>      config.action_mailer.smtp_settings = { </div>
+      config.action_mailer.smtp_settings = { 
 
-<div>        address:              'smtp.mandrillapp.com', </div>
+        address:              'smtp.mandrillapp.com', 
 
-<div>        port:                 '587', </div>
+        port:                 '587', 
 
-<div>        domain:               'blogger.com', </div>
+        domain:               'blogger.com', 
 
-<div>        user_name:            YOUR_USER_NAME_HERE, </div>
+        user_name:            YOUR_USER_NAME_HERE, 
 
-<div>        password:             YOUR_API_KEY_HERE, </div>
+        password:             YOUR_API_KEY_HERE, 
 
-<div>        authentication:       'plain', </div>
+        authentication:       'plain', 
 
-<div>        enable_starttls_auto: true </div>
+        enable_starttls_auto: true 
 
-<div>      }</div>
+      }
 
-<div>```</div>
+```
 
-<div>#### Testing</div>
+#### Testing
 
-<div>http://guides.rubyonrails.org/testing.html#testing-your-mailers</div>
+http://guides.rubyonrails.org/testing.html#testing-your-mailers
 
-<div>* Unit testing: test your mailer separately to see if:</div>
+* Unit testing: test your mailer separately to see if:
 
-<div>  * subject, from and body are correctly being sent</div>
+  * subject, from and body are correctly being sent
 
-<div>* Integration testing:</div>
+* Integration testing:
 
-<div>  * test the controller to make sure that the action that's sending the email is sending it correctly</div>
+  * test the controller to make sure that the action that's sending the email is sending it correctly
 ### Caching
-<div>## Learning Goals</div>
+## Learning Goals
 
-<div>* In a world with no Caching.</div>
+* In a world with no Caching.
 
-<div>* What's Caching when do we Cache.</div>
+* What's Caching when do we Cache.
 
-<div>* Learn About the three main caching techniques:</div>
+* Learn About the three main caching techniques:
 
-<div>    * Page Caching: cache static pages</div>
+    * Page Caching: cache static pages
 
-<div>    * Action Caching: run the before filters and cache the rest</div>
+    * Action Caching: run the before filters and cache the rest
 
-<div>    * Fragment Caching: A fragment of the view can be wrapped in a cache block</div>
+    * Fragment Caching: A fragment of the view can be wrapped in a cache block
 
-<div>* Learn how to use a Cache store alongside a memcache.</div>
+* Learn how to use a Cache store alongside a memcache.
 
-<div>* Learn how to use Redis as a store.</div>
+* Learn how to use Redis as a store.
 
-<div>http://guides.rubyonrails.org/caching_with_rails.html</div>
+http://guides.rubyonrails.org/caching_with_rails.html
 
-<div>https://github.com/rtomayko/rack-cache</div>
+https://github.com/rtomayko/rack-cache
 ### basics
-<div>#### Caching in Rails</div>
+#### Caching in Rails
 
-<div>* Page Caching: cache static pages.</div>
+* Page Caching: cache static pages.
 
-<div>* Action Caching: Page caching isn't realistic. This would run the before filters and cache the rest of the page.</div>
+* Action Caching: Page caching isn't realistic. This would run the before filters and cache the rest of the page.
 
-<div>* The previous two were taken out of Rails 4 core and put in a separate gem.</div>
+* The previous two were taken out of Rails 4 core and put in a separate gem.
 
-<div>* Fragment Caching: </div>
+* Fragment Caching: 
 
-<div>    * Action caching isn't ideal since we can't always cache the whole page. </div>
+    * Action caching isn't ideal since we can't always cache the whole page. 
 
-<div>    * It's more practical to cache parts of the page.</div>
+    * It's more practical to cache parts of the page.
 
-<div>#### Caching in Rails: Cont</div>
+#### Caching in Rails: Cont
 
-<div>* http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching</div>
+* http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching
 
-<div>* Let's look at:</div>
+* Let's look at:
 
-<div>    * Caching one action.</div>
+    * Caching one action.
 
-<div>    * Caching All actions</div>
+    * Caching All actions
 
-<div>    * Expiring the cache: Manually, Automatically using a helper</div>
+    * Expiring the cache: Manually, Automatically using a helper
 ### Using a cache store
 ### Redis
 ### Memecache
 ### fragement caching
-<div>#### Setup: Fragment Caching</div>
+#### Setup: Fragment Caching
 
-<div>* Repository</div>
+* Repository
 
-<div>```</div>
+```
 
-<div>git clone https://github.com/turingschool-examples/storedom.git caching_strategies</div>
+git clone https://github.com/turingschool-examples/storedom.git caching_strategies
 
-<div>```</div>
+```
 
-<div>Procedure</div>
+Procedure
 
-<div>Go to site and explore the app. Show how to read the output in the console for the items/index page.</div>
+Go to site and explore the app. Show how to read the output in the console for the items/index page.
 
-<div>Turn on caching in development.</div>
+Turn on caching in development.
 
-<div>Restart the server.</div>
+Restart the server.
 
-<div>Add “cache do” to cache all the items in items/index.</div>
+Add “cache do” to cache all the items in items/index.
 
-<div>Refresh items/index and check the response time.</div>
+Refresh items/index and check the response time.
 
-<div>Add a second “cache do” for items count.</div>
+Add a second “cache do” for items count.
 
-<div>Explain inconsistencies.</div>
+Explain inconsistencies.
 
-<div>Add “action” and “action_sufix” in “cache do” to fix the problem.</div>
+Add “action” and “action_sufix” in “cache do” to fix the problem.
 
-<div>-> Workshop 1.</div>
+-> Workshop 1.
 
-<div>__</div>
+__
 
-<div> Create a new item via the console and show how it was not updated in the page.</div>
+ Create a new item via the console and show how it was not updated in the page.
 
-<div> Use after_create, after_update, after_destroy callbacks to invalidate the cache. Show how this fixes it.</div>
+ Use after_create, after_update, after_destroy callbacks to invalidate the cache. Show how this fixes it.
 
-<div> -> Workshop 2.</div>
+ -> Workshop 2.
 
-<div>__</div>
+__
 
-<div> Use a CacheInvalidator concern to reduce duplication.</div>
+ Use a CacheInvalidator concern to reduce duplication.
 
-<div> Explain what are the pros and cons of the concern technique.</div>
+ Explain what are the pros and cons of the concern technique.
 
-<div> Create “cache_key_for(model)” helper in ApplicationController.</div>
+ Create “cache_key_for(model)” helper in ApplicationController.
 
-<div> Refactor views to use Russian doll caching: “cache(record) do”.</div>
+ Refactor views to use Russian doll caching: “cache(record) do”.
 
-<div> Add an a new item and check that it is added in the view.</div>
+ Add an a new item and check that it is added in the view.
 
-<div> -> Workshop 3.</div>
+ -> Workshop 3.
 
-<div>__</div>
+__
 
-<div> Change the name of an item that is contained in the first order via the terminal.</div>
+ Change the name of an item that is contained in the first order via the terminal.
 
-<div> Verify that this is changed in the orders view.</div>
+ Verify that this is changed in the orders view.
 
-<div> Go to order in which the updated item should appear and check that the old name is still there.</div>
+ Go to order in which the updated item should appear and check that the old name is still there.
 
-<div> Use “after_create”, “after_update” and “after_destroy” callbacks to update the orders associated with the item.</div>
+ Use “after_create”, “after_update” and “after_destroy” callbacks to update the orders associated with the item.
 
-<div> Modify another item belonging to the first order and check that the order was updated.</div>
+ Modify another item belonging to the first order and check that the order was updated.
 
-<div>__</div>
+__
 
-<div> Install redis via homebrew (“brew install redis”).</div>
+ Install redis via homebrew (“brew install redis”).
 
-<div> Start redis (“redis-server”).</div>
+ Start redis (“redis-server”).
 
-<div> Add “redis-rails” to Gemfile.</div>
+ Add “redis-rails” to Gemfile.
 
-<div> Modify configuration file to use redis instead of memory caching.  “config.cache_store = :redis_store, ‘redis://localhost:6379/0/cache”.</div>
+ Modify configuration file to use redis instead of memory caching.  “config.cache_store = :redis_store, ‘redis://localhost:6379/0/cache”.
 
-<div> Restart the server.</div>
+ Restart the server.
 
-<div> Check the logs and compare the speed.</div>
+ Check the logs and compare the speed.
 
-<div> Show how to access the keys in redis via the redis-cli (KEYS *).</div>
+ Show how to access the keys in redis via the redis-cli (KEYS *).
 
-<div> BONUS: Refactor callbacks using a ManyToManyAssociationsUpdater concern</div>
+ BONUS: Refactor callbacks using a ManyToManyAssociationsUpdater concern
 
-<div>Workshops</div>
+Workshops
 
-<div>Add caching to order count and order details.</div>
+Add caching to order count and order details.
 
-<div>Go to /orders and check the response times in your logs.</div>
+Go to /orders and check the response times in your logs.
 
-<div>Add “cache do” to all the orders.</div>
+Add “cache do” to all the orders.
 
-<div>Add “cache do” to the orders count.</div>
+Add “cache do” to the orders count.
 
-<div>Add “action” and “action_suffix”.</div>
+Add “action” and “action_suffix”.
 
-<div>Check /users and see the difference in response times.</div>
+Check /users and see the difference in response times.
 
-<div>Update orders cache.</div>
+Update orders cache.
 
-<div>Create a new order from the console. It has to have a user_id.</div>
+Create a new order from the console. It has to have a user_id.
 
-<div>Go to the orders page and see that the new order hasn’t appeared.</div>
+Go to the orders page and see that the new order hasn’t appeared.
 
-<div>Add callbacks (after_create, after_update, after_destroy) to invalidate cache.</div>
+Add callbacks (after_create, after_update, after_destroy) to invalidate cache.
 
-<div>Create a new order and verify that it appears in the page.</div>
+Create a new order and verify that it appears in the page.
 
-<div>Refactor the orders view.</div>
+Refactor the orders view.
 
-<div>Add Russian doll caching to the order record.</div>
+Add Russian doll caching to the order record.
 
-<div>Use the cache_key_for(model) helper to create a new fragment that encompasses all the view.</div>
+Use the cache_key_for(model) helper to create a new fragment that encompasses all the view.
 
-<div>Create a new record and verify that it is still working.</div>
+Create a new record and verify that it is still working.
 
-<div>Implementation</div>
+Implementation
 
-<div>app/views/items/index.html.erb</div>
+app/views/items/index.html.erb
 
-<div><% cache(cache_key_for(Item)) do %></div>
 
-<div>  <div class="container"></div>
 
-<div>    <div class="row"></div>
+  
 
-<div>      <div class="col-sm-12"></div>
+    
 
-<div>        <h1><%= @items.count %> Items</h1></div>
+      
 
-<div>      </div></div>
+         Items
 
-<div>    </div></div>
+      
 
-<div>    <div class="row"></div>></div>
+    
 
-<div>    <% @items.each do |item| %></div>
+    >
 
-<div>      <div class="col-sm-3"></div>
+    
 
-<div>        <% cache(item) do %></div>
+      
 
-<div>          <h5><%= item.name %></h5></div>
+        
 
-<div>          <%= link_to(image_tag(item.image_url), item_path(item)) %></div>
+          
 
-<div>          <p><%= item.description %></p></div>
+          
 
-<div>        <% end %></div>
+          
 
-<div>      </div></div>
+        
 
-<div>    <% end %></div>
+      
 
-<div>  </div></div>
+    
 
-<div><% end %></div>
+  
 
-<div>app/helpers/application_helper.rb</div>
 
-<div>module ApplicationHelper</div>
 
-<div>  def cache_key_for(model)</div>
+app/helpers/application_helper.rb
 
-<div>    prefix         = model.to_s.downcase.pluralize</div>
+module ApplicationHelper
 
-<div>    count          = model.count</div>
+  def cache_key_for(model)
 
-<div>    max_updated_at = model.maximum(:updated_at).try(:utc).try(:to_s, :number)</div>
+    prefix         = model.to_s.downcase.pluralize
 
-<div>    "#{prefix}/all-#{count}-#{max_updated_at}"</div>
+    count          = model.count
 
-<div>  end</div>
+    max_updated_at = model.maximum(:updated_at).try(:utc).try(:to_s, :number)
 
-<div>end</div>
+    "#{prefix}/all-#{count}-#{max_updated_at}"
 
-<div>app/models/item.rb</div>
+  end
 
-<div>class Item < ActiveRecord::Base</div>
+end
 
-<div>  # include CacheInvalidator</div>
+app/models/item.rb
 
-<div>  # include ManyToManyAssociationsUpdater</div>
+class Item 
 
-<div>  has_many :order_items</div>
+  # include CacheInvalidator
 
-<div>  has_many :orders, through: :order_items</div>
+  # include ManyToManyAssociationsUpdater
 
-<div>  after_create  :update_orders</div>
+  has_many :order_items
 
-<div>  after_update  :update_orders</div>
+  has_many :orders, through: :order_items
 
-<div>  after_destroy :update_orders</div>
+  after_create  :update_orders
 
-<div>  def update_orders</div>
+  after_update  :update_orders
 
-<div>    orders.each do |order|</div>
+  after_destroy :update_orders
 
-<div>      order.updated_at = Time.now</div>
+  def update_orders
 
-<div>      order.save</div>
+    orders.each do |order|
 
-<div>    end</div>
+      order.updated_at = Time.now
 
-<div>  end</div>
+      order.save
 
-<div>end</div>
+    end
 
-<div>app/models/concerns/cache_invalidator.rb</div>
+  end
 
-<div>module CacheInvalidator</div>
+end
 
-<div>  extend ActiveSupport::Concern</div>
+app/models/concerns/cache_invalidator.rb
 
-<div>  included do</div>
+module CacheInvalidator
 
-<div>    after_create :invalidate_cache</div>
+  extend ActiveSupport::Concern
 
-<div>    after_update :invalidate_cache</div>
+  included do
 
-<div>    after_destroy :invalidate_cache</div>
+    after_create :invalidate_cache
 
-<div>    def invalidate_cache</div>
+    after_update :invalidate_cache
 
-<div>      Rails.cache.clear</div>
+    after_destroy :invalidate_cache
 
-<div>    end</div>
+    def invalidate_cache
 
-<div>  end</div>
+      Rails.cache.clear
 
-<div>end</div>
+    end
 
-<div>app/models/concerns/many_to_many_associations_updater.rb</div>
+  end
 
-<div>module ManyToManyAssociationsUpdater</div>
+end
 
-<div>  extend ActiveSupport::Concern</div>
+app/models/concerns/many_to_many_associations_updater.rb
 
-<div>  included do</div>
+module ManyToManyAssociationsUpdater
 
-<div>    after_create  :update_associations</div>
+  extend ActiveSupport::Concern
 
-<div>    after_update  :update_associations</div>
+  included do
 
-<div>    after_destroy :update_associations</div>
+    after_create  :update_associations
 
-<div>    def associations</div>
+    after_update  :update_associations
 
-<div>      self.class.reflect_on_all_associations(:has_many).map(&:name)</div>
+    after_destroy :update_associations
 
-<div>    end</div>
+    def associations
 
-<div>    def update_associations</div>
+      self.class.reflect_on_all_associations(:has_many).map(&:name)
 
-<div>      associations.each { |association| update_association(association) }</div>
+    end
 
-<div>    end</div>
+    def update_associations
 
-<div>    def update_association(association)</div>
+      associations.each { |association| update_association(association) }
 
-<div>      send(association).each { |record| record.update_attributes(updated_at: Time.now) }</div>
+    end
 
-<div>    end</div>
+    def update_association(association)
 
-<div>  end</div>
+      send(association).each { |record| record.update_attributes(updated_at: Time.now) }
 
-<div>end</div>
+    end
+
+  end
+
+end
 ### Background Workers

@@ -11,7 +11,7 @@
 ### Python site Doc
 The [_Glossary_](https://docs.python.org/3.5/glossary.html#glossary) is also worth going through.
 
-<div class="toctree-wrapper compound" style="color: rgb(34, 34, 34); font-family: 'Lucida Grande', Arial, sans-serif; font-size: 16px; line-height: normal;">
+
 
 *   [1\. Whetting Your Appetite](https://docs.python.org/3.5/tutorial/appetite.html)
 *   [2\. Using the Python Interpreter](https://docs.python.org/3.5/tutorial/interpreter.html)
@@ -27,11 +27,11 @@ The [_Glossary_](https://docs.python.org/3.5/glossary.html#glossary) is also w
         *   [3.1.3\. Lists](https://docs.python.org/3.5/tutorial/introduction.html#lists)
     *   [3.2\. First Steps Towards Programming](https://docs.python.org/3.5/tutorial/introduction.html#first-steps-towards-programming)
 *   [4\. More Control Flow Tools](https://docs.python.org/3.5/tutorial/controlflow.html)
-    *   [4.1. <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">if</span></tt> Statements](https://docs.python.org/3.5/tutorial/controlflow.html#if-statements)
-    *   [4.2. <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">for</span></tt> Statements](https://docs.python.org/3.5/tutorial/controlflow.html#for-statements)
-    *   [4.3\. The <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">range()</span></tt> Function](https://docs.python.org/3.5/tutorial/controlflow.html#the-range-function)
-    *   [4.4. <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">break</span></tt> and <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">continue</span></tt> Statements, and <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">else</span></tt>Clauses on Loops](https://docs.python.org/3.5/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops)
-    *   [4.5. <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">pass</span></tt> Statements](https://docs.python.org/3.5/tutorial/controlflow.html#pass-statements)
+    *   [4.1. if Statements](https://docs.python.org/3.5/tutorial/controlflow.html#if-statements)
+    *   [4.2. for Statements](https://docs.python.org/3.5/tutorial/controlflow.html#for-statements)
+    *   [4.3\. The range() Function](https://docs.python.org/3.5/tutorial/controlflow.html#the-range-function)
+    *   [4.4. break and continue Statements, and elseClauses on Loops](https://docs.python.org/3.5/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops)
+    *   [4.5. pass Statements](https://docs.python.org/3.5/tutorial/controlflow.html#pass-statements)
     *   [4.6\. Defining Functions](https://docs.python.org/3.5/tutorial/controlflow.html#defining-functions)
     *   [4.7\. More on Defining Functions](https://docs.python.org/3.5/tutorial/controlflow.html#more-on-defining-functions)
         *   [4.7.1\. Default Argument Values](https://docs.python.org/3.5/tutorial/controlflow.html#default-argument-values)
@@ -48,7 +48,7 @@ The [_Glossary_](https://docs.python.org/3.5/glossary.html#glossary) is also w
         *   [5.1.2\. Using Lists as Queues](https://docs.python.org/3.5/tutorial/datastructures.html#using-lists-as-queues)
         *   [5.1.3\. List Comprehensions](https://docs.python.org/3.5/tutorial/datastructures.html#list-comprehensions)
         *   [5.1.4\. Nested List Comprehensions](https://docs.python.org/3.5/tutorial/datastructures.html#nested-list-comprehensions)
-    *   [5.2\. The <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">del</span></tt> statement](https://docs.python.org/3.5/tutorial/datastructures.html#the-del-statement)
+    *   [5.2\. The del statement](https://docs.python.org/3.5/tutorial/datastructures.html#the-del-statement)
     *   [5.3\. Tuples and Sequences](https://docs.python.org/3.5/tutorial/datastructures.html#tuples-and-sequences)
     *   [5.4\. Sets](https://docs.python.org/3.5/tutorial/datastructures.html#sets)
     *   [5.5\. Dictionaries](https://docs.python.org/3.5/tutorial/datastructures.html#dictionaries)
@@ -61,7 +61,7 @@ The [_Glossary_](https://docs.python.org/3.5/glossary.html#glossary) is also w
         *   [6.1.2\. The Module Search Path](https://docs.python.org/3.5/tutorial/modules.html#the-module-search-path)
         *   [6.1.3\. “Compiled” Python files](https://docs.python.org/3.5/tutorial/modules.html#compiled-python-files)
     *   [6.2\. Standard Modules](https://docs.python.org/3.5/tutorial/modules.html#standard-modules)
-    *   [6.3\. The <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">dir()</span></tt> Function](https://docs.python.org/3.5/tutorial/modules.html#the-dir-function)
+    *   [6.3\. The dir() Function](https://docs.python.org/3.5/tutorial/modules.html#the-dir-function)
     *   [6.4\. Packages](https://docs.python.org/3.5/tutorial/modules.html#packages)
         *   [6.4.1\. Importing * From a Package](https://docs.python.org/3.5/tutorial/modules.html#importing-from-a-package)
         *   [6.4.2\. Intra-package References](https://docs.python.org/3.5/tutorial/modules.html#intra-package-references)
@@ -71,7 +71,7 @@ The [_Glossary_](https://docs.python.org/3.5/glossary.html#glossary) is also w
         *   [7.1.1\. Old string formatting](https://docs.python.org/3.5/tutorial/inputoutput.html#old-string-formatting)
     *   [7.2\. Reading and Writing Files](https://docs.python.org/3.5/tutorial/inputoutput.html#reading-and-writing-files)
         *   [7.2.1\. Methods of File Objects](https://docs.python.org/3.5/tutorial/inputoutput.html#methods-of-file-objects)
-        *   [7.2.2\. Saving structured data with <tt class="docutils literal" style="padding: 0px 1px; font-size: 15.44px; font-family: monospace, sans-serif; border-radius: 3px; background-color: transparent;"><span class="pre">json</span></tt>](https://docs.python.org/3.5/tutorial/inputoutput.html#saving-structured-data-with-json)
+        *   [7.2.2\. Saving structured data with json](https://docs.python.org/3.5/tutorial/inputoutput.html#saving-structured-data-with-json)
 *   [8\. Errors and Exceptions](https://docs.python.org/3.5/tutorial/errors.html)
     *   [8.1\. Syntax Errors](https://docs.python.org/3.5/tutorial/errors.html#syntax-errors)
     *   [8.2\. Exceptions](https://docs.python.org/3.5/tutorial/errors.html#exceptions)
@@ -138,7 +138,7 @@ The [_Glossary_](https://docs.python.org/3.5/glossary.html#glossary) is also w
         *   [16.1.3\. The Interactive Startup File](https://docs.python.org/3.5/tutorial/appendix.html#the-interactive-startup-file)
         *   [16.1.4\. The Customization Modules](https://docs.python.org/3.5/tutorial/appendix.html#the-customization-modules)
 
-</div>
+
 ### http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
 ### virtual env and pip
 # Third Party
