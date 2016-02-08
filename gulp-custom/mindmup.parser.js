@@ -33,7 +33,7 @@ var ops = {
 			pObject.level = levelsDeep;
 			pObject.ideas = obj.ideas;
 			mindmap[key] = pObject
-			this.clean(obj.ideas,levelsDeep++);
+				this.clean(obj.ideas,levelsDeep++);
 		}
 	}
 	,isHTML(content){
@@ -98,25 +98,26 @@ var ops = {
 		return html;
 	}
 	,ToMarkdown(mindmap){
-		
+
 		var f = "";
 		mindmap.map((idea)=>{
-			var head = "#"
-			if(idea.level){
-				head+="##";
+			if(idea.title){
+				var head = "#"
+				if(idea.level){
+					head+="##";
+				}
+				head += " ";
+				f+=head;
+				f+= idea.title;
+				f+="\n";
 			}
-		head += " ";
-		f+=head;
-		f+= idea.title;
-		f+="\n";
-		if(idea.content){
-			var el = cheerio.load(idea.content);
-			idea.content = el.root().html();
-			idea.content = toMarkdown(idea.content);
-			//idea.content = this.cleanHTML(idea.content);
-			f += idea.content;
-			f+="\n";
-		}
+			if(idea.content){
+				var el = cheerio.load(idea.content);
+				idea.content = el.root().html();
+				idea.content = toMarkdown(idea.content);
+				f += idea.content;
+				f+="\n";
+			}
 		})
 		return f;
 	}

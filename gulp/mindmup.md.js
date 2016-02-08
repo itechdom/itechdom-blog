@@ -10,7 +10,7 @@ var mindmupParse = require('../gulp-custom/mindmup.parser.js');
 module.exports = function(options) {
 
 	gulp.task('mindmap:md', function(done) {
-		return gulp.src(options.drive+'/**/*.mup')
+		return gulp.src(options.drive+'/**/RxJS.presentation.mup')
 		.pipe(data(function(file) {
 			var mindmap = mindmupParse.toJson(file);
 			var pArr = [];

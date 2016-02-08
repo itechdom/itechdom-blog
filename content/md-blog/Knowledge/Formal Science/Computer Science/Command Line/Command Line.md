@@ -14,30 +14,30 @@
 *   Use `man ascii` for a good ASCII table, with hex and decimal values. For general encoding info,`man unicode`, `man utf-8`, and `man latin1` are helpful.
 ### Help page
 ### sed
-
+<div>
 
 ## [The essential command: s for substitution](http://www.grymoire.com/Unix/Sed.html#toc-uh-1)
 
 _Sed_ has several commands, but most people only learn the substitute command:_s_. The substitute command changes all occurrences of the regular expression into a new value. A simple example is changing "day" in the "old" file to "night" in the "new" file:
 
-sed s/day/night/ new
-
+<pre style="font-size: 16px; line-height: 19.2px;">sed s/day/night/ <old >new
+</pre>
 
 Or another way (for UNIX beginners),
 
-sed s/day/night/ old >new
-
+<pre style="font-size: 16px; line-height: 19.2px;">sed s/day/night/ old >new
+</pre>
 
 and for those who want to test this:
 
-echo day | sed s/day/night/ 
-
+<pre style="font-size: 16px; line-height: 19.2px;">echo day | sed s/day/night/ 
+</pre>
 
 This will output "night".
 
 I didn't put quotes around the argument because this example didn't need them. If you read my earlier tutorial [on quotes](http://www.grymoire.com/Unix/Quote.html), you would understand why it doesn't need quotes. However, I recommend you do use quotes. If you have meta-characters in the command, quotes are necessary. And if you aren't sure, it's a good habit, and I will henceforth quote future examples to emphasize the "best practice." Using the strong (single quote) character, that would be:
 
-
+</div>
 ### http://www.grymoire.com/Unix/Sed.html#uh-0
 ### stream editor
 ### >>
@@ -47,9 +47,9 @@ I didn't put quotes around the argument because this example didn't need them. I
 ### Find by pattern
 find .  -name 'grunt-*' -exec rm -r {} +
 
-the . and 'word*' should search recursively under all directories
+<div>the . and 'word*' should search recursively under all directories</div>
 ### Print Tree
-find . -type d | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"
+<span style="color: rgb(79, 79, 79); font-family: Helvetica, 'Arial Unicode MS', sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);">find . -type d | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"</span>
 ### or use
 ### tree program
 ### brew install tree
@@ -66,14 +66,14 @@ find . -type d | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"
 ### rename files according to a pattern
 *   To rename many files at once according to a pattern, use `rename`. For complex renames, [`repren`](https://github.com/jlevy/repren)may help.
 
+<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);"># Recover backup files foo.bak -> foo:</span>
+      rename <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>s/\.bak$//<span class="pl-pds" style="box-sizing: border-box;">'</span></span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">*</span>.bak
+      <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);"># Full rename of filenames, directories, and contents foo -> bar:</span>
+      repren --full --preserve-<span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">case</span> --from foo --to bar </pre>
 
-      # Recover backup files foo.bak -> foo:
-      rename 's/\.bak$//' *.bak
-      # Full rename of filenames, directories, and contents foo -> bar:
-      repren --full --preserve-case --from foo --to bar 
-
-
+</div>
 ### split files into pieces
 *   To split files into pieces, see `split` (to split by size) and `csplit` (to split by a pattern).
 ### work with compressed files
@@ -110,7 +110,7 @@ find . -type d | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"
 ### Quick overview
 *   For a quick overview of what's happening on a system, `dstat` is especially useful. For broadest overview with details, use [`glances`](https://github.com/nicolargo/glances).
 ### Alternative Java Debugging
-*   Java system debugging is a different kettle of fish, but a simple trick on Oracle's and some other JVMs is that you can run `kill -3 ` and a full stack trace and heap summary (including generational garbage collection details, which can be highly informative) will be dumped to stderr/logs. The JDK's `jps`, `jstat`, `jstack`, `jmap` are useful. [SJK tools](https://github.com/aragozin/jvm-tools) are more advanced.
+*   Java system debugging is a different kettle of fish, but a simple trick on Oracle's and some other JVMs is that you can run `kill -3 <pid>` and a full stack trace and heap summary (including generational garbage collection details, which can be highly informative) will be dumped to stderr/logs. The JDK's `jps`, `jstat`, `jstack`, `jmap` are useful. [SJK tools](https://github.com/aragozin/jvm-tools) are more advanced.
 ### Current folder usage
 *   For looking at why a disk is full, `ncdu` saves time over the usual commands like `du -sh *`.
 ### network
@@ -118,10 +118,10 @@ find . -type d | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"
 *   For network connection details, use `netstat` and `ss`.
 ### netstat
 ### How to read netstat
-I can imagine that anyone seeing this for the first time must be instantly freaking out over all the 'LISTENING' entries - their machine must be infested with trojans! But if they know a little more about Netstat, they'll calm down again. Now, read and learn:
+<span style="color: rgb(0, 0, 0); line-height: normal; font-family: Fixedsys; font-size: medium;">I can imagine that anyone seeing this for the first time must be instantly freaking out over all the 'LISTENING' entries - their machine must be infested with trojans! But if they know a little more about Netstat, they'll calm down again. Now, read and learn:</span>
 
-*   In lines saying 'ESTABLISHED', you need the remote port to identify what has connected to the remote site.
-*   In lines saying 'LISTENING', you need the local port to identify what is listening there.
+*   In lines saying 'ESTABLISHED', you need the <u>remote</u> port to identify what has connected to the remote site.
+*   In lines saying 'LISTENING', you need the <u>local</u> port to identify what is listening there.
 *   Each outbound TCP connection also causes a LISTENING entry on the same port.
 *   Most UDP listening ports are duplicates from a listening TCP port. Ignore them unless they don't have a TCP twin.
 *   TIME_WAIT entries are not important.
@@ -323,55 +323,55 @@ A few examples of piecing together commands:
 
 *   It is remarkably helpful sometimes that you can do set intersection, union, and difference of text files via `sort`/`uniq`. Suppose `a` and `b` are text files that are already uniqued. This is fast, and works on files of arbitrary size, up to many gigabytes. (Sort is not limited by memory, though you may need to use the `-T` option if `/tmp` is on a small root partition.) See also the note about`LC_ALL` above and `sort`'s `-u` option (left out for clarity below).
 
+<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      cat a b <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> sort <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> uniq <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">></span> c   <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);"># c is a union b</span>
+      cat a b <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> sort <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> uniq -d <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">></span> c   <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);"># c is a intersect b</span>
+      cat a b b <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> sort <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> uniq -u <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">></span> c   <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);"># c is set difference a - b</span></pre>
 
-      cat a b | sort | uniq > c   # c is a union b
-      cat a b | sort | uniq -d > c   # c is a intersect b
-      cat a b b | sort | uniq -u > c   # c is set difference a - b
-
-
+</div>
 
 *   Use `grep . *` to visually examine all contents of all files in a directory, e.g. for directories filled with config settings, like `/sys`, `/proc`, `/etc`.
 
 *   Summing all numbers in the third column of a text file (this is probably 3X faster and 3X less code than equivalent Python):
 
+<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      awk <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>{ x += $3 } END { print x }<span class="pl-pds" style="box-sizing: border-box;">'</span></span> myfile</pre>
 
-      awk '{ x += $3 } END { print x }' myfile
-
-
+</div>
 
 *   If want to see sizes/dates on a tree of files, this is like a recursive `ls -l` but is easier to read than`ls -lR`:
 
+<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      find <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">.</span> -type f -ls</pre>
 
-      find . -type f -ls
-
-
+</div>
 
 *   Say you have a text file, like a web server log, and a certain value that appears on some lines, such as an `acct_id` parameter that is present in the URL. If you want a tally of how many requests for each `acct_id`:
 
+<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      cat access.log <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> egrep -o <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>acct_id=[0-9]+<span class="pl-pds" style="box-sizing: border-box;">'</span></span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> cut -d= -f2 <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> sort <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> uniq -c <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> sort -rn</pre>
 
-      cat access.log | egrep -o 'acct_id=[0-9]+' | cut -d= -f2 | sort | uniq -c | sort -rn
-
-
+</div>
 
 *   To continuously monitor changes, use `watch`, e.g. check changes to files in a directory with`watch -d -n 2 'ls -rtlh | tail'` or to network settings while troubleshooting your wifi settings with `watch -d -n 2 ifconfig`.
 
 *   Run this function to get a random tip from this document (parses Markdown and extracts an item):
 
+<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">function</span> <span class="pl-en" style="box-sizing: border-box; color: rgb(121, 93, 163);">taocl()</span> {
+        curl -s https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span>
+          pandoc -f markdown -t html <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span>
+          xmlstarlet fo --html --dropdtd <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span>
+          xmlstarlet sel -t -v <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">"</span>(html/body/ul/li[count(p)>0])[<span class="pl-smi" style="box-sizing: border-box; color: rgb(51, 51, 51);">$RANDOM</span> mod last()+1]<span class="pl-pds" style="box-sizing: border-box;">"</span></span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span>
+          xmlstarlet unesc <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> fmt -80
+      }</pre>
 
-      function taocl() {
-        curl -s https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md |
-          pandoc -f markdown -t html |
-          xmlstarlet fo --html --dropdtd |
-          xmlstarlet sel -t -v "(html/body/ul/li[count(p)>0])[$RANDOM mod last()+1]" |
-          xmlstarlet unesc | fmt -80
-      }
-
-
+</div>
 ### BASICS
 
 
@@ -422,12 +422,12 @@ A few examples of piecing together commands:
 
 *   Use `xargs` (or `parallel`). It's very powerful. Note you can control how many items execute per line (`-L`) as well as parallelism (`-P`). If you're not sure if it'll do the right thing, use `xargs echo`first. Also, `-I{}` is handy. Examples:
 
+<div class="highlight highlight-bash" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      find <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">.</span> -name <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>*.py<span class="pl-pds" style="box-sizing: border-box;">'</span></span> <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> xargs grep some_function
+      cat hosts <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">|</span> xargs -I{} ssh root@{} hostname</pre>
 
-      find . -name '*.py' | xargs grep some_function
-      cat hosts | xargs -I{} ssh root@{} hostname
-
-
+</div>
 
 *   `pstree -p` is a helpful display of the process tree.
 
@@ -447,38 +447,64 @@ A few examples of piecing together commands:
 
 *   In Bash scripts, use `set -x` (or the variant `set -v`, which logs raw input, including unexpanded variables and comments) for debugging output. Use strict modes unless you have a good reason not to: Use `set -e` to abort on errors (nonzero exit code). Use `set -u` to detect unset variable usages. Consider `set -o pipefail` too, to on errors within pipes, too (though read up on it more if you do, as this topic is a bit subtle). For more involved scripts, also use `trap` on EXIT or ERR. A useful habit is to start a script like this, which will make it detect and abort on common errors and print a message:
 
+<div class="highlight highlight-bash" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">set</span> -euo pipefail
+      <span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">trap</span> <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">"</span>echo 'error: Script failed: see failed command above'<span class="pl-pds" style="box-sizing: border-box;">"</span></span> ERR</pre>
 
-      set -euo pipefail
-      trap "echo 'error: Script failed: see failed command above'" ERR
-
-
+</div>
 
 *   In Bash scripts, subshells (written with parentheses) are convenient ways to group commands. A common example is to temporarily move to a different working directory, e.g.
 
+<div class="highlight highlight-bash" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);"># do something in current dir</span>
+      (<span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 134, 179);">cd</span> /some/other/dir <span class="pl-k" style="box-sizing: border-box; color: rgb(167, 29, 93);">&&</span> other-command)
+      <span class="pl-c" style="box-sizing: border-box; color: rgb(150, 152, 150);"># continue in original dir</span></pre>
 
-      # do something in current dir
-      (cd /some/other/dir && other-command)
-      # continue in original dir
-
-
+</div>
 
 *   In Bash, note there are lots of kinds of variable expansion. Checking a variable exists: `${name:?error message}`. For example, if a Bash script requires a single argument, just write`input_file=${1:?usage: $0 input_file}`. Arithmetic expansion: `i=$(( (i + 1) % 5 ))`. Sequences: `{1..10}`. Trimming of strings: `${var%suffix}` and `${var#prefix}`. For example if`var=foo.pdf`, then `echo ${var%.pdf}.txt` prints `foo.txt`.
 
 *   Brace expansion using `{`...`}` can reduce having to re-type similar text and automate combinations of items. This is helpful in examples like `mv foo.{txt,pdf} some-dir` (which moves both files), `cp somefile{,.bak}` (which expands to `cp somefile somefile.bak`) or `mkdir -p test-{a,b,c}/subtest-{1,2,3}` (which expands all possible combinations and creates a directory tree).
 
-*   The output of a command can be treated like a file via `
+*   The output of a command can be treated like a file via `<(some command)`. For example, compare local `/etc/hosts` with a remote one:
 
-      diff /etc/hosts ssh somehost cat /etc/hosts)
+<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
 
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      diff /etc/hosts <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;"><(</span>ssh somehost cat /etc/hosts<span class="pl-pds" style="box-sizing: border-box;">)</span></span></pre>
 
+</div>
 
-*   Know about "here documents" in Bash, as in `cat logfile 2>&1` or`some-command &>logfile`. Often, to ensure a command does not leave an open file handle to standard input, tying it to the terminal you are in, it is also good practice to add `
+*   Know about "here documents" in Bash, as in `cat <<EOF ...`.
 
-      stat -c '%A %a %n' /etc/timezone
+*   In Bash, redirect both standard output and standard error via: `some-command >logfile 2>&1` or`some-command &>logfile`. Often, to ensure a command does not leave an open file handle to standard input, tying it to the terminal you are in, it is also good practice to add `</dev/null`.
 
+*   Use `man ascii` for a good ASCII table, with hex and decimal values. For general encoding info,`man unicode`, `man utf-8`, and `man latin1` are helpful.
 
+*   Use `screen` or [`tmux`](https://tmux.github.io/) to multiplex the screen, especially useful on remote ssh sessions and to detach and re-attach to a session. A more minimal alternative for session persistence only is`dtach`.
+
+*   In ssh, knowing how to port tunnel with `-L` or `-D` (and occasionally `-R`) is useful, e.g. to access web sites from a remote server.
+
+*   It can be useful to make a few optimizations to your ssh configuration; for example, this`~/.ssh/config` contains settings to avoid dropped connections in certain network environments, uses compression (which is helpful with scp over low-bandwidth connections), and multiplex channels to the same server with a local control file:
+
+          TCPKeepAlive=yes
+          ServerAliveInterval=15
+          ServerAliveCountMax=6
+          Compression=yes
+          ControlMaster auto
+          ControlPath /tmp/%r@%h:%p
+          ControlPersist yes
+
+*   A few other options relevant to ssh are security sensitive and should be enabled with care, e.g. per subnet or host or in trusted networks: `StrictHostKeyChecking=no`, `ForwardAgent=yes`
+
+*   To get the permissions on a file in octal form, which is useful for system configuration but not available in `ls` and easy to bungle, use something like
+
+<div class="highlight highlight-sh" style="box-sizing: border-box; margin-bottom: 16px; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">
+
+<pre style="box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);">      stat -c <span class="pl-s" style="box-sizing: border-box; color: rgb(24, 54, 145);"><span class="pl-pds" style="box-sizing: border-box;">'</span>%A %a %n<span class="pl-pds" style="box-sizing: border-box;">'</span></span> /etc/timezone</pre>
+
+</div>
 
 *   For interactive selection of values from the output of another command, use [`percol`](https://github.com/mooz/percol) or [`fzf`](https://github.com/junegunn/fzf).
 

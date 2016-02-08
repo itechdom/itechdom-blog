@@ -2,7 +2,7 @@
 ### https://en.wikipedia.org/wiki/Build_automation
 ### Wiki
 # types
-## See also[[edit](https://en.wikipedia.org/w/index.php?title=Build_automation&action=edit&section=8 "Edit section: See also")]
+## <span class="mw-headline" id="See_also">See also</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; unicode-bidi: -webkit-isolate; font-family: sans-serif;"><span class="mw-editsection-bracket" style="margin-right: 0px; color: rgb(85, 85, 85); margin-left: 0px;">[</span>[edit](https://en.wikipedia.org/w/index.php?title=Build_automation&action=edit&section=8 "Edit section: See also")<span class="mw-editsection-bracket" style="margin-left: 0px; color: rgb(85, 85, 85); margin-right: 0px;">]</span></span>
 
 *   [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration "Continuous integration")
 *   [Continuous delivery](https://en.wikipedia.org/wiki/Continuous_delivery "Continuous delivery")

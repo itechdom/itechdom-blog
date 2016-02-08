@@ -4,13 +4,13 @@ David's Slides
 *   As UX designer, you should understand usability from end to end. This spans all the way from customer insight, user interviews and all the way to delivery.
 *   The end user is the ultimate goal. Developers are users (we are humans, not robots)  ... :(
 # 3.Prompt
-Congrats you are a developer working for UXlovesDev company! You are:  
+<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">Congrats you are a developer working for UXlovesDev company! You are:</span>  
 
-*   working on a GPS system just like Google Maps and Wayz.  
+*   <span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">working on a GPS system just like Google Maps and Wayz.</span>  
 
-*   system will be used as a website and an app.   
+*   <span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">system will be used as a website and an app. </span>  
 
-What are the technical limitations that you may face as a developer? In a group, discuss and come up with those limitations.
+<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">What are the technical </span><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">limitations that you may face as a developer? In a group, discuss and come </span><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">up with those limitations.</span>
 # 4.Discussion
 # 5.Top 3 most challenging things for a developer
 *   Changing requirements. This is challenging for everyone.

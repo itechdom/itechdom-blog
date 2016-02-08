@@ -25,7 +25,7 @@ Like we have been discussing all node objects (e.g _Element_, _Attr_, _Text_�
 
 Below I list out the most common _Node_ properties and methods inherited by all node objects including the relevant inherited properties for working with nodes from sub-node interfaces.
 
-Node Properties:
+<span style="font-family: Helvetica; font-size: 16px; line-height: normal;">Node Properties:</span>
 
 *   _childNodes_
 *   _firstChild_
@@ -37,7 +37,7 @@ Node Properties:
 *   _parentNode_
 *   _previousSibling_
 
-Node Methods:
+<span style="font-family: Helvetica; font-size: 16px; line-height: normal;">Node Methods:</span>
 
 *   _appendChild()_
 *   _cloneNode()_
@@ -79,1143 +79,1143 @@ In the tables below I detail the most common pre-defined events that can be atta
 
 **User interface events**
 
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Event Targets</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Description
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Event Targets
+</tr>
 
-Bubbles
+</thead>
 
-Cancelable
+<tbody>
 
+<tr>
 
+<td style="line-height: 18px;">_load_</td>
 
+<td style="line-height: 18px;">_Event_,_UIEvent_</td>
 
+<td style="line-height: 18px;">fires when an asset (HTML page, image, CSS, frameset,_<object>_, or JS file) is loaded.</td>
 
+<td style="line-height: 18px;">_Element_, _Document_,_window_,_XMLHttpRequest_,_XMLHttpRequestUpload_</td>
 
+<td style="line-height: 18px;">No</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
-_load_
+<tr>
 
-_Event_,_UIEvent_
+<td style="line-height: 18px;">_unload_</td>
 
-fires when an asset (HTML page, image, CSS, frameset,__, or JS file) is loaded.
+<td style="line-height: 18px;">_UIEvent_</td>
 
-_Element_, _Document_,_window_,_XMLHttpRequest_,_XMLHttpRequestUpload_
+<td style="line-height: 18px;">fires when user agent removes the resource (document, element, defaultView) or any depending resources (images, CSS file, etc.)</td>
 
-No
+<td style="line-height: 18px;">_window_, _<body>_,_<frameset>_</td>
 
-No
+<td style="line-height: 18px;">No</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_abort_</td>
 
-_unload_
+<td style="line-height: 18px;">_Event_,_UIEvent_</td>
 
-_UIEvent_
+<td style="line-height: 18px;">Fires when an resource (object/image) is stopped from loading before completely loaded</td>
 
-fires when user agent removes the resource (document, element, defaultView) or any depending resources (images, CSS file, etc.)
+<td style="line-height: 18px;">_Element_,_XMLHttpRequest_,_XMLHttpRequestUpload_</td>
 
-_window_, __,__
+<td style="line-height: 18px;">Yes</td>
 
-No
+<td style="line-height: 18px;">No</td>
 
-No
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_error_</td>
 
+<td style="line-height: 18px;">_Event_,_UIEvent_</td>
 
+<td style="line-height: 18px;">Fires when a resource failed to load, or has been loaded but cannot be interpreted according to its semantics, such as an invalid image, a script execution error, or non-well-formed XML</td>
 
-_abort_
+<td style="line-height: 18px;">_Element_,_XMLHttpRequest_,_XMLHttpRequestUpload_</td>
 
-_Event_,_UIEvent_
+<td style="line-height: 18px;">Yes</td>
 
-Fires when an resource (object/image) is stopped from loading before completely loaded
+<td style="line-height: 18px;">No</td>
 
-_Element_,_XMLHttpRequest_,_XMLHttpRequestUpload_
+</tr>
 
-Yes
+<tr>
 
-No
+<td style="line-height: 18px;">_resize_</td>
 
+<td style="line-height: 18px;">_UIEvent_</td>
 
+<td style="line-height: 18px;">Fires when a document view has been resized. This event type is dispatched after all effects for that occurrence of resizing of that particular event target have been executed by the user agent</td>
 
+<td style="line-height: 18px;">_window_, _<body>_,_<frameset>_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
-_error_
+<td style="line-height: 18px;">No</td>
 
-_Event_,_UIEvent_
+</tr>
 
-Fires when a resource failed to load, or has been loaded but cannot be interpreted according to its semantics, such as an invalid image, a script execution error, or non-well-formed XML
+<tr>
 
-_Element_,_XMLHttpRequest_,_XMLHttpRequestUpload_
+<td style="line-height: 18px;">_scroll_</td>
 
-Yes
+<td style="line-height: 18px;">_UIEvent_</td>
 
-No
+<td style="line-height: 18px;">Fires when a user scrolls a document or an element.</td>
 
+<td style="line-height: 18px;">_Element_, _Document_,_window_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
-_resize_
+<tr>
 
-_UIEvent_
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_contextmenu_</td>
 
-Fires when a document view has been resized. This event type is dispatched after all effects for that occurrence of resizing of that particular event target have been executed by the user agent
+<td style="line-height: 18px;">_MouseEvent_</td>
 
-_window_, __,__
+<td style="line-height: 18px;">fires by right clicking an element</td>
 
-Yes
+<td style="line-height: 18px;">_Element_</td>
 
-No
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">Yes</td>
 
+</tr>
 
+</tbody>
 
-
-_scroll_
-
-_UIEvent_
-
-Fires when a user scrolls a document or an element.
-
-_Element_, _Document_,_window_
-
-Yes
-
-No
-
-
-
-
-
-_contextmenu_
-
-_MouseEvent_
-
-fires by right clicking an element
-
-_Element_
-
-Yes
-
-Yes
-
-
-
-
-
-
+</table>
 
 **Focus events**
 
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Events Targets</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Description
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Events Targets
+</tr>
 
-Bubbles
+</thead>
 
-Cancelable
+<tbody>
 
+<tr>
 
+<td style="line-height: 18px;">_blur_</td>
 
+<td style="line-height: 18px;">_FocusEvent_</td>
 
+<td style="line-height: 18px;">Fires when an element loses focus either via the mouse or tabbing</td>
 
+<td style="line-height: 18px;">_Element_ (except_<body>_ and_<frameseet>_ ),_Document_</td>
 
+<td style="line-height: 18px;">No</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
-_blur_
+<tr>
 
-_FocusEvent_
+<td style="line-height: 18px;">_focus_</td>
 
-Fires when an element loses focus either via the mouse or tabbing
+<td style="line-height: 18px;">_FocusEvent_</td>
 
-_Element_ (except__ and__ ),_Document_
+<td style="line-height: 18px;">Fires when an element receives focus</td>
 
-No
+<td style="line-height: 18px;">_Element_ (except_<body>_ and_<frameseet>_ ),_Document_</td>
 
-No
+<td style="line-height: 18px;">No</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_focusin_</td>
 
-_focus_
+<td style="line-height: 18px;">_FocusEvent_</td>
 
-_FocusEvent_
+<td style="line-height: 18px;">Fires when an event target is about to receive focus but before the focus is shifted. This event occurs right before the focus event</td>
 
-Fires when an element receives focus
+<td style="line-height: 18px;">_Element_</td>
 
-_Element_ (except__ and__ ),_Document_
+<td style="line-height: 18px;">Yes</td>
 
-No
+<td style="line-height: 18px;">No</td>
 
-No
+</tr>
 
+<tr>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_focusout_</td>
 
+<td style="line-height: 18px;">_FocusEvent_</td>
 
+<td style="line-height: 18px;">Fires when an event target is about to lose focus but before the focus is shifted. This event occurs right before the blur event</td>
 
-_focusin_
+<td style="line-height: 18px;">_Element_</td>
 
-_FocusEvent_
+<td style="line-height: 18px;">Yes</td>
 
-Fires when an event target is about to receive focus but before the focus is shifted. This event occurs right before the focus event
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">No</td>
 
-_Element_
+</tr>
 
-Yes
+</tbody>
 
-No
-
-
-
-
-
-_focusout_
-
-_FocusEvent_
-
-Fires when an event target is about to lose focus but before the focus is shifted. This event occurs right before the blur event
-
-_Element_
-
-Yes
-
-No
-
-
-
-
-
-
+</table>
 
 **Form events**
 
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Event Targets</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Description
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Event Targets
+</tr>
 
-Bubbles
+</thead>
 
-Cancelable
+<tbody>
 
+<tr>
 
+<td style="line-height: 18px;">_change_</td>
 
+<td style="line-height: 18px;">specific to HTML forms</td>
 
+<td style="line-height: 18px;">Fires when a control loses the input focus and its value has been modified since gaining focus</td>
 
+<td style="line-height: 18px;">_Element_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
-_change_
+<tr>
 
-specific to HTML forms
+<td style="line-height: 18px;">_reset_</td>
 
-Fires when a control loses the input focus and its value has been modified since gaining focus
+<td style="line-height: 18px;">specific to HTML forms</td>
 
-_Element_
+<td style="line-height: 18px;">Fires when a form is reset</td>
 
-Yes
+<td style="line-height: 18px;">_Element_</td>
 
-No
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_submit_</td>
 
-_reset_
+<td style="line-height: 18px;">specific to HTML forms</td>
 
-specific to HTML forms
+<td style="line-height: 18px;">Fires when a form is submitted</td>
 
-Fires when a form is reset
+<td style="line-height: 18px;">_Element_</td>
 
-_Element_
+<td style="line-height: 18px;">Yes</td>
 
-Yes
+<td style="line-height: 18px;">Yes</td>
 
-No
+</tr>
 
+<tr>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_select_</td>
 
+<td style="line-height: 18px;">specific to HTML forms</td>
 
+<td style="line-height: 18px;">Fires when a user selects some text in a text field, including input and textarea</td>
 
-_submit_
+<td style="line-height: 18px;">_Element_</td>
 
-specific to HTML forms
+<td style="line-height: 18px;">Yes</td>
 
-Fires when a form is submitted
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">No</td>
 
-_Element_
+</tr>
 
-Yes
+</tbody>
 
-Yes
-
-
-
-
-
-_select_
-
-specific to HTML forms
-
-Fires when a user selects some text in a text field, including input and textarea
-
-_Element_
-
-Yes
-
-No
-
-
-
-
-
-
+</table>
 
 **Mouse events**
 
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Event Targets</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Description
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Event Targets
+</tr>
 
-Bubbles
+</thead>
 
-Cancelable
+<tbody>
 
+<tr>
 
+<td style="line-height: 18px;">_click_</td>
 
+<td style="line-height: 18px;">_MouseEvent_</td>
 
+<td style="line-height: 18px;">Fires when mouse pointer is clicked (or user presses enter key) over an element. A click is defined as a mousedown and mouseup over the same screen location. The sequence of these events is _mousedown_>_mouseup_>_click_. Depending upon the environment configuration, the click event may be dispatched if one or more of the event types mouseover, mousemove, and mouseout occur between the press and release of the pointing device button. The click event may also be followed by the dblclick event</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
-_click_
+<tr>
 
-_MouseEvent_
+<td style="line-height: 18px;">_dblclick_</td>
 
-Fires when mouse pointer is clicked (or user presses enter key) over an element. A click is defined as a mousedown and mouseup over the same screen location. The sequence of these events is _mousedown_>_mouseup_>_click_. Depending upon the environment configuration, the click event may be dispatched if one or more of the event types mouseover, mousemove, and mouseout occur between the press and release of the pointing device button. The click event may also be followed by the dblclick event
+<td style="line-height: 18px;">_MouseEvent_</td>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">Fires when a mouse pointer is clicked twice over an element. The definition of a double click depends on the environment configuration, except that the event target must be the same between _mousedown_, _mouseup_, and _dblclick_. This event type must be dispatched after the event typeclick if a click and double click occur simultaneously, and after the event type _mouseup_ otherwise</td>
 
-Yes
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-Yes
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_mousedown_</td>
 
-_dblclick_
+<td style="line-height: 18px;">_MouseEvent_</td>
 
-_MouseEvent_
+<td style="line-height: 18px;">Fires when mouse pointer is pressed over an element</td>
 
-Fires when a mouse pointer is clicked twice over an element. The definition of a double click depends on the environment configuration, except that the event target must be the same between _mousedown_, _mouseup_, and _dblclick_. This event type must be dispatched after the event typeclick if a click and double click occur simultaneously, and after the event type _mouseup_ otherwise
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">Yes</td>
 
-Yes
+<td style="line-height: 18px;">Yes</td>
 
-Yes
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_mouseenter_</td>
 
+<td style="line-height: 18px;">_MouseEvent_</td>
 
+<td style="line-height: 18px;">Fires when mouse pointer is moved onto the boundaries of an element or one of its descendent elements. This event type is similar to mouseover, but differs in that it does not bubble, and must not be dispatched when the pointer device moves from an element onto the boundaries of one of its descendent elements</td>
 
-_mousedown_
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-_MouseEvent_
+<td style="line-height: 18px;">No</td>
 
-Fires when mouse pointer is pressed over an element
+<td style="line-height: 18px;">No</td>
 
-_Element_,_Document_,_window_
+</tr>
 
-Yes
+<tr>
 
-Yes
+<td style="line-height: 18px;">_mouseleave_</td>
 
+<td style="line-height: 18px;">_MouseEvent_</td>
 
+<td style="line-height: 18px;">Fires when mouse pointer is moved off of the boundaries of an element and all of its descendent elements. This event type is similar to mouseout, but differs in that does not bubble, and that it must not be dispatched until the pointing device has left the boundaries of the element and the boundaries of all of its children</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
+<td style="line-height: 18px;">No</td>
 
-_mouseenter_
+<td style="line-height: 18px;">No</td>
 
-_MouseEvent_
+</tr>
 
-Fires when mouse pointer is moved onto the boundaries of an element or one of its descendent elements. This event type is similar to mouseover, but differs in that it does not bubble, and must not be dispatched when the pointer device moves from an element onto the boundaries of one of its descendent elements
+<tr>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">_mousemove_</td>
 
-No
+<td style="line-height: 18px;">_MouseEvent_</td>
 
-No
+<td style="line-height: 18px;">Fires when mouse pointer is moved while it is over an element. The frequency rate of events while the pointing device is moved is implementation-, device-, and platform-specific, but multiple consecutive mousemove events should be fired for sustained pointer-device movement, rather than a single event for each instance of mouse movement. Implementations are encouraged to determine the optimal frequency rate to balance responsiveness with performance</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
-_mouseleave_
+<tr>
 
-_MouseEvent_
+<td style="line-height: 18px;">_mouseout_</td>
 
-Fires when mouse pointer is moved off of the boundaries of an element and all of its descendent elements. This event type is similar to mouseout, but differs in that does not bubble, and that it must not be dispatched until the pointing device has left the boundaries of the element and the boundaries of all of its children
+<td style="line-height: 18px;">_MouseEvent_</td>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">Fires when mouse pointer is moved off of the boundaries of an element. This event type is similar to _mouseleave_, but differs in that does bubble, and that it must be dispatched when the pointer device moves from an element onto the boundaries of one of its descendent elements</td>
 
-No
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-No
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_mouseup_</td>
 
-_mousemove_
+<td style="line-height: 18px;">_MouseEvent_</td>
 
-_MouseEvent_
+<td style="line-height: 18px;">Fires when mouse pointer button is released over an element</td>
 
-Fires when mouse pointer is moved while it is over an element. The frequency rate of events while the pointing device is moved is implementation-, device-, and platform-specific, but multiple consecutive mousemove events should be fired for sustained pointer-device movement, rather than a single event for each instance of mouse movement. Implementations are encouraged to determine the optimal frequency rate to balance responsiveness with performance
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">Yes</td>
 
-Yes
+<td style="line-height: 18px;">Yes</td>
 
-No
+</tr>
 
+<tr>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_mouseover_</td>
 
+<td style="line-height: 18px;">_MouseEvent_</td>
 
+<td style="line-height: 18px;">Fires when mouse pointer is moved over an element</td>
 
-_mouseout_
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-_MouseEvent_
+<td style="line-height: 18px;">Yes</td>
 
-Fires when mouse pointer is moved off of the boundaries of an element. This event type is similar to _mouseleave_, but differs in that does bubble, and that it must be dispatched when the pointer device moves from an element onto the boundaries of one of its descendent elements
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">Yes</td>
 
-_Element_,_Document_,_window_
+</tr>
 
-Yes
+</tbody>
 
-Yes
-
-
-
-
-
-_mouseup_
-
-_MouseEvent_
-
-Fires when mouse pointer button is released over an element
-
-_Element_,_Document_,_window_
-
-Yes
-
-Yes
-
-
-
-
-
-_mouseover_
-
-_MouseEvent_
-
-Fires when mouse pointer is moved over an element
-
-_Element_,_Document_,_window_
-
-Yes
-
-Yes
-
-
-
-
-
-
+</table>
 
 **Wheel events**
 
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Event Targets</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Description
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Event Targets
+</tr>
 
-Bubbles
+</thead>
 
-Cancelable
+<tbody>
 
+<tr>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_wheel_(browsers use_mousewheel_but the specification uses _wheel_)</td>
 
+<td style="line-height: 18px;">_WheelEvent_</td>
 
+<td style="line-height: 18px;">Fires when a mouse wheel has been rotated around any axis, or when an equivalent input device (such as a mouse-ball, certain tablets or touchpads, etc.) has emulated such an action. Depending on the platform and input device, diagonal wheel deltas may be delivered either as a singlewheel event with multiple non-zero axes or as separate wheel events for each non-zero axis. Some helpful details about browser support can be found [here](http://www.quirksmode.org/dom/events/scroll.html).</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_Window_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">Yes</td>
 
+</tr>
 
-_wheel_(browsers use_mousewheel_but the specification uses _wheel_)
+</tbody>
 
-_WheelEvent_
-
-Fires when a mouse wheel has been rotated around any axis, or when an equivalent input device (such as a mouse-ball, certain tablets or touchpads, etc.) has emulated such an action. Depending on the platform and input device, diagonal wheel deltas may be delivered either as a singlewheel event with multiple non-zero axes or as separate wheel events for each non-zero axis. Some helpful details about browser support can be found [here](http://www.quirksmode.org/dom/events/scroll.html).
-
-_Element_,_Document_,_Window_
-
-Yes
-
-Yes
-
-
-
-
-
-
+</table>
 
 **Keyboard events**
 
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Event Targets</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Description
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Event Targets
+</tr>
 
-Bubbles
+</thead>
 
-Cancelable
+<tbody>
 
+<tr>
 
+<td style="line-height: 18px;">_keydown_</td>
 
+<td style="line-height: 18px;">_KeyboardEvent_</td>
 
+<td style="line-height: 18px;">Fires when a key is initially pressed. This is sent after any key mapping is performed, but before any input method editors receive the keypress. This is sent for any key, even if it doesn't generate a character code.</td>
 
+<td style="line-height: 18px;">_Element_,_Document_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
-_keydown_
+<tr>
 
-_KeyboardEvent_
+<td style="line-height: 18px;">_keypress_</td>
 
-Fires when a key is initially pressed. This is sent after any key mapping is performed, but before any input method editors receive the keypress. This is sent for any key, even if it doesn't generate a character code.
+<td style="line-height: 18px;">_KeyboardEvent_</td>
 
-_Element_,_Document_
+<td style="line-height: 18px;">Fires when a key is initially pressed, but only if that key normally produces a character value. This is sent after any key mapping is performed, but before any input method editors receive the keypress.</td>
 
-Yes
+<td style="line-height: 18px;">_Element_,_Document_</td>
 
-Yes
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_keyup_</td>
 
-_keypress_
+<td style="line-height: 18px;">_KeyboardEvent_</td>
 
-_KeyboardEvent_
+<td style="line-height: 18px;">Fires when a key is released. This is sent after any key mapping is performed, and always follows thecorresponding_keydown_ and _keypress_ events.</td>
 
-Fires when a key is initially pressed, but only if that key normally produces a character value. This is sent after any key mapping is performed, but before any input method editors receive the keypress.
+<td style="line-height: 18px;">_Element_,_Document_</td>
 
-_Element_,_Document_
+<td style="line-height: 18px;">Yes</td>
 
-Yes
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">Yes</td>
 
-Yes
+</tr>
 
+</tbody>
 
-
-
-
-_keyup_
-
-_KeyboardEvent_
-
-Fires when a key is released. This is sent after any key mapping is performed, and always follows thecorresponding_keydown_ and _keypress_ events.
-
-_Element_,_Document_
-
-Yes
-
-Yes
-
-
-
-
-
-
+</table>
 
 **Touch events**
 
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Event Targets</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Description
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Event Targets
+</tr>
 
-Bubbles
+</thead>
 
-Cancelable
+<tbody>
 
+<tr>
 
+<td style="line-height: 18px;">_touchstart_</td>
 
+<td style="line-height: 18px;">_TouchEvent_</td>
 
+<td style="line-height: 18px;">Fires event to indicate when the user places a touch point on the touch surface</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
-_touchstart_
+<tr>
 
-_TouchEvent_
+<td style="line-height: 18px;">_touchend_</td>
 
-Fires event to indicate when the user places a touch point on the touch surface
+<td style="line-height: 18px;">_TouchEvent_</td>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">Fires event to indicate when the user removes a touch poin[t](http://www.w3.org/TR/2011/WD-touch-events-20110505/#dfn-touch-point) from the touch surface, also including cases where the touch point physically leaves the touch surface, such as being dragged off of the screen</td>
 
-Yes
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-Yes
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_touchmove_</td>
 
-_touchend_
+<td style="line-height: 18px;">_TouchEvent_</td>
 
-_TouchEvent_
+<td style="line-height: 18px;">Fires event to indicate when the user moves a touch point along the touch surface</td>
 
-Fires event to indicate when the user removes a touch poin[t](http://www.w3.org/TR/2011/WD-touch-events-20110505/#dfn-touch-point) from the touch surface, also including cases where the touch point physically leaves the touch surface, such as being dragged off of the screen
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">Yes</td>
 
-Yes
+<td style="line-height: 18px;">Yes</td>
 
-Yes
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_touchenter_</td>
 
+<td style="line-height: 18px;">_TouchEvent_</td>
 
+<td style="line-height: 18px;">Fires event to indicate when a touch point moves onto the interactive area defined by a DOM element</td>
 
-_touchmove_
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-_TouchEvent_
+<td style="line-height: 18px;">No</td>
 
-Fires event to indicate when the user moves a touch point along the touch surface
+<td style="line-height: 18px;">?</td>
 
-_Element_,_Document_,_window_
+</tr>
 
-Yes
+<tr>
 
-Yes
+<td style="line-height: 18px;">_toucheleave_</td>
 
+<td style="line-height: 18px;">_TouchEvent_</td>
 
+<td style="line-height: 18px;">Fires event to indicate when a touch point moves off the interactive area defined by a DOM element</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
+<td style="line-height: 18px;">No</td>
 
-_touchenter_
+<td style="line-height: 18px;">?</td>
 
-_TouchEvent_
+</tr>
 
-Fires event to indicate when a touch point moves onto the interactive area defined by a DOM element
+<tr>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_touchcancel_</td>
 
-No
+<td style="line-height: 18px;">_TouchEvent_</td>
 
-?
+<td style="line-height: 18px;">Fires event to indicate when a touch point has been disrupted in an implementation-specific manner, such as a synchronous event or action originating from the UA canceling the touch, or the touch point leaving the document window into a non-document area which is capable of handling user interactions.</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">No</td>
 
+</tr>
 
-_toucheleave_
+</tbody>
 
-_TouchEvent_
+</table>
 
-Fires event to indicate when a touch point moves off the interactive area defined by a DOM element
-
-_Element_,_Document_,_window_
-
-No
-
-?
-
-
-
-
-
-_touchcancel_
-
-_TouchEvent_
-
-Fires event to indicate when a touch point has been disrupted in an implementation-specific manner, such as a synchronous event or action originating from the UA canceling the touch, or the touch point leaving the document window into a non-document area which is capable of handling user interactions.
-
-_Element_,_Document_,_window_
-
-Yes
-
-No
-
-
-
-
-
-
-
-
+<div class="notes" style="font-size: 0.8em; border-radius: 4px; padding-bottom: 12px; border: 1px solid rgb(207, 226, 243); font-family: Helvetica; line-height: normal;">
 
 ### Notes
 
 Touch events are typically only supported iOS, Andorid, and Blackberry browsers or browsers (e.g. chrome) that can switch on touch modes
 
+</div>
 
+**Window, _<body>_, and frame specific events**
 
-**Window, __, and frame specific events**
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
+<th style="line-height: 18px; text-align: center;">Event Targets</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Description
+</tr>
 
-Event Targets
+</thead>
 
-Bubbles
+<tbody>
 
-Cancelable
+<tr>
 
+<td style="line-height: 18px;">_afterprint_</td>
 
+<td style="line-height: 18px;">?</td>
 
+<td style="line-height: 18px;">Fires on the object immediately after its associated document prints or previews for printing</td>
 
+<td style="line-height: 18px;">_window_,_<body>_,_<frameset>_</td>
 
+<td style="line-height: 18px;">No</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
+<tr>
 
-_afterprint_
+<td style="line-height: 18px;">_beforeprint_</td>
 
-?
+<td style="line-height: 18px;">?</td>
 
-Fires on the object immediately after its associated document prints or previews for printing
+<td style="line-height: 18px;">Fires on the object before its associated document prints or previews for printing</td>
 
-_window_,__,__
+<td style="line-height: 18px;">_window_,_<body>_,_<frameset>_</td>
 
-No
+<td style="line-height: 18px;">No</td>
 
-No
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_beforeunload_</td>
 
+<td style="line-height: 18px;">?</td>
 
-_beforeprint_
+<td style="line-height: 18px;">Fires prior to a document being unloaded</td>
 
-?
+<td style="line-height: 18px;">_window_,_<body>_,_<frameset>_</td>
 
-Fires on the object before its associated document prints or previews for printing
+<td style="line-height: 18px;">No</td>
 
-_window_,__,__
+<td style="line-height: 18px;">Yes</td>
 
-No
+</tr>
 
-No
+<tr>
 
+<td style="line-height: 18px;">_hashchange_</td>
 
+<td style="line-height: 18px;">_HashChangeEvent_</td>
 
+<td style="line-height: 18px;">Fires when there are changes to the portion of a URL that follows the number sign (#)</td>
 
+<td style="line-height: 18px;">_window_,_<body>_,_<frameset>_</td>
 
-_beforeunload_
+<td style="line-height: 18px;">No</td>
 
-?
+<td style="line-height: 18px;">No</td>
 
-Fires prior to a document being unloaded
+</tr>
 
-_window_,__,__
+<tr>
 
-No
+<td style="line-height: 18px;">_messsage_</td>
 
-Yes
+<td style="line-height: 18px;">?</td>
 
+<td style="line-height: 18px;">Fires when the user sends a cross-document message or a message is sent from a _Worker_ with _postMessage_</td>
 
+<td style="line-height: 18px;">_window_,_<body>_,_<frameset>_</td>
 
+<td style="line-height: 18px;">No</td>
 
+<td style="line-height: 18px;">No</td>
 
-_hashchange_
+</tr>
 
-_HashChangeEvent_
+<tr>
 
-Fires when there are changes to the portion of a URL that follows the number sign (#)
+<td style="line-height: 18px;">_offline_</td>
 
-_window_,__,__
+<td style="line-height: 18px;">_NavigatorOnLine_</td>
 
-No
+<td style="line-height: 18px;">Fires when browser is working offline</td>
 
-No
+<td style="line-height: 18px;">_window_,_<body>_,_<frameset>_</td>
 
+<td style="line-height: 18px;">No</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
+<tr>
 
-_messsage_
+<td style="line-height: 18px;">_online_</td>
 
-?
+<td style="line-height: 18px;">_NavigatorOnLine_</td>
 
-Fires when the user sends a cross-document message or a message is sent from a _Worker_ with _postMessage_
+<td style="line-height: 18px;">Fires when browser is working online</td>
 
-_window_,__,__
+<td style="line-height: 18px;">_window_,_<body>_,_<frameset>_</td>
 
-No
+<td style="line-height: 18px;">No</td>
 
-No
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_pagehide_</td>
 
+<td style="line-height: 18px;">_PageTransitionEvent_</td>
 
-_offline_
+<td style="line-height: 18px;">Fires when traversing from a session history entry</td>
 
-_NavigatorOnLine_
+<td style="line-height: 18px;">_window_,_<body>_,_<frameset>_</td>
 
-Fires when browser is working offline
+<td style="line-height: 18px;">No</td>
 
-_window_,__,__
+<td style="line-height: 18px;">No</td>
 
-No
+</tr>
 
-No
+<tr>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_pageshow_</td>
 
+<td style="line-height: 18px;">_PageTransitionEvent_</td>
 
+<td style="line-height: 18px;">The pagehide event is fired when traversing from a session history entry</td>
 
+<td style="line-height: 18px;">_window_,_<body>_,_<frameset>_</td>
 
-_online_
+<td style="line-height: 18px;">No</td>
 
-_NavigatorOnLine_
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">No</td>
 
-Fires when browser is working online
+</tr>
 
-_window_,__,__
+</tbody>
 
-No
-
-No
-
-
-
-
-
-_pagehide_
-
-_PageTransitionEvent_
-
-Fires when traversing from a session history entry
-
-_window_,__,__
-
-No
-
-No
-
-
-
-
-
-_pageshow_
-
-_PageTransitionEvent_
-
-The pagehide event is fired when traversing from a session history entry
-
-_window_,__,__
-
-No
-
-No
-
-
-
-
-
-
+</table>
 
 **Document specific events**
 
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Event Targets</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Description
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Event Targets
+</tr>
 
-Bubbles
+</thead>
 
-Cancelable
+<tbody>
 
+<tr>
 
+<td style="line-height: 18px;">_readystatechange_</td>
 
+<td style="line-height: 18px;">_Event_</td>
 
+<td style="line-height: 18px;">Fires event when _readyState_ is changed</td>
 
+<td style="line-height: 18px;">_Document_,_XMLHttpRequest_</td>
 
+<td style="line-height: 18px;">No</td>
 
+<td style="line-height: 18px;">No</td>
 
+</tr>
 
-_readystatechange_
+<tr>
 
-_Event_
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_DOMContentLoaded_</td>
 
-Fires event when _readyState_ is changed
+<td style="line-height: 18px;">_Event_</td>
 
-_Document_,_XMLHttpRequest_
+<td style="line-height: 18px;">Fires when a webpage has been parsed, but before all resources have been fully downloaded</td>
 
-No
+<td style="line-height: 18px;">_Document_</td>
 
-No
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">No</td>
 
+</tr>
 
+</tbody>
 
-
-_DOMContentLoaded_
-
-_Event_
-
-Fires when a webpage has been parsed, but before all resources have been fully downloaded
-
-_Document_
-
-Yes
-
-No
-
-
-
-
-
-
+</table>
 
 **Drag events**
 
+<table border="0" class="table table-bordered" style="font-size: 0.9em; width: 799px; margin: 32px 0px; font-family: Helvetica; line-height: normal;">
 
+<thead>
 
+<tr>
 
+<th style="line-height: 18px; text-align: center; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Event Type</th>
 
+<th style="line-height: 18px; text-align: center;">Event Interface</th>
 
+<th style="line-height: 18px; text-align: center;">Description</th>
 
-Event Type
+<th style="line-height: 18px; text-align: center;">Event Targets</th>
 
-Event Interface
+<th style="line-height: 18px; text-align: center;">Bubbles</th>
 
-Description
+<th style="line-height: 18px; text-align: center; border-top-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">Cancelable</th>
 
-Event Targets
+</tr>
 
-Bubbles
+</thead>
 
-Cancelable
+<tbody>
 
+<tr>
 
+<td style="line-height: 18px;">_drag_</td>
 
+<td style="line-height: 18px;">_DragEvent_</td>
 
+<td style="line-height: 18px;">Fires on the source object continuously during a drag operation.</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
-_drag_
+<tr>
 
-_DragEvent_
+<td style="line-height: 18px;">_dragstart_</td>
 
-Fires on the source object continuously during a drag operation.
+<td style="line-height: 18px;">_DragEvent_</td>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">Fires on the source object when the user starts to drag a text selection or selected object. The ondragstart event is the first to fire when the user starts to drag the mouse.</td>
 
-Yes
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-Yes
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_dragend_</td>
 
-_dragstart_
+<td style="line-height: 18px;">_DragEvent_</td>
 
-_DragEvent_
+<td style="line-height: 18px;">Fires on the source object when the user releases the mouse at the close of a drag operation. The ondragend event is the final drag event to fire, following the ondragleave event, which fires on the target object.</td>
 
-Fires on the source object when the user starts to drag a text selection or selected object. The ondragstart event is the first to fire when the user starts to drag the mouse.
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">Yes</td>
 
-Yes
+<td style="line-height: 18px;">No</td>
 
-Yes
+</tr>
 
+<tr>
 
+<td style="line-height: 18px;">_dragenter_</td>
 
+<td style="line-height: 18px;">_DragEvent_</td>
 
+<td style="line-height: 18px;">Fires on the target element when the user drags the object to a valid drop target.</td>
 
-_dragend_
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-_DragEvent_
+<td style="line-height: 18px;">Yes</td>
 
-Fires on the source object when the user releases the mouse at the close of a drag operation. The ondragend event is the final drag event to fire, following the ondragleave event, which fires on the target object.
+<td style="line-height: 18px;">Yes</td>
 
-_Element_,_Document_,_window_
+</tr>
 
-Yes
+<tr>
 
-No
+<td style="line-height: 18px;">_dragleave_</td>
 
+<td style="line-height: 18px;">_DragEvent_</td>
 
+<td style="line-height: 18px;">Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
-_dragenter_
+<td style="line-height: 18px;">No</td>
 
-_DragEvent_
+</tr>
 
-Fires on the target element when the user drags the object to a valid drop target.
+<tr>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">_dragover_</td>
 
-Yes
+<td style="line-height: 18px;">_DragEvent_</td>
 
-Yes
+<td style="line-height: 18px;">Fires on the target element continuously while the user drags the object over a valid drop target. The ondragover event fires on the target object after the ondragenter event has fired.</td>
 
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px;">Yes</td>
 
+</tr>
 
-_dragleave_
+<tr>
 
-_DragEvent_
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">_drop_</td>
 
-Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
+<td style="line-height: 18px;">_DragEvent_</td>
 
-_Element_,_Document_,_window_
+<td style="line-height: 18px;">Fires on the target object when the mouse button is released during a drag-and-drop operation. The ondrop event fires before the ondragleave and ondragend events.</td>
 
-Yes
+<td style="line-height: 18px;">_Element_,_Document_,_window_</td>
 
-No
+<td style="line-height: 18px;">Yes</td>
 
+<td style="line-height: 18px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px;">Yes</td>
 
+</tr>
 
+</tbody>
 
-
-_dragover_
-
-_DragEvent_
-
-Fires on the target element continuously while the user drags the object over a valid drop target. The ondragover event fires on the target object after the ondragenter event has fired.
-
-_Element_,_Document_,_window_
-
-Yes
-
-Yes
-
-
-
-
-
-_drop_
-
-_DragEvent_
-
-Fires on the target object when the mouse button is released during a drag-and-drop operation. The ondrop event fires before the ondragleave and ondragend events.
-
-_Element_,_Document_,_window_
-
-Yes
-
-Yes
-
-
-
-
-
-
+</table>
 ### Event Flow
 ### Stopping Event propagation
 ### http://domenlightenment.com/#11
@@ -1240,29 +1240,29 @@ Yes
 ### jQuery
 jQuery is a library, think of a library as a collection of factories (functions) that produce certain results. You have to learn how to use the library: to reduce time, follow best practices that other people wrote.
 
-jQuery has a special syntax the dollar sign, that makes it extremely easy to do DOM manipulation, binding events, create image sliders, 
+<div>jQuery has a special syntax the dollar sign, that makes it extremely easy to do DOM manipulation, binding events, create image sliders, </div>
 
-Learning jQuery will save you time and effort in writing a lot of code to manipulate DOM. Although there are new libraries coming up, It's used heavily by web developers. 
+<div>Learning jQuery will save you time and effort in writing a lot of code to manipulate DOM. Although there are new libraries coming up, It's used heavily by web developers. </div>
 ### API
 Is a way to access data in other web systems. Meetup website for example. The web is full of apis that you can leverage:
 
-Facebook
+<div>Facebook</div>
 
-twitter
+<div>twitter</div>
 
-google
+<div>google</div>
 
-foursquare
+<div>foursquare</div>
 
-etc
+<div>etc</div>
 ### jQuery and Ajax
 jQuery has a function called ajax that we call to request data from meetup. Let's see how we do that
 
-$.ajax
+<div>$.ajax</div>
 
-{
+<div>{</div>
 
-}
+<div>}</div>
 ### Angularjs
 ### 1.0
 ### Concepts
@@ -1291,7 +1291,7 @@ $.ajax
 ### continuous integration
 ### https://en.wikipedia.org/wiki/Continuous_integration#Software
 ### Travis-ci
-The simpilest way to explain Travis CI is that it runs your program's tests every time you commit to GitHub (This can be configured in many ways, and you can always disables builds on some branches). The point of this is that you can often discover very quickly if your commit broke something, and fix it before it becomes a problem. I would reccomend running Travis CI on every GitHub repo that you have unit tests in and is using a programming language supported by Travis CI. Since setting up Travis CI is very easy, I don't normally see a good reason not to use it, unless you don't care if you have passing tests in your program. Feel free to leave a comment if you have any more questions. You can read more about Travis CI [here](http://docs.travis-ci.com/).
+<span style="color: rgb(34, 34, 34); font-size: 15px; line-height: 19.5px;">The simpilest way to explain Travis CI is that it runs your program's tests every time you commit to GitHub (This can be configured in many ways, and you can always disables builds on some branches). The point of this is that you can often discover very quickly if your commit broke something, and fix it before it becomes a problem. I would reccomend running Travis CI on every GitHub repo that you have unit tests in and is using a programming language supported by Travis CI. Since setting up Travis CI is very easy, I don't normally see a good reason not to use it, unless you don't care if you have passing tests in your program. Feel free to leave a comment if you have any more questions. You can read more about Travis CI </span>[here](http://docs.travis-ci.com/)<span style="color: rgb(34, 34, 34); font-size: 15px; line-height: 19.5px;">.</span>
 ### https://travis-ci.org/
 ### ci
 ### Aurelia
@@ -1313,30 +1313,30 @@ The simpilest way to explain Travis CI is that it runs your program's tests ever
 ### debounce
 The debounce function can be a game-changer when it comes to event-fueled performance.  If you aren't using a debouncing function with a `scroll`, `resize`, `key*`event, you're probably doing it wrong.  Here's a `debounce`function to keep your code efficient:
 
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};
+<pre class=" language-js" prism="1" style="border-right-width: 0px; border-left-width: 0px; border-top-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); margin-bottom: 30px; font-size: 16px; tab-size: 4; color: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; direction: ltr; white-space: pre; word-break: normal; word-wrap: normal; line-height: 1.5; overflow: auto; letter-spacing: 0.16px; padding: 20px 0px !important; background: rgb(245, 242, 240);"><span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// Returns a function, that, as long as it continues to be invoked, will not</span>
+<span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// be triggered. The function will be called after it stops being called for</span>
+<span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// N milliseconds. If `immediate` is passed, trigger the function on the</span>
+<span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// leading edge, instead of the trailing.</span>
+<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span> <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">debounce</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>func<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> wait<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> immediate<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+	<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">var</span> timeout<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+	<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">return</span> <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+		<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">var</span> context <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">this</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> args <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> arguments<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+		<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">var</span> later <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+			timeout <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">null</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+			<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">if</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">!</span>immediate<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> func<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">.</span><span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">apply</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>context<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> args<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+		<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+		<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">var</span> callNow <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> immediate <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">&&</span> <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">!</span>timeout<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+		<span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">clearTimeout</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>timeout<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+		timeout <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">setTimeout</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>later<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> wait<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+		<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">if</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>callNow<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> func<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">.</span><span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">apply</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>context<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> args<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+	<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
 
-// Usage
-var myEfficientFn = debounce(function() {
-	// All the taxing stuff you do
-}, 250);
-window.addEventListener('resize', myEfficientFn);
+<span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// Usage</span>
+<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">var</span> myEfficientFn <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">debounce</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+	<span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// All the taxing stuff you do</span>
+<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> <span class="token number" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 0, 85);">250</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+window<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">.</span><span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">addEventListener</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token string" style="padding: 0px; border: 0px; margin: 0px; color: rgb(102, 153, 0);">'resize'</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> myEfficientFn<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span></pre>
 
 The `debounce` function will not allow a callback to be used more than once per given time frame.  This is especially important when assigning a callback function to frequently-firing events.
 ### poll
@@ -1344,25 +1344,25 @@ The `debounce` function will not allow a callback to be used more than once p
 
 As I mentioned with the `debounce` function, sometimes you don't get to plug into an event to signify a desired state -- if the event doesn't exist, you need to check for your desired state at intervals:
 
-function poll(fn, callback, errback, timeout, interval) {
-    var endTime = Number(new Date()) + (timeout || 2000);
-    interval = interval || 100;
+<pre class=" language-js" prism="1" style="border-right-width: 0px; border-left-width: 0px; border-top-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); margin-bottom: 30px; font-size: 16px; tab-size: 4; color: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; direction: ltr; white-space: pre; word-break: normal; word-wrap: normal; line-height: 1.5; overflow: auto; letter-spacing: 0.16px; padding: 20px 0px !important; background: rgb(245, 242, 240);"><span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span> <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">poll</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>fn<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> callback<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> errback<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> timeout<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> interval<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+    <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">var</span> endTime <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">Number</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">new</span> <span class="token class-name" style="padding: 0px; border: 0px; margin: 0px;">Date</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">+</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>timeout <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">||</span> <span class="token number" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 0, 85);">2000</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+    interval <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> interval <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">||</span> <span class="token number" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 0, 85);">100</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
 
-    (function p() {
-            // If the condition is met, we're done! 
-            if(fn()) {
-                callback();
-            }
-            // If the condition isn't met but the timeout hasn't elapsed, go again
-            else if (Number(new Date())  0;
-    },
-    function() {
-        // Done, success callback
-    },
-    function() {
-        // Error, failure callback
-    }
-);
+    <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span> <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">p</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+            <span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// If the condition is met, we're done!</span> 
+            <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">if</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">fn</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+                <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">callback</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+            <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span>
+            <span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// If the condition isn't met but the timeout hasn't elapsed, go again</span>
+            <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">else</span> <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">if</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">Number</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">new</span> <span class="token class-name" style="padding: 0px; border: 0px; margin: 0px;">Date</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span>  <span class="token number" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 0, 85);">0</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+    <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span>
+    <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+        <span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// Done, success callback</span>
+    <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span>
+    <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+        <span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// Error, failure callback</span>
+    <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span>
+<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span></pre>
 
 Polling has long been useful on the web and will continue to be in the future!
 ### once
@@ -1370,26 +1370,26 @@ Polling has long been useful on the web and will continue to be in the future!
 
 There are times when you prefer a given functionality only happen once, similar to the way you'd use an `onload`event.  This code provides you said functionality:
 
-function once(fn, context) { 
-	var result;
+<pre class=" language-js" prism="1" style="border-right-width: 0px; border-left-width: 0px; border-top-color: rgb(238, 238, 238); border-bottom-color: rgb(238, 238, 238); margin-bottom: 30px; font-size: 16px; tab-size: 4; color: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; direction: ltr; white-space: pre; word-break: normal; word-wrap: normal; line-height: 1.5; overflow: auto; letter-spacing: 0.16px; padding: 20px 0px !important; background: rgb(245, 242, 240);"><span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span> <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">once</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>fn<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> context<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span> 
+	<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">var</span> result<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
 
-	return function() { 
-		if(fn) {
-			result = fn.apply(context || this, arguments);
-			fn = null;
-		}
+	<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">return</span> <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span> 
+		<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">if</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>fn<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+			result <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> fn<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">.</span><span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">apply</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span>context <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">||</span> <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">this</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">,</span> arguments<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+			fn <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> <span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">null</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+		<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span>
 
-		return result;
-	};
-}
+		<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">return</span> result<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+	<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span>
 
-// Usage
-var canOnlyFireOnce = once(function() {
-	console.log('Fired!');
-});
+<span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// Usage</span>
+<span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">var</span> canOnlyFireOnce <span class="token operator" style="padding: 0px; border: 0px; margin: 0px; color: rgb(166, 127, 89); background: rgba(255, 255, 255, 0.498039);">=</span> <span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">once</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token keyword" style="padding: 0px; border: 0px; margin: 0px; color: rgb(0, 119, 170);">function</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span> <span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">{</span>
+	console<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">.</span><span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">log</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token string" style="padding: 0px; border: 0px; margin: 0px; color: rgb(102, 153, 0);">'Fired!'</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
+<span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">}</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span>
 
-canOnlyFireOnce(); // "Fired!"
-canOnlyFireOnce(); // nada
+<span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">canOnlyFireOnce</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span> <span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// "Fired!"</span>
+<span class="token function" style="padding: 0px; border: 0px; margin: 0px; color: rgb(221, 74, 104);">canOnlyFireOnce</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">(</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">)</span><span class="token punctuation" style="padding: 0px; border: 0px; margin: 0px; color: rgb(153, 153, 153);">;</span> <span class="token comment" spellcheck="true" style="padding: 0px; border: 0px; margin: 0px; color: rgb(112, 128, 144);">// nada</span></pre>
 
 The `once` function ensures a given function can only be called once, thus prevent duplicate initialization!
 # Design Patterns
@@ -1448,7 +1448,7 @@ Side effects may include, but are not limited to
     addTen(2);
     // 12
 
-you split off a function into two functions
+<pre style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6px; overflow: auto; direction: ltr; margin-bottom: 16px; padding: 16px; line-height: 1.45; border: 0px; border-radius: 3px; word-wrap: normal; letter-spacing: 0.2px; background-color: rgb(247, 247, 247);">you split off a function into two functions</pre>
 ### loadash currying
 ### What's the purpose of currying
     var getChildren = function(x) {
@@ -1459,7 +1459,7 @@ you split off a function into two functions
 ### we can pass functions to others
 ### Somtimes called partial application
 ### As apposed to this
-Giving a function fewer arguments than it expects is typically called _partial application_. Partially applying a function can remove a lot of boiler plate code. Consider what the above `allTheChildren` function would be with the uncurried `map` from lodash[note the arguments are in a different order](https://drboolean.gitbooks.io/mostly-adequate-guide/content/ch4.html#fn_note the arguments are in a different order):
+Giving a function fewer arguments than it expects is typically called _partial application_. Partially applying a function can remove a lot of boiler plate code. Consider what the above `allTheChildren` function would be with the uncurried `map` from lodash<span style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-size: 12px; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;">[note the arguments are in a different order](https://drboolean.gitbooks.io/mostly-adequate-guide/content/ch4.html#fn_note the arguments are in a different order)</span>:
 
     var allTheChildren = function(elements) {
       return _.map(elements, getChildren);
@@ -1477,7 +1477,7 @@ Giving a function fewer arguments than it expects is typically called _partial 
     };
 ### is it to be able to execute that function later
 ### Popular functional Programming Libraries
-[lodash](https://lodash.com/), [underscore](http://underscorejs.org/), and [ramda](http://ramdajs.com/).
+[lodash](https://lodash.com/)<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 25.6px;">, </span>[underscore](http://underscorejs.org/)<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 25.6px;">, and </span>[ramda](http://ramdajs.com/)<span style="font-size: 16px; letter-spacing: 0.2px; line-height: 25.6px;">.</span>
 ### http://docs.folktalejs.org/en/latest/index.html
 ### Suite of libraries to make functional programming easier
 ### Higher order function

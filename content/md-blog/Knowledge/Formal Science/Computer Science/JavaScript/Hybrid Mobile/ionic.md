@@ -1,139 +1,139 @@
 # Intro
 ### What's JavaScript
->   
-> 
+> <span id="docs-internal-guid-d499e770-7436-1deb-17ec-631fa62e6aa6">  
+> </span>
 
+<span id="docs-internal-guid-d499e770-7436-1deb-17ec-631fa62e6aa6">
 
+1.  <div style="margin-left: -20px;">
 
-1.  
+    <div data-dobid="dfn" style="display: inline;">We saw before how we used html and css to display things on the browser</div>
 
-    We saw before how we used html and css to display things on the browser
+    </div>
 
-    
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">the browser essentially reads the html and css and figure out how to display them</span></font></div>
 
-the browser essentially reads the html and css and figure out how to display them
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
+</span></font></div>
 
-  
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
+</span></font></div>
 
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">example:</span></font></div>
 
-  
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
+</span></font></div>
 
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;"><style></span></font></div>
 
-example:
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">p{</span></font></div>
 
-  
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">font-size:80px</span></font></div>
 
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">}</span></font></div>
 
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;"></style></span></font></div>
 
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
+</span></font></div>
 
-p{
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;"> <p>hello world</p></span></font></div>
 
-font-size:80px
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
+</span></font></div>
 
-}
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">with Javascript: we telling the browser to do more things than just display this text or any other html elements:</span></font></div>
 
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
+</span></font></div>
 
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">things like: go to javascript and where to find it</span></font></div>
 
-  
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
+</span></font></div>
 
+<div>JavaScript is a programming language with syntax. just like a real language.</div>
 
- hello world
+2.  <div class="lr_dct_sf_sen vk_txt" style="padding-top: 10px; font-weight: lighter !important;">
 
-  
+    <div style="margin-left: 20px;">
 
+    <div style="margin-left: -20px;">
 
-with Javascript: we telling the browser to do more things than just display this text or any other html elements:
+    <div data-dobid="dfn" style="display: inline;">a programming language commonly used to create interactive websites. Using HTML and CSS only is very limited in their own way. You can use HTML and CSS to achieve a lot of things, but unfortunately this falls short in many Cases. This is when JavaScript comes in handy.</div>
 
-  
+    </div>
 
+    </div>
 
-things like: go to javascript and where to find it
+    </div>
 
-  
+<div><font color="#222222" face="arial, sans-serif" size="2"><span style="line-height: 15.6000003814697px;">  
+</span></font></div>
 
-
-JavaScript is a programming language with syntax. just like a real language.
-
-2.  
-
-    
-
-    
-
-    a programming language commonly used to create interactive websites. Using HTML and CSS only is very limited in their own way. You can use HTML and CSS to achieve a lot of things, but unfortunately this falls short in many Cases. This is when JavaScript comes in handy.
-
-    
-
-    
-
-    
-
-  
-
-
-
+</span>
 ### What does Javascript Do and Where do you find it?
-_You find it in many places:_
+<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_You find it in many places:_</span></div>
 
+<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"></span></div>
 
+<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_Slide show images, _</span></div>
 
-_Slide show images, _
+<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_clicking on something and doing something,_</span></div>
 
-_clicking on something and doing something,_
+<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_Creating online games,_</span></div>
 
-_Creating online games,_
+<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_creating Mobile apps (New)_</span></div>
 
-_creating Mobile apps (New)_
+<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">_this slide show is created by JavaScript_</span></div>
 
-_this slide show is created by JavaScript_
-
-
+<div><span style="font-size: 15px; font-family: Verdana; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap;"></span></div>
 ### How is JavaScript written: in Statements 
-we load javascript same way we load css files. 
+<div>we load javascript same way we load css files. </div>
 
-The browser reads the script file line by line. these are essentially instructions. If it succeeds, the browser will show no error. If it fails we can examine the error in the console
+<div>The browser reads the script file line by line. these are essentially instructions. If it succeeds, the browser will show no error. If it fails we can examine the error in the console</div>
 
 How does the browser read those statments: Sequantially, line by line.
 
-The rules for valid format and combinations of instructions is called a _computer language_, sometimes referred to as its_syntax_, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.  
+<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">The rules for valid format and combinations of instructions is called a </span>_computer language_<span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">, sometimes referred to as its</span>_syntax_<span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.</span>  
+</div>
 
+<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">  
+</span></div>
 
-  
+<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">as you go, you will be able to gather different concepts into a knowledge</span></div>
 
+<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">  
+</span></div>
 
-as you go, you will be able to gather different concepts into a knowledge
+<div><span style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 25.6000003814697px;">  
+</span></div>
 
-  
+<div>
 
+<table style="margin: 0px; padding: 0px; border: 0px; font-size: 12px; vertical-align: baseline; font-family: Tahoma, Geneva, Arial, sans-serif; line-height: 12px; background-color: rgb(255, 255, 255);">
 
-  
+<tbody style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline;">
 
+<tr style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline;">
 
+<td class="answercell" style="margin: 0px; padding: 0px; border: 0px; vertical-align: top;">
 
-
-
-
-
-
-
-
-
-
-
+<div class="post-text" itemprop="text" style="margin: 0px 5px 5px 0px; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; width: 660px; word-wrap: break-word; line-height: 18.2000007629395px;">
 
 I write very, very detailed instructions for a very, very dumb machine
 
+</div>
 
+</td>
 
+</tr>
 
+</tbody>
 
+</table>
 
-
-
-
-
-
-
+</div>
 ### Write gibberish statement and see if the browser shows an error
 For accessing the command line. type CMD+SHIFT+ the letter i
 ### showing and hiding images as we click
@@ -141,170 +141,170 @@ For accessing the command line. type CMD+SHIFT+ the letter i
 ### Variables and Box Analogy
 Variable Name: Box Label
 
-Inside the box is the value
+<div>Inside the box is the value</div>
 
-values can be either a number or a string. A String is called that because it's a string of chars.
+<div>values can be either a number or a string. A String is called that because it's a string of chars.</div>
 
-Example: 
+<div>Example: </div>
 
-var a = 2
+<div>var a = 2</div>
 
-----------------
+<div>----------------</div>
 
-          2           
+<div>          2           </div>
 
-----------------
+<div>----------------</div>
 
-if you want to get what's inside the box "a"
+<div>if you want to get what's inside the box "a"</div>
 
-you just do this:
+<div>you just do this:</div>
 
-a ! that simple
+<div>a ! that simple</div>
 ### Data Types
 String, Number For now
 ### Store variables and display them
 Write a program that will create different variables and use Alert to display those values
 ### Number (Math) Expressions and String Expressions
-Don't be alarmed, this is just  
+<div>Don't be alarmed, this is just  
+</div>
 
+<div>+ - * /</div>
 
-+ - * /
-
-String Expressions is just adding Strings together. This is when the difference between a text and a number comes in. If you add two strings together you join them.
+<div>String Expressions is just adding Strings together. This is when the difference between a text and a number comes in. If you add two strings together you join them.</div>
 ### life time supply example
 Reference an HTML element and then apply a style
 ### If statments and logic
 Comparisions and Logic
 
-Write it out as words first the convert it to JavaScript untill you get used to it
+<div>Write it out as words first the convert it to JavaScript untill you get used to it</div>
 
-If bananas are greater than 5 then display the result
+<div>If bananas are greater than 5 then display the result</div>
 
-if bananas > 5 {
+<div>if bananas > 5 {</div>
 
+<div>
 
+> <div>alert "you need more bananas"</div>
 
-> alert "you need more bananas"
+</div>
 
+<div>}</div>
 
+<div>else (any other case){</div>
 
-}
+<div>alert "you have enough bananas"</div>
 
-else (any other case){
-
-alert "you have enough bananas"
-
-}
+<div>}</div>
 ### Check the supply of Bananas and display something
 ### Functions
-Functions are like recepies that are repeated in your application. When you make hard boiled eggs what do you do? this could be like a function? a list of instructions that we store in a recepie that yield some result
+<div>Functions are like recepies that are repeated in your application. When you make hard boiled eggs what do you do? this could be like a function? a list of instructions that we store in a recepie that yield some result</div>
 
-this is how we tell the browser to store it:
+<div>this is how we tell the browser to store it:</div>
 
-for example function a ( )
+<div>for example function a ( )</div>
 
-take a value
+<div>take a value</div>
 
-multiply it with 2
+<div>multiply it with 2</div>
 
-return the value to whoever called it
+<div>return the value to whoever called it</div>
 
-ingridents are the variables we pass to the function 
+<div>ingridents are the variables we pass to the function </div>
 
-the food that's made is what the function returns
+<div>the food that's made is what the function returns</div>
 
-list of examples
+<div>list of examples</div>
 
-sometimes we buy food that's already made so we don't have to make anything.
+<div>sometimes we buy food that's already made so we don't have to make anything.</div>
 
-sometimes you call function without knowing what they contain, which is something we do all the time in programming
+<div>sometimes you call function without knowing what they contain, which is something we do all the time in programming</div>
 
-think of functions as factories that have a collection of statments
+<div>think of functions as factories that have a collection of statments</div>
 
-it could take a box and modify it then return a new box
+<div>it could take a box and modify it then return a new box</div>
 
-It's like a belt, on one end there's processing, on the other there's a box
+<div>It's like a belt, on one end there's processing, on the other there's a box</div>
 
-Some factories don't accept boxes, they produce them.
+<div>Some factories don't accept boxes, they produce them.</div>
 
-you can package it as you like
+<div>you can package it as you like</div>
 
-Example
+<div>Example</div>
 
-var a = "hello"
+<div>var a = "hello"</div>
 
-alert "hello"
+<div>alert "hello"</div>
 
-Instead of writing this every time, we can store it in a box (variable) and retrieve it late
+<div>Instead of writing this every time, we can store it in a box (variable) and retrieve it late</div>
 
-by doing this
+<div>by doing this</div>
 
-function BoxLabel ( ){
+<div>function BoxLabel ( ){</div>
 
-var a = "help"
+<div>var a = "help"</div>
 
-alert a
+<div>alert a</div>
 
-}
+<div>}</div>
 
-BoxLabel ( )
+<div>BoxLabel ( )</div>
 
-How do I make functions even more powerfull, make them a little more useful, abstract, lets say you want to add two numbers together and you want the user to supply the numbers and you get the results
+<div>How do I make functions even more powerfull, make them a little more useful, abstract, lets say you want to add two numbers together and you want the user to supply the numbers and you get the results</div>
 
-this is usefull, because it make it easy to call that box and make it easier for people to reuse it for any two numbers.
+<div>this is usefull, because it make it easy to call that box and make it easier for people to reuse it for any two numbers.</div>
 
-  
-Example:
+<div>  
+Example:</div>
 
-function addTwoNumbers(a,b){
+<div>function addTwoNumbers(a,b){</div>
 
-return a+b
+<div>return a+b</div>
 
-}
+<div>}</div>
 
-results =  addTwoNumbers(1,2)
+<div>results =  addTwoNumbers(1,2)</div>
 
-alert results
+<div>alert results</div>
 ### Store the functions to calculate the bananas to make your program simpler
 ### Global Scope and Function Scope
 whatever boxes we have in the factory (function), we can't access outside of it.
 
-function {
+<div>function {</div>
 
-a = 2  
+<div>a = 2  
+</div>
 
-
-}
+<div>}</div>
 ### Loops
 sometimes we need to repeat statements instead of copying and pasting them 
 
-so if I wanted to write hello 20 times, I would do something like this
+<div>so if I wanted to write hello 20 times, I would do something like this</div>
 
-log hello
+<div>log hello</div>
 
-log hello
+<div>log hello</div>
 
-log hello
+<div>log hello</div>
 
-what if we 
+<div>what if we </div>
 ### Arrays
 Numbered Shelfs and contains boxes 0,1,2,3,4 ... etc
 ### Objects
-think of objects as any entity that has properties, a person is an object, a car is an object. Anything that you can describe could be an object.
+<div>think of objects as any entity that has properties, a person is an object, a car is an object. Anything that you can describe could be an object.</div>
 
-This how we create objects in JS
+<div>This how we create objects in JS</div>
 
-{
+<div>{</div>
 
-name: "hello"
+<div>name: "hello"</div>
 
-age: 21
+<div>age: 21</div>
 
-}
+<div>}</div>
 
 We move to a more complex example here, we have a box and inside of that box is a Person! WHAAAT?!!!!
 
-Each person has name, age
+<div>Each person has name, age</div>
 ### Array Of Objects
 Box with people on Shelves
 ### DOM
@@ -318,29 +318,29 @@ Box with people on Shelves
 ### jQuery
 jQuery is a library, think of a library as a collection of factories (functions) that produce certain results. You have to learn how to use the library: to reduce time, follow best practices that other people wrote.
 
-jQuery has a special syntax the dollar sign, that makes it extremely easy to do DOM manipulation, binding events, create image sliders, 
+<div>jQuery has a special syntax the dollar sign, that makes it extremely easy to do DOM manipulation, binding events, create image sliders, </div>
 
-Learning jQuery will save you time and effort in writing a lot of code to manipulate DOM. Although there are new libraries coming up, It's used heavily by web developers. 
+<div>Learning jQuery will save you time and effort in writing a lot of code to manipulate DOM. Although there are new libraries coming up, It's used heavily by web developers. </div>
 ### API
 Is a way to access data in other web systems. Meetup website for example. The web is full of apis that you can leverage:
 
-Facebook
+<div>Facebook</div>
 
-twitter
+<div>twitter</div>
 
-google
+<div>google</div>
 
-foursquare
+<div>foursquare</div>
 
-etc
+<div>etc</div>
 ### jQuery and Ajax
 jQuery has a function called ajax that we call to request data from meetup. Let's see how we do that
 
-$.ajax
+<div>$.ajax</div>
 
-{
+<div>{</div>
 
-}
+<div>}</div>
 ### Angularjs
 ### 1.0
 ### Concepts

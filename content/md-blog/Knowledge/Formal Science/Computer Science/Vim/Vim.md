@@ -6,7 +6,7 @@
 ### Word vs word
 WORD: is a whole word till a comma or any other separator
 
-word: is words till a space
+<div>word: is words till a space</div>
 # Plugins
 ### Surround
 ### http://vimawesome.com/plugin/surround-vim
@@ -49,79 +49,79 @@ word: is words till a space
 ### @@ to execute again
 ### use case
 ### you want to transform this data
-Given some data like the following:
+<div>Given some data like the following:</div>
 
-one   first example
+<div>one <span class="Apple-tab-span" style="white-space:pre"> <span style="white-space: normal;"></span> </span>first example</div>
 
-two   second example
+<div>two<span class="Apple-tab-span" style="white-space:pre"> <span style="white-space: normal;"></span> </span> second example</div>
 
-three   third example
+<div>three<span class="Apple-tab-span" style="white-space:pre"> <span style="white-space: normal;"></span> </span> third example</div>
 
-four   fourth example
+<div>four <span class="Apple-tab-span" style="white-space:pre"> <span style="white-space: normal;"></span> </span>fourth example</div>
 
-suppose you want to change the data to make a dictionary for a Python program, with this result:
+<div>suppose you want to change the data to make a dictionary for a Python program, with this result:</div>
 
-data = {
+<div>data = {</div>
 
-    'one': 'first example',
+<div>    'one': 'first example',</div>
 
-    'two': 'second example',
+<div>    'two': 'second example',</div>
 
-    'three': 'third example',
+<div>    'three': 'third example',</div>
 
-    'four': 'fourth example',
+<div>    'four': 'fourth example',</div>
 
-}
+<div>}</div>
 
+<div>
 
+<div>To do this, record a macro while changing the first line. Then, playback the macro to change each other line. When finished, manually insert the initial "data = {" line, and the final "}" line.</div>
 
-To do this, record a macro while changing the first line. Then, playback the macro to change each other line. When finished, manually insert the initial "data = {" line, and the final "}" line.
+<div>The following shows one way to record a suitable macro.</div>
 
-The following shows one way to record a suitable macro.
+<div>Put the cursor on the first line.</div>
 
-Put the cursor on the first line.
+<div>Type qd (the q starts recording; the d is the register where keys will be recorded).</div>
 
-Type qd (the q starts recording; the d is the register where keys will be recorded).
+<div>Type the following command to change the first sequence of whitespace to "': '":</div>
 
-Type the following command to change the first sequence of whitespace to "': '":
+<div>:s/\s\+/': ' (then press Enter)</div>
 
-:s/\s\+/': ' (then press Enter)
+<div>Type the following to insert four spaces followed by "'" at the start of the line:</div>
 
-Type the following to insert four spaces followed by "'" at the start of the line:
+<div>I    ' (then press Escape)</div>
 
-I    ' (then press Escape)
+<div>Type the following to append "'," to the line:</div>
 
-Type the following to append "'," to the line:
+<div>A', (then press Escape)</div>
 
-A', (then press Escape)
+<div>Type the following to move the cursor to the start of the line, then down to the next line:</div>
 
-Type the following to move the cursor to the start of the line, then down to the next line:
+<div>0j</div>
 
-0j
+<div>Type q to stop recording the macro.</div>
 
-Type q to stop recording the macro.
+<div>The cursor should now be on the second line. Type @d to playback the macro once. That should change the second line, with the cursor finishing on the third line. Type 2@@ to finish. The 2 means that what follows is performed twice, and the @@ plays back the last used macro. Instead of 2@@, you could type @d or @@ twice.</div>
 
-The cursor should now be on the second line. Type @d to playback the macro once. That should change the second line, with the cursor finishing on the third line. Type 2@@ to finish. The 2 means that what follows is performed twice, and the @@ plays back the last used macro. Instead of 2@@, you could type @d or @@ twice.
-
-
+</div>
 ### a nice mapping
-Running a macroEdit
+<div>Running a macroEdit</div>
 
-Use this mapping as a convenient way to play a macro recorded to register q:
+<div>Use this mapping as a convenient way to play a macro recorded to register q:</div>
 
-:nnoremap  @q
+<div>:nnoremap <Space> @q</div>
 
-Start recording keystrokes by typing qq.
+<div>Start recording keystrokes by typing qq.</div>
 
-End recording with q (first press Escape if you are in insert mode).
+<div>End recording with q (first press Escape if you are in insert mode).</div>
 
-Play the recorded keystrokes by hitting space.
+<div>Play the recorded keystrokes by hitting space.</div>
 
-Suppose you have a macro which operates on the text in a single line. You can run the macro on each line in a visual selection in a single operation:
+<div>Suppose you have a macro which operates on the text in a single line. You can run the macro on each line in a visual selection in a single operation:</div>
 
-Visually select some lines (for example, type vip to select the current paragraph).
+<div>Visually select some lines (for example, type vip to select the current paragraph).</div>
 
-Type :normal @q to run the macro from register q on each line.
+<div>Type :normal @q to run the macro from register q on each line.</div>
 ### I stopped at saving a macro
 ### >>
 ### indent line

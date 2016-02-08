@@ -1,37 +1,37 @@
 # EUI
 ### Digital Standards Guide Boilerplate
-A template of README best practices to make your README simple to understand and easy to use.  
-
+<div>A template of README best practices to make your README simple to understand and easy to use.  
+</div>
 ### Installation
-```sh
+<div>```sh</div>
 
-npm install
+<div>npm install</div>
 
-gulp
+<div>gulp</div>
 
-```
+<div>```</div>
 
-See gulp/ for more tasks
+<div>See gulp/ for more tasks</div>
 ### Usage
-## Javascript Organization
+<div>## Javascript Organization</div>
 
 You can use the different modules under either **app/client/components** or **app/server/components**. Inside each component folder, for example **todo/**, you can see these file extensions:
 
-* todo.js : That's the main file which will load all the other files.
+<div>* todo.js : That's the main file which will load all the other files.</div>
 
-* todo.view.js: Any view rendering is done here. This also includes modules on the server as well (any ```response.write( )``` ).
+<div>* todo.view.js: Any view rendering is done here. This also includes modules on the server as well (any ```response.write( )``` ).</div>
 
-* todo.model.js: Any data storage and manipulation.
+<div>* todo.model.js: Any data storage and manipulation.</div>
 
-* todo.spec.js: test file.
+<div>* todo.spec.js: test file.</div>
 
-* todo.scss: sass file to style todo only (See section below on Sass organization).
+<div>* todo.scss: sass file to style todo only (See section below on Sass organization).</div>
 
-## Sass organization
+<div>## Sass organization</div>
 ### Philosphy
 ### Support
-* Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for support.  
-
+<div>* Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for support.  
+</div>
 ### Contribution
-* Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/).  
-
+<div>* Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/).  
+</div>

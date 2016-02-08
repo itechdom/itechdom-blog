@@ -9,7 +9,7 @@ Some example modules that can be excluded are:
 
 *   **ajax**: All AJAX functionality: `$.ajax()`, `$.get()`, `$.post()`, `$.ajaxSetup()`, `.load()`, transports, and ajax event shorthands such as `.ajaxStart()`.
 *   **ajax/xhr**: The XMLHTTPRequest AJAX transport only.
-*   **ajax/script**: The `` AJAX transport only; used to retrieve scripts.
+*   **ajax/script**: The `<script>` AJAX transport only; used to retrieve scripts.
 *   **ajax/jsonp**: The JSONP AJAX transport only; depends on the ajax/script transport.
 *   **css**: The `.css()` method. Also removes **all** modules depending on css (including **effects**,**dimensions**, and **offset**).
 *   **css/showHide**: Non-animated `.show()`, `.hide()` and `.toggle()`; can be excluded if you use classes or explicit `.css()` calls to set the `display` property. Also removes the **effects** module.
