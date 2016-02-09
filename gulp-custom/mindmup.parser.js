@@ -142,6 +142,9 @@ var ops = {
 				var code = cheerio.load(idea.content);
 				idea.content= idea.content.replaceAll('&lt;','<');
 				idea.content = idea.content.replaceAll('&gt;','>');
+				idea.content = idea.content.replaceAll('</div>','');
+				idea.content = idea.content.replaceAll('<div>','<div></div>');
+
 				var cleanContent = idea.content;
 				var hCode;
 				code('*').each(function(i, elem) {
