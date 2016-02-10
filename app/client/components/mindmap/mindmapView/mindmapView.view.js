@@ -47,21 +47,23 @@ class mindmapView {
 	}
 	render(tree){
 		//box size, count and parentBox
-		
 		var count = -1;
-		var parentBox = this.createBox(0,20);
-		this.stage.addChild(parentBox);
+
+		var px = 100;
+		var py = 100;
+		var parentBox = this.createBox(px,py);
+
 
 		tree.map((node)=>{
-			console.log(count);
-			var x = parentBox.x + 50;
-			var y = count*20+20;
+			var x = px + 50;
+			var y = py + (count*20);
 			var box = this.createBox(x,y);
 			count++;
 			node.box = box;
 			this.stage.addChild(box);
 		})
 
+		this.stage.addChild(parentBox);
 		this.renderer.render(this.stage);
 	}
 	animate() {
