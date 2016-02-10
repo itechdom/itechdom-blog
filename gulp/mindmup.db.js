@@ -11,7 +11,7 @@ module.exports = function(options) {
 
 	gulp.task('mindmap:json', function(done) {
 
-		return gulp.src(options.drive+"**/Elm.mup")
+		return gulp.src(options.drive+"**/*.mup")
 			.pipe(data(function(file) {
 				var mindmap = mindmupParse.toJson(file);
 				var pArr = [];
