@@ -12,7 +12,7 @@ class mindmapMain{
 	constructor(){
 		actions.request$.subscribe(()=>{
 			$('app').html();
-			view.render([{text:'hello'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'}]);
+			view.render([{text:'hello'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'}]);
 		})
 	}
 }
