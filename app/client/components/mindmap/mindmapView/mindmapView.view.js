@@ -3,9 +3,12 @@ var template = require('./mindmapView.html');
 var $ = require('jquery');
 var PIXI = require('pixi.js');
 
+//dispatcher here ...
+
 class mindmapView {
 
 	render(){
+
 		var renderer = PIXI.autoDetectRenderer(800, 800, { antialias: true });
 		console.log(window.innerWidth,window.innerHeight);
 		document.body.appendChild(renderer.view);

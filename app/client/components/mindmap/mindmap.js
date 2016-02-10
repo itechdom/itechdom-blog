@@ -4,16 +4,17 @@ global._ = require('underscore');
 global.Color = require('color');
 global.Hammer = require('jquery-hammerjs/jquery.hammer.js');
 require('jquery.hotkeys');
-var actions = require("./mindmap.actions.js");
-var view = require("./mindmapView/mindmapView.view.js");
 
+var view = require('./mindmapView/mindmapView.view.js');
+var actions = require('./mindmap.actions.js');
 
 class mindmapMain{
 	constructor(){
-		this.actions = actions;
-		this.actions.request$.subscribe(()=>{
+
+		actions.request$.subscribe(()=>{
 			view.render();
 		})
+
 	}
 }
 
