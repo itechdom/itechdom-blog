@@ -4,7 +4,7 @@ var $ = require('jquery');
 var Rx = require('rx');
 var template = require('./todo.html');
 var actions = require('./todo.actions.js');
-var dispatcher = require('./utils/dispatcher/dispatcher.js');
+var dispatcher = require('../../lib/dispatcher/dispatcher.js');
 
 var view = {
 
@@ -19,15 +19,16 @@ var view = {
 		       })
 
 		       setTimeout(function(){
-			       dispatcher.customEvent.emit('todoViewRendered$',$('app'));
+			       dispatcher.emit('todoViewRendered$',$('app'));
 		       },5)
 
 		       var keyPressed = 
 			       Rx.Observable.fromEvent($('input'),'keypress')
 			       .filter((e)=>e.which == 13)
 			       .subscribe((e)=>{
-				       dispatcher.customEvent.emit('todoViewKeypressed$',e);
+				       dispatcher.emit('todoViewKeypressed$',e);
 			       })
 	}
 }
+
 module.exports = view;

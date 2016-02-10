@@ -10,11 +10,10 @@ var actions = require('./mindmap.actions.js');
 
 class mindmapMain{
 	constructor(){
-
 		actions.request$.subscribe(()=>{
-			view.render();
+			$('app').html();
+			view.render([{text:'hello'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'}]);
 		})
-
 	}
 }
 

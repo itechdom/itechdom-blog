@@ -1,6 +1,6 @@
 'use strict';
 var todos = ['hello','how are you'];
-var dispatcher = require('./utils/dispatcher/dispatcher.js');
+var dispatcher = require('../../lib/dispatcher/dispatcher.js');
 
 var model = {
 
@@ -9,7 +9,7 @@ var model = {
 	},
 	insertTodo(todo){
 		todos.push(todo);
-		dispatcher.customEvent.emit('todoModelUpdate$',todos);
+		dispatcher.emit('todoModelUpdate$',todos);
 	},
 	todos
 }

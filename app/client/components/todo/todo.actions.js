@@ -1,19 +1,22 @@
 'use strict';
 var Rx = require('rx');
-var clientActions = require('./utils/client/client.actions.js');
+var clientActions = require('../client/client.actions.js');
 var $ = require('jquery');
-var dispatcher = require('./utils/dispatcher/dispatcher.js');
+var dispatcher = require('../../lib/dispatcher/dispatcher.js');
 
-	var todoViewRendered$ = Rx.Observable.fromEvent(dispatcher.customEvent,'todoViewRendered$');
-	var todoViewKeypressed$ = Rx.Observable.fromEvent(dispatcher.customEvent,'todoViewKeypressed$');
 
-	var todoModelUpdate$ = Rx.Observable.fromEvent(dispatcher.customEvent,'todoModelUpdate$');
+var todoViewRendered$ = Rx.Observable.fromEvent(dispatcher,'todoViewRendered$');
+var todoViewKeypressed$ = Rx.Observable.fromEvent(dispatcher,'todoViewKeypressed$');
 
-	var actions =  {
-            request$: clientActions['changeRoute$'],
-	    todoViewRendered$,
-	    todoViewKeypressed$,
-	    todoModelUpdate$
-        }
+var todoModelUpdate$ = Rx.Observable.fromEvent(dispatcher,'todoModelUpdate$');
+
+var actions =  {
+	request$:clientActions['changeRoute$'].filter((d)=> {
+		return d == "/todo";
+	}),
+	todoViewRendered$,
+	todoViewKeypressed$,
+	todoModelUpdate$
+}
 
 module.exports = actions;
