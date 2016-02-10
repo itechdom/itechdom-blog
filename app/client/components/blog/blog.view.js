@@ -2,7 +2,7 @@
 //this is the main blog file
 var $ = require('jquery');
 var Rx = require('rx');
-var dispatcher = require('../lib/dispatcher/dispatcher.js');
+var dispatcher = require('../../lib/dispatcher/dispatcher.js');
 
 class blogView {
 
@@ -18,7 +18,6 @@ class blogView {
 			topics.push(topic.data[0].title)
 		})
 
-		console.log(topics);
 		var template  = require('./blog.html');
 
 		$('app').html(template);
