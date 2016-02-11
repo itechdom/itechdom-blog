@@ -70,16 +70,13 @@ class mindmapView {
 				length = Object.keys(parent.ideas).length; 
 				var arrange = -1 + -1*length + order;
 				var margin = (arrange * 20);
-				if(mindmapObj.title == "type annotation"){
-					console.log(arrange,margin);
-				}
 				if(!parent.x || !parent.y){
 					 x = px + 20*3;
-					 y = py + (arrange*20)+20;
+					 y = py + (arrange*20);
 				}
 				else{
 					 x = parent.x + 20*3;
-					 y = parent.y + (arrange*20)+20;
+					 y = parent.y + (arrange*20)+margin;
 				}
 				mindmapObj.x = x;
 				mindmapObj.y = y;
