@@ -7,12 +7,14 @@ require('jquery.hotkeys');
 
 var view = require('./mindmapView/mindmapView.view.js');
 var actions = require('./mindmap.actions.js');
+var model = require('../../../../content/json-blog/Knowledge/Formal\ Science/Computer\ Science/Elm/Elm.mup.json');
 
 class mindmapMain{
 	constructor(){
+		var jModel = JSON.parse(model);
 		actions.request$.subscribe(()=>{
 			$('app').html();
-			view.render([{text:'hello'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'},{text:'hi'}]);
+			view.render(jModel);
 		})
 	}
 }

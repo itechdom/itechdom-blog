@@ -16,9 +16,10 @@ module.exports = {
         loaders: [
             {test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'babel'},
             {test: /\.html$/, loader: 'raw'},
+            {test: /\.json$/, loader: 'raw'},
             {test: /\.css$/, loader: "style-loader!css-loader"},
             {
-                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg|json)(\?.*$|$)/,
+                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
                 loader: 'file-loader'
             },
             {

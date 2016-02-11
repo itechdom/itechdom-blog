@@ -5,13 +5,13 @@ var PIXI = require('pixi.js');
 
 class mindmapView {
 
-	createText(box,text){
-		var basicText = new PIXI.Text(text);
-		basicText.x = box.x/2;
-		basicText.y = box.y/2;
+	createText(x,y,text){
+		var style = this.createStyle();
+		var basicText = new PIXI.Text(text,style);
+		basicText.x = x;
+		basicText.y = y;
 		return basicText;
 	}
-
 	createLine(box1,box2){
 		var line = new PIXI.Graphics();
 		line.lineStyle(1, 0x0000FF, 1);
@@ -23,14 +23,8 @@ class mindmapView {
 
 	createStyle(){
 		var style = {
-			font : 'bold italic 36px Arial',
+			font : 'bold italic 10px Arial',
 			fill : '#F7EDCA',
-			stroke : '#4a1850',
-			strokeThickness : 5,
-			dropShadow : true,
-			dropShadowColor : '#000000',
-			dropShadowAngle : Math.PI / 6,
-			dropShadowDistance : 6,
 			wordWrap : true,
 			wordWrapWidth : 440
 		};
@@ -45,24 +39,57 @@ class mindmapView {
 		graphics.drawRect(x, y, 20, 20);
 		return graphics;
 	}
+	traverse(mindmap,processFunction,parent){
+		for(var key in mindmap){
+			var obj = mindmap[key];
+			processFunction(obj,parent,key);
+			this.traverse(obj.ideas,processFunction,obj);
+		}
+	}
 	render(tree){
-		//box size, count and parentBox
-		var count = -1 * Math.ceil(tree.length/2);
+		var count;
+		var x,y;
+		var px,py;
+		var rootX,rootY;
+		var order;
+		var length;
+		this.traverse(tree,(mindmapObj,parent,key)=>{
+			var order = parseInt(key);
+			if(!parent){
+				 length = Math.ceil(tree.length/2);
+				 var arrange = -1*length + order;
+				 var margin = (order * 20)+(order*20*5);
 
-		var px = 100;
-		var py = 200;
-		var parentBox = this.createBox(px,py);
-		this.stage.addChild(parentBox);
+				 px = 0;
+				 py = 300 + (arrange*20)+20+margin;
 
-		tree.map((node)=>{
-			var x = px + 100;
-			var y = py + (count*20)+(count*20);
+				 x = px;
+				 y = py;
+			}
+			else{
+				length = Object.keys(parent.ideas).length; 
+				var arrange = -1 + -1*length + order;
+				var margin = (arrange * 20);
+				if(mindmapObj.title == "type annotation"){
+					console.log(arrange,margin);
+				}
+				if(!parent.x || !parent.y){
+					 x = px + 20*3;
+					 y = py + (arrange*20)+20;
+				}
+				else{
+					 x = parent.x + 20*3;
+					 y = parent.y + (arrange*20)+20;
+				}
+				mindmapObj.x = x;
+				mindmapObj.y = y;
+			}
 			var box = this.createBox(x,y);
-			count++;
-			node.box = box;
+			var sText = mindmapObj.title.slice(0,10);
+			var text = this.createText(x,y,sText);
 			this.stage.addChild(box);
+			this.stage.addChild(text);
 		})
-
 		this.renderer.render(this.stage);
 	}
 	animate() {
