@@ -67,12 +67,8 @@ class mindmapView {
 				 y = py;
 			}
 			else{
-				//factors here are: parents, number of siblings 
-				//it differs if the number of siblings is even or odd?
-				//1 means that we have 0 only => math.ceil(length/2) * order
-				//2 means that we can have -1 0 1 => -1 * (order) 
-				//3 means that we have -1 0 1
-				//4 means that we have -2 -1 0 1 2
+				//factors for position: parent, number of siblings 
+				//factors for margin: Same level nodes above and beyond, or we can calculate the height of each level in a trunk each time
 				length = Object.keys(parent.ideas).length; 
 				var arrange = -1*length + order;
 				var margin = (arrange * 20);
@@ -84,6 +80,7 @@ class mindmapView {
 				else{
 					if(arrange >= 0){
 						arrange = arrange + 1;
+						margin = (arrange * 20);
 					}
 				}
 				if(!parent.x || !parent.y){
