@@ -40,8 +40,10 @@ class mindmapView {
 		return graphics;
 	}
 	traverse(mindmap,processFunction,parent){
+		var count = 0;
 		for(var key in mindmap){
 			var obj = mindmap[key];
+			obj.order = count++;
 			processFunction(obj,parent,key);
 			this.traverse(obj.ideas,processFunction,obj);
 		}
@@ -54,7 +56,7 @@ class mindmapView {
 		var order;
 		var length;
 		this.traverse(tree,(mindmapObj,parent,key)=>{
-			var order = parseInt(key);
+			var order = mindmapObj.order; 
 			if(!parent){
 				 length = Math.ceil(tree.length/2);
 				 var arrange = -1*length + order;
@@ -69,9 +71,8 @@ class mindmapView {
 			else{
 				//factors for position: parent, number of siblings 
 				//factors for margin: Same level nodes above and beyond, or we can calculate the height of each level in a trunk each time
-				//var order = parent.ideas.indexOf(mindmapObj);
 				length = Object.keys(parent.ideas).length; 
-				var arrange = -1*length + order;
+				var arrange = -1*Math.ceil(length/2) + order;
 				var margin = (arrange * 20);
 				if(length == 1){
 					arrange = 0;
@@ -85,6 +86,7 @@ class mindmapView {
 				}
 				if(parent.title == "Concepts"){
 					console.log(arrange,margin,order);
+					console.log(mindmapObj.order);
 				}
 				if(!parent.x || !parent.y){
 					 x = px + 20*3;
