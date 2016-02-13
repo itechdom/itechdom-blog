@@ -74,19 +74,16 @@ class mindmapView {
 				//3 means that we have -1 0 1
 				//4 means that we have -2 -1 0 1 2
 				length = Object.keys(parent.ideas).length; 
-				console.log(order);
+				var arrange = -1*length + order;
+				var margin = (arrange * 20);
+
 				if(length == 1){
 					arrange = 0;
 					margin = 0;
 				}
 				else{
-					if(order > 0){
-						var arrange = -1*length + order - 1;
-						var margin = (arrange * 20);
-					}
-					else if(order < 0){
-						var arrange = -1*length + order - 1;
-						var margin = (arrange * 20);
+					if(arrange >= 0){
+						arrange = arrange + 1;
 					}
 				}
 				if(!parent.x || !parent.y){
