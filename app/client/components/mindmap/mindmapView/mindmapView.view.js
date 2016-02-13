@@ -84,17 +84,13 @@ class mindmapView {
 						margin = (arrange * 20);
 					}
 				}
-				if(parent.title == "Concepts"){
-					console.log(arrange,margin,order);
-					console.log(mindmapObj.order);
-				}
 				if(!parent.x || !parent.y){
 					 x = px + 20*3;
 					 y = py + (arrange*20);
 				}
 				else{
 					 x = parent.x + 20*3;
-					 y = parent.y + (arrange*20)+margin;
+					 y = parent.y + (arrange*20);
 				}
 				mindmapObj.x = x;
 				mindmapObj.y = y;
