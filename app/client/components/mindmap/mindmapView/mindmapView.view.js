@@ -67,9 +67,28 @@ class mindmapView {
 				 y = py;
 			}
 			else{
+				//factors here are: parents, number of siblings 
+				//it differs if the number of siblings is even or odd?
+				//1 means that we have 0 only => math.ceil(length/2) * order
+				//2 means that we can have -1 0 1 => -1 * (order) 
+				//3 means that we have -1 0 1
+				//4 means that we have -2 -1 0 1 2
 				length = Object.keys(parent.ideas).length; 
-				var arrange = -1 + -1*length + order;
-				var margin = (arrange * 20);
+				console.log(order);
+				if(length == 1){
+					arrange = 0;
+					margin = 0;
+				}
+				else{
+					if(order > 0){
+						var arrange = -1*length + order - 1;
+						var margin = (arrange * 20);
+					}
+					else if(order < 0){
+						var arrange = -1*length + order - 1;
+						var margin = (arrange * 20);
+					}
+				}
 				if(!parent.x || !parent.y){
 					 x = px + 20*3;
 					 y = py + (arrange*20);
