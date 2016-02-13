@@ -69,10 +69,10 @@ class mindmapView {
 			else{
 				//factors for position: parent, number of siblings 
 				//factors for margin: Same level nodes above and beyond, or we can calculate the height of each level in a trunk each time
+				//var order = parent.ideas.indexOf(mindmapObj);
 				length = Object.keys(parent.ideas).length; 
 				var arrange = -1*length + order;
 				var margin = (arrange * 20);
-
 				if(length == 1){
 					arrange = 0;
 					margin = 0;
@@ -82,6 +82,9 @@ class mindmapView {
 						arrange = arrange + 1;
 						margin = (arrange * 20);
 					}
+				}
+				if(parent.title == "Concepts"){
+					console.log(arrange,margin,order);
 				}
 				if(!parent.x || !parent.y){
 					 x = px + 20*3;
