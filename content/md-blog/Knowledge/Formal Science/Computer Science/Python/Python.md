@@ -1,11 +1,3 @@
-# Resources
-### https://en.wikipedia.org/wiki/Python_(programming_language)
-### https://github.com/faif/python-patterns
-### Python patterns
-# Starter Projects
-### https://github.com/geekcomputers/Python
-### https://github.com/search?o=desc&q=python&s=stars&type=Repositories&utf8=✓
-### Most starred github repos
 # Concepts
 ### Simplicity
 ### Python site Doc
@@ -139,8 +131,94 @@ The [_Glossary_](https://docs.python.org/3.5/glossary.html#glossary) is also w
         *   [16.1.4\. The Customization Modules](https://docs.python.org/3.5/tutorial/appendix.html#the-customization-modules)
 
 
-### http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
-### virtual env and pip
+# Starter Projects
+### https://github.com/search?o=desc&q=python&s=stars&type=Repositories&utf8=✓
+### Most starred github repos
+### Python Examples
+### https://github.com/geekcomputers/Python
+# Patterns
+### Decorator
+### Change behavior of an object with similar interface
+### @
+### http://stackoverflow.com/questions/6392739/what-does-the-at-symbol-do-in-python
+### https://www.python.org/dev/peps/pep-0318/
+### Example
+## Preamble
+
+## 
+
+
+
+I admit it took more than a few moments to fully grasp this concept for me, so I'll share what I've learned to save others the trouble.
+
+The name **decorator** - the thing we define using the `@` syntax before a function definition - was probably the main culprit here.
+
+
+
+## Example
+
+## 
+
+
+
+    class Pizza(object):
+        def __init__(self):
+            self.toppings = []
+        def __call__(self, topping):
+            # when using '@instance_of_pizza' before a function def
+            # the function gets passed onto 'topping'
+            self.toppings.append(topping())
+        def __repr__(self):
+            return str(self.toppings)
+
+    pizza = Pizza()
+
+    @pizza
+    def cheese():
+        return 'cheese'
+    @pizza
+    def sauce():
+        return 'sauce'
+
+    print pizza
+    # ['cheese', 'sauce']
+
+What this shows is that the `function`/`method`/`class` you're defining after a **decorator** is just basically passed on as an `argument` to the `function`/`method` immediatelly after the `@` sign.
+
+
+
+## First sighting
+
+## 
+
+
+
+The microframework **Flask** introduces **decorators** from the very beginning in the following format:
+
+    from flask import Flask
+    app = Flask(__name__)
+
+    @app.route("/")
+    def hello():
+        return "Hello World!"
+
+This in turn translates to:
+
+    rule      = "/"
+    view_func = hello
+    # they go as arguments here in 'flask/app.py'
+    def add_url_rule(self, rule, endpoint=None, view_func=None, **options):
+        pass
+
+Realizing this finally allowed me to feel at peace with flask.
+
+
+
+
+# Resources
+### https://en.wikipedia.org/wiki/Python_(programming_language)
+### https://github.com/faif/python-patterns
+### Python patterns
 # Third Party
 ### https://github.com/scikit-learn/scikit-learn
 ### ML in python
@@ -153,3 +231,13 @@ The [_Glossary_](https://docs.python.org/3.5/glossary.html#glossary) is also w
 ### https://github.com/kachayev/fn.py
 ### Python Rx
 ### https://github.com/ReactiveX/RxPY
+### virtual env and pip
+### http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
+### Jinja
+### Templating Engine
+### http://jinja.pocoo.org/
+### Werkzeug
+### WSGI
+### Web Server Gateway Interface
+### https://github.com/mitsuhiko/werkzeug
+### http://werkzeug.pocoo.org/

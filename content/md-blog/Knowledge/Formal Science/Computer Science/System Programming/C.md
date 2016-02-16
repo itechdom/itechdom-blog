@@ -33,6 +33,7 @@ C does not have a special provision for declaring multidimensional arrays, but r
 Multidimensional arrays are commonly used in numerical algorithms (mainly from applied [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra "Linear algebra")) to store matrices. The structure of the C array is well suited to this particular task. However, since arrays are passed merely as pointers, the bounds of the array must be known fixed values or else explicitly passed to any subroutine that requires them, and dynamically sized arrays of arrays cannot be accessed using double indexing. (A workaround for this is to allocate the array with an additional "row vector" of pointers to the columns.)
 
 C99 introduced "variable-length arrays" which address some, but not all, of the issues with ordinary C arrays.
+### bound checking is manual
 ### Array Pointer Interchangably
 ### Array–pointer interchangeability[[edit](https://en.wikipedia.org/w/index.php?title=C_(programming_language)&action=edit&section=19 "Edit section: Array–pointer interchangeability")]
 
@@ -73,6 +74,9 @@ Void pointers (`void *`) point to objects of unspecified type, and can therefore
 
 Careless use of pointers is potentially dangerous. Because they are typically unchecked, a pointer variable can be made to point to any arbitrary location, which can cause undesirable effects. Although properly used pointers point to safe places, they can be made to point to unsafe places by using invalid [pointer arithmetic](https://en.wikipedia.org/wiki/Pointer_arithmetic "Pointer arithmetic"); the objects they point to may be deallocated and reused ([dangling pointers](https://en.wikipedia.org/wiki/Dangling_pointer "Dangling pointer")); they may be used without having been initialized ([wild pointers](https://en.wikipedia.org/wiki/Wild_pointer "Wild pointer")); or they may be directly assigned an unsafe value using a cast, union, or through another corrupt pointer. In general, C is permissive in allowing manipulation of and conversion between pointer types, although compilers typically provide options for various levels of checking. Some other programming languages address these problems by using more restrictive [reference](https://en.wikipedia.org/wiki/Reference_(computer_science) "Reference (computer science)") types.
 ### a variable whose value is the address of another
+### Why use pointers
+### http://stackoverflow.com/questions/5580761/why-use-double-pointer-or-why-use-pointers-to-pointers
+### Great explanation
 ### Memory Management
 ## Memory management[[edit](https://en.wikipedia.org/w/index.php?title=C_(programming_language)&action=edit&section=20 "Edit section: Memory management")]
 
@@ -137,11 +141,19 @@ C has also been widely used to implement [end-user](https://en.wikipedia.org/wi
 ### Replacement for Assembly Language
 ### Portable
 Despite its low-level capabilities, the language was designed to encourage [cross-platform](https://en.wikipedia.org/wiki/Cross-platform "Cross-platform") programming. A standards-compliant and [portably](https://en.wikipedia.org/wiki/Porting "Porting") written C program can be compiled for a very wide variety of computer platforms and operating systems with few changes to its source code. The language has become available on a very wide range of platforms, from embedded [microcontrollers](https://en.wikipedia.org/wiki/Microcontroller "Microcontroller") to [supercomputers](https://en.wikipedia.org/wiki/Supercomputer "Supercomputer").
+# Project Starters
+# Current Standard
+### C11
+### C99
 # Resources
 ### https://en.wikipedia.org/wiki/C_(programming_language)
 ### Blogs
 ### Web Frameworks in C
 ### https://medium.com/@lucperkins/web-development-in-c-crazy-or-crazy-like-a-fox-ff723209f8f5#.9rf3jjlq5
+### How to c
+### https://matt.sh/howto-c
+### New C standard
+### http://www.c4learn.com/c-programming/c-double-pointer/
 # Third Party
 ### Web Framework
 ### https://kore.io/

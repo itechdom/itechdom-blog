@@ -21,6 +21,7 @@
 *   [C++ Web Programming](http://www.tutorialspoint.com/cplusplus/cpp_web_programming.htm)
 ### .h and .cpp
 ### header files are included instead of cpp
+### Namespaces
 # Pain Points
 ### references 
 ### Pointers

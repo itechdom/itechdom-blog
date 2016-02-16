@@ -1,9 +1,3 @@
-# Resources
-### http://regex.learncodethehardway.org/book/
-### Regex the hard way
-### Follow Along exercises
-### http://www.rexegg.com/regex-best-trick.html
-### Best Regex trick
 # Concepts
 ### Basics
 
@@ -146,3 +140,36 @@ myString =~ a #return the index of the first occurance 
 match = myString.split(a) # split a string by a(s)
 
 ```
+### You need to escape special chars to make them literal
+Similar to the DOT char. if you want to the actual . character (as in at the end of a sentence). Then you must escape it with \
+### Optional element
+### ?
+### http://regex.learncodethehardway.org/book/ex8.html
+### Repitition
+The regex symbol for "one-or-more" is + and for "zero-or-more" is *. Just like with the "optional" symbol ? you place it after the regex symbol or character set to repeat and that's it.
+### http://regex.learncodethehardway.org/book/ex9.html
+### More advanced
+*   Limit repetition in more complex ways.
+*   Group expressions.
+*   Alternate between one or more expressions.
+*   Special regex engine modifications for more complex tasks.
+### limiting the number
+*   If you put {X} in the same place you'd put a + (after something to repeat) then it will make sure that it is repeated X times.
+*   If you put {X,Y} then it will make sure it repeates at least X times, but not more than Y times.
+*   If you put a ? after any of the repetition symbols it means "non-greedy". This is unfortunate because ? also means "optional" but just remember that placing it after repetition means "non-greedy".
+### http://regex.learncodethehardway.org/book/ex10.html
+### example
+[0-9]{2}-[0-9]{2}-[0-9]{2,4}?
+
+The way to explain "non-greedy" is simply that most regex engines try to match repetition to the biggest part of the corpus text possible. If you run into situations where you're matching too much with repetition, then you can use ? to tell it to match the smallest repetition possible.  
+
+### http://regex.learncodethehardway.org/book/ex11.html
+# When not to use them
+### Infamous mail address Regex
+### Use lexer instead
+# Resources
+### http://regex.learncodethehardway.org/book/
+### Regex the hard way
+### Follow Along exercises
+### http://www.rexegg.com/regex-best-trick.html
+### Best Regex trick
