@@ -20,8 +20,6 @@ int main()
 	Proceed ("Test");  
 
 	return 0;
-}
-
 template <class TypeName>
 void Proceed(TypeName *ArrayName)
 {
