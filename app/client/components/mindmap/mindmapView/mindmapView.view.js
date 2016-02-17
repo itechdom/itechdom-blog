@@ -32,11 +32,11 @@ class mindmapView {
 
 	}
 	createBox(x,y){
-		var graphics = new PIXI.Graphics();
-		graphics.lineStyle(2, 0x0000FF, 1);
-		graphics.beginFill(0xFF700B, 1);
-		graphics.drawRect(x, y, 20, 20);
-		return graphics;
+		var box = new PIXI.Graphics();
+		box.lineStyle(2, 0x0000FF, 1);
+		box.beginFill(0xFF700B, 1);
+		box.drawRect(x, y, 20, 20);
+		return box;
 	}
 	traverse(mindmap,processFunction,parent){
 		var count = 0;
@@ -145,8 +145,8 @@ class mindmapView {
 		if (this.dragging)
 		{
 			var newPosition = this.data.getLocalPosition(this.parent);
-			this.position.x = this.data.global.x;
-			this.position.y = this.data.global.y;
+			this.position.x = newPosition.x;
+			this.position.y = newPosition.y;
 		}
 	}
 	constructor() {
