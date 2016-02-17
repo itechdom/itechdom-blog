@@ -18,14 +18,13 @@ class actionMain{
 			subject.onNext(reqRes);
 		}
 		else{
-
+			reqRes.res.write("\n NO ROUTE AVAILABLE!");
+			reqRes.res.end();
 		}
 	});
-
         return {
             req$: subject
         }
-
     }
 }
 module.exports = new actionMain();

@@ -7,8 +7,10 @@ var actions = require('./todo.actions.js');
 routerModel.routes['/todo'] = '/todo';
 //
 
-actions.route$.subscribe((reqRes)=>{
-	console.log("there's a todo");
+
+actions.req$.subscribe((reqRes)=>{
+	reqRes.res.write("\n Hello World \n");
+	reqRes.res.end();
 })
 
 /**actions.get$.subscribe((reqRes)=>{
