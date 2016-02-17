@@ -4,11 +4,11 @@ var routerModel = require('../router/router.model.js');
 var actions = require('./todo.actions.js');
 
 //register route
-routerModel.routes['todo'] = 'todo';
+routerModel.routes['/todo'] = '/todo';
 //
 
 actions.route$.subscribe((reqRes)=>{
-	console.log(reqRes);
+	console.log("there's a todo");
 })
 
 /**actions.get$.subscribe((reqRes)=>{
