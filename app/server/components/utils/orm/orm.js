@@ -1,7 +1,6 @@
 'use strict';
 var Rx = require('rx');
 var dispatcher = require('../dispatcher/dispatcher.js');
-var mongoose = require('mongoose');
 
 
 class ormMain{

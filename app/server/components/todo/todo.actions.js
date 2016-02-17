@@ -1,12 +1,16 @@
 'use strict';
 var Rx = require('rx');
 var serverActions = require('../server/server.actions.js');
+var routerActions = require('../router/router.actions.js');
+
 
 var req$ = serverActions.req$.filter((reqObj)=>{
 	return reqObj.req.url == "/todo";
 });
 
+
 var actions =  {
+	route$:routerActions.req$,
 	req$,
 	get$:req$.filter((reqObj)=>{
 		return reqObj.req.method == 'GET';
