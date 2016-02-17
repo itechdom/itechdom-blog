@@ -20,7 +20,6 @@ class mindmapView {
 		line.endFill();
 		return line;
 	}
-
 	createStyle(){
 		var style = {
 			font : 'bold italic 10px Arial',
@@ -58,15 +57,15 @@ class mindmapView {
 		this.traverse(tree,(mindmapObj,parent,key)=>{
 			var order = mindmapObj.order; 
 			if(!parent){
-				 length = Math.ceil(tree.length/2);
-				 var arrange = -1*length + order;
-				 var margin = (order * 20)+(order*20*5);
+				length = Math.ceil(tree.length/2);
+				var arrange = -1*length + order;
+				var margin = (order * 20)+(order*20*5);
 
-				 px = 0;
-				 py = 300 + (arrange*20)+20+margin;
+				px = 0;
+				py = 300 + (arrange*20)+20+margin;
 
-				 x = px;
-				 y = py;
+				x = px;
+				y = py;
 			}
 			else{
 				//factors for position: parent, number of siblings 
@@ -85,53 +84,70 @@ class mindmapView {
 					}
 				}
 				if(!parent.x || !parent.y){
-					 x = px + 20*3;
-					 y = py + (arrange*20);
+					x = px + 20*3;
+					y = py + (arrange*20);
 				}
 				else{
-					 x = parent.x + 20*3;
-					 y = parent.y + (arrange*20);
+					x = parent.x + 20*3;
+					y = parent.y + (arrange*20);
 				}
 				mindmapObj.x = x;
 				mindmapObj.y = y;
 			}
-			var box = this.createBox(x,y);
-			var sText = mindmapObj.title.slice(0,10);
-			var text = this.createText(x,y,sText);
-			this.stage.addChild(box);
-			this.stage.addChild(text);
+		var box = this.createBox(x,y);
+		// events for drag start
+		box
+			.on('mousedown', this.onDragStart)
+			.on('touchstart', this.onDragStart)
+			// events for drag end
+			.on('mouseup', this.onDragEnd)
+			.on('mouseupoutside', this.onDragEnd)
+			.on('touchend', this.onDragEnd)
+			.on('touchendoutside', this.onDragEnd)
+			// events for drag move
+			.on('mousemove', this.onDragMove)
+			.on('touchmove', this.onDragMove);
+
+		box.interactive = true;
+
+		var sText = mindmapObj.title.slice(0,10);
+		var text = this.createText(x,y,sText);
+		this.stage.addChild(box);
+		this.stage.addChild(text);
 		})
 		this.renderer.render(this.stage);
-	}
-	animate() {
-		var flag = false;
-		basicText.text = graphics.y;
-		if(graphics.y === 0 || flag){
-			flag = true;
-			graphics.x++;
-			graphics.y++;
-
-			graphics2.x = graphics2.x + 3;
-			graphics2.y = graphics2.y + 1;
-		}
-		if(graphics.y === 500 || !flag){
-			if(graphics.y ===  0){
-				flag = true;
-			}
-			else{
-				flag = false
-			}
-
-			graphics.x --;
-			graphics.y --;
-
-			graphics2.x = graphics2.x - 3;
-			graphics2.y = graphics2.y - 1;
-
-		}
-		graphics3.clear();
-		renderer.render(stage);
+		var that = this;
 		requestAnimationFrame( animate );
+		function animate() {
+			requestAnimationFrame(animate);
+			that.renderer.render(that.stage);
+		}
+	}
+	onDragStart(event)
+	{
+		// store a reference to the data
+		// the reason for this is because of multitouch
+		// we want to track the movement of this particular touch
+		this.data = event.data;
+		this.alpha = 0.5;
+		this.dragging = true;
+	}
+
+	onDragEnd()
+	{
+		this.alpha = 1;
+		this.dragging = false;
+		// set the interaction data to null
+		this.data = null;
+	}
+	onDragMove()
+	{
+		if (this.dragging)
+		{
+			var newPosition = this.data.getLocalPosition(this.parent);
+			this.position.x = this.data.global.x;
+			this.position.y = this.data.global.y;
+		}
 	}
 	constructor() {
 		this.renderer = PIXI.autoDetectRenderer(1000, 1000, { antialias: true });
@@ -139,5 +155,7 @@ class mindmapView {
 		this.stage = new PIXI.Container();
 		this.stage.interactive = true;
 	}
+
+
 }
 module.exports = new mindmapView();
