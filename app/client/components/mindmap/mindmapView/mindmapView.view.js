@@ -5,11 +5,11 @@ var PIXI = require('pixi.js');
 
 class mindmapView {
 
-	createText(x,y,text){
+	createText(text){
 		var style = this.createStyle();
 		var basicText = new PIXI.Text(text,style);
-		basicText.x = x;
-		basicText.y = y;
+		basicText.x = 0;
+		basicText.y = 0;
 		return basicText;
 	}
 	createLine(box1,box2){
@@ -31,11 +31,11 @@ class mindmapView {
 		return style;
 
 	}
-	createBox(x,y){
+	createBox(){
 		var box = new PIXI.Graphics();
 		box.lineStyle(2, 0x0000FF, 1);
 		box.beginFill(0xFF700B, 1);
-		box.drawRect(x, y, 20, 20);
+		box.drawRect(0, 0, 20, 20);
 		return box;
 	}
 	traverse(mindmap,processFunction,parent){
@@ -94,7 +94,7 @@ class mindmapView {
 				mindmapObj.x = x;
 				mindmapObj.y = y;
 			}
-		var box = this.createBox(x,y);
+		var box = this.createBox();
 		// events for drag start
 		box
 			.on('mousedown', this.onDragStart)
@@ -110,10 +110,17 @@ class mindmapView {
 
 		box.interactive = true;
 
+		var container = new PIXI.Container();
+		container.x = x;
+		container.y = y;
+
 		var sText = mindmapObj.title.slice(0,10);
-		var text = this.createText(x,y,sText);
-		this.stage.addChild(box);
-		this.stage.addChild(text);
+		var text = this.createText(sText);
+		container.addChild(box);
+		container.addChild(text);
+
+		this.stage.addChild(container);
+
 		})
 		this.renderer.render(this.stage);
 		var that = this;
