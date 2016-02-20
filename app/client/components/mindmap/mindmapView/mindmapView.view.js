@@ -47,7 +47,12 @@ class mindmapView {
 			this.traverse(obj.ideas,processFunction,obj);
 		}
 	}
+	update(tree){
+
+
+	}
 	render(tree){
+		this.tree = tree;
 		var count;
 		var x,y;
 		var px,py;
@@ -97,16 +102,16 @@ class mindmapView {
 		var box = this.createBox();
 		// events for drag start
 		box
-			.on('mousedown', this.onDragStart)
-			.on('touchstart', this.onDragStart)
+			.on('mousedown', onDragStart)
+			.on('touchstart', onDragStart)
 			// events for drag end
-			.on('mouseup', this.onDragEnd)
-			.on('mouseupoutside', this.onDragEnd)
-			.on('touchend', this.onDragEnd)
-			.on('touchendoutside', this.onDragEnd)
+			.on('mouseup', onDragEnd)
+			.on('mouseupoutside', onDragEnd)
+			.on('touchend', onDragEnd)
+			.on('touchendoutside', onDragEnd)
 			// events for drag move
-			.on('mousemove', this.onDragMove)
-			.on('touchmove', this.onDragMove);
+			.on('mousemove', onDragMove)
+			.on('touchmove', onDragMove);
 
 		box.interactive = true;
 
@@ -129,32 +134,36 @@ class mindmapView {
 			requestAnimationFrame(animate);
 			that.renderer.render(that.stage);
 		}
-	}
-	onDragStart(event)
-	{
-		// store a reference to the data
-		// the reason for this is because of multitouch
-		// we want to track the movement of this particular touch
-		this.data = event.data;
-		this.alpha = 0.5;
-		this.dragging = true;
-	}
-
-	onDragEnd()
-	{
-		this.alpha = 1;
-		this.dragging = false;
-		// set the interaction data to null
-		this.data = null;
-	}
-	onDragMove()
-	{
-		if (this.dragging)
+		function onDragStart(event)
 		{
-			var newPosition = this.data.getLocalPosition(this.parent);
-			this.position.x = newPosition.x;
-			this.position.y = newPosition.y;
+			// store a reference to the data
+			// the reason for this is because of multitouch
+			// we want to track the movement of this particular touch
+			this.data = event.data;
+			this.alpha = 0.5;
+			this.dragging = true;
 		}
+
+		function onDragEnd()
+		{
+			this.alpha = 1;
+			this.dragging = false;
+			// set the interaction data to null
+			this.data = null;
+			//rerender the tree;
+			that.update(that.tree);
+
+		}
+		function onDragMove()
+		{
+			if (this.dragging)
+			{
+				var newPosition = this.data.getLocalPosition(this.parent);
+				this.position.x = newPosition.x;
+				this.position.y = newPosition.y;
+			}
+		}
+
 	}
 	constructor() {
 		this.renderer = PIXI.autoDetectRenderer(1000, 1000, { antialias: true });
