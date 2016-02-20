@@ -47,9 +47,8 @@ class mindmapView {
 			this.traverse(obj.ideas,processFunction,obj);
 		}
 	}
-	update(tree){
-
-
+	update(node){
+		console.log(node);
 	}
 	render(tree){
 		this.tree = tree;
@@ -116,20 +115,23 @@ class mindmapView {
 		box.interactive = true;
 
 		var container = new PIXI.Container();
-		container.x = x;
-		container.y = y;
+		box.x = x;
+		box.y = y;
 
 		var sText = mindmapObj.title.slice(0,10);
 		var text = this.createText(sText);
-		container.addChild(box);
-		container.addChild(text);
 
-		this.stage.addChild(container);
+		box.addChild(text);
+
+		this.stage.addChild(box);
 
 		})
 		this.renderer.render(this.stage);
+
 		var that = this;
+
 		requestAnimationFrame( animate );
+
 		function animate() {
 			requestAnimationFrame(animate);
 			that.renderer.render(that.stage);
@@ -151,8 +153,7 @@ class mindmapView {
 			// set the interaction data to null
 			this.data = null;
 			//rerender the tree;
-			that.update(that.tree);
-
+			that.update(this);
 		}
 		function onDragMove()
 		{
