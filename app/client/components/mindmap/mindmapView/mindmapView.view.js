@@ -89,6 +89,8 @@ class mindmapView {
 			mindmapObj.parent = parent;
 			box.obj = mindmapObj;
 
+
+			//calculate initial position if the tree doesn't have one already set
 			if(!parent){
 
 				length = Math.ceil(tree.length/2);
