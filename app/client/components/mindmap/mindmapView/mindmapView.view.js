@@ -48,7 +48,16 @@ class mindmapView {
 		}
 	}
 	update(node){
-		console.log(node);
+		var obj;
+		//change children
+		for (var key in node.obj.ideas){
+			obj = node.obj.ideas[key];	
+			obj.box.x = obj.box.x + 3
+		};
+
+		//change siblings if needed?
+		//chekc if the sibling overlaps, if so, show either a merge icon or a replace order icon
+		console.log(node.obj.parent)
 	}
 	render(tree){
 		this.tree = tree;
@@ -99,6 +108,10 @@ class mindmapView {
 				mindmapObj.y = y;
 			}
 		var box = this.createBox();
+		//store a reference to the object here
+		mindmapObj.box = box;
+		mindmapObj.parent = parent;
+		box.obj = mindmapObj;
 		// events for drag start
 		box
 			.on('mousedown', onDragStart)
@@ -154,6 +167,8 @@ class mindmapView {
 			this.data = null;
 			//rerender the tree;
 			that.update(this);
+
+			//save the new tree
 		}
 		function onDragMove()
 		{
