@@ -2,7 +2,8 @@
 
 void swap(int *num1, int *num2);
 
-void main() {
+int main(int argc, char *argv[]) {
+	int h[] = {1,2,3,4};
 	int x, y;
 
 	printf("\nEnter First number : ");
@@ -15,6 +16,8 @@ void main() {
 	swap(&x, &y); // Function Call - Pass By Reference
 
 	printf("\nAfter Swaping x = %d and y = %d", x, y);
+
+	return 0;
 }
 
 void swap(int *num1, int *num2) {
