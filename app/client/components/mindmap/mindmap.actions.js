@@ -2,6 +2,7 @@
 var Rx = require('rx');
 var clientActions = require('../client/client.actions.js')
 var load = require("promise?bluebird!./mindmap.js");
+var $ = require('jquery');
 
 class mindmapAction{
 
@@ -14,11 +15,13 @@ class mindmapAction{
 		}
 		actions.request$.subscribe(()=>{
 
-				load().then(function(file) {
-
-				});
+			$('app').empty();
+			load().then(function(file) {
+				new file();
+			});
 
 		});
+
 
 		return actions;
 	}

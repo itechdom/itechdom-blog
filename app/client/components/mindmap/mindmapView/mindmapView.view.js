@@ -205,7 +205,7 @@ class mindmapView {
 	}
 	constructor() {
 		this.renderer = PIXI.autoDetectRenderer(1000, 1000, { antialias: true });
-		document.body.appendChild(this.renderer.view);
+		$('app').append(this.renderer.view);
 		this.stage = new PIXI.Container();
 		this.stage.interactive = true;
 	}
