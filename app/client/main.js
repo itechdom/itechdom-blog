@@ -1,4 +1,3 @@
-var Rx = require('rx');
 require("font-awesome/scss/font-awesome.scss");
 require("./src/scss/main.scss");
 //require("./components/blog/blog.actions.js");

@@ -16,6 +16,7 @@ class mindmapAction{
 		actions.request$.subscribe(()=>{
 
 			$('app').empty();
+
 			load().then(function(file) {
 				new file();
 			});
