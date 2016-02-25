@@ -9,7 +9,6 @@ bower_components/
 *.iml
 *.swp
 .tmp/
-dist/
 atlassian-ide-plugin.xml
 workspace.xml
 .DS_Store
