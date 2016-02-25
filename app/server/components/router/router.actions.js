@@ -13,6 +13,7 @@ class actionMain{
 
 	//subscibe the subject to the soruce (request)
 	request$.subscribe((reqRes)=>{
+		console.log(reqRes);
 		if(routerModel.routes[reqRes.req.url]){
 			console.log("there's a route");
 			subject.onNext(reqRes);

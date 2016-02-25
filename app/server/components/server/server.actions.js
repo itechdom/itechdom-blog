@@ -12,6 +12,12 @@ var req$ = fromEvent(server,'request',function(req,res){
 	}
 });
 
+server.on('connection',function(socket){
+	console.log(socket);
+	//closes socket to the server
+	socket.end();
+});
+
 var actions =   {
 	req$:req$
 }

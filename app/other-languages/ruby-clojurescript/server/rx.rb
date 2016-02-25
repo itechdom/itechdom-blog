@@ -8,6 +8,7 @@ sub  = Rx::Subject.new
 
 b.subscribe(sub)
 
+
 a.subscribe {|data| sub.on_next(data)}
 
 
