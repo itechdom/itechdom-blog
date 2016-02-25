@@ -1,0 +1,19 @@
+/* ************************************************
+
+ATOMS.SCSS
+basic ui components with distinct properties such as buttons, inputs, labels etc.
+
+************************************************ */
+
+// Contextual stylings for text
+@import "_text.scss";
+
+// Icons
+@import "_icons.scss";
+
+// Inputs - dropdown
+@import "_inputs.scss";
+
+// Buttons
+@import "_buttons.scss";
+

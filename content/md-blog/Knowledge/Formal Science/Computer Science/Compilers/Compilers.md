@@ -1,0 +1,14 @@
+# Concepts
+### AST
+### Interpreted vs compiled
+### Compiled versus interpreted languages[Edit](https://en.m.wikipedia.org/wiki/Compilers#/editor/6 "Edit section: Compiled versus interpreted languages")
+
+Higher-level programming languages usually appear with a type of [translation](https://en.m.wikipedia.org/wiki/Translator_(computing) "Translator (computing)") in mind: either designed as [compiled language](https://en.m.wikipedia.org/wiki/Compiled_language "Compiled language") or [interpreted language](https://en.m.wikipedia.org/wiki/Interpreted_language "Interpreted language"). However, in practice there is rarely anything about a language that _requires_ it to be exclusively compiled or exclusively interpreted, although it is possible to design languages that rely on re-interpretation at run time. The categorization usually reflects the most popular or widespread implementations of a language — for instance, [BASIC](https://en.m.wikipedia.org/wiki/BASIC "BASIC") is sometimes called an interpreted language, and C a compiled one, despite the existence of BASIC compilers and C interpreters.
+
+Interpretation does not replace compilation completely. It only hides it from the user and makes it gradual. Even though an interpreter can itself be interpreted, a directly executed program is needed somewhere at the bottom of the stack (see [machine language](https://en.m.wikipedia.org/wiki/Machine_language "Machine language")). Modern trends toward[just-in-time compilation](https://en.m.wikipedia.org/wiki/Just-in-time_compilation "Just-in-time compilation") and [bytecode interpretation](https://en.m.wikipedia.org/wiki/Bytecode "Bytecode") at times blur the traditional categorizations of compilers and interpreters.
+
+Some language specifications spell out that implementations _must_ include a compilation facility; for example, [Common Lisp](https://en.m.wikipedia.org/wiki/Common_Lisp "Common Lisp"). However, there is nothing inherent in the definition of Common Lisp that stops it from being interpreted. Other languages have features that are very easy to implement in an interpreter, but make writing a compiler much harder; for example, [APL](https://en.m.wikipedia.org/wiki/APL_(programming_language) "APL (programming language)"),[SNOBOL4](https://en.m.wikipedia.org/wiki/SNOBOL4 "SNOBOL4"), and many scripting languages allow programs to construct arbitrary source code at runtime with regular string operations, and then execute that code by passing it to a special[evaluation function](https://en.m.wikipedia.org/wiki/Eval "Eval"). To implement these features in a compiled language, programs must usually be shipped with a [runtime library](https://en.m.wikipedia.org/wiki/Runtime_library "Runtime library") that includes a version of the compiler itself.
+### Doesn't matter as long as  there's a compiler or interpreter
+# Resources
+### http://prog21.dadgum.com/30.html
+### how to write a compiler

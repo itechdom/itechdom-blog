@@ -6,6 +6,8 @@ var sync = require('run-sequence');
 
 
 var options = {
+  client:'./app/client/',
+  server:'./app/server/',
   src: './app/client/main.js',
   dist: './dist/',
   main:'./app/',
@@ -28,7 +30,7 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 });
 
 gulp.task('default', function(done){
-  sync('webpack:build-dev', 'serve:client' , 'serve:server' , 'watch', done);
+  sync('webpack:build-dev', 'serve:client' , 'watch', done);
 });
 gulp.task('presentation', function(done){
   sync('mindmap:presentation' , 'watch:presentation', done);

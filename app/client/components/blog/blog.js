@@ -14,9 +14,9 @@ class blogMain{
 		this.view = view;
 		this.model = model;
 		actions.request$.subscribe(()=>{
-			this.model.getBlog().then((data)=>{
-				this.view.render(data);
-			})
+			var data = this.model.getBlog();
+			console.log(data);
+			this.view.render(data);
 		});
 	}
 }

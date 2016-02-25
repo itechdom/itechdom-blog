@@ -8,7 +8,7 @@ var Rx = require('rx');
 var view = require('./slides.view.js');
 var actions = require("./slides.actions.js");
 var model = require("./slides.model.js");
-
+window.$ = $;
 
 class slidesMain{
 
