@@ -5,13 +5,6 @@ var load = require("promise?bluebird!./slides.js");
 
 class actionMain{
 
-<<<<<<< HEAD
-    constructor(){
-        return {
-            request$: clientActions['changeRoute$']            
-        }
-    }
-=======
 	constructor(){
 
 		var actions =  {
@@ -30,7 +23,6 @@ class actionMain{
 
 		return actions;
 	}
->>>>>>> master
 }
 
 module.exports = new actionMain();
