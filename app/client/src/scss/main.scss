@@ -49,13 +49,3 @@ BEM
 // 5-MOLECULES: groups of elements (atoms) that function as a unit
 // ----------------------------------------------------------
 @import "5-molecules/_molecules.scss";
-
-//------------------------------
-//6-Templates: A list of molecules
-//------------------------------
-@import "6-templates/_templates.scss";
-
-// ----------------------------------------------------------
-// 7-Pages: Replaced instead of trumps 
-// ----------------------------------------------------------
-@import "7-pages/_pages.scss";
