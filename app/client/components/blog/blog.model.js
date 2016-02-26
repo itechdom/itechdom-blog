@@ -1,10 +1,7 @@
 'use strict';
 var Rx = require('rx');
 var actions = require('./blog.actions.js');
-
-var blogs = require('../../../../content/blog-published/Intro\ to\ Elm.blog.json');
-
-var blogList = JSON.parse(blogs);
+var publishedBlogs = require('../../../../content/published-blog/blogs.json');
 
 class blogModel{
 
@@ -15,7 +12,8 @@ class blogModel{
 		}
 	}
 	getBlog(){
-		return blogList;
+		console.log(JSON.parse(publishedBlogs));
+		return publishedBlogs;
 	}
 	insertBlog(blog){
 
