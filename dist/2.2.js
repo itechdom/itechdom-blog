@@ -1,5 +1,5 @@
-webpackJsonp([2],Array(43).concat([
-/* 43 */
+webpackJsonp([2],Array(47).concat([
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
@@ -9,9 +9,9 @@ webpackJsonp([2],Array(43).concat([
 	//global.Color = require('color');
 	//global.Hammer = require('jquery-hammerjs/jquery.hammer.js');
 	//require('jquery.hotkeys');
-	var view = __webpack_require__(44);
-	var actions = __webpack_require__(41);
-	var model = __webpack_require__(181);
+	var view = __webpack_require__(48);
+	var actions = __webpack_require__(45);
+	var model = __webpack_require__(185);
 
 	class mindmapMain {
 
@@ -27,14 +27,14 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 44 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var template = __webpack_require__(45);
+	var template = __webpack_require__(49);
 	var $ = __webpack_require__(19);
-	var PIXI = __webpack_require__(46);
+	var PIXI = __webpack_require__(50);
 
 	class mindmapView {
 
@@ -228,27 +228,27 @@ webpackJsonp([2],Array(43).concat([
 	module.exports = new mindmapView();
 
 /***/ },
-/* 45 */
+/* 49 */
 /***/ function(module, exports) {
 
 	module.exports = "<h1>hello</h1>\n"
 
 /***/ },
-/* 46 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// run the polyfills
-	__webpack_require__(47);
+	__webpack_require__(51);
 
-	var core = module.exports = __webpack_require__(52);
+	var core = module.exports = __webpack_require__(56);
 
 	// add core plugins.
-	core.extras         = __webpack_require__(113);
-	core.filters        = __webpack_require__(120);
-	core.interaction    = __webpack_require__(148);
-	core.loaders        = __webpack_require__(152);
-	core.mesh           = __webpack_require__(171);
-	core.accessibility  = __webpack_require__(177);
+	core.extras         = __webpack_require__(117);
+	core.filters        = __webpack_require__(124);
+	core.interaction    = __webpack_require__(152);
+	core.loaders        = __webpack_require__(156);
+	core.mesh           = __webpack_require__(175);
+	core.accessibility  = __webpack_require__(181);
 
 	// export a premade loader instance
 	/**
@@ -261,7 +261,7 @@ webpackJsonp([2],Array(43).concat([
 	core.loader = new core.loaders.Loader();
 
 	// mixin the deprecation features.
-	Object.assign(core, __webpack_require__(180));
+	Object.assign(core, __webpack_require__(184));
 
 	// Always export pixi globally.
 	global.PIXI = core;
@@ -269,16 +269,16 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 47 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(48);
-	__webpack_require__(50);
-	__webpack_require__(51);
+	__webpack_require__(52);
+	__webpack_require__(54);
+	__webpack_require__(55);
 
 
 /***/ },
-/* 48 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// References:
@@ -287,12 +287,12 @@ webpackJsonp([2],Array(43).concat([
 
 	if (!Object.assign)
 	{
-	    Object.assign = __webpack_require__(49);
+	    Object.assign = __webpack_require__(53);
 	}
 
 
 /***/ },
-/* 49 */
+/* 53 */
 /***/ function(module, exports) {
 
 	/* eslint-disable no-unused-vars */
@@ -337,7 +337,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 50 */
+/* 54 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// References:
@@ -410,7 +410,7 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 51 */
+/* 55 */
 /***/ function(module, exports) {
 
 	// References:
@@ -430,7 +430,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 52 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -444,53 +444,53 @@ webpackJsonp([2],Array(43).concat([
 	 * @namespace PIXI
 	 */
 	// export core and const. We assign core to const so that the non-reference types in const remain in-tact
-	var core = module.exports = Object.assign(__webpack_require__(53), __webpack_require__(55), {
+	var core = module.exports = Object.assign(__webpack_require__(57), __webpack_require__(59), {
 	    // utils
-	    utils: __webpack_require__(63),
-	    ticker: __webpack_require__(67),
+	    utils: __webpack_require__(67),
+	    ticker: __webpack_require__(71),
 
 	    // display
-	    DisplayObject:          __webpack_require__(69),
-	    Container:              __webpack_require__(81),
+	    DisplayObject:          __webpack_require__(73),
+	    Container:              __webpack_require__(85),
 
 	    // sprites
-	    Sprite:                 __webpack_require__(82),
-	    ParticleContainer:      __webpack_require__(84),
-	    SpriteRenderer:         __webpack_require__(85),
-	    ParticleRenderer:       __webpack_require__(101),
+	    Sprite:                 __webpack_require__(86),
+	    ParticleContainer:      __webpack_require__(88),
+	    SpriteRenderer:         __webpack_require__(89),
+	    ParticleRenderer:       __webpack_require__(105),
 
 	    // text
-	    Text:                   __webpack_require__(104),
+	    Text:                   __webpack_require__(108),
 
 	    // primitives
-	    Graphics:               __webpack_require__(105),
-	    GraphicsData:           __webpack_require__(107),
-	    GraphicsRenderer:       __webpack_require__(108),
+	    Graphics:               __webpack_require__(109),
+	    GraphicsData:           __webpack_require__(111),
+	    GraphicsRenderer:       __webpack_require__(112),
 
 	    // textures
-	    Texture:                __webpack_require__(72),
-	    BaseTexture:            __webpack_require__(71),
-	    RenderTexture:          __webpack_require__(70),
-	    VideoBaseTexture:       __webpack_require__(73),
-	    TextureUvs:             __webpack_require__(74),
+	    Texture:                __webpack_require__(76),
+	    BaseTexture:            __webpack_require__(75),
+	    RenderTexture:          __webpack_require__(74),
+	    VideoBaseTexture:       __webpack_require__(77),
+	    TextureUvs:             __webpack_require__(78),
 
 	    // renderers - canvas
-	    CanvasRenderer:         __webpack_require__(111),
-	    CanvasGraphics:         __webpack_require__(106),
-	    CanvasBuffer:           __webpack_require__(80),
+	    CanvasRenderer:         __webpack_require__(115),
+	    CanvasGraphics:         __webpack_require__(110),
+	    CanvasBuffer:           __webpack_require__(84),
 
 	    // renderers - webgl
-	    WebGLRenderer:          __webpack_require__(87),
-	    WebGLManager:          __webpack_require__(78),
-	    ShaderManager:          __webpack_require__(89),
-	    Shader:                 __webpack_require__(91),
-	    ObjectRenderer:         __webpack_require__(86),
-	    RenderTarget:           __webpack_require__(75),
+	    WebGLRenderer:          __webpack_require__(91),
+	    WebGLManager:          __webpack_require__(82),
+	    ShaderManager:          __webpack_require__(93),
+	    Shader:                 __webpack_require__(95),
+	    ObjectRenderer:         __webpack_require__(90),
+	    RenderTarget:           __webpack_require__(79),
 
 	    // filters - webgl
-	    AbstractFilter:         __webpack_require__(96),
-	    FXAAFilter:             __webpack_require__(100),
-	    SpriteMaskFilter:       __webpack_require__(95),
+	    AbstractFilter:         __webpack_require__(100),
+	    FXAAFilter:             __webpack_require__(104),
+	    SpriteMaskFilter:       __webpack_require__(99),
 
 	    /**
 	     * This helper function will automatically detect which renderer you should be using.
@@ -527,7 +527,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 53 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -543,7 +543,7 @@ webpackJsonp([2],Array(43).concat([
 	     * @constant
 	     * @property {string} VERSION
 	     */
-	    VERSION: __webpack_require__(54).version,
+	    VERSION: __webpack_require__(58).version,
 
 	    /**
 	     * @property {number} PI_2 - Two Pi
@@ -754,13 +754,13 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 54 */
+/* 58 */
 /***/ function(module, exports) {
 
 	module.exports = "{\n  \"_args\": [\n    [\n      \"pixi.js\",\n      \"/Users/osama.alghanmi/Desktop/Experiments/itechdom-blog\"\n    ]\n  ],\n  \"_from\": \"pixi.js@*\",\n  \"_id\": \"pixi.js@3.0.9\",\n  \"_inCache\": true,\n  \"_installable\": true,\n  \"_location\": \"/pixi.js\",\n  \"_nodeVersion\": \"4.2.1\",\n  \"_npmUser\": {\n    \"email\": \"englercj@live.com\",\n    \"name\": \"englercj\"\n  },\n  \"_npmVersion\": \"2.14.7\",\n  \"_phantomChildren\": {},\n  \"_requested\": {\n    \"name\": \"pixi.js\",\n    \"raw\": \"pixi.js\",\n    \"rawSpec\": \"\",\n    \"scope\": null,\n    \"spec\": \"*\",\n    \"type\": \"range\"\n  },\n  \"_requiredBy\": [\n    \"/\"\n  ],\n  \"_resolved\": \"https://registry.npmjs.org/pixi.js/-/pixi.js-3.0.9.tgz\",\n  \"_shasum\": \"2dc18c388a7c6d329dd064defbdb2aadea70c861\",\n  \"_shrinkwrap\": null,\n  \"_spec\": \"pixi.js\",\n  \"_where\": \"/Users/osama.alghanmi/Desktop/Experiments/itechdom-blog\",\n  \"author\": {\n    \"name\": \"Mat Groves\"\n  },\n  \"browserify\": {\n    \"transform\": [\n      \"brfs\"\n    ]\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/pixijs/pixi.js/issues\"\n  },\n  \"contributors\": [\n    {\n      \"name\": \"Chad Engler\",\n      \"email\": \"chad@pantherdev.com\"\n    },\n    {\n      \"name\": \"Richard Davey\",\n      \"email\": \"rdavey@gmail.com\"\n    }\n  ],\n  \"dependencies\": {\n    \"async\": \"^1.5.0\",\n    \"brfs\": \"^1.4.1\",\n    \"earcut\": \"^2.0.7\",\n    \"eventemitter3\": \"^1.1.1\",\n    \"object-assign\": \"^4.0.1\",\n    \"resource-loader\": \"^1.6.4\"\n  },\n  \"description\": \"Pixi.js is a fast lightweight 2D library that works across all devices.\",\n  \"devDependencies\": {\n    \"browserify\": \"^11.1.0\",\n    \"chai\": \"^3.2.0\",\n    \"del\": \"^2.0.2\",\n    \"gulp\": \"^3.9.0\",\n    \"gulp-cached\": \"^1.1.0\",\n    \"gulp-concat\": \"^2.6.0\",\n    \"gulp-debug\": \"^2.1.0\",\n    \"gulp-header\": \"^1.7.1\",\n    \"gulp-jshint\": \"^1.11.2\",\n    \"gulp-mirror\": \"^0.4.0\",\n    \"gulp-plumber\": \"^1.0.1\",\n    \"gulp-rename\": \"^1.2.2\",\n    \"gulp-sourcemaps\": \"^1.5.2\",\n    \"gulp-uglify\": \"^1.4.1\",\n    \"gulp-util\": \"^3.0.6\",\n    \"jaguarjs-jsdoc\": \"git+https://github.com/davidshimjs/jaguarjs-jsdoc.git\",\n    \"jsdoc\": \"^3.3.2\",\n    \"jshint-summary\": \"^0.4.0\",\n    \"minimist\": \"^1.2.0\",\n    \"mocha\": \"^2.3.2\",\n    \"require-dir\": \"^0.3.0\",\n    \"run-sequence\": \"^1.1.2\",\n    \"testem\": \"^0.9.4\",\n    \"vinyl-buffer\": \"^1.0.0\",\n    \"vinyl-source-stream\": \"^1.1.0\",\n    \"watchify\": \"^3.4.0\"\n  },\n  \"directories\": {},\n  \"dist\": {\n    \"shasum\": \"2dc18c388a7c6d329dd064defbdb2aadea70c861\",\n    \"tarball\": \"http://registry.npmjs.org/pixi.js/-/pixi.js-3.0.9.tgz\"\n  },\n  \"files\": [\n    \"CONTRIBUTING.md\",\n    \"LICENSE\",\n    \"README.md\",\n    \"bin/\",\n    \"package.json\",\n    \"src/\"\n  ],\n  \"gitHead\": \"962f5bdff1ed2d96cfeaef22897ed83b7cce79bd\",\n  \"homepage\": \"http://goodboydigital.com/\",\n  \"license\": \"MIT\",\n  \"main\": \"./src/index.js\",\n  \"maintainers\": [\n    {\n      \"name\": \"englercj\",\n      \"email\": \"englercj@live.com\"\n    }\n  ],\n  \"name\": \"pixi.js\",\n  \"optionalDependencies\": {},\n  \"readme\": \"ERROR: No README data found!\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/pixijs/pixi.js.git\"\n  },\n  \"scripts\": {\n    \"build\": \"gulp\",\n    \"docs\": \"jsdoc -c ./gulp/util/jsdoc.conf.json -R README.md\",\n    \"start\": \"gulp && gulp watch\",\n    \"test\": \"gulp && testem ci\"\n  },\n  \"version\": \"3.0.9\"\n}\n"
 
 /***/ },
-/* 55 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -774,19 +774,19 @@ webpackJsonp([2],Array(43).concat([
 	    // to avoid circular dependencies and cut down on
 	    // internal module requires.
 
-	    Point:      __webpack_require__(56),
-	    Matrix:     __webpack_require__(57),
+	    Point:      __webpack_require__(60),
+	    Matrix:     __webpack_require__(61),
 
-	    Circle:     __webpack_require__(58),
-	    Ellipse:    __webpack_require__(60),
-	    Polygon:    __webpack_require__(61),
-	    Rectangle:  __webpack_require__(59),
-	    RoundedRectangle: __webpack_require__(62)
+	    Circle:     __webpack_require__(62),
+	    Ellipse:    __webpack_require__(64),
+	    Polygon:    __webpack_require__(65),
+	    Rectangle:  __webpack_require__(63),
+	    RoundedRectangle: __webpack_require__(66)
 	};
 
 
 /***/ },
-/* 56 */
+/* 60 */
 /***/ function(module, exports) {
 
 	/**
@@ -860,14 +860,14 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 57 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @todo - ignore the too many parameters warning for now
 	// should either fix it or change the jshint config
 	// jshint -W072
 
-	var Point = __webpack_require__(56);
+	var Point = __webpack_require__(60);
 
 	/**
 	 * The pixi Matrix class as an object, which makes it a lot faster,
@@ -1304,11 +1304,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 58 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Rectangle = __webpack_require__(59),
-	    CONST = __webpack_require__(53);
+	var Rectangle = __webpack_require__(63),
+	    CONST = __webpack_require__(57);
 
 	/**
 	 * The Circle object can be used to specify a hit area for displayObjects
@@ -1396,10 +1396,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 59 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var CONST = __webpack_require__(53);
+	var CONST = __webpack_require__(57);
 
 	/**
 	 * the Rectangle object is an area defined by its position, as indicated by its top-left corner point (x, y) and by its width and its height.
@@ -1494,11 +1494,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 60 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Rectangle = __webpack_require__(59),
-	    CONST = __webpack_require__(53);
+	var Rectangle = __webpack_require__(63),
+	    CONST = __webpack_require__(57);
 
 	/**
 	 * The Ellipse object can be used to specify a hit area for displayObjects
@@ -1593,11 +1593,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 61 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Point = __webpack_require__(56),
-	    CONST = __webpack_require__(53);
+	var Point = __webpack_require__(60),
+	    CONST = __webpack_require__(57);
 
 	/**
 	 * @class
@@ -1700,10 +1700,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 62 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var CONST = __webpack_require__(53);
+	var CONST = __webpack_require__(57);
 
 	/**
 	 * The Rounded Rectangle object is an area that has nice rounded corners, as indicated by its top-left corner point (x, y) and by its width and its height and its radius.
@@ -1796,10 +1796,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 63 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var CONST = __webpack_require__(53);
+	var CONST = __webpack_require__(57);
 
 	/**
 	 * @namespace PIXI.utils
@@ -1808,9 +1808,9 @@ webpackJsonp([2],Array(43).concat([
 	    _uid: 0,
 	    _saidHello: false,
 
-	    EventEmitter:   __webpack_require__(64),
-	    pluginTarget:   __webpack_require__(65),
-	    async:          __webpack_require__(66),
+	    EventEmitter:   __webpack_require__(68),
+	    pluginTarget:   __webpack_require__(69),
+	    async:          __webpack_require__(70),
 
 	    /**
 	     * Gets the next unique identifier
@@ -2077,7 +2077,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 64 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2345,7 +2345,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 65 */
+/* 69 */
 /***/ function(module, exports) {
 
 	/**
@@ -2419,7 +2419,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 66 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, setImmediate, process) {/*!
@@ -3688,13 +3688,13 @@ webpackJsonp([2],Array(43).concat([
 
 	}());
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(34).setImmediate, __webpack_require__(22)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(38).setImmediate, __webpack_require__(22)))
 
 /***/ },
-/* 67 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Ticker = __webpack_require__(68);
+	var Ticker = __webpack_require__(72);
 
 	/**
 	 * The shared ticker instance used by {@link PIXI.extras.MovieClip}.
@@ -3751,11 +3751,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 68 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var CONST = __webpack_require__(53),
-	    EventEmitter = __webpack_require__(64),
+	var CONST = __webpack_require__(57),
+	    EventEmitter = __webpack_require__(68),
 	    // Internal event used by composed emitter
 	    TICK = 'tick';
 
@@ -4110,13 +4110,13 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 69 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var math = __webpack_require__(55),
-	    RenderTexture = __webpack_require__(70),
-	    EventEmitter = __webpack_require__(64),
-	    CONST = __webpack_require__(53),
+	var math = __webpack_require__(59),
+	    RenderTexture = __webpack_require__(74),
+	    EventEmitter = __webpack_require__(68),
+	    CONST = __webpack_require__(57),
 	    _tempMatrix = new math.Matrix(),
 	    _tempDisplayObjectParent = {worldTransform:new math.Matrix(), worldAlpha:1, children:[]};
 
@@ -4678,16 +4678,16 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 70 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var BaseTexture = __webpack_require__(71),
-	    Texture = __webpack_require__(72),
-	    RenderTarget = __webpack_require__(75),
-	    FilterManager = __webpack_require__(77),
-	    CanvasBuffer = __webpack_require__(80),
-	    math = __webpack_require__(55),
-	    CONST = __webpack_require__(53),
+	var BaseTexture = __webpack_require__(75),
+	    Texture = __webpack_require__(76),
+	    RenderTarget = __webpack_require__(79),
+	    FilterManager = __webpack_require__(81),
+	    CanvasBuffer = __webpack_require__(84),
+	    math = __webpack_require__(59),
+	    CONST = __webpack_require__(57),
 	    tempMatrix = new math.Matrix();
 
 	/**
@@ -5161,12 +5161,12 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 71 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var utils = __webpack_require__(63),
-	    CONST = __webpack_require__(53),
-	    EventEmitter = __webpack_require__(64);
+	var utils = __webpack_require__(67),
+	    CONST = __webpack_require__(57),
+	    EventEmitter = __webpack_require__(68);
 
 	/**
 	 * A texture stores the information that represents an image. All textures have a base texture.
@@ -5600,15 +5600,15 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 72 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var BaseTexture = __webpack_require__(71),
-	    VideoBaseTexture = __webpack_require__(73),
-	    TextureUvs = __webpack_require__(74),
-	    EventEmitter = __webpack_require__(64),
-	    math = __webpack_require__(55),
-	    utils = __webpack_require__(63);
+	var BaseTexture = __webpack_require__(75),
+	    VideoBaseTexture = __webpack_require__(77),
+	    TextureUvs = __webpack_require__(78),
+	    EventEmitter = __webpack_require__(68),
+	    math = __webpack_require__(59),
+	    utils = __webpack_require__(67);
 
 	/**
 	 * A texture stores the information that represents an image or part of an image. It cannot be added
@@ -6030,11 +6030,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 73 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var BaseTexture = __webpack_require__(71),
-	    utils = __webpack_require__(63);
+	var BaseTexture = __webpack_require__(75),
+	    utils = __webpack_require__(67);
 
 	/**
 	 * A texture of a [playing] Video.
@@ -6271,7 +6271,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 74 */
+/* 78 */
 /***/ function(module, exports) {
 
 	
@@ -6344,14 +6344,14 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 75 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var math = __webpack_require__(55),
-	    utils = __webpack_require__(63),
-	    CONST = __webpack_require__(53),
+	var math = __webpack_require__(59),
+	    utils = __webpack_require__(67),
+	    CONST = __webpack_require__(57),
 	    //StencilManager = require('../managers/StencilManager'),
-	    StencilMaskStack = __webpack_require__(76);
+	    StencilMaskStack = __webpack_require__(80);
 
 	/**
 	 * @author Mat Groves http://matgroves.com/ @Doormat23
@@ -6670,7 +6670,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 76 */
+/* 80 */
 /***/ function(module, exports) {
 
 	/**
@@ -6707,14 +6707,14 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 77 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var WebGLManager = __webpack_require__(78),
-	    RenderTarget = __webpack_require__(75),
-	    CONST = __webpack_require__(53),
-	    Quad = __webpack_require__(79),
-	    math =  __webpack_require__(55);
+	var WebGLManager = __webpack_require__(82),
+	    RenderTarget = __webpack_require__(79),
+	    CONST = __webpack_require__(57),
+	    Quad = __webpack_require__(83),
+	    math =  __webpack_require__(59);
 
 	/**
 	 * @class
@@ -7163,7 +7163,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 78 */
+/* 82 */
 /***/ function(module, exports) {
 
 	/**
@@ -7208,7 +7208,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 79 */
+/* 83 */
 /***/ function(module, exports) {
 
 	/**
@@ -7367,7 +7367,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 80 */
+/* 84 */
 /***/ function(module, exports) {
 
 	/**
@@ -7471,13 +7471,13 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 81 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var math = __webpack_require__(55),
-	    utils = __webpack_require__(63),
-	    DisplayObject = __webpack_require__(69),
-	    RenderTexture = __webpack_require__(70),
+	var math = __webpack_require__(59),
+	    utils = __webpack_require__(67),
+	    DisplayObject = __webpack_require__(73),
+	    RenderTexture = __webpack_require__(74),
 	    _tempMatrix = new math.Matrix();
 
 	/**
@@ -8119,15 +8119,15 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 82 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var math = __webpack_require__(55),
-	    Texture = __webpack_require__(72),
-	    Container = __webpack_require__(81),
-	    CanvasTinter = __webpack_require__(83),
-	    utils = __webpack_require__(63),
-	    CONST = __webpack_require__(53),
+	var math = __webpack_require__(59),
+	    Texture = __webpack_require__(76),
+	    Container = __webpack_require__(85),
+	    CanvasTinter = __webpack_require__(87),
+	    utils = __webpack_require__(67),
+	    CONST = __webpack_require__(57),
 	    tempPoint = new math.Point();
 
 	/**
@@ -8706,10 +8706,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 83 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var utils = __webpack_require__(63);
+	var utils = __webpack_require__(67);
 
 	/**
 	 * Utility methods for Sprite/Texture tinting.
@@ -8962,11 +8962,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 84 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Container = __webpack_require__(81),
-	    CONST = __webpack_require__(53);
+	var Container = __webpack_require__(85),
+	    CONST = __webpack_require__(57);
 
 	/**
 	 * The ParticleContainer class is a really fast version of the Container built solely for speed,
@@ -9285,12 +9285,12 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 85 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var ObjectRenderer = __webpack_require__(86),
-	    WebGLRenderer = __webpack_require__(87),
-	    CONST = __webpack_require__(53);
+	var ObjectRenderer = __webpack_require__(90),
+	    WebGLRenderer = __webpack_require__(91),
+	    CONST = __webpack_require__(57);
 
 	/**
 	 * @author Mat Groves
@@ -9762,10 +9762,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 86 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var WebGLManager = __webpack_require__(78);
+	var WebGLManager = __webpack_require__(82);
 
 	/**
 	 * Base for a common object renderer that can be used as a system renderer plugin.
@@ -9824,20 +9824,20 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 87 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var SystemRenderer = __webpack_require__(88),
-	    ShaderManager = __webpack_require__(89),
-	    MaskManager = __webpack_require__(94),
-	    StencilManager = __webpack_require__(98),
-	    FilterManager = __webpack_require__(77),
-	    BlendModeManager = __webpack_require__(99),
-	    RenderTarget = __webpack_require__(75),
-	    ObjectRenderer = __webpack_require__(86),
-	    FXAAFilter = __webpack_require__(100),
-	    utils = __webpack_require__(63),
-	    CONST = __webpack_require__(53);
+	var SystemRenderer = __webpack_require__(92),
+	    ShaderManager = __webpack_require__(93),
+	    MaskManager = __webpack_require__(98),
+	    StencilManager = __webpack_require__(102),
+	    FilterManager = __webpack_require__(81),
+	    BlendModeManager = __webpack_require__(103),
+	    RenderTarget = __webpack_require__(79),
+	    ObjectRenderer = __webpack_require__(90),
+	    FXAAFilter = __webpack_require__(104),
+	    utils = __webpack_require__(67),
+	    CONST = __webpack_require__(57);
 
 	/**
 	 * The WebGLRenderer draws the scene and all its content onto a webGL enabled canvas. This renderer
@@ -10416,13 +10416,13 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 88 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var utils = __webpack_require__(63),
-	    math = __webpack_require__(55),
-	    CONST = __webpack_require__(53),
-	    EventEmitter = __webpack_require__(64);
+	var utils = __webpack_require__(67),
+	    math = __webpack_require__(59),
+	    CONST = __webpack_require__(57),
+	    EventEmitter = __webpack_require__(68);
 
 	/**
 	 * The CanvasRenderer draws the scene and all its content onto a 2d canvas. This renderer should be used for browsers that do not support webGL.
@@ -10681,14 +10681,14 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 89 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var WebGLManager = __webpack_require__(78),
-	    TextureShader = __webpack_require__(90),
-	    ComplexPrimitiveShader = __webpack_require__(92),
-	    PrimitiveShader = __webpack_require__(93),
-	    utils = __webpack_require__(63);
+	var WebGLManager = __webpack_require__(82),
+	    TextureShader = __webpack_require__(94),
+	    ComplexPrimitiveShader = __webpack_require__(96),
+	    PrimitiveShader = __webpack_require__(97),
+	    utils = __webpack_require__(67);
 
 	/**
 	 * @class
@@ -10854,10 +10854,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 90 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Shader = __webpack_require__(91);
+	var Shader = __webpack_require__(95);
 
 	/**
 	 * @class
@@ -10969,11 +10969,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 91 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*global console */
-	var utils = __webpack_require__(63);
+	var utils = __webpack_require__(67);
 
 	/**
 	 * Base shader class for PIXI managed shaders.
@@ -11537,10 +11537,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 92 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Shader = __webpack_require__(91);
+	var Shader = __webpack_require__(95);
 
 	/**
 	 * This shader is used to draw complex primitive shapes for {@link PIXI.Graphics}.
@@ -11603,10 +11603,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 93 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Shader = __webpack_require__(91);
+	var Shader = __webpack_require__(95);
 
 	/**
 	 * This shader is used to draw simple primitive shapes for {@link PIXI.Graphics}.
@@ -11670,11 +11670,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 94 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var WebGLManager = __webpack_require__(78),
-	    AlphaMaskFilter = __webpack_require__(95);
+	var WebGLManager = __webpack_require__(82),
+	    AlphaMaskFilter = __webpack_require__(99);
 
 	/**
 	 * @class
@@ -11789,14 +11789,14 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 95 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var AbstractFilter = __webpack_require__(96),
-	    math =  __webpack_require__(55);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var AbstractFilter = __webpack_require__(100),
+	    math =  __webpack_require__(59);
 
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * The SpriteMaskFilter class
@@ -11891,10 +11891,10 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 96 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var DefaultShader = __webpack_require__(90);
+	var DefaultShader = __webpack_require__(94);
 
 	/**
 	 * This is the base class for creating a PIXI filter. Currently only WebGL supports filters.
@@ -12007,18 +12007,18 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 97 */
+/* 101 */
 /***/ function(module, exports) {
 
 	console.log("I'm `fs` modules");
 
 
 /***/ },
-/* 98 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var WebGLManager = __webpack_require__(78),
-	    utils = __webpack_require__(63);
+	var WebGLManager = __webpack_require__(82),
+	    utils = __webpack_require__(67);
 
 	/**
 	 * @class
@@ -12364,10 +12364,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 99 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var WebGLManager = __webpack_require__(78);
+	var WebGLManager = __webpack_require__(82);
 
 	/**
 	 * @class
@@ -12412,12 +12412,12 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 100 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var AbstractFilter = __webpack_require__(96);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var AbstractFilter = __webpack_require__(100);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 *
@@ -12472,14 +12472,14 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 101 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var ObjectRenderer = __webpack_require__(86),
-	    WebGLRenderer = __webpack_require__(87),
-	    ParticleShader = __webpack_require__(102),
-	    ParticleBuffer = __webpack_require__(103),
-	    math            = __webpack_require__(55);
+	var ObjectRenderer = __webpack_require__(90),
+	    WebGLRenderer = __webpack_require__(91),
+	    ParticleShader = __webpack_require__(106),
+	    ParticleBuffer = __webpack_require__(107),
+	    math            = __webpack_require__(59);
 
 	/**
 	 * @author Mat Groves
@@ -12952,10 +12952,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 102 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var TextureShader = __webpack_require__(90);
+	var TextureShader = __webpack_require__(94);
 
 	/**
 	 * @class
@@ -13034,7 +13034,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 103 */
+/* 107 */
 /***/ function(module, exports) {
 
 	
@@ -13258,14 +13258,14 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 104 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Sprite = __webpack_require__(82),
-	    Texture = __webpack_require__(72),
-	    math = __webpack_require__(55),
-	    utils = __webpack_require__(63),
-	    CONST = __webpack_require__(53);
+	var Sprite = __webpack_require__(86),
+	    Texture = __webpack_require__(76),
+	    math = __webpack_require__(59),
+	    utils = __webpack_require__(67),
+	    CONST = __webpack_require__(57);
 
 	/**
 	 * A Text Object will create a line or multiple lines of text. To split a line you can use '\n' in your text string,
@@ -13883,16 +13883,16 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 105 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Container = __webpack_require__(81),
-	    Texture = __webpack_require__(72),
-	    CanvasBuffer = __webpack_require__(80),
-	    CanvasGraphics = __webpack_require__(106),
-	    GraphicsData = __webpack_require__(107),
-	    math = __webpack_require__(55),
-	    CONST = __webpack_require__(53),
+	var Container = __webpack_require__(85),
+	    Texture = __webpack_require__(76),
+	    CanvasBuffer = __webpack_require__(84),
+	    CanvasGraphics = __webpack_require__(110),
+	    GraphicsData = __webpack_require__(111),
+	    math = __webpack_require__(59),
+	    CONST = __webpack_require__(57),
 	    tempPoint = new math.Point();
 
 	/**
@@ -15072,10 +15072,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 106 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var CONST = __webpack_require__(53);
+	var CONST = __webpack_require__(57);
 
 	/**
 	 * A set of functions used by the canvas renderer to draw the primitive graphics data.
@@ -15430,7 +15430,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 107 */
+/* 111 */
 /***/ function(module, exports) {
 
 	/**
@@ -15527,16 +15527,16 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 108 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var utils = __webpack_require__(63),
-	    math = __webpack_require__(55),
-	    CONST = __webpack_require__(53),
-	    ObjectRenderer = __webpack_require__(86),
-	    WebGLRenderer = __webpack_require__(87),
-	    WebGLGraphicsData = __webpack_require__(109),
-	    earcut = __webpack_require__(110);
+	var utils = __webpack_require__(67),
+	    math = __webpack_require__(59),
+	    CONST = __webpack_require__(57),
+	    ObjectRenderer = __webpack_require__(90),
+	    WebGLRenderer = __webpack_require__(91),
+	    WebGLGraphicsData = __webpack_require__(113),
+	    earcut = __webpack_require__(114);
 
 	/**
 	 * Renders the graphics object.
@@ -16436,7 +16436,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 109 */
+/* 113 */
 /***/ function(module, exports) {
 
 	/**
@@ -16558,7 +16558,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 110 */
+/* 114 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -17148,14 +17148,14 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 111 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var SystemRenderer = __webpack_require__(88),
-	    CanvasMaskManager = __webpack_require__(112),
-	    utils = __webpack_require__(63),
-	    math = __webpack_require__(55),
-	    CONST = __webpack_require__(53);
+	var SystemRenderer = __webpack_require__(92),
+	    CanvasMaskManager = __webpack_require__(116),
+	    utils = __webpack_require__(67),
+	    math = __webpack_require__(59),
+	    CONST = __webpack_require__(57);
 
 	/**
 	 * The CanvasRenderer draws the scene and all its content onto a 2d canvas. This renderer should be used for browsers that do not support webGL.
@@ -17420,10 +17420,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 112 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var CanvasGraphics = __webpack_require__(106);
+	var CanvasGraphics = __webpack_require__(110);
 
 	/**
 	 * A set of functions used to handle masking.
@@ -17486,7 +17486,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 113 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17496,25 +17496,25 @@ webpackJsonp([2],Array(43).concat([
 	 * @license     {@link https://github.com/pixijs/pixi.js/blob/master/LICENSE|MIT License}
 	 */
 
-	__webpack_require__(114);
-	__webpack_require__(115);
-	__webpack_require__(116);
+	__webpack_require__(118);
+	__webpack_require__(119);
+	__webpack_require__(120);
 
 	/**
 	 * @namespace PIXI.extras
 	 */
 	module.exports = {
-	    MovieClip:      __webpack_require__(117),
-	    TilingSprite:   __webpack_require__(118),
-	    BitmapText:     __webpack_require__(119)
+	    MovieClip:      __webpack_require__(121),
+	    TilingSprite:   __webpack_require__(122),
+	    BitmapText:     __webpack_require__(123)
 	};
 
 
 /***/ },
-/* 114 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52),
+	var core = __webpack_require__(56),
 	    DisplayObject = core.DisplayObject,
 	    _tempMatrix = new core.Matrix();
 
@@ -17787,10 +17787,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 115 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52);
+	var core = __webpack_require__(56);
 
 	/**
 	 * The instance name of the object.
@@ -17821,10 +17821,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 116 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52);
+	var core = __webpack_require__(56);
 
 	/**
 	* Returns the global position of the displayObject
@@ -17855,10 +17855,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 117 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52);
+	var core = __webpack_require__(56);
 
 	/**
 	 * A MovieClip is a simple way to display an animation depicted by a list of textures.
@@ -18179,13 +18179,13 @@ webpackJsonp([2],Array(43).concat([
 	};
 
 /***/ },
-/* 118 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52),
+	var core = __webpack_require__(56),
 	    // a sprite use dfor rendering textures..
 	    tempPoint = new core.Point(),
-	    CanvasTinter = __webpack_require__(83);
+	    CanvasTinter = __webpack_require__(87);
 
 	/**
 	 * A tiling sprite is a fast way of rendering a tiling image
@@ -18635,10 +18635,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 119 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52);
+	var core = __webpack_require__(56);
 
 	/**
 	 * A BitmapText object will create a line or multiple lines of text using bitmap font. To
@@ -19027,7 +19027,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 120 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19041,41 +19041,41 @@ webpackJsonp([2],Array(43).concat([
 	 * @namespace PIXI.filters
 	 */
 	module.exports = {
-	    AsciiFilter:        __webpack_require__(121),
-	    BloomFilter:        __webpack_require__(122),
-	    BlurFilter:         __webpack_require__(125),
-	    BlurXFilter:        __webpack_require__(123),
-	    BlurYFilter:        __webpack_require__(124),
-	    BlurDirFilter:      __webpack_require__(126),
-	    ColorMatrixFilter:  __webpack_require__(127),
-	    ColorStepFilter:    __webpack_require__(128),
-	    ConvolutionFilter:  __webpack_require__(129),
-	    CrossHatchFilter:   __webpack_require__(130),
-	    DisplacementFilter: __webpack_require__(131),
-	    DotScreenFilter:    __webpack_require__(132),
-	    GrayFilter:         __webpack_require__(133),
-	    DropShadowFilter:   __webpack_require__(134),
-	    InvertFilter:       __webpack_require__(136),
-	    NoiseFilter:        __webpack_require__(137),
-	    PixelateFilter:     __webpack_require__(138),
-	    RGBSplitFilter:     __webpack_require__(139),
-	    ShockwaveFilter:    __webpack_require__(140),
-	    SepiaFilter:        __webpack_require__(141),
-	    SmartBlurFilter:    __webpack_require__(142),
-	    TiltShiftFilter:    __webpack_require__(143),
-	    TiltShiftXFilter:   __webpack_require__(144),
-	    TiltShiftYFilter:   __webpack_require__(146),
-	    TwistFilter:        __webpack_require__(147)
+	    AsciiFilter:        __webpack_require__(125),
+	    BloomFilter:        __webpack_require__(126),
+	    BlurFilter:         __webpack_require__(129),
+	    BlurXFilter:        __webpack_require__(127),
+	    BlurYFilter:        __webpack_require__(128),
+	    BlurDirFilter:      __webpack_require__(130),
+	    ColorMatrixFilter:  __webpack_require__(131),
+	    ColorStepFilter:    __webpack_require__(132),
+	    ConvolutionFilter:  __webpack_require__(133),
+	    CrossHatchFilter:   __webpack_require__(134),
+	    DisplacementFilter: __webpack_require__(135),
+	    DotScreenFilter:    __webpack_require__(136),
+	    GrayFilter:         __webpack_require__(137),
+	    DropShadowFilter:   __webpack_require__(138),
+	    InvertFilter:       __webpack_require__(140),
+	    NoiseFilter:        __webpack_require__(141),
+	    PixelateFilter:     __webpack_require__(142),
+	    RGBSplitFilter:     __webpack_require__(143),
+	    ShockwaveFilter:    __webpack_require__(144),
+	    SepiaFilter:        __webpack_require__(145),
+	    SmartBlurFilter:    __webpack_require__(146),
+	    TiltShiftFilter:    __webpack_require__(147),
+	    TiltShiftXFilter:   __webpack_require__(148),
+	    TiltShiftYFilter:   __webpack_require__(150),
+	    TwistFilter:        __webpack_require__(151)
 	};
 
 
 /***/ },
-/* 121 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	// TODO (cengler) - The Y is flipped in this shader for some reason.
 
@@ -19132,12 +19132,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 122 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52),
-	    BlurXFilter = __webpack_require__(123),
-	    BlurYFilter = __webpack_require__(124);
+	var core = __webpack_require__(56),
+	    BlurXFilter = __webpack_require__(127),
+	    BlurYFilter = __webpack_require__(128);
 
 	/**
 	 * The BloomFilter applies a Gaussian blur to an object.
@@ -19237,12 +19237,12 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 123 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * The BlurXFilter applies a horizontal Gaussian blur to an object.
@@ -19335,12 +19335,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 124 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * The BlurYFilter applies a horizontal Gaussian blur to an object.
@@ -19426,12 +19426,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 125 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52),
-	    BlurXFilter = __webpack_require__(123),
-	    BlurYFilter = __webpack_require__(124);
+	var core = __webpack_require__(56),
+	    BlurXFilter = __webpack_require__(127),
+	    BlurYFilter = __webpack_require__(128);
 
 	/**
 	 * The BlurFilter applies a Gaussian blur to an object.
@@ -19540,11 +19540,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 126 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
-	var fs = __webpack_require__(97);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * The BlurDirFilter applies a Gaussian blur toward a direction to an object.
@@ -19687,12 +19687,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 127 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * The ColorMatrixFilter class lets you apply a 5x4 matrix transformation on the RGBA
@@ -20228,12 +20228,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 128 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * This lowers the color depth of your image by the given amount, producing an image with a smaller palette.
@@ -20282,12 +20282,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 129 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * The ConvolutionFilter class applies a matrix convolution filter effect.
@@ -20378,12 +20378,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 130 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * A Cross Hatch effect filter.
@@ -20409,12 +20409,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 131 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * The DisplacementFilter class uses the pixel values from the specified texture (called the displacement map) to perform a displacement of an object.
@@ -20498,12 +20498,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 132 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * @author Mat Groves http://matgroves.com/ @Doormat23
@@ -20575,12 +20575,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 133 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * This greyscales the palette of your Display Objects.
@@ -20629,12 +20629,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 134 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52),
-	    BlurXFilter = __webpack_require__(123),
-	    BlurYTintFilter = __webpack_require__(135);
+	var core = __webpack_require__(56),
+	    BlurXFilter = __webpack_require__(127),
+	    BlurYTintFilter = __webpack_require__(139);
 
 	/**
 	 * The DropShadowFilter applies a Gaussian blur to an object.
@@ -20826,13 +20826,13 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 135 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * The BlurYTintFilter applies a vertical Gaussian blur to an object.
@@ -20922,12 +20922,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 136 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * This inverts your Display Objects colors.
@@ -20977,12 +20977,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 137 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * @author Vico @vicocotea
@@ -21037,12 +21037,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 138 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * This filter applies a pixelate effect making display objects appear 'blocky'.
@@ -21093,12 +21093,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 139 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * An RGB Split Filter.
@@ -21184,12 +21184,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 140 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * The ColorMatrixFilter class lets you apply a 4x4 matrix transformation on the RGBA
@@ -21277,12 +21277,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 141 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * This applies a sepia effect to your Display Objects.
@@ -21332,12 +21332,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 142 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * A Smart Blur Filter.
@@ -21367,12 +21367,12 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 143 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52),
-	    TiltShiftXFilter = __webpack_require__(144),
-	    TiltShiftYFilter = __webpack_require__(146);
+	var core = __webpack_require__(56),
+	    TiltShiftXFilter = __webpack_require__(148),
+	    TiltShiftYFilter = __webpack_require__(150);
 
 	/**
 	 * @author Vico @vicocotea
@@ -21481,10 +21481,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 144 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var TiltShiftAxisFilter = __webpack_require__(145);
+	var TiltShiftAxisFilter = __webpack_require__(149);
 
 	/**
 	 * @author Vico @vicocotea
@@ -21523,12 +21523,12 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 145 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * @author Vico @vicocotea
@@ -21653,10 +21653,10 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 146 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var TiltShiftAxisFilter = __webpack_require__(145);
+	var TiltShiftAxisFilter = __webpack_require__(149);
 
 	/**
 	 * @author Vico @vicocotea
@@ -21695,12 +21695,12 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 147 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(52);
+	/* WEBPACK VAR INJECTION */(function(__dirname) {var core = __webpack_require__(56);
 	// @see https://github.com/substack/brfs/issues/25
-	var fs = __webpack_require__(97);
+	var fs = __webpack_require__(101);
 
 	/**
 	 * This filter applies a twist effect making display objects appear twisted in the given direction.
@@ -21785,7 +21785,7 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
-/* 148 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21799,17 +21799,17 @@ webpackJsonp([2],Array(43).concat([
 	 * @namespace PIXI.interaction
 	 */
 	module.exports = {
-	    InteractionData:    __webpack_require__(149),
-	    InteractionManager: __webpack_require__(150),
-	    interactiveTarget:  __webpack_require__(151)
+	    InteractionData:    __webpack_require__(153),
+	    InteractionManager: __webpack_require__(154),
+	    interactiveTarget:  __webpack_require__(155)
 	};
 
 
 /***/ },
-/* 149 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52);
+	var core = __webpack_require__(56);
 
 	/**
 	 * Holds all information related to an Interaction event
@@ -21859,16 +21859,16 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 150 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52),
-	    InteractionData = __webpack_require__(149);
+	var core = __webpack_require__(56),
+	    InteractionData = __webpack_require__(153);
 
 	// Mix interactiveTarget into core.DisplayObject.prototype
 	Object.assign(
 	    core.DisplayObject.prototype,
-	    __webpack_require__(151)
+	    __webpack_require__(155)
 	);
 
 	/**
@@ -22739,7 +22739,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 151 */
+/* 155 */
 /***/ function(module, exports) {
 
 	/**
@@ -22792,7 +22792,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 152 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22806,24 +22806,24 @@ webpackJsonp([2],Array(43).concat([
 	 * @namespace PIXI.loaders
 	 */
 	module.exports = {
-	    Loader:             __webpack_require__(153),
+	    Loader:             __webpack_require__(157),
 
 	    // parsers
-	    bitmapFontParser:   __webpack_require__(170),
-	    spritesheetParser:  __webpack_require__(168),
-	    textureParser:      __webpack_require__(167),
-	    Resource:           __webpack_require__(154).Resource
+	    bitmapFontParser:   __webpack_require__(174),
+	    spritesheetParser:  __webpack_require__(172),
+	    textureParser:      __webpack_require__(171),
+	    Resource:           __webpack_require__(158).Resource
 	};
 
 
 /***/ },
-/* 153 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var ResourceLoader = __webpack_require__(154),
-	    textureParser = __webpack_require__(167),
-	    spritesheetParser = __webpack_require__(168),
-	    bitmapFontParser = __webpack_require__(170);
+	var ResourceLoader = __webpack_require__(158),
+	    textureParser = __webpack_require__(171),
+	    spritesheetParser = __webpack_require__(172),
+	    bitmapFontParser = __webpack_require__(174);
 
 	/**
 	 *
@@ -22883,31 +22883,31 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 154 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(155);
+	module.exports = __webpack_require__(159);
 
-	module.exports.Resource = __webpack_require__(163);
+	module.exports.Resource = __webpack_require__(167);
 
 	module.exports.middleware = {
 	    caching: {
-	        memory: __webpack_require__(164)
+	        memory: __webpack_require__(168)
 	    },
 	    parsing: {
-	        blob: __webpack_require__(165)
+	        blob: __webpack_require__(169)
 	    }
 	};
 
 
 /***/ },
-/* 155 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var async       = __webpack_require__(156),
-	    urlParser   = __webpack_require__(157),
-	    Resource    = __webpack_require__(163),
-	    EventEmitter = __webpack_require__(64);
+	var async       = __webpack_require__(160),
+	    urlParser   = __webpack_require__(161),
+	    Resource    = __webpack_require__(167),
+	    EventEmitter = __webpack_require__(68);
 
 	/**
 	 * Manages the state and loading of multiple resources to load.
@@ -23363,7 +23363,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 156 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process, setImmediate) {/*!
@@ -24490,10 +24490,10 @@ webpackJsonp([2],Array(43).concat([
 
 	}());
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(22), __webpack_require__(34).setImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(22), __webpack_require__(38).setImmediate))
 
 /***/ },
-/* 157 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -24519,8 +24519,8 @@ webpackJsonp([2],Array(43).concat([
 
 	'use strict';
 
-	var punycode = __webpack_require__(158);
-	var util = __webpack_require__(159);
+	var punycode = __webpack_require__(162);
+	var util = __webpack_require__(163);
 
 	exports.parse = urlParse;
 	exports.resolve = urlResolve;
@@ -24595,7 +24595,7 @@ webpackJsonp([2],Array(43).concat([
 	      'gopher:': true,
 	      'file:': true
 	    },
-	    querystring = __webpack_require__(160);
+	    querystring = __webpack_require__(164);
 
 	function urlParse(url, parseQueryString, slashesDenoteHost) {
 	  if (url && util.isObject(url) && url instanceof Url) return url;
@@ -25231,7 +25231,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 158 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*! https://mths.be/punycode v1.3.2 by @mathias */
@@ -25766,7 +25766,7 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(21)(module), (function() { return this; }())))
 
 /***/ },
-/* 159 */
+/* 163 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25788,17 +25788,17 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 160 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	exports.decode = exports.parse = __webpack_require__(161);
-	exports.encode = exports.stringify = __webpack_require__(162);
+	exports.decode = exports.parse = __webpack_require__(165);
+	exports.encode = exports.stringify = __webpack_require__(166);
 
 
 /***/ },
-/* 161 */
+/* 165 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -25884,7 +25884,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 162 */
+/* 166 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -25954,11 +25954,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 163 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var EventEmitter = __webpack_require__(64),
-	    _url = __webpack_require__(157),
+	var EventEmitter = __webpack_require__(68),
+	    _url = __webpack_require__(161),
 	    // tests is CORS is supported in XHR, if not we need to use XDR
 	    useXdr = !!(window.XDomainRequest && !('withCredentials' in (new XMLHttpRequest()))),
 	    tempAnchor = null;
@@ -26760,7 +26760,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 164 */
+/* 168 */
 /***/ function(module, exports) {
 
 	// a simple in-memory cache for resources
@@ -26786,11 +26786,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 165 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Resource = __webpack_require__(163),
-	    b64 = __webpack_require__(166);
+	var Resource = __webpack_require__(167),
+	    b64 = __webpack_require__(170);
 
 	window.URL = window.URL || window.webkitURL;
 
@@ -26850,7 +26850,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 166 */
+/* 170 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -26920,10 +26920,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 167 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52);
+	var core = __webpack_require__(56);
 
 	module.exports = function ()
 	{
@@ -26946,12 +26946,12 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 168 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Resource = __webpack_require__(154).Resource,
-	    path = __webpack_require__(169),
-	    core = __webpack_require__(52);
+	var Resource = __webpack_require__(158).Resource,
+	    path = __webpack_require__(173),
+	    core = __webpack_require__(56);
 
 	module.exports = function ()
 	{
@@ -27034,7 +27034,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 169 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -27265,13 +27265,13 @@ webpackJsonp([2],Array(43).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(22)))
 
 /***/ },
-/* 170 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Resource = __webpack_require__(154).Resource,
-	    core = __webpack_require__(52),
-	    extras = __webpack_require__(113),
-	    path = __webpack_require__(169);
+	var Resource = __webpack_require__(158).Resource,
+	    core = __webpack_require__(56),
+	    extras = __webpack_require__(117),
+	    path = __webpack_require__(173);
 
 
 	function parse(resource, texture) {
@@ -27390,7 +27390,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 171 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27404,19 +27404,19 @@ webpackJsonp([2],Array(43).concat([
 	 * @namespace PIXI.mesh
 	 */
 	module.exports = {
-	    Mesh:           __webpack_require__(172),
-	    Plane:           __webpack_require__(173),
-	    Rope:           __webpack_require__(174),
-	    MeshRenderer:   __webpack_require__(175),
-	    MeshShader:     __webpack_require__(176)
+	    Mesh:           __webpack_require__(176),
+	    Plane:           __webpack_require__(177),
+	    Rope:           __webpack_require__(178),
+	    MeshRenderer:   __webpack_require__(179),
+	    MeshShader:     __webpack_require__(180)
 	};
 
 
 /***/ },
-/* 172 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52),
+	var core = __webpack_require__(56),
 	    tempPoint = new core.Point(),
 	    tempPolygon = new core.Polygon();
 
@@ -27893,10 +27893,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 173 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Mesh = __webpack_require__(172);
+	var Mesh = __webpack_require__(176);
 
 	/**
 	 * The Plane allows you to draw a texture across several points and them manipulate these points
@@ -28023,11 +28023,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 174 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Mesh = __webpack_require__(172);
-	var core = __webpack_require__(52);
+	var Mesh = __webpack_require__(176);
+	var core = __webpack_require__(56);
 
 	/**
 	 * The rope allows you to draw a texture across several points and them manipulate these points
@@ -28240,11 +28240,11 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 175 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52),
-	    Mesh = __webpack_require__(172);
+	var core = __webpack_require__(56),
+	    Mesh = __webpack_require__(176);
 
 	/**
 	 * @author Mat Groves
@@ -28473,10 +28473,10 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 176 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52);
+	var core = __webpack_require__(56);
 
 	/**
 	 * @class
@@ -28538,7 +28538,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 177 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28552,13 +28552,13 @@ webpackJsonp([2],Array(43).concat([
 	 * @namespace PIXI.interaction
 	 */
 	module.exports = {
-	    accessibleTarget:     __webpack_require__(178),
-	    AccessibilityManager: __webpack_require__(179)
+	    accessibleTarget:     __webpack_require__(182),
+	    AccessibilityManager: __webpack_require__(183)
 	};
 
 
 /***/ },
-/* 178 */
+/* 182 */
 /***/ function(module, exports) {
 
 	/**
@@ -28608,15 +28608,15 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 179 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(52);
+	var core = __webpack_require__(56);
 
 	// add some extra variables to the container..
 	Object.assign(
 	    core.DisplayObject.prototype,
-	    __webpack_require__(178)
+	    __webpack_require__(182)
 	);
 
 
@@ -29017,14 +29017,14 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 180 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*global console */
-	var core = __webpack_require__(52),
-	    mesh = __webpack_require__(171),
-	    extras = __webpack_require__(113),
-	    filters = __webpack_require__(120);
+	var core = __webpack_require__(56),
+	    mesh = __webpack_require__(175),
+	    extras = __webpack_require__(117),
+	    filters = __webpack_require__(124);
 
 	/**
 	 * @class
@@ -29372,7 +29372,7 @@ webpackJsonp([2],Array(43).concat([
 
 
 /***/ },
-/* 181 */
+/* 185 */
 /***/ function(module, exports) {
 
 	module.exports = "[{\"title\":\"Concepts\",\"key\":0,\"id\":5,\"level\":0,\"ideas\":{\"1\":{\"title\":\"Differences with JavaScript\",\"content\":\"<div style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: normal; width: 800px; margin: 0px auto;\\\"><h2 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Literals</h2><div class=\\\"comparison\\\" style=\\\"overflow: hidden; border: 1px solid rgb(140, 140, 140); border-radius: 3px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\\\"><table style=\\\"width: 798px;\\\"><tbody><tr><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">JavaScript</th><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">Elm</th></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">3</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">3</code></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">3.1415</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">3.1415</code></td></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">\\\"Hello world!\\\"</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">\\\"Hello world!\\\"</code></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><span style=\\\"color: rgb(203, 203, 203);\\\">Multiline strings not widely supported</span></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">\\\"\\\"\\\"multiline string\\\"\\\"\\\"</code></td></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">'Hello world!'</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><span style=\\\"color: rgb(203, 203, 203);\\\">Cannot use single quotes for strings</span></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><span style=\\\"color: rgb(203, 203, 203);\\\">No distinction between characters and strings</span></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">'a'</code></td></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">true</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">True</code></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">[1,2,3]</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">[1,2,3]</code></td></tr></tbody></table></div><br></div><div style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: normal; width: 800px; margin: 0px auto;\\\"><h2 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Objects / Records</h2><div class=\\\"comparison\\\" style=\\\"overflow: hidden; border: 1px solid rgb(140, 140, 140); border-radius: 3px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\\\"><table style=\\\"width: 798px;\\\"><tbody><tr><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">JavaScript</th><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">Elm</th></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">{ x: 3, y: 4 }</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">{ x = 3, y = 4 }</code></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">point.x</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">point.x</code></td></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">point.x = 42</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">{ point | x &lt;- 42 }</code></td></tr></tbody></table></div><br></div><div style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: normal; width: 800px; margin: 0px auto;\\\"><h2 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Functions</h2><div class=\\\"comparison\\\" style=\\\"overflow: hidden; border: 1px solid rgb(140, 140, 140); border-radius: 3px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\\\"><table style=\\\"width: 798px;\\\"><tbody><tr><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">JavaScript</th><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">Elm</th></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">function(x,y) { return x + y; }</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">\\\\x y -&gt; x + y</code></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">Math.max(3, 4)</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">max 3 4</code></td></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">Math.min(1, Math.pow(2, 4))</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">min 1 (2^4)</code></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">numbers.map(Math.sqrt)</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">List.map sqrt numbers</code></td></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">points.map(function(p) { return p.x })</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">List.map .x points</code></td></tr></tbody></table></div><br></div><div style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: normal; width: 800px; margin: 0px auto;\\\"><h2 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Control Flow</h2><div class=\\\"comparison\\\" style=\\\"overflow: hidden; border: 1px solid rgb(140, 140, 140); border-radius: 3px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\\\"><table style=\\\"width: 798px;\\\"><tbody><tr><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">JavaScript</th><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">Elm</th></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">3 &gt; 2 ? 'cat' : 'dog'</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">if 3 &gt; 2 then \\\"cat\\\" else \\\"dog\\\"</code></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">var x = 42; ...</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">let x = 42 in ...</code></td></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">return 42</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><span style=\\\"color: rgb(203, 203, 203);\\\">Everything is an expression, no need for return</span></td></tr></tbody></table></div><br></div><div style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: normal; width: 800px; margin: 0px auto;\\\"><h2 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Strings</h2><div class=\\\"comparison\\\" style=\\\"overflow: hidden; border: 1px solid rgb(140, 140, 140); border-radius: 3px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\\\"><table style=\\\"width: 798px;\\\"><tbody><tr><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">JavaScript</th><th style=\\\"padding: 6px; width: 400px; background: rgb(221, 221, 221);\\\">Elm</th></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">'abc' + '123'</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">\\\"abc\\\" ++ \\\"123\\\"</code></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">'abc'.length</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">String.length \\\"abc\\\"</code></td></tr><tr style=\\\"background: rgb(251, 251, 251);\\\"><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">'abc'.toUpperCase()</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">String.toUpper \\\"abc\\\"</code></td></tr><tr><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">'abc' + 123</code></td><td style=\\\"padding: 6px; width: 400px;\\\"><code style=\\\"font-family: 'Source Code Mono', monospace;\\\">\\\"abc\\\" ++ toString 123</code></td></tr></tbody></table></div></div>\",\"key\":1,\"id\":6,\"level\":0},\"2\":{\"title\":\"records\",\"content\":\"you can define a record like this:<div>bill = {name = \\\"gates\\\"}</div><div><br></div><div>access with:</div><div><br></div><div>bill.name</div><div><br></div><div>or</div><div><br></div><div>.name bill</div><div><br></div><div>to update</div><div><br></div><div><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">{ bill | name &lt;- </span><span class=\\\"hljs-string\\\" style=\\\"color: rgb(153, 204, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">\\\"Nye\\\"</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> }</span><br></div><div><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"><br></span></div><div><span style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: 24px;\\\">It is important to notice that we do not make&nbsp;</span><em style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: 24px;\\\">destructive</em><span style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: 24px;\\\">&nbsp;updates. In other words, when we update some fields of&nbsp;</span><code style=\\\"font-family: 'Source Code Mono', monospace; color: rgb(41, 60, 75); font-size: medium; line-height: 24px; white-space: normal;\\\">bill</code><span style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: 24px;\\\">&nbsp;we actually create a new record rather than overwriting the existing one. Elm makes this efficient by sharing as much content as possible. If you update one of ten fields, the new record will share all of the nine unchanged values.</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"><br></span></div>\",\"key\":2,\"id\":7,\"level\":1,\"ideas\":{}},\"3\":{\"title\":\"Contracts\",\"content\":\"<span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">fortyTwo</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> : </span><span class=\\\"hljs-type\\\" style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">Int</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n</span><span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">fortyTwo</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> =\\n  </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">42</span><div><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\"><br></span></div><div><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\"><br></span></div>\",\"key\":3,\"id\":9,\"level\":2,\"ideas\":{\"1\":{\"title\":\"type annotation\",\"key\":1,\"id\":10,\"level\":0,\"ideas\":{\"1\":{\"title\":\"to rule out runtime errors\",\"key\":1,\"id\":11,\"level\":0},\"2\":{\"title\":\"you can define your own type?\",\"content\":\"<div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\">view : Widget -&gt; Element</span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\">view widget =</span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\">&nbsp; &nbsp; case widget of</span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\">&nbsp; &nbsp; &nbsp; ScatterPlot points -&gt;</span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewScatterPlot points</span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\"><br></span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\">&nbsp; &nbsp; &nbsp; LogData logs -&gt;</span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flow down (map viewLog logs)</span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\"><br></span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\">&nbsp; &nbsp; &nbsp; TimePlot occurances -&gt;</span></font></div><div><font color=\\\"#66cccc\\\" face=\\\"Source Code Mono, monospace\\\" size=\\\"3\\\"><span style=\\\"line-height: normal; white-space: pre;\\\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewTimePlot occurances</span></font></div>\",\"key\":2,\"id\":30,\"level\":1}}}}},\"4\":{\"title\":\"Immutability\",\"key\":4,\"id\":37,\"level\":3},\"7\":{\"title\":\"Signals and Addresses\",\"key\":7,\"id\":84,\"level\":4,\"ideas\":{}},\"8\":{\"title\":\"Functions\",\"content\":\"<div>import Graphics.Element exposing (..)</div><div>import Keyboard</div><div><br></div><div><br></div><div>main : Signal Element</div><div>main =</div><div>&nbsp; Signal.map show(Keyboard.arrows)</div><div><br></div><div>we omit the parentheses for the method nam</div><div>also show is actually under Graphics.Element.show</div>\",\"key\":8,\"id\":93,\"level\":5}}},{\"title\":\"Packages\",\"key\":1,\"id\":85,\"level\":1,\"ideas\":{\"1\":{\"title\":\"Signal\",\"key\":1,\"id\":86,\"level\":0,\"ideas\":{\"1\":{\"title\":\"http://package.elm-lang.org/packages/elm-lang/core/3.0.0/Signal\",\"key\":1,\"id\":87,\"level\":0}}},\"2\":{\"title\":\"Website\",\"key\":2,\"id\":88,\"level\":1,\"ideas\":{\"1\":{\"title\":\"http://package.elm-lang.org/packages/elm-lang/core/3.0.0\",\"key\":1,\"id\":89,\"level\":0}}}}},{\"title\":\"Resources\",\"key\":2,\"id\":2,\"level\":2,\"ideas\":{\"4\":{\"title\":\"Complete Guide\",\"content\":\"<h1 id=\\\"complete-guide\\\" style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal; color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; line-height: normal;\\\">Complete Guide</h1><ul class=\\\"guide content\\\" style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: normal;\\\"><li style=\\\"margin-bottom: 6px;\\\"><a href=\\\"http://elm-lang.org/guide/core-language\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Core Language</a><ul style=\\\"margin-top: 16px; margin-bottom: 16px; margin-left: 0px; padding-left: 24px;\\\"><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/core-language#values\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Values</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/core-language#functions\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Functions</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/core-language#if-expressions\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">If Expressions</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/core-language#lists\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Lists</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/core-language#tuples\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Tuples</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/core-language#records\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Records</a></li></ul></li><li style=\\\"margin-bottom: 6px;\\\"><a href=\\\"http://elm-lang.org/guide/model-the-problem\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Model The Problem</a><ul style=\\\"margin-top: 16px; margin-bottom: 16px; margin-left: 0px; padding-left: 24px;\\\"><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/model-the-problem#contracts\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Contracts</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/model-the-problem#enumerations\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Enumerations</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/model-the-problem#state-machines\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">State Machines</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/model-the-problem#tagged-unions\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Tagged Unions</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/model-the-problem#banishing-null\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Banishing NULL</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/model-the-problem#recursive-data-structures\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Recursive Data Structures</a></li></ul></li><li style=\\\"margin-bottom: 6px;\\\"><a href=\\\"https://github.com/evancz/elm-architecture-tutorial/\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\"><b>Architecture</b></a><ul style=\\\"margin-top: 16px; margin-bottom: 16px; margin-left: 0px; padding-left: 24px;\\\"><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"https://github.com/evancz/elm-architecture-tutorial/#example-1-a-counter\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\"><b>Components</b></a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"https://github.com/evancz/elm-architecture-tutorial/#example-5-random-gif-viewer\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\"><b>Components with HTTP</b></a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"https://github.com/evancz/elm-architecture-tutorial/#example-8-animation\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\"><b>Components with Animation</b></a></li></ul></li><li style=\\\"margin-bottom: 6px;\\\"><a href=\\\"http://elm-lang.org/guide/reactivity\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Reactivity</a><ul style=\\\"margin-top: 16px; margin-bottom: 16px; margin-left: 0px; padding-left: 24px;\\\"><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/reactivity#signals\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Signals</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/reactivity#tasks\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Tasks</a></li></ul></li><li style=\\\"margin-bottom: 6px;\\\"><a href=\\\"http://elm-lang.org/guide/interop\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Interop</a><ul style=\\\"margin-top: 16px; margin-bottom: 16px; margin-left: 0px; padding-left: 24px;\\\"><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/interop#html-embedding\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">HTML Embedding</a></li><li style=\\\"margin-bottom: 6px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/guide/interop#ports\\\" style=\\\"color: rgb(52, 73, 94);\\\" target=\\\"_blank\\\">Ports</a></li></ul></li></ul>\",\"key\":4,\"id\":29,\"level\":0},\"5\":{\"title\":\"Examples\",\"content\":\"<div class=\\\"content\\\" style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: normal; width: 600px; margin: 0px auto;\\\"><h1 id=\\\"learn-by-example\\\" style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Learn by Example</h1><p style=\\\"line-height: 1.5em;\\\">Walk through a sequence of small examples, building skills one at a time by reading and modifying Elm code in the&nbsp;<a href=\\\"http://elm-lang.org/try\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">online editor</a>.</p><p style=\\\"line-height: 1.5em;\\\">Remember to check the&nbsp;<a href=\\\"http://elm-lang.org/docs/syntax\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">syntax reference</a>&nbsp;and&nbsp;<a href=\\\"http://elm-lang.org/docs\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">docs</a>&nbsp;when you see new syntax or features!</p></div><div style=\\\"color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium; line-height: normal; width: 600px; margin: 0px auto;\\\"><div class=\\\"examples\\\" style=\\\"width: 300px; display: inline-block; vertical-align: top;\\\"><h3 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Core</h3><ul><li style=\\\"margin-bottom: 4px;\\\">functions<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/functions\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">use them</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/infix\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">infixes</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/forward-apply\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">use fewer parens</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/define-functions\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">define your own</a></li></ul></li><li style=\\\"margin-bottom: 4px;\\\">recursion<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/length\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">list length</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/zip\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">zip</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/quick-sort\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">quick sort</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/merge-sort\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">merge sort</a></li></ul></li><li style=\\\"margin-bottom: 4px;\\\">union types<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/either\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">either</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/binary-tree\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">binary tree</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/boolean-expressions\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">boolean expressions</a></li></ul></li></ul></div><div class=\\\"examples\\\" style=\\\"width: 300px; display: inline-block; vertical-align: top;\\\"><h3 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">HTML</h3><ul><li style=\\\"margin-bottom: 4px;\\\">basics<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/hello-html\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">hello world!</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/unordered-list\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">unordered list</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/markdown\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">markdown</a></li></ul></li><li style=\\\"margin-bottom: 4px;\\\">user input<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/buttons\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">buttons</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/field\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">field</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/password\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">password</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/checkboxes\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">checkboxes</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/radio-buttons\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">radio buttons</a></li></ul></li><li style=\\\"margin-bottom: 4px;\\\">larger examples<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"https://github.com/evancz/elm-architecture-tutorial/\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">dynamic list</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/sign-up\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">sign up</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"https://github.com/evancz/elm-todomvc\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">todo list</a></li></ul></li></ul></div><div class=\\\"examples\\\" style=\\\"width: 300px; display: inline-block; vertical-align: top;\\\"><h3 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Visuals</h3><ul><li style=\\\"margin-bottom: 4px;\\\">2D graphics<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/lines\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">lines</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/shapes\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">shapes</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/collage-text\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">text</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/collage-element\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">elements</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/transforms\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">transforms</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/color\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">color</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/linear-gradient\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">linear gradient</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/radial-gradient\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">radial gradient</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/texture\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">texture</a></li></ul></li><li style=\\\"margin-bottom: 4px;\\\">layout<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/hello-element\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">hello world</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/layout-simple\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">simple layout</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/layout-fancy\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">fancier layout</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/centering\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">centering</a></li></ul></li></ul></div><div class=\\\"examples\\\" style=\\\"width: 300px; display: inline-block; vertical-align: top;\\\"><h3 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Signals</h3><ul><li style=\\\"margin-bottom: 4px;\\\">mouse<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/mouse-position\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">position</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/mouse-is-down\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">is down</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/mouse-clicks\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">clicks</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/resize-yogi\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">yogi</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/mouse-tracker\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">tracker</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/stamps\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">stamps</a></li></ul></li><li style=\\\"margin-bottom: 4px;\\\">window<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/resize-paint\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">size</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/window-centering\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">centering</a></li></ul></li><li style=\\\"margin-bottom: 4px;\\\">keyboard<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/arrows\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">arrows</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/wasd\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">wasd</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/keys\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">keys down</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/key-presses\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">key presses</a></li></ul></li><li style=\\\"margin-bottom: 4px;\\\">time<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/clock\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">clock</a></li></ul></li></ul></div><div class=\\\"examples\\\" style=\\\"width: 300px; display: inline-block; vertical-align: top;\\\"><h3 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Games</h3><ul><li style=\\\"margin-bottom: 4px;\\\">simple<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/mario\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">mario</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/adventure\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">adventure</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/pong\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">pong</a></li></ul></li><li style=\\\"margin-bottom: 4px;\\\">community<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"https://github.com/jcollard/elmtris\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Tetris</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"https://github.com/Dobiasd/Breakout#breakout--play-it\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Breakout</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"https://github.com/Dobiasd/Maze#maze--play-it\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Maze</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"https://github.com/Dobiasd/Demoscene-Concentration\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Concentration</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"https://github.com/thSoft/froggy\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Froggy</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"https://github.com/Gizra/elm-hedley\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">Hedley</a></li></ul></li></ul></div><div class=\\\"examples\\\" style=\\\"width: 300px; display: inline-block; vertical-align: top;\\\"><h3 style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal;\\\">Tasks</h3><ul><li style=\\\"margin-bottom: 4px;\\\">HTTP<ul style=\\\"margin-top: 6px; margin-bottom: 20px; padding-left: 1em;\\\"><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/zip-codes\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">zip codes</a></li><li style=\\\"margin-bottom: 4px; list-style-type: none;\\\"><a href=\\\"http://elm-lang.org/examples/flickr\\\" style=\\\"color: rgb(96, 181, 204);\\\" target=\\\"_blank\\\">flickr</a></li></ul></li></ul></div></div>\",\"key\":5,\"id\":38,\"level\":1,\"ideas\":{}},\"6\":{\"title\":\"https://pragmaticstudio.com/blog/2014/12/19/getting-started-with-elm\",\"key\":6,\"id\":90,\"level\":2,\"ideas\":{\"1\":{\"title\":\"third part tutorials\",\"key\":1,\"id\":91,\"level\":0}}}}},{\"title\":\"Project Starters\",\"key\":3,\"id\":95,\"level\":3,\"ideas\":{\"1\":{\"title\":\"https://github.com/evancz/elm-architecture-tutorial/\",\"key\":1,\"id\":50,\"level\":0,\"ideas\":{\"2\":{\"title\":\"Archeticture\",\"content\":\"<table class=\\\"highlight tab-size js-file-line-container\\\" data-tab-size=\\\"8\\\" style=\\\"box-sizing: border-box; tab-size: 8; font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 13px; line-height: 18.2000007629395px; background-color: rgb(255, 255, 255);\\\"><tbody style=\\\"box-sizing: border-box;\\\"><tr style=\\\"box-sizing: border-box;\\\"><td id=\\\"LC6\\\" class=\\\"blob-code blob-code-inner js-file-line\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">  1. Model  - a full definition of the application's state</span></td></tr><tr style=\\\"box-sizing: border-box;\\\"><td id=\\\"L7\\\" class=\\\"blob-num js-line-number\\\" data-line-number=\\\"7\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; white-space: nowrap; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; color: rgba(0, 0, 0, 0.298039); vertical-align: top; text-align: right; border-style: solid; border-color: rgb(238, 238, 238); border-width: 0px 1px 0px 0px; cursor: pointer; -webkit-user-select: none;\\\"></td><td id=\\\"LC7\\\" class=\\\"blob-code blob-code-inner js-file-line\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">  2. Update - a way to step the application state forward</span></td></tr><tr style=\\\"box-sizing: border-box;\\\"><td id=\\\"L8\\\" class=\\\"blob-num js-line-number\\\" data-line-number=\\\"8\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; white-space: nowrap; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; color: rgba(0, 0, 0, 0.298039); vertical-align: top; text-align: right; border-style: solid; border-color: rgb(238, 238, 238); border-width: 0px 1px 0px 0px; cursor: pointer; -webkit-user-select: none;\\\"></td><td id=\\\"LC8\\\" class=\\\"blob-code blob-code-inner js-file-line\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">  3. View   - a way to visualize our application state with HTML</span></td></tr><tr style=\\\"box-sizing: border-box;\\\"><td id=\\\"L9\\\" class=\\\"blob-num js-line-number\\\" data-line-number=\\\"9\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; white-space: nowrap; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; color: rgba(0, 0, 0, 0.298039); vertical-align: top; text-align: right; border-style: solid; border-color: rgb(238, 238, 238); border-width: 0px 1px 0px 0px; cursor: pointer; -webkit-user-select: none;\\\"></td><td id=\\\"LC9\\\" class=\\\"blob-code blob-code-inner js-file-line\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">  4. Inputs - the signals necessary to manage events</span></td></tr></tbody></table>\",\"key\":2,\"id\":61,\"level\":0,\"ideas\":{\"5\":{\"title\":\"Application Skeleton\",\"content\":\"<pre style=\\\"box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">-- MODEL</span>\\n\\n<span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">type alias </span><span class=\\\"pl-c1\\\" style=\\\"box-sizing: border-box; color: rgb(0, 134, 179);\\\">Model</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">=</span> { <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span> }\\n\\n\\n<span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">-- UPDATE</span>\\n\\n<span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">type </span><span class=\\\"pl-c1\\\" style=\\\"box-sizing: border-box; color: rgb(0, 134, 179);\\\">Action</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">=</span> <span class=\\\"pl-c1\\\" style=\\\"box-sizing: border-box; color: rgb(0, 134, 179);\\\">Reset</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">|</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span>\\n\\n<span class=\\\"pl-en\\\" style=\\\"box-sizing: border-box; color: rgb(121, 93, 163);\\\">update</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">:</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Action</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">-&gt;</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Model</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">-&gt;</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Model</span>\\n<span class=\\\"pl-en\\\" style=\\\"box-sizing: border-box; color: rgb(121, 93, 163);\\\">update </span>action model <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">=</span>\\n  <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">case </span>action <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">of</span>\\n    <span class=\\\"pl-c1\\\" style=\\\"box-sizing: border-box; color: rgb(0, 134, 179);\\\">Reset</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">-&gt;</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span>\\n    <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span>\\n\\n\\n<span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">-- VIEW</span>\\n\\n<span class=\\\"pl-en\\\" style=\\\"box-sizing: border-box; color: rgb(121, 93, 163);\\\">view</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">:</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Model</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">-&gt;</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Html</span>\\n<span class=\\\"pl-en\\\" style=\\\"box-sizing: border-box; color: rgb(121, 93, 163);\\\">view </span><span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">=</span>\\n  <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span></pre>\",\"key\":5,\"id\":70,\"level\":0},\"6\":{\"title\":\"https://github.com/evancz/elm-architecture-tutorial/#example-5-random-gif-viewer\",\"key\":6,\"id\":78,\"level\":1,\"ideas\":{\"1\":{\"title\":\"I stopped here\",\"key\":1,\"id\":79,\"level\":0}}},\"7\":{\"title\":\"Pattern\",\"key\":7,\"id\":80,\"level\":2,\"ideas\":{\"1\":{\"title\":\"Update\",\"key\":1,\"id\":62,\"level\":0,\"ideas\":{\"1\":{\"title\":\"Moves our application forward\",\"key\":1,\"id\":63,\"level\":0}}},\"2\":{\"title\":\"Model\",\"key\":2,\"id\":64,\"level\":1,\"ideas\":{\"1\":{\"title\":\"Definition of application state\",\"key\":1,\"id\":65,\"level\":0}}},\"3\":{\"title\":\"VIew\",\"key\":3,\"id\":66,\"level\":2,\"ideas\":{\"1\":{\"title\":\"a way to visualize our application state with HTML\\n\",\"key\":1,\"id\":67,\"level\":0}}},\"4\":{\"title\":\"Inputs/Actions\",\"key\":4,\"id\":68,\"level\":3,\"ideas\":{\"1\":{\"title\":\"Signals\",\"key\":1,\"id\":69,\"level\":0}}}}}}}}},\"2\":{\"title\":\"https://github.com/evancz/elm-todomvc\",\"key\":2,\"id\":39,\"level\":1,\"ideas\":{\"1\":{\"title\":\"todo mvc\",\"content\":\"<table class=\\\"highlight tab-size js-file-line-container\\\" data-tab-size=\\\"8\\\" style=\\\"box-sizing: border-box; tab-size: 8; font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 13px; line-height: 18.2000007629395px; background-color: rgb(255, 255, 255);\\\"><tbody style=\\\"box-sizing: border-box;\\\"><tr style=\\\"box-sizing: border-box;\\\"><td id=\\\"LC6\\\" class=\\\"blob-code blob-code-inner js-file-line\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">  1. Model  - a full definition of the application's state</span></td></tr><tr style=\\\"box-sizing: border-box;\\\"><td id=\\\"L7\\\" class=\\\"blob-num js-line-number\\\" data-line-number=\\\"7\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; white-space: nowrap; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; color: rgba(0, 0, 0, 0.298039); vertical-align: top; text-align: right; border-style: solid; border-color: rgb(238, 238, 238); border-width: 0px 1px 0px 0px; cursor: pointer; -webkit-user-select: none;\\\"></td><td id=\\\"LC7\\\" class=\\\"blob-code blob-code-inner js-file-line\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">  2. Update - a way to step the application state forward</span></td></tr><tr style=\\\"box-sizing: border-box;\\\"><td id=\\\"L8\\\" class=\\\"blob-num js-line-number\\\" data-line-number=\\\"8\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; white-space: nowrap; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; color: rgba(0, 0, 0, 0.298039); vertical-align: top; text-align: right; border-style: solid; border-color: rgb(238, 238, 238); border-width: 0px 1px 0px 0px; cursor: pointer; -webkit-user-select: none;\\\"></td><td id=\\\"LC8\\\" class=\\\"blob-code blob-code-inner js-file-line\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">  3. View   - a way to visualize our application state with HTML</span></td></tr><tr style=\\\"box-sizing: border-box;\\\"><td id=\\\"L9\\\" class=\\\"blob-num js-line-number\\\" data-line-number=\\\"9\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; white-space: nowrap; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; color: rgba(0, 0, 0, 0.298039); vertical-align: top; text-align: right; border-style: solid; border-color: rgb(238, 238, 238); border-width: 0px 1px 0px 0px; cursor: pointer; -webkit-user-select: none;\\\"></td><td id=\\\"LC9\\\" class=\\\"blob-code blob-code-inner js-file-line\\\" style=\\\"box-sizing: border-box; padding: 0px 10px; position: relative; vertical-align: top; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; white-space: pre; overflow: visible; word-wrap: normal;\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">  4. Inputs - the signals necessary to manage events</span></td></tr></tbody></table>\",\"key\":1,\"id\":40,\"level\":0,\"ideas\":{\"1\":{\"title\":\"Update\",\"key\":1,\"id\":41,\"level\":0,\"ideas\":{\"1\":{\"title\":\"Moves our application forward\",\"key\":1,\"id\":47,\"level\":0}}},\"2\":{\"title\":\"Model\",\"key\":2,\"id\":42,\"level\":1,\"ideas\":{\"1\":{\"title\":\"Definition of application state\",\"key\":1,\"id\":48,\"level\":0}}},\"3\":{\"title\":\"VIew\",\"key\":3,\"id\":43,\"level\":2,\"ideas\":{\"1\":{\"title\":\"a way to visualize our application state with HTML\\n\",\"key\":1,\"id\":49,\"level\":0}}},\"4\":{\"title\":\"Inputs\",\"key\":4,\"id\":45,\"level\":3,\"ideas\":{\"1\":{\"title\":\"Signals\",\"key\":1,\"id\":46,\"level\":0}}},\"5\":{\"title\":\"Application Skeleton\",\"content\":\"<pre style=\\\"box-sizing: border-box; overflow: auto; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6000003814697px; margin-bottom: 0px; font-stretch: normal; line-height: 1.45; padding: 16px; border-radius: 3px; word-wrap: normal; word-break: normal; background-color: rgb(247, 247, 247);\\\"><span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">-- MODEL</span>\\n\\n<span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">type alias </span><span class=\\\"pl-c1\\\" style=\\\"box-sizing: border-box; color: rgb(0, 134, 179);\\\">Model</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">=</span> { <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span> }\\n\\n\\n<span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">-- UPDATE</span>\\n\\n<span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">type </span><span class=\\\"pl-c1\\\" style=\\\"box-sizing: border-box; color: rgb(0, 134, 179);\\\">Action</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">=</span> <span class=\\\"pl-c1\\\" style=\\\"box-sizing: border-box; color: rgb(0, 134, 179);\\\">Reset</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">|</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span>\\n\\n<span class=\\\"pl-en\\\" style=\\\"box-sizing: border-box; color: rgb(121, 93, 163);\\\">update</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">:</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Action</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">-&gt;</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Model</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">-&gt;</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Model</span>\\n<span class=\\\"pl-en\\\" style=\\\"box-sizing: border-box; color: rgb(121, 93, 163);\\\">update </span>action model <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">=</span>\\n  <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">case </span>action <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">of</span>\\n    <span class=\\\"pl-c1\\\" style=\\\"box-sizing: border-box; color: rgb(0, 134, 179);\\\">Reset</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">-&gt;</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span>\\n    <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span>\\n\\n\\n<span class=\\\"pl-c\\\" style=\\\"box-sizing: border-box; color: rgb(150, 152, 150);\\\">-- VIEW</span>\\n\\n<span class=\\\"pl-en\\\" style=\\\"box-sizing: border-box; color: rgb(121, 93, 163);\\\">view</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">:</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Model</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">-&gt;</span> <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">Html</span>\\n<span class=\\\"pl-en\\\" style=\\\"box-sizing: border-box; color: rgb(121, 93, 163);\\\">view </span><span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">=</span>\\n  <span class=\\\"pl-k\\\" style=\\\"box-sizing: border-box; color: rgb(167, 29, 93);\\\">...</span></pre>\",\"key\":5,\"id\":52,\"level\":4}}}}}}},{\"title\":\"Pain points\",\"key\":4,\"id\":18,\"level\":4,\"ideas\":{\"1\":{\"title\":\"What the hell are all these arrows\",\"key\":1,\"id\":19,\"level\":0,\"ideas\":{\"1\":{\"title\":\"Simple\",\"key\":1,\"id\":20,\"level\":0,\"ideas\":{\"1\":{\"title\":\"a:List String -> int\",\"key\":1,\"id\":22,\"level\":0,\"ideas\":{\"1\":{\"title\":\"this is a type annotation\",\"key\":1,\"id\":23,\"level\":0,\"ideas\":{\"1\":{\"title\":\"prevents runtime errors\",\"key\":1,\"id\":83,\"level\":0}}},\"2\":{\"title\":\"function a\",\"key\":2,\"id\":24,\"level\":1},\"3\":{\"title\":\"takes a list of strings\",\"key\":3,\"id\":25,\"level\":2},\"4\":{\"title\":\"returns an int\",\"key\":4,\"id\":26,\"level\":3}}},\"2\":{\"title\":\"String -> Int -> Task\",\"key\":2,\"id\":27,\"level\":1,\"ideas\":{\"1\":{\"title\":\"Takes String and Int and returns a task\",\"key\":1,\"id\":28,\"level\":0}}}}}}},\"2\":{\"title\":\"Tagged Unions\",\"key\":2,\"id\":31,\"level\":1,\"ideas\":{\"1\":{\"title\":\"putting a bunch of types together\",\"key\":1,\"id\":32,\"level\":0,\"ideas\":{\"1\":{\"title\":\"http://elm-lang.org/guide/model-the-problem\",\"key\":1,\"id\":33,\"level\":0},\"2\":{\"title\":\"http://elm-lang.org/examples/checkboxes\",\"key\":2,\"id\":34,\"level\":1,\"ideas\":{\"1\":{\"title\":\"one of the examples\",\"key\":1,\"id\":35,\"level\":0},\"2\":{\"title\":\"updating a record, shortcut? but what's Model here is it to specify the type?\",\"content\":\"<div>{ model | red &lt;- bool }</div><div><br></div><div>it will return a the whole object</div><div><br></div><div>this is not OR<br><div><br></div><div><span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">point</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> = { x = </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">3</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">, y = </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">4</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> }       </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- create a record</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n\\n</span><span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">point</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">.x                        </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- access field</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n</span><span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">map</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> .x [point,{x=</span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">0</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">,y=</span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">0</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">}]       </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- field access function</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n\\n{ point - x }                  </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- remove field</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n{ point | z = </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">12</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> }             </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- add field</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n{ point - x | z = point.x }    </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- rename field</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n{ point - x | x = </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">6</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> }          </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- update field</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n\\n{ point | x &lt;- </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">6</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> }             </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- nicer way to update a field</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n{ point | x &lt;- point.x + </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">1</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n        , y &lt;- point.y + </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">1</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> }   </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- batch update fields</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n\\n</span><span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">dist</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> {x,y} = sqrt (x^</span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">2</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> + y^</span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">2</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">)  </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- pattern matching on fields</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n\\\\{x,y} -&gt; (x,y)\\n\\n</span><span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">lib</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> = { id x = x }             </span><span class=\\\"hljs-comment\\\" style=\\\"color: rgb(153, 153, 153); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">-- polymorphic fields</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">\\n(lib.id </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">42</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\"> == </span><span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\">42</span><span style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre; background-color: rgb(45, 45, 45);\\\">)\\n(lib.id [] == [])\\n\\n</span><span class=\\\"hljs-typedef\\\" style=\\\"color: rgb(204, 204, 204); font-family: 'Source Code Mono', monospace; font-size: medium; line-height: normal; white-space: pre;\\\"><span class=\\\"hljs-keyword\\\" style=\\\"color: rgb(204, 153, 204);\\\">type</span> <span class=\\\"hljs-keyword\\\" style=\\\"color: rgb(204, 153, 204);\\\">alias</span> <span class=\\\"hljs-type\\\">Location</span> = <span class=\\\"hljs-container\\\">{ <span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204);\\\">line</span>:<span class=\\\"hljs-type\\\">Int</span>, <span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204);\\\">column</span>:<span class=\\\"hljs-type\\\">Int</span> }</span></span></div></div>\",\"key\":2,\"id\":36,\"level\":1}}}}}}},\"3\":{\"title\":\"Elm-Views\",\"key\":3,\"id\":71,\"level\":2,\"ideas\":{\"1\":{\"title\":\"What's address\",\"key\":1,\"id\":72,\"level\":0,\"ideas\":{\"1\":{\"title\":\"I know it's a signal\",\"key\":1,\"id\":73,\"level\":0},\"2\":{\"title\":\"How is it routing to an action/update?\",\"key\":2,\"id\":74,\"level\":1}}}}},\"4\":{\"title\":\"Let ... in syntax?\",\"content\":\"<h3 id=\\\"let-expressions\\\" style=\\\"margin-top: 1.2em; margin-bottom: 0.8em; font-weight: normal; color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; line-height: normal;\\\">Let Expressions</h3><pre style=\\\"color: rgb(41, 60, 75); line-height: normal;\\\"><code class=\\\"lang-elm\\\" style=\\\"font-family: 'Source Code Mono', monospace; display: block; overflow-x: auto; color: rgb(204, 204, 204); padding: 1em; border-radius: 6px; background: rgb(45, 45, 45);\\\"><span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204);\\\">let</span> n = <span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87);\\\">42</span>\\n    (a,b) = (<span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87);\\\">3</span>,<span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87);\\\">4</span>)\\n    {x,y} = { x=<span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87);\\\">3</span>, y=<span class=\\\"hljs-number\\\" style=\\\"color: rgb(249, 145, 87);\\\">4</span> }\\n    square n = n * n\\n<span class=\\\"hljs-title\\\" style=\\\"color: rgb(102, 204, 204);\\\">in</span>\\n    square a + square b\\n</code></pre><p style=\\\"line-height: 1.5em; color: rgb(41, 60, 75); font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; font-size: medium;\\\">Let-expressions are indentation sensitive. Each definition should align with the one above it.</p>\",\"key\":4,\"id\":75,\"level\":3},\"5\":{\"title\":\"Signal.forwardTo\",\"key\":5,\"id\":76,\"level\":4,\"ideas\":{\"1\":{\"title\":\"just to forward signals?\",\"key\":1,\"id\":77,\"level\":0}}},\"6\":{\"title\":\"Is main: port: reserved?\",\"key\":6,\"id\":92,\"level\":5}}}]"
