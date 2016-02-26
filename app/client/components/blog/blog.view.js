@@ -10,6 +10,7 @@ var dispatcher = require('../../lib/dispatcher/dispatcher.js');
 //var createElement = require('virtual-dom/create-element');
 //var webcomponents = require('webcomponents.js/webcomponents.js');
 
+var style = require('./scss/main.scss');
 var blog = require('./blog.html');
 var content = require('./views/content.html');
 var header = require('./views/header.html');
@@ -24,9 +25,11 @@ class blogView {
 		$('app').html('')
 		$('app').append(blog)
 		$('blog-header').html(header);
-		$('blog-content').html(header);
+		$('blog-content').html(content);
 		$('blog-footer').html(footer);
 		$('blog-sidebar').html(sidebar);
+
+		//render list
 
 	}
 	constructor() {

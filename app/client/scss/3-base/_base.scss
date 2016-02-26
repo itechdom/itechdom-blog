@@ -1,3 +1,4 @@
+
 /* ************************************************
 
 BASE.SCSS
@@ -38,7 +39,6 @@ html, body {
 
 // removes default arrow from dropdown
 select {
-	@include prefix(appearance, none, webkit moz);
 }
 
 // remove default arrow from dropdown IE 10+

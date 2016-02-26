@@ -16,6 +16,12 @@ BEM
 .block--modifier  represents a different state or version of .block.
 
 ************************************************ */
+
+
+//import parent scss
+@import "../../../scss/main.scss";
+
+
 // ----------------------------------------------------------
 // 0-VENDOR: unedited third party libraries
 // ----------------------------------------------------------

@@ -3,9 +3,7 @@ var Rx = require('rx');
 var dispatcher = require('../../lib/dispatcher/dispatcher.js');
 var clientActions = require('../client/client.actions.js')
 
-
 class actionMain{
-
     constructor(){
         return {
             request$: clientActions['changeRoute$'].filter((d)=> {
@@ -17,4 +15,5 @@ class actionMain{
         }
     }
 }
+
 module.exports = new actionMain();

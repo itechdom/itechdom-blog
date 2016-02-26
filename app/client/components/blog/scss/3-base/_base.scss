@@ -1,53 +1,7 @@
-/* ************************************************
-
-BASE.SCSS
-ground zero styles, unclassed HTML elements, type selectors: no classes
-
-************************************************ */
-
-// Links
-// --------------------------------------------------
-a,
-a:hover {
-	text-decoration: none;
+body {
+	padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-// Typography - Scale
-// --------------------------------------------------
-h1,h2,h3 {
-font-family: $primary-font-family;
-}
-
-h1 {  }
-h2 { }
-h3 { }
-h4 {  }
-h5 { }
-h6 { }
-
-html, body {
-	font-size: 12px;
-	box-sizing: border-box;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-// Inputs
-// --------------------------------------------------
-
-// removes default arrow from dropdown
-select {
-	@include prefix(appearance, none, webkit moz);
-}
-
-// remove default arrow from dropdown IE 10+
-select::-ms-expand{
-	display:none;
-}
-
-// remove default focus styles from bootstrap form-control
-.form-control:focus {
-	border: none;
-	box-shadow: none;
+footer {
+	margin: 50px 0;
 }

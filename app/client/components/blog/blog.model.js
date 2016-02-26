@@ -12,7 +12,6 @@ class blogModel{
 		}
 	}
 	getBlog(){
-		console.log(JSON.parse(publishedBlogs));
 		return publishedBlogs;
 	}
 	insertBlog(blog){
