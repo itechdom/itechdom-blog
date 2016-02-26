@@ -12,23 +12,22 @@ var dispatcher = require('../../lib/dispatcher/dispatcher.js');
 
 var style = require('./scss/main.scss');
 var blog = require('./blog.html');
-var content = require('./views/content.html');
+var content = require('./views/post.html');
 var header = require('./views/header.html');
 var sidebar = require('./views/sidebar.html');
 var footer = require('./views/footer.html');
 
 
-class blogView {
+class postView {
 
 	render(blogList){
 
 		$('app').html('')
-		$('app').append(blog)
-		$('blog-header').html(header);
+			$('app').append(blog)
+			$('blog-header').html(header);
 		$('blog-content').html(content);
 		$('blog-footer').html(footer);
 		$('blog-sidebar').html(sidebar);
-
 		//render list
 		var listHtml = "";
 		var obj;
@@ -36,25 +35,23 @@ class blogView {
 		var blogListView = blogList.map((blog)=>{
 			obj = Object.keys(blog)[0];
 			title = Object.keys(blog)[0].split('.')[0]; 
-			listHtml += `
-			<a href="/#/post/${obj}"><h1>${title}</h1></a>
-			<img class="img-responsive" src="http://placehold.it/900x300" alt="">
-			<!-- Author -->
-			<p class="lead">
-			by <a href="#">Osama Alghanmi</a>
-			</p>
-			<p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
-			<p><span class="glyphicon glyphicon-time"></span> 0 Comments</p>
-			<hr>
-			`
+			listHtml = `
+				<h1>${title}</h1>
+				<img class="img-responsive" src="http://placehold.it/900x300" alt="">
+				<!-- Author -->
+				<p class="lead">
+				by <a href="#">Osama Alghanmi</a>
+				</p>
+				<hr>
+				<!-- Post Content -->
+				<p class="lead">Hello, this is the post</p>
+				`
 		})
-		$('.blog__list').append(listHtml);
-
+		$('.post__content').append(listHtml);
 	}
 	constructor() {
 
 	}
 }
 
-
-module.exports = new blogView();
+module.exports = new postView();

@@ -12,7 +12,7 @@ class blogModel{
 		}
 	}
 	getBlog(){
-		return publishedBlogs;
+		return JSON.parse(publishedBlogs);
 	}
 	insertBlog(blog){
 

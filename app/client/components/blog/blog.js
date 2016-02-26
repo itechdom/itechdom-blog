@@ -3,6 +3,7 @@
 var $ = require('jquery');
 var Rx = require('rx');
 var view = require('./blog.view.js');
+var post = require('./post.view.js');
 var actions = require("./blog.actions.js");
 var model = require("./blog.model.js");
 
@@ -13,9 +14,15 @@ class blogMain{
 		this.actions = actions;
 		this.view = view;
 		this.model = model;
+		var data;
+
 		actions.request$.subscribe(()=>{
-			var data = this.model.getBlog();
+			data = this.model.getBlog();
 			this.view.render(data);
+		});
+		actions.post$.subscribe(()=>{
+			data = this.model.getBlog();
+			post.render(data);
 		});
 	}
 }
