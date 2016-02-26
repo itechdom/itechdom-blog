@@ -15,7 +15,6 @@ class blogMain{
 		this.model = model;
 		actions.request$.subscribe(()=>{
 			var data = this.model.getBlog();
-			console.log(data);
 			this.view.render(data);
 		});
 	}

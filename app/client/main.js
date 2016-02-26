@@ -3,8 +3,8 @@ require("./src/scss/main.scss");
 //require("./components/blog/blog.js")
 //require("./components/admin/admin.js")
 //require("./components/post/post.js");
-require("./components/slides/slides.js");
-//require("./components/blog/blog.actions.js");
+//require("./components/slides/slides.js");
+require("./components/blog/blog.js");
 //require("./components/admin/admin.actions.js");
 //require("./components/post/post.actions.js");
 //require("./components/slides/slides.actions.js");

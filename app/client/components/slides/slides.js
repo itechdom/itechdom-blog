@@ -10,6 +10,7 @@ var actions = require("./slides.actions.js");
 var model = require("./slides.model.js");
 window.$ = $;
 
+
 class slidesMain{
 
 	constructor(){

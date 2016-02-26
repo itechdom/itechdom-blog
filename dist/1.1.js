@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 44:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	//this is the main todo file
 
-	var view = __webpack_require__(45);
-	var actions = __webpack_require__(41);
-	var model = __webpack_require__(49);
+	var view = __webpack_require__(36);
+	var actions = __webpack_require__(31);
+	var model = __webpack_require__(40);
 
 	class todoMain {
 
@@ -28,17 +28,17 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 45:
+/***/ 36:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var customScss = __webpack_require__(46);
+	var customScss = __webpack_require__(37);
 	var $ = __webpack_require__(19);
 	var Rx = __webpack_require__(20);
-	var template = __webpack_require__(48);
-	var actions = __webpack_require__(41);
-	var dispatcher = __webpack_require__(42);
+	var template = __webpack_require__(39);
+	var actions = __webpack_require__(31);
+	var dispatcher = __webpack_require__(24);
 
 	var view = {
 
@@ -66,13 +66,13 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 46:
+/***/ 37:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(47);
+	var content = __webpack_require__(38);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(10)(content, {});
@@ -93,7 +93,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 47:
+/***/ 38:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
@@ -108,20 +108,20 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 48:
+/***/ 39:
 /***/ function(module, exports) {
 
 	module.exports = "<section class=\"todoapp\">\n<header class=\"header\">\n<h1>todos</h1>\n<input class=\"new-todo\" placeholder=\"What needs to be done?\" autofocus>\n</header>\n\n<section class=\"main\">\n<input class=\"toggle-all\" type=\"checkbox\">\n<label for=\"toggle-all\">Mark all as complete</label>\n<ul class=\"todo-list\"></ul>\n</section>\n\n<footer class=\"footer\">\n<span class=\"todo-count\"></span>\n<ul class=\"filters\">\n\t<li><a href=\"#/\" class=\"selected\">All</a></li>\n\t<li><a href=\"#/active\">Active</a></li>\n\t<li><a href=\"#/completed\">Completed</a></li>\n</ul>\n<button class=\"clear-completed\">Clear completed</button>\n</footer>\n</section>\n\n<footer class=\"info\">\n<p>Double-click to edit a todo</p>\n<br>\n<p>Written by <a href=\"http://twitter.com/lukeed05\">Luke Edwards</a></p>\n<p>Part of <a href=\"http://todomvc.com\">TodoMVC</a></p>\n</footer>\n\n"
 
 /***/ },
 
-/***/ 49:
+/***/ 40:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var todos = ['hello', 'how are you'];
-	var dispatcher = __webpack_require__(42);
+	var dispatcher = __webpack_require__(24);
 
 	var model = {
 
