@@ -20,12 +20,14 @@ var footer = require('./views/footer.html');
 class blogView {
 
 	render(blogList){
+
 		$('app').html('')
 		$('app').append(blog)
 		$('blog-header').html(header);
 		$('blog-content').html(header);
 		$('blog-footer').html(footer);
 		$('blog-sidebar').html(sidebar);
+
 	}
 	constructor() {
 

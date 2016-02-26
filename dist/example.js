@@ -40,20 +40,20 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Rx = __webpack_require__(20);
+	var Rx = __webpack_require__(3);
 	console.log("hello. example");
 	var a = function () {
 		console.log(this);
 	};
 
 /***/ },
-
-/***/ 20:
+/* 1 */,
+/* 2 */,
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global, process) {// Copyright (c) Microsoft, All rights reserved. See License.txt in the project root for license information.
@@ -12252,11 +12252,10 @@
 
 	}.call(this));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(21)(module), (function() { return this; }()), __webpack_require__(22)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module), (function() { return this; }()), __webpack_require__(5)))
 
 /***/ },
-
-/***/ 21:
+/* 4 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -12272,8 +12271,7 @@
 
 
 /***/ },
-
-/***/ 22:
+/* 5 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -12370,5 +12368,4 @@
 
 
 /***/ }
-
-/******/ });
+/******/ ]);
