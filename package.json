@@ -24,6 +24,7 @@
   "homepage": "https://github.com/itechdom/zpresent",
   "dependencies": {
     "angular2": "^2.0.0-beta.7",
+    "animate.css": "^3.5.1",
     "body": "^5.1.0",
     "color": "^0.11.1",
     "flat": "^2.0.0",

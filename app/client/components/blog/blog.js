@@ -6,6 +6,7 @@ var view = require('./blog.view.js');
 var post = require('./post.view.js');
 var actions = require("./blog.actions.js");
 var model = require("./blog.model.js");
+var animate = require('animate.css');
 
 class blogMain{
 
