@@ -26,6 +26,8 @@ module.exports = function(options) {
 		.pipe(rename(function (path) {
 			path.extname = ".json";
 			path.dirname = "./";
+			var name = path.basename.split(".")[0]
+			path.basename = name.replace(/\s+/g, '-').toLowerCase();
 		}))
 		.pipe(gulp.dest('./content/published-blog'))
 			.pipe(data(function(file){	
