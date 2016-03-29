@@ -47,3 +47,7 @@ Follow these steps to get started:
 8. Learn more at http://www.spray.io/
 
 9. Start hacking on `src/main/scala/com/example/MyService.scala`
+
+
+### docker link
+https://hub.docker.com/r/hseeberger/scala-sbt/
