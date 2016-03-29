@@ -26,6 +26,7 @@
     "angular2": "^2.0.0-beta.12",
     "animate.css": "*",
     "body": "*",
+    "flat": "^2.0.0",
     "font-awesome": "*",
     "highlight.js": "*",
     "jquery": "*",
@@ -37,6 +38,7 @@
     "rx": "*4.1.0",
     "rx-node": "*1.0.2",
     "sort-by": "*1.1.1",
+    "to-markdown": "^2.0.1",
     "virtual-dom": "*2.1.1",
     "wolfy87-eventemitter": "*4.3.0"
   },

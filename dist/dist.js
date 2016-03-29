@@ -96,7 +96,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	 * jQuery JavaScript Library v2.2.1
+	 * jQuery JavaScript Library v2.2.2
 	 * http://jquery.com/
 	 *
 	 * Includes Sizzle.js
@@ -106,7 +106,7 @@
 	 * Released under the MIT license
 	 * http://jquery.org/license
 	 *
-	 * Date: 2016-02-22T19:11Z
+	 * Date: 2016-03-17T17:51Z
 	 */
 
 	(function( global, factory ) {
@@ -162,7 +162,7 @@
 
 
 	var
-		version = "2.2.1",
+		version = "2.2.2",
 
 		// Define a local copy of jQuery
 		jQuery = function( selector, context ) {
@@ -373,6 +373,7 @@
 		},
 
 		isPlainObject: function( obj ) {
+			var key;
 
 			// Not plain objects:
 			// - Any object or value whose internal [[Class]] property is not "[object Object]"
@@ -382,14 +383,18 @@
 				return false;
 			}
 
+			// Not own constructor property must be Object
 			if ( obj.constructor &&
-					!hasOwn.call( obj.constructor.prototype, "isPrototypeOf" ) ) {
+					!hasOwn.call( obj, "constructor" ) &&
+					!hasOwn.call( obj.constructor.prototype || {}, "isPrototypeOf" ) ) {
 				return false;
 			}
 
-			// If the function hasn't returned already, we're confident that
-			// |obj| is a plain object, created by {} or constructed with new Object
-			return true;
+			// Own properties are enumerated firstly, so to speed up,
+			// if last one is own, then all properties are own
+			for ( key in obj ) {}
+
+			return key === undefined || hasOwn.call( obj, key );
 		},
 
 		isEmptyObject: function( obj ) {
@@ -7422,6 +7427,12 @@
 		}
 	} );
 
+	// Support: IE <=11 only
+	// Accessing the selectedIndex property
+	// forces the browser to respect setting selected
+	// on the option
+	// The getter ensures a default option is selected
+	// when in an optgroup
 	if ( !support.optSelected ) {
 		jQuery.propHooks.selected = {
 			get: function( elem ) {
@@ -7430,6 +7441,16 @@
 					parent.parentNode.selectedIndex;
 				}
 				return null;
+			},
+			set: function( elem ) {
+				var parent = elem.parentNode;
+				if ( parent ) {
+					parent.selectedIndex;
+
+					if ( parent.parentNode ) {
+						parent.parentNode.selectedIndex;
+					}
+				}
 			}
 		};
 	}
@@ -7624,7 +7645,8 @@
 
 
 
-	var rreturn = /\r/g;
+	var rreturn = /\r/g,
+		rspaces = /[\x20\t\r\n\f]+/g;
 
 	jQuery.fn.extend( {
 		val: function( value ) {
@@ -7700,9 +7722,15 @@
 			option: {
 				get: function( elem ) {
 
-					// Support: IE<11
-					// option.value not trimmed (#14858)
-					return jQuery.trim( elem.value );
+					var val = jQuery.find.attr( elem, "value" );
+					return val != null ?
+						val :
+
+						// Support: IE10-11+
+						// option.text throws exceptions (#14686, #14858)
+						// Strip and collapse whitespace
+						// https://html.spec.whatwg.org/#strip-and-collapse-whitespace
+						jQuery.trim( jQuery.text( elem ) ).replace( rspaces, " " );
 				}
 			},
 			select: {
@@ -7755,7 +7783,7 @@
 					while ( i-- ) {
 						option = options[ i ];
 						if ( option.selected =
-								jQuery.inArray( jQuery.valHooks.option.get( option ), values ) > -1
+							jQuery.inArray( jQuery.valHooks.option.get( option ), values ) > -1
 						) {
 							optionSet = true;
 						}
@@ -9450,18 +9478,6 @@
 
 
 
-	// Support: Safari 8+
-	// In Safari 8 documents created via document.implementation.createHTMLDocument
-	// collapse sibling forms: the second one becomes a child of the first one.
-	// Because of that, this security measure has to be disabled in Safari 8.
-	// https://bugs.webkit.org/show_bug.cgi?id=137337
-	support.createHTMLDocument = ( function() {
-		var body = document.implementation.createHTMLDocument( "" ).body;
-		body.innerHTML = "<form></form><form></form>";
-		return body.childNodes.length === 2;
-	} )();
-
-
 	// Argument "data" should be string of html
 	// context (optional): If specified, the fragment will be created in this context,
 	// defaults to document
@@ -9474,12 +9490,7 @@
 			keepScripts = context;
 			context = false;
 		}
-
-		// Stop scripts or inline event handlers from being executed immediately
-		// by using document.implementation
-		context = context || ( support.createHTMLDocument ?
-			document.implementation.createHTMLDocument( "" ) :
-			document );
+		context = context || document;
 
 		var parsed = rsingleTag.exec( data ),
 			scripts = !keepScripts && [];
@@ -11368,6 +11379,16 @@
 	      return new BinaryDisposable(disposable, new LocalClearDisposable(id));
 	    };
 
+	    function scheduleLongRunning(state, action, disposable) {
+	      return function () { action(state, disposable); };
+	    }
+
+	    DefaultScheduler.prototype.scheduleLongRunning = function (state, action) {
+	      var disposable = disposableCreate(noop);
+	      scheduleMethod(scheduleLongRunning(state, action, disposable));
+	      return disposable;
+	    };
+
 	    return DefaultScheduler;
 	  }(Scheduler));
 
@@ -12344,9 +12365,17 @@
 	    }
 
 	    FromPromiseObservable.prototype.subscribeCore = function(o) {
-	      var sad = new SingleAssignmentDisposable(), self = this;
+	      var sad = new SingleAssignmentDisposable(), self = this, p = this._p;
 
-	      this._p
+	      if (isFunction(p)) {
+	        p = tryCatch(p)();
+	        if (p === errorObj) {
+	          o.onError(p.e);
+	          return sad;
+	        }
+	      }
+
+	      p
 	        .then(function (data) {
 	          sad.setDisposable(self._s.schedule([o, data], scheduleNext));
 	        }, function (err) {
@@ -14350,7 +14379,7 @@
 	   * @param {Number} [skip] Number of elements to skip between creation of consecutive buffers. If not provided, defaults to the count.
 	   * @returns {Observable} An observable sequence of buffers.
 	   */
-	  observableProto.bufferWithCount = function (count, skip) {
+	  observableProto.bufferWithCount = observableProto.bufferCount = function (count, skip) {
 	    typeof skip !== 'number' && (skip = count);
 	    return this.windowWithCount(count, skip)
 	      .flatMap(toArray)
@@ -15021,7 +15050,7 @@
 	      scheduler = immediateScheduler;
 	    }
 	    for(var args = [], i = start, len = arguments.length; i < len; i++) { args.push(arguments[i]); }
-	    return enumerableOf([observableFromArray(args, scheduler), this]).concat();
+	    return observableConcat.apply(null, [observableFromArray(args, scheduler), this]);
 	  };
 
 	  var TakeLastObserver = (function (__super__) {
@@ -15115,7 +15144,7 @@
 	   * @param {Number} [skip] Number of elements to skip between creation of consecutive windows. If not specified, defaults to the count.
 	   * @returns {Observable} An observable sequence of windows.
 	   */
-	  observableProto.windowWithCount = function (count, skip) {
+	  observableProto.windowWithCount = observableProto.windowCount = function (count, skip) {
 	    var source = this;
 	    +count || (count = 0);
 	    Math.abs(count) === Infinity && (count = 0);
@@ -15569,7 +15598,7 @@
 	    return this.map(plucker(args, len));
 	  };
 
-	observableProto.flatMap = observableProto.selectMany = function(selector, resultSelector, thisArg) {
+	observableProto.flatMap = observableProto.selectMany = observableProto.mergeMap = function(selector, resultSelector, thisArg) {
 	    return new FlatMapObservable(this, selector, resultSelector, thisArg).mergeAll();
 	};
 
@@ -15625,9 +15654,10 @@
 	    }, source).mergeAll();
 	  };
 
-	Rx.Observable.prototype.flatMapLatest = function(selector, resultSelector, thisArg) {
+	observableProto.flatMapLatest = observableProto.switchMap = function(selector, resultSelector, thisArg) {
 	    return new FlatMapObservable(this, selector, resultSelector, thisArg).switchLatest();
 	};
+
 	  var SkipObservable = (function(__super__) {
 	    inherits(SkipObservable, __super__);
 	    function SkipObservable(source, count) {
@@ -17634,6 +17664,7 @@
 	    function PausableObservable(source, pauser) {
 	      this.source = source;
 	      this.controller = new Subject();
+	      this.paused = true;
 
 	      if (pauser && pauser.subscribe) {
 	        this.pauser = this.controller.merge(pauser);
@@ -17649,7 +17680,7 @@
 	        subscription = conn.subscribe(o),
 	        connection = disposableEmpty;
 
-	      var pausable = this.pauser.distinctUntilChanged().subscribe(function (b) {
+	      var pausable = this.pauser.startWith(!this.paused).distinctUntilChanged().subscribe(function (b) {
 	        if (b) {
 	          connection = conn.connect();
 	        } else {
@@ -17662,10 +17693,12 @@
 	    };
 
 	    PausableObservable.prototype.pause = function () {
+	      this.paused = true;
 	      this.controller.onNext(false);
 	    };
 
 	    PausableObservable.prototype.resume = function () {
+	      this.paused = false;
 	      this.controller.onNext(true);
 	    };
 
@@ -17739,6 +17772,7 @@
 	    function PausableBufferedObservable(source, pauser) {
 	      this.source = source;
 	      this.controller = new Subject();
+	      this.paused = true;
 
 	      if (pauser && pauser.subscribe) {
 	        this.pauser = this.controller.merge(pauser);
@@ -17757,7 +17791,7 @@
 	      var subscription =
 	        combineLatestSource(
 	          this.source,
-	          this.pauser.startWith(false).distinctUntilChanged(),
+	          this.pauser.startWith(!this.paused).distinctUntilChanged(),
 	          function (data, shouldFire) {
 	            return { data: data, shouldFire: shouldFire };
 	          })
@@ -17790,10 +17824,12 @@
 	    };
 
 	    PausableBufferedObservable.prototype.pause = function () {
+	      this.paused = true;
 	      this.controller.onNext(false);
 	    };
 
 	    PausableBufferedObservable.prototype.resume = function () {
+	      this.paused = false;
 	      this.controller.onNext(true);
 	    };
 
@@ -17959,7 +17995,7 @@
 	    }
 
 	    function scheduleMethod(s, self) {
-	      self.source.request(1);
+	      return self.source.request(1);
 	    }
 
 	    StopAndWaitObservable.prototype._subscribe = function (o) {
@@ -17991,7 +18027,7 @@
 	      };
 
 	      function innerScheduleMethod(s, self) {
-	        self.observable.source.request(1);
+	        return self.observable.source.request(1);
 	      }
 
 	      StopAndWaitObserver.prototype.next = function (value) {
@@ -17999,7 +18035,7 @@
 	        this.scheduleDisposable = defaultScheduler.schedule(this, innerScheduleMethod);
 	      };
 
-	      StopAndWaitObservable.dispose = function () {
+	      StopAndWaitObserver.dispose = function () {
 	        this.observer = null;
 	        if (this.cancel) {
 	          this.cancel.dispose();
@@ -18036,7 +18072,7 @@
 	    }
 
 	    function scheduleMethod(s, self) {
-	      self.source.request(self.windowSize);
+	      return self.source.request(self.windowSize);
 	    }
 
 	    WindowedObservable.prototype._subscribe = function (o) {
@@ -18069,7 +18105,7 @@
 	      };
 
 	      function innerScheduleMethod(s, self) {
-	        self.observable.source.request(self.observable.windowSize);
+	        return self.observable.source.request(self.observable.windowSize);
 	      }
 
 	      WindowedObserver.prototype.next = function (value) {
@@ -18122,7 +18158,7 @@
 
 	    source.subscribe(
 	      function (x) {
-	        !dest.write(String(x)) && source.pause();
+	        !dest.write(x) && source.pause();
 	      },
 	      function (err) {
 	        dest.emit('error', err);
@@ -18362,6 +18398,9 @@
 
 	    ConnectableObservable.prototype.connect = function () {
 	      if (!this._connection) {
+	        if (this._subject.isStopped) {
+	          return disposableEmpty;
+	        }
 	        var subscription = this._source.subscribe(this._subject);
 	        this._connection = new ConnectDisposable(this, subscription);
 	      }
@@ -19810,7 +19849,7 @@
 	   * @param {Scheduler} [scheduler]  Scheduler to run windowing timers on. If not specified, the timeout scheduler is used.
 	   * @returns {Observable} An observable sequence of windows.
 	   */
-	  observableProto.windowWithTime = function (timeSpan, timeShiftOrScheduler, scheduler) {
+	  observableProto.windowWithTime = observableProto.windowTime = function (timeSpan, timeShiftOrScheduler, scheduler) {
 	    var source = this, timeShift;
 	    timeShiftOrScheduler == null && (timeShift = timeSpan);
 	    isScheduler(scheduler) || (scheduler = defaultScheduler);
@@ -19890,7 +19929,7 @@
 	   * @param {Scheduler} [scheduler]  Scheduler to run windowing timers on. If not specified, the timeout scheduler is used.
 	   * @returns {Observable} An observable sequence of windows.
 	   */
-	  observableProto.windowWithTimeOrCount = function (timeSpan, count, scheduler) {
+	  observableProto.windowWithTimeOrCount = observableProto.windowTimeOrCount = function (timeSpan, count, scheduler) {
 	    var source = this;
 	    isScheduler(scheduler) || (scheduler = defaultScheduler);
 	    return new AnonymousObservable(function (observer) {
@@ -19953,7 +19992,7 @@
 	   * @param {Scheduler} [scheduler]  Scheduler to run buffer timers on. If not specified, the timeout scheduler is used.
 	   * @returns {Observable} An observable sequence of buffers.
 	   */
-	  observableProto.bufferWithTime = function (timeSpan, timeShiftOrScheduler, scheduler) {
+	  observableProto.bufferWithTime = observableProto.bufferTime = function (timeSpan, timeShiftOrScheduler, scheduler) {
 	    return this.windowWithTime(timeSpan, timeShiftOrScheduler, scheduler).flatMap(toArray);
 	  };
 
@@ -19966,7 +20005,7 @@
 	   * @param {Scheduler} [scheduler]  Scheduler to run bufferin timers on. If not specified, the timeout scheduler is used.
 	   * @returns {Observable} An observable sequence of buffers.
 	   */
-	  observableProto.bufferWithTimeOrCount = function (timeSpan, count, scheduler) {
+	  observableProto.bufferWithTimeOrCount = observableProto.bufferTimeOrCount = function (timeSpan, count, scheduler) {
 	    return this.windowWithTimeOrCount(timeSpan, count, scheduler).flatMap(toArray);
 	  };
 
@@ -20955,13 +20994,14 @@
 	    return new SwitchFirstObservable(this);
 	  };
 
-	observableProto.flatMapFirst = observableProto.selectManyFirst = function(selector, resultSelector, thisArg) {
+	observableProto.flatMapFirst = observableProto.exhaustMap = function(selector, resultSelector, thisArg) {
 	    return new FlatMapObservable(this, selector, resultSelector, thisArg).switchFirst();
 	};
 
-	Rx.Observable.prototype.flatMapWithMaxConcurrent = function(limit, selector, resultSelector, thisArg) {
+	observableProto.flatMapWithMaxConcurrent = observableProto.flatMapMaxConcurrent = function(limit, selector, resultSelector, thisArg) {
 	    return new FlatMapObservable(this, selector, resultSelector, thisArg).merge(limit);
 	};
+
 	  /** Provides a set of extension methods for virtual time scheduling. */
 	  var VirtualTimeScheduler = Rx.VirtualTimeScheduler = (function (__super__) {
 	    inherits(VirtualTimeScheduler, __super__);
@@ -23125,7 +23165,6 @@
 	function applyToTag(styleElement, obj) {
 		var css = obj.css;
 		var media = obj.media;
-		var sourceMap = obj.sourceMap;
 
 		if(media) {
 			styleElement.setAttribute("media", media)
@@ -23143,7 +23182,6 @@
 
 	function updateLink(linkElement, obj) {
 		var css = obj.css;
-		var media = obj.media;
 		var sourceMap = obj.sourceMap;
 
 		if(sourceMap) {

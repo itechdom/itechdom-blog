@@ -1,7 +1,6 @@
 'use strict';
 
 var gulp = require('gulp');
-var karma = require('gulp-karma');
 
 module.exports = function(options) {
 

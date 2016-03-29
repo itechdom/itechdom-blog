@@ -10,6 +10,7 @@ RUN apt-get update
 RUN apt-get install -y build-essential g++
 RUN npm install -g gulp
 RUN npm install
+RUN npm rebuild node-sass
 
 # Bundle app source
 COPY . /usr/src/app

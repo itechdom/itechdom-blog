@@ -1492,6 +1492,16 @@
 	      return new BinaryDisposable(disposable, new LocalClearDisposable(id));
 	    };
 
+	    function scheduleLongRunning(state, action, disposable) {
+	      return function () { action(state, disposable); };
+	    }
+
+	    DefaultScheduler.prototype.scheduleLongRunning = function (state, action) {
+	      var disposable = disposableCreate(noop);
+	      scheduleMethod(scheduleLongRunning(state, action, disposable));
+	      return disposable;
+	    };
+
 	    return DefaultScheduler;
 	  }(Scheduler));
 
@@ -2468,9 +2478,17 @@
 	    }
 
 	    FromPromiseObservable.prototype.subscribeCore = function(o) {
-	      var sad = new SingleAssignmentDisposable(), self = this;
+	      var sad = new SingleAssignmentDisposable(), self = this, p = this._p;
 
-	      this._p
+	      if (isFunction(p)) {
+	        p = tryCatch(p)();
+	        if (p === errorObj) {
+	          o.onError(p.e);
+	          return sad;
+	        }
+	      }
+
+	      p
 	        .then(function (data) {
 	          sad.setDisposable(self._s.schedule([o, data], scheduleNext));
 	        }, function (err) {
@@ -4474,7 +4492,7 @@
 	   * @param {Number} [skip] Number of elements to skip between creation of consecutive buffers. If not provided, defaults to the count.
 	   * @returns {Observable} An observable sequence of buffers.
 	   */
-	  observableProto.bufferWithCount = function (count, skip) {
+	  observableProto.bufferWithCount = observableProto.bufferCount = function (count, skip) {
 	    typeof skip !== 'number' && (skip = count);
 	    return this.windowWithCount(count, skip)
 	      .flatMap(toArray)
@@ -5145,7 +5163,7 @@
 	      scheduler = immediateScheduler;
 	    }
 	    for(var args = [], i = start, len = arguments.length; i < len; i++) { args.push(arguments[i]); }
-	    return enumerableOf([observableFromArray(args, scheduler), this]).concat();
+	    return observableConcat.apply(null, [observableFromArray(args, scheduler), this]);
 	  };
 
 	  var TakeLastObserver = (function (__super__) {
@@ -5239,7 +5257,7 @@
 	   * @param {Number} [skip] Number of elements to skip between creation of consecutive windows. If not specified, defaults to the count.
 	   * @returns {Observable} An observable sequence of windows.
 	   */
-	  observableProto.windowWithCount = function (count, skip) {
+	  observableProto.windowWithCount = observableProto.windowCount = function (count, skip) {
 	    var source = this;
 	    +count || (count = 0);
 	    Math.abs(count) === Infinity && (count = 0);
@@ -5693,7 +5711,7 @@
 	    return this.map(plucker(args, len));
 	  };
 
-	observableProto.flatMap = observableProto.selectMany = function(selector, resultSelector, thisArg) {
+	observableProto.flatMap = observableProto.selectMany = observableProto.mergeMap = function(selector, resultSelector, thisArg) {
 	    return new FlatMapObservable(this, selector, resultSelector, thisArg).mergeAll();
 	};
 
@@ -5749,9 +5767,10 @@
 	    }, source).mergeAll();
 	  };
 
-	Rx.Observable.prototype.flatMapLatest = function(selector, resultSelector, thisArg) {
+	observableProto.flatMapLatest = observableProto.switchMap = function(selector, resultSelector, thisArg) {
 	    return new FlatMapObservable(this, selector, resultSelector, thisArg).switchLatest();
 	};
+
 	  var SkipObservable = (function(__super__) {
 	    inherits(SkipObservable, __super__);
 	    function SkipObservable(source, count) {
@@ -7758,6 +7777,7 @@
 	    function PausableObservable(source, pauser) {
 	      this.source = source;
 	      this.controller = new Subject();
+	      this.paused = true;
 
 	      if (pauser && pauser.subscribe) {
 	        this.pauser = this.controller.merge(pauser);
@@ -7773,7 +7793,7 @@
 	        subscription = conn.subscribe(o),
 	        connection = disposableEmpty;
 
-	      var pausable = this.pauser.distinctUntilChanged().subscribe(function (b) {
+	      var pausable = this.pauser.startWith(!this.paused).distinctUntilChanged().subscribe(function (b) {
 	        if (b) {
 	          connection = conn.connect();
 	        } else {
@@ -7786,10 +7806,12 @@
 	    };
 
 	    PausableObservable.prototype.pause = function () {
+	      this.paused = true;
 	      this.controller.onNext(false);
 	    };
 
 	    PausableObservable.prototype.resume = function () {
+	      this.paused = false;
 	      this.controller.onNext(true);
 	    };
 
@@ -7863,6 +7885,7 @@
 	    function PausableBufferedObservable(source, pauser) {
 	      this.source = source;
 	      this.controller = new Subject();
+	      this.paused = true;
 
 	      if (pauser && pauser.subscribe) {
 	        this.pauser = this.controller.merge(pauser);
@@ -7881,7 +7904,7 @@
 	      var subscription =
 	        combineLatestSource(
 	          this.source,
-	          this.pauser.startWith(false).distinctUntilChanged(),
+	          this.pauser.startWith(!this.paused).distinctUntilChanged(),
 	          function (data, shouldFire) {
 	            return { data: data, shouldFire: shouldFire };
 	          })
@@ -7914,10 +7937,12 @@
 	    };
 
 	    PausableBufferedObservable.prototype.pause = function () {
+	      this.paused = true;
 	      this.controller.onNext(false);
 	    };
 
 	    PausableBufferedObservable.prototype.resume = function () {
+	      this.paused = false;
 	      this.controller.onNext(true);
 	    };
 
@@ -8083,7 +8108,7 @@
 	    }
 
 	    function scheduleMethod(s, self) {
-	      self.source.request(1);
+	      return self.source.request(1);
 	    }
 
 	    StopAndWaitObservable.prototype._subscribe = function (o) {
@@ -8115,7 +8140,7 @@
 	      };
 
 	      function innerScheduleMethod(s, self) {
-	        self.observable.source.request(1);
+	        return self.observable.source.request(1);
 	      }
 
 	      StopAndWaitObserver.prototype.next = function (value) {
@@ -8123,7 +8148,7 @@
 	        this.scheduleDisposable = defaultScheduler.schedule(this, innerScheduleMethod);
 	      };
 
-	      StopAndWaitObservable.dispose = function () {
+	      StopAndWaitObserver.dispose = function () {
 	        this.observer = null;
 	        if (this.cancel) {
 	          this.cancel.dispose();
@@ -8160,7 +8185,7 @@
 	    }
 
 	    function scheduleMethod(s, self) {
-	      self.source.request(self.windowSize);
+	      return self.source.request(self.windowSize);
 	    }
 
 	    WindowedObservable.prototype._subscribe = function (o) {
@@ -8193,7 +8218,7 @@
 	      };
 
 	      function innerScheduleMethod(s, self) {
-	        self.observable.source.request(self.observable.windowSize);
+	        return self.observable.source.request(self.observable.windowSize);
 	      }
 
 	      WindowedObserver.prototype.next = function (value) {
@@ -8246,7 +8271,7 @@
 
 	    source.subscribe(
 	      function (x) {
-	        !dest.write(String(x)) && source.pause();
+	        !dest.write(x) && source.pause();
 	      },
 	      function (err) {
 	        dest.emit('error', err);
@@ -8486,6 +8511,9 @@
 
 	    ConnectableObservable.prototype.connect = function () {
 	      if (!this._connection) {
+	        if (this._subject.isStopped) {
+	          return disposableEmpty;
+	        }
 	        var subscription = this._source.subscribe(this._subject);
 	        this._connection = new ConnectDisposable(this, subscription);
 	      }
@@ -9934,7 +9962,7 @@
 	   * @param {Scheduler} [scheduler]  Scheduler to run windowing timers on. If not specified, the timeout scheduler is used.
 	   * @returns {Observable} An observable sequence of windows.
 	   */
-	  observableProto.windowWithTime = function (timeSpan, timeShiftOrScheduler, scheduler) {
+	  observableProto.windowWithTime = observableProto.windowTime = function (timeSpan, timeShiftOrScheduler, scheduler) {
 	    var source = this, timeShift;
 	    timeShiftOrScheduler == null && (timeShift = timeSpan);
 	    isScheduler(scheduler) || (scheduler = defaultScheduler);
@@ -10014,7 +10042,7 @@
 	   * @param {Scheduler} [scheduler]  Scheduler to run windowing timers on. If not specified, the timeout scheduler is used.
 	   * @returns {Observable} An observable sequence of windows.
 	   */
-	  observableProto.windowWithTimeOrCount = function (timeSpan, count, scheduler) {
+	  observableProto.windowWithTimeOrCount = observableProto.windowTimeOrCount = function (timeSpan, count, scheduler) {
 	    var source = this;
 	    isScheduler(scheduler) || (scheduler = defaultScheduler);
 	    return new AnonymousObservable(function (observer) {
@@ -10077,7 +10105,7 @@
 	   * @param {Scheduler} [scheduler]  Scheduler to run buffer timers on. If not specified, the timeout scheduler is used.
 	   * @returns {Observable} An observable sequence of buffers.
 	   */
-	  observableProto.bufferWithTime = function (timeSpan, timeShiftOrScheduler, scheduler) {
+	  observableProto.bufferWithTime = observableProto.bufferTime = function (timeSpan, timeShiftOrScheduler, scheduler) {
 	    return this.windowWithTime(timeSpan, timeShiftOrScheduler, scheduler).flatMap(toArray);
 	  };
 
@@ -10090,7 +10118,7 @@
 	   * @param {Scheduler} [scheduler]  Scheduler to run bufferin timers on. If not specified, the timeout scheduler is used.
 	   * @returns {Observable} An observable sequence of buffers.
 	   */
-	  observableProto.bufferWithTimeOrCount = function (timeSpan, count, scheduler) {
+	  observableProto.bufferWithTimeOrCount = observableProto.bufferTimeOrCount = function (timeSpan, count, scheduler) {
 	    return this.windowWithTimeOrCount(timeSpan, count, scheduler).flatMap(toArray);
 	  };
 
@@ -11079,13 +11107,14 @@
 	    return new SwitchFirstObservable(this);
 	  };
 
-	observableProto.flatMapFirst = observableProto.selectManyFirst = function(selector, resultSelector, thisArg) {
+	observableProto.flatMapFirst = observableProto.exhaustMap = function(selector, resultSelector, thisArg) {
 	    return new FlatMapObservable(this, selector, resultSelector, thisArg).switchFirst();
 	};
 
-	Rx.Observable.prototype.flatMapWithMaxConcurrent = function(limit, selector, resultSelector, thisArg) {
+	observableProto.flatMapWithMaxConcurrent = observableProto.flatMapMaxConcurrent = function(limit, selector, resultSelector, thisArg) {
 	    return new FlatMapObservable(this, selector, resultSelector, thisArg).merge(limit);
 	};
+
 	  /** Provides a set of extension methods for virtual time scheduling. */
 	  var VirtualTimeScheduler = Rx.VirtualTimeScheduler = (function (__super__) {
 	    inherits(VirtualTimeScheduler, __super__);
