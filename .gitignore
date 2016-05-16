@@ -8,6 +8,7 @@ bower_components/
 /**/.idea/workspace.xml
 *.iml
 *.swp
+*.lock
 .tmp/
 atlassian-ide-plugin.xml
 workspace.xml
@@ -18,3 +19,4 @@ env/
 ENV/
 build/
 .stack-work/
+target/
