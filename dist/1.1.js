@@ -140,7 +140,7 @@ webpackJsonp([1],[
 
 					length = Math.ceil(tree.length / 2);
 					arrange = this.defaultYPosition(length, order, box);
-					vMargin = order * 20 + order * 20 * 5;
+					vMargin = order * 20 + order * 20;
 
 					mainContainer = new PIXI.Container();
 
@@ -149,8 +149,13 @@ webpackJsonp([1],[
 
 					x = px;
 					y = py;
+
 					mindmapObj.mainContainer = mainContainer;
 					this.stage.addChild(mainContainer);
+					var index = this.stage.children.indexOf(mindmapObj.mainContainer);
+					if (this.stage.children[index - 1]) {
+						var bounds = this.stage.children[index - 1].getLocalBounds();
+					}
 				} else {
 
 					//factors for position: parent, number of siblings
