@@ -8,7 +8,6 @@ class mindmapMain{
 	constructor(){
 		var jModel = JSON.parse(model);
 		view.render(jModel);
-		draggable(100,100);
 	}
 
 }

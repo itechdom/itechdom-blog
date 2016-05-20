@@ -89,7 +89,6 @@ class mindmapView {
 			mindmapObj.parent = parent;
 			box.obj = mindmapObj;
 
-
 			//calculate initial position if the tree doesn't have one already set
 			if(!parent){
 
@@ -158,8 +157,6 @@ class mindmapView {
 
 			box.addChild(text);
 			this.stage.addChild(box);
-
-
 		})
 		this.renderer.render(this.stage);
 
