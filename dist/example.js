@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Rx = __webpack_require__(3);
+	var Rx = __webpack_require__(2);
 	console.log("hello. example");
 	var a = function () {
 		console.log(this);
@@ -52,8 +52,7 @@
 
 /***/ },
 /* 1 */,
-/* 2 */,
-/* 3 */
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global, process) {// Copyright (c) Microsoft, All rights reserved. See License.txt in the project root for license information.
@@ -12445,10 +12444,10 @@
 
 	}.call(this));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module), (function() { return this; }()), __webpack_require__(5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)(module), (function() { return this; }()), __webpack_require__(4)))
 
 /***/ },
-/* 4 */
+/* 3 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -12464,7 +12463,7 @@
 
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -12476,6 +12475,9 @@
 	var queueIndex = -1;
 
 	function cleanUpNextTick() {
+	    if (!draining || !currentQueue) {
+	        return;
+	    }
 	    draining = false;
 	    if (currentQueue.length) {
 	        queue = currentQueue.concat(queue);

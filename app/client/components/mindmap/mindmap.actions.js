@@ -22,8 +22,6 @@ class mindmapAction{
 			});
 
 		});
-
-
 		return actions;
 	}
 

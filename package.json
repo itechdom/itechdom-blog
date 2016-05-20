@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/itechdom/zpresent",
   "dependencies": {
-    "angular2": "^2.0.0-beta.12",
     "animate.css": "*",
     "body": "*",
     "flat": "^2.0.0",
@@ -31,6 +30,7 @@
     "highlight.js": "*",
     "jquery": "*",
     "lodash": "*",
+    "mindmup-mapjs": "^1.7.2",
     "mongodb": "*",
     "mongoose": "*",
     "pixi.js": "*",

@@ -1,5 +1,4 @@
 'use strict';
-var template = require('./mindmapView.html');
 var $ = require('jquery');
 var PIXI = require('pixi.js');
 

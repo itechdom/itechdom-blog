@@ -1,7 +1,7 @@
 'use strict';
-var template = require('./mindmapView.html');
+var template = require('./mindmap.dom.html');
 var $ = require('jquery');
-var mindmapView = require('./mindmapView.view.js');
+var mindmapView = require('../canvas/mindmap.canvas.js');
 
 class mindmapViewDom {
 
@@ -15,8 +15,8 @@ class mindmapViewDom {
         console.log("I am running fine");
     }
     render(tree){
-		this.traverse(tree,(mindmapObj,parent,key)=>{
-            console.log(mindmapObj);
+		mindmapView.traverse(tree,(mindmapObj,parent,key)=>{
+
         });
     }
 }
