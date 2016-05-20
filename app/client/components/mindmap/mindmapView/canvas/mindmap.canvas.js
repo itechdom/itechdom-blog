@@ -73,10 +73,6 @@ class mindmapView {
 			obj = node.obj.ideas[key];	
 			obj.box.x = obj.box.x + 3
 		};
-
-		//change siblings if needed?
-		//chekc if the sibling overlaps, if so, show either a merge icon or a replace order icon
-		//console.log(node.obj.parent)
     }
     createTrunk(mindmapObj){
 
@@ -176,7 +172,6 @@ class mindmapView {
 			box.addChild(text);
             mindmapObj.mainContainer.addChild(box);
             //get bounds of the container
-            console.log(mindmapObj.mainContainer.getLocalBounds());
 		})
 		this.renderer.render(this.stage);
 
