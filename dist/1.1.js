@@ -76,6 +76,8 @@ webpackJsonp([1],[
 			box.drawRect(0, 0, 20, 20);
 			return box;
 		}
+		//get the order of the sibling and the height of all it's child elements
+		calculateSiblingHeight() {}
 		defaultYPosition(length, order, box) {
 			var arrange = -1 * Math.ceil(length / 2) + order;
 			//this is going to return y coordinates
@@ -229,7 +231,6 @@ webpackJsonp([1],[
 			this.stage = new PIXI.Container();
 			this.stage.interactive = true;
 		}
-
 	}
 	module.exports = new mindmapView();
 
