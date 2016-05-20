@@ -59,6 +59,7 @@ class mindmapView {
 	traverse(mindmap,processFunction,parent){
 		var count = 0;
 		var obj;
+        //return upper sibling and below sibling
 		for(var key in mindmap){
 			obj = mindmap[key];
 			obj.order = count++;
@@ -92,6 +93,7 @@ class mindmapView {
 			var order = mindmapObj.order; 
 			var box = this.createBox();
             var mainContainer;
+
 			//store a reference to the object here
 			mindmapObj.box = box;
 			mindmapObj.parent = parent;
@@ -171,7 +173,6 @@ class mindmapView {
 			var text = this.createText(sText);
 			box.addChild(text);
             mindmapObj.mainContainer.addChild(box);
-            //get bounds of the container
 		})
 		this.renderer.render(this.stage);
 
@@ -220,7 +221,5 @@ class mindmapView {
 		this.stage = new PIXI.Container();
 		this.stage.interactive = true;
 	}
-
-
 }
 module.exports = new mindmapView();
