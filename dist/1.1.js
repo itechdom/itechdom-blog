@@ -267,6 +267,11 @@ webpackJsonp([1],[
 			//add a container to the center of the screen
 			this.stage.x = this.renderer.width / 2;
 			this.stage.y = this.renderer.height / 2;
+
+			var box = this.createBox();
+			var text = this.createText("Title");
+			box.addChild(text);
+			this.stage.addChild(box);
 		}
 	}
 	module.exports = new mindmapView();
