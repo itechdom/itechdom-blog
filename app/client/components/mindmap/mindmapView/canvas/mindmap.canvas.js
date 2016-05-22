@@ -11,6 +11,9 @@ var PIXI = require('pixi.js');
 //If there's at any point in time a re-render, we rerender the part and we would hope the bounds would get updated
 //When we render a trunk, we have to know the siblings of it, if there's sibling node(s) to it, we move the trunk under the bounds of the sibling container 
 
+const PARENT_VERTICAL_MARGIN = 100;
+const CHILDREN_VERTICAL_MARGIN = 20;
+
 class mindmapView {
 
 	createText(text){
@@ -103,6 +106,9 @@ class mindmapView {
 			mindmapObj.parent = parent;
 			box.obj = mindmapObj;
 
+
+            //we should treat the first trunk differnetly
+
 			//calculate initial position if the tree doesn't have one already set
 			if(!mindmapObj.parent){
 
@@ -113,7 +119,7 @@ class mindmapView {
 			    mainContainer = new PIXI.Container();
 
 				px = 0;
-				py = 100 + (arrange*20)+20+vMargin;
+				py = (arrange*20) + PARENT_VERTICAL_MARGIN;
 
 				x = px;
 				y = py;
@@ -121,9 +127,14 @@ class mindmapView {
                 mindmapObj.mainContainer = mainContainer;
 			    this.stage.addChild(mainContainer);
                 var index = this.stage.children.indexOf(mindmapObj.mainContainer);
-                if(this.stage.children[index-1]){
-                    var bounds = this.stage.children[index-1].getLocalBounds();
+                var countBack = 1;
+                var aboveHeight = 0;
+                while(this.stage.children[index-countBack]){
+                    var prevContainer = this.stage.children[index-countBack];
+                    aboveHeight = aboveHeight + prevContainer.height + 50;
+                    countBack++;
                 }
+                mainContainer.y = aboveHeight;
 			}
 			else{
 
@@ -182,7 +193,6 @@ class mindmapView {
 			var text = this.createText(sText);
 			box.addChild(text);
             mindmapObj.mainContainer.addChild(box);
-         
 		})
 		this.renderer.render(this.stage);
 
