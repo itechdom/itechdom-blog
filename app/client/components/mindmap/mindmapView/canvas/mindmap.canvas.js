@@ -2,6 +2,15 @@
 var $ = require('jquery');
 var PIXI = require('pixi.js');
 
+
+//The tree is a stage
+//Trunk is a container (so I can calculate bounds)
+//We go thorugh the tree and we render it trunk by trunk
+//we have to finish one trunk at a time
+//After we finish a particular trunk, calculate its bounds
+//If there's at any point in time a re-render, we rerender the part and we would hope the bounds would get updated
+//When we render a trunk, we have to know the siblings of it, if there's sibling node(s) to it, we move the trunk under the bounds of the sibling container 
+
 class mindmapView {
 
 	createText(text){
@@ -47,13 +56,14 @@ class mindmapView {
 		return arrange;
 	}
 	defaultXPosition(length,order,box){
-		//this is going to return y coordinates
+		//this is going to return x coordinates
 		//it's three times the box width
 		return 20*3;
 	}
 	traverse(mindmap,processFunction,parent){
 		var count = 0;
 		var obj;
+        //return upper sibling and below sibling
 		for(var key in mindmap){
 			obj = mindmap[key];
 			obj.order = count++;
@@ -68,11 +78,10 @@ class mindmapView {
 			obj = node.obj.ideas[key];	
 			obj.box.x = obj.box.x + 3
 		};
+    }
+    createTrunk(mindmapObj){
 
-		//change siblings if needed?
-		//chekc if the sibling overlaps, if so, show either a merge icon or a replace order icon
-		//console.log(node.obj.parent)
-	}
+    }
 	render(tree){
 		this.tree = tree;
 		var count;
@@ -87,28 +96,43 @@ class mindmapView {
 
 			var order = mindmapObj.order; 
 			var box = this.createBox();
+            var mainContainer;
+
 			//store a reference to the object here
 			mindmapObj.box = box;
 			mindmapObj.parent = parent;
 			box.obj = mindmapObj;
 
 			//calculate initial position if the tree doesn't have one already set
-			if(!parent){
+			if(!mindmapObj.parent){
 
 				length = Math.ceil(tree.length/2);
 				arrange = this.defaultYPosition(length,order,box);
-				vMargin = (order * 20)+(order*20*5);
+				vMargin = (order*20)+(order*20);
+
+			    mainContainer = new PIXI.Container();
 
 				px = 0;
-				py = 300 + (arrange*20)+20+vMargin;
+				py = 100 + (arrange*20)+20+vMargin;
 
 				x = px;
 				y = py;
+
+                mindmapObj.mainContainer = mainContainer;
+			    this.stage.addChild(mainContainer);
+                var index = this.stage.children.indexOf(mindmapObj.mainContainer);
+                if(this.stage.children[index-1]){
+                    var bounds = this.stage.children[index-1].getLocalBounds();
+                }
 			}
 			else{
+
 				//factors for position: parent, number of siblings 
 				//factors for vMargin: Same level nodes above and beyond, or we can calculate the height of each level in a trunk each time
-				length = Object.keys(parent.ideas).length; 
+				length = Object.keys(mindmapObj.parent.ideas).length; 
+
+                mindmapObj.mainContainer = mindmapObj.parent.mainContainer;
+
 				arrange = this.defaultYPosition(length,order,box);
 				hMargin = this.defaultXPosition()
 
@@ -124,6 +148,7 @@ class mindmapView {
 				}
 				vMargin = (arrange*20);
 
+                //apply margins to obj
 				if(!parent.x || !parent.y){
 					x = px + hMargin;
 					y = py +  vMargin;
@@ -150,15 +175,14 @@ class mindmapView {
 
 			box.interactive = true;
 
-			var container = new PIXI.Container();
 			box.x = x;
 			box.y = y;
 
 			var sText = mindmapObj.title.slice(0,10);
 			var text = this.createText(sText);
-
 			box.addChild(text);
-			this.stage.addChild(box);
+            mindmapObj.mainContainer.addChild(box);
+         
 		})
 		this.renderer.render(this.stage);
 
@@ -188,7 +212,6 @@ class mindmapView {
 			this.data = null;
 			//rerender the tree;
 			that.update(this);
-
 			//save the new tree
 		}
 		function onDragMove()
