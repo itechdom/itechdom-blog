@@ -139,11 +139,24 @@ webpackJsonp([1],[
 
 					length = Math.ceil(tree.length / 2);
 					arrange = this.defaultYPosition(length, order, box);
-					//TODO: change 142 to the height of the container?
+					//TODO: change 142 to the height of the previous containers?
 					vMargin = arrange * 100;
 					hMargin = this.defaultXPosition();
 
 					mainContainer = new PIXI.Container();
+					mindmapObj.mainContainer = mainContainer;
+
+					this.stage.addChild(mainContainer);
+
+					var index = this.stage.children.indexOf(mindmapObj.mainContainer);
+					var countBack = 1;
+					var aboveHeight = 0;
+
+					while (this.stage.children[index - countBack]) {
+						var prevContainer = this.stage.children[index - countBack];
+						aboveHeight = aboveHeight + prevContainer.height;
+						countBack++;
+					}
 
 					px = hMargin;
 					py = vMargin;
@@ -151,17 +164,7 @@ webpackJsonp([1],[
 					x = px;
 					y = py;
 
-					mindmapObj.mainContainer = mainContainer;
-					this.stage.addChild(mainContainer);
-					var index = this.stage.children.indexOf(mindmapObj.mainContainer);
-					var countBack = 1;
-					var aboveHeight = 0;
-					while (this.stage.children[index - countBack]) {
-						var prevContainer = this.stage.children[index - countBack];
-						aboveHeight = aboveHeight + prevContainer.height;
-						countBack++;
-					}
-					mainContainer.y = aboveHeight;
+					mainContainer.y = y;
 				} else {
 
 					//factors for position: parent, number of siblings
