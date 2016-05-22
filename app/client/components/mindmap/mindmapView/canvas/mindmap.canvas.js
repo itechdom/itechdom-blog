@@ -104,22 +104,11 @@ class mindmapView {
 
 				length = Math.ceil(tree.length/2);
 				arrange = this.defaultYPosition(length,order,box);
-				vMargin = (arrange*20);
+                //TODO: change 142 to the height of the container?
+				vMargin = (arrange*142);
 				hMargin = this.defaultXPosition()
 
 			    mainContainer = new PIXI.Container();
-
-				//factors into calculcate the top margin for each box
-				if(length == 1){
-					arrange = 0;
-					vMargin = 0;
-				}
-				else{
-					if(arrange >= 0){
-						arrange = arrange + 1;
-					}
-				}
-
 
 				px = hMargin;
 				py = vMargin;
@@ -252,9 +241,8 @@ class mindmapView {
         var box = this.createBox();
         var text = this.createText("Title");
         box.addChild(text);
+
         this.stage.addChild(box);
-
-
 	}
 }
 module.exports = new mindmapView();
