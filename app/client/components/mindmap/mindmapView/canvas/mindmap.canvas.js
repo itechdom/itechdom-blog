@@ -2,17 +2,11 @@
 var $ = require('jquery');
 var PIXI = require('pixi.js');
 
-
-//The tree is a stage
-//Trunk is a container (so I can calculate bounds)
-//We go thorugh the tree and we render it trunk by trunk
-//we have to finish one trunk at a time
-//After we finish a particular trunk, calculate its bounds
-//If there's at any point in time a re-render, we rerender the part and we would hope the bounds would get updated
-//When we render a trunk, we have to know the siblings of it, if there's sibling node(s) to it, we move the trunk under the bounds of the sibling container 
-
 const PARENT_VERTICAL_MARGIN = 100;
 const CHILDREN_VERTICAL_MARGIN = 20;
+
+//We have to start at the center
+//First node we can just add it to the upper right of the center 
 
 class mindmapView {
 
@@ -106,20 +100,29 @@ class mindmapView {
 			mindmapObj.parent = parent;
 			box.obj = mindmapObj;
 
-
-            //we should treat the first trunk differnetly
-
-			//calculate initial position if the tree doesn't have one already set
 			if(!mindmapObj.parent){
 
 				length = Math.ceil(tree.length/2);
 				arrange = this.defaultYPosition(length,order,box);
-				vMargin = (order*20)+(order*20);
+				vMargin = (arrange*20);
+				hMargin = this.defaultXPosition()
 
 			    mainContainer = new PIXI.Container();
 
-				px = 0;
-				py = (arrange*20) + PARENT_VERTICAL_MARGIN;
+				//factors into calculcate the top margin for each box
+				if(length == 1){
+					arrange = 0;
+					vMargin = 0;
+				}
+				else{
+					if(arrange >= 0){
+						arrange = arrange + 1;
+					}
+				}
+
+
+				px = hMargin;
+				py = vMargin;
 
 				x = px;
 				y = py;
@@ -159,7 +162,7 @@ class mindmapView {
 				}
 				vMargin = (arrange*20);
 
-                //apply margins to obj
+                //if the node has a parent other than the the original parent
 				if(!parent.x || !parent.y){
 					x = px + hMargin;
 					y = py +  vMargin;
@@ -168,6 +171,7 @@ class mindmapView {
 					x = parent.x + hMargin;
 					y = parent.y + vMargin;
 				}
+                //store the x y for the object
 				mindmapObj.x = x;
 				mindmapObj.y = y;
 			}
@@ -240,6 +244,10 @@ class mindmapView {
 		$('app').append(this.renderer.view);
 		this.stage = new PIXI.Container();
 		this.stage.interactive = true;
+
+        //add a container to the center of the screen
+        this.stage.x = this.renderer.width / 2;
+        this.stage.y = this.renderer.height / 2;
 	}
 }
 module.exports = new mindmapView();
