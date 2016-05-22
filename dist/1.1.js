@@ -140,7 +140,7 @@ webpackJsonp([1],[
 					length = Math.ceil(tree.length / 2);
 					arrange = this.defaultYPosition(length, order, box);
 					//TODO: change 142 to the height of the container?
-					vMargin = arrange * 142;
+					vMargin = arrange * 100;
 					hMargin = this.defaultXPosition();
 
 					mainContainer = new PIXI.Container();
@@ -158,7 +158,7 @@ webpackJsonp([1],[
 					var aboveHeight = 0;
 					while (this.stage.children[index - countBack]) {
 						var prevContainer = this.stage.children[index - countBack];
-						aboveHeight = aboveHeight + prevContainer.height + 50;
+						aboveHeight = aboveHeight + prevContainer.height;
 						countBack++;
 					}
 					mainContainer.y = aboveHeight;
