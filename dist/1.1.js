@@ -16,18 +16,22 @@ webpackJsonp([1],[
 
 	'use strict';
 
-	var view = __webpack_require__(13);
+	var canvasView = __webpack_require__(13);
 	var domView = __webpack_require__(148);
 	var actions = __webpack_require__(1);
 	var model = __webpack_require__(150);
 
 	class mindmapMain {
 
-		constructor() {
-			var jModel = JSON.parse(model);
-			view.render(jModel);
-			domView.render(jModel);
-		}
+	  constructor() {
+	    var jsonModel = JSON.parse(model);
+	    var root = {
+	      title: "Elm",
+	      ideas: jsonModel
+	    };
+	    canvasView.render(jsonModel);
+	    domView.render(jsonModel);
+	  }
 
 	}
 
@@ -112,26 +116,22 @@ webpackJsonp([1],[
 				var box = this.createBox();
 				var mainContainer = new PIXI.Container();
 
-				//store a reference to the object here
+				//store a reference to the object here to be used when updating the object's position
 				mindmapObj.box = box;
 				mindmapObj.parent = parent;
 				box.obj = mindmapObj;
 
-				length = Math.ceil(tree.length / 2);
-
 				var index = this.stage.children.indexOf(mindmapObj.mainContainer);
-				var countBack = 1;
 				var aboveHeight = 0;
 
 				//take previous sibling and calculate height + y value
-				while (this.stage.children[index - countBack]) {
+				if (this.stage.children[index - 1]) {
 					var prevContainer = this.stage.children[index - countBack];
 					aboveHeight = aboveHeight + prevContainer.height;
-					countBack++;
 				}
 
-				x = 0;
-				y = 0;
+				x = count * 2;
+				y = count * 2;
 
 				mainContainer.y = y;
 
@@ -156,6 +156,7 @@ webpackJsonp([1],[
 				box.addChild(text);
 				mainContainer.addChild(box);
 				this.stage.addChild(mainContainer);
+				count++;
 			});
 			this.renderer.render(this.stage);
 
@@ -202,12 +203,6 @@ webpackJsonp([1],[
 			//add a container to the center of the screen
 			this.stage.x = this.renderer.width / 2;
 			this.stage.y = this.renderer.height / 2;
-
-			var box = this.createBox();
-			var text = this.createText("Title");
-			box.addChild(text);
-
-			this.stage.addChild(box);
 		}
 	}
 	module.exports = new mindmapView();
