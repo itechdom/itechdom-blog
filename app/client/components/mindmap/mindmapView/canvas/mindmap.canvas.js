@@ -44,12 +44,10 @@ class mindmapView {
 		return box;
 	}
 	traverse(mindmap,processFunction,parent){
-		var count = 0;
 		var obj;
         //return upper sibling and below sibling
 		for(var key in mindmap){
 			obj = mindmap[key];
-			obj.order = count++;
 			processFunction(obj,parent,key);
 			this.traverse(obj.ideas,processFunction,obj);
 		}
@@ -70,6 +68,7 @@ class mindmapView {
 
 		this.traverse(tree,(mindmapObj,parent,key)=>{
 
+            console.log(mindmapObj);
 			var box = this.createBox();
             var mainContainer = new PIXI.Container();
 

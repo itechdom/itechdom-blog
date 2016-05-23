@@ -8,12 +8,16 @@ class mindmapMain{
 
 	constructor(){
 		var jsonModel = JSON.parse(model);
-        var root = {
+        var root = {"1":{
             title:"Elm",
-            ideas:jsonModel
+            ideas:{}
         }
-		canvasView.render(jsonModel);
-        domView.render(jsonModel);
+        }
+        jsonModel.map((node,index)=>{
+            root["1"].ideas[index+1] = node;
+        })
+		canvasView.render(root);
+        domView.render(root);
 	}
 
 }
