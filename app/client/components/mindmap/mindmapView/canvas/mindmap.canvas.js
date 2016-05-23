@@ -48,7 +48,7 @@ class mindmapView {
         //return upper sibling and below sibling
 		for(var key in mindmap){
 			obj = mindmap[key];
-			processFunction(obj,parent,key);
+			processFunction(obj,key,parent);
 			this.traverse(obj.ideas,processFunction,obj);
 		}
 	}
@@ -61,41 +61,57 @@ class mindmapView {
 		};
     }
 	render(tree){
+
 		this.tree = tree;
-		var count;
 		var x,y;
-		var px,py;
 
-		this.traverse(tree,(mindmapObj,parent,key)=>{
+		this.traverse(tree,(mindmapObj,key,parent)=>{
 
-            console.log(mindmapObj);
 			var box = this.createBox();
-            var mainContainer = new PIXI.Container();
+            box.interactive = true;
+            var mainContainer;
+
+            if(!parent){
+                mainContainer = new PIXI.Container();
+            }
+            else{
+                mainContainer = parent.mainContainer;
+            }
+
+			var sText = mindmapObj.title.slice(0,10);
+
+			var text = this.createText(sText);
 
             //store a reference to the object here to be used when updating the object's position
-            mindmapObj.box = box;
-            mindmapObj.parent = parent;
             box.obj = mindmapObj;
+            mindmapObj.box = box;
+            mindmapObj.mainContainer = mainContainer;
+
+
+            x = 100;
+            y = 100;
+
+
+            mainContainer.y = y;
+            box.x = x;
+            box.y = y;
+
+			box.addChild(text);
+
+            //store the x y for the object
+            mindmapObj.x = x;
+            mindmapObj.y = y;
+
 
             var index = this.stage.children.indexOf(mindmapObj.mainContainer);
             var aboveHeight = 0;
-
             //take previous sibling and calculate height + y value
             if(this.stage.children[index-1]){
                 var prevContainer = this.stage.children[index-countBack];
                 aboveHeight = aboveHeight + prevContainer.height;
             }
             
-            x = count * 2;
-            y = count * 2;
-
-            mainContainer.y = y;
-
-            //store the x y for the object
-            mindmapObj.x = x;
-            mindmapObj.y = y;
-
-            // events for drag start
+             // events for drag start
 			box
 			.on('mousedown', onDragStart)
 			.on('touchstart', onDragStart)
@@ -108,17 +124,11 @@ class mindmapView {
 			.on('mousemove', onDragMove)
 			.on('touchmove', onDragMove);
 
-			box.interactive = true;
-
-			box.x = x;
-			box.y = y;
-
-			var sText = mindmapObj.title.slice(0,10);
-			var text = this.createText(sText);
-			box.addChild(text);
             mainContainer.addChild(box);
-            this.stage.addChild(mainContainer);
-            count++;
+
+            if(!parent){
+                this.stage.addChild(mainContainer);
+            }
 		})
 		this.renderer.render(this.stage);
 
