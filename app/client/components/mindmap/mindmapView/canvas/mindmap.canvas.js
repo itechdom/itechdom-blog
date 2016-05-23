@@ -43,20 +43,6 @@ class mindmapView {
 		box.drawRect(0, 0, 20, 20);
 		return box;
 	}
-    //get the order of the sibling and the height of all it's child elements
-    calculateSiblingHeight(){
-
-    }
-	defaultYPosition(length,order,box){
-		var arrange = -1*Math.ceil(length/2) + order;
-		//this is going to return y coordinates
-		return arrange;
-	}
-	defaultXPosition(length,order,box){
-		//this is going to return x coordinates
-		//it's three times the box width
-		return 20*3;
-	}
 	traverse(mindmap,processFunction,parent){
 		var count = 0;
 		var obj;
@@ -76,99 +62,46 @@ class mindmapView {
 			obj.box.x = obj.box.x + 3
 		};
     }
-    createTrunk(mindmapObj){
-
-    }
 	render(tree){
 		this.tree = tree;
 		var count;
 		var x,y;
 		var px,py;
-		var rootX,rootY;
-		//v margin is the vertical margin
-		//h margin is the horizontal margin
-		var order,length,vMargin,arrange,hMargin;
 
 		this.traverse(tree,(mindmapObj,parent,key)=>{
 
-			var order = mindmapObj.order; 
 			var box = this.createBox();
-            var mainContainer;
+            var mainContainer = new PIXI.Container();
 
-			//store a reference to the object here
-			mindmapObj.box = box;
-			mindmapObj.parent = parent;
-			box.obj = mindmapObj;
+            //store a reference to the object here
+            mindmapObj.box = box;
+            mindmapObj.parent = parent;
+            box.obj = mindmapObj;
 
-			if(!mindmapObj.parent){
-
-				length = Math.ceil(tree.length/2);
-				arrange = this.defaultYPosition(length,order,box);
-                //TODO: change 142 to the height of the previous containers?
-				vMargin = (arrange*100);
-				hMargin = this.defaultXPosition()
-
-			    mainContainer = new PIXI.Container();
-                mindmapObj.mainContainer = mainContainer;
-
-			    this.stage.addChild(mainContainer);
-
-                var index = this.stage.children.indexOf(mindmapObj.mainContainer);
-                var countBack = 1;
-                var aboveHeight = 0;
-
-                while(this.stage.children[index-countBack]){
-                    var prevContainer = this.stage.children[index-countBack];
-                    aboveHeight = aboveHeight + prevContainer.height;
-                    countBack++;
-                }
-
-				px = hMargin;
-				py = vMargin;
-
-				x = px;
-				y = py;
+            length = Math.ceil(tree.length/2);
 
 
-                mainContainer.y = y;
-			}
-			else{
+            var index = this.stage.children.indexOf(mindmapObj.mainContainer);
+            var countBack = 1;
+            var aboveHeight = 0;
 
-				//factors for position: parent, number of siblings 
-				//factors for vMargin: Same level nodes above and beyond, or we can calculate the height of each level in a trunk each time
-				length = Object.keys(mindmapObj.parent.ideas).length; 
+            //take previous sibling and calculate height + y value
+            while(this.stage.children[index-countBack]){
+                var prevContainer = this.stage.children[index-countBack];
+                aboveHeight = aboveHeight + prevContainer.height;
+                countBack++;
+            }
+            
+            x = 0;
+            y = 0;
 
-                mindmapObj.mainContainer = mindmapObj.parent.mainContainer;
+            mainContainer.y = y;
 
-				arrange = this.defaultYPosition(length,order,box);
-				hMargin = this.defaultXPosition()
+            //store the x y for the object
+            mindmapObj.x = x;
+            mindmapObj.y = y;
 
-				//factors into calculcate the top margin for each box
-				if(length == 1){
-					arrange = 0;
-					vMargin = 0;
-				}
-				else{
-					if(arrange >= 0){
-						arrange = arrange + 1;
-					}
-				}
-				vMargin = (arrange*20);
-
-                //if the node has a parent other than the the original parent
-				if(!parent.x || !parent.y){
-					x = px + hMargin;
-					y = py +  vMargin;
-				}
-				else{
-					x = parent.x + hMargin;
-					y = parent.y + vMargin;
-				}
-                //store the x y for the object
-				mindmapObj.x = x;
-				mindmapObj.y = y;
-			}
-			// events for drag start
+            // events for drag start
 			box
 			.on('mousedown', onDragStart)
 			.on('touchstart', onDragStart)
@@ -189,7 +122,8 @@ class mindmapView {
 			var sText = mindmapObj.title.slice(0,10);
 			var text = this.createText(sText);
 			box.addChild(text);
-            mindmapObj.mainContainer.addChild(box);
+            mainContainer.addChild(box);
+            this.stage.addChild(mainContainer);
 		})
 		this.renderer.render(this.stage);
 
