@@ -33,7 +33,6 @@ webpackJsonp([1],[
 	        jsonModel.map((node, index) => {
 	            root["1"].ideas[index + 1] = node;
 	        });
-	        console.log(root);
 	        canvasView.render(root);
 	        domView.render(root);
 	    }
@@ -53,6 +52,7 @@ webpackJsonp([1],[
 
 	const VERTICAL_MARGIN = 20;
 	const HORIZONTAL_MARGIN = 40;
+	const BOX_HEIGHT = 22;
 
 	//We have to start at the center
 	//First node we can just add it to the upper right of the center
@@ -168,6 +168,24 @@ webpackJsonp([1],[
 					});
 					length = count;
 					arrangement = this.getArrangement(length, mindmapObj.order);
+					mindmapObj.arrangement = arrangement;
+
+					var child;
+					var childArrangement;
+					var childArrangements = [];
+					var childOrder;
+					var currLength;
+					if (mindmapObj.ideas) {
+						currLength = Object.keys(mindmapObj.ideas).length;
+						Object.keys(mindmapObj.ideas).map((key, index) => {
+							child = mindmapObj.ideas[key];
+							childOrder = index;
+							childArrangement = this.getArrangement(currLength, childOrder);
+							childArrangements.push(childArrangement);
+						});
+					}
+					mindmapObj.childArrangements = childArrangements;
+
 					if (sibling) {
 						siblingHeight = sibling.mainContainer.height;
 					}
@@ -175,13 +193,17 @@ webpackJsonp([1],[
 					mainContainer.y = arrangement * VERTICAL_MARGIN;
 
 					//I have to calculate the correct bounds of the container (excluding upper arrangements)
-					if (parent.title === "type annotation") {
-						//debugRect.lineStyle(2, 0x0000FF, 1);
-						parent.mainContainer.y = parent.mainContainer.y + 100;
-						debugRect.drawRect(0, -22, parent.mainContainer.width, parent.mainContainer.height);
-						console.log(parent.mainContainer.width, parent.mainContainer.height);
+					if (parent.title === "Concepts") {
+
+						debugRect.lineStyle(2, 0x0000FF, 1);
+						//parent.mainContainer.y = parent.mainContainer.y + 100;
+
+						//move the rectangle up by the largest minus number in the child arrangement
+						var largestMinus = parent.childArrangements[0];
+						var moveRectBy = largestMinus * BOX_HEIGHT;
+						console.log(parent.mainContainer.height);
+						debugRect.drawRect(0, moveRectBy, parent.mainContainer.width, parent.mainContainer.height);
 						parent.mainContainer.addChild(debugRect);
-						parent.customBounds = debugRect;
 					};
 				}
 
