@@ -2,7 +2,7 @@
 var $ = require('jquery');
 var PIXI = require('pixi.js');
 
-const VERTICAL_MARGIN = 10;
+const VERTICAL_MARGIN = 5;
 const HORIZONTAL_MARGIN = 40;
 
 //We have to start at the center
@@ -43,6 +43,12 @@ class mindmapView {
 		box.drawRect(0, 0, 20, 20);
 		return box;
 	}
+    //takes length of the children and the order of the current mindmapObj
+    //returns -n 0 +n representing arrangement of children
+    getArrangement(length,order){
+        var arrange = -1*Math.ceil(length/2) + order;
+        return arrange;
+    }
 	traverse(mindmap,processFunction,parent){
 		var obj;
         var count = 0;
@@ -67,16 +73,23 @@ class mindmapView {
 
 		this.tree = tree;
 		var x,y;
+        var length;
+        var mainContainer;
+        var box;
+        var sText;
+        var text;
+        var sibling;
+        var siblingHeight = 0;
+        var arrangement;
 
 		this.traverse(tree,(mindmapObj,key,parent)=>{
 
-			var box = this.createBox();
+			box = this.createBox();
             box.interactive = true;
-            var mainContainer = new PIXI.Container();
+            mainContainer = new PIXI.Container();
 
-			var sText = mindmapObj.title.slice(0,10);
-
-			var text = this.createText(sText);
+			sText = mindmapObj.title.slice(0,10);
+			text = this.createText(sText);
 
             //store a reference to the object here to be used when updating the object's position
             box.obj = mindmapObj;
@@ -87,18 +100,20 @@ class mindmapView {
                 parent.mainContainer.addChild(mainContainer);
 
                 //get previous sibling
-                var sibling;
+                var count = 0;
                 Object.keys(parent.ideas).map((key,index)=>{
                     if(index === mindmapObj.order){
                         sibling = parent.ideas[`${index}`];
                     }
+                    count++;
                 });
+                length = count; 
+                arrangement = this.getArrangement(length,mindmapObj.order);
                 if(sibling){
-                    //mainContainer.y = parent.mainContainer.y + prevContainer.height; 
+                    siblingHeight = sibling.mainContainer.height;
                 }
-                mainContainer.x = parent.mainContainer.x + 50;
-                mainContainer.y = parent.mainContainer.y;
-                console.log(mainContainer.x);
+                mainContainer.x = parent.mainContainer.x + HORIZONTAL_MARGIN;
+                mainContainer.y = arrangement + VERTICAL_MARGIN + siblingHeight;
             }
             else{
                 //mainContainer.y = 0;
