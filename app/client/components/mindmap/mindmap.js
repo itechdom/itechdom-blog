@@ -16,6 +16,7 @@ class mindmapMain{
         jsonModel.map((node,index)=>{
             root["1"].ideas[index+1] = node;
         })
+        console.log(root);
 		canvasView.render(root);
         domView.render(root);
 	}

@@ -2,8 +2,8 @@
 var $ = require('jquery');
 var PIXI = require('pixi.js');
 
-const PARENT_VERTICAL_MARGIN = 100;
-const CHILDREN_VERTICAL_MARGIN = 20;
+const VERTICAL_MARGIN = 10;
+const HORIZONTAL_MARGIN = 40;
 
 //We have to start at the center
 //First node we can just add it to the upper right of the center 
@@ -45,11 +45,14 @@ class mindmapView {
 	}
 	traverse(mindmap,processFunction,parent){
 		var obj;
+        var count = 0;
         //return upper sibling and below sibling
 		for(var key in mindmap){
 			obj = mindmap[key];
+            obj.order = count;
 			processFunction(obj,key,parent);
 			this.traverse(obj.ideas,processFunction,obj);
+            count++;
 		}
 	}
 	update(node){
@@ -69,14 +72,7 @@ class mindmapView {
 
 			var box = this.createBox();
             box.interactive = true;
-            var mainContainer;
-
-            if(!parent){
-                mainContainer = new PIXI.Container();
-            }
-            else{
-                mainContainer = parent.mainContainer;
-            }
+            var mainContainer = new PIXI.Container();
 
 			var sText = mindmapObj.title.slice(0,10);
 
@@ -87,21 +83,32 @@ class mindmapView {
             mindmapObj.box = box;
             mindmapObj.mainContainer = mainContainer;
 
+            if(parent){
+                parent.mainContainer.addChild(mainContainer);
 
-            x = 100;
-            y = 100;
-
-
-            mainContainer.y = y;
-            box.x = x;
-            box.y = y;
+                //get previous sibling
+                var sibling;
+                Object.keys(parent.ideas).map((key,index)=>{
+                    if(index === mindmapObj.order){
+                        sibling = parent.ideas[`${index}`];
+                    }
+                });
+                if(sibling){
+                    //mainContainer.y = parent.mainContainer.y + prevContainer.height; 
+                }
+                mainContainer.x = parent.mainContainer.x + 50;
+                mainContainer.y = parent.mainContainer.y;
+                console.log(mainContainer.x);
+            }
+            else{
+                //mainContainer.y = 0;
+                //mainContainer.x = 0;
+            }
 
 			box.addChild(text);
-
             //store the x y for the object
             mindmapObj.x = x;
             mindmapObj.y = y;
-
 
             var index = this.stage.children.indexOf(mindmapObj.mainContainer);
             var aboveHeight = 0;
@@ -125,10 +132,11 @@ class mindmapView {
 			.on('touchmove', onDragMove);
 
             mainContainer.addChild(box);
-
+           
             if(!parent){
                 this.stage.addChild(mainContainer);
             }
+           
 		})
 		this.renderer.render(this.stage);
 
