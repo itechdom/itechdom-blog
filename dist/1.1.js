@@ -51,7 +51,7 @@ webpackJsonp([1],[
 	var $ = __webpack_require__(6);
 	var PIXI = __webpack_require__(14);
 
-	const VERTICAL_MARGIN = 5;
+	const VERTICAL_MARGIN = 20;
 	const HORIZONTAL_MARGIN = 40;
 
 	//We have to start at the center
@@ -94,8 +94,17 @@ webpackJsonp([1],[
 		//takes length of the children and the order of the current mindmapObj
 		//returns -n 0 +n representing arrangement of children
 		getArrangement(length, order) {
-			var arrange = -1 * Math.ceil(length / 2) + order;
+			var arrange;
+			if (length === 1) {
+				arrange = 0;
+			} else {
+				arrange = -1 * Math.ceil(length / 2) + order;
+			}
 			return arrange;
+		}
+		//calculate the correct bounds for the rectangle (it's not currently accounting for nodes that go above the line)
+		getContainerBounds(arrangements, width, height) {
+			//width and height will go up however many children we have (arrangement is -1 will reduce the rectangle drawn)
 		}
 		traverse(mindmap, processFunction, parent) {
 			var obj;
@@ -129,12 +138,14 @@ webpackJsonp([1],[
 			var sibling;
 			var siblingHeight = 0;
 			var arrangement;
+			var debugRect;
 
 			this.traverse(tree, (mindmapObj, key, parent) => {
 
 				box = this.createBox();
 				box.interactive = true;
 				mainContainer = new PIXI.Container();
+				debugRect = new PIXI.Graphics();
 
 				sText = mindmapObj.title.slice(0, 10);
 				text = this.createText(sText);
@@ -145,8 +156,8 @@ webpackJsonp([1],[
 				mindmapObj.mainContainer = mainContainer;
 
 				if (parent) {
-					parent.mainContainer.addChild(mainContainer);
 
+					parent.mainContainer.addChild(mainContainer);
 					//get previous sibling
 					var count = 0;
 					Object.keys(parent.ideas).map((key, index) => {
@@ -161,13 +172,19 @@ webpackJsonp([1],[
 						siblingHeight = sibling.mainContainer.height;
 					}
 					mainContainer.x = parent.mainContainer.x + HORIZONTAL_MARGIN;
-					mainContainer.y = arrangement + VERTICAL_MARGIN + siblingHeight;
-				} else {
-					//mainContainer.y = 0;
-					//mainContainer.x = 0;
+					mainContainer.y = arrangement * VERTICAL_MARGIN;
+
+					//I have to calculate the correct bounds of the container (excluding upper arrangements)
+					if (parent.title === "type annotation") {
+						debugRect.lineStyle(2, 0x0000FF, 1);
+						debugRect.drawRect(0, -22, parent.mainContainer.width, parent.mainContainer.height);
+						console.log(parent.mainContainer.width, parent.mainContainer.height);
+						parent.mainContainer.addChild(debugRect);
+					};
 				}
 
 				box.addChild(text);
+
 				//store the x y for the object
 				mindmapObj.x = x;
 				mindmapObj.y = y;
