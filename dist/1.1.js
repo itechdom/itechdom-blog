@@ -176,10 +176,12 @@ webpackJsonp([1],[
 
 					//I have to calculate the correct bounds of the container (excluding upper arrangements)
 					if (parent.title === "type annotation") {
-						debugRect.lineStyle(2, 0x0000FF, 1);
+						//debugRect.lineStyle(2, 0x0000FF, 1);
+						parent.mainContainer.y = parent.mainContainer.y + 100;
 						debugRect.drawRect(0, -22, parent.mainContainer.width, parent.mainContainer.height);
 						console.log(parent.mainContainer.width, parent.mainContainer.height);
 						parent.mainContainer.addChild(debugRect);
+						parent.customBounds = debugRect;
 					};
 				}
 
