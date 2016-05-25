@@ -139,6 +139,7 @@ webpackJsonp([1],[
 			var arrangement;
 			var debugRect;
 			this.currentHeight = 0;
+			var gPosition = { y: 0 };
 
 			this.traverse(tree, (mindmapObj, key, parent) => {
 
@@ -202,18 +203,17 @@ webpackJsonp([1],[
 					}
 					mainContainer.x = parent.mainContainer.x + HORIZONTAL_MARGIN;
 					mainContainer.y = arrangement * VERTICAL_MARGIN + this.currentHeight;
+					gPosition = this.rootContainer.toGlobal(mainContainer.position);
 
 					//I have to calculate the correct bounds of the container (excluding upper arrangements)
 					if (parent.title === "Concepts") {
 
 						debugRect.lineStyle(5, 0x0000FF, 1);
 						//parent.mainContainer.y = parent.mainContainer.y + 100;
-						var gPosition = this.rootContainer.toGlobal(parent.mainContainer.position);
 						//move the rectangle up by the largest minus number in the child arrangement
 						var largestMinus = parent.childArrangements[0];
 						var moveRectBy = largestMinus * BOX_HEIGHT;
 						debugRect.drawRect(gPosition.x, gPosition.y, 22, 22);
-						console.log(gPosition);
 						this.stage.addChild(debugRect);
 					};
 				}
@@ -224,12 +224,13 @@ webpackJsonp([1],[
 
 				mainContainer.addChild(box);
 
-				//this.currentHeight = mainContainer.y;
+				this.currentHeight = gPosition.y;
 
 				if (!parent) {
 					this.rootContainer.addChild(mainContainer);
 				}
 			});
+
 			this.renderer.render(this.stage);
 
 			var that = this;
