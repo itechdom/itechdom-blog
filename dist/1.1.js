@@ -54,8 +54,6 @@ webpackJsonp([1],[
 	const HORIZONTAL_MARGIN = 40;
 	const BOX_HEIGHT = 22;
 
-	//We have to start at the center
-	//First node we can just add it to the upper right of the center
 	//have a running height of the container
 
 	class mindmapView {

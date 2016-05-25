@@ -6,10 +6,6 @@ const VERTICAL_MARGIN = 20;
 const HORIZONTAL_MARGIN = 40;
 const BOX_HEIGHT = 22;
 
-//We have to run each main node subsequantily
-//this is important for main node only because it would simulate a user inputing the actual nodes
-//So for example, Concepts, will render all child ideas first 
-//As we render ideas, we will have each node keep track of its own number of children and if we update any node, we should update the parent of that node with a value (calculatedHeight)
 //have a running height of the container
 
 class mindmapView {
