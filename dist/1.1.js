@@ -138,6 +138,7 @@ webpackJsonp([1],[
 			var siblingHeight = 0;
 			var arrangement;
 			var debugRect;
+			this.currentHeight = 0;
 
 			this.traverse(tree, (mindmapObj, key, parent) => {
 
@@ -146,13 +147,24 @@ webpackJsonp([1],[
 				mainContainer = new PIXI.Container();
 				debugRect = new PIXI.Graphics();
 
+				console.log("current height", this.currentHeight);
+
+				mindmapObj.mainContainer = mainContainer;
+				mindmapObj.box = box;
+
 				sText = mindmapObj.title.slice(0, 10);
 				text = this.createText(sText);
 
 				//store a reference to the object here to be used when updating the object's position
 				box.obj = mindmapObj;
-				mindmapObj.box = box;
-				mindmapObj.mainContainer = mainContainer;
+				box.addChild(text);
+
+				// events for drag start
+				box.on('mousedown', onDragStart).on('touchstart', onDragStart)
+				// events for drag end
+				.on('mouseup', onDragEnd).on('mouseupoutside', onDragEnd).on('touchend', onDragEnd).on('touchendoutside', onDragEnd)
+				// events for drag move
+				.on('mousemove', onDragMove).on('touchmove', onDragMove);
 
 				if (parent) {
 
@@ -189,47 +201,33 @@ webpackJsonp([1],[
 						siblingHeight = sibling.mainContainer.height;
 					}
 					mainContainer.x = parent.mainContainer.x + HORIZONTAL_MARGIN;
-					mainContainer.y = arrangement * VERTICAL_MARGIN;
+					mainContainer.y = arrangement * VERTICAL_MARGIN + this.currentHeight;
 
 					//I have to calculate the correct bounds of the container (excluding upper arrangements)
 					if (parent.title === "Concepts") {
 
-						debugRect.lineStyle(2, 0x0000FF, 1);
+						debugRect.lineStyle(5, 0x0000FF, 1);
 						//parent.mainContainer.y = parent.mainContainer.y + 100;
-
+						var gPosition = this.rootContainer.toGlobal(parent.mainContainer.position);
 						//move the rectangle up by the largest minus number in the child arrangement
 						var largestMinus = parent.childArrangements[0];
 						var moveRectBy = largestMinus * BOX_HEIGHT;
-						debugRect.drawRect(0, moveRectBy, parent.mainContainer.width, parent.mainContainer.height);
-						parent.mainContainer.addChild(debugRect);
+						debugRect.drawRect(gPosition.x, gPosition.y, 22, 22);
+						console.log(gPosition);
+						this.stage.addChild(debugRect);
 					};
 				}
-
-				box.addChild(text);
 
 				//store the x y for the object
 				mindmapObj.x = x;
 				mindmapObj.y = y;
 
-				var index = this.stage.children.indexOf(mindmapObj.mainContainer);
-				var aboveHeight = 0;
-				//take previous sibling and calculate height + y value
-				if (this.stage.children[index - 1]) {
-					var prevContainer = this.stage.children[index - countBack];
-					aboveHeight = aboveHeight + prevContainer.height;
-				}
-
-				// events for drag start
-				box.on('mousedown', onDragStart).on('touchstart', onDragStart)
-				// events for drag end
-				.on('mouseup', onDragEnd).on('mouseupoutside', onDragEnd).on('touchend', onDragEnd).on('touchendoutside', onDragEnd)
-				// events for drag move
-				.on('mousemove', onDragMove).on('touchmove', onDragMove);
-
 				mainContainer.addChild(box);
 
+				//this.currentHeight = mainContainer.y;
+
 				if (!parent) {
-					this.stage.addChild(mainContainer);
+					this.rootContainer.addChild(mainContainer);
 				}
 			});
 			this.renderer.render(this.stage);
@@ -269,14 +267,18 @@ webpackJsonp([1],[
 			}
 		}
 		constructor() {
+
 			this.renderer = PIXI.autoDetectRenderer(1000, 1000, { antialias: true });
 			$('app').append(this.renderer.view);
 			this.stage = new PIXI.Container();
+			this.rootContainer = new PIXI.Container();
 			this.stage.interactive = true;
 
 			//add a container to the center of the screen
-			this.stage.x = this.renderer.width / 2;
-			this.stage.y = this.renderer.height / 2;
+			this.rootContainer.x = this.renderer.width / 2;
+			this.rootContainer.y = this.renderer.height / 2;
+
+			this.stage.addChild(this.rootContainer);
 		}
 	}
 	module.exports = new mindmapView();
