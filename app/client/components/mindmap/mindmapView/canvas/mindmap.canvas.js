@@ -8,6 +8,7 @@ const BOX_HEIGHT = 22;
 
 //We have to start at the center
 //First node we can just add it to the upper right of the center 
+//have a running height of the container
 
 class mindmapView {
 
@@ -154,8 +155,7 @@ class mindmapView {
 
                     //move the rectangle up by the largest minus number in the child arrangement
                     var largestMinus = parent.childArrangements[0];
-                    var moveRectBy = largestMinus  * BOX_HEIGHT;
-                    console.log(parent.mainContainer.height);
+                    var moveRectBy = largestMinus * BOX_HEIGHT;
                     debugRect.drawRect(0,moveRectBy,parent.mainContainer.width,parent.mainContainer.height)
                     parent.mainContainer.addChild(debugRect);
                 };
