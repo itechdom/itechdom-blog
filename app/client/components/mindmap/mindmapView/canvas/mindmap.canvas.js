@@ -92,6 +92,7 @@ class mindmapView {
         var siblingHeight = 0;
         var arrangement;
         var debugRect;
+        this.tree.currentHeight = 0;
 
 		this.traverse(tree,(mindmapObj,key,parent)=>{
 
@@ -100,13 +101,28 @@ class mindmapView {
             mainContainer = new PIXI.Container();
             debugRect = new PIXI.Graphics();
 
+            mindmapObj.mainContainer = mainContainer;
+            mindmapObj.box = box;
+
 			sText = mindmapObj.title.slice(0,10);
 			text = this.createText(sText);
 
             //store a reference to the object here to be used when updating the object's position
             box.obj = mindmapObj;
-            mindmapObj.box = box;
-            mindmapObj.mainContainer = mainContainer;
+			box.addChild(text);
+
+         // events for drag start
+			box
+			.on('mousedown', onDragStart)
+			.on('touchstart', onDragStart)
+			// events for drag end
+			.on('mouseup', onDragEnd)
+			.on('mouseupoutside', onDragEnd)
+			.on('touchend', onDragEnd)
+			.on('touchendoutside', onDragEnd)
+			// events for drag move
+			.on('mousemove', onDragMove)
+			.on('touchmove', onDragMove);
 
             if(parent){
 
@@ -159,7 +175,6 @@ class mindmapView {
                 };
             }
 
-			box.addChild(text);
 
             //store the x y for the object
             mindmapObj.x = x;
@@ -173,19 +188,6 @@ class mindmapView {
                 aboveHeight = aboveHeight + prevContainer.height;
             }
             
-             // events for drag start
-			box
-			.on('mousedown', onDragStart)
-			.on('touchstart', onDragStart)
-			// events for drag end
-			.on('mouseup', onDragEnd)
-			.on('mouseupoutside', onDragEnd)
-			.on('touchend', onDragEnd)
-			.on('touchendoutside', onDragEnd)
-			// events for drag move
-			.on('mousemove', onDragMove)
-			.on('touchmove', onDragMove);
-
             mainContainer.addChild(box);
            
             if(!parent){
