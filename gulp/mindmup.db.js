@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var data = require('gulp-data');
 var concat = require('gulp-concat');
+var rename = require('gulp-rename');
 var MongoClient = require('mongodb').MongoClient
 var url;
 var mindmupParse = require('../gulp-custom/mindmup.parser.js')
@@ -21,6 +22,9 @@ module.exports = function(options) {
 				var finalContent = JSON.stringify(ordered);
 				file.contents = new Buffer(finalContent);
 			}))
+            .pipe(rename(function (path) {
+                path.extname = ".json";
+            }))
 			.pipe(gulp.dest('./content/json-blog'))
 			});
 };

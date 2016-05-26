@@ -8,8 +8,9 @@ String.prototype.replaceAll = function(str1, str2, ignore)
 
 var ops = {
 
-	processItem(obj,key){
+	processItem(obj){
 		var pObject = {};
+        pObject.ideas = obj.ideas;
 		if(obj.title){
 			pObject.title = obj.title;
 		}
@@ -20,29 +21,25 @@ var ops = {
 				pObject.content = attachment.content;
 			}
 		}
-		pObject.key = parseFloat(key);
 		pObject.id = obj.id;
 		return pObject;
     }
     ,clean(mindmap){
-        for(var key in mindmap){
-            var obj = mindmap[key];
-            if(!levelsDeep){
-                var levelsDeep = 0;
-            }
-            var pObject = this.processItem(obj,key);
-            pObject.level = levelsDeep;
-            pObject.ideas = obj.ideas;
-            pObject.ideasArr = [];
-            //convert Objects to arrays
-            if(pObject.ideas){
-                Object.keys(pObject.ideas).map((key)=>{
-                    pObject.ideasArr.push(pObject.ideas[key]);
-                })
-            }
-            mindmap[key] = pObject;
-            this.clean(obj.ideas,levelsDeep++);
+        var isArr = Array.isArray(mindmap.ideas);
+        var ideasArr = [];
+        var tmpObj = {};
+        if(!isArr && mindmap.ideas){
+            Object.keys(mindmap.ideas).map((key)=>{
+                tmpObj = mindmap.ideas[key];
+                ideasArr.push(tmpObj);
+            })
         }
+        ideasArr.forEach((obj,index)=>{
+            var pObject = this.processItem(obj);
+            pObject.ideasArr = ideasArr;
+            mindmap[index] = pObject;
+            this.clean(pObject.ideas);
+        })
 	}
 	,isHTML(content){
 		return /<[a-z][\s\S]*>/i.test(content)

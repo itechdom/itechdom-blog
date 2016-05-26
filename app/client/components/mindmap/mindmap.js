@@ -2,7 +2,7 @@
 var canvasView = require('./mindmapView/canvas/mindmap.canvas.js');
 var domView = require('./mindmapView/dom/mindmap.dom.js');
 var actions = require('./mindmap.actions.js');
-var model = require('./Elm.mup.json');
+var model = require('../../../../content/json-blog/Knowledge/Healthcare/Obamacare.json');
 
 class mindmapMain{
 
