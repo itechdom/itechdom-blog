@@ -134,7 +134,8 @@ class mindmapView {
                 var count = 0;
                 Object.keys(parent.ideas).map((key,index)=>{
                     if(index === mindmapObj.order){
-                        sibling = parent.ideas[`${index}`];
+                        var order = parseInt(key) - 1;
+                        sibling = parent.ideas[`${order}`];
                     }
                     count++;
                 });
@@ -142,13 +143,25 @@ class mindmapView {
                 if(sibling){
                     mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
                     mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN;
+                    var h = parent.ideas[mindmapObj.order+1];
+                    if(h){
+                        if((mindmapObj.order+1)/length === 0.5){
+                            //parent.box.y = mainContainer.y;
+                        }
+                    }
+                    else{
+                        console.log("nope");
+                    }
                 }
                 else{
                     mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
                     //mainContainer.y = parent.box.y + VERTICAL_MARGIN;
                 }
                 //I have to calculate the correct bounds of the container (excluding upper arrangements)
-                if(parent.title !== "CE"){
+                if(parent.title === "Archeticture"){
+                    //console.log(mainContainer.y);
+                    //console.log(sibling);
+                    //console.log(parent.ideas)
                     //parent.mainContainer.y -= 40;
                     debugRect.lineStyle(2, 0x0000FF, 1);
                     var pos = parent.mainContainer.toGlobal(this.rootContainer)
