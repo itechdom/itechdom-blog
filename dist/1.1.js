@@ -50,7 +50,7 @@ webpackJsonp([1],[
 	var $ = __webpack_require__(6);
 	var PIXI = __webpack_require__(14);
 
-	const VERTICAL_MARGIN = 5;
+	const VERTICAL_MARGIN = 40;
 	const HORIZONTAL_MARGIN = 40;
 	const BOX_HEIGHT = 22;
 
@@ -169,6 +169,7 @@ webpackJsonp([1],[
 				if (parent) {
 
 					parent.mainContainer.addChild(mainContainer);
+
 					//get previous sibling
 					var count = 0;
 					Object.keys(parent.ideas).map((key, index) => {
@@ -178,25 +179,6 @@ webpackJsonp([1],[
 						count++;
 					});
 					length = count;
-					arrangement = this.getArrangement(length, mindmapObj.order);
-					mindmapObj.arrangement = arrangement;
-
-					var child;
-					var childArrangement;
-					var childArrangements = [];
-					var childOrder;
-					var currLength;
-					if (mindmapObj.ideas) {
-						currLength = Object.keys(mindmapObj.ideas).length;
-						Object.keys(mindmapObj.ideas).map((key, index) => {
-							child = mindmapObj.ideas[key];
-							childOrder = index;
-							childArrangement = this.getArrangement(currLength, childOrder);
-							childArrangements.push(childArrangement);
-						});
-					}
-					mindmapObj.childArrangements = childArrangements;
-
 					if (sibling) {
 						mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
 						mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN;
@@ -204,8 +186,6 @@ webpackJsonp([1],[
 						mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
 						//mainContainer.y = parent.box.y + VERTICAL_MARGIN;
 					}
-					gPosition = mainContainer.toGlobal(this.rootContainer.position);
-
 					//I have to calculate the correct bounds of the container (excluding upper arrangements)
 					if (parent.title !== "CE") {
 						//parent.mainContainer.y -= 40;
@@ -214,9 +194,7 @@ webpackJsonp([1],[
 						debugRect.drawRect(pos.x, pos.y, parent.mainContainer.width, parent.mainContainer.height);
 						this.stage.addChild(debugRect);
 					};
-				}
-
-				if (!parent) {
+				} else {
 					this.rootContainer.addChild(mainContainer);
 				}
 			});
