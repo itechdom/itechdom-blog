@@ -102,8 +102,6 @@ class mindmapView {
             mainContainer = new PIXI.Container();
             debugRect = new PIXI.Graphics();
 
-            console.log("current height",this.currentHeight);
-
             mindmapObj.mainContainer = mainContainer;
             mindmapObj.box = box;
 
@@ -114,7 +112,7 @@ class mindmapView {
             box.obj = mindmapObj;
 			box.addChild(text);
 
-         // events for drag start
+            // events for drag start
 			box
 			.on('mousedown', onDragStart)
 			.on('touchstart', onDragStart)
@@ -158,35 +156,29 @@ class mindmapView {
                 }
                 mindmapObj.childArrangements = childArrangements;
 
-                if(sibling){
-                    siblingHeight = sibling.mainContainer.height;
-                }
+                
                 mainContainer.x = parent.mainContainer.x + HORIZONTAL_MARGIN;
-                mainContainer.y = arrangement * VERTICAL_MARGIN + this.currentHeight;
-                gPosition = this.rootContainer.toGlobal(mainContainer.position);
+                mainContainer.y = arrangement * VERTICAL_MARGIN;
+                gPosition = mainContainer.toGlobal(this.rootContainer.position);
+
+                if(sibling){
+                    siblingHeight = sibling.mainContainer.currentHeight;
+                    if(siblingHeight){
+                        mainContainer.y = mainContainer.y + (gPosition.y - siblingHeight);
+                    }
+                }
+
+                parent.mainContainer.currentHeight = gPosition.y + 22 + 2;
 
                 //I have to calculate the correct bounds of the container (excluding upper arrangements)
                 if(parent.title === "Concepts"){
-
                     debugRect.lineStyle(5, 0x0000FF, 1);
-                    //parent.mainContainer.y = parent.mainContainer.y + 100;
-                    //move the rectangle up by the largest minus number in the child arrangement
-                    var largestMinus = parent.childArrangements[0];
-                    var moveRectBy = largestMinus * BOX_HEIGHT;
                     debugRect.drawRect(gPosition.x,gPosition.y,22,22)
                     this.stage.addChild(debugRect);
                 };
             }
 
-            
-
-            //store the x y for the object
-            mindmapObj.x = x;
-            mindmapObj.y = y;
-
             mainContainer.addChild(box);
-
-            this.currentHeight = gPosition.y;
            
             if(!parent){
                 this.rootContainer.addChild(mainContainer);
