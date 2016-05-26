@@ -233,8 +233,8 @@ class mindmapView {
 		this.stage.interactive = true;
 
         //add a container to the center of the screen
-        this.rootContainer.x = this.renderer.width /2;
-        this.rootContainer.y = this.renderer.height / 2;
+        this.rootContainer.x = this.renderer.width /3;
+        this.rootContainer.y = this.renderer.height / 6;
 
         this.stage.addChild(this.rootContainer);
 	}
