@@ -207,7 +207,8 @@ webpackJsonp([1],[
 					gPosition = mainContainer.toGlobal(this.rootContainer.position);
 
 					//I have to calculate the correct bounds of the container (excluding upper arrangements)
-					if (parent.title === "Concepts") {
+					if (parent.title !== "CE") {
+						//parent.mainContainer.y -= 40;
 						debugRect.lineStyle(2, 0x0000FF, 1);
 						var pos = parent.mainContainer.toGlobal(this.rootContainer);
 						debugRect.drawRect(pos.x, pos.y, parent.mainContainer.width, parent.mainContainer.height);
