@@ -111,6 +111,7 @@ class mindmapView {
             //store a reference to the object here to be used when updating the object's position
             box.obj = mindmapObj;
 			box.addChild(text);
+            mainContainer.addChild(box);
 
             // events for drag start
 			box
@@ -164,21 +165,19 @@ class mindmapView {
                 if(sibling){
                     siblingHeight = sibling.mainContainer.currentHeight;
                     if(siblingHeight){
-                        mainContainer.y = mainContainer.y + (gPosition.y - siblingHeight);
                     }
                 }
 
                 parent.mainContainer.currentHeight = gPosition.y + 22 + 2;
 
                 //I have to calculate the correct bounds of the container (excluding upper arrangements)
-                if(parent.title === "Concepts"){
-                    debugRect.lineStyle(5, 0x0000FF, 1);
-                    debugRect.drawRect(gPosition.x,gPosition.y,22,22)
+                if(parent.title === "type annotation"){
+                    debugRect.lineStyle(2, 0x0000FF, 1);
+                    var pos = parent.mainContainer.toGlobal(this.rootContainer)
+                    debugRect.drawRect(pos.x,pos.y-(1*22),parent.mainContainer.width,parent.mainContainer.height)
                     this.stage.addChild(debugRect);
                 };
             }
-
-            mainContainer.addChild(box);
            
             if(!parent){
                 this.rootContainer.addChild(mainContainer);
@@ -240,8 +239,6 @@ class mindmapView {
         this.rootContainer.y = this.renderer.height / 2;
 
         this.stage.addChild(this.rootContainer);
-
-
 	}
 }
 module.exports = new mindmapView();
