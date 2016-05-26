@@ -50,7 +50,7 @@ webpackJsonp([1],[
 	var $ = __webpack_require__(6);
 	var PIXI = __webpack_require__(14);
 
-	const VERTICAL_MARGIN = 20;
+	const VERTICAL_MARGIN = 5;
 	const HORIZONTAL_MARGIN = 40;
 	const BOX_HEIGHT = 22;
 
@@ -197,22 +197,20 @@ webpackJsonp([1],[
 					}
 					mindmapObj.childArrangements = childArrangements;
 
-					mainContainer.x = parent.mainContainer.x + HORIZONTAL_MARGIN;
-					mainContainer.y = arrangement * VERTICAL_MARGIN;
+					if (sibling) {
+						mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
+						mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN;
+					} else {
+						mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
+						//mainContainer.y = parent.box.y + VERTICAL_MARGIN;
+					}
 					gPosition = mainContainer.toGlobal(this.rootContainer.position);
 
-					if (sibling) {
-						siblingHeight = sibling.mainContainer.currentHeight;
-						if (siblingHeight) {}
-					}
-
-					parent.mainContainer.currentHeight = gPosition.y + 22 + 2;
-
 					//I have to calculate the correct bounds of the container (excluding upper arrangements)
-					if (parent.title === "type annotation") {
+					if (parent.title === "Concepts") {
 						debugRect.lineStyle(2, 0x0000FF, 1);
 						var pos = parent.mainContainer.toGlobal(this.rootContainer);
-						debugRect.drawRect(pos.x, pos.y - 1 * 22, parent.mainContainer.width, parent.mainContainer.height);
+						debugRect.drawRect(pos.x, pos.y, parent.mainContainer.width, parent.mainContainer.height);
 						this.stage.addChild(debugRect);
 					};
 				}
