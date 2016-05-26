@@ -7,6 +7,7 @@ String.prototype.replaceAll = function(str1, str2, ignore)
 } 
 
 var ops = {
+
 	processItem(obj,key){
 		var pObject = {};
 		if(obj.title){
@@ -22,19 +23,26 @@ var ops = {
 		pObject.key = parseFloat(key);
 		pObject.id = obj.id;
 		return pObject;
-	}
-	,clean(mindmap){
-		for(var key in mindmap){
-			var obj = mindmap[key];
-			if(!levelsDeep){
-				var levelsDeep = 0;
-			}
-			var pObject = this.processItem(obj,key);
-			pObject.level = levelsDeep;
-			pObject.ideas = obj.ideas;
-			mindmap[key] = pObject
-				this.clean(obj.ideas,levelsDeep++);
-		}
+    }
+    ,clean(mindmap){
+        for(var key in mindmap){
+            var obj = mindmap[key];
+            if(!levelsDeep){
+                var levelsDeep = 0;
+            }
+            var pObject = this.processItem(obj,key);
+            pObject.level = levelsDeep;
+            pObject.ideas = obj.ideas;
+            pObject.ideasArr = [];
+            //convert Objects to arrays
+            if(pObject.ideas){
+                Object.keys(pObject.ideas).map((key)=>{
+                    pObject.ideasArr.push(pObject.ideas[key]);
+                })
+            }
+            mindmap[key] = pObject;
+            this.clean(obj.ideas,levelsDeep++);
+        }
 	}
 	,isHTML(content){
 		return /<[a-z][\s\S]*>/i.test(content)
