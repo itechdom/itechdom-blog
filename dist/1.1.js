@@ -53,6 +53,7 @@ webpackJsonp([1],[
 	const VERTICAL_MARGIN = 40;
 	const HORIZONTAL_MARGIN = 100;
 	const BOX_HEIGHT = 22;
+	const TEXT_MARGIN = 20;
 
 	//have a running height of the container
 
@@ -137,10 +138,14 @@ webpackJsonp([1],[
 
 				sText = mindmapObj.title.slice(0, 10);
 				text = this.createText(sText);
-				text.x = box.width / 6;
-				text.y += 10;
+				if (text.width > box.width) {
+					box.width = text.width;
+				} else {
+					text.y += 10;
+				}
 				//store a reference to the object here to be used when updating the object's position
 				box.obj = mindmapObj;
+
 				box.addChild(text);
 				mainContainer.addChild(box);
 
