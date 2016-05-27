@@ -27,7 +27,7 @@ class mindmapView {
 	}
 	createTextStyle(){
 		var style = {
-			font : 'bold italic 10px Arial',
+			font : '16px Arial',
 			fill : '#000000',
 			wordWrap : true,
 			wordWrapWidth : 50
@@ -37,8 +37,8 @@ class mindmapView {
 	createBox(){
 		var box = new PIXI.Graphics();
 		box.lineStyle(2, 0x000000, 1);
-		box.beginFill(0xFF700B, 1);
-		box.drawRect(0, 0, 20, 20);
+		box.beginFill(0xFFFFFF, 1);
+		box.drawRect(0, 0, 80, 50);
 		return box;
 	}
 	traverse(mindmap,processFunction,parent){
@@ -89,7 +89,8 @@ class mindmapView {
 
 			sText = mindmapObj.title.slice(0,10);
 			text = this.createText(sText);
-
+            text.x = box.width/6;
+            text.y += 10;
             //store a reference to the object here to be used when updating the object's position
             box.obj = mindmapObj;
 			box.addChild(text);
