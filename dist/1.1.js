@@ -59,7 +59,7 @@ webpackJsonp([1],[
 	class mindmapView {
 
 		createText(text) {
-			var style = this.createStyle();
+			var style = this.createTextStyle();
 			var basicText = new PIXI.Text(text, style);
 			basicText.x = 0;
 			basicText.y = 0;
@@ -73,37 +73,21 @@ webpackJsonp([1],[
 			line.endFill();
 			return line;
 		}
-		createStyle() {
+		createTextStyle() {
 			var style = {
 				font: 'bold italic 10px Arial',
-				fill: '#F7EDCA',
+				fill: '#000000',
 				wordWrap: true,
 				wordWrapWidth: 440
 			};
-
 			return style;
 		}
 		createBox() {
 			var box = new PIXI.Graphics();
-			box.lineStyle(2, 0x0000FF, 1);
+			box.lineStyle(2, 0x000000, 1);
 			box.beginFill(0xFF700B, 1);
 			box.drawRect(0, 0, 20, 20);
 			return box;
-		}
-		//takes length of the children and the order of the current mindmapObj
-		//returns -n 0 +n representing arrangement of children
-		getArrangement(length, order) {
-			var arrange;
-			if (length === 1) {
-				arrange = 0;
-			} else {
-				arrange = -1 * Math.ceil(length / 2) + order;
-			}
-			return arrange;
-		}
-		//calculate the correct bounds for the rectangle (it's not currently accounting for nodes that go above the line)
-		getContainerBounds(arrangements, width, height) {
-			//width and height will go up however many children we have (arrangement is -1 will reduce the rectangle drawn)
 		}
 		traverse(mindmap, processFunction, parent) {
 			var obj;
@@ -140,6 +124,7 @@ webpackJsonp([1],[
 			var debugRect;
 			this.currentHeight = 0;
 			var gPosition = { y: 0 };
+			var that = this;
 
 			this.traverse(tree, (mindmapObj, key, parent) => {
 
@@ -183,6 +168,8 @@ webpackJsonp([1],[
 					if (sibling) {
 						mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
 						mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN;
+
+						//move parent to fit children
 						var h = parent.ideas[mindmapObj.order + 1];
 						if (h) {
 							if ((mindmapObj.order + 1) / length === 0.5) {
@@ -195,12 +182,7 @@ webpackJsonp([1],[
 						mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
 						//mainContainer.y = parent.box.y + VERTICAL_MARGIN;
 					}
-					//I have to calculate the correct bounds of the container (excluding upper arrangements)
 					if (parent.title === "Archeticture") {
-						//console.log(mainContainer.y);
-						//console.log(sibling);
-						//console.log(parent.ideas)
-						//parent.mainContainer.y -= 40;
 						debugRect.lineStyle(2, 0x0000FF, 1);
 						var pos = parent.mainContainer.toGlobal(this.rootContainer);
 						debugRect.drawRect(pos.x, pos.y, parent.mainContainer.width, parent.mainContainer.height);
@@ -210,17 +192,6 @@ webpackJsonp([1],[
 					this.rootContainer.addChild(mainContainer);
 				}
 			});
-
-			this.renderer.render(this.stage);
-
-			var that = this;
-
-			requestAnimationFrame(animate);
-
-			function animate() {
-				requestAnimationFrame(animate);
-				that.renderer.render(that.stage);
-			}
 			function onDragStart(event) {
 				// store a reference to the data
 				// the reason for this is because of multitouch
@@ -250,7 +221,11 @@ webpackJsonp([1],[
 		constructor() {
 
 			this.renderer = PIXI.autoDetectRenderer(1000, 1000, { antialias: true });
+			this.renderer.autoResize = true;
+			this.renderer.backgroundColor = 0x00BFFF;
+
 			$('app').append(this.renderer.view);
+
 			this.stage = new PIXI.Container();
 			this.rootContainer = new PIXI.Container();
 			this.stage.interactive = true;
@@ -260,6 +235,15 @@ webpackJsonp([1],[
 			this.rootContainer.y = this.renderer.height / 6;
 
 			this.stage.addChild(this.rootContainer);
+
+			this.renderer.render(this.stage);
+
+			requestAnimationFrame(animate);
+
+			function animate() {
+				requestAnimationFrame(animate);
+				that.renderer.render(that.stage);
+			}
 		}
 	}
 	module.exports = new mindmapView();
@@ -29863,7 +29847,7 @@ webpackJsonp([1],[
 /* 150 */
 /***/ function(module, exports) {
 
-	module.exports = "[{\"title\":\"Resources\",\"key\":0,\"id\":2,\"level\":0,\"ideas\":{\"1\":{\"title\":\"http://connectforhealthco.com/\",\"key\":1,\"id\":3,\"level\":0,\"ideas\":{\"1\":{\"title\":\"connect for colorado\",\"key\":1,\"id\":8,\"level\":0,\"ideasArr\":[]}},\"ideasArr\":[]},\"2\":{\"title\":\"http://planfinder.connectforhealthco.com/getPlans\",\"key\":2,\"id\":6,\"level\":1,\"ideas\":{\"1\":{\"title\":\"plans\",\"key\":1,\"id\":7,\"level\":0,\"ideasArr\":[]},\"2\":{\"title\":\"around 300 - 400\",\"key\":2,\"id\":9,\"level\":1,\"ideasArr\":[]}},\"ideasArr\":[]}},\"ideasArr\":[]},{\"title\":\"Pain Points\",\"key\":1,\"id\":11,\"level\":1,\"ideas\":{\"1\":{\"title\":\"What's a broker?\",\"key\":1,\"id\":13,\"level\":0,\"ideasArr\":[]}},\"ideasArr\":[]},{\"title\":\"Info\",\"key\":2,\"id\":4,\"level\":2,\"ideas\":{\"1\":{\"title\":\"opens nov 1st\",\"key\":1,\"id\":5,\"level\":0,\"ideasArr\":[]}},\"ideasArr\":[]}]"
+	module.exports = "[{\"title\":\"Resources\",\"id\":2,\"ideas\":{\"1\":{\"title\":\"http://connectforhealthco.com/\",\"id\":3,\"ideas\":{\"1\":{\"title\":\"connect for colorado\",\"id\":8}}},\"2\":{\"title\":\"http://planfinder.connectforhealthco.com/getPlans\",\"id\":6,\"ideas\":{\"1\":{\"title\":\"plans\",\"id\":7},\"2\":{\"title\":\"around 300 - 400\",\"id\":9}}}}},{\"title\":\"Pain Points\",\"id\":11,\"ideas\":{\"1\":{\"title\":\"What's a broker?\",\"id\":13}}},{\"title\":\"Info\",\"id\":4,\"ideas\":{\"1\":{\"title\":\"opens nov 1st\",\"id\":5}}}]"
 
 /***/ }
 ]);
