@@ -51,7 +51,7 @@ webpackJsonp([1],[
 	var PIXI = __webpack_require__(14);
 
 	const VERTICAL_MARGIN = 40;
-	const HORIZONTAL_MARGIN = 40;
+	const HORIZONTAL_MARGIN = 100;
 	const BOX_HEIGHT = 22;
 
 	//have a running height of the container
@@ -78,7 +78,7 @@ webpackJsonp([1],[
 				font: 'bold italic 10px Arial',
 				fill: '#000000',
 				wordWrap: true,
-				wordWrapWidth: 440
+				wordWrapWidth: 50
 			};
 			return style;
 		}
@@ -125,7 +125,6 @@ webpackJsonp([1],[
 			this.currentHeight = 0;
 			var gPosition = { y: 0 };
 			var that = this;
-
 			this.traverse(tree, (mindmapObj, key, parent) => {
 
 				box = this.createBox();
@@ -239,6 +238,7 @@ webpackJsonp([1],[
 			this.renderer.render(this.stage);
 
 			requestAnimationFrame(animate);
+			var that = this;
 
 			function animate() {
 				requestAnimationFrame(animate);

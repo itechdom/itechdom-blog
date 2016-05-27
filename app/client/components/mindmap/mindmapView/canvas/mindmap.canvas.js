@@ -3,7 +3,7 @@ var $ = require('jquery');
 var PIXI = require('pixi.js');
 
 const VERTICAL_MARGIN = 40;
-const HORIZONTAL_MARGIN = 40;
+const HORIZONTAL_MARGIN = 100;
 const BOX_HEIGHT = 22;
 
 //have a running height of the container
@@ -30,7 +30,7 @@ class mindmapView {
 			font : 'bold italic 10px Arial',
 			fill : '#000000',
 			wordWrap : true,
-			wordWrapWidth : 440
+			wordWrapWidth : 50
 		};
 		return style;
 	}
@@ -77,7 +77,6 @@ class mindmapView {
         this.currentHeight = 0;
         var gPosition = {y:0};
         var that = this;
-
 		this.traverse(tree,(mindmapObj,key,parent)=>{
 
 			box = this.createBox();
@@ -205,6 +204,7 @@ class mindmapView {
         this.renderer.render(this.stage);
 
         requestAnimationFrame( animate );
+        var that = this;
 
         function animate() {
             requestAnimationFrame(animate);
