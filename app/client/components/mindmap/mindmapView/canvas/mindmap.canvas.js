@@ -18,11 +18,11 @@ class mindmapView {
 		basicText.y = 0;
 		return basicText;
 	}
-	createLine(box1,box2){
+	createLine(position1,position2){
 		var line = new PIXI.Graphics();
 		line.lineStyle(1, 0x0000FF, 1);
-		line.moveTo(box1.x + 120, box1.y + 120);
-		line.lineTo(box2.x + 200, box2.y + 200);
+		line.moveTo(position1.x, position1.y);
+		line.lineTo(position2.x, position2.y);
 		line.endFill();
 		return line;
 	}
@@ -77,6 +77,7 @@ class mindmapView {
         var debugRect;
         this.currentHeight = 0;
         var gPosition = {y:0};
+        var line;
         var that = this;
 		this.traverse(tree,(mindmapObj,key,parent)=>{
 
@@ -118,7 +119,6 @@ class mindmapView {
             if(parent){
 
                 parent.mainContainer.addChild(mainContainer);
-
                 //get previous sibling
                 var count = 0;
                 Object.keys(parent.ideas).map((key,index)=>{
@@ -130,7 +130,7 @@ class mindmapView {
                 });
                 length = count; 
                 if(sibling){
-                    mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
+                    mainContainer.x += HORIZONTAL_MARGIN;
                     mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN;
 
                     //move parent to fit children
@@ -145,8 +145,8 @@ class mindmapView {
                     }
                 }
                 else{
-                    mainContainer.x = parent.box.x + HORIZONTAL_MARGIN;
-                    //mainContainer.y = parent.box.y + VERTICAL_MARGIN;
+                    mainContainer.x += HORIZONTAL_MARGIN;
+                    mainContainer.y = parent.box.y;
                 }
                 if(parent.title === "Archeticture"){
                     debugRect.lineStyle(2, 0x0000FF, 1);
@@ -154,6 +154,22 @@ class mindmapView {
                     debugRect.drawRect(pos.x,pos.y,parent.mainContainer.width,parent.mainContainer.height)
                     this.stage.addChild(debugRect);
                 };
+                var condition = "Resources";
+                if(!sibling){
+                    console.log(mindmapObj.title);
+                }
+                if(mindmapObj.title === condition){
+                    var childBoxPosition = mainContainer.toGlobal(this.rootContainer.position);
+                    var parentBoxPosition = parent.mainContainer.toGlobal(this.stage.position);
+                    line = this.createLine(childBoxPosition,parentBoxPosition);
+                    this.stage.addChild(line);
+                }
+                else if(mindmapObj.title !== condition){
+                    var childBoxPosition = mainContainer.toGlobal(this.stage.position);
+                    var parentBoxPosition = parent.mainContainer.toGlobal(this.stage.position);
+                    line = this.createLine(childBoxPosition,parentBoxPosition);
+                    this.stage.addChild(line);
+                }
             }
             else{
                 this.rootContainer.addChild(mainContainer);
