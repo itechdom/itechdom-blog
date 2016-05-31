@@ -99,7 +99,6 @@ class mindmapView {
             }
             //store a reference to the object here to be used when updating the object's position
             box.obj = mindmapObj;
-
 			box.addChild(text);
             mainContainer.addChild(box);
 
@@ -119,6 +118,7 @@ class mindmapView {
             if(parent){
 
                 parent.mainContainer.addChild(mainContainer);
+
                 //get previous sibling
                 var count = 0;
                 Object.keys(parent.ideas).map((key,index)=>{
@@ -132,21 +132,20 @@ class mindmapView {
                 if(sibling){
                     mainContainer.x += HORIZONTAL_MARGIN;
                     mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN;
-
                     //move parent to fit children
-                    var h = parent.ideas[mindmapObj.order+1];
-                    if(h){
-                        if((mindmapObj.order+1)/length === 0.5){
+                    //var h = parent.ideas[mindmapObj.order+1];
+                    //if(h){
+                      //  if((mindmapObj.order+1)/length === 0.5){
                             //parent.box.y = mainContainer.y;
-                        }
-                    }
-                    else{
-                        console.log("nope");
-                    }
+                        //}
+                    //}
+                    //else{
+                      //  console.log("nope");
+                   // }
                 }
                 else{
                     mainContainer.x += HORIZONTAL_MARGIN;
-                    mainContainer.y = parent.box.y;
+                    //mainContainer.y = 20;
                 }
                 if(parent.title === "Archeticture"){
                     debugRect.lineStyle(2, 0x0000FF, 1);
@@ -155,16 +154,14 @@ class mindmapView {
                     this.stage.addChild(debugRect);
                 };
                 var condition = "Resources";
-                if(!sibling){
-                    console.log(mindmapObj.title);
-                }
-                if(mindmapObj.title === condition){
+                //FIX: for a quirk in pixi.js container coordinates
+                if(mainContainer.toGlobal(this.stage.position).y === 0){
                     var childBoxPosition = mainContainer.toGlobal(this.rootContainer.position);
                     var parentBoxPosition = parent.mainContainer.toGlobal(this.stage.position);
                     line = this.createLine(childBoxPosition,parentBoxPosition);
                     this.stage.addChild(line);
                 }
-                else if(mindmapObj.title !== condition){
+                else{
                     var childBoxPosition = mainContainer.toGlobal(this.stage.position);
                     var parentBoxPosition = parent.mainContainer.toGlobal(this.stage.position);
                     line = this.createLine(childBoxPosition,parentBoxPosition);
