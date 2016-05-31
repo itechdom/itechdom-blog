@@ -147,13 +147,6 @@ class mindmapView {
                     mainContainer.x += HORIZONTAL_MARGIN;
                     //mainContainer.y = 20;
                 }
-                if(parent.title === "Archeticture"){
-                    debugRect.lineStyle(2, 0x0000FF, 1);
-                    var pos = parent.mainContainer.toGlobal(this.rootContainer)
-                    debugRect.drawRect(pos.x,pos.y,parent.mainContainer.width,parent.mainContainer.height)
-                    this.stage.addChild(debugRect);
-                };
-                var condition = "Resources";
                 //FIX: for a quirk in pixi.js container coordinates
                 if(mainContainer.toGlobal(this.stage.position).y === 0){
                     var childBoxPosition = mainContainer.toGlobal(this.rootContainer.position);
