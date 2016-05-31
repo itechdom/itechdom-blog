@@ -54,12 +54,41 @@ class mindmapView {
             count++;
 		}
 	}
-	update(node){
-		var obj;
+    drawLine(childContainer,parentContainer,childBox,parentBox){
+        var line;
+        //delete the line if it already exists
+        if(line){
+            this.stage.removeChild(line);
+        }
+        //FIX: for a quirk in pixi.js container coordinates
+        if(childContainer.toGlobal(this.stage.position).y === 0){
+            var childBoxPosition = childContainer.toGlobal(this.rootContainer.position);
+            var parentBoxPosition = parentContainer.toGlobal(this.stage.position);
+        }
+        else{
+            var childBoxPosition = childContainer.toGlobal(this.stage.position);
+            var parentBoxPosition = parentContainer.toGlobal(this.stage.position);
+        }
+
+        childBoxPosition.x += childBox.x;
+        childBoxPosition.y += childBox.y;
+        parentBoxPosition.x += parentBox.x;
+        parentBoxPosition.y += parentBox.y;
+
+        line = this.createLine(childBoxPosition,parentBoxPosition);
+        this.stage.addChild(line);
+        return line;
+    }
+    update(node){
+        var obj;
+        var parent = node.obj;
 		//change children
 		for (var key in node.obj.ideas){
-			obj = node.obj.ideas[key];	
-			obj.box.x = obj.box.x + 3;
+            obj = node.obj.ideas[key];	
+            if(parent.line){
+                this.drawLine(obj.mainContainer,parent.mainContainer,obj.line);
+            }
+            obj.box.x = obj.box.x + 3;
 		};
     }
 	render(tree){
@@ -147,24 +176,16 @@ class mindmapView {
                     mainContainer.x += HORIZONTAL_MARGIN;
                     //mainContainer.y = 20;
                 }
-                //FIX: for a quirk in pixi.js container coordinates
-                if(mainContainer.toGlobal(this.stage.position).y === 0){
-                    var childBoxPosition = mainContainer.toGlobal(this.rootContainer.position);
-                    var parentBoxPosition = parent.mainContainer.toGlobal(this.stage.position);
-                    line = this.createLine(childBoxPosition,parentBoxPosition);
-                    this.stage.addChild(line);
+                if(mindmapObj.title === "Resources"){
                 }
-                else{
-                    var childBoxPosition = mainContainer.toGlobal(this.stage.position);
-                    var parentBoxPosition = parent.mainContainer.toGlobal(this.stage.position);
-                    line = this.createLine(childBoxPosition,parentBoxPosition);
-                    this.stage.addChild(line);
-                }
+                //drawLine
+                var po = box.toLocal(mainContainer.position);
+                this.drawLine(mainContainer,parent.mainContainer,box,parent.box);
+                mindmapObj.line = line;
             }
             else{
                 this.rootContainer.addChild(mainContainer);
             }
-           
 		})
 		function onDragStart(event)
 		{
