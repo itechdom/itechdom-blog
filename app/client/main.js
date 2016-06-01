@@ -7,4 +7,6 @@
 //require("./components/post/post.actions.js");
 //require("./components/slides/slides.actions.js");
 //require("./components/todo/todo.actions.js");
+//we are loading actions here because we are using webpack's async file load capability
 require("./components/mindmap/mindmap.actions.js");
+require("./components/3d/3d.js");

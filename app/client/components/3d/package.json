@@ -19,6 +19,6 @@
     "url": "https://github.com/mrdoob/three.js/issues"
   },
   "dependencies": {
-    "three.js": "^0.77.1"
+    "three": "^0.77.1"
   }
 }

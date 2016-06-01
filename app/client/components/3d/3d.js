@@ -1,13 +1,12 @@
 'use strict';
 var actions = require('./3d.actions.js');
-window.THREE = require("three.js");
+window.THREE = require("three");
 var THREE = window.THREE;
-var example = require("./canvas_interactive_cubes.html");
 var $ = require("jquery");
 
 class Main{
 	constructor(){
-        $('app').append(example);
+        console.log(window.THREE);
 	}
 }
 
