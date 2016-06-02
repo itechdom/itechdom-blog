@@ -36,6 +36,7 @@ class mindmapView {
 		return style;
 	}
 	createBox(){
+        var shadowFilter = new PIXI.filters.DropShadowFilter();
 		var box = new PIXI.Graphics();
 		box.lineStyle(2, 0x000000, 1);
 		box.beginFill(0xFFFFFF, 1);
