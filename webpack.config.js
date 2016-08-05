@@ -39,8 +39,18 @@ module.exports = {
 				exclude: /(node_modules|bower_components)/,
 				loader: 'babel' // 'babel-loader' is also a legal name to reference
 			},
+            {
+                test: /\.json$/,
+                loader: 'json'
+            },
 			{ test: /\.tsx?$/, loader: 'ts-loader?compiler=ntypescript' }
-			]
+            ],
+            postLoaders:[
+            {
+                include: path.resolve(__dirname, 'node_modules/pixi.js'),
+                loader: 'transform?brfs'
+            }
+            ]
 		},
 	plugins: [
 		new webpack.ProvidePlugin({
