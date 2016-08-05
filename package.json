@@ -51,6 +51,8 @@
     "browser-sync": "^2.11.2",
     "cheerio": "^0.20.0",
     "clone": "^1.0.2",
+    "json-loader": "^0.5.4",
+    "transform-loader": "^0.2.3",
     "css-loader": "^0.23.1",
     "del": "^2.2.0",
     "elm-webpack-loader": "^2.0.1",
