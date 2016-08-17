@@ -1,4 +1,4 @@
-[{
+module.exports = [{
 	"title": "Concepts",
 	"key": 0,
 	"id": 5,
