@@ -20,3 +20,4 @@ ENV/
 build/
 .stack-work/
 target/
+dist/

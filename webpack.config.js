@@ -20,7 +20,7 @@ module.exports = {
 			loaders: [
 			{test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loaders: ['eslint-loader','babel']},
 			{test: /\.html$/, loader: 'raw'},
-			{test: /\.json$/, loader: 'raw'},
+			{test: /\.json$/, loader: 'json-loader'},
 			{test: /\.css$/, loader: "style-loader!css-loader"},
 			{
 				test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
@@ -30,9 +30,9 @@ module.exports = {
 				test: /\.scss$/,
 				loader: 'style!css!sass'
 			},
-			{ 
-				test: /\.md$/, 
-				loader: "html!markdown" 
+			{
+				test: /\.md$/,
+				loader: "html!markdown"
 			},
 			{
 				test: /\.jsx?$/,
