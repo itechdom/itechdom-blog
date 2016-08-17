@@ -3,6 +3,8 @@ var canvasView = require('./mindmapView/canvas/mindmap.canvas.js');
 var domView = require('./mindmapView/dom/mindmap.dom.js');
 var actions = require('./mindmap.actions.js');
 var model = require('./example.js');
+var test = require('./Elm.mup.json');
+console.log(test);
 class mindmapMain{
 
 	constructor(){

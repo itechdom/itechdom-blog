@@ -2,25 +2,28 @@ var path = require("path");
 var webpack = require("webpack");
 module.exports = {
 	entry: {
-		       dist: './app/client/main.js',
-		       example:'./app/example.js'
-	       },
+		dist: './app/client/main.js',
+		example:'./app/example.js'
+	},
 	output: {
-			path: __dirname + "/dist",
-			publicPath: "/dist/",
-			filename: '[name].js'
-		},
+		path: __dirname + "/dist",
+		publicPath: "/dist/",
+		filename: '[name].js'
+	},
 	eslint: {
-			configFile: './eslintrc.json'
-		},
+		configFile: './eslintrc.json'
+	},
 	resolve: {
-			 modulesDirectories: ['app', 'node_modules', 'base_modules']
-		 },
+		modulesDirectories: ['app', 'node_modules', 'base_modules']
+	},
 	module: {
-			loaders: [
+		preLoaders: [{
+			test: /\.json$/,
+			loader: 'json-loader'
+		}],
+		loaders: [
 			{test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loaders: ['eslint-loader','babel']},
 			{test: /\.html$/, loader: 'raw'},
-			{test: /\.json$/, loader: 'json-loader'},
 			{test: /\.css$/, loader: "style-loader!css-loader"},
 			{
 				test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
@@ -39,26 +42,22 @@ module.exports = {
 				exclude: /(node_modules|bower_components)/,
 				loader: 'babel' // 'babel-loader' is also a legal name to reference
 			},
-            {
-                test: /\.json$/,
-                loader: 'json'
-            },
 			{ test: /\.tsx?$/, loader: 'ts-loader?compiler=ntypescript' }
-            ],
-            postLoaders:[
-            {
-                include: path.resolve(__dirname, 'node_modules/pixi.js'),
-                loader: 'transform?brfs'
-            }
-            ]
-		},
+		],
+		postLoaders:[
+			{
+				include: path.resolve(__dirname, 'node_modules/pixi.js'),
+				loader: 'transform?brfs'
+			}
+		]
+	},
 	plugins: [
 		new webpack.ProvidePlugin({
 			// Automtically detect jQuery and $ as free var in modules
 			// and inject the jquery library
 			// This is required by many jquery plugins
 			jQuery: "jquery",
-		$: "jquery"
+			$: "jquery"
 		})
 	]
 };
