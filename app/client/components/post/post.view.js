@@ -7,12 +7,10 @@ var dispatcher = require('../lib/dispatcher/dispatcher.js');
 
 
 class postView {
-
+	constructor() {
+	}
 	render(){
 		$('app').html(branchit);
-	}
-	constructor() {
-
 	}
 }
 

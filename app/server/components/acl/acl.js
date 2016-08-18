@@ -43,4 +43,3 @@ class adminMain{
 }
 
 module.exports = new adminMain();
-

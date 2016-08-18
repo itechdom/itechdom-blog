@@ -28,4 +28,3 @@ class blogMain{
 }
 
 module.exports = new blogMain();
-

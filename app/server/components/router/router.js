@@ -5,9 +5,9 @@ var subject = new Rx.Subject();
 
 class routerMain{
 
-    constructor(){
+  constructor(){
 
-    }
+  }
 
 }
 module.exports = new routerMain();

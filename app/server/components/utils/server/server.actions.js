@@ -4,7 +4,7 @@ var $ = require('jquery');
 var Rx = require('rx');
 var fromEvent = Rx.Observable.fromEvent;
 var EventEmitter = require('events').EventEmitter,
-	customEvent = new EventEmitter();
+customEvent = new EventEmitter();
 var server = require("./server.js");
 
 //handle one side of the request, which is initializing the globals

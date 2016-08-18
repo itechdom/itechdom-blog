@@ -8,7 +8,7 @@ var server = require("./server.js");
 var req$ = fromEvent(server,'request',function(req,res){
 	return {
 		req,
-    		res
+		res
 	}
 });
 

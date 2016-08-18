@@ -13,5 +13,3 @@ class actionMain{
     }
 }
 module.exports = new actionMain();
-
-

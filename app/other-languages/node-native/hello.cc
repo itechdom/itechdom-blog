@@ -13,7 +13,7 @@ void Init(Handle<Object> exports) {
   Isolate* isolate = Isolate::GetCurrent();
   //Same as module.exports
   exports->Set(String::NewFromUtf8(isolate, "hello"),
-      FunctionTemplate::New(isolate, Method)->GetFunction());
+  FunctionTemplate::New(isolate, Method)->GetFunction());
 }
 
 NODE_MODULE(hello, Init)

@@ -11,7 +11,6 @@ var dispatcher = require('../utils/dispatcher/dispatcher.js');
 class slidesMain{
 
 	constructor(){
-
 		router.model.registerRoute("/test");
 		this.actions = actions;
 		this.model = model;
@@ -28,4 +27,3 @@ class slidesMain{
 }
 
 module.exports = new slidesMain();
-

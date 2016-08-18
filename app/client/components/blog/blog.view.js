@@ -35,7 +35,7 @@ class blogView {
 		var title;
 		var blogListView = blogList.map((blog)=>{
 			obj = Object.keys(blog)[0];
-			title = Object.keys(blog)[0].split('.')[0]; 
+			title = Object.keys(blog)[0].split('.')[0];
 			listHtml += `
 			<a href="/#/post/${obj}"><h1>${title}</h1></a>
 			<img class="img-responsive" src="http://placehold.it/900x300" alt="">

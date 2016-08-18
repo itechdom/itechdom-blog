@@ -5,15 +5,15 @@ var dataEmitter = new EventEmitter();
 
 class debuggerModel{
 
-    constructor() {
-        this.components = [];
-    }
-    registerComponent(component){
-        this.components.push(component);
-    }
-    wire(){
+  constructor() {
+    this.components = [];
+  }
+  registerComponent(component){
+    this.components.push(component);
+  }
+  wire(){
 
-    }
+  }
 
 }
 module.exports = new debuggerModel();

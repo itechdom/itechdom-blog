@@ -9,12 +9,12 @@ var actions = require("./post.actions.js");
 class postMain{
 
 	constructor(){
-
 		this.actions = actions;
 		this.view = view;
 		actions.request$.subscribe(()=>{
 			view.render();
 		});
 	}
+	
 }
 module.exports = new postMain();

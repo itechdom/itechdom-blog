@@ -8,7 +8,7 @@ var dispatcher = require('../utils/dispatcher/dispatcher.js');
 
 //admin serves as a verifier for the request using acl and after that it adds routing and request forwarding based on the components registered
 // the logic goes like this, we get a route we verify that we have a module registered based on it
-// we then just route the requests to it 
+// we then just route the requests to it
 // we also use acl to verify the access level to that user
 
 class adminMain{
@@ -38,4 +38,3 @@ class adminMain{
 }
 
 module.exports = new adminMain();
-

@@ -5,8 +5,6 @@ var actions = require('./todo.actions.js');
 
 //register route
 routerModel.routes['/todo'] = '/todo';
-//
-
 
 actions.req$.subscribe((reqRes)=>{
 	reqRes.res.write("\n Hello World \n");
@@ -14,11 +12,11 @@ actions.req$.subscribe((reqRes)=>{
 })
 
 /**actions.get$.subscribe((reqRes)=>{
-	reqRes.res.write("\n Hello World \n");
-	reqRes.res.end();
+reqRes.res.write("\n Hello World \n");
+reqRes.res.end();
 })
 actions.post$.subscribe((reqRes)=>{
-	reqRes.res.write("\n Hello World \n");
-	reqRes.res.end();
+reqRes.res.write("\n Hello World \n");
+reqRes.res.end();
 })
 **/

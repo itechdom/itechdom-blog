@@ -6,20 +6,19 @@ var dispatcher = require('../dispatcher/dispatcher.js');
 class ormMain{
 
 	constructor(){
-        console.log("hello");
-        mongoose.connect('mongodb://localhost:27017/test');
-        this.db = mongoose.connection;
-        this.db.on('error', console.error.bind(console, 'connection error:'));
-        this.db.once('open', function (callback) {
-            // yay!
-            console.log("connection");
-        });
-    }
-    repo(){
-        return this.db;
-    }
+		console.log("hello");
+		mongoose.connect('mongodb://localhost:27017/test');
+		this.db = mongoose.connection;
+		this.db.on('error', console.error.bind(console, 'connection error:'));
+		this.db.once('open', function (callback) {
+			// yay!
+			console.log("connection");
+		});
+	}
+	repo(){
+		return this.db;
+	}
 
 }
 
 module.exports = new ormMain();
-

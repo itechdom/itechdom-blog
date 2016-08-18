@@ -28,4 +28,3 @@ class userMain{
 }
 
 module.exports = new userMain();
-
