@@ -1,7 +1,7 @@
 {
   "name": "itechdom",
   "version": "1.0.0",
-  "description":"software experimentation",
+  "description": "software experimentation",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
@@ -28,7 +28,7 @@
     "mindmup-mapjs": "1.8.3",
     "mongodb": "*",
     "mongoose": "*",
-    "pixi.js": "*",
+    "pixi.js": "^3.0.11",
     "reveal.js": "3.3.0",
     "rx": "*4.1.0",
     "rx-node": "*1.0.2",
@@ -74,7 +74,7 @@
     "run-sequence": "1.2.2",
     "sass-loader": "*4.0.0",
     "style-loader": "*0.13.1",
-    "transform-loader": "*0.2.3",
+    "transform-loader": "^0.2.3",
     "ts-loader": "*0.8.2",
     "url-loader": "*0.5.7",
     "vinyl-named": "*1.1.0",
