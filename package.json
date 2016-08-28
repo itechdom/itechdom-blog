@@ -65,6 +65,7 @@
     "html-loader": "*0.4.3",
     "json-loader": "*0.5.4",
     "markdown-loader": "*0.1.7",
+    "mobx-react-devtools": "^4.2.5",
     "mocha": "*3.0.2",
     "promise-loader": "*1.0.0",
     "raw-loader": "*0.5.1",

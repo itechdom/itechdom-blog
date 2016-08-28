@@ -38,16 +38,16 @@ module.exports = {
 				test: /\.md$/,
 				loader: "html!markdown"
 			},
-			{
-				test: /\.jsx?$/,
-				exclude: /(node_modules|bower_components)/,
-				loader: 'babel' // 'babel-loader' is also a legal name to reference
-			},
-			{ test: /\.tsx?$/, loader: 'ts-loader?compiler=ntypescript' }
-		],
-		postLoaders:[
-			{
-				include: path.resolve(__dirname, 'node_modules/pixi.js'),
+            {
+                test: /\.jsx?$/,
+                loaders: ['babel?cacheDirectory'],
+                include: PATHS.app
+            },
+            { test: /\.tsx?$/, loader: 'ts-loader?compiler=ntypescript' }
+        ],
+            postLoaders:[
+            {
+                include: path.resolve(__dirname, 'node_modules/pixi.js'),
 				loader: 'transform?brfs'
 			}
 		]
