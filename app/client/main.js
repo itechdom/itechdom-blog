@@ -9,4 +9,5 @@
 //require("./components/todo/todo.actions.js");
 //we are loading actions here because we are using webpack's async file load capability
 require("./components/mindmap/mindmap.actions.js");
+require("./components/react/index.js");
 //require("./components/3d/3d.js");

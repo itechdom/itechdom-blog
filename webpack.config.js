@@ -40,8 +40,7 @@ module.exports = {
 			},
             {
                 test: /\.jsx?$/,
-                loaders: ['babel?cacheDirectory'],
-                include: PATHS.app
+                loaders: ['babel']
             },
             { test: /\.tsx?$/, loader: 'ts-loader?compiler=ntypescript' }
         ],
