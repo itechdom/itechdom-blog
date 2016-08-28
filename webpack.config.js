@@ -14,6 +14,7 @@ module.exports = {
 		configFile: './eslintrc.json'
 	},
 	resolve: {
+        extensions:['','.js','.jsx'],
 		modulesDirectories: ['app', 'node_modules', 'base_modules']
 	},
 	module: {
