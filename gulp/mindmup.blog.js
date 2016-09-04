@@ -7,12 +7,12 @@ var count = 0;
 var concat = require('gulp-concat');
 var path = require('path');
 var sync = require('run-sequence');
-
+var config = require('../app.config.js');
+console.log(config);
 
 module.exports = function(options) {
 
 	gulp.task('mindmap:blog-deal', function(done) {
-
 		return gulp.src(options.drive+"**/*.blog.mup")
 			.pipe(data(function(file) {
 				var mindmap = mindmupParse.toJson(file);
