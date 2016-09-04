@@ -11,7 +11,7 @@ var options = {
   src: './app/client/main.js',
   dist: './dist/',
   main:'./app/',
-  drive:"~/Downloads/Knowledge",
+  drive:"../Downloads/Knowledge/",
   components:'app/**/*.component.js',
   tmp: '.tmp',
   test:'app/**/*.spec.js',
