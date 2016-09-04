@@ -7,8 +7,6 @@ var count = 0;
 var concat = require('gulp-concat');
 var path = require('path');
 var sync = require('run-sequence');
-var config = require('../app.config.js');
-console.log(config);
 
 module.exports = function(options) {
 
