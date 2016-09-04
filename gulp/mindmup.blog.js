@@ -41,6 +41,7 @@ module.exports = function(options) {
 		.pipe(concat('blogs.json'))
 			.pipe(gulp.dest('./content/published-blog'))
 	})
+
 	gulp.task('mindmap:blog-seal',function(done){	
 		return gulp.src("./content/published-blog/blogs.json")
 			.pipe(data(function(file){
@@ -51,6 +52,7 @@ module.exports = function(options) {
 			}))
 		.pipe(gulp.dest("./content/published-blog"));
 	})
+
 	gulp.task('mindmap:blog', function(done){
 		sync('mindmap:blog-deal', 'mindmap:blog-seal', done);
 	});
