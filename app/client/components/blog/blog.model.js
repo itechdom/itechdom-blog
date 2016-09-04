@@ -12,16 +12,7 @@ class blogModel{
 		}
 	}
 	getBlog(){
-		return JSON.parse(publishedBlogs);
-	}
-	insertBlog(blog){
-
-	}
-	updateBlog(id){
-
-	}
-	deleteBlog(id){
-
+		return publishedBlogs;
 	}
 }
 module.exports = new blogModel();
