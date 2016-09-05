@@ -13,7 +13,7 @@ module.exports = {
 		configFile: './eslintrc.json'
 	},
 	resolve: {
-        extensions:['','.js','.jsx'],
+        extensions:['','.js','.jsx','.tsx','.ts'],
 		modulesDirectories: ['app', 'node_modules', 'base_modules']
 	},
 	module: {
@@ -41,7 +41,7 @@ module.exports = {
                 test: /\.jsx?$/,
                 loaders: ['babel']
             },
-            { test: /\.tsx?$/, loader: 'ts-loader?compiler=ntypescript' }
+            { test: /\.tsx?$/, loader: 'ts-loader' }
         ],
             postLoaders:[
             {
