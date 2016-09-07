@@ -1,26 +1,29 @@
 class Promise {
     constructor(){
-        this.resolved = false;
-        this.error = false;
+        this.resolved;
+        this.rejected;
     }
-    resolve(){
-        this.resovled = true;
+    resolve(args){
+        this.resolved(args);
     }
-    reject(){
-        this.rejected = true;
+    reject(args){
+        this.rejected(args);
     }
-    next(fun){
-        if(this.resolved){
-            fun();
-        }
+    then(fun){
+        this.resolved = fun;
     }
     error(fun){
-        if(this.rejected){
-            fun();
-        }
+        this.rejected = fun;
     }
 }
+function testPromise(){
+    let pr = new Promise();
+    setTimeout(()=>{
+        pr.resolve('message');
+    },1000);
+    return pr;
+}
+testPromise().then((res)=>{
+    console.log(res);
+})
 
-let pr = new Promise();
-pr.resolve();
-pr.reject();
