@@ -1,4 +1,0 @@
-# Sentences
-# Words
-# Concepts
-# Resources

@@ -21,3 +21,5 @@ build/
 .stack-work/
 target/
 dist/
+content/md-blog
+content/json-blog
