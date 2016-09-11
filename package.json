@@ -18,14 +18,19 @@
   },
   "homepage": "https://github.com/itechdom/itechdom-blog",
   "dependencies": {
-  "to-markdown": "*3.0.1",
+    "mongodb": "^2.2.9",
+    "to-markdown": "*3.0.1"
   },
   "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "browser-sync": "^2.15.0",
     "cheerio": "^0.22.0",
     "clone": "*1.0.2",
     "del": "*2.2.2",
     "eslint": "^3.4.0",
     "eslint-loader": "*1.5.0",
+    "flat": "^2.0.1",
     "gulp": "*3.9.1",
     "gulp-concat": "*2.6.0",
     "gulp-data": "*1.2.1",
@@ -35,6 +40,9 @@
     "gulp-rename": "*1.2.2",
     "gulp-template": "*4.0.0",
     "gulp-util": "*3.0.7",
+    "run-sequence": "^1.2.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1",
     "wrench": "*1.5.9",
     "yargs": "*5.0.0"
   }
