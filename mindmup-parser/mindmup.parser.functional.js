@@ -1,31 +1,56 @@
 //turn this into functional transformations of data
-
 var cheerio = require('cheerio');
 var toMarkdown= require('to-markdown');
+var R = require('ramda');
 
 String.prototype.replaceAll = function(str1, str2, ignore) 
 {
 	return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
 } 
+//from what I can see we are doing these things:
+//1) cleaning the json object coming from Mindmup
+//2) HTML parser: toHTML, cleanHTML and isHTML 
+//3) Markdown Parser: to Markdown
+//separate HTML parser on its own
+
+
+/** 
+ * Utilities
+**/
+const flattenObj = obj => {
+    const go = obj_ => R.chain(([k, v]) => {
+        if (typeof v == 'object') {
+            return R.map(([k_, v_]) => [`${k}.${k_}`, v_], go(v))
+        } else {
+            return [[k, v]]
+        }
+    }, R.toPairs(obj_))
+    return R.fromPairs(go(obj))
+}
+
+/** 
+ * Process Mindmap Object
+**/
+//special prop
+var prop = R.curry(function(prop,obj){
+    var obj = {};
+    return{
+        prop:obj[prop]
+    }
+})
+var title = prop('title');
+var id = prop('id');
+var attr = prop('attr');
+var content  = prop('attr.attachement.content');
+//obj -> obj
+var processObj = R.compose(title, flattenObj);
+exports.processObj = processObj;
 
 var ops = {
-
 	processItem(obj){
-		var pObject = {};
-        pObject.ideas = obj.ideas;
-		if(obj.title){
-			pObject.title = obj.title;
-		}
-		if(obj.attr){
-			var attr = obj.attr;
-			var attachment = attr.attachment;
-			if(attachment){
-				pObject.content = attachment.content;
-			}
-		}
-		pObject.id = obj.id;
-		return pObject;
-    }
+        
+	}
+    //I am checking type (there's a chance I can do a monad here)
     ,clean(mindmap){
         var isArr = Array.isArray(mindmap.ideas);
         var ideasArr = [];
@@ -105,7 +130,6 @@ var ops = {
 		return html;
 	}
 	,ToMarkdown(mindmap){
-
 		var f = "";
 		mindmap.map((idea)=>{
 			if(idea.title){
@@ -169,5 +193,3 @@ var ops = {
 		return slideElement.html();
 	}
 }
-module.exports = ops;
-
