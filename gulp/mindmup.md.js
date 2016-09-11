@@ -4,7 +4,6 @@ var data = require('gulp-data');
 var path = require('path');
 var concat = require('gulp-concat');
 var rename = require("gulp-rename");
-var MongoClient = require('mongodb').MongoClient
 var mindmupParse = require('../gulp-custom/mindmup.parser.js');
 
 module.exports = function(options) {

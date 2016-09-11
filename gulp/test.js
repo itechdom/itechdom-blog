@@ -16,8 +16,5 @@ module.exports = function(options) {
 			throw err;
 			});
 	});
-
-
-
 };
 
