@@ -1,3 +1,5 @@
+//turn this into functional transformations of data
+
 var cheerio = require('cheerio');
 var toMarkdown= require('to-markdown');
 
