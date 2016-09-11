@@ -30,11 +30,8 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 });
 
 gulp.task('default', function(done){
-  sync('webpack:build-dev', 'serve:client' , 'watch', done);
+  sync('webpack:build-dev','watch', done);
 });
 gulp.task('presentation', function(done){
   sync('mindmap:presentation' , 'watch:presentation', done);
-});
-gulp.task('mindmap:save', function(done){
-  sync('mindmap:clean', 'mindmap:db', done);
 });
