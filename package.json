@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/itechdom/itechdom-blog",
   "dependencies": {
-    "mongodb": "^2.2.9",
     "to-markdown": "*3.0.1"
   },
   "devDependencies": {
