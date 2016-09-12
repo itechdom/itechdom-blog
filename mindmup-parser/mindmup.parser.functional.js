@@ -17,6 +17,7 @@ String.prototype.replaceAll = function(str1, str2, ignore)
 /** 
  * Utilities
 **/
+
 const flattenObj = obj => {
     const go = obj_ => R.chain(([k, v]) => {
         if (typeof v == 'object') {
@@ -28,40 +29,35 @@ const flattenObj = obj => {
     return R.fromPairs(go(obj))
 }
 
-/** 
- * Process Mindmap Object
-**/
-//special prop
-var prop = R.curry(function(prop,obj){
-    var obj = {};
-    return{
-        prop:obj[prop]
-    }
-})
 var trace = function(obj){
     console.log(obj);
     return obj;
 }
 
+/** 
+ * Process Mindmap Object
+**/
 
-//toPairs, then filter the each array, then from Pairs
-//arr -> arr
-//check's if a key is in a given arr
-var checkKey = R.curry(function(checkArr,pair){
+const checkKey = R.curry((checkArr,pair) => {
     return R.indexOf(pair[0], checkArr) !== -1;
 });
-var isRightProp = checkKey(["id","title","attr.attachment.content"]);
-var filterObj = R.filter(isRightProp);
-var processObj = R.compose(trace, R.fromPairs, filterObj, R.toPairs, flattenObj);
+const cleanKey = (pair) => {
+    let arr = pair[0].split('.');
+    return [arr[arr.length-1],pair[1]];
+}
+const isRightProp = checkKey(["id","title","attr.attachment.content"]);
+const filterObj = R.filter(isRightProp);
+const processObj = R.compose(R.fromPairs, R.map(cleanKey), filterObj, R.toPairs, flattenObj);
 exports.processObj = processObj;
 
+/** 
+ * Transform the tree to have arrays
+**/
 
 var ops = {
-	processItem(obj){
-        
-	}
+
     //I am checking type (there's a chance I can do a monad here)
-    ,clean(mindmap){
+    clean(mindmap){
         var isArr = Array.isArray(mindmap.ideas);
         var ideasArr = [];
         var tmpObj = {};
@@ -77,8 +73,8 @@ var ops = {
             mindmap[index] = pObject;
             this.clean(pObject.ideas);
         })
-	}
-	,isHTML(content){
+    }
+    ,isHTML(content){
 		return /<[a-z][\s\S]*>/i.test(content)
 	}
 	,flatten(mindmap,pArr,level){
@@ -135,6 +131,7 @@ var ops = {
 		var mindmap = JSON.parse(String(file.contents));
 		return mindmap;
 	}
+    //remvoe all the html content
 	,cleanHTML(html){
 		html = html.replace(/<(?:.|\n)*?>/gm, '');
 		return html;
