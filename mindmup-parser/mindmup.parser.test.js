@@ -1,4 +1,4 @@
 var processObj = require('./mindmup.parser.functional.js').processObj; 
-var sampleObject = require('../content/published-blog/intro-to-elm.json')[0];
+var sampleObject = require('../../Downloads/Knowledge/Blog/Blog.json');
 
-console.log(processObj(sampleObject));
+processObj(sampleObject);

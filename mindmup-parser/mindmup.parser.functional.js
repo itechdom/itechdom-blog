@@ -38,13 +38,23 @@ var prop = R.curry(function(prop,obj){
         prop:obj[prop]
     }
 })
-var title = prop('title');
-var id = prop('id');
-var attr = prop('attr');
-var content  = prop('attr.attachement.content');
-//obj -> obj
-var processObj = R.compose(title, flattenObj);
+var trace = function(obj){
+    console.log(obj);
+    return obj;
+}
+
+
+//toPairs, then filter the each array, then from Pairs
+//arr -> arr
+//check's if a key is in a given arr
+var checkKey = R.curry(function(checkArr,pair){
+    return R.indexOf(pair[0], checkArr) !== -1;
+});
+var isRightProp = checkKey(["id","title","attr.attachment.content"]);
+var filterObj = R.filter(isRightProp);
+var processObj = R.compose(trace, R.fromPairs, filterObj, R.toPairs, flattenObj);
 exports.processObj = processObj;
+
 
 var ops = {
 	processItem(obj){
