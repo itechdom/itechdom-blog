@@ -20,7 +20,7 @@ String.prototype.replaceAll = function(str1, str2, ignore)
 
 const flattenObj = obj => {
     const go = obj_ => R.chain(([k, v]) => {
-        if (typeof v == 'object') {
+        if (typeof v == 'object'){
             return R.map(([k_, v_]) => [`${k}.${k_}`, v_], go(v))
         } else {
             return [[k, v]]
@@ -28,13 +28,7 @@ const flattenObj = obj => {
     }, R.toPairs(obj_))
     return R.fromPairs(go(obj))
 }
-//it takes 
-const traverse = R.curry((fn, property,obj)=>{
-    const go = obj_ => R.chain(([k, v]) => {
-        fn(obj);
-    }, R.toPairs(obj_))
-    return R.fromPairs(go(obj))
-})
+
 
 const convertObjectToArray = (obj) => {
     return Object.keys(obj).map((key)=>{
@@ -70,9 +64,24 @@ exports.processObj = processObj;
 //const convertIdeasToArray;
 //get ideas and convert it into an object
 //{'1':{},'2':{}} => [{},{}]
-const convertIdeasToArray = (obj) => {
-
-};
+//it takes a function and an object (deep objects here) and applies a function to each one
+// picture this function as a mirror in the places where v is an object
+// so, we go through the pairs
+// then we recursively call go(v) till we hit a "non-object"
+// finally we return the pair and it will be chained to the main object
+const transform = (obj) => {
+    const go = obj_ => R.chain(([k, v]) => {
+        if(isNaN(k) == false){
+        }
+        if (typeof v == 'object'){
+            return R.map(([k_, v_]) => [`${k}.${k_}`, v_], go(v))
+        } else {
+            return [[k, v]];
+        }
+    }, R.toPairs(obj_))
+    return R.fromPairs(go(obj))
+}
+const convertIdeasToArray = transform;
 //const convertIdeasToArray = convertObjectToArray;
 exports.convertIdeasToArray = R.compose(convertIdeasToArray);
 
