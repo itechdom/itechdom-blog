@@ -28,6 +28,19 @@ const flattenObj = obj => {
     }, R.toPairs(obj_))
     return R.fromPairs(go(obj))
 }
+//it takes 
+const traverse = R.curry((fn, property,obj)=>{
+    const go = obj_ => R.chain(([k, v]) => {
+        fn(obj);
+    }, R.toPairs(obj_))
+    return R.fromPairs(go(obj))
+})
+
+const convertObjectToArray = (obj) => {
+    return Object.keys(obj).map((key)=>{
+        return obj[key];
+    });
+}
 
 var trace = function(obj){
     console.log(obj);
@@ -49,32 +62,24 @@ const isRightProp = checkKey(["id","title","attr.attachment.content"]);
 const filterObj = R.filter(isRightProp);
 const processObj = R.compose(R.fromPairs, R.map(cleanKey), filterObj, R.toPairs, flattenObj);
 exports.processObj = processObj;
-
 /** 
- * Transform the tree to have arrays
+ * Convert Minmdap Obj Ideas to an array instead of an object
+ * Monads here?
 **/
+
+//const convertIdeasToArray;
+//get ideas and convert it into an object
+//{'1':{},'2':{}} => [{},{}]
+const convertIdeasToArray = (obj) => {
+
+};
+//const convertIdeasToArray = convertObjectToArray;
+exports.convertIdeasToArray = R.compose(convertIdeasToArray);
 
 var ops = {
 
     //I am checking type (there's a chance I can do a monad here)
-    clean(mindmap){
-        var isArr = Array.isArray(mindmap.ideas);
-        var ideasArr = [];
-        var tmpObj = {};
-        if(!isArr && mindmap.ideas){
-            Object.keys(mindmap.ideas).map((key)=>{
-                tmpObj = mindmap.ideas[key];
-                ideasArr.push(tmpObj);
-            })
-        }
-        ideasArr.forEach((obj,index)=>{
-            var pObject = this.processItem(obj);
-            pObject.ideasArr = ideasArr;
-            mindmap[index] = pObject;
-            this.clean(pObject.ideas);
-        })
-    }
-    ,isHTML(content){
+    isHTML(content){
 		return /<[a-z][\s\S]*>/i.test(content)
 	}
 	,flatten(mindmap,pArr,level){
@@ -136,7 +141,7 @@ var ops = {
 		html = html.replace(/<(?:.|\n)*?>/gm, '');
 		return html;
 	}
-	,ToMarkdown(mindmap){
+	,convertToMarkdown(mindmap){
 		var f = "";
 		mindmap.map((idea)=>{
 			if(idea.title){
@@ -160,7 +165,7 @@ var ops = {
 		})
 		return f;
 	}
-	,toHTML(mindmap){
+	,convertToRevealSlides(mindmap){
 		var f = "";
 		var count = 0;
 		var parentId;
