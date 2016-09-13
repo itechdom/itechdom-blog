@@ -29,6 +29,22 @@ const flattenObj = obj => {
     return R.fromPairs(go(obj))
 }
 
+const transform = function ( func, obj ) {
+    return R.mapObj ( function ( value ) {
+        var o;
+
+        if ( R.type ( value ) === 'Object' ) {
+            return transform ( func, value );
+        }
+
+        if ( R.type ( value ) === 'Array' ) {
+            o = transform ( func, value );
+            return Object.keys ( o ).map ( function ( key ) { return o[ key ] } );
+        }
+        return func ( value );
+    }, obj );
+};
+
 
 const convertObjectToArray = (obj) => {
     return Object.keys(obj).map((key)=>{
@@ -80,6 +96,21 @@ const transform = (obj) => {
         }
     }, R.toPairs(obj_))
     return R.fromPairs(go(obj))
+}
+const mapOver = (pair) => {
+    const go = pair_ => {
+        if (typeof pair[1] == 'object'){
+            if(isNaN(Object.keys(pair[1])[0]) === false){
+                return Object.keys(pair[1]).map((k)=>{
+                    return pair[1][k];
+                })
+            }
+        }
+        else{
+            return R.fromPairs([pair]);
+        }
+    }
+
 }
 const convertIdeasToArray = transform;
 //const convertIdeasToArray = convertObjectToArray;
