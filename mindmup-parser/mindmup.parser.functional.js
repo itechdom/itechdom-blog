@@ -29,22 +29,16 @@ const flattenObj = obj => {
     return R.fromPairs(go(obj))
 }
 
-const transform = function ( func, obj ) {
-    return R.mapObj ( function ( value ) {
+const mapObjDeepToArray = function ( func, obj ) {
+    return R.mapObjIndexed ( function ( value ) {
         var o;
 
         if ( R.type ( value ) === 'Object' ) {
-            return transform ( func, value );
+            return func( value );
         }
-
-        if ( R.type ( value ) === 'Array' ) {
-            o = transform ( func, value );
-            return Object.keys ( o ).map ( function ( key ) { return o[ key ] } );
-        }
-        return func ( value );
+        return value;
     }, obj );
 };
-
 
 const convertObjectToArray = (obj) => {
     return Object.keys(obj).map((key)=>{
@@ -85,34 +79,11 @@ exports.processObj = processObj;
 // so, we go through the pairs
 // then we recursively call go(v) till we hit a "non-object"
 // finally we return the pair and it will be chained to the main object
-const transform = (obj) => {
-    const go = obj_ => R.chain(([k, v]) => {
-        if(isNaN(k) == false){
-        }
-        if (typeof v == 'object'){
-            return R.map(([k_, v_]) => [`${k}.${k_}`, v_], go(v))
-        } else {
-            return [[k, v]];
-        }
-    }, R.toPairs(obj_))
-    return R.fromPairs(go(obj))
-}
-const mapOver = (pair) => {
-    const go = pair_ => {
-        if (typeof pair[1] == 'object'){
-            if(isNaN(Object.keys(pair[1])[0]) === false){
-                return Object.keys(pair[1]).map((k)=>{
-                    return pair[1][k];
-                })
-            }
-        }
-        else{
-            return R.fromPairs([pair]);
-        }
-    }
 
-}
-const convertIdeasToArray = transform;
+
+
+
+const convertIdeasToArray = mapObjDeep;
 //const convertIdeasToArray = convertObjectToArray;
 exports.convertIdeasToArray = R.compose(convertIdeasToArray);
 
