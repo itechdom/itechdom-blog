@@ -32,7 +32,6 @@ const flattenObj = obj => {
 const mapObjDeepToArray = function ( func, obj ) {
     return R.mapObjIndexed ( function ( value ) {
         var o;
-
         if ( R.type ( value ) === 'Object' ) {
             return func( value );
         }
