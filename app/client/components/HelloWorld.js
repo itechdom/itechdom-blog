@@ -1,2 +1,8 @@
 import React from 'react';
-module.exports = () => (<p>Hello</p>)
+
+export const HelloWorld = ({id,name}) => (
+    <p>Say {name}!</p>
+);
+export const FunComp = () => (
+    <h1>comp!</h1>
+)

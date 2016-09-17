@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloWorld from './HelloWorld.js';
-
-ReactDOM.render(<HelloWorld />,document.getElementById('app'));
+import {HelloWorld, FunComp} from './HelloWorld.js';
+ReactDOM.render(<div>
+                <HelloWorld id="hi" name="hello" />
+                <FunComp />
+                </div>,document.getElementById('app'));
