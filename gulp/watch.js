@@ -8,6 +8,6 @@ gulp.task('reload',function(){
 	serve.reload();
 });
 gulp.task('watch', function(){
-	gulp.watch(options.main+"**/*", ['webpack:build-dev', 'reload']);
+	gulp.watch(options.main+"**/*", ['webpack:build-dev', 'flow', 'reload']);
 });
 };
