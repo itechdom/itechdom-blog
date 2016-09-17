@@ -23,6 +23,8 @@
     "ramda": "^0.22.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
     "to-markdown": "*3.0.1"
   },
   "devDependencies": {
@@ -48,6 +50,7 @@
     "gulp-shell": "^0.5.2",
     "gulp-template": "*4.0.0",
     "gulp-util": "*3.0.7",
+    "redux-devtools": "^3.3.1",
     "run-sequence": "^1.2.2",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.1",
