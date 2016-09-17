@@ -10,14 +10,14 @@ module.exports = class App extends React.Component {
         setTimeout(()=>{
             this.updateCounter();
         },1000); 
-        console.log(this.props);
-        this.props.onIncrement();
     }
     updateCounter(){
         this.state.comments.push("hi");
         this.setState({comments:this.state.comments});
+        this.props.onIncrement();
     }
     render() {
-        return <ul> { this.state.comments.map((item,index) => (<li key={index} >{ item } <HelloWorld name={item.toString()} /></li>)) } </ul>;
+        const {value} = this.props;
+        return <ul> { this.state.comments.map((item,index) => (<li key={index} >{value} { item } <HelloWorld name={item.toString()} /></li>)) } </ul>;
     }
 }

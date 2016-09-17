@@ -4,9 +4,8 @@ import ReactDOM from 'react-dom';
 import App from './containers/App.js';
 import { createStore } from 'redux'
 import {counter} from './reducers'
-
 const store = createStore(counter);
-const render = () => ReactDOM.render(<App onIncrement={() => store.dispatch({ type: 'INCREMENT' })}/>
+const render = () => ReactDOM.render(<App value={store.getState()} onIncrement={() => store.dispatch({ type: 'INCREMENT' })}/>
                 ,document.getElementById('app'));
-
+render();
 store.subscribe(render);
