@@ -17,7 +17,16 @@ module.exports = class App extends React.Component {
         this.props.onIncrement();
     }
     render() {
-        const {value} = this.props;
-        return <ul> { this.state.comments.map((item,index) => (<li key={index} >{value} { item } <HelloWorld name={item.toString()} /></li>)) } </ul>;
+        const {value, onIncrement} = this.props;
+        return <ul> { this.state.comments.map((item,index) =>
+            <li key={index} >
+                {value} 
+                { item }
+                <a onClick={onIncrement} href="#">Add</a> 
+                <HelloWorld name={item.toString()} />
+            </li>
+            )
+            } 
+        </ul>;
     }
 }
