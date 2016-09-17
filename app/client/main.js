@@ -1,5 +1,6 @@
-// @flow
-
-require('./components/main.js');
-
-let arr: Array<string> = ["example","of", "1"];
+//@flow
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './containers/App.js';
+ReactDOM.render(<App/>
+                ,document.getElementById('app'));
