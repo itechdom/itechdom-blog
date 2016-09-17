@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/itechdom/itechdom-blog",
   "dependencies": {
+    "react": "^15.3.1",
     "to-markdown": "*3.0.1"
   },
   "devDependencies": {
