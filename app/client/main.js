@@ -8,4 +8,7 @@ const store = createStore(counter,window.devToolsExtension && window.devToolsExt
 const render = () => ReactDOM.render(<App value={store.getState()} onIncrement={() => store.dispatch({ type: 'INCREMENT' })}/>
                 ,document.getElementById('app'));
 render();
-store.subscribe(render);
+
+
+//less optamized way
+//store.subscribe(render);
