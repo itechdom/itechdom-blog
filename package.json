@@ -19,8 +19,9 @@
   "homepage": "https://github.com/itechdom/itechdom-blog",
   "dependencies": {
     "ramda": "^0.22.1",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
+    "@cycle/xstream-run",
+    "@cycle/dom",
+    "xstream",
     "to-markdown": "*3.0.1"
   },
   "devDependencies": {
