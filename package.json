@@ -19,6 +19,7 @@
   "homepage": "https://github.com/itechdom/itechdom-blog",
   "dependencies": {
     "@cycle/dom": "^12.2.5",
+    "@cycle/isolate": "^1.4.0",
     "@cycle/xstream-run": "^3.1.0",
     "ramda": "^0.22.1",
     "xstream": "^6.3.0"
