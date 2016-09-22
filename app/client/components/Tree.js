@@ -9,12 +9,13 @@ const TEXT_MARGIN = 20;
 export default class Tree extends React.Component{
     constructor(){
         super();
+        //this.tree = this.props.tree;
     }
     componentDidMount(){
-
     }
     render(){
         let nodes = this.props.nodes;
+        let tree = this.props.tree;
         return (
         <ul> { nodes.map((node,index) =>
                     <Node key={index} node={node}/>
