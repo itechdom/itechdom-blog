@@ -17,10 +17,6 @@ module.exports = {
 		modulesDirectories: ['app', 'node_modules', 'base_modules']
 	},
 	module: {
-		preLoaders: [{
-			test: /\.json$/,
-			loader: 'json-loader'
-		}],
 		loaders: [
 			{test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loaders: ['eslint-loader','babel']},
 			{test: /\.html$/, loader: 'raw'},
