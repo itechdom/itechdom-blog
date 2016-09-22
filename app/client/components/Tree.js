@@ -12,17 +12,18 @@ export default class Tree extends React.Component{
         //this.tree = this.props.tree;
     }
     componentDidMount(){
+
     }
     render(){
         let nodes = this.props.nodes;
         let tree = this.props.tree;
         return (
-        <ul> { nodes.map((node,index) =>
-                    <Node key={index} node={node}/>
-                    )
-        } 
-        </ul>
-        )
+                <ul> { nodes.map((node,index) =>
+                        <Node key={index} node={node}/>
+                        )
+                } 
+                </ul>
+               )
     }
     traverse(mindmap,processFunction,parent){
         var obj;
@@ -75,19 +76,6 @@ export default class Tree extends React.Component{
             box.addChild(text);
             mainContainer.addChild(box);
 
-            // events for drag start
-            box
-                .on('mousedown', onDragStart)
-                .on('touchstart', onDragStart)
-                // events for drag end
-                .on('mouseup', onDragEnd)
-                .on('mouseupoutside', onDragEnd)
-                .on('touchend', onDragEnd)
-                .on('touchendoutside', onDragEnd)
-                // events for drag move
-                .on('mousemove', onDragMove)
-                .on('touchmove', onDragMove);
-
             if(parent){
 
                 parent.mainContainer.addChild(mainContainer);
@@ -131,35 +119,6 @@ export default class Tree extends React.Component{
                 this.rootContainer.addChild(mainContainer);
             }
         })
-        function onDragStart(event)
-        {
-            // store a reference to the data
-            // the reason for this is because of multitouch
-            // we want to track the movement of this particular touch
-            this.data = event.data;
-            this.alpha = 0.5;
-            this.dragging = true;
-        }
-
-        function onDragEnd()
-        {
-            this.alpha = 1;
-            this.dragging = false;
-            // set the interaction data to null
-            this.data = null;
-            //rerender the tree;
-            that.update(this);
-            //save the new tree
-        }
-        function onDragMove()
-        {
-            if (this.dragging)
-            {
-                var newPosition = this.data.getLocalPosition(this.parent);
-                this.position.x = newPosition.x;
-                this.position.y = newPosition.y;
-            }
-        }
     }
 
 }
