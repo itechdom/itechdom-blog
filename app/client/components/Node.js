@@ -1,7 +1,16 @@
-// @flow
 import React from 'react';
+import Node from './Node.js'
 
-//adding props because we want to apply flow static type checking
-export const Node = (props: {id: number,name: string}) => (
-    <p>Say my {props.name}!</p>
-);
+export default class Tree extends React.Component{
+    constructor(){
+        super();
+    }
+    componentDidMount(){
+
+    }
+    render(){
+        return (
+            <h1>{this.props.node}</h1>
+        );
+    }
+}

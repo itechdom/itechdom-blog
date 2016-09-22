@@ -1,7 +1,7 @@
 //@flow
-import {HelloWorld, FunComp} from '../components/HelloWorld.js';
+import Tree from '../components/Tree.js';
 import React from 'react';
-module.exports = class App extends React.Component {
+export default class App extends React.Component {
     constructor() {
         super();
         this.state = { comments: ["hello","hi"] }
@@ -18,15 +18,10 @@ module.exports = class App extends React.Component {
     }
     render() {
         const {value, onIncrement} = this.props;
-        return <ul> { this.state.comments.map((item,index) =>
-            <li key={index} >
-                {value} 
-                { item }
-                <a onClick={onIncrement} href="#">Add</a> 
-                <HelloWorld name={item.toString()} />
-            </li>
-            )
-            } 
-        </ul>;
+        return (
+        <div class="board">
+        <Tree nodes={this.state.comments} />
+        </div>
+        );
     }
 }
