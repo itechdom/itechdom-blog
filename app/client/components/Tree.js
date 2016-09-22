@@ -9,21 +9,26 @@ const TEXT_MARGIN = 20;
 export default class Tree extends React.Component{
     constructor(){
         super();
-        //this.tree = this.props.tree;
     }
     componentDidMount(){
 
     }
+
+    renderNodes(nodeList){
+        return nodeList.map((node,index)=>{
+            return(<li> 
+                    <Node key={index} node={node} children={node.ideas}/>
+                </li>
+            );
+        })
+    }
     render(){
-        let nodes = this.props.nodes;
-        let tree = this.props.tree;
-        return (
-                <ul> { nodes.map((node,index) =>
-                            <Node key={index} node={node}/>
-                        )
-                } 
-                </ul>
-               )
+        let nodeList = this.props.nodes;
+        return(
+            <div>
+                {this.renderNodes(nodeList)}
+            </div>
+        );
     }
     traverse(mindmap,processFunction,parent){
         var obj;
