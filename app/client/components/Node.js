@@ -10,7 +10,7 @@ export default class Tree extends React.Component{
     }
     render(){
         return (
-            <h1>{this.props.node}</h1>
+            <h1>{this.props.node.title}</h1>
         );
     }
 }

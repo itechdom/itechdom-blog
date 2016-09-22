@@ -19,7 +19,7 @@ export default class Tree extends React.Component{
         let tree = this.props.tree;
         return (
                 <ul> { nodes.map((node,index) =>
-                        <Node key={index} node={node}/>
+                            <Node key={index} node={node}/>
                         )
                 } 
                 </ul>
