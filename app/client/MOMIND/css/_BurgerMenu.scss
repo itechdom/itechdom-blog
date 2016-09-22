@@ -1,0 +1,143 @@
+//Position and Size of Burger Button
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+  @include prefix((
+      user-select: none 
+   ),webkit moz ms khtml);
+}
+
+//Color and Shape of Burger Button
+.bm-burger-bars {
+  background: $black;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: $white;
+}
+
+//General Sidebar Style
+.bm-menu{
+
+}
+
+.bm-menu-wrap {
+   background-color: $green;
+}
+
+.bm-item-list
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: stretch;
+   width:100%;
+
+   .burger-div {
+      padding: 1em 0em;
+      margin: 0 1em;
+      display:block;
+      width:90%
+   }
+
+   .actions {
+      border-top: 5px solid $white;
+      border-bottom: 5px solid $white;
+   }
+
+   .options
+   {
+
+   }
+
+   .footer {
+      
+      #settings {
+         display: inline;
+         .svg {
+            left: 0;
+         }
+      }
+   }
+
+
+   .header {
+
+   }
+
+   .header img {
+      width:100px;
+      margin: 0 0 0 0;
+      cursor: pointer;
+
+   }
+   .header span {
+      margin: 0 0 0 0;
+      text-transform:uppercase;
+      font-size: 28px;
+      color: $white;
+      font-weight:800;
+      cursor: pointer;
+
+      position: relative;
+      top: 40px;
+      left: -20px;
+   }
+
+   .burger-item {
+      display: block;
+      color: $white;
+      font-weight: 400;
+      font-size: 22px;
+      padding: 0.5em 0 0.5em 0em;
+      cursor: pointer;
+
+      span {
+         position: relative;
+         left: 1em;
+      }
+
+      .svg {
+         position: relative;
+         top: 0.3em;
+         left: 0.4em;
+
+         path{
+            fill: white;
+         }
+      }
+      
+   }
+
+   .burger-item:hover {
+      font-weight: 600;
+      text-decoration: none;
+      @include prefix((
+         box-shadow: inset 10px 10px 130px -70px rgba(0,0,0,0.75),
+         border-radius: 60px 60px 60px 60px,
+      ), webkit moz);
+   }
+
+   .burger-item:active {
+      text-decoration:none;
+      @include prefix((
+         box-shadow: inset 10px 10px 155px -55px rgba(0,0,0,0.75),
+         border-radius: 60px 60px 60px 60px,
+      ), webkit moz);
+   }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
