@@ -3,11 +3,11 @@ const pages = {
     './pages/':['about.html','contact.html','home.html','case-studies.html'],
     './pages/case-studies/':['meetup.html','landdox.html','tx.html']
 }
-
+const index = String(fs.readFileSync('./index.html'));
 let mainPages = Object.keys(pages).map((key)=>{
     let arr = pages[key];
-    return arr.map((page)=>{
-        return String(fs.readFileSync(key+page));
+    arr.map((page)=>{
+        let replacedPage = index.replace('{content}',String(fs.readFileSync(key+page)));
+        fs.writeFileSync('./build/'+page,replacedPage);
     })
 })
-console.log(mainPages);
