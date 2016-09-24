@@ -5,7 +5,6 @@ const pages = {
 }
 const buildDir = './build/'
 const index = String(fs.readFileSync('./index.html'));
-console.log("one");
 let mainPages = Object.keys(pages).map((key)=>{
     let arr = pages[key];
     arr.map((page)=>{
@@ -13,5 +12,4 @@ let mainPages = Object.keys(pages).map((key)=>{
         fs.writeFileSync(buildDir+'pages/'+page,replacedPage);
     })
 })
-console.log("two");
 fs.createReadStream('index.html').pipe(fs.createWriteStream(buildDir+'index.html'));
