@@ -3026,10 +3026,6 @@ input[type='submit'].wpcf7-submit:focus {
 
 @media screen and (min-width: 1024px) {
 	.content-area {
-		float: left;
-		width: 74.08537%;
-		max-width: 74.08537%;
-		margin-right: 3.65854%;
 	}
 
 	.no-sidebar .content-area {
