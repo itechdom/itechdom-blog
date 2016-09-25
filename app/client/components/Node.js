@@ -1,6 +1,8 @@
 import React from 'react';
 import Node from './Node.js'
 
+let currentHeight = 0;
+
 export default class Tree extends React.Component{
     constructor(){
         super();
@@ -9,7 +11,7 @@ export default class Tree extends React.Component{
     }
     nodeStyle(){
         return {
-            position:'relative',
+            position:'absolute',
             left:this.props.position[0],
             top:this.props.position[1]
         }
@@ -24,7 +26,7 @@ export default class Tree extends React.Component{
             return children.map((child,index) => {
                 return(<div>
                     <Node 
-                        position={[this.props.position[0]+50,100+(index*50)-100]} 
+                        position={[this.props.position[0]+50,100+(index*100)-100]} 
                         key={index} 
                         node={child} 
                         children={(child.ideas?child.ideas:{})} 
