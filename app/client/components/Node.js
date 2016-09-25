@@ -12,6 +12,7 @@ export default class Tree extends React.Component{
     nodeStyle(){
         return {
             position:'absolute',
+            width:300,
             left:this.props.position[0],
             top:this.props.position[1]
         }
@@ -22,11 +23,12 @@ export default class Tree extends React.Component{
         let children = Object.keys(this.props.children).map((key,index)=>{
             return this.props.children[key];
         });
+        let length = -50 * ((children.length-1)/2);
         if(children.length > 0){
             return children.map((child,index) => {
                 return(<div>
                     <Node 
-                        position={[this.props.position[0]+50,100+(index*100)-100]} 
+                        position={[this.props.position[0]+30,(index*50)+length]} 
                         key={index} 
                         node={child} 
                         children={(child.ideas?child.ideas:{})} 

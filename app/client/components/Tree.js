@@ -17,7 +17,7 @@ export default class Tree extends React.Component{
         return nodeList.map((node,index)=>{
             return(
                 <div>
-                    <Node position={[100,100+(index*200)]} key={index} node={node} children={node.ideas}/>
+                    <Node position={[100,500+(index*300)]} key={index} node={node} children={node.ideas}/>
                 </div>
             );
         })
