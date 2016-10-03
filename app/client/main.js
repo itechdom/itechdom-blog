@@ -1,1 +1,1 @@
-require('./components/main.js');
+import './components/traverseDom.js';
