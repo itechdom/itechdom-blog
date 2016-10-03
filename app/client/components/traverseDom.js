@@ -6,6 +6,7 @@ function init(){
   let rootElement = createDivElement("root element");
   rootElement.level = 0;
   fillTree(rootElement, level);
+  document.body.appendChild(rootElement);
   traverseDom(rootElement);
 }
 
@@ -27,6 +28,14 @@ function fillTree(parentElement, level){
     fillTree(newElement, newLevel);
   }
 }
-function traverseDom(element){
 
+function traverseDom(parentElement){
+  var elementChildren = parentElement.children;
+  if(elementChildren.length === 0){
+    return;
+  }
+  for (var i = 0; i < elementChildren.length; i++) {
+    console.log(elementChildren[i]);
+    traverseDom(elementChildren[i]);
+  }
 }
