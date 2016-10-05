@@ -1,6 +1,9 @@
 //@flow
 import {HelloWorld, FunComp} from '../components/HelloWorld.js';
 import React from 'react';
+
+//we should connect redux-store here
+
 module.exports = class App extends React.Component {
     constructor() {
         super();
@@ -9,7 +12,7 @@ module.exports = class App extends React.Component {
     componentDidMount() {
         setTimeout(()=>{
             this.updateCounter();
-        },1000); 
+        },1000);
     }
     updateCounter(){
         this.state.comments.push("hi");
@@ -20,13 +23,13 @@ module.exports = class App extends React.Component {
         const {value, onIncrement} = this.props;
         return <ul> { this.state.comments.map((item,index) =>
             <li key={index} >
-                {value} 
+                { value }
                 { item }
-                <a onClick={onIncrement} href="#">Add</a> 
+                <a onClick={onIncrement} href="#">Add</a>
                 <HelloWorld name={item.toString()} />
             </li>
             )
-            } 
+            }
         </ul>;
     }
 }
