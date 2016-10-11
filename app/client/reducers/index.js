@@ -20,3 +20,7 @@ export function counter(state = 0, action) {
             return state
     }
 }
+export function testReducer(state=1, action){
+  console.log(action);
+  return state + 1;
+}
