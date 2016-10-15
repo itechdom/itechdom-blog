@@ -8,7 +8,7 @@ class actionMain{
     var request = clientActions['changeRoute$'];
     return {
       request$: request.filter((d)=> {
-        return d == "/blog";
+        return true;
       }),
       post$: request.filter((d)=> {
         return /\/post\/.*/.test(d);

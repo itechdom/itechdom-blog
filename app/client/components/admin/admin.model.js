@@ -8,7 +8,6 @@ class adminModel{
 	constructor() {
 		this.schema = {
 			module:"blog|user",
-			//... other info, not sure what it would be
 		}
 	}
 	getModule(){
