@@ -11,6 +11,7 @@ var blog = require('./blog.html');
 var content = require('./views/content.html');
 var header = require('./views/header.html');
 var footer = require('./views/footer.html');
+import {homeView} from './views/home.js';
 
 
 export let blogView = (blogList)=>{
@@ -20,25 +21,35 @@ export let blogView = (blogList)=>{
 	$('blog-header').html(header);
 	$('blog-content').html(content);
 	$('blog-footer').html(footer);
-	//render list
-	var listHtml = "";
-	var obj;
-	var title;
-	var blogListView = blogList.map((blog)=>{
-		obj = Object.keys(blog)[0];
-		title = Object.keys(blog)[0].split('.')[0];
-		listHtml += `
-		<a href="/#/post/${obj}"><h1>${title}</h1></a>
-		<img class="img-responsive" src="http://placehold.it/900x300" alt="">
-			<!-- Author -->
-			<p class="lead">
-				by <a href="#">Osama Alghanmi</a>
-		</p>
-		<p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
-		<p><span class="glyphicon glyphicon-time"></span> 0 Comments</p>
-		<hr>
-			`
-		})
-		$('.blog__list').append(listHtml);
 
+	// 1: Create a function that declares what the DOM should look like
+	function render(count)  {
+		
+		//depending on the route render specific components
+		return h('div', {
+			style: {
+				textAlign: 'center',
+				lineHeight: (100 + count) + 'px',
+				border: '1px solid red',
+				width: (100 + count) + 'px',
+				height: (100 + count) + 'px'
+			}
+		}, [String(count),homeView()]);
 	}
+
+	// 2: Initialise the document
+	var count = 0;      // We need some app data. Here we just store a count.
+
+	var tree = render(count);               // We need an initial tree
+	var rootNode = createElement(tree);     // Create an initial root DOM node ...
+	document.body.appendChild(rootNode);    // ... and it should be in the document
+
+	// 3: Wire up the update logic
+	setInterval(function () {
+		count++;
+		var newTree = render(count);
+		var patches = diff(tree, newTree);
+		rootNode = patch(rootNode, patches);
+		tree = newTree;
+	}, 1000);
+}
