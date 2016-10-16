@@ -24,17 +24,10 @@ export let blogView = (blogList)=>{
 
 	// 1: Create a function that declares what the DOM should look like
 	function render(count)  {
-		
+
 		//depending on the route render specific components
-		return h('div', {
-			style: {
-				textAlign: 'center',
-				lineHeight: (100 + count) + 'px',
-				border: '1px solid red',
-				width: (100 + count) + 'px',
-				height: (100 + count) + 'px'
-			}
-		}, [String(count),homeView()]);
+		return h('div', {},
+		[String(count),homeView()]);
 	}
 
 	// 2: Initialise the document
@@ -45,7 +38,7 @@ export let blogView = (blogList)=>{
 	document.body.appendChild(rootNode);    // ... and it should be in the document
 
 	// 3: Wire up the update logic
-	setInterval(function () {
+	setTimeout(function () {
 		count++;
 		var newTree = render(count);
 		var patches = diff(tree, newTree);
