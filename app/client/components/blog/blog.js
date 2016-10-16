@@ -2,7 +2,7 @@
 //this is the main blog file
 var $ = require('jquery');
 var Rx = require('rx');
-var view = require('./blog.view.js');
+import { blogView } from './blog.view.js';
 var actions = require("./blog.actions.js");
 var model = require("./blog.model.js");
 var animate = require('animate.css');
@@ -18,7 +18,7 @@ class blogMain{
 
 		actions.request$.subscribe(()=>{
 			data = this.model.getBlog();
-			this.view.render(data);
+			new blogView.render(data);
 		});
 		
 	}

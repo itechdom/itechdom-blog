@@ -13,7 +13,7 @@ var header = require('./views/header.html');
 var footer = require('./views/footer.html');
 
 
-class blogView {
+export class blogView {
 
 	constructor() {
 
@@ -50,5 +50,3 @@ class blogView {
 
 }
 
-
-module.exports = new blogView();
