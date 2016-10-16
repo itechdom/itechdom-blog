@@ -12,15 +12,14 @@ class blogMain{
 	constructor(){
 
 		this.actions = actions;
-		this.view = view;
 		this.model = model;
 		var data;
 
 		actions.request$.subscribe(()=>{
 			data = this.model.getBlog();
-			new blogView.render(data);
+			blogView(data);
 		});
-		
+
 	}
 }
 module.exports = new blogMain();
