@@ -1,25 +1,23 @@
 'use strict';
 var $ = require('jquery');
-var Rx = require('rx');
-var dispatcher = require('../../lib/dispatcher/dispatcher.js');
 
-//var template  = require('./blog.template.js');
 //var h = require('virtual-dom/h');
 ///var diff = require('virtual-dom/diff');
 //var patch = require('virtual-dom/patch');
 //var createElement = require('virtual-dom/create-element');
-//var webcomponents = require('webcomponents.js/webcomponents.js');
 
 var style = require('./scss/main.scss');
 var blog = require('./blog.html');
 var content = require('./views/content.html');
 var header = require('./views/header.html');
-var sidebar = require('./views/sidebar.html');
 var footer = require('./views/footer.html');
 
 
 class blogView {
 
+	constructor() {
+
+	}
 	render(blogList){
 
 		$('app').html('')
@@ -27,8 +25,6 @@ class blogView {
 		$('blog-header').html(header);
 		$('blog-content').html(content);
 		$('blog-footer').html(footer);
-		$('blog-sidebar').html(sidebar);
-
 		//render list
 		var listHtml = "";
 		var obj;
@@ -51,9 +47,7 @@ class blogView {
 		$('.blog__list').append(listHtml);
 
 	}
-	constructor() {
 
-	}
 }
 
 

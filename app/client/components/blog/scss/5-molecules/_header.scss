@@ -1,4 +1,11 @@
 // Navigation
+.navbar-default{
+  padding:1em 0em;
+  background-color: #FFFFFF;
+}
+.navbar-nav{
+  float:right;
+}
 .navbar-custom {
   position: absolute;
   top: 0;
@@ -165,4 +172,3 @@
     font-size: 30px;
   }
 }
-
