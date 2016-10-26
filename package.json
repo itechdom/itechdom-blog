@@ -19,7 +19,8 @@
   "homepage": "https://github.com/itechdom/itechdom-blog",
   "dependencies": {
     "express": "^4.14.0",
-    "ramda": "^0.22.1"
+    "ramda": "^0.22.1",
+    "socket.io": "^1.5.1"
   },
   "devDependencies": {}
 }
