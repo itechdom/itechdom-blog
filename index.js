@@ -1,2 +1,2 @@
 //socket io example
-var example = require('./app/server/simpleExpressServer.js');
+var example = require('./app/server/docker.js');
