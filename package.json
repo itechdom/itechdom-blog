@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node index.js"
   },
+  "bin":{
+      "dockerfileg":"./bin/dockerfileGuru"
+  }
   "repository": {
     "type": "git",
     "url": "https://github.com/itechdom/zpresent"
@@ -18,8 +21,6 @@
   },
   "homepage": "https://github.com/itechdom/itechdom-blog",
   "dependencies": {
-    "express": "^4.14.0",
-    "ramda": "^0.22.1"
   },
   "devDependencies": {}
 }
