@@ -16,23 +16,29 @@ let config = {
 
 //options
 // --all: will go through the current directory structure and generate all the Dockerfiles given a Dockerfile.template
-
-dfg = require('commander');
 fs = require('fs');
-
 function run(){
     //read config file
-    let master = fs.readFileSync('../Dockerfile.master');
     let child = fs.readFileSync('./Dockerfile.template');
-    fs.writeFileSync('./Dockerfile',master+child);
+    let lines = child.toString().split('\n');
+    let importPaths = lines.map((line)=>{
+        if(line.split(' ')[0] === 'IMPORT'){
+            return line.split(' ')[1];
+        }
+    }).filter(path => path)
+
+    //join files
+    let joinedFiles = importPaths.map((path)=>{
+       return fs.readFileSync(path).toString();
+    })
+    joinedFiles.push(child.toString());
+
+    let dockerfile = "";
+    joinedFiles.forEach((file)=>{
+        dockerfile += file;
+    })
+    fs.writeFileSync('./Dockerfile',dockerfile);
 }
 function traverseFolders(){
-
-}
-dfg.option('--all','you chose all')
-   .parse(process.argv);
-
-if(dfg.all){
-    console.log("all");
-}
+} 
 run();
