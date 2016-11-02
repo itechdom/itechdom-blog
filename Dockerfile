@@ -15,7 +15,9 @@ RUN npm rebuild node-sass
 # Bundle app source
 COPY . /usr/src/app
 
+#this is another master
 #first line is where the master lives
 IMPORT ../Dockerfile.master
+IMPORT ../Documents/Dockerfile.master
 EXPOSE 3000
 CMD [ "npme", "start" ]
