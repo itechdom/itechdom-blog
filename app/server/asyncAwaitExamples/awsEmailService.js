@@ -1,10 +1,9 @@
-var async = require('asyncawait/async');
-var await = require('asyncawait/await');
 var Promise = require('bluebird');
 
 //TODO: import this from thinktank-common later if it makes sense
-export class AWSEmail {
+module.exports = class AWSEmail {
   constructor() {
+      this.count = 0;
   }
   getAWSEmail(emailObject){
     return {
@@ -30,7 +29,7 @@ export class AWSEmail {
     }
   }
   sendEmail(awsEmail,callback){
-      callback(undefined,'email sent');
+      return callback(undefined,"hello");
   }
   send(emailObject, callback) {
     let awsEmail = this.getAWSEmail(emailObject);

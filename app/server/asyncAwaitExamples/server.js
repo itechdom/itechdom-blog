@@ -1,41 +1,49 @@
-import {AWSEmail} from './awsEmailService';
+var AWSEmail = require('./awsEmailService');
+var awsEmail = new AWSEmail();
+var async = require('asyncawait/async');
+var await = require('asyncawait/await');
+const emailValidator = require("email-validator");
 
-let emailList = [
-    {
-        'address':'osamah.net.m@gmail.com',
-        'message':'hello email',
-        'subject':'subject here'
-    },
-    {
-        'address':'osamah.net.m@gmail.com',
-        'message':'hello email',
-        'subject':'subject here'
+
+    let emailList = [
+        {
+            'address':'osamah.net.m@gmail.com',
+            'message':'hello email',
+            'subject':'subject here'
+        },
+        {
+            'address':'osamah.net.m@gmail.com',
+            'message':'hello email',
+            'subject':'subject here'
+        }
+    ]
+
+    //validate a list of emails
+    let InvalidEmailList = emailList.map((email,index)=>{
+        return { 
+            isValid:emailValidator.validate(email.address),
+            index 
+        }
+    }).filter(email => email.isValid === false);
+
+    if(InvalidEmailList.length > 0){
+        let firstInvalidEmail = emailList[InvalidEmailList[0].index];
+        if(firstInvalidEmail.address){
+            return console.log(`email address:${firstInvalidEmail.address} is invalid`);
+        }
+        return console.log("email is missing");
     }
-]
 
-//validate a list of emails
-let hasInvalidEmail = emailList.map((email)=>{
-    return emailValidator.validate(email.address);
-}).filter(isEmailVerified => !isEmailVerified);
+    let sendEmail = async (function (emailList) {
+        for(let i=0;i<emailList.length;i++){
+            let emailNotifications = await(awsEmail.send(emailList[i]));
+        }
+    });
 
-if(hasInvalidEmail.length > 0){
-    if(email.address){
-        return console.log("email address is invalid");
-    }
-    return console.log("email is missing");
-}
-
-/** Returns the number of files in the given directory. */
-let sendEmail = async (function (dir) {
-    for(let i=0;i<emailList.length;i++){
-        let emailNotifications = await(awsEmail.send(emailList[i]));
-    }
-});
-
-sendEmail
-.then((data)=>{
-    console.log("sent data",data);
-})
-.catch((err)=>{
-    console.log("err",err);
-})
+    sendEmail(emailList)
+    .then((data)=>{
+        console.log("sent email",data);
+    })
+    .catch((err)=>{
+        console.log("err",err);
+    })
