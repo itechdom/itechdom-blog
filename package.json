@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/itechdom/itechdom-blog",
   "dependencies": {
+    "async": "^2.1.2",
     "asyncawait": "^1.0.6",
     "bluebird": "^3.4.6",
     "express": "^4.14.0",

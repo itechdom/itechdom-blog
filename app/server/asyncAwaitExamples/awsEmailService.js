@@ -30,6 +30,10 @@ module.exports = class AWSEmail {
   }
   sendEmail(awsEmail,callback){
       console.log(awsEmail);
+      if(this.count === 1){
+        return callback({err:awsEmail+"cannot be sent"},"hello");
+      }
+      this.count++;
       return callback(undefined,"hello");
   }
   send(emailObject, callback) {

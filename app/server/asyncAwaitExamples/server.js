@@ -2,12 +2,18 @@ var AWSEmail = require('./awsEmailService');
 var awsEmail = new AWSEmail();
 var async = require('asyncawait/async');
 var await = require('asyncawait/await');
+let async2 = require('async');
 const emailValidator = require("email-validator");
 
 
     let emailList = [
         {
             'address':'osamah.net.m@gmail.com',
+            'message':'hello email',
+            'subject':'subject here'
+        },
+        {
+            'address':'oalghnmi@gmail.com',
             'message':'hello email',
             'subject':'subject here'
         },
@@ -39,11 +45,10 @@ const emailValidator = require("email-validator");
             let emailNotifications = await(awsEmail.send(emailList[i]));
         }
     });
-
     sendEmail(emailList)
-    .then((data)=>{
-        console.log("sent email",data);
-    })
-    .catch((err)=>{
-        console.log("err",err);
-    })
+        .then((data)=>{
+            console.log("sent email",data);
+        })
+        .catch((err)=>{
+            console.log("err",err);
+        })
