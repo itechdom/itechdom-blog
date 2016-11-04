@@ -12,7 +12,7 @@ const emailValidator = require("email-validator");
             'subject':'subject here'
         },
         {
-            'address':'osamah.net.m@gmail.com',
+            'address':'oalghnmi@gmail.com',
             'message':'hello email',
             'subject':'subject here'
         }

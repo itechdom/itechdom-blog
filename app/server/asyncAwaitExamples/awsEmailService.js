@@ -29,6 +29,7 @@ module.exports = class AWSEmail {
     }
   }
   sendEmail(awsEmail,callback){
+      console.log(awsEmail);
       return callback(undefined,"hello");
   }
   send(emailObject, callback) {
