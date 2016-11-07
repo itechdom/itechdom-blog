@@ -3,21 +3,20 @@ var Rx = require('rx');
 var dispatcher = require('../../lib/dispatcher/dispatcher.js');
 var clientActions = require('../client/client.actions.js')
 
-class actionMain{
+export class actionMain{
   constructor(){
     var request = clientActions['changeRoute$'];
-    return {
-      request$: request.filter((d)=> {
-        return true;
-      }),
-      post$: request.filter((d)=> {
-        return /\/post\/.*/.test(d);
-      }),
-      viewLoaded$: Rx.Observable.fromEvent(dispatcher,'todo.viewLoaded$'),
-      dataLoaded$:Rx.Observable.fromEvent(dispatcher,'todo.dataLoaded$'),
-      addTodo$:Rx.Observable.fromEvent(dispatcher,'todo.addTodo$')
-    }
+    this.request$= request.filter((d)=> {
+      return true;
+    })
+    this.home$= request.filter((d)=> {
+      return /home/.test(d);
+    })
+    this.about$= request.filter((d)=> {
+      return /about/.test(d);
+    })
+    this.viewLoaded$= Rx.Observable.fromEvent(dispatcher,'todo.viewLoaded$')
+    this.dataLoaded$=Rx.Observable.fromEvent(dispatcher,'todo.dataLoaded$')
+    this.addTodo$=Rx.Observable.fromEvent(dispatcher,'todo.addTodo$')
   }
 }
-
-module.exports = new actionMain();
