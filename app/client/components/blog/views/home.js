@@ -1,9 +1,12 @@
 'use strict';
 var h = require('virtual-dom/h');
 
-export let homeView = ()=>(
-  h('h2',{},recommendation())
-);
+export let homeView = ()=>{
+  return h('h2',{},[
+    h('img',{'src':'http\://placehold.it/1100x400'})
+  ]
+)
+};
 
 let recommendation = ()=>(
   h('blockquote',{},[

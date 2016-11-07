@@ -25,12 +25,10 @@ export let blogView = (blogList)=>{
 	let actions = new actionMain();
 
 	actions.home$.subscribe(()=>{
-		console.log('home');
 		renderHome();
 	})
 
 	actions.about$.subscribe(()=>{
-		console.log('about');
 		renderAbout();
 	})
 
@@ -46,6 +44,22 @@ export let blogView = (blogList)=>{
 		let aboutTree =  h('div', {},
 		[aboutView()]);
 		let rootNode = createElement(aboutTree);     // Create an initial root DOM node ...
+		$('blog-content').html('');
+		$('blog-content').append(rootNode);
+	}
+
+	function renderPortfolio(){
+		let prtfolioTree =  h('div', {},
+		[aboutView()]);
+		let rootNode = createElement(portfolioTree);     // Create an initial root DOM node ...
+		$('blog-content').html('');
+		$('blog-content').append(rootNode);
+	}
+
+	function renderContact(){
+		let contactTree =  h('div', {},
+		[aboutView()]);
+		let rootNode = createElement(contactTree);     // Create an initial root DOM node ...
 		$('blog-content').html('');
 		$('blog-content').append(rootNode);
 	}
