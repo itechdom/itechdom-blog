@@ -13,7 +13,6 @@ var footer = require('./views/footer.html');
 import {homeView} from './views/home.js';
 import {aboutView} from './views/about.js';
 import {actionMain} from './blog.actions.js';
-let currentTree;
 
 export let blogView = (blogList)=>{
 
@@ -24,6 +23,9 @@ export let blogView = (blogList)=>{
 
 	let actions = new actionMain();
 
+	/**
+	* Main Routes
+	**/
 	actions.home$.subscribe(()=>{
 		renderHome();
 	})
@@ -32,6 +34,9 @@ export let blogView = (blogList)=>{
 		renderAbout();
 	})
 
+	/**
+	* Render Functions
+	**/
 	function renderHome(){
 		let homeTree =  h('div', {},
 		[homeView()]);
