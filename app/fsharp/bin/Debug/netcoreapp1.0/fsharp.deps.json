@@ -1,0 +1,46 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.0",
+    "signature": "bf7fd187d6b11d648ba4754689ab4fc2c093f606"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.0": {
+      "fsharp/1.0.0": {
+        "dependencies": {
+          "Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629"
+        },
+        "runtime": {
+          "fsharp.dll": {}
+        }
+      },
+      "Microsoft.FSharp.Core.netcore/1.0.0-alpha-160629": {
+        "runtime": {
+          "lib/netstandard1.6/FSharp.Core.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/any/native/FSharp.Core.optdata": {
+            "rid": "any",
+            "assetType": "native"
+          },
+          "runtimes/any/native/FSharp.Core.sigdata": {
+            "rid": "any",
+            "assetType": "native"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "fsharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.FSharp.Core.netcore/1.0.0-alpha-160629": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T4n8//0DBC9JWuZ6HY5eErgLg16bPXo+q49UX4m+MrDIMP7LScUfS3otExI0/Un4Ibs+OjQ6PB7mnM8rHcy13w=="
+    }
+  }
+}
