@@ -21,3 +21,4 @@ build/
 .stack-work/
 target/
 dist/
+Leiningen.gitignore
