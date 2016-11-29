@@ -163,7 +163,7 @@ class mindmapView {
 				}
 				else{
 					mainContainer.x += HORIZONTAL_MARGIN;
-					mainContainer.y = ((-1 * Math.floor(length/2)) + mindmapObj.order) * (BOX_HEIGHT + VERTICAL_MARGIN);
+					//mainContainer.y =(BOX_HEIGHT + VERTICAL_MARGIN);
 				}
 				//for debugging
 				if(mindmapObj.title.indexOf("Concepts") !== -1){
