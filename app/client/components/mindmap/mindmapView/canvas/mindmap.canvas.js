@@ -160,7 +160,6 @@ class mindmapView {
 				if(sibling){
 					mainContainer.x += HORIZONTAL_MARGIN;
 					mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN ;
-					console.log(sibling.mainContainer.y,sibling.mainContainer.height,sibling.title,mindmapObj.title);
 				}
 				else{
 					mainContainer.x += HORIZONTAL_MARGIN;
