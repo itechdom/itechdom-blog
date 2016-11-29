@@ -150,7 +150,6 @@ class mindmapView {
 				//get previous sibling
 				var count = 0;
 				var order;
-				var position;
 				Object.keys(parent.ideas).map((key,index)=>{
 					if(index === mindmapObj.order){
 						order = parseInt(key) - 1;
@@ -161,19 +160,11 @@ class mindmapView {
 				length = count;
 				if(sibling){
 					mainContainer.x += HORIZONTAL_MARGIN;
-					if(sibling.ideas){
-						mainContainer.y = sibling.mainContainer.y + (Object.keys(sibling.ideas).length) * (BOX_HEIGHT + VERTICAL_MARGIN) ;
-						//mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN ;
-					}
-					else{
-						console.log(parent.ideas,sibling);
-						console.log(sibling.mainContainer.y);
-						//mainContainer.y += sibling.mainContainer.y + BOX_HEIGHT + VERTICAL_MARGIN ;
-					}
+					mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN ;
 				}
 				else{
 					mainContainer.x += HORIZONTAL_MARGIN;
-					//mainContainer.y = ((-1 * Math.floor(length/2)) + mindmapObj.order) * VERTICAL_MARGIN;
+					mainContainer.y = ((-1 * Math.floor(length/2)) + mindmapObj.order) * VERTICAL_MARGIN;
 				}
 				//for debugging
 				if(mindmapObj.title.indexOf("Concepts") !== -1){
