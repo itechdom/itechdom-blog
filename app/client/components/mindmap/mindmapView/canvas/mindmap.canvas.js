@@ -150,25 +150,24 @@ class mindmapView {
 				//get previous sibling
 				var count = 0;
 				var order;
+				parent.ideasArr = [];
 				Object.keys(parent.ideas).map((key,index)=>{
-					if(index === mindmapObj.order){
-						order = parseInt(key) - 1;
-						sibling = parent.ideas[`${order}`];
-					}
+					parent.ideasArr.push(parent.ideas[key]);
 					count++;
-				});
+				})
+				sibling = parent.ideasArr[mindmapObj.order-1];
 				length = count;
 				if(sibling){
 					mainContainer.x += HORIZONTAL_MARGIN;
 					mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN ;
+					console.log(sibling.mainContainer.y,sibling.mainContainer.height,sibling.title,mindmapObj.title);
 				}
 				else{
 					mainContainer.x += HORIZONTAL_MARGIN;
-					mainContainer.y = ((-1 * Math.floor(length/2)) + mindmapObj.order) * VERTICAL_MARGIN;
+					mainContainer.y = ((-1 * Math.floor(length/2)) + mindmapObj.order) * (BOX_HEIGHT + VERTICAL_MARGIN);
 				}
 				//for debugging
 				if(mindmapObj.title.indexOf("Concepts") !== -1){
-					//console.log(((-1 * Math.floor(length/2)) + mindmapObj.order) * VERTICAL_MARGIN);
 				}
 				//drawLine
 				var po = box.toLocal(mainContainer.position);
