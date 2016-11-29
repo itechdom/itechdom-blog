@@ -146,6 +146,8 @@ class mindmapView {
 			.on('touchmove', onDragMove);
 
 			if(parent){
+				//we need to add an offset on both sides to cover when we move the elements up and down
+				//maybe we can move the bounds out a little?
 				parent.mainContainer.addChild(mainContainer);
 				//get previous sibling
 				var count = 0;
@@ -163,7 +165,7 @@ class mindmapView {
 				}
 				else{
 					mainContainer.x += HORIZONTAL_MARGIN;
-					//mainContainer.y =(BOX_HEIGHT + VERTICAL_MARGIN);
+					//mainContainer.y -= ((-1 * Math.floor(length/2)) + mindmapObj.order);
 				}
 				//for debugging
 				if(mindmapObj.title.indexOf("Concepts") !== -1){
