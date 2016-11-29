@@ -150,6 +150,7 @@ class mindmapView {
 				//get previous sibling
 				var count = 0;
 				var order;
+				var position;
 				Object.keys(parent.ideas).map((key,index)=>{
 					if(index === mindmapObj.order){
 						order = parseInt(key) - 1;
@@ -160,26 +161,23 @@ class mindmapView {
 				length = count;
 				if(sibling){
 					mainContainer.x += HORIZONTAL_MARGIN;
-					mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN  ;
-					//move parent to fit children
-					//var h = parent.ideas[mindmapObj.order+1];
-					//if(h){
-					//  if((mindmapObj.order+1)/length === 0.5){
-					//parent.box.y = mainContainer.y;
-					//}
-					//}
-					//else{
-					//  console.log("nope");
-					// }
+					if(sibling.ideas){
+						mainContainer.y = sibling.mainContainer.y + (Object.keys(sibling.ideas).length) * (BOX_HEIGHT + VERTICAL_MARGIN) ;
+						//mainContainer.y = sibling.mainContainer.y + sibling.mainContainer.height + VERTICAL_MARGIN ;
+					}
+					else{
+						console.log(parent.ideas,sibling);
+						console.log(sibling.mainContainer.y);
+						//mainContainer.y += sibling.mainContainer.y + BOX_HEIGHT + VERTICAL_MARGIN ;
+					}
 				}
 				else{
 					mainContainer.x += HORIZONTAL_MARGIN;
-					//console.log(((-1 * Math.floor(length/2)) + order) * VERTICAL_MARGIN);
-					mainContainer.y = ((-1 * Math.floor(length/2)) + order) * VERTICAL_MARGIN;
+					//mainContainer.y = ((-1 * Math.floor(length/2)) + mindmapObj.order) * VERTICAL_MARGIN;
 				}
 				//for debugging
-				if(mindmapObj.title === "Resources"){
-					console.log(((-1 * Math.floor(length/2)) + order) * VERTICAL_MARGIN);
+				if(mindmapObj.title.indexOf("Concepts") !== -1){
+					//console.log(((-1 * Math.floor(length/2)) + mindmapObj.order) * VERTICAL_MARGIN);
 				}
 				//drawLine
 				var po = box.toLocal(mainContainer.position);
@@ -222,7 +220,7 @@ class mindmapView {
 	}
 	constructor() {
 
-		this.renderer = PIXI.autoDetectRenderer(8000, 8000, { antialias: true });
+		this.renderer = PIXI.autoDetectRenderer(4000, 4000, { antialias: true });
 		this.renderer.autoResize = true;
 		this.renderer.backgroundColor = 0x00BFFF;
 
