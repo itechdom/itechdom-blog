@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
-//  swift
+//  FirstViewController.swift
+//  treek
 //
-//  Created by Osama Alghanmi on 3/2/16.
-//  Copyright © 2016 Osama Alghanmi. All rights reserved.
+//  Created by Osama Alghanmi on 12/13/16.
+//  Copyright © 2016 itechdom. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

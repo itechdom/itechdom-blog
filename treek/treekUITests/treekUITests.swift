@@ -1,14 +1,14 @@
 //
-//  swiftUITests.swift
-//  swiftUITests
+//  treekUITests.swift
+//  treekUITests
 //
-//  Created by Osama Alghanmi on 3/2/16.
-//  Copyright © 2016 Osama Alghanmi. All rights reserved.
+//  Created by Osama Alghanmi on 12/13/16.
+//  Copyright © 2016 itechdom. All rights reserved.
 //
 
 import XCTest
 
-class swiftUITests: XCTestCase {
+class treekUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

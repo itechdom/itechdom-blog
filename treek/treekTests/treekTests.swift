@@ -1,15 +1,15 @@
 //
-//  swiftTests.swift
-//  swiftTests
+//  treekTests.swift
+//  treekTests
 //
-//  Created by Osama Alghanmi on 3/2/16.
-//  Copyright © 2016 Osama Alghanmi. All rights reserved.
+//  Created by Osama Alghanmi on 12/13/16.
+//  Copyright © 2016 itechdom. All rights reserved.
 //
 
 import XCTest
-@testable import swift
+@testable import treek
 
-class swiftTests: XCTestCase {
+class treekTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -28,7 +28,7 @@ class swiftTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
