@@ -214,7 +214,6 @@ class mindmapView {
 		this.renderer = PIXI.autoDetectRenderer(1000, 1000, { antialias: true });
 		this.renderer.autoResize = true;
 		this.renderer.backgroundColor = 0x00BFFF;
-
 		$('app').append(this.renderer.view);
 
 		this.stage = new PIXI.Container();
