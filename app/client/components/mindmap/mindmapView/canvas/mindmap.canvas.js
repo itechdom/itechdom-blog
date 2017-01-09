@@ -36,7 +36,7 @@ class mindmapView {
 		return style;
 	}
 	createBox(){
-		var shadowFilter = new PIXI.filters.DropShadowFilter();
+		//var shadowFilter = new PIXI.filters.DropShadowFilter();
 		var box = new PIXI.Graphics();
 		box.lineStyle(2, 0x000000, 1);
 		box.beginFill(0xFFFFFF, 1);
@@ -211,7 +211,7 @@ class mindmapView {
 	}
 	constructor() {
 
-		this.renderer = PIXI.autoDetectRenderer(4000, 4000, { antialias: true });
+		this.renderer = PIXI.autoDetectRenderer(1000, 1000, { antialias: true });
 		this.renderer.autoResize = true;
 		this.renderer.backgroundColor = 0x00BFFF;
 
